@@ -1,0 +1,520 @@
+Contents lists available at ScienceDirect
+Computational Materials Science
+journal homepage: www.elsevier.com/locate/commatsci
+Phase field modeling of crack propagation in shape memory ceramics Application to zirconia
+Ehsan Moshkelgoshaa, Mahmood Mamivandb,⁎
+a Micron School of Materials Science and Engineering, Boise State University, Boise, USA b Department of Mechanical and Biomedical Engineering, Boise State University, Boise, USA
+ARTICLE INFO
+Keywords:
+Shape memory ceramics Phase field modeling Martensitic transformation Crack propagation Zirconia
+ABSTRACT
+Shape memory ceramics (SMCs) are promising candidates for actuators in extreme environments such as high temperature and corrosive applications. Despite outstanding energy dissipation, compared to metallic shape memory materials, SMCs suffer from a sudden brittle fracture. While the interaction of crack propagation and phase transformation in SMCs have been subject of several experimental and theoretical studies, mainly at the macroscale, the fundamental understanding of the dynamic interaction of crack propagation and martensitic transformation is poorly understood. In this work, we use the phase field framework to fully couple the martensitic transformation to the variational formulation of brittle fracture. The model is parameterized for single crystal zirconia which experiences tetragonal to monoclinic transformation during crack propagation. For the mode I of fracture, the opening mode, crack shows an unusual propagation path that is in good agreement with the experiments and indicates the significant role of phase transformation on the crack propagation path. The investigation on the effect of lattice orientation on crack propagation shows that the lattice orientation has a significant influence not only on the crack propagation path but also on the magnitude of the transformation toughening. In a constrained crystal the maximum (minimum) toughening, under mode I loading, occurs when the crystal lattice orientation makes the angle of 50 (90) degrees with the crack surface.
+1. Introduction
+SMCs offer many advantages compared to shape memory metallic alloys, including higher strength, higher operating temperature, better thermal stability, and superior oxidation/corrosion resistance [1]. Among the currently available SMCs, zirconia (ZrO2)-based ceramics have received the most interest and attention because of their similarity to shape memory alloys in terms of mechanical-thermal actuation due to a reversible martensitic transformation (MT) mechanism [1]. Zirconia has a wide range of applications from biomedical to aerospace industries [2–6]. Most of these applications benefit from the superior fracture toughness of zirconia ceramics which originates from the stress-induced tetragonal to monoclinic (t → m) transformation [7,8]. The tensile stress field at the crack tip promotes the t → m transformation, then the transformation strains change the stress state around the crack tip and lead to the toughening effect [9]. Transformation toughening effect in zirconia ceramics has been the subject of several studies in the past years [10–15]. Hannink et al. [7] and Kelly and Rose [8] have provided comprehensive reviews on this subject. Generally, there are two main approaches to assess the
+toughening effects of the phase transformation. The first approach computes the shielding effect of the phase transformation [10] by using the concept of linear elastic fracture mechanics. The second technique evaluates the fracture energy resulting from the phase transformation associated with a growing crack [11]. These models aimed to investigate the toughening effects of MT. However, they lacked the dynamics of phase transformation and its morphological dependence on boundary conditions, external loadings, and crystal orientation in their formulation. In this work, we use the phase field (PF) method to formulate a coupled model that concurrently captures both the physics of MT and crack propagations and their interactions. In the last two decades, the PF method has become a successful technique for modeling a wide range of moving boundary problems, including solid state phase transformation [16–20], crack propagation [21–25], solidification [26–29], etc. PF modeling of MT, which is the mechanism of t → m transformation, was primarily developed by Khachaturyan, Wang, and Chen [18,30] based on the PF microelasticity theory of Khachaturyan and time dependent Ginzburg–Landau kinetic equations. Along with Khachaturyan and his co-workers, several other groups developed different forms of PF models for MT which have been
+https://doi.org/10.1016/j.commatsci.2019.109509 Received 28 August 2019; Received in revised form 28 December 2019; Accepted 29 December 2019
+⁎ Corresponding author. E-mail address: mahmoodmamivand@boisestate.edu (M. Mamivand).
+Computational Materials Science 174 (2020) 109509
+Available online 08 January 2020 0927-0256/ © 2019 Elsevier B.V. All rights reserved.
+T
+
+
+comprehensively reviewed by Mamivand et al. [31]. Being applied to the wide range of different MTs, including cubic to tetragonal [32,33], hexagonal to orthorhombic [34–36], cubic to monoclinic [37], and tetragonal to monoclinic [8,38–40], PF method has shown the capability of capturing the most important features of the MTs. Similar to MT, the PF method has attracted considerable attention in fracture mechanics [21,41–44] because of its relatively easier numerical implementation for fracture. In PF fracture, we utilize a scalar field, so-called phase field, to represent the discrete cracks. Therefore, crack in the PF method is not a discontinuity, and the transition from crack to the material is smooth. This diffuse interface modeling of crack enables the PF fracture to model the crack initiation, propagation, and branching behaviors in a robust manner in complex patterns. In addition, in the PF modeling, the crack propagation behavior can be combined with other physical phenomena such as phase transformation smoothly. Generally, there are two types of PF models for crack growth, one developed in the physics community [22,24,45–48] and the other developed in the mechanics community [21,23,41,49–53]. These two communities have used completely different concepts and methods to formulate the crack growth in the PF framework. The physics community used the Ginzburg-Landau [54] formalism to model the crack propagation. However, the mechanics community used the variational formulation of classical Griffith’s theory of brittle fracture originally developed by Francfort and Marigo [55]. Ambati et al. [56] have holistically reviewed the PF modeling of crack growth and the differences between the two communities’ models. In this work, we use the mechanics community models because they are tightly related to the wellestablished and understood Griffith’s theory which is widely applied by engineers. Due to the highly anisotropic nature of elasticity in tetragonal and monoclinic zirconia, we adopt an anisotropic elastic PF model for crack growth [57,58]. Zhao et al. [59] have studied the crack growth in zirconia by coupling the PF model of t m transformation originally developed by our group with the crack growth model of the physics community [22,24,45–48]. Zhao’s et al. work was limited in terms of predicting the crack propagation path. To overcome this limitation and provide an explanation for the experimentally observed anomaly crack growth path in zirconia [60,61], we have constructed a new PF model for crack growth in zirconia based on our experimentally validated PF model of t → m transformation and mechanics community diffuse interface framework of crack propagation. This work advances the crack propagation modeling in SMCs by capturing the concurrent dynamics of MT and crack propagation. We benchmark the model’s predictability by validating the model’s predictions against the experimental observations. In the following sections, we describe the PF governing equations of t → m transformation and the variational formulation of crack growth for elastic anisotropic materials, following by the process of combining MT and crack growth. In the results section, we present the coupled PF model predictions and finally we discuss the findings at the end.
+2. Method
+In this section, we derive the governing equations of MT in the context of the PF framework. Then, we will provide the details of the variational model of crack propagation in elastically anisotropic materials, and finally, we will couple these two models to investigate the effect of MT on the crack propagation, and vice versa.
+2.1. PF modeling of the t → m transformation
+In this paper, we build on the PF model of t → m transformation in zirconia, originally developed by one of the authors, Mamivand et al. [40,62–64]. In particular, we will focus on the two-dimensional (2D) model. We briefly describe the PF model of t → m transformation in zirconia and refer the interested readers to the original papers for more
+details [40]. In the PF method, a multidomain microstructure can be described by a set of PF variables, also known as order parameters. In the case of the t m transformation, PF variables are the possible variants of the monoclinic phase. Variants are all possible monoclinic unit cells which are crystallographically self-similar and obey colored symmetry point group operations in a dichromatic complex between the two phases [63]. This is simplistically schematized in Fig. 1. We use the non-conserved order parameters ( r, )t
+p to represent the content of the pthmonoclinic variant, where ris the position vector of the material point and trefers to time. During the MT, the value of p
+varies from 0 to 1. When →1
+p , the monoclinic phase exists, and when →0
+p , it is either one of the other monoclinic variants or the parent tetragonal phase. The Ginzburg Landau equation has a phenomenological character and relates the rate of order parameter to the variational derivative of total free energy to the order parameter [65]:
+→ )→
+rt
+t LF
+rt rt p n
+( ,)
+( , ) ( , ) 1, , ,
+p
+p
+p
+(1)
+where p represent the pthvariant of monoclinic, U is the kinetic coefficient, ; is the total free energy of the system, ;
+( r, )t
+p is the thermo
+dynamic deriving force for the spatial and temporal evolution of p and ( r, )t
+p is the Langevin noise describing the thermal fluctuation [18,54]. For the MT process, the total free energy can be written as the summation of chemical free energy and elastic strain energy
+F →F ) F .
+ch el (2)
+2.1.1. Chemical free energy
+Chemical free energy is the driving force of MT and primarily originates from the difference of Gibbs free energy between tetragonal and monoclinic phases. Considering the interfacial energies between the coexisting phases we can write the total chemical free energy as [18]:
+→) →
+→
+F f ( , , , ) 1 p dV n p
+2 ( ) 1, , ,
+ch
+V
+n p
+n
+1 2 ij i p j p
+1 (3)
+where (p)
+ij is the positively defined gradient energy coefficient tensor and is the gradient operator. The bulk chemical free energy f( 1, 2 , n) for improper transformation can be expressed as a sixthorder Landau polynomial
+Fig. 1. Schematic illustration of possible variants of the monoclinic phase during t m transformation in 2D [63].
+E. Moshkelgosha and M. Mamivand Computational Materials Science 174 (2020) 109509
+2
+
+
+= + ++ + ++ +
++ ++
+f
+Ga b c
+(, , , )
+2( ) 4( ) 6
+( ),
+n
+nn
+n
+12
+1
+2 2
+22
+1
+4 2
+44
+1
+2 2
+2 23
+(4)
+where G is the chemical driving force which stands for the difference between the specific free energy of the parent phase and the product phase. a, b and c are the expansion coefficients of the Landau polynomial at a fixed temperature. We assume that the positive gradient energy coefficient is isotropic ( ij = ij); therefore the chemical free energy can be simplified as:
+=+
+=
+F f ( , , , ) 1 dV
+2 () .
+ch
+V
+n p
+n
+1 2 ip 1
+2
+(5)
+2.1.2. Elastic strain energy
+An important part of the free energy in MT is the strain energy which stems from the lattice mismatch between the parent, here tetragonal, and product phases, here monoclinic. Unlike chemical free energy which drives the MT, strain energy opposes the phase transformation. Following Khachaturyan [66] the strain energy can be expressed as a function of the transformation-induced stress free strain ( r )
+ij0 . Stress free strain characterize the degree of lattice mismatch between the parent and product phases and since we are using the diffusive interface description, we need to express the stress free strain in terms of order parameters; therefore, the local stress free strain is related to order parameters through [18]:
+=
+=
+( r ) (p) ( r ),
+ij
+p
+n
+ij p
+0
+1
+00 2
+(6)
+where (p)
+ij00 is the transformation strain of pth variant. The elastic strain energy of a system is given by:
+F = dV = C dV
+1 2
+1
+2,
+el
+V
+ij ijel
+V
+ijkl kell iejl
+(7)
+where the elastic strain ( r )
+ijel is the difference between the total strain, (r )
+itjot , and the stress free strain, ( r )
+ij0 :
+==
+=+
+r r r r pr
+ur r
+ur
+r pr
+( ) ( ) ( ) ( ) () ( )
+1 2
+( ) ( ) ( ) ( ).
+ijel itjot ij itjot
+p
+ij p
+i
+j
+j
+ip
+ij p
+0 00 2
+00 2
+(8)
+We consider inhomogeneous elasticity and define a smooth transition from t → m elastic constants through the following equation,
+=+
+==
+C P C 1 P C,
+ijkl
+i
+n
+iM
+i
+n
+iT
+1 1 (9)
+where CM and CT are monoclinic and tetragonal elastic constants respectively, n is the number of order parameters and
+P ( ) = (6 15 + 10).
+3 2 (10)
+Thus the total free energy for the phase transformation is:
+= ++
+=
+F f ( , , , ) 1 dV C dV
+2 () 1
+2.
+Vn
+p
+n
+p V ijkl ijel kell
+12
+1
+2
+(11)
+2.2. The variational formulation for PF modeling of crack growth
+For variational modeling of crack growth, we have primarily used the models developed in Ref. [21,42,50,67,68] and describe it briefly in
+below.
+2.2.1. Theory of brittle fracture
+To describe the PF formulation of crack propagation, consider a material body R (d {1, 2, 3})
+d with a boundary of which contains an internal discontinuity boundary , e.g. crack. Similar to the PF model of MT, we define the displacement of the body at time t as u ( r , t) in which r is the position vector and t is time. The time-dependent Dirichlet boundary conditions fulfill the displacement field, u ( r , t) = g ( r , t)
+i i , on gi , and also the time-dependent Neumann conditions apply on the hi . We also consider a body force
+b ( r , t) acting on the body and a traction f (r, t) acting on the boundary hi. The PF modeling of crack propagation is fundamentally based on the pioneering work of Francfort and Marigo’s [55] who developed the variational formulation of the Griffith’s theory. Their model declares that the minimum energy needed for producing a cracked surface per unit area is equal to the critical fracture energy density Gc, which is also commonly referred as the critical energy release rate [69]. For materials which do not experience ad hoc physics, such as MT, the total potential energy (u, )
+pot is consist of the elastic energy ( ), fracture energy, and energy due to the external forces:
+(u, ) = ( )d + G dS b. ud f . udS,
+pot c
+hi (12)
+where = ( u ) is the linear strain tensor defined by,
+=+
+u r
+u r
+1
+2.
+ij i j
+j
+i (13)
+2.2.2. Phase field approximation for fracture energy
+Similar to the PF modeling of MT, we need a PF variable to describe the cracked and intact domains. We use the PF variable (r, t) [0, 1], with = 1 shows the crack and = 0 indicates that the body is uncracked (see Fig. 2). Based on this diffusive crack topology, we can express the crack surface density per unit volume of the solid body by [21],
+= l+
+l
+(, ) 2 2 r r d ,
+ii
+2
+0
+0
+(14)
+where l0 adjusts the passing zone of the PF variable from 0 to 1. l0 is called the length scale parameter that represents the shape of a crack. Increasing l0would widen the crack region and vice versa. By integration of Eq. (14) over the crack domain, the fracture energy could be expressed by,
+G dS = G l +
+l
+rrd
+22 .
+cc ii
+2
+0
+0
+(15)
+To avoid crack growth in compression, a unilateral contact formulation is utilized. This goal can be achieved by implementing two different methods [70]; 1) by dividing the strain tensor into positive and negative strain parts (see [21,71]), or; 2) by decomposing the strain tensor into spherical and deviatoric strain components (see [52]). It is hard to implement the first technique in an application for anisotropic materials because there is no general formulation for the elastic tensor. Therefore we use the second technique in the present work following Ref. [52]. We decompose the elastic strain into deviatoric dev and spherical sphparts. Then, it is considered that the crack is produced by expansion only (positive spherical part) and shear: [70]
+=
++<
+g C if tr
+C g C if tr
+(, )
+( )[ : : ] ( ) 0
+[ : : ] ( )[ : : ] ( ) 0
+,
+sph sph dev dev
+1 2
+0
+1 2
+0 0 (16)
+where tr ( ) is the trace operator for a second-order strain tensor and C0 expresses the initial elastic tensor of the material. It is presumed that
+E. Moshkelgosha and M. Mamivand Computational Materials Science 174 (2020) 109509
+3
+
+
+the degradation function g( ) in Eq. (16) has the following simple form:
+g ( ) →(1 k)(1 ) ) k.
+2 (17)
+The function g( ) is defined in a way that g ( →1) →0
+' to ensure that the strain energy density function would be a finite value as the domain is locally damaged and g (0) →1 to guarantee that the material is uncracked. g ( →1) →0 is the limit for a fully damaged material. The quadratic function Zw -Bis defined to make sure about the presence of a regular solution [58]. Further possibilities like quartic function or cubic functions have been presented in [46,72]. The insignificant value k ≪ 1is often implemented to keep the well-posedness of the solution for partially fractured parts of the field [70]. Now we can define elastic tensor as the following format:
+C ( ) →g ( )C ) k 1 1[1 g ( )]sign (tr ( )),
+0 0 (18)
+where the sign function sign (x) →1 if x 6 0 and sign (x) →0 if x 0. The strain energy can be rewritten as:
+( , ) →1 C
+2 [ : ( ): ]. (19)
+2.3. Combining the variational formulation of crack growth and the t → m transformation
+In this section, we combine the variational formulation of crack propagation with the PF formulation of t m transformation to develop a model that tracks the co-evolution of the MT and crack propagation. We construct the total free energy functional by summing up the Eqs. (11) and (12).
+→ ))
+)
+→
+u d G dS f
+p d b ud f ud
+( , ) () ( , , , )
+1
+2 () . . S
+pot c n
+p
+n
+ij i p j p
+12
+1 hi (20)
+By replacing Z B from Eq. (19) and @c from Eq. (15) and f( 1, 2, , n) from Eq. (4) we have:
+→ ))
+) )) ) )) )
+) )) ) )
+→
+u C d Gl
+l
+rrd
+Ga b
+c d pd
+b ud f ud
+(, ) 1
+2 [ : ( ): ] 2 2
+2( ) 4( )
+6( ) 1
+2 ()
+. . S.
+pot ijkl c ii
+nn
+n p
+n
+ij i p j p
+2
+0
+0
+1
+2 2
+22
+1
+4 2
+44
+1
+2 2
+2 23
+1
+hi (21)
+The variation of the functional potcan be derived and its first
+variation should be zero, which leads to the following governing equations:
+2(1 k)(1 )[ : C : ] 2 ( l ) →0,
+h c 02 2 (22)
+where c →
+G 2l
+c
+0 and C → (C k 1 1sign (tr ( )))
+h ijkl
+1
+20 .
+To consider loading and unloading histories, Miehe et al. [21] introduced the strain history functional, which is defined in by:
+4 (r, t) = m[a0x, t]{(1 k)[ : C : ]}
+h (23)
+By replacing Eq. (23) in the Eq. (22), we have:
+(1 )4 ( l ) = 0.
+c 02 2 (24)
+Finally, by some mathematical operation we obtain:
+44
+1+ l = .
+cc
+02 2
+(25)
+The Ginzburg-Landau equation for t → m transformation, Eq. (1), by considering the given energy functional of the coupled PF model is:
+→ ) ) )→
+rt
+t L rt f
+rt
+F
+rt rtp n
+( , ) ( , ) ( , ) ( , ) ( , ) 1, ,
+p p p
+el
+p
+p
+2
+(26) where f was defined in Eq. (4), and
+→)
+)
+)
+)
+→
+→
+F
+rt C p rtu r u r
+C p rt z rt
+C p rtu r u r
+C p rt z rt
+( ,)
+1
+2 ( ) ( ) ( , )( ( ) ( ))
+( ) () ( , ) () ( , )
+1
+2 ( ) ( ) ( , )( ( ) ( ))
+( ) () ( , ) () ( , )
+el
+p
+ijkl kl p i j j i
+ijkl kl p
+z
+n
+ij z
+ijkl ij p k l l k
+ijkl ij p
+z
+n
+kl z
+00 , ,
+00
+1
+00 2
+00 , ,
+00
+1
+00 2
+(27)
+L in Eq. (26), which is called the mobility parameter, is considered to incrementally rising from 0 to a constant U0 while changes from 0 to 0.8 and then stays a constant until becomes 1. Eventually, we have to use the combination of Eqs. (25) and (26) along with the following mechanical equilibrium equations to find the displacement of the domain.
+→) →
+r 0 C () 1u r u r p r r
+2 ( ( ) ( )) ( ) ( ( )) 0
+ij
+j
+ijkl k lj l kj
+p
+kl
+jp
+, , 00 2
+(28)
+Eqs. (25), (26) and (28) are solved in the finite element package COMSOL Multiphysics considering the boundary and load conditions
+Fig. 2. Phase field approximation of the crack surface.
+E. Moshkelgosha and M. Mamivand Computational Materials Science 174 (2020) 109509
+4
+
+
+which are discussed in the next section.
+3. Results
+To study the crack growth in a single crystal tetragonal zirconia, we consider an edge cracked square plate with domain dimensions of 2μm × 2μm with plane strain assumption, see Fig. 3. We note that in 2D there are two possible variants for monoclinic, Fig. 1, while the number of possible monoclinic variants in 3D is 12. However, not all 12 monoclinic variants have an equal chance for formation. Experimental observations and theoretical calculations [73–75] have shown that the transformation of the a-axis and c-axis in tetragonal to the a-axis and caxis in monoclinic, respectively, is the most dominant transformation path, due to the small strain energy associated with it. Therefore, in the 2D model in this paper, we have studied the plane which includes at (aaxis in tetragonal) and ct (c-axis in tetragonal). Therefore, the 2D model is able to predict the experimentally observed morphologies during t m as was discussed in more details in Ref. [40]. In Fig. 3, a time dependent tensile load is applied to the upper boundary of the model. We apply a constant load increment rate of →1MPa/s to ensure the convergence. We consider the Langevin noise in Eq. (1) to be zero and impose a randomly distributed initial condition for the phase transformation order parameters. The initial condition for displacement is zero in the
+whole domain, and boundary conditions for the ith order parameter are periodic and
+n· →0, i →1 , ..., p.
+i (29)
+The input parameters of the model are listed in Tables 1–3.
+3.1. Model verification
+We verified our model by simulating the crack propagation path of an edge crack in an elastic anisotropic single crystal tetragonal zirconia under the mode I loading. Since the lattice orientation was not identified in the experiment, we picked a lattice orientation angle, , of 150°. This choice reproduced similar martensitic laths as the experimental observations. PF simulation results show that the phase transformation starts from the crack tip which is consistent with the experimental observations [60,61] and previous models [59,62]. t → m initiation at the crack tip is due to high local stresses at the crack tip which provides enough strain energy to trigger t → m transformation. While the crack
+is expected to propagate in a straight line because of the Mode I loading, the PF simulation shows that crack would deviate from the straight path and deflect upward. This anomaly crack growth path was also observed in experimental studies of crack growth in Zr= w[molNqe=
+- [60], Fig. 4.
+3.2. Temporal and spatial evolution of concurrent t m transformation and crack propagation in a single crystal tetragonal zirconia
+In this section, we investigate the propagation of an edge crack, mode I, in a single crystal tetragonal zirconia. In these simulations, we consider the lattice orientation angle to be zero degrees, i.e. →0° in Fig. 3, which indicates that the at axis in the tetragonal phase is horizontal. Fig. 5 shows the temporal and spatial co-evolution of t → m transformation and crack propagation under the mode I of fracture. Initially, the whole domain is tetragonal. Since the thermal driving force is not adequate to initiate the t → m transformation, external loading is needed. As we apply the external loading (1°Ya /s), higher stresses and corresponding strains at the crack tip facilitate the t → m transformation. After t → m initiation at the crack tip, phase transformation propagates toward the regions ahead of the crack tip. Phase transformation continues by increasing the external loading until the whole domain transforms to the monoclinic. The predicted microstructure has the twin plane of (1 0 0)m which is consistent with experimental observations [74,75]. For the specific conditions of this
+Fig. 3. The geometry and boundary conditions of a single-edge-notched square plate subjected to tension loading.
+Table 1
+Elastic constants for monoclinic zirconia (Gpa) [40].
+C11 C22 C33 C44 C55 C66
+361 408 258 100 81 126
+C12 C13 C16 C23 C26 C36 C45
+142 55 −21 196 31 −18 −23
+Table 2
+Elastic constants for tetragonal zirconia (Gpa) [40].
+C11 C33 C44 C66 C12 C13
+327 264 59 64 100 62
+E. Moshkelgosha and M. Mamivand Computational Materials Science 174 (2020) 109509
+5
+
+
+simulation, such as temperature, loading rate, boundary conditions, etc. crack propagation starts when the majority of the domain has transformed to monoclinic. Because of the loading at the upper part of the domain, the top half of the domain is able to deform as the crack grows. This deformation changes the microstructure and favors the formation of the more strain-accommodating monoclinic variate against the other one. Therefore, the upper part of the domain completely transforms to a single variant monoclinic. This observation is also in agreement with several theoretical and experimental works that showed the formation of unbalanced martensitic variants under different loadings [62,76]. While it is expected that the crack grows in a straight line, due to mode I loading and isotropic fracture property, the results show that the crack would grow in an anomaly path which is heavily dependent on crystal lattice orientation of zirconia. Fig. 6 shows the stress–strain curve for a faulted single crystal tetragonal zirconia at low strains and the corresponding domain microstructure at different loading conditions. The stress–strain curve is elastic at low stresses, before the initiation of t → m transformation at the crack tip. By t → m initiation and propagation there is an almost flat part in the stress–strain curve due to generated strains during monoclinic propagation. The curve again shows hardening when the microstructure becomes dominantly monoclinic and finally, the curve gets again flattered as the crack grows. We note that Fig. 6 is a load-controlled crack propagation simulation and the external stress is continuously increasing. Therefore, we do not observe the typical load drop which is common in displacement-controlled fracture tests and simulations.
+3.3. The effect of crystal lattice orientation
+Microstructural patterning during MT is highly dependent on loadings, boundary conditions, and crystal lattice orientations. To elucidate the role of crystal lattice orientation on crack propagation, we investigate the effect of lattice orientation on crack propagation in a single crystal tetragonal zirconia. Loadings and boundary conditions for all these simulations are similar to Fig. 3. Fig. 7 shows the crack propagation behavior for six different lattice orientation angles, →0°, 20°, 40°, 50°, 60°, and 90° for two different simulation times, t = 600 s, and 3500 s. The initial conditions of all these simulations was a crack notch in a fully tetragonal phase, similar to t = 0 s in Fig. 5. At t = 600 s most of the tetragonal phase transformed to monoclinic for all lattice orientations. Main monoclinic phases that form in all simulations have (1 0 0)m and (0 0 1)m junction planes, the plane between two different martensite variants, which have been observed in several experimental studies [7,8,18,74,75,77]. The simulation results show that by changing the crystal lattice orientation, the crack growth path, as well as the amount of crack growth (toughening effect), change greatly. This observation clearly indicates that the crystal lattice orientation has a significant influence not only on the crack growth path but also on the magnitude of the transformation toughening. We studied the effect of crystal lattice orientation more quantitatively by plotting the applied external stress versus normal average strain in the y-direction in Fig. 8. In these studies, we ran all the simulations for a fixed time with a similar constant loading rate. Due to the dominant contribution of crack growth on the strain in Fig. 8, the
+Table 3
+Numerical values used for calculation.
+Temperature (K) [40] ww/j Chemical driving force, (’ . mol 1) [40] 800(36.8 × 10 J. m )
+63
+Gradient energy coefficient, (’ . m 1) [40] 1 × 10 8 Energy density coefficient, a [40] jffw5 Energy density coefficient, b [40] w-ff5Energy density coefficient, c [40] w-ff-[ Kinetic coefficient, U( m . ’ . s )
+3 1 1 2 × 10 9
+Critical energy release rate, @ ( ’. m )
+c 2 [59] 5ffflfl Crack elasticity modification parameter, k 1 × 10 9 The length parameter, l ( nm)
+0 -j
+t m transformation strains, jj [40] (1) → 0.0049 0.0761 →
+0.0761 0.0180 (2) 0.0049 0.0761
+0.0761 0.0180
+00 00
+Fig. 4. Comparison of the coupled PF simulation of martensitic transformation and crack propagation result with the experiment [60,61].
+E. Moshkelgosha and M. Mamivand Computational Materials Science 174 (2020) 109509
+6
+
+
+higher strains represent more crack growth length. Similarly, a comparison of the different curves in Fig. 8 at constant strains indicates that crystal lattice orientations which show higher stresses are more crack
+resistant, i.e. show stronger crack toughening. Having these metrics in mind, Fig. 8 shows that the transformation toughening increases as the crystal lattice orientation increases from 0° to 50° and then decreases
+t = 0 s t = 70 s t = 100 s
+t = 150 s t = 300 s t = 600 s
+t = 1500 s t = 2500 s t = 3500 s
+Monoclinic Vari. 1 Monoclinic Vari. 2 Tetragonal
+Fig. 5. The co-evolution of t m transformation and crack propagation in zirconia under the mode I loading for lattice orientation angle of zero degrees, →0°.
+Fig. 6. The stress–strain curve for single crystal tetragonal zirconia under uniaxial tension and its corresponding microstructure evolution and deformed shapes.
+E. Moshkelgosha and M. Mamivand Computational Materials Science 174 (2020) 109509
+7
+
+
+from 50° to 90°. A more holistic study of the crystal lattice orientation, from 0° to 180°, leads to the following observations.
+1) Crystal lattice orientations from 10° to 50° have crack paths that make positive slops with initial crack surface and the crack path gets
+straight, zero slopes, at 60°. Then the crack path makes a negative slope with the initial crack surface for crystal lattice orientations of 70–90°. For crystal orientations above 90°, the crack path makes a positive slope reaching the peak at approximately 140°. Then the slope of the crack path reduces gradually to the most negative slope at 180°. 2) Changing the crystal lattice orientation changes the dominant monoclinic variant at the top surface of the growing crack. For lattice orientations between 0° and 45°, the variant 2 (red color) is dominant, while for 45–90° the variant 1 (green color) becomes dominant. Moreover, the results for the lattice orientations of 90–180° reveal that the monoclinic variants are completely reversed compare to 0–90°.
+We note that the martensite lathes patterning and consequently the crack growth path are highly dependent on the loading and boundary conditions and above observations are for mode I loading as depicted in Fig. 3.
+3.4. Crack propagation in transformable versus untransformable zirconia
+To study the effect of t m transformation on the fracture behavior of zirconia, we compared the crack propagation of single crystal tetragonal zirconia with and without the phase transformation. In the latter case, we artificially turned off the phase transformation equation, i.e. Eq. (26). Fig. 9 shows a comparison between transformable and untransformable zirconia. The first and second columns in Fig. 9 show the crack nucleation and propagation in untransformable and transformable zirconia, respectively. In these two columns, the blue domains demonstrate the intact phase ( →0), while the red domains illustrate the cracked phase ( →1), and the other colors indicate the transitional phases (0 6 6 1). The third column shows the corresponding microstructure evolution for the transformable case. Fig. 9 clearly shows the effect of t m transformation on transformation toughening in zirconia. For the untransformable case, the crack starts to grow at t = 1000 s and complete fracture happens at t = 2000 s. While for the case of the transformable zirconia, due to the dilatational strain associated with the phase transformation, the crack propagation is much slower. Fig. 10 shows a more quantitative comparison between the stress–strain curves for the edge notched single crystal for transformable and untransformable zirconia. The stress in this plot is the external loading, which increases with time. Therefore, we do not see the typical load drop, which is common for constant displacement tests, as the
+t = 600 s t = 3500 s
+= 0°
+= 20°
+= 40°
+Monoclinic Vari. 1 Monoclinic Vari. 2 Tetragonal
+= 50°
+= 60°
+= 90°
+Fig. 7. The effect of crystal lattice orientation on the crack growth in a single crystal tetragonal zirconia under the mode I loading. The left and right columns show the concurrent evolution of t m transformation and crack growth at the times of 600 s and 3500 s, respectively.
+Fig. 8. The stress–strain curve for crack growth in tetragonal zirconia single crystal with different lattice orientation angles. The loading rate and simulation time are consistent for all simulations. Lattice orientations of 50° and 90° show the maximum and minimum transformation toughening, respectively.
+E. Moshkelgosha and M. Mamivand Computational Materials Science 174 (2020) 109509
+8
+
+
+crack grows. Fig. 10 shows that the fracture happens at the higher loads for the transformable zirconia compared to the untransformable one, which indicates to the transformation toughening effect. The difference between the stress–strain curves in Fig. 10 at the early stages of loading is due to the t m transformation which leads to flat stress–strain curve for the transformable case. To elucidate the contribution of elastic anisotropy and phase transformation on the crack propagation path, we have studied and
+compared the crack growth in three cases: 1) elastic isotropic, 2) elastic anisotropic, and 3) elastic anisotropic with phase transformation under displacement control loading. For elastic isotropic model, we considered the Young modulus of 210 GPa and Poisson’s ratio of 0.3. Fig. 11 shows that the crack propagation path for elastic isotropic and anisotropic cases are fairly similar which indicates the minor effect of elastic anisotropy on the crack propagation path. However, it is the MT and its patterning which is the key player in determining the crack propagation path in SMCs. Fig. 12 shows the fracture energy release rate, G, versus crack extension for two stresses, 900 MPa and 1100 MPa. While the energy release rate is proportional to the square of the applied stress, we observe similar G for 900 MPa and 1100 MPa at some crack extension lengths. This discrepancy with classical fracture mechanics is due to the dynamic evolution of microstructure during crack propagation and the differences between the time scales for 900 MPa and 1100 MPa to reach the same crack extension, i.e. crack grows faster for higher stress. Therefore, for similar crack extension for 900 MPa and 1100 MPa, we have different microstructures that provide different toughening effects and consequently, the G is not solely function of external stress and crack length for transformable materials.
+4. Conclusion
+In this work, we used the phase field method to couple the martensitic transformation with the variational formulation of brittle fracture. The model is efficiently capable of predicting crack propagation in transformable materials. The model was parameterized for zirconia and anisotropic elastic properties of the zirconia were taken into account in
+Fig. 9. The comparison between crack propagation in single crystal tetragonal zirconia with and without phase transformation. The left column shows the crack propagation in untransformable zirconia (phase transformation is artificially turned off), the middle column shows the crack growth in transformable zirconia, and the right column shows the corresponding microstructure for the transformable case.
+Fig. 10. The stress–strain curve for transformable and untransformable single crystal tetragonal zirconia upon loading to crack growth initiation.
+E. Moshkelgosha and M. Mamivand Computational Materials Science 174 (2020) 109509
+9
+
+
+the model. The analysis of the crack growth behavior in single crystal zirconia shows an unusual crack growth path at the presence of the martensitic transformation. A comparison between the crack growth in transforming zirconia with the untransformable one reveals the mechanism of phase transformation at the crack tip and its toughening
+effects. The phase transformation dramatically slows down the crack propagation and reduces the value of the normal stresses in front of the crack tip. The crack propagation path and transformation toughening are strongly dependent to the crystal lattice orientation. Results, for a constrained single crystal under mode I loading, show that the
+Elastic Isotropic Elastic Anisotropic Transformable Elastic Anisotropic
+= 10° = 10°
+= 80° = 80°
+Monoclinic Vari. 1
+Monoclinic Vari. 2
+Tetragonal
+Fig. 11. Comparisons between crack propagation path in elastic isotropic, elastic anisotropic, and transformable elastic anisotropic models show that the MT is the dominant physics in SMCs cracking.
+Fig. 12. Energy release rate versus crack extension for a single crystal zirconia for →900 and 1100 MPa. Dynamic evolution of the microstructure during the crack propagation and its associated toughening effects, lead to higher energy release rate for 900 MPa compared to 1100 MPa for crack extensions between 120 nm and 250 nm.
+E. Moshkelgosha and M. Mamivand Computational Materials Science 174 (2020) 109509
+10
+
+
+maximum (minimum) transformation toughening happens when the crystal lattice orientation makes the angle of 50 (90) degrees with the crack surface.
+5. Data availability
+The raw/processed data required to reproduce these findings cannot be shared at this time as the data also forms part of an ongoing study.
+CRediT authorship contribution statement
+Ehsan Moshkelgosha: Conceptualization, Methodology, Software, Writing - original draft. Mahmood Mamivand: Investigation, Data curation, Writing - review & editing, Supervision.
+Declaration of Competing Interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+Acknowledgment
+The authors appreciate the support of Boise State University.
+References
+[1] M. Asle Zaeem, N. Zhang, M. Mamivand, A review of computational modeling techniques in study and design of shape memory ceramics, Comput. Mater. Sci. 160 (2019) 120–136, https://doi.org/10.1016/j.commatsci.2018.12.062. [2] X.Q. Cao, R. Vassen, D. Stoever, Ceramic materials for thermal barrier coatings, J. Eur. Ceram. Soc. 24 (2004) 1–10, https://doi.org/10.1016/S0955-2219(03) 00129-8. [3] R.A. Miller, Current status of thermal barrier coatings — An overview, Surf. Coatings Technol. 30 (1987) 1–11, https://doi.org/10.1016/0257-8972(87) 90003-X. [4] C. Piconi, G. Maccauro, Zirconia as a ceramic biomaterial, Biomaterials 20 (1999) 1–25, https://doi.org/10.1016/S0142-9612(98)00010-6. [5] J. Chevalier, What future for zirconia as a biomaterial? Biomaterials 27 (2006) 535–543, https://doi.org/10.1016/J.BIOMATERIALS.2005.07.034. [6] I. Denry, J.R. Kelly, State of the art of zirconia for dental applications, Dent. Mater. 24 (2008) 299–307, https://doi.org/10.1016/J.DENTAL.2007.05.007. [7] R.H. Hannink, P.M. Kelly, B.C. Muddle, Transformation toughening in zirconiacontaining ceramics, J. Am. Ceram. Soc. 83 (2000) 461–487. [8] P.M. Kelly, L.R. Francis Rose, The martensitic transformation in ceramics — its role in transformation toughening, Prog. Mater. Sci. 47 (2002) 463–557, https://doi. org/10.1016/S0079-6425(00)00005-0. [9] J. Luo, Z.M. Xiao, Transformation toughening behavior of two edge cracks emanating from a circular hole in zirconia ceramics, Int. J. Fract. 131 (2005) 351–366, https://doi.org/10.1007/s10704-004-5678-1. [10] R.M. Mcmeeking, A.G. Evans, Mechanics of transformation-toughening in brittle materials, J. Am. Ceram. Soc. 65 (1982) 242–246, https://doi.org/10.1111/j.11512916.1982.tb10426.x. [11] B. Budiansky, J.W. Hutchinson, J.C. Lambropoulos, Continuum theory of dilatant transformation toughening in ceramics, Int. J. Solids Struct. 19 (1983) 337–355, https://doi.org/10.1016/0020-7683(83)90031-8. [12] J.C. Lambropoulos, Effect of nucleation on transformation toughening, J. Am. Ceram. Soc. 69 (1986) 218–222, https://doi.org/10.1111/j.1151-2916.1986. tb07411.x. [13] D.M. Stump, B. Budiansky, Crack-growth resistance in transformation-toughened ceramics, Int. J. Solids Struct. 25 (1989) 635–646, https://doi.org/10.1016/00207683(89)90030-9. [14] I.-W. Chen, Model of transformation toughening in brittle materials, J. Am. Ceram. Soc. 74 (1991) 2564–2572, https://doi.org/10.1111/j.1151-2916.1991.tb06800.x. [15] G.T.M. Stam, E. van der Giessen, P. Meijers, Effect of transformation-induced shear strains on crack growth in zirconia-containing ceramics, Int. J. Solids Struct. 31 (1994) 1923–1948, https://doi.org/10.1016/0020-7683(94)90200-3. [16] A. Onuki, Ginzburg-landau approach to elastic effects in the phase separation of solids, J. Phys. Soc. Jpn. 58 (1989) 3065–3068, https://doi.org/10.1143/JPSJ.58. 3065. [17] L.-Q. Chen, A.G. Khachaturyan, Computer simulation of structural transformations during precipitation of an ordered intermetallic phase, Acta Metall. Mater. 39 (1991) 2533–2551, https://doi.org/10.1016/0956-7151(91)90069-D. [18] Y. Wang, A.G. Khachaturyan, Three-dimensional field model and computer modeling of martensitic transformations, Acta Mater. 45 (1997) 759–773, https://doi. org/10.1016/S1359-6454(96)00180-2. [19] M.A. Zaeem, S.D. Mesarovic, Morphological instabilities in thin films: Evolution
+maps, Comput. Mater. Sci. 50 (2011) 1030–1036, https://doi.org/10.1016/j. commatsci.2010.10.043. [20] M. Asle Zaeem, H. El Kadiri, S.D. Mesarovic, M.F. Horstemeyer, P.T. Wang, Effect of the compositional strain on the diffusive interface thickness and on the phase transformation in a phase-field model for Binary Alloys, J. Phase Equilibria Diffus. 32 (2011) 302–308, https://doi.org/10.1007/s11669-011-9905-y. [21] C. Miehe, M. Hofacker, F. Welschinger, A phase field model for rate-independent crack propagation: robust algorithmic implementation based on operator splits, Comput. Methods Appl. Mech. Eng. 199 (2010) 2765–2778, https://doi.org/10. 1016/j.cma.2010.04.011. [22] R. Spatschek, E. Brener, A. Karma, Phase field modeling of crack propagation, Philos. Mag. 91 (2011) 75–95. [23] C. Kuhn, A continuum phase field model for fracture, Eng. Fract. Mech. 77 (2010) 3625–3634, https://doi.org/10.1016/j.engfracmech.2010.08.009. [24] V. Hakim, A. Karma, Laws of crack motion and phase-field models of fracture, J. Mech. Phys. Solids. 57 (2009) 342–368, https://doi.org/10.1016/j.jmps.2008.10. 012. [25] A. Abdollahi, I. Arias, Phase-field simulation of anisotropic crack propagation in ferroelectric single crystals: effect of microstructure on the fracture process, Model. Simul. Mater. Sci. Eng. 19 (2011) 074010, , https://doi.org/10.1088/0965-0393/ 19/7/074010. [26] W.J. Boettinger, J.A. Warren, C. Beckermann, A. Karma, Phase-field simulation of solidification, Annu. Rev. Mater. Res. 32 (2002) 163–194, https://doi.org/10.1146/ annurev.matsci.32.101901.155803. [27] C. Beckermann, H.-J. Diepers, I. Steinbach, A. Karma, X. Tong, Modeling melt convection in phase-field simulations of solidification, J. Comput. Phys. 154 (1999) 468–496, https://doi.org/10.1006/jcph.1999.6323. [28] M.A. Zaeem, H. Yin, S.D. Felicelli, Comparison of cellular automaton and phase field models to simulate dendrite growth in hexagonal crystals, J. Mater. Sci. Technol. 28 (2012) 137–146, https://doi.org/10.1016/S1005-0302(12)60034-6. [29] R. Kobayashi, Modeling and numerical simulations of dendritic crystal growth, Phys. D Nonlinear Phenom. 63 (1993) 410–423, https://doi.org/10.1016/01672789(93)90120-P. [30] L.-Q. Chen, Phase-field models for microstructure evolution, Annu. Rev. Mater. Res. 32 (2002) 113–140, https://doi.org/10.1146/annurev.matsci.32.112001.132041. [31] M. Mamivand, M.A. Zaeem, H. El Kadiri, A review on phase field modeling of martensitic phase transformation, Comput. Mater. Sci. 77 (2013) 304–311, https:// doi.org/10.1016/j.commatsci.2013.04.059. [32] P.W. Anderson, E.I. Blount, Symmetry Considerations on martensitic transformations: “Ferroelectric”; Metals? Phys. Rev. Lett. 14 (1965) 217–219, https://doi.org/ 10.1103/PhysRevLett. 14.217. [33] J.D. Axe, Y. Yamada, Cubic-tetragonal elastic phase transformations in solids, Phys. Rev. B. 24 (1981) 2567–2569, https://doi.org/10.1103/PhysRevB.24.2567. [34] Y.-W. Cui, T. Koyama, I. Ohnuma, K. Oikawa, R. Kainuma, K. Ishida, Simulation of hexagonal–orthorhombic phase transformation in polycrystals, Acta Mater. 55 (2007) 233–241, https://doi.org/10.1016/j.actamat.2006.07.026. [35] Y.H. Wen, Y. Wang, L.Q. Chen, Phase-field simulation of domain structure evolution during a coherent hexagonal-to-orthorhombic transformation, Philos. Mag. A 80 (2000) 1967–1982, https://doi.org/10.1080/01418610008212146. [36] Y.H. Wen, Y. Wang, L.Q. Chen, Effect of elastic interaction on the formation of a complex multi-domain microstructural pattern during a coherent hexagonal to orthorhombic transformation, Acta Mater. 47 (1999) 4375–4386, https://doi.org/10. 1016/S1359-6454(99)00247-5. [37] O. Shchyglo, U. Salman, A. Finel, Martensitic phase transformations in Ni–Ti-based shape memory alloys: the Landau theory, Acta Mater. 60 (2012) 6784–6792, https://doi.org/10.1016/j.actamat.2012.08.056. [38] W.Z. Zhu, Grain size dependence of the transformation temperature of tetragonal to monoclinic phase in ZrO2(Y2O3) ceramics, Ceram. Int. 22 (1996) 389–395, https:// doi.org/10.1016/0272-8842(95)00120-4. [39] R.C. Garvie, Thermodynamic analysis of the tetragonal to monoclinic transformation in a constrained zirconia microcrystal, J. Mater. Sci. 20 (1985) 3479–3486, https://doi.org/10.1007/BF01113754. [40] M. Mamivand, M. Asle Zaeem, H. El Kadiri, L.-Q. Chen, Phase field modeling of the tetragonal-to-monoclinic phase transformation in zirconia, Acta Mater. 61 (2013) 5223–5235, https://doi.org/10.1016/J.ACTAMAT.2013.05.015. [41] C. Miehe, F. Welschinger, M. Hofacker, Thermodynamically consistent phase-field models of fracture: variational principles and multi-field FE implementations, Int. J. Numer. Methods Eng. 83 (2010) 1273–1311, https://doi.org/10.1002/nme.2861. [42] M.J. Borden, C.V. Verhoosel, M.A. Scott, T.J.R. Hughes, C.M. Landis, A phase-field description of dynamic brittle fracture, Comput. Methods Appl. Mech. Eng. 217 (2012) 77–95, https://doi.org/10.1016/j.cma.2012.01.008. [43] C. Hesch, K. Weinberg, Thermodynamically consistent algorithms for a finite-deformation phase-field approach to fracture, Int. J. Numer. Methods Eng. 99 (2014) 906–924, https://doi.org/10.1002/nme.4709. [44] T. Rabczuk, Computational methods for fracture in brittle and quasi-brittle solids: state-of-the-art review and future perspectives, ISRN Appl. Math. 2013 (2013), https://doi.org/10.1155/2013/849231. [45] I.S. Aranson, V.A. Kalatsky, V. Vinokur, Continuum Field Description of Crack Propagation, 2000. doi:10.1103/PhysRevLett.85.118. [46] A. Karma, D.A. Kessler, H. Levine, Phase-field model of mode III dynamic fracture, Phys. Rev. Lett. 87 (2001) 45501, https://doi.org/10.1103/PhysRevLett. 87. 045501. [47] L.O. Eastgate, J.P. Sethna, M. Rauscher, T. Cretegny, C.-S. Chen, C.R. Myers, Fracture in mode I using a conserved phase-field model, Phys. Rev. E. 65 (2002) 36117, https://doi.org/10.1103/PhysRevE.65.036117. [48] H. Henry, H. Levine, Dynamic instabilities of fracture under biaxial strain using a
+E. Moshkelgosha and M. Mamivand Computational Materials Science 174 (2020) 109509
+11
+
+
+phase field model, Phys. Rev. Lett. 93 (2004) 105504, , https://doi.org/10.1103/ PhysRevLett. 93.105504. [49] B. Bourdin, G.A. Francfort, J.-J. Marigo, Numerical experiments in revisited brittle fracture, J. Mech. Phys. Solids 48 (2000) 797–826, https://doi.org/10.1016/S00225096(99)00028-9. [50] B. Bourdin, G.A. Francfort, J.-J. Marigo, The variational approach to fracture, J. Elast. 91 (2008) 5–148, https://doi.org/10.1007/s10659-007-9107-3. [51] C. Kuhn, R. M“uller, A phase field model for fracture, Proc. Appl. Math. Mech. 8 (2008) 10223–10224. [52] H. Amor, J.J. Marigo, C. Maurini, Regularized formulation of the variational brittle fracture with unilateral contact: numerical experiments, J. Mech. Phys. Solids 57 (2009) 1209–1229. [53] M.J. Borden, H. Tjr, C.M. Landis, C.V. Verhoosel, A higher-order phase-field model for brittle fracture: formulation and analysis within the isogeometric analysis framework, Comput. Methods Appl. Mech. Eng. 273 (2014) 100–118. [54] L.D. Landau, E.M. Lifshitz, Statistical physics, Pergamon Press, Oxford, 1980. [55] G.A. Francfort, J.-J. Marigo, Revisiting brittle fracture as an energy minimization problem, J. Mech. Phys. Solids 46 (1998) 1319–1342, https://doi.org/10.1016/ S0022-5096(98)00034-9. [56] M. Ambati, T. Gerasimov, L. De Lorenzis, A review on phase-field models of brittle fracture and a new fast hybrid formulation, Comput. Mech. 55 (2015) 383–405, https://doi.org/10.1007/s00466-014-1109-y. [57] J.D. Clayton, J. Knap, Phase field modeling of directional fracture in anisotropic polycrystals, Comput. Mater. Sci. 98 (2015) 158–169, https://doi.org/10.1016/j. commatsci.2014.11.009. [58] T.T. Nguyen, J. Réthoré, M.-C. Baietto, Phase field modelling of anisotropic crack propagation, Eur. J. Mech. – A/Solids. 65 (2017) 279–288, https://doi.org/10. 1016/j.euromechsol.2017.05.002. [59] T. Zhao, J. Zhu, J. Luo, Study of crack propagation behavior in single crystalline tetragonal zirconia with the phase field method, Eng. Fract. Mech. 159 (2016) 155–173, https://doi.org/10.1016/J.ENGFRACMECH.2016.03.035. [60] A.G. Evans, R.M. Cannon, Toughening of brittle solids by martensitic transformations, Acta Metall. 34 (1986) 761–800. [61] T. Coyle, W. Coblenz, B.A. Bender, Transformation toughening in large-grain-size CeO2-Doped ZrO2 polycrystals, J. Am. Ceram. Soc. 71 (2005) C-88-C-92, https:// doi.org/10.1111/j.1151-2916.1988.tb05838.x. [62] M. Mamivand, M. Asle Zaeem, H. El Kadiri, Phase field modeling of stress-induced tetragonal-to-monoclinic transformation in zirconia and its effect on transformation toughening, Acta Mater. 64 (2014) 208–219, https://doi.org/10.1016/j.actamat. 2013.10.031. [63] M. Mamivand, M. Asle Zaeem, H. El Kadiri, Shape memory effect and
+pseudoelasticity behavior in tetragonal zirconia polycrystals: a phase field study, Int. J. Plast. 60 (2014) 71–86, https://doi.org/10.1016/j.ijplas.2014.03.018. [64] M. Mamivand, M. Asle Zaeem, H. El Kadiri, Effect of variant strain accommodation on the three-dimensional microstructure formation during martensitic transformation: application to zirconia, Acta Mater. 87 (2015) 45–55, https://doi.org/10. 1016/j.actamat.2014.12.036. [65] L.D. Landau, Collected Papers of L.D, Pergamon Press, Landau, Oxford, 1965. [66] A. Khachaturyan, Theory of structural transformations in solids, 1983. [67] A. Karma, D.A. Kessler, H. Levine, Phase-field model of mode III dynamic fracture, Phys. Rev. Lett. 87 (2001) 045501, , https://doi.org/10.1103/PhysRevLett. 87. 045501. [68] G.A. Francfort, J.J. Marigo, Revisiting brittle fractures as an energy minimization problem, J Mech Phys Solids. 46 (n.d.) 1319–1342. [69] S. Zhou, T. Rabczuk, X. Zhuang, Phase field modeling of quasi-static and dynamic crack propagation: COMSOL implementation and case studies, Adv. Eng. Softw. 122 (2018) 31–49, https://doi.org/10.1016/J.ADVENGSOFT.2018.03.012. [70] T.-T. Nguyen, J. Réthoré, J. Yvonnet, M.-C. Baietto, Multi-phase-field modeling of anisotropic crack propagation for polycrystalline materials, Comput. Mech. 60 (2017) 289–314, https://doi.org/10.1007/s00466-017-1409-0. [71] T.T. Nguyen, J. Yvonnet, Q.-Z. Zhu, M. Bornert, C. Chateau, A phase field method to simulate crack nucleation and propagation in strongly heterogeneous materials from direct imaging of their microstructure, Eng. Fract. Mech. 139 (2015) 18–39. [72] M.J. Borden, Isogeometric Analysis of Phase-Field Models for Dynamic Brittle and Ductile Fracture, The University of Texas at Austin, 2012. [73] N.K. Simha, Twin and habit plane microstructures due to the tetragonal to monoclinic transformation of zirconia, J. Mech. Phys. Solids. 45 (1997) 261–292, https:// doi.org/10.1016/S0022-5096(96)00074-9. [74] G. Bansal, A. Heuer, On a martensitic phase transformation in zirconia (ZrO2)—II Crystallographic aspects, Acta Metall. 22 (1974) 409–417, https://doi.org/10. 1016/0001-6160(74)90093-5. [75] G. Bansal, A. Heuer, On a martensitic phase transformation in zirconia (ZrO2)—I Metallographic evidence, Acta Metall. 20 (1972) 1281–1289, https://doi.org/10. 1016/0001-6160(72)90059-4. [76] A. Artemev, Y. Wang, A. Khachaturyan, Three-dimensional phase field model and simulation of martensitic transformation in multilayer systems under applied stresses, Acta Mater. 48 (2000) 2503–2518, https://doi.org/10.1016/S13596454(00)00071-9. [77] A. Artemev, Y. Jin, A.G. Khachaturyan, Three-dimensional phase field model of proper martensitic transformation, Acta Mater. 49 (2001) 1165–1177, https://doi. org/10.1016/S1359-6454(01)00021-0.
+E. Moshkelgosha and M. Mamivand Computational Materials Science 174 (2020) 109509
+12

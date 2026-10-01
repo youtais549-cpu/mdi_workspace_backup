@@ -1,0 +1,192 @@
+ホーム無機材料材料陶器セラミック工学物理材料科学耐火材
+記事PDFが入手可能
+デジタル画像相関法を用いて、通常の耐火陶器のR曲線決定
+2020年5月ヨーロッパ陶磁器学会ジャーナル 40巻13号
+DOI:10.1016/j.jeurceramsoc.2020.05.047
+著者:
+ヤジエ・ダイ
+武漢科技大学
+ハラルド・ハルムート
+Montanuniversität Leoben
+昇里金
+ディートマー・グルーバー
+Montanuniversität Leoben
+全5著者を表示
+引用(11回)
+参考文献(39)
+フィギュア(9)
+抽象と図形
+功績指標として、亀裂伝播抵抗と破壊起始抵抗の比率上昇は、通常の耐火セラミックスの脆性の低下と熱衝撃耐性の向上を示しています。重要な非線形破壊挙動は破壊過程ゾーン(FPZ)の発生に関連しています。汎用無次元荷重変位図法は、異なる脆性を示すマグネシア耐火材のR曲線を決定する有望な図解法として適用されています。デジタル画像相関(DIC)をグラフィカル法と組み合わせて適用することで、破壊起始抵抗の正確な決定と亀裂長の問題が解決されました。一方で、R曲線は破壊過程、すなわち破壊開始、FPZの発生、牽引フリーマクロ亀裂の開始に関して細分化されます。同時の亀裂長をDICで評価することで、各破壊過程が特定の荷重段階における亀裂伝播抵抗に与える寄与を定量的に示します。
+ウェッジ分割試験の概略的表現
+…
+無次元関数λ(a/W)およびY(a/W)の亀裂長への依存
+…
+マグネシアスピネル材料(a)およびマグネシア材料(b)の無次元荷重変位曲線(立体曲線:無次元実験曲線[17];点線および灰色曲線:
+…
+測定された水平変位に対するマグネシアスピネル材料の亀裂長の進化(I.: プレピーク領域における破壊開始;II.: 最大荷重;III.: ポストピーク領域におけるマクロ亀裂の発生)
+…
++4
+マグネシアスピネルの累積散逸エネルギー(a)および亀裂成長抵抗RC(b)
+…
+図 - Yawei Liによるアップロード著者によるコンテンツ
+コンテンツは著作権の対象となる場合があります。
+
+世界の研究を発見しよう
+
+2500万人+会員
+1億6千万+ページ
+23億+引用
+無料で参加してください
+公開全文1
+Yawei Liによるコンテンツアップロード
+著者によるコンテンツ
+コンテンツは著作権の対象となる場合があります。
+PDFのプレビューは提供されていません
+引用(11回)
+参考文献(39)
+... Although the so-called wedge splitting test, patented in 1986 by Tschegg [10], has become widely accepted for determining the fracture mechanical properties of carbon-bonded refractories due to its large fracture area as well as the promotion of stable crack propagation [11][12][13][14][15][16], three-point and four-point bending tests on MgO-C have been performed for this purpose in the past [17][18][19]. Such a test setup can be performed on conventional bending testing machines and no special testing devices are necessary, as long as the stiffness of the test setup is high compared to the specimens' stiffness. ...
+... In addition, the weak interface bonding forces between the coarse oxide grains and the carbonaceous matrix favor the following mechanisms during crack propagation: (i) crack deflection, (ii) crack blunting, (iii) development of crack networks, (iv) bridging/wedging/grain rotation, (v) crack closure, and (vi) friction. This was confirmed by using DIC during fracture mechanics tests at RT (see Fig. 4) and results in the formation of large process zones ahead of the crack, which is referred to as the fracture process zone (FPZ) by Ref. [11]. Fundamentally, the above-mentioned mechanisms are energy dissipating processes associated with crack propagation. ...
+... Refs. [11,18]. Despite the limited validity of the LEFM concept applied in this study, the calculation of the K Ic values allows a conservative, straightforward and comparative estimation of the crack resistance at different temperatures. ...
+Fracture mechanics behavior of coarse-grained MgO–C at room and high temperature
+Article
+Aug 2023CERAM INT
+Johannes Solarek
+Alexander SchrammSebastian Henkel
+H. Biermann
+View
+... The wedge splitting test is well suited to yield typical fracture parameters of refractories and to evaluate the characteristic fracture behavior, in comparison with the tensile test [29]. Enormous investigations mainly focused on pure magnesia and magnesiaspinel bricks [30][31][32][33][34][35][36]. The functions of hercynite, galaxite, and chromite in magnesia-based refractories were seldom studied, in terms of their fracture-resistant behaviors. ...
+... To classify refractories according to their reduced brittleness, which is closely related to thermal shock resistance, a brittleness number B, suggested by Harmuth [30], can be calculated by Equation (4) in Table 3. The initial Young's modulus E is assumed to be unchanged at the peak for the calculation of the stored elastic energy. ...
+Flexibilizing Mechanisms of Spinel-, Hercynite-, Galaxite-, and Chromite-Containing Basic Refractories for Cement Rotary Kilns
+Article
+Oct 2024
+Zongqi Guo
+Qiang Ding
+Haiwei Ding
+Wenjie Yuan
+View
+Show abstract
+... This results in stable crack propagation and consequently higher TSR [32]. The parameter l ch has therefore also been used as a TSR parameter for characterizing thermal shock in materials with short initial cracks [32][33][34]. ...
+Numerical Exploration of Thermal Shock Resistance in MgO–C Refractories
+Article
+Full-text available
+Mar 2026ADV ENG MATER
+Jishnu Vinayak GopiStephan Roth
+Christos G. Aneziris
+Björn Kiefer
+View
+Show abstract
+... As a non-contact optical measurement technique, it is widely used to measure the displacement and strain information on the surface of deformed objects both room and high temperatures. In the field of refractories research, the DIC technology is widely used to monitor the deformation and damage behavior of refractories under mechanical loading [33][34][35][36][37][38][39][40]. Additionally, by monitoring the interaction process between refractory materials and hightemperature molten slag, the DIC method can provide real-time information on the changes in surface morphology and the extent of damage of the materials [ 41,42 ], offering more accurate data support for understanding the behavior of refractories during the erosion process under coupled conditions. ...
+Investigation on Densification Mechanism of Calcium Hexaluminate Ceramics Using Digital Image Correlation Method
+Article
+Full-text available
+Jan 2026J AM CERAM SOC
+Xifei Zhang
+Ding ChenMaoqi Ju
+Shenghao Li
+View
+Show abstract
+... One of the simple and easy methods to evaluate the toughness of ceramic materials is a flexural test using samples introducing various types of notches including chevron notch or a single notch. From load-displacement curves of the flexural test, R-curve behavior can be evaluated [8,9]. Figure 1 illustrates the concept of R-curve behaviors and the related load-displacement curves. ...
+Mechanical Properties of CaO–Al2O3–SiO2 Glass-Ceramics Precipitating Hexagonal CaAl2Si2O8 Crystals
+Article
+Full-text available
+Apr 2021
+Kei Maeda
+Kosho Akatsuka
+Gaku OkumaAtsuo Yasumori
+View
+Show abstract
+... Notch Opening Displacements (NODs) were also assessed via DIC [13][14][15]. Displacement fields [7,10,[16][17][18][19][20] or strain fields [11][12][13][21][22][23][24][25][26][27][28][29][30][31][32][33][34][35][36][37][38][39] were mostly measured to assess the crack path, crack branching and crack length. Another advantage of such measurement technique is that it can also be deployed when performing high temperature WSTs [12,40]. ...
+Fracture Energy Evaluation of Refractories in Wedge Splitting Tests from Notch Opening Displacements
+Article
+Full-text available
+Mar 2021J EUR CERAM SOC
+Rafael Vargas
+Rodrigo Bresciani Canto
+François Hild
+View
+Show abstract
+Pore evolution and mechanical properties of carbon fiber laminates subjected to low-velocity impacts
+Article
+Sep 2025
+Zulu Tang
+Jun Ding
+Hua Xue
+Chengji Deng
+View
+Show abstract
+Influence of granulated graphite on fracture behavior of MgO–C refractories based on Brazilian splitting test with digital image correlation method and acoustic emission technique
+Article
+Jan 2024CONSTR BUILD MATER
+Xiaofeng Xu
+Yawei Li
+Yajie Dai
+Wen Yan
+View
+Brittleness reduction of low-carbon Al2O3-C refractories with in-situ formation MgAl2O4/CNTs layer between aggregate and matrix
+Article
+Nov 2023J EUR CERAM SOC
+Jiyuan LuoShengli Jin
+Xiaochuan Chong
+Guoqing Xiao
+View
+Unique properties and potential of glass-ceramics
+Article
+Full-text available
+Aug 2022J CERAM SOC JPN
+Tsuyoshi Honma
+Kei Maeda
+Shingo Nakane
+Kenji Shinozaki
+View
+Show abstract
+Show more
+Recommended publications
+Discover more about: Refractories
+Article
+Determination of the fracture behaviour of MgO-refractories using multi-cycle wedge splitting test a...
+July 2017 · Journal of the European Ceramic Society
+Yajie Dai
+Dietmar Gruber
+Harald Harmuth
+Refractories with reduced brittleness show a pronounced deviation from linear elastic behaviour and an enhanced thermal shock resistance. This paper aims to study the influence of microstructure on the fracture behaviour of magnesia refractories. The wedge splitting test(WST), which enables stable crack propagation for quasi-brittle materials, was used to identify the fracture behaviour and ... [Show full abstract]
+Read more
+Article
+Observation and quantification of the fracture process zone for two magnesia refractories with diffe...
+January 2016 · Journal of the European Ceramic Society
+Yajie Dai
+Dietmar Gruber
+Harald Harmuth
+In this paper, the formation of the fracture process zone (FPZ) of industrially produced magnesia spinel and magnesia refractories was analysed using digital image correlation (DIC). Compared to pure magnesia materials, the magnesia spinel materials exhibited a higher amount of microcracks, causing a larger FPZ. A critical displacement, where the cohesive stress between the crack faces decreases ... [Show full abstract]
+Read more
+Article
+Modelling and inverse investigation of the fracture process for a magnesia spinel refractory using a...
+July 2017 · Engineering Fracture Mechanics
+Yajie Dai
+Dietmar GruberShengli Jin
+Harald Harmuth
+The microcrack network that develops during the cooling stage of magnesia spinel refractories production process contributes to its heterogeneity. To simulate the fracture process of a magnesia spinel refractory subjected to a wedge splitting test, a heterogeneous continuum model with random distribution of the properties was developed. The tortuous crack path and fracture process development ... [Show full abstract]
+Read more
+Article
+Full-text available
+Fracture behavior of magnesia refractory materials under combined cyclic thermal shock and mechanica...
+October 2019 · Journal of the American Ceramic Society
+Yajie Dai
+Yawei Li
+Shengli Jin
+[...]
+Xiaofeng Xu
+To investigate the effect of cyclic thermal shock and mechanical loading on the fracture behavior of magnesia refractories showing different brittleness, the as‐received and cyclic thermally shocked specimens are subjected to monotonic and cyclic wedge splitting test. The whole duration of test is monitored by digital image correlation and acoustic emission. Both thermal and mechanical fatigue ... [Show full abstract]
+View full-text
+無料で参加してください
+ログイン
+Company
+About us
+News
+Careers
+Support
+Help Center
+Business solutions
+Advertising
+Recruiting
+© 2008-2026 ResearchGate GmbH. All rights reserved.
+TermsPrivacyCopyrightImprintConsent preferences

@@ -1,0 +1,205 @@
+Griffith Criterion for Brittle Fracture in Graphene
+Hanqing Yin,† H. Jerry Qi,‡ Feifei Fan,‡ Ting Zhu,‡ Baolin Wang,† and Yujie Wei*,†
+†LNM, Institute of Mechanics, Chinese Academy of Sciences, Beijing 100190, China
+‡The George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, Georgia 30332, United States
+*
+S Supporting Information
+ABSTRACT: There are prevailing concerns with the critical dimensions when conventional theories break down. Here we find that the Griffith criterion remains valid for cracks down to 10 nm but overestimates the strength of shorter cracks. We observe the preferred crack extension along the zigzag edge in graphene, and explain this phenomenon by local strength-based failure rather than energy-based Griffith criterion. These results provide a mechanistic basis for reliable applications of graphene in miniaturized devices and nanocomposites.
+KEYWORDS: Griffith criterion, graphene, fracture, edge energy, molecular dynamics
+M
+ost mechanical theories used in engineering practice are developed for relatively large structures. Their applicability in nanoscale systems is however uncertain. The continuum theories usually work well for the collective behavior of a large ensemble of basic building blocks like atoms or molecules but are not guaranteed to hold when they are applied to systems composed of a limited number of basic units. Indeed, deviation of certain properties in small systems from
+their bulk counterparts is foreseen by Feynman.1 The ensuing question is whether or not there is a critical size for a theory, below which this theory fails to adequately capture the physical behavior of a miniaturized system. For engineering applications, knowing such critical size is of paramount significance for the design of small structures that are mechanically reliable. The Griffith criterion of brittle fracture is one of the most fundamental theories for characterizing the mechanical behavior of defective materials and has been widely used in
+engineering design.2,3 In this work, we explore the physical limit of the Griffith criterion, that is, when it fails to predict the fracture strength of materials with small nanosized cracks. The challenge to address such question of size limit lies in the difficulty to bridge the studies of microscopic and macroscopic systems by either experiments or atomistic simulations. On one hand, while progress has been recently made in the nano
+mechanical testing of materials,4−9 it is still difficult to conduct a series of controlled experiments by systematically reducing the sample size while retaining the consistent microstructural features. On the other hand, molecular dynamics (MD) simulations can effectively explore brittle fracture at the atomic
+scale,10−14 but full atomistic simulations are yet too computationally expensive to simulate three-dimensional systems with feature size larger than 100 nm. To understand the applicability of the continuum mechanics theory to a discrete atomistic system, it is necessary to probe the mechanical behavior of sufficiently large samples with atomic resolution. To this end, graphene is an ideal model material to investigate the critical size when the Griffith
+criterion of brittle fracture breaks down. This is because the
+monolayer graphene is only one atom thick15 such that the inplane dimensions can be taken to be adequately large (e.g., up to micrometers) in order for reducing the sample size effects on both the fracture mode and load without significantly increasing the computational cost. Samples with such dimensions are
+already accessible by recent cutting-edge experiments.4−9
+Graphene is brittle in nature. It has ultrahigh strength5 and
+exhibits negligible plasticity until failure at room temperature.16
+In addition, its elastic response is isotropic17 at small strains. The behavior of graphene has been explored in recent
+years.13,14,17−27 A recent investigation suggested that the
+Griffith criterion is sound in cracks as short as 1 nm.14 Because the authors used a tangential modulus (pertinent to the failure strain in a stress−strain curve) in the Griffith equation and also only considered cracks shorter than 3 nm, it is not clear whether the same equation can be applied to predict cracks with length of 3 nm to tens of nanometer. Hence, it remains unclear regarding the critical crack size when the Griffith criterion of brittle fracture breaks down. In this paper, we use atomistic simulations to determine the critical crack size. We show that the Griffith fracture stress in precracked single-layer graphene from MD simulations deviates from that predicted by Griffith’s criterion as the crack size is below ∼10 nm. We further investigate the orientation dependence of fracture behaviors and properties, including crack propagation, failure strength, and failure strain in graphene. We first study the ideal tensile strength of pristine graphene as a function of loading orientation by using the density functional theory (DFT) and energy minimization calculations. The detailed computational procedure has been previously
+described in reference.26 In Figure 1a, we define θ as the angle
+Received: December 11, 2014 Revised: February 4, 2015 Published: February 18, 2015
+Letter
+pubs.acs.org/NanoLett
+© 2015 American Chemical Society 1918 DOI: 10.1021/nl5047686 Nano Lett. 2015, 15, 1918−1924
+Downloaded via YOKOHAMA NATL UNIV on May 19, 2026 at 07:19:52 (UTC).
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+
+
+between the tensile loading direction (along x-axis) and the zigzag edge. When θ = 0°, the x−y spatial coordinate system overlaps with the ZZ−AC lattice coordinate system. In this case, the strength of the armchair plane is determined by the loading along the zigzag direction. When θ = 30°, the strength of the zigzag plane is determined by the loading along the armchair direction. Note that when θ = 0°, the critical bonds labeled by A1, A2,... form an angle of 30° with respect to the loading direction; when θ = 30°, the critical bonds are Z1, Z2,..., which form an angle of 0° with respect to the loading direction. The stress−strain curves of pristine graphene for several θ values are shown in Figure 1b. The anisotropic mechanical properties in other two-dimensional (2D) materials, including hexagonal boron-nitride (h-BN), fluorographene (CF), and MoS2, are also plotted in Figure 1c−e, respectively. The detailed atomic structures of samples along different orientations are given in Supporting Information Figure 1. If the breaking strength of an individual C−C bond is σb, we can determine the stress to break the armchair plane or the zigzag plane for the loading conditions shown in Figure 1a. By decomposing the applied stress to its component along the direction of individual bonds, we derive the critical stresses to break the zigzag plane (composed of bonds Z1, Z2,... in Figure 1a) as
+σ
+sin(60 + θ)
+b
+o (1)
+Similarly, the critical stresses to break the armchair plane (composed of bonds A1, A2,... in Figure 1a) are
+σ
+θ +θ + −θ
+2
+{cos [cos(30 ) cos(30 )]}
+b
+o o (2)
+Equation 2 is obtained by resolving the applied stress to bonds A1, A3,... (forming an angle of 30° − θ with the applied stress) and to A2, A4,... (with an angle of 30° + θ), respectively. While
+more sophisticated nonlinear factors28 can be considered to capture the strength-orientation dependence of pristine graphene, eq 1 can capture the strength of several 2D materials loaded along different directions, as seen in Figure 2a. In addition, we show in Figure 2b the critical stress to break the zigzag planes and the armchair planes given respectively by eqs 1 and 2 as θ varies from 0 to 30°. The required stress to break the zigzag plane and that to break the armchair plane at different angle θ differ significantly, with the latter being greater than the former. When applying a load along the armchair direction, the resolved tensile stress along C−C bonds perpendicular to the zigzag plane (Z1, Z2, ...) is higher than that along A1, A2,...bonds. This explains why the strength of the zigzag plane is lower. Our DFT results of the ideal strength show the orientation dependence different from the DFT
+results of the edge energy from Kim et al.24 This difference implies that one may need to distinguish the brittle fracture governed by the ideal strength with that by the edge energy. Given the strong orientation dependence of the ideal tensile strength in pristine graphene, we further study the orientation dependence of the critical crack size during brittle fracture of precracked graphene. We choose graphene samples with sufficiently large dimensions in order for reducing the boundary effects on the simulated fracture mode and load. The adaptive intermolecular reactive empirical bond order (AIREBO)
+Figure 1. Stress strain curves of several pristine two-dimensional materials with the hexagonal lattice while loaded along different directions. (a) Illustration of loadings applied along different directions and the critical bonds. The graphene lattice is oriented in a way that the angle between the armchair direction (AC) and the y-axis is θ. Hence, the angle between the zigzag direction (ZZ) and the x-axis is 30° − θ. The load is applied along x-axis. (b−e) Respective stress−strain curve of pristine graphene, MoS2, hexagonal boron-nitride, and fluorographene subjected to tensile loading
+along different orientations.
+Nano Letters Letter
+DOI: 10.1021/nl5047686 Nano Lett. 2015, 15, 1918−1924
+1919
+
+
+potential29 for carbon is used. To facilitate the simulation of brittle fracture, we adopt a modified switch function parameter rcc = 1.92 Å (Table 1 in ref 29), beyond which the C−C bond
+breaks. It has been previously shown that the stress−strain behavior of graphene obtained by using this parameter in
+AIREBO matches well with first-principles calculations.21 All MD simulations are performed using the NVT ensemble in
+LAMMPS,30 and the system is maintained at 1 K. A constant time step of 1 fs is used. After structure relaxation, uniaxial tension (perpendicular to the crack) is applied to the MD supercell. We define the orientation of a crack by following the conventional definition of the chirality of carbon nanotubes and graphene. The orientation of a single layer graphene is described by two vectors a1 and a2, and the crack edge is described by a chiral vector Ch = na1 + ma2. The armchair and the zigzag directions correspond to Ch = (1,1) and Ch = (1,0), respectively. We consider the graphene with a central crack of length 2a and apply loading perpendicular to the crack. We perform simulations for samples with crack edges along five directions: Ch = (1,1), (5,8), (2,5), (2,11), and (1,0). Recall
+that in Figure 1a, we define θ as the angle between the loading direction and the zigzag direction, such that θ also represents the angle between the crack edge and the armchair direction. The detailed information about chirality of the crack edge and θ is provided in Table 1. Figure 3 shows the mechanical behaviors for precracked graphene stripes (with in-plane dimensions of 100 nm by 75 nm and under periodic boundary conditions in both directions). The stress fields of σxx from theoretical prediction (Figure 3a) and MD simulations in precracked graphene stripes (Figure 3b, 2a = 20 nm; Figure 3c, 2a = 6 nm) under tension are shown, respectively. MD results in samples with large cracks match well with theoretical prediction, but the magnitude of stresses in samples with small cracks show significant deviation from theoretical prediction. We also plot the stress fields of σxx,
+σyy, and σxy from MD simulations for two samples with different
+crack lengths in Supporting Information Figure 2. The stress− strain curves for samples with different initial precrack lengths (with crack edges all along the armchair direction) are shown in
+Figure 2. Theoretical prediction on the strength-orientation relationship and the stress to tear apart the armchair planes and the zigzag planes in graphene. (a) Failure strength as a function of loading orientations for several single layer two-dimensional materials; symbols show DFT calculations and solid lines theoretical predictions from eq 1 (h-BN, hexagonal boron-nitride; CF, fluorographene). (b) The critical load to break the zigzag plane (composed of bonds Z1, Z2,... in Figure 1a) and the armchair plane (composed of bonds A1, A2,... in Figure 1a). The latter is always higher than the former, suggesting preferred crack extension along the zigzag direction.
+Table 1. Crack/Loading Angle, Crack Chirality, and the Apparent Fracture Resistance ΓG Predicted by the Griffith Criterion (Obtained through Fitting the Strength versus Crack Length Curve by Using Equation 3) and ΓMD from MD Simulations by Calculating the Energy of Free Edges along Those Particular Chiralities
+crack angle θ 0° 7.5° 15.9° 22.5° 30° chirality Ch (m,n) (1,1) (5,8) (2,5) (2,11) (1,0) ΓG 15.9 15.1 14.0 13.5 11.0 ΓMD 11.7 12.7 13.1 13.4 11.0
+Figure 3. Mechanical behavior of cracked graphene. (a−c) Stress fields of σxx in graphene when the crack is along the armchair direction and loaded along the horizontal direction. (a) Theoretical prediction with 2a = 20 nm; (b) MD simulation with 2a = 20 nm; (c) MD simulation with 2a = 6 nm. (d) Stress−strain curves for cracks along the armchair direction and with different initial lengths. (e−i) Fracture strength as a function of crack length for samples loaded along different directions (solid lines, theoretical results from eq 3; symbols, MD simulations); (e) θ = 0, (f) θ = 7.5°, (g) θ = 15.9°, (h) θ = 22.5°, and (i) θ = 30°.
+Nano Letters Letter
+DOI: 10.1021/nl5047686 Nano Lett. 2015, 15, 1918−1924
+1920
+
+
+Figure 3d. Similar MD simulations are performed for samples with cracks along other directions. It is noted that the choice of crack-tip atomic configuration is not unique, which might influence crack propagation that is sensitive to the local atomic bonding. To avoid this sensitivity, we keep the crack tip structure in a self-similar manner so that the crack tip structure remains the same as crack size changes. This ensures a selfconsistent comparison of cracks with different lengths. According to the Griffith criterion, the critical fracture stress σf (i.e., the so-called Griffith stress) for a stripe with a central crack is given as2,31
+σ φπ
+=Γ
+F
+E a
+1 ()
+f (3)
+where E is Young’s modulus, Γ is the apparent fracture resistance of the crack plane.31 In brittle materials, Γ is also the surface energy for 3D materials and edge energy for 2D materials. In eq 3, F(φ) is a geometrical factor given by
+φ = − φ + φ πφ φ =
+⎜⎟
+⎛ ⎝
+⎞ ⎠
+FW
+a
+( ) (1 0.025 0.06 ) sec 2 , and 2
+24
+(4)
+where W is the width of the stripe with a central crack of length 2a. We plot in Figure 3e− i the calculated Griffith strength as a function of crack length for samples loaded along different directions, which correspond in turn to crack angles θ = 0, 7.5, 15.9, 22.5, 30. The dashed lines are fitted to MD results by adjusting the apparent fracture resistance Γ in eq 3. The arrows point to the crack size below which the fitting curves deviate significantly from MD results. Hereafter, the apparent fracture resistance obtained by fitting eq 3 to the σf versus a curve is
+denoted as ΓG, and the edge energy obtained from MD
+simulations (by calculating the energy difference for graphene samples with and without edges) as ΓMD. We shall discuss later
+why we do not use ΓMD in eq 3. In Figure 3e, we obtain the
+apparent fracture resistance of ΓG = 15.9 J/m2 when the crack is along the armchair direction (m,n) = (1,1). We note this result of apparent fracture resistance is close to the experimentally
+measured value9 but significantly higher than the edge energy
+Figure 4. Orientation-dependent edge energy and failure strain in graphene. (a) The apparent fracture resistance ΓG obtained by fitting to the
+Griffith equation and the edge energy ΓMD obtained by comparing the energy difference between samples with and without edges from MD
+simulations. (b) MD results of fracture of pristine graphene without crack, showing the atomic structure (right) at the failure point in the stress− strain curves (left). Both the strength and the strain-to-failure to tear apart the armchair edge (AE) is higher than those to break the zigzag edge (ZE), implying that initial bond breaking may prefer to start along the zigzag edges where bonding is relatively weaker.
+Figure 5. Atomic structures before (first row) and right after (second row) crack extension, showing the crack kinking responses in MD simulations. (a) Initial crack along the armchair direction (θ = 0) and kinking to the zigzag direction. (b) θ = 15.9°, kinking to the zigzag direction. (c) θ = 22.5° and kinking to the zigzag direction. (d) θ = 30°, no kinking as the crack is initially along the zigzag direction.
+Nano Letters Letter
+DOI: 10.1021/nl5047686 Nano Lett. 2015, 15, 1918−1924
+1921
+
+
+from first-principles calculations of ∼10 J/m2.32−34 When the crack length is as small as 6 nm, the theoretical Griffith stress, as calculated from eq 3, still agrees well with that from MD simulations. It is apparently higher than MD results when the crack is shorter than 6 nm. If we regard a good prediction as the one when the theoretical Griffith stress is no more than 15% higher than MD results, we see that the Griffith criterion works well for crack with an initial length as small as 10 nm, as shown in Figure 3e−i. The difference is significant if the crack becomes shorter. While we have shown the predictability of the Griffith criterion for cracks down to 10 nm in Figure 3, one interesting observation deserves further study. In contrast to experimental measurement, the apparent fracture resistance ΓG varies greatly
+along different directions. Furthermore, ΓG also differs from the
+edge energy ΓMD, as summarized in Table 1 and seen in Figure
+4a. At smaller crack orientation θ, the difference between ΓG
+(black circles) and ΓMD (red squares) is greater, and it
+disappears when the initial crack is along the zigzag direction (θ = 30°). We further show the edge energy from our DFT calculations in Figure 4a (blue triangles) and note that ΓDFT
+along the armchair direction is 9.0 J/m2 and that along the zigzag direction it is 12 J/m2. These values are close to previous
+DFT calculations.32−34 Despite the difference of edge energies between MD and DFT results, both methods predict that the strength required to tear apart zigzag planes (loading along armchair) is lower than that to break armchair planes (loading
+along zigzag).21 The stress−strain behavior of graphene from MD simulations (from ref 26) shown in Figure 4b shows not only the strength to tear apart armchair edges is greater than that to break zigzag edges but also the strain to failure is dramatically larger. This result, combined with our analysis in Figure 2, may imply that the Griffith strength for nanosized cracks is governed by the local properties of bond breaking at the crack tip instead of the global energy balance of crack extension, as will be discussed next. To shed light on the difference between the apparent fracture resistance ΓG and the edge energy ΓMD, we explore the crack
+extension path at the atomic scale. Figure 5a−e illustrates the precracks with similar initial lengths but along different orientations. The bottom parts of the figures show the representative MD snapshots (which correspond to Figure 5a−e, respectively) after these cracks start to propagate. The salient features of MD simulations are the crack kinking behavior and the preferred crack path along the zigzag direction. Deviation of the actual crack path from the initial crack plane requires a higher crack driving force, that is, strain energy release rate, to extend the crack. This explains the apparent difference between ΓG and ΓMD shown in Figure 4. It is also interesting to see that the cracks may further deviate from the initial zigzag plane and kink to an alternative zigzag plane, forming a macroscopically straight yet microscopically zigzaged crack path, as seen in Figure 5a−e. While graphene (and probably other type of two-dimensional materials as well) fails in a brittle manner, the kinked crack dissipates more energy than the straight one. As a result, the difference between ΓG and ΓMD is the largest when the initial crack plane lies along the armchair direction, which deviates most from the zigzag direction (Figure 5a). As such deviation is reduced (see Figure 5b−e), the difference between ΓG and ΓMD becomes smaller and eventually disappears (Figure 4) when the initial crack is aligned with the zigzag direction (Figure 5e). The fact that these precracks with different orientations all prefer to kink to
+the zigzag direction is counterintuitive from the energy perspective as we expect cracks propagate along the edge with the lowest fracture resistance. For example, a crack with the initial armchair edge was thought to extend in a straight path, which is more energetically favorable rather than the kinked path along to the zigzag direction. Our MD result hence suggests that the initiation of crack extension, which determines the apparent Griffith strength, is governed by the strength of atomic bonds at the crack tip, rather than the lowest fracture resistance ΓMD, as the critical stress to tear apart zigzag planes is the lowest (as demonstrated in Figure 2). The difference between ΓG and ΓMD, combining with the preference of crack growth along the zigzag direction where strength is lower, raises the question why the Griffith criterion works well at large cracks, that is, 2a > 10 nm, but not for small ones. Indeed, both the Griffith theory and the theory of maximum crack−tip strength give the same dependence of farfield fracture stress on crack length, if a crack is sufficiently long
+and accordingly the Inglis solution35 of stress concentration is close to the stress field given by a sharp Griffith crack. For a crack of length 2a, the local maximum tensile stress at the crack tip σlocal from the Inglis solution is known as
+σ = + ρ σ∞
+⎛
+⎝⎜ ⎞
+a ⎠⎟
+12
+local
+(5)
+where σ∞ is the far-field tensile stress perpendicular to the crack
+plane, and ρ is the crack root radius. Since a ≫ ρ, when 2a > 10 nm, we have
+ρσ ≅σ ≤σ
+∞
+a
+2 local c (6)
+Here σc is the strength of the crack−tip bond. Hence, the Inglis
+solution gives the far-field fracture stress of a sample with a central crack of length 2a as
+σ σρ
+∞=
+a−
+4 ()
+c
+2
+0.5
+(7)
+The above equation, as derived from the maximum strength of the crack-tip bond, has the same functional dependence on crack length as the Griffith criterion
+σπ
+= Γ−
+E (a)
+f
+0.5
+(8)
+We see from eqs 7 and 8 that both the theory of maximum crack-tip strength and the Griffith theory give the same prediction for large crack size when the Inglis solution of stress
+concentration35 at a crack tip remains valid, and the bond strength times the square-root of the crack length is a material constant. In the Inglis theory, the constant involves atomic strength and atomic size. In the Griffith theory, the constant
+involves Young’s modulus and surface energy.31,35,36 The two fracture criteria, that is, eqs 7 and 8, start to deviate from each other when the crack length becomes smaller than ∼10 nm. This is because for such small crack sizes, the “Inglis crack”, that is, an elliptic hole, has a relatively small ratio between its long and short axes and thus is not equivalent to a sharp Griffith crack, as illustrated by the stress fields in Figure 3 and Supporting Information Figure 2. Because the Griffith criterion of eq 3 cannot be directly applied to predict the fracture strengths of samples with cracks
+Nano Letters Letter
+DOI: 10.1021/nl5047686 Nano Lett. 2015, 15, 1918−1924
+1922
+
+
+less than 10 nm, we propose the following fracture criterion in terms of failure strain εf for nanosized cracks:
+φ
+α
+π
+ε= Γ
+FE
+E
+a
+1 ()
+f (9)
+This failure strain criterion is based on the strength criterion in eq 3 with an effective geometrical correction, accounting for the fact that a small Inglis crack-like defect is no longer a strictly Griffith sharp crack. The coefficient α in eq 9 is a fitting parameter for cracks along the armchair direction. Here α is equal to 3 and remains constant for prediction of the failure strain of cracks along other directions. Note that there might exist nonlinear effects, as periodically placed cracks may interact with each other in relatively small MD systems, and give rise to variation in α for long cracks in periodic arrays. Figure 6 shows the predictions from eq 9 well match MD simulations even for samples with small crack sizes down to 2 nm. As large area graphene samples (or other 2D materials) are being increasingly used for reinforcing components in nano
+composites,37−39 nano to microscale defects could become a significant strength-limiting factor. There is currently a critical need to understand the strength and failure strain of those defective 2D materials. On the basis of MD simulations, we find that predictions from the Griffith criterion for the strength of precracked graphene match well with MD simulations until a crack size is less than 10 nm. However, the difference between the Griffith stresses and MD results can be as large as 15% when the crack size is below 10 nm. To address this issue, we propose eq 9 that captures the failure strain for samples with crack size as short as 2 nm. Our MD simulations also reveal that the precrack tends to kink along the zigzag direction. As a result of crack kinking, the apparent fracture resistance, which is determined by fitting to the Griffith criterion of eq 3, is higher than that from direction MD calculations of edge energy. Crack kinking is likely governed by the strength of atomic bonds, that is, the critical stress at the crack tip to tear apart graphene, instead of the edge energy. Our work on the breakdown crack size for the Griffith criterion is valuable for the future analysis of
+brittle fracture in 2D materials containing nanoscale defects.
+■
+ASSOCIATED CONTENT
+*
+S Supporting Information
+Atomistic structures of crack edges and the stress fields of cracks of different length are supplied. This material is available
+free of charge via the Internet at http://pubs.acs.org.
+■
+AUTHOR INFORMATION
+Corresponding Author
+*E-mail: yujie_wei@lnm.imech.ac.cn.
+Notes
+The authors declare no competing financial interest.
+■
+ACKNOWLEDGMENTS
+Y.W. acknowledges the support from NSFC (Grants 11425211, 11021262, 11272327), and from MOST 973 of China (Nr. 2012BC937500). H.J.Q. acknowledges the support from AFOSR (FA9550-13-1-0088). T.Z. acknowledges the support from NSF (CMMI-1100205). Computation is supported by the
+Supercomputing Center of CAS.
+■
+REFERENCES
+(1) Feynman, R. P. J. Microelectromech. Syst. 1992, 1, 60. (2) Bazant, Z. P.; Planas, J. Fracture and Size Effect: In Concrete and Other Quasi Brittle Materials; Taylor & Francis, CRC Press: Boca Raton, FL, 1998.
+(3) Anderson, T. L. Fracture Mechanics: Fundamentals and Applications, 3rd ed.; Taylor & Francis, CRC Press: Boca Raton, FL, 2005. (4) Koenig, S. P.; Boddeti, N. G.; Dunn, M. L.; Bunch, J. S. Nat. Nanotechnol. 2011, 6, 543.
+(5) Lee, G. H.; Cooper, R. C.; An, S. J.; Lee, S.; van der Zande, A.; Petrone, N.; Hammerberg, A. G.; Lee, C.; Crawford, B.; Oliver, W.; Kysar, J. W.; Hone, J. Science 2013, 340, 1073. (6) Lee, C.; Wei, X.; Kysar, J. W.; Hone, J. Science 2008, 321, 385. (7) Rasool, H. I.; Ophus, C.; Klug, W. S.; Zettl, A.; Gimzewski, J. K. Nat. Commun. 2013, 4, 2811.
+(8) Sen, D.; Novoselov, K. S.; Reis, P. M.; Buehler, M. J. Small 2010, 6, 1108. (9) Zhang, P.; Ma, L.; Fan, F.; Zeng, Z.; Peng, C.; Loya, P. E.; Liu, Z.; Gong, Y.; Zhang, J.; Zhang, X.; Ajayan, P. M.; Zhu, T.; Lou, J. Nat. Commun. 2014, 5, 3782.
+(10) Zhang, S.; Meilke, S. L.; Khare, R.; Troya, D.; Ruoff, R. S.; Schatz, G. C.; Belytschko, T. Phys. Rev. B 2005, 71, 115403. (11) Zhang, S.; Zhu, T.; Belytschko, T. Phys. Rev. B 2007, 76, 094114. (12) Huang, S.; Zhang, S.; Belytschko, T.; Terdalkar, S. S.; Zhu, T. J. Mech. Phys. Solids 2009, 57, 840−850.
+(13) Zhang, B.; Mei, L.; Xiao, H. Appl. Phys. Lett. 2012, 101, 121915. (14) Dewapriya, M. A. N.; Rajapakse, R. K. N. D.; Phani, A. S. Int. J. Fract. 2014, 187, 199−212.
+(15) Geim, A. K.; Novoselov, K. S. Nat. Mater. 2007, 6, 183. (16) Liu, F.; Ming, P.; Li, J. Phys. Rev. B 2007, 76, 064120. (17) Pereira, V. M.; Castro Neto, A. H.; Peres, N. M. R. Phys. Rev. B 2012, 80, 045401. (18) Grantab, R.; Shenoy, V. B.; Ruoff, R. S. Science 2010, 330, 946. (19) Khare, R.; Mielke, S. L.; Paci, J. T.; Zhang, S.; Ballarini, R.; Schatz, G. C.; Belytschko, T. Phys. Rev. B 2007, 75, 075412. (20) Moura, M. J. B.; Marder, M. Phys. Rev. E 2013, 88, 032405. (21) Wei, Y.; Wu, J.; Yin, H.; Shi, X.; Yang, R.; Dresselhaus, M. S. Nat. Mater. 2012, 11, 759.
+(22) Zhang, T.; Li, X.; Kadkhodaei, S.; Gao, H. Nano Lett. 2012, 12, 4605. (23) Zhao, H.; Aluru, N. R. J. Appl. Phys. 2010, 108, 064321.
+Figure 6. Theoretical prediction of the failure strain in cracked graphene. (a−e) Comparison of failure strains between the theoretical predictions from eq 9 and the direct MD results. (a) θ = 0, (b) θ = 7.5°, (c) θ = 15.9°, (d) θ = 22.5°, and (e) θ = 30°.
+Nano Letters Letter
+DOI: 10.1021/nl5047686 Nano Lett. 2015, 15, 1918−1924
+1923
+
+
+(24) Kim, K.; Artyukhov, V. I.; Regan, W.; Liu, Y.; Crommie, M. F.; Yakobson, B. I.; Zettl, A. Nano Lett. 2012, 12, 293. (25) Song, Z.; Artyukhov, V. I.; Yakobson, B. I.; Xu, Z. Nano Lett. 2013, 13, 1829. (26) Wang, B.; Wu, J.; Gu, X.; Yin, H.; Wei, Y.; Yang, R.; Dresselhaus, M. Appl. Phys. Lett. 2014, 104, 081902. (27) Sha, Z. D.; Quek, S. S.; Pei, Q. X.; Liu, Z. S.; Wang, T. J.; Shenoy, V. B.; Zhang, Y. W. Sci. Rep. 2014, 4, 5991. (28) Jiang, J. W.; Wang, J. S.; Li, B. Elastic and nonlinear stiffness of graphene: A simple approach. Phys. Rev. B 2010, 81, 073405. (29) Stuart, S. J.; Tutein, A. B.; Harrison, J. A. J. Chem. Phys. 2000, 112, 6472. (30) Plimpton, S. J. Chem. Phys. 1995, 117, 1.
+(31) Griffith, A. A. Philos. Trans. R. Soc. London 1921, A221, 163. (32) Koskinen, P.; Malola, S.; Hakkinen, H. Phys. Rev. Lett. 2008, 101, 115502. (33) Huang, B.; Liu, M.; Su, N.; Wu, J.; Duan, W.; Gu, B. L.; Liu, F. Phys. Rev. Lett. 2009, 102, 166404.
+(34) Lu, Q.; Huang, R. Phys. Rev. B 2010, 81, 155410. (35) Suo, Z. Inglis (1913) vs. Griffith (1921), http://imechanica.org/ node/16034 (2014).
+(36) Inglis, G. E. Trans. Inst. Nay. Arch. 1913, 55, 219.
+(37) Stankovich, S.; Dikin, D. A.; Dommett, G. H. B.; Kohlhaas, K. M.; Zimney, E. J.; Stach, E. A.; Piner, R. D.; Nguyen, S. T.; Ruoff, R. S. Nature 2006, 442, 282.
+(38) Ramanathan, T.; Abdala, A. A.; Stankovich, S.; Dikin, D. A.; Herrera-Alonso, M.; Piner, R. D.; Adamson, D. H.; Schniepp, H. C.; Chen, X.; Ruoff, R. S.; Nguyen, S. T.; Aksay, I. A.; Prud’Homme, R. K.; Brinson, L. C. Nat. Nanotechnol. 2008, 3, 327. (39) Compton, O. C.; Cranford, S.; Putz, K.; An, Z.; Brinson, L. C.; Buehler, M. J.; Nguyen, S. T. ACS Nano 2012, 6, 2008.
+Nano Letters Letter
+DOI: 10.1021/nl5047686 Nano Lett. 2015, 15, 1918−1924
+1924

@@ -1,0 +1,436 @@
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+Available online 8 April 2022 0167-8442/© 2022 Elsevier Ltd. All rights reserved.
+Prediction of crack nucleation and propagation in porous ceramics using the phase-field approach
+A. Abaza a,*, J. Laurencin a,*, A. Nakajo b, S. Meille c, J. Debayle d, D. Leguillon e
+a Univ. Grenoble Alpes – CEA/LITEN, 17 rue des Martyrs, 38054 Grenoble, France
+b Ecole Polytechnique Fe ́de ́rale de Lausanne, 1015 Lausanne, Switzerland
+c Univ Lyon, INSA Lyon, UCBL, CNRS, MATEIS, UMR 5510, 20 Av. A. Einstein, F-69621 Villeurbanne, France
+d Ecole National Sup ́erieure des Mines de Saint-Etienne, SPIN, CNRS 5307, LGF, F-42023 Saint-Etienne, France
+e Institut Jean le Rond d’Alembert, Sorbonne Universite ́, CNRS, UMR 7190, F-75005 Paris, France
+ARTICLE INFO
+Keywords:
+Porous ceramics Fracture Crack nucleation Phase-field modeling Coupled criterion
+ABSTRACT
+The relevance of the phase-field approach to simulate the fracture in porous ceramics has been investigated. For this purpose, the conditions for the crack initiation using the phase-field model have been compared to the theoretical predictions of the coupled criterion considering a pure V-notch singularity and a crack blunted by a cavity. For two types of ceramics (3YSZ and 8YSZ), it has been shown that the phase-field approach is able to simulate accurately the crack nucleation as predicted by the coupled stress-energy criterion. The nature of the regularization parameter l for the phase-field model has been discussed as function of the material and the local geometry where the crack initiates. Moreover, the apparent fracture toughness and the compressive fracture strength have been calculated for real porous YSZ ceramics. It has been found that the fracture properties of these complex 3D porous materials can be correctly predicted with the phase-field model. For specimen loaded under compression, it has been shown that the model is able to capture and explain the transition from a brittle behavior towards a diffuse damage when increasing the porosity.
+1. Introduction
+Porous ceramics are gaining a noteworthy interest as functional materials for many applications. They benefit from the ceramic properties, which are known to be highly stable in corrosive and oxidizing environments. Moreover, they offer high thermochemical and mechanical stability, low thermal conductivity and small dielectric constant [1–8]. Thanks to all these features, porous ceramics are used as key components in several technological devices with far-reaching economic and ecological implications. They are currently employed in biology, medical industry, electronic engineering, petroleum industry, metallurgy, environment protection and chemical engineering [2–6]. In particular, porous ceramics have achieved an overwhelming success in the domain of energy. For example, they are used as barrier coatings to enhance the lifetime of many devices operated under severe conditions such as gas turbines. Porous ceramics have been also selected as material for the key components of several energy storage and power generation systems such as the solid oxide fuel cells and batteries [9–11]. Yttria Stabilized Zirconia (YSZ) is a specific example, which exhibits good
+chemo-thermo-mechanical properties and high ionic conductivity. Nevertheless, despite all these advantages, the fracture of porous ceramic remains a problematic issue for all these technological applications. It is worth noting that the mechanical behavior and especially the fracture of porous ceramics cannot be investigated based only on experimental studies because the analysis would require an unlimited number of mechanical characterizations. Indeed, the mechanical response of porous ceramics is complex and strongly dependent on the microstructure. For example, the apparent toughness of porous ceramic generally decreases with increasing porosity [12]. The crack onset and propagation is also a function of the local geometry of the pores and their distribution. Under specific conditions, the crack tip blunted by distant macropores can even lead to enhance the apparent toughness compared to the dense material [13,14]. For porous ceramics tested under compression, it has been shown that the fracture mechanism changes from a brittle behavior at low porosity towards a diffuse damage at high porosity [15,16]. However, this transition has not been precisely explained yet. From this point of view, a numerical approach would be well adapted to better understand the precise role of the
+* Corresponding authors. E-mail addresses: amira.abaza@cea.fr (A. Abaza), jerome.laurencin@cea.fr (J. Laurencin).
+Contents lists available at ScienceDirect
+Theoretical and Applied Fracture Mechanics
+journal homepage: www.elsevier.com/locate/tafmec
+https://doi.org/10.1016/j.tafmec.2022.103349 Received 8 December 2021; Received in revised form 14 February 2022; Accepted 4 April 2022
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+2
+microstructure and to provide accurate prediction of the fracture of porous ceramics. Nevertheless, the complexity and the heterogeneity of the microstructure make the numerical treatment very challenging. For this reason, the simulation of the nucleation and propagation of cracks in such microstructure remains a salient subject of investigation. Therefore, there is still not a 3D model, which has been fully validated to predict precisely the fracture in porous ceramics. To date, several works have been focused on solving the fracture problem in porous ceramics using different numerical approaches. On the one hand, it has been studied without simulating explicit cracks. In this case, phenomenological laws taking into account the loss of rigidity induced by the cracks nucleation and extension are used in order to reproduce the specimen macro-response during the loading [17,18]. Even if these methods enable the computation of the overall material behavior with good approximation, they are not based on physical models for fracture and their applications is generally limited to the studied case. On the other hand, methods based on the explicit simulation of cracks has been adopted in order to thoroughly study fracture initiation, propagation and branching. For this purpose, two main computational families have been developed in the frame of the Finite Element Method (FEM) depending on the sharp or diffuse description of the simulated crack. The first numerical approach is referred as the discrete crack model. In this case, the sharp crack is introduced as a discontinuity in the mesh and its propagation is simulated using various numerical methods. For instance, the extended finite element method (XFEM) [19], the phantom-node method, the element-erosion method, the generalized finite element method (GFEM) or re-meshing techniques [20–23] have been used to simulate the fracture. However, the implementation of discrete crack models requires criteria for crack initiation and propagation. These criteria are taken from the Linear Elastic Fracture Mechanic (LEFM), which is well appropriate to describe the brittle behavior of ceramic materials. The extension of preexisting crack is
+governed by an energy balance based on the Griffith theory [24,25]. For the fracture initiation, the coupled criterion proposed by D. Leguillon [26] assumes that both the stress and energy criteria have to be fulfilled. It provides a rigorous framework for computing the crack nucleation [27,28]. However, the numerical implementation of the discrete crack models can be difficult since the fracture criterion must be evaluated on the whole structure in order to identify the sites for the crack nucleation. Furthermore, special algorithms are required to introduce discontinuities by modifying locally the shape functions or by re-meshing the path for the propagation. For all these reasons, discrete crack models are not well adapted to simulate complex cases like the branching and multiple cracks problem. Therefore, they cannot be applied to porous ceramics, which have complex and heterogeneous microstructures. In order to overcome the limitations inherent to the discrete approach, several models have been proposed in the frame of the continuous fracture mechanics theory [29–37]. All are based on a ‘diffuse’ or ‘smeared’ description of the discontinuity where the crack is implicitly modeled through a smooth scalar damage variable. In this context, Marigo and coauthors have proposed for the development of these models a rigorous theoretical framework using the variational approach and the gamma-convergence theory for the regularization of the free-discontinuity medium [29–33]. As a result, the fracture problem has been reformulated as the minimization of an energy functional without any additional criterion. On the basis of these developments, Miehe et al. [38,39] have proposed a specific smeared crack model referred as the Phase-Field Method (PFM) for fracture mechanics. Thanks to the thermodynamic consistency of this model, a staggered scheme has been proposed for the numerical resolution [38], allowing a simple implementation in FEM codes [23,40,41]. The crack extension is governed by an energy driving force that can be interpreted as a Griffith criterion. Several studies have shown that the model is able to simulate accurately the propagation, the branching and the multi-cracking
+Nomenclature
+ac crack length (mm or μm) an notch depth (mm) L beam length (mm or μm) h beam height (mm or μm) b beam thickness (mm or μm) r cavity radius (mm) δc crack width (μm) λ singularity order (–) β notch angle (degrees) ε porosity (%)
+KIncotch apparent fracture toughness for the notch (MPa m1-λ)
+Kapp
+Ic apparent fracture toughness for the crack blunted by a cavity (MPa √m)
+KI generalized stress intensity factor (MPa m1-λ) KIc material fracture toughness (MPa √m) R relative toughness (–) Fc applied critical loading (N)
+Gc critical energy release rate (J m 2)
+Ginc incremental energy release rate (J m 2) Wp potential energy (J) σc material strength (MPa) σ0 applied stress (MPa) σc0 critical applied stress (MPa) k, A dimensionless coefficients (–)
+Λ scaling coefficient (MPa 1)
+D scaling coefficient (MPa 0.5) E Young modulus (MPa)
+̂E Young modulus for the plane strain condition (MPa) ν Poisson coefficient (–) d phase-field variable (–) g degradation function (–) t time (s) Es stored energy (J) Wc energy dissipation (J) Pc work of external forces (J) π potential energy (J)
+Ψ density of elastic strain energy (J m 3) Ψ+ density of strain energy related to tension contribution (J
+m 3)
+H ‘history’ loading field (J m 3)
+f thermodynamic driving force (J m 3) l length scale parameter for the phase-field approach (mm or μm) l 8YSZ length scale parameter for the 8YSZ material (mm or μm) l 3YSZ length scale parameter for the 3YSZ material (mm or μm) lIrwin Irwin length (μm) lI8rYwSinZ Irwin length for the 8YSZ material (mm or μm) lI3rYwSinZ Irwin length for the 3YSZ material (mm or μm) l0 initial crack length for the coupled criterion (mm or μm) lc0 critical initial crack length for the coupled criterion (mm or μm)
+lc,8YSZ
+0 critical initial crack length for the 8YSZ material (mm or μm)
+lc,3YSZ
+0 critical initial crack length for the 3YSZ material (mm or μm)
+A. Abaza et al.
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+3
+problem in complex geometry [21,23]. For example, Nguyen et al. [42] have successfully simulated the cracks evolution in a lightweight concrete microstructure with encapsulated pores. For all these reasons, the PFM seems suitable to study the fracture in porous ceramics. However, controversy remains on the PFM capacity to predict accurately the crack initiation. On the one hand, Amor et al. [43] have suggested that the PFM approach can predict the crack initiation by choosing an ad-hoc value for the length scale parameter l , which was initially introduced in the method to control the width of the smeared crack. Indeed, it has been proposed that this regularization length for the phase-field method can be related to the Irwin characteristic length linked to the material properties, i.e., strength and toughness. For this purpose, an expression of l has been derived considering a one-dimensional traction test [43,44]. It can be noticed that some authors have successfully tested the relevance of this approach to simulate the crack nucleation for simplified geometries [21,45]. Besides, Molna ́r et al. [46] have recently proposed a generalization of this expression for the 2D case still considering a homogeneous phase-field. They have found that the length scale parameter must be also a function of the ratio of the principal stresses suggesting a dependence to the local geometry where the crack nucleates. However, the generalization and the relevance of these expressions for complex 3D geometries without neglecting the gradient term in the phase-field is still questionable. On the other hand, Kumar et al. [47] have recently criticized the above interpretation of l as a material constant. They have claimed that ‘the fracture nucleation cannot be properly modelled by the phase-field formulation’ since ‘it is purely energetic’ and does not take into account the material fracture strength. In this view, the regularization length is just a numerical ‘parameter that is void of any further physical meaning’. To overcome this difficulty, they proposed to add an external driving force to the classical formulation depending on the material strength and supplementary numerical correction factors [47]. This literature review indicates that the interpretation of the regularization length and the use of the PFM to simulate the crack nucleation is still a subject of investigation. In this objective, the comparison of the PFM with the results given by a criterion based on the LEFM could be helpful to unravel the real nature of the length scale parameter l . The aim of the article is to evaluate the relevance of the PFM approach to predict correctly the fracture in the complex 3D microstructures of porous ceramics. In this frame, the nature of the length scale parameter l is discussed depending on the material properties and geometry. For these objectives, the PFM simulations have been compared to the results of the coupled criterion obtained for stress singularity and stress concentration configurations (i.e. for a V-notched sample and a macro-crack blunted by a pore) [13,26,48]. The comparison has been conducted considering two types of zirconia stabilized with 3% and 8% molar of Yttria (3YSZ and 8YSZ) exhibiting different fracture properties. Once the capacity of the PFM model to detect accurately the crack initiation has been verified for these simplified geometries, the model has been used to compute the apparent fracture toughness and the compressive fracture strength of porous ceramics. The simulations have been compared to experimental data reported in [49] and [16] as a function of the porosity for the model validation. Finally, the fracture mechanism for porous ceramics subjected to a compressive loading has been more precisely discussed.
+2. Methodology
+The objective of the present study is to evaluate the capability of the PFM approach to accurately predict the crack initiation in porous ceramic materials. For this purpose, PFM simulations have been conducted on different geometrical configurations and compared to the apparent fracture toughness given by the coupled criterion. First, Vnotched samples with different opening angles have been studied to address the case of crack nucleation from an ideal stress singularity [26]. In order to mimic the fracture in porous ceramics, the crack nucleation from a stress concentration represented by a macro-crack blunted by a cavity [13,48] has been simulated. Moreover, the role of the material properties has been investigated considering two types of Zirconia Stabilized with 3% and 8% molar of Yttria (3YSZ and 8YSZ). Indeed, as reported in Table 1, the yttrium content in YSZ has a strong impact on the material fracture properties. For example, the strength and toughness of 3YSZ are roughly two and three times higher than 8YSZ, respectively [9]. The relevance of the PFM approach for predicting the propagation of a preexisting macro-crack in real porous ceramics has been assessed using 2D numerical microstructures. The results have been compared to the data reported in [49] related to an apparent fracture toughness measured on porous 3YSZ specimens. All the simulations have been performed with the plane strain elasticity assumption for a classical three-point bending symmetric test. In this condition, the crack is nucleated under a pure symmetric mode. Finally, the PFM has been used to simulate the crack initiation in real 3D porous ceramic microstructures for 8YSZ samples submitted to a compression loading. The results have been compared to the compressive fracture strength measured on the same microstructures reported in [16].
+2.1. Crack nucleation from a stress singularity: V-notched sample
+The considered geometry of the V-notched sample with different opening angles 2β is illustrated in Fig. 1. The length and height of the beam are L = 8 mm and h = 2 mm, respectively, while the notch depth is an = 0.4 mm. It is worth noting that the coupled criterion allows computing the apparent toughness KIncotch for the notch while the critical load Fc triggering the crack initiation is calculated with the PFM model. Therefore, the two approaches have been compared using the following expression [50]:
+K notch
+Ic =
+(3Fc L 2bh2
+)
+h(1 λ)f
+(an h
+)
+(1)
+where b denotes the beam thickness taken to the unity for the 2D simulations. The exponent λ is the singularity order for a symmetric loading, which is obtained by solving the following equation [50]:
+λsin(π β) + sin(2λ(π β) ) = 0 (2)
+The dimensionless factor f ahn
+) in Eq. (1) is the polynomial function given in Eq. (3):
+f
+(an h
+)
+= c1
+an
+h + c2
+an h
+2
++ c3
+an h
+3
++ c4
+an h
+4
++ c5
+an h
+5
+(3)
+The coefficients ci are tabulated in [50] for a ratio ahn ranging between 0.05 and 0.7. It can be noticed that the dimensions of the simulated specimen have been chosen to fulfill this condition on the ratio ahn. Three
+notch angles 2 β ∈ {60◦, 90◦, 120◦} have been investigated to sweep a
+Table 1
+Mechanical properties of 3YSZ and 8YSZ.
+Material E [GPa] ν KIc[MPa.√̅m̅ ] σc[MPa] lIrwin =
+(KIc σc
+)2
+[μm] Reference
+3YSZ 214 0.31 5.1 583 76.5 [59] 8YSZ 216 0.31 1.61 245 43.2 [60,61]
+A. Abaza et al.
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+4
+large range of singularity orders with a crack initiation mainly controlled by the energy criterion for 2 β = 60◦ and a non-negligible contribution of the stress criterion for 2 β = 120◦.
+2.2. Crack nucleation from a stress concentration: crack blunted by a cavity
+The simulated beam with a preexisting crack blunted by a cavity is shown in Fig. 2. Its geometry is the same as the previous V-notched case with a same crack length of ac = 0.4 mm. In this case, the fracture toughness KIc and the applied critical loading Fc are linked as follows:
+KIc =
+( Fc
+b√̅h̅
+) f
+(ac h
+)
+(4)
+The dimensions of the studied geometry fulfil the condition ahc ∈ [0.05, 0.7] for which the dimensionless factor f ac
+h
+) is expressed as [51]:
+f
+(ac h
+)
+= 3L
+h
+̅ac h
+√
+2 1 + 2 ac
+h
+) 1 ac
+h
+)3
+2
+[
+1, 99 ac
+h
+(
+1 ac
+h
+){
+2, 15 3, 93
+(ac h
+)
++ 2, 7
+(ac h
+)2 } ]
+(5)
+Four porosities have been considered with a radius r ranging from 0.01 mm to 0.03 mm. These cavity sizes remain very small with respect
+Fig. 1. Three-point-bending test on a V-notched sample.
+Fig. 2. Three-point-bending test on a sample with a crack blunted by a cavity.
+Fig. 3. Synthetic porous microstructures at different porosity volume fractions ε (solid phase in grey): a) 10 %, b) 20 %, c) 30 %.
+A. Abaza et al.
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+5
+to the crack length so that Eqs. (4) and (5) remain valid for assessing the apparent fracture toughness Kapp
+Ic . Moreover, the width δc of the preexisting crack introduced in the mesh was small as compared to the pore size (i.e. δc = 3 μm≪2r).
+2.3. Crack nucleation and propagation in porous ceramics microstructures
+2.3.1. Propagation of a preexisting macro-crack in 2D
+The sample geometry to simulate the crack extension with the PFM approach in porous ceramic is displayed in Fig. 3a. The selected dimensions are L = 40 μm, h = 10 μm and ac = 3 μm. The ratio ahc is still comprised between 0.05 and 0.7 in such a way that Eqs. (4) and (5) can be used to express the toughness as a function of the applied loading. As shown in Fig. 3a-3c, three microstructures of different porosities ε ∈{10 %, 20 %, 30 %} have been simulated. These numerical microstructures have been generated using the Gaussian random field method [52,53].
+Indeed, it has been shown that this method is able to emulate accurately the morphology of partially sintered ceramic microstructures, such as solid oxide fuel cell electrode materials [53,54]. The three microstructures have been generated by maintaining a constant correlation length for the solid YSZ phase [54]. As result, the mean diameter for YSZ calculated by continuous Particle Size Distribution (PSD) [55], is approximatively a constant equal to 0.45 μm for all the microstructures simulated in the present study. On the contrary, the mean pore diameter decreases from 0.22 μm to 0.05 μm when densifying the ceramic from 30 % to 10 %. In all cases, the size of the porosity remains small compared to the simulated preexisting crack length. Besides, the crack width set to δc = 0.1 μm is lower than the mean pore diameter for a porosity of 20 % and 30 %, whereas, for a porosity of 10 %, the two dimensions δc and 2r are equivalent.
+2.3.2. Crack nucleation in 3D
+To study the crack nucleation in a real microstructure, the phase
+Fig. 4. Mesh of the: a) tapered pillar attached to the pellet with axisymmetric conditions. A zoom on the pillar is shown together with the location of the Volume Of Interest (VOI) for the simulation at the microstructure scale, b) 3D microstructure at a porosity of 63 %.
+A. Abaza et al.
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+6
+field approach has been used to simulate our experiments reported in [16]. In this previous work, the compressive fracture strength was measured as a function of the porosity ranging from 33% to 63%. The tested specimens were micro-pillars with a height of 130 μm made of porous 8YSZ. Due to a slight taper angle of 6◦, the pillars presented a section that evolves from 60 μm at the top to around 88 μm at the bottom. To measure accurately the porosity, 3D reconstructions were also obtained for all the investigated specimens [16]. To predict the dependence of the compressive fracture strength with porosity, a multi-scale approach has been adopted coupling computation on the whole micro-pillar with simulation on the 3D porous ceramic microstructure (Fig. 4). At the microstructure scale, the crack nucleation and propagation has been computed on sub-volumes, extracted from the whole reconstructions, using the PFM model. For intermediate porosities below
+50%, a volume of 4 × 4 × 4 μm3 has been simulated whereas a larger
+volume of 15 × 15 × 15 μm3 has been considered for the highest porosity at 63%. These dimensions of the simulated domain were chosen to be representative of the heterogeneous microstructures. Indeed, the pore mean phase diameter is lower than 0.13 μm for the specimen at intermediate porosities (<50%) and equal to 0.99 μm at 63% [16]. Therefore, even in this later case, several pores remain included along the edge of the computed volume (the characteristic size for the simulated volume is around fifteen times larger than the mean pore diameter). The solid phase of the reconstructed sub-volumes has been meshed using the software Avizo® considering tetrahedral elements. For the microstructures at intermediates porosities, the mesh were built using around 3.5
+× 106 tetrahedrons (corresponding to around 17 × 106 degrees of
+freedom) while the volume at 63% contained 5.6 × 106 tetrahedrons
+(corresponding to around 26 × 106 degrees of freedom). A special attention was paid to the quality of the mesh by keeping elements with an aspect ratio below 10 and a dihedral angle above 10◦. For instance, a zoom of the generated mesh at a porosity of 63% is displayed in Fig. 4b. It can be seen that the surface of the solid phase inside the microstructure is smoothly meshed by the triangular elements avoiding numerical artifacts during the computation. The uniaxial compression has been simulated on the meshed reconstructions in displacement-controlled loading considering the properties of the dense 8YSZ (Table 1). On the other hand, finite element simulations of the compression test at the micro-pillar scale were conducted assuming a homogeneous medium with a pure elastic behavior. For this modeling, a 2D approach including the full geometry of the tapered micro-pillar attached to a part of the pellet was considered using axisymmetric conditions (Fig. 4a). The size of the simulated pellet substrate was chosen in such a way that the mechanical response of the micro-pillar becomes independent of boundary conditions applied at the bottom of the substrate (i.e. the displacements are blocked in the axial direction). The simulations were performed using a Poisson’s ratio of 0.31 and an effective Young’s modulus taken from our experiments as a function of porosity [16]. Because of the taper angle, it is worth noting that a stress gradient appears in the pillar during compression. For this reason, the cracks were observed during the experiments in the upper part of the pillar where the stress is the highest [16]. The Volume Of Interest (VOI) related to the simulated domain at the microstructure scale was therefore taken at a short distance from the top of the pillar (i.e. 11 μm) where the damage is expected to occur (Fig. 4a). The difference in the displacements at the top and the bottom of the VOI surface was then extracted from the simulation at the macroscopic scale and applied on the 3D reconstruction simulated with the phase-field. In this approach, the compressive fracture strength corresponds to the critical load applied at the top of the micro-pillar identified when the damage is initiated in the simulated microstructure.
+3. Models description
+In this work, the coupled criterion has been used in order to validate
+the results obtained by the PFM model. The coupled criterion is thus briefly reminded hereafter before detailing the implemented PFM method.
+3.1. Coupled criterion
+The coupled criterion stipulates that the crack initiation is triggered when both the stress and energy criteria are fulfilled. This condition can be reached when the applied stress σ0 reaches a critical value σc0 leading
+to the nucleation of a crack with an initial critical length lc0 [26]. When the crack initiation occurs with an initial length l0, the stress criterion requires that the local stress must exceed the material strength σc along the expected crack path, as expressed in Eq. (6). Regarding the energy criterion, the incremental energy release rate Ginc, which is the change in the potential energy Wp due to the crack nucleation, must be higher than the material fracture toughness Gc as shown in Eq. (7):
+σ(x) ≥ σc for 0 < x < l0 (6)
+Ginc(l0) = δWp
+l0
+≥ Gc (7)
+The local stress σ(x) and the energy release rate Ginc(l0) introduced in the two last equations can be expressed as a function of the applied stress σ0 using matched asymptotic expansions between the singular and the far fields [56]:
+σ(x) = k(x)σ0 for 0 < x < l0 (8)
+Ginc(l0) = A(l0)σ2
+0 (9)
+where the dimensionless coefficients k and A depend on the crack length l0, the material properties and the local geometry where the crack initiates. It is worth noting that the coefficient k decreases with increasing l0 whereas A is an increasing function of l0. Therefore, combining Eqs. (6) and (8), the stress condition provides an upper bound for the nucleation since the applied loading σ0 increases with l0 (Fig. 5). The lower bound for nucleation is provided by the energy condition combining Eqs. (7) and (9). The coupled criterion corresponds to the configuration where the two conditions are fulfilled by minimizing the applied stress σ0 denoted σc0. In this condition, a unique solution for a critical crack length
+lc0 is obtained, as shown in Fig. 5. In the case of the V-notched sample submitted to a symmetric loading, the coupled criterion is formulated as follows [26]:
+KI ≥ Knotch
+Ic with Knotch
+Ic =
+( Gc Λ(β)
+)1 λ
+σc2λ 1 (10)
+where KI is the generalized stress intensity factor and the term Λ(β) is a scaling coefficient depending on the notch opening angle. In this case, the critical length can be given through a precise analytical expression:
+lc
+0= 1
+Λ(β)
+Gc
+σc2 = 1
+Λ(β) ̂E
+KIc 2
+σc2 (11)
+where ̂E is the Young modulus for the plane strain condition (̂E = 1 Eν2). From Eq. (11), it can be noted that the critical length is proportional to the Irwin length (lIrwin = KIc2
+σc2 ) through a factor depending on the notch opening and the Young modulus. For a crack blunted by a cavity, it is worth mentioning that the matched asymptotic expansion for expressing σ(x) and Ginc(l0) has been conducted by taking into account the local geometry with the pore size [13,48]. Therefore, the apparent toughness for a blunted crack Kapp
+Ic is not only dependent on l0 but also on the pore radius r [13]:
+A. Abaza et al.
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+7
+K app
+Ic =
+( Gc D(r, l0)
+)1/2
+(12)
+where D is a function of r and l0. In this case, the critical length for the crack nucleation must depend on both the pore radius and the Irwin length (i.e. lc0 = f
+(
+r, KIc2
+σc2
+)
+). However, there is no analytical expression for
+this length, which must be calculated by solving a non-linear equation as detailed in [48].
+3.2. Phase-field method
+The PFM approach described in Miehe et al. [38,39] has been adopted for this work. The model has been built considering quasi-static and isothermal conditions with the assumption of small strain. The variables of the problem are time dependent because the damage evolves during the loading. Nevertheless, the time step t is not ‘real’ and is introduced only through the loading increment in the simulation. Hereafter, the studied domain and the position are denoted V and x, respectively. As mentioned in the introduction, the crack is modelled through a smooth scalar damage variable d(x) referred as the phase-field. Besides, a regularization length scale parameter l has been introduced to control the region of transition from the pristine state (d(x) = 0) to the fully broken state (d(x) = 1) (Fig. 6). In order to propose a specific expression for the smeared crack surface Γl (d), depending on the damage variable, Miehe et al. [38] have assumed that the evolution of the damage in onedimension can be approximated by an exponential function d(x) = e |x|
+l.
+This hypothesis had allowed expressing Γl (d) in 1D which has been directly extended to the three-dimension case as follows:
+Γl (d) = 1
+2l
+∫
+V
+d2 + l 2∇d⋅ ∇ddV with V⊂Rδ, δ ∈ [1, 2, 3] (13)
+It is worth noting that the minimization of the functional Γl provides an approximation of the phase-field d(x), which is a solution of the associated Euler-Lagrange type equation:
+d l 2Δd = 0 in V with ∇d .n = 0 on ∂V (14)
+where n is the outward normal on ∂V considering the natural boundary conditions. The PFM approach is mainly based on an energy balance. Indeed, the evolution of the potential energy during the loading π ̇ is the sum of three contributions, namely the rate of the stored elastic energy E ̇s, the rate of the work of the external forces P ̇c and the energy dissipation rate W ̇ c due to crack propagation:
+π ̇ = E ̇s + W ̇ c P ̇c (15)
+where the symbol X ̇ denotes the time derivative of X. • The last term of this equation is classically expressed through the displacement field u and the applied force t on the edge of the domain:
+P ̇c =
+∫
+∂V
+t⋅  ̇uds (16)
+• The energy dissipation rate associated to the damage evolution can be expressed as the rate of the work Wc required to create a diffuse crack in the volume:
+Wc = GcΓl (d) and W ̇ c = Gc
+dΓl (d)
+dt = Gc
+∫
+V
+(1
+l d l Δd
+)
+d ̇dV (17)
+where Gc is the critical energy release rate of the material. • The rate of stored energy is expressed by the integral of the density of elastic strain energy Ψ:
+E ̇s =
+∫
+V
+ ̇ΨdV (18)
+In the implemented model, it is assumed that the crack cannot propagate under compression. To fulfil this requirement, a spectral decomposition of the strain tensor ε is carried out and the density of strain energy is split into a sum of two contributions Ψ+ and Ψ , related to tension and compression, respectively:
+Ψ = (g(d) + α)Ψ+ + Ψ (19)
+where g(d) is a degradation function introduced to take into account the material softening during damage. Among several options [57], g(d) is chosen, in this work, as a quadratic function with g(d) = (1 d)2. It can be noticed that the numerical parameter α, which is assigned a very low positive value, is added to ensure the stability of the simulation when d tends to 1. Thanks to the introduction of the degradation function, the stress tensor σ is dependent on the damage field d(x) as follows:
+σ(ε, d) = ∂Ψ(ε, d)
+∂ε (20)
+Besides, the thermodynamic driving force f for crack extension is expressed in the model as the derivative of the elastic strain energy stored in the material with respect to the damage variable:
+Fig. 5. Applied loading as a function of the initial crack length for the coupled criterion obtained using the stress (in blue) and the energy (in purple) criteria. The coupled criterion is chosen among the admissible solutions such lc0 mini
+mizes the applied loading σc0 (in red). (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+Fig. 6. Sharp and diffuse crack description.
+A. Abaza et al.
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+8
+f = ∂Ψ(ε, d)
+∂d = 2(1 d)Ψ+ (21)
+In this condition, the driving force for the crack propagation is controlled by the part of the strain energy related to the tension. Finally, the rate of the stored energy can be written as follows:
+E ̇s =
+∫
+V
+[ σ:
+{1
+2 ∇  ̇u + ∇T  ̇u) }
+f d ̇
+]
+dV (22)
+The governing equation to solve the problem is given by the rate of the potential energy Eq. (18) combined with Eqs. (16), (17) and (22). For each increment of loading (or time), the minimization of this energy functional must be carried out on each variable d and u. In a staggered approach for the resolution, the minimization at a frozen damage for the phase-field (i.e. d(x) = cte) leads to solve a ‘classical’ elastic problem:
+∇⋅σ(ε, d) = 0 for the domain V with σ⋅n = t on ∂V (23)
+Then, the resolution at a given loading (i.e. u = cte) yields the equation for the phase-field computation when the crack propagates with d ̇ > 0:
+f = 2(1 d)Ψ+ = Gc
+(1
+l d l Δd
+)
+with ∇d⋅n = 0 on ∂V (24)
+It can be noticed that this equation describes a classical energy criterion. Indeed, the crack is assumed to propagate when the driving force
+equivalent to an energy release rate in J⋅m 3 is equal to the density of energy created in the domain by the apparition of the cracked surface. Moreover, the formation of cracks is an irreversible process, so that the phase-field d(x) cannot decrease during the loading. To take into account this supplement constrain, Miehe et al. [38] have proposed to introduce in Eq. (24) an ‘history’ loading field H (x, t) stipulating that Ψ+ can only increase over the time. The partial differential Eq. (24) is thus rewritten as follows:
+2(1 d)H = Gc
+(d
+l l Δd
+)
+with H (x, t) = sm∈[a0,tx]Ψ+(u(x, t)) (25)
+The computation for the coupled criterion has been carried out with the FE code Modulef, while the phase-field approach has been implemented in the software Comsol Multiphysics®. For the phase-field computations, it is worth noting that a special attention was paid to check the convergence of the simulations. More specifically, the number of iteration for the staggered resolutions was chosen so that the results are independent on the loading step. For this purpose, when the damage parameter exceeds 0.4, the loading step was divided by 100. Moreover, the independence of the result with the mesh size was also verified for all the simulations. It can be noticed that a very fine mesh was considered in the damage zone: for instance, more than 15 elements were included in the width 2l for the 2D simulations. Besides, all the computations have been carried out in such a way that the softening effect on the load-displacement curve due to a large damage zone remains negligible. Finally, the simulated tensile, shear and 3 point bending tests reported in Miehe et al. [38] were used as benchmark to validate the implementation. For all the cases, a very good agreement has been found between the results from the Comsol Multiphysics ® and the data reported in Miehe et al. [38] validating the implementation.
+4. Results and discussions
+In this section, the results of the PFM simulations, conducted on the stress singularity and stress concentration configurations, are presented and compared to those performed using the coupled criterion. The capacity of the model to predict accurately the crack nucleation is evaluated and the nature of the length scale parameter l is discussed. Then, the numerical results obtained on 2D and 3D porous ceramic microstructures are compared to the experimental data reported in [49] and
+[16] in order to investigate the relevance of the PFM model to simulate the fracture in porous ceramics.
+4.1. V-notched 8YSZ sample
+Preliminary computations have been conducted with the PFM model to simulate the crack pattern in the V-notched 8YSZ sample considering two length scale parameters (i.e.l 1 = 0.01 mm andl 2 = 0.04 mm). It can be noted that the classical undamaged condition (∇d .n = 0) was retained for the notch. As shown in Fig. 7a and 7b, the crack initiates from the stress singularity and propagates in pure symmetric mode for both cases. Therefore, as already stated, the PFM is able to identify correctly the zone where the crack nucleates as well as its direction of propagation whatever the value of l [38] (Fig. 7a and 7b). Moreover, it can be seen that the crack becomes thicker when l is larger since this regularization parameter controls the width of the region of transition from the pristine material to the fully broken state. Fig. 7c shows that the force-displacement curve for l = 0.04 mm is slightly below the one calculated for l = 0.01 mm before the fracture. This result is due to the material softening effect during the loading, which is more pronounced when l is larger as previously mentioned. As discussed in the introduction, the critical loading triggering the fracture was found to be strongly dependent on the choice of l . To investigate its role on the crack onset, the critical loading has been determined for several opening angles of the V-notched 8YSZ specimen. The critical loading Fc was retrieved from the simulated forcedisplacement curves when the phase-field parameter d reaches ≈1 at the notch tip. The evolutions of the apparent facture toughness deduced from these computations are compared to the coupled criterion pre
+Fig. 7. Visualization of the crack pattern initiated from a notch at an opening angle 2β of 90◦ for: a) l 1 = 0.01 mm, b) l 2 = 0.04 mm. c) Force-Displacement curves considering the 8YSZ material at a V-notch angle 2β of 90◦ forl 1 = 0.01 mm and l 2 = 0.04 mm.
+A. Abaza et al.
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+9
+dictions in Fig. 8a. When the regularization parameter is increased, the apparent fracture toughness computed with the phase-field is increased especially at the highest opening angles. At the lowest angle (2 β = 60◦), it can be noted in Fig. 8a that the apparent fracture toughness is almost independent of l . This behavior is explained since the singularity order at 2 β = 60◦ is very close to the exponent 0.5 for a perfect crack (i.e. λ = 0.5122 for 2 β = 60◦). In this condition, the crack initiation is almost governed by an energy criterion. As pointed out by Tann ́e at al. [45], the phase-field method, which is based on a pure energetic approach for the crack propagation, is thus able to simulate the fracture initiation from a
+sharp singularity with a low sensitivity on the length scale parameter. On the contrary, at the highest opening angle, the apparent fracture toughness is strongly dependent on the choice of l for the simulations (Fig. 8a). Indeed, the low singularity order at 2 β = 120◦ (i.e.λ = 0.6157) means that the fracture behavior is partially controlled by the stress criterion [26,48]. In this case, the prediction provided by the phase-field method, which does not consider the stress criterion, becomes a function of the regularization parameter. In other words, the choice of l is crucial for an accurate prediction of the crack onset when the fracture is partially controlled by the stress criterion. In these conditions, the regularization parameter could be seen as a pure numerical parameter that must be adapted for each configuration, as suggested by Kumar et al. [47]. Nevertheless, it has been possible to identify a single value of l denoted l 8YSZ in such a way that the apparent fracture toughness computed by the phase-field matches the coupled criterion prediction over the full span of investigated angles (Fig. 8a). Indeed, the PFM simulations obtained withl 8YSZ = 0.01 mm provides a precise prediction of the crack nucleation with a mean relative error lower than 2.4%. For this ad-hoc value of l , the PFM model is thus able to accurately reproduce the apparent toughness evolution when the fracture mechanism is changed from an energy controlled criterion to a coupled criterion. In other words, the length scale parameter allowing retrieving the coupled criterion predictions is found to be independent of the notch opening angle. The possibility to identify a single value of l 8YSZ suggests that this parameter could have a physical meaning and would contain the information to take into account the fracture properties involved in both criteria (i.e. toughness and strength). From this point of view, l 8YSZ could be related to a characteristic length of the material such as the Irwin length lIrwin or the critical length lc0 involved in the coupled criterion (cf. Eq. (11)). This statement is in good agreement with Tann ́e et al. [45] and suggests that, as for the uni-axial traction [44], the length scale parameter must be proportional to the Irwin length. The critical loading leading to the fracture is plotted in Fig. 8b as a function of the opening angles 2β for the investigated length scale parameters. As expected, the critical force is almost independent of l at the lowest angles, whereas it decreases with increasing l at the highest angles (Fig. 8b-c). This dependence of the critical force (Fig. 8b) associated to the apparent fracture toughness (Fig. 8a) with the regularization parameter l at high opening angles was also observed in Tann ́e et al. [45]. This behavior can be interpreted through the relationship between the regularization parameter and the material characteristic length (lIrwin or lc0). Indeed, if l is proportional to lIrwin or lc0, a large value of this parameter is related to a very low material strength. Since the fracture is partially governed at high opening angle by the strength criterion [26], the critical force or the apparent fracture toughness must decrease with increasing l . It can be noted that a decrease of the critical loading Fc is observed when increasing 2β for the highest length scale parameter (i.e. l = 0.4 mm in Fig. 8b). In this condition, the material fracture strength must be very low due to the dependence of σc with l . Therefore, the stress criterion is more easily fulfilled while the contribution of the energy criterion is enhanced. The force triggering the fracture is thus decreased with increasing 2β since the energy criterion is more easily fulfilled when the opening angle is large (note that KIncotch is still an increasing function of 2β at l = 0.4 mm due to the evolution of the term h(1 λ) in Eq. (1)). This discussion reinforces the claim that, for a V-notched singularity, the regularization parameter in the phase-field model must be related to a material characteristic length lIrwin or lc0.
+4.2. V-notched 3YSZ sample
+The role of the material properties on the regularization parameter has been investigated by repeating the same study considering the 3YSZ instead of 8YSZ. The apparent fracture toughness calculated with the
+Fig. 8. Dependence of the mechanical response of the V-notched 8YSZ sample on the opening angle considering different values of the length scale parameter l : a) apparent fracture toughness, b) critical force triggering crack initiation. l 8YSZ refers to the length scale parameter that provides close agreement between the coupled criterion and the PFM results over the whole considered range of notch angles, c) force-displacement curves at a V-notch angle 2β of 120◦.
+A. Abaza et al.
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+10
+PFM model is plotted in Fig. 9 as a function of the V-notched opening angles for different values of l . The results are consistent with the previous analysis since the same evolutions of KIncotch with 2β and l than the ones discussed for 8YSZ are observed. These evolutions are compared to the predictions given by the coupled criterion in Fig. 9. As for the 8YSZ ceramic, it has been possible to identify an ad-hoc length scale parameter l 3YSZ that allows retrieving the evolution of the theoretical fracture toughness with the opening angle. Indeed, the PFM results obtained forl 3YSZ = 0.02 mm match the coupled criterion predictions with a mean relative error on the apparent fracture toughness estimated to 1.9%. It is here worth noting that l 3YSZ is two times higher than l 8YSZ. This statement clearly shows that the regularization parameter changes with the simulated material. Moreover, the ratio
+l 3YSZ
+l 8YSZ = 2 for the phase-field approach is almost equal to the theoretical
+ratio lI3rYwSinZ
+lI8rYwSinZ
+= lc,3YSZ
+0
+lc,8YSZ
+0
+= 1.8. Therefore, this analysis confirms that when
+considering the crack onset from a singularity, the regularization parameter in the phase-field method is proportional to a material characteristic length lIrwin or lc0. This statement has far-reaching practical implications for the study of the V-notch configuration with the PFM model. Indeed, only a single study considering one material could be sufficient to determine the corresponding l for any other types of brittle materials.
+4.3. Crack blunted by a cavity in 8YSZ and 3YSZ
+To study the crack nucleation from a stress concentration, a crack blunted by a cavity has been simulated for the 8YSZ and 3YSZ ceramics.
+The relative toughness R = Kapp
+Ic /KIc obtained with the PFM method as well as the theoretical predictions given by the coupled criterion are plotted as a function of the pore radii in Fig. 10. It can be noticed that the phase-field simulations have been carried out for various length scale parameters. As shown in Fig. 10, the dependence of the PFM results on the regularization parameter is less pronounced when the pore radius is lowered. As for the notch configuration, this evolution can be explained since the geometry tends towards a sharp crack entirely controlled by a pure energy criterion. On the contrary, the dependence on the apparent toughness calculated with the PFM becomes significant at the highest investigated pore radius for which the contribution of the stress criterion to the fracture is non-negligible. In this case, the apparent fracture toughness is lowered with increasing l . This evolution can be interpreted through a very low facture strength associated to the large length scale parameter. This explanation would mean that the regularization parameter can be still related to a material characteristic length for a stress concentration [45]. As illustrated in Fig. 10a for 8YSZ, this dependence can lead to an incoherent behavior for l = 0.04 mm with a
+weakening effect with increasing the pore radius. For both materials, it has been possible to identify two specific values for the regularization parameters l 8YSZ and l 3YSZ to fit accurately the predictions given by the coupled criterion (Fig. 10). Indeed, the mean relative error on the relative fracture toughness simulated with l 8YSZ = 0.005 mm and l 3YSZ = 0.007 mm is equal to 1.1% and 1.2% for 8YSZ and 3YSZ respectively. Therefore, for a given value of l , the PFM model is able to capture the expected strengthening effect due to the crack blunted by a cavity [13]. Nevertheless, it can be noted that the length scale parameters l 8YSZ and l 3YSZ identified for the V-notch singularity are not the same than the ones obtained for the blunted crack (for the same specimen submitted to a three-point bending test). For instance, the regularization parameter identified for the notch (l 8YSZ = 0.01 mm) is significantly higher than the one for the blunted crack (l 8YSZ = 0.005 mm). When the length scale parameter for the notch is taken to l 8YSZ = 0.005 mm, the phase-field results overestimate the coupled criterion predictions. In this case, the discrepancy between the critical forces provided by the coupled criterion and the phase-field reaches almost 20% for a notch opening angle of 2β = 120◦. Such a discrepancy cannot be explained by the numerical uncertainties for the phase-field simulations, which have been checked to be very limited in our case. This result would thus suggests that the regularization parameter could be also a function of the type of local geometry where the crack nucleates. It can be noticed that the ratio l 3YSZ
+l 8YSZ = 1.4 obtained with the phasefield method for the blunted crack is different from the Irwin one
+lI3rYwSinZ lI8rYwSinZ
+= 1.8. However, it is almost equal to the ratio of the critical crack
+length in the coupled criterion lc,3YSZ
+0
+lc,8YSZ
+0
+= 1.5. This statement means that the
+length scale parameter l for the phase-field method is related to the critical length lc0 for the coupled criterion. For a V-notch singularity, the
+Fig. 9. Dependence of the apparent fracture toughness on the opening angle for the 3YSZ material considering different values of the length scale parameter l . l 3YSZ refers to the length scale parameter that provides close agreement between the coupled criterion and the PFM results over the whole considered range of notch angles.
+Fig. 10. The dependence of the relative toughness on the cavity radius considering different values of the length scale parameter l for: a) 8YSZ material, b) 3YSZ material. l 8YSZ and l 3YSZ refer to the length scale parameters that provide close agreement between the coupled criterion and the PFM results over the whole considered range of cavity radii.
+A. Abaza et al.
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+11
+ratio lc,3YSZ
+0
+lc,8YSZ
+0 is equivalent to the ratio given by the Irwin characteristic
+length as mentioned in the previous section. However, for a crack blunted by a cavity, the critical crack length lc0 is still a function of lIrwin but also takes into account the local geometrical characteristics of the stress concentration [13,48] (cf. Section 3.1). This discussion reinforces the proposition that the length scale parameter must be dependent on the type of local geometry where the crack nucleates for a stress concentration. It can be mentioned that the possibility could be further discussed by comparing the coupled criterion prediction with alternative phase-field methods [34–37]. Nevertheless, even if additional studies are still needed, it can be concluded from this analysis that the PFM model can be applied to predict the crack initiation in porous ceramic with a length scale parameter that have to be identified for each type of microstructures.
+4.4. Crack nucleation in porous microstructures
+When the length scale parameter l is correctly chosen, the above case studies have shown the capacity of the PFM model to accurately predict the crack nucleation on ideal geometries (i.e. V-notch and the blunted crack). In this section, the relevance of the PFM model to simulate the fracture in porous media with complex microstructures is evaluated.
+4.4.1. Apparent fracture toughness of porous ceramics
+To study the evolution of the apparent fracture toughness with the porosity, 2D porous 3YSZ microstructures have been generated with the random field method considering a constant correlation length for the solid phase (cf. Section 2.3 and Fig. 3). As a result, the geometrical features of the simulated microstructures are preserved except modifications affecting mainly the porosity (i.e. volume fraction and pore mean diameter). Therefore, based on the previous statements, it is anticipated that a unique length scale parameter for the phase-field model is sufficient to predict the evolution of the apparent toughness with the porosity. Two methods have been used to determine KIacpp from the
+phase-field simulations. In the first one (denoted ‘method 1′ thereafter), the toughness was deduced when the fracture initiates at the tip of the preexisting macro-crack (with δc = 0.1 μm) blunted or not by a pore (cf.
+Fig. 11). In the second method (called ‘method 2′), the toughness was assessed after propagation, when the fracture is reinitiated from the first pore reached by the crack. The reason for using two methods is to provide an estimation of the toughness scattering induced by heterogeneities in the simulated microstructures. For each porosity, two independent realizations (i.e. microstructures) exhibiting the same geometrical statistical properties have been generated using the Gaussian random field method. As an illustration for a porosity of 20%, it can be seen in Fig. 12 that the PSD of the two microstructures shown in Fig. 11a-b are nearly perfectly superimposed. The simulations of these two microstructures at the same porosity level should allow estimating the impact of the local spatial variations on the toughness predictions. It is worth noting that, in spite of these statistical variations on the local geometry, the same type of morphology is preserved since the same method and input parameters have been used to generate the microstructure. Finally, as pointed out in Section 2.3.1, the synthetic microstructures generated with the Gaussian random field method provide a good approximation of real porous ceramic microstructures produced by powder sintering [53]. Consequently, the experimental toughnesses reported in [49], which were measured using double-torsion testing on 3YSZ porous membranes produced by tapecasting, have been selected for comparison with the phase-field simulations. All the simulations have been performed with a single length scale parameter l 3YSZ = 0.1 μm that remains small compared to the correlation length used to generate the microstructures (cf. Section 2.3.1). The apparent fracture toughnesses calculated on the first synthetic
+microstructure are compared to the experimental data in Fig. 13a. Independently of the method used to assess the toughness, the phasefield results are consistent with the measurements. The offset between the simulations and the experimental curve can be explained by the assumptions considered for the modeling, which are mainly (i) the differences between the synthetic microstructures and the real ones, and (ii) the hypothesis of 2D simulations for the phase-field model. Moreover, it is worth noting that the slight disagreement between the experimental data and the simulations can be further reduced by increasing l 3YSZ. For example, it has been found that a regularization parameter taken at l 3YSZ = 0.8 μm allows fitting almost perfectly the experimental data (indeed, at a porosity of 10 %, the computed fracture toughness with the method 1 falls to Kapp
+Ic = 3.8 MPa.√̅m̅ ). However, a tradeoff has to be found for the length scale parameter. On the one hand, this parameter must be adapted to describe accurately the initiation step
+Fig. 11. Cartographies displaying the crack path within the porous microstructures: a) first realization at ε = 20 %, b) second realization at ε = 20 %, c) first realization at ε = 10 %. (l 3YSZ = 0.1 μm).
+Fig. 12. Comparison between two generated synthetic microstructures with ε = 20 %: a) visualization of the two realizations of the microstructure, b) Solid phase size distributions computed on the two realizations.
+A. Abaza et al.
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+12
+in order to predict the apparent fracture toughness. On the other hand, a sufficiently low value for l must be ensured to describe correctly the subsequent crack propagation in the fine microstructure. From a practical point of view, if necessary, two length scale parameters may be considered for the simulations. The first one could be adapted to compute precisely the fracture initiation, while the second one could be chosen small compared to the size of the microstructure in order to describe the crack propagation in the porous ceramic. Nevertheless, with a single length scale parameter, the model captures correctly the decrease of Kapp
+Ic with increasing the porosity. This result confirms the relevance of the phase-field method to predict the fracture toughness of porous brittle materials after calibration of the regularization parameter for a given type of microstructure. This supports the claim that this parameter contains material fracture properties so that the PFM model can be used to quantify the conditions for the propagation of a pre-existing crack in porous ceramics. The comparison of the fracture toughness predictions as a function of the porosity for the two microstructures (displayed in Fig. 12) is shown in Fig. 13b. For the sake of clarity, only the results with the first method have been reported. The results fall within the same range for the two simulated microstructures. The slight difference between the two curves is due to local variations in the geometry at the preexisting macro-crack tip. Therefore, by keeping the same length scale parameter for the phasefield model, it is possible to estimate correctly the fracture toughness for two different microstructures exhibiting similar statistical features for the morphology. In other words, the fracture properties can be determined with a single regularization parameter for one type of porous media (characterized by the same morphological features related to the manufacturing process or the method of synthetic microstructure generation). This statement is consistent with the previous discussion on the dependence of the regularization parameter on the type of the local geometry where the crack initiates. For a complex microstructure, l would thus depend on the characteristics of the solid and pore phases (i. e. shape and size of pores and of solid ligaments between the pores, their statistical distribution, etc. [13]). In Fig. 13a, it can be noticed that the first method to compute the
+apparent fracture toughness leads to slightly overestimate Kapp
+Ic
+compared to the second one at ε = 20 % and 30 % and underestimate KIacpp at 10 %. These results can be interpreted by inspection of the cartographies displaying the crack path within the microstructure in Fig. 11. For instance, at ε = 20 %, it can be noted that the preexisting macro-crack ends in a large pore (Fig. 11a). Due to the blunting effect induced by this large cavity, the apparent toughness computed with the first method is thus enhanced. On the contrary, after propagation, the crack reaches a smaller pore. Therefore, the apparent toughness for the crack re-initiation from this smaller cavity is lowered knowing that the other conditions affecting the fracture remains roughly similar. Indeed, the direction of propagation remains in a quasi-pure opening mode and the distance between the pores is almost constant (Fig. 11a) [13]. At the lowest porosity fraction (ε = 10 %), the initial macro-crack tip is located in the 3YSZ solid phase (Fig. 11c). Therefore, in this particular case, the crack tip is no longer blunted by a cavity explaining the lower value of
+Kapp
+Ic obtained with the first method with respect to the second one. Moreover, it can be noticed that the direction of propagation remains similar (only the distance between the initial macro-crack tip and the first pore and between the first and second pores is changed).
+4.4.2. Compressive fracture strength of porous ceramics
+To study the crack nucleation in pristine porous ceramics, the compressive fracture strength measured in [16] as a function of porosity for 8YSZ has been calculated with the PFM model. The simulations have been conducted on 3D porous ceramic microstructures according to the methodology detailed in Section 2.3.2. Two length scale parameters of l = 0.4 μm and l = 0.8 μm have been considered for the computations. The calculated compressive fracture strength is compared to the experimental data as a function of porosity in Fig. 14. It can be seen that the numerical predictions are in very good agreement with the measurements. Especially at l = 0.8 μm, the model captures almost perfectly the decease of the compressive fracture strength with the porosity. This statement confirms that, with a single value of the regularization parameter l , the phase-field method is also able to predict accurately the crack nucleation in partially sintered ceramics. Therefore, for a given type of microstructure for which the regularization parameter has been identified, the phase-field approach can be seen as a predictive tool to study the fracture behavior of uncracked porous ceramic. In other words, as already discussed on ideal geometries, the length scale parameter must contain the material properties so that the phase-field model can be used to predict the fracture in complex porous ceramic microstructures. It is worth noting that a transition in the fracture mechanism with the porosity fraction was detected in the micro-compression tests [16]. Indeed, at low porosity, it was found that the fracture is controlled by a
+Fig. 13. Experimental and simulated dependences of the apparent fracture toughness on porosity using a) the two computation methods for realization 1, b) “method 1” for the two realizations.
+Fig. 14. Comparison between the calculated compressive fracture strength and the experimental data [16] as a function of porosity.
+A. Abaza et al.
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+13
+pure brittle behavior whereas a diffuse damage with the generation of stable micro-cracks in the microstructure was observed at high porosity. This behavior is well retrieved by the PFM model and can be analyzed thanks to the simulated results obtained on the 3D volumes. For instance, as shown in Fig. 15a-15c for a porosity of 33%, the apparition of the first crack in the microstructure is almost instantaneously followed by a complete damage spreading in the whole microstructure. Indeed, the first cracks are detected in the volume for an applied force on the micro-pillar of 6.04 N (Fig. 15a). Then, for a very small increment in charge (less than 25%), the damaged variable takes a value of d = 1 in the whole simulated domain indicating the total fracture of the specimen as shown in Fig. 15c. Therefore, as soon as the facture is initiated in the volume, it leads to the complete collapse of the material as it was observed during the experiments. It can be also noticed that the first micro-cracks are roughly aligned and parallel to the direction of the applied solicitation as detected during the tests [16]. On the contrary, for the highest porosity, the simulations have revealed the formation of a network of stable micro-cracks distributed in the microstructure during the loading (Fig. 15b-15d). As shown in Fig. 15b, the first micro-cracks appear for an applied force of 0.09 N. Then, the density of cracks is progressively increased with increasing the loading. The repartition of micro-cracks in volume is for example shown in Fig. 15d for an applied force of 0.16 N. The total collapse arises only when the load is increased up to 0.17 N. These results, which are in very good agreement with the experiments, constitutes a further proof of the relevance of the phasefield approach to calculate accurately the fracture initiation in complex porous ceramics. The modeling results can be used to analyze this transition in the fracture mechanism as a function of the porosity. For this purpose, the density of elastic strain energy ξ stored in the microstructure has been calculated just before the first crack nucleates in the volume:
+ξ= 1
+VYSZ
+∫
+VYSZ
+ΨdV (26)
+where VYSZ is the volume of the solid phase. This density of energy is plotted in Fig. 16 as a function of the porosity. It can be noticed that the strain energy strongly decreases with increasing the porosity. The high stored energy at low porosity should thus constitute the driving force to propagate the first nucleated micro-cracks to the whole microstructure
+explaining the brittle behavior of the ceramic. At the opposite, for the highly porous material, the stored energy becomes insufficient to ensure the propagation to the whole specimen. In this condition, the fracture is based on a diffuse damage as shown by the modeling and experimental results. Moreover, the mean value of the local maximum principal stress, which was taken in the ligament where the first crack appears, has been also retrieved from the simulated data just before the fracture (i.e. the loading step corresponding to the time when the stress is the highest in the ligament before relaxation due to the fracture). It can be noticed that this principal stress is in traction. Indeed, due to the complexity of the microstructure loaded under compression, some part of the ceramics are submitted to a bending moment leading to local tensile stress. It is worth noting that this local tensile stress triggering the fracture is roughly equal to 4 GPa whatever the investigated porosities (i.e. 33 %-63 %). This high value could be consistent with the apparent fracture strength of the 8YSZ ceramic when considering the very small volume of the ligament submitted to the tensile loading [58]. As for the ideal 2D geometries, the above discussion shows that the phase-field model is able to capture a change in the fracture criterion thanks to an accurate identification of the regularization parameter. For a porous ceramic loaded under compression, it enables us to explain the observed transition in the fracture mechanism from a brittle behavior towards a diffuse damage. From all these results, the phase-field model appears as a relevant tool to quantify the crack nucleation in porous ceramics but also to analyze the underlying mechanisms controlling the fracture.
+5. Conclusion
+The relevance of the phase-field model for simulating the crack nucleation and propagation in porous ceramics has been evaluated. For this purpose, the PFM results have been compared to the predictions of the coupled criterion based on linear fracture mechanics. The study was conducted on two types of ceramics, whose fracture properties are significantly different (i.e. 3YSZ and 8YSZ). A pure singularity induced by a V-notch and a stress concentration related to a crack blunted by a cavity have been studied considering a three point bending test. In the V-notch case, considering a unique length scale parameter for the phase-field model l , it has been shown that the PFM method is able to retrieve the coupled criterion predictions as a function of the notchopening angle. Moreover, the ratio of the regularization parameter for the two ceramics is equal to the ratio for both the Irwin length and the
+critical length for the coupled criterion (l 3YSZ
+l 8YSZ ≈ lI3rYwSinZ
+lI8rYwSinZ
+= lc,3YSZ
+0
+lc,8YSZ
+0 ). Therefore,
+the length scale parameter depends on the material fracture properties as expected. For an ad-hoc value of l , the PFM method is thus able to predict correctly the facture initiation at singularities even when the crack nucleation is controlled by a coupled energy and stress criterion. For a crack blunted by a cavity, the PFM model is also able to reproduce the theoretical dependence of the apparent fracture tough
+Fig. 15. Visualization of the cracks created in porous microstructures submitted to compression: First micro-cracks created in the microstructure for a porosity of a) 33 % and b) 63 %. Evolution of the damage variable after a small increment of charge at c) 33 % and d) 63 % (l = 0.4 μm).
+Fig. 16. Evolution of the density of elastic strain energy as a function of porosity (l = 0.8 μm).
+A. Abaza et al.
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+14
+ness on the pore size. In this case, the ratio of the selected length scale parameters for the two materials is no longer equal to the ratio for the Irwin length but remains identical to the one related to the coupled
+criterion (l 3YSZ
+l 8YSZ ≈ lc,3YSZ
+0
+lc,8YSZ
+0
+∕= lI3rYwSinZ
+lI8rYwSinZ). Moreover, the length scale parameter for
+the V-notch was found significantly different from the one identified for the blunted crack. Therefore, this result suggest that the length scale parameter is also dependent on the type of local geometry or microstructure where the crack initiates. In this context, it should be determined using theoretical or experimental data. This analysis conducted with the coupled criterion and the PFM on ideal geometries indicates that the phase-field should be an appropriate method to predict the crack initiation in complex porous ceramic microstructures. To confirm this claim, the relevance of the phase-field method to simulate the crack nucleation and propagation in representative porous ceramic microstructures has been investigated. For this purpose, the conditions triggering the propagation of a pre-existing crack in porous 3YSZ have been computed with the phase-field method on 2D synthetic microstructures. As proposed, the apparent fracture toughness was found to be in good agreement with experimental data over the whole porosity range using a unique length scale parameter. Moreover, the conditions of crack re-initiation from porosity during the propagation has been discussed as a function of local microstructural parameters (i.e. pore size, length of the ligaments between the pores and direction of propagation). These results confirm that the phase-field method is able to predict accurately the fracture toughness of porous brittle materials after calibration of the regularization parameter. The fracture initiation in uncracked porous ceramics have been studied on real 3D microstructures. In that objective, the compressive strength has been computed with the PFM model for 8YSZ with porosities ranging from 33% to 63%. For a single length scale parameter, it has been found that the compressive strengths computed as a function of the porosity are in very good agreement with the experimental data. Besides, it has been shown that the model predicts the transition from a brittle behavior at low porosity towards a diffuse damage at high porosity. This change in the fracture mechanism has been analyzed with the model. It has been shown that this transition is related to the elastic strain energy stored in the microstructure. At low porosity, the excess of strain energy allows the unstable crack propagations in the whole specimen. Conversely, at high porosity, the strain energy is insufficient to propagate the nucleated micro-cracks to the whole microstructure. All these results show that the PFM method is a relevant tool to predict accurately the fracture of porous ceramics.
+CRediT authorship contribution statement
+A. Abaza: Methodology, Writing – original draft. J. Laurencin: Methodology, Writing – review & editing, Validation. A. Nakajo: Methodology, Writing – review & editing. S. Meille: Methodology, Writing - review & editing. J. Debayle: Software. D. Leguillon: Methodology, Writing – review & editing, Validation.
+Declaration of Competing Interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+Acknowledgements
+This project has received funding from the Fuel Cells and Hydrogen 2 Joint Undertaking (JU) under grant agreement n◦ 825027 (AD ASTRA project). The JU receives support from the European Union’s Horizon 2020 research and innovation program and Denmark, France, Italy, Spain, Poland, Netherlands, Greece, Finland, Estonia, Germany, United
+Kingdom, Switzerland. The work has also been partially supported by the Carnot Institutes (CASSIOPEE project) and Genvia company.
+References
+[1] U.M.B. Al-Naib, Introductory Chapter: A Brief Introduction to Porous Ceramic, in: U.M.B. Al-Naib (Ed.), Recent Adv. Porous Ceram., InTech, 2018. https://doi. org/10.5772/intechopen.74747. [2] T. Goto, A New Thick Film Coating Technology-Laser Chemical Vapor Deposition, in: Handb. Adv. Ceram., Elsevier, 2013, pp. 837–846. https://doi.org/10.10 16/B978-0-12-385469-8.00045-9. [3] E.C. Hammel, O.-L.-R. Ighodaro, O.I. Okoli, Processing and properties of advanced porous ceramics: An application based review, Ceram. Int. 40 (2014) 15351–15370, https://doi.org/10.1016/j.ceramint.2014.06.095. [4] Y. Ito, Heat-Resistant Coating Technology for Gas Turbines, in: Materials, Applications, Processing, and Properties (Ed.), Handb. Adv. Ceram., Elsevier, 2013, pp. 789–806. [5] Y. Kawahara, Application of High-Temperature Corrosion-Resistant Ceramics and Coatings under Aggressive Corrosion Environment in Waste-To-Energy Boilers, in: Handb. Adv. Ceram., Elsevier, 2013, pp. 807–836. https://doi.org/10.10 16/B978-0-12-385469-8.00044-7. [6] P.S. Liu, G.F. Chen, General Introduction to Porous Materials, in: Processing and Applications (Ed.), Porous Mater, Elsevier, 2014, pp. 1–20. [7] P.S. Liu, G.F. Chen, Applications of Porous Ceramics, in: Porous Mater., Elsevier, 2014, pp. 303–344. https://doi.org/10.1016/B978-0-12-407788-1.00006-X. [8] T. Ohji, Testing and Evaluation of Mechanical Properties, in: Handb. Adv. Ceram., Elsevier, 2013, pp. 633–656. https://doi.org/10.1016/B978-0-12-385469-8.000 34-4. [9] M. Ghatee, M.H. Shariat, J.T.S. Irvine, Investigation of electrical and mechanical properties of 3YSZ/8YSZ composite electrolytes, Solid State Ion. 180 (1) (2009) 57–62, https://doi.org/10.1016/j.ssi.2008.10.006. [10] A. Leonide, W. Drenckhahn, H. Greiner, H. Landes, Long Term Operation of Rechargeable High Temperature Solid Oxide Batteries, J. Electrochem. Soc. 161 (2014) A1297–A1301, https://doi.org/10.1149/2.0741409jes. [11] B. Zhu, Advantages of intermediate temperature solid oxide fuel cells for tractionary applications, J. Power Sources 93 (2001) 82–86, https://doi.org/ 10.1016/S0378-7753(00)00564-4. [12] S. Samborski, T. Sadowski, Dynamic Fracture Toughness of Porous Ceramics: Rapid Communications of the American Ceramic Society, J. Am. Ceram. Soc. 93 (2010) 3607–3609, https://doi.org/10.1111/j.1551-2916.2010.04133.x. [13] D. Leguillon, R. Piat, Fracture of porous materials – Influence of the pore size, Eng. Fract. Mech. 75 (2008) 1840–1853, https://doi.org/10.1016/j. engfracmech.2006.12.002. [14] Z.-Y. Deng, J. She, Y. Inagaki, J.-F. Yang, T. Ohji, Y. Tanaka, Reinforcement by crack-tip blunting in porous ceramics, J. Eur. Ceram. Soc. 24 (2004) 2055–2059, https://doi.org/10.1016/S0955-2219(03)00365-0. [15] S. Meille, M. Lombardi, J. Chevalier, L. Montanaro, Mechanical properties of porous ceramics in compression: On the transition between elastic, brittle, and cellular behavior, J. Eur. Ceram. Soc. 32 (2012) 3959–3967, https://doi.org/ 10.1016/j.jeurceramsoc.2012.05.006. [16] A. Abaza, J. Laurencin, A. Nakajo, M. Hubert, T. David, F. Monaco, C. Lenser, S. Meille, Fracture properties of porous yttria-stabilized zirconia under microcompression testing, J. Eur. Ceram. Soc. 42 (4) (2022) 1656–1669, https://doi. org/10.1016/j.jeurceramsoc.2021.11.051. [17] V. Le Corre, N. Brusselle-Dupend, M. Moreaud, Numerical modeling of the effective ductile damage of macroporous alumina, Mech. Mater. 114 (2017) 161–171, https://doi.org/10.1016/j.mechmat.2017.08.002. [18] I.Y. Smolin, P.V. Makarov, M.O. Eremin, K.S. Matyko, Numerical simulation of mesomechanical behavior of porous brittle materials, Procedia Struct. Integr. 2 (2016) 3353–3360, https://doi.org/10.1016/j.prostr.2016.06.418. [19] N. Moes, J. Dolbow, T. Belytschko, A finite element method for crack growth without remeshing (1999) 20. [20] G. Molna ́r, A. Gravouil, 2D and 3D Abaqus implementation of a robust staggered phase-field solution for modeling brittle fracture, Finite Elem. Anal. Des. 130 (2017) 27–38, https://doi.org/10.1016/j.finel.2017.03.002. [21] T.T. Nguyen, J. Yvonnet, M. Bornert, C. Chateau, K. Sab, R. Romani, R. Le Roy, On the choice of parameters in the phase field method for simulating crack initiation with experimental validation, Int. J. Fract. 197 (2016) 213–226, https://doi.org/ 10.1007/s10704-016-0082-1. [22] T. Rabczuk, Computational Methods for Fracture in Brittle and Quasi-Brittle Solids: State-of-the-Art Review and Future Perspectives, ISRN Appl. Math. 2013 (2013) 1–38, https://doi.org/10.1155/2013/849231. [23] K. Seleˇs, A. Jurˇcevi ́c, Z. Tonkovi ́c, J. Sori ́c, Crack propagation prediction in heterogeneous microstructure using an efficient phase-field algorithm, Theor. Appl. Fract. Mech. 100 (2019) 289–297, https://doi.org/10.1016/j. tafmec.2019.01.022. [24] M.E. Gurtin, On the energy release rate in quasi-static elastic crack propagation, J. Elast. 9 (1979) 187–195, https://doi.org/10.1007/BF00041325. [25] M.E. Gurtin, Thermodynamics and the griffith criterion for brittle fracture, Int. J. Solids Struct. 15 (1979) 553–560, https://doi.org/10.1016/0020-7683(79)900829. [26] D. Leguillon, Strength or toughness? A criterion for crack onset at a notch, Eur. J. Mech. - ASolids. 21 (2002) 61–72, https://doi.org/10.1016/S0997-7538(01) 01184-6.
+A. Abaza et al.
+
+
+Theoretical and Applied Fracture Mechanics 119 (2022) 103349
+15
+[27] A. Doitrand, D. Leguillon, 3D application of the coupled criterion to crack initiation prediction in epoxy/aluminum specimens under four point bending, Int. J. Solids Struct. 143 (2018) 175–182, https://doi.org/10.1016/j.ijsolstr.2018.03.005. [28] J. Li, D. Leguillon, Finite element implementation of the coupled criterion for numerical simulations of crack initiation and propagation in brittle materials, Theor. Appl. Fract. Mech. 93 (2018) 105–115, https://doi.org/10.1016/j. tafmec.2017.07.010. [29] G.A. Francfort, J.-J. Marigo, Revisiting brittle fracture as an energy minimization problem, J. Mech. Phys. Solids 46 (1998) 1319–1342, https://doi.org/10.1016/ S0022-5096(98)00034-9. [30] B. Bourdin, G.A. Francfort, J.-J. Marigo, Numerical experiments in revisited brittle fracture, J. Mech. Phys. Solids 48 (2000) 797–826, https://doi.org/10.1016/ S0022-5096(99)00028-9. [31] B. Bourdin, G.A. Francfort, J.-J. Marigo, The Variational Approach to Fracture, Springer, Netherlands, Dordrecht (2008), https://doi.org/10.1007/978-1-40206395-4. [32] K. Pham, J.-J. Marigo, Approche variationnelle de l’endommagement : I. Les concepts fondamentaux, Comptes Rendus M ́ecanique. 338 (2010) 191–198, https://doi.org/10.1016/j.crme.2010.03.009. [33] K. Pham, J.-J. Marigo, Approche variationnelle de l’endommagement : II. Les mod`eles `a gradient, Comptes Rendus M ́ecanique. 338 (2010) 199–206, https://doi. org/10.1016/j.crme.2010.03.012. [34] T.H.A. Nguyen, T.Q. Bui, S. Hirose, Smoothing gradient damage model with evolving anisotropic nonlocal interactions tailored to low-order finite elements, Comput. Methods Appl. Mech. Eng. 328 (2018) 498–541, https://doi.org/ 10.1016/j.cma.2017.09.019. [35] T.Q. Bui, H.T. Tran, A localized mass-field damage model with energy decomposition: Formulation and FE implementation, Comput. Methods Appl. Mech. Eng. 387 (2021), 114134, https://doi.org/10.1016/j.cma.2021.114134. [36] C.D. Vuong, T.Q. Bui, S. Hirose, Enhancement of the smoothing gradient damage model with alternative equivalent strain estimation for localization failure, Eng. Fract. Mech. 258 (2021), 108057, https://doi.org/10.1016/j. engfracmech.2021.108057. [37] T.-T. Nguyen, D. Waldmann, T.Q. Bui, Role of interfacial transition zone in phase field modeling of fracture in layered heterogeneous structures, J. Comput. Phys. 386 (2019) 585–610, https://doi.org/10.1016/j.jcp.2019.02.022. [38] C. Miehe, M. Hofacker, F. Welschinger, A phase field model for rate-independent crack propagation: Robust algorithmic implementation based on operator splits, Comput. Methods Appl. Mech. Eng. 199 (2010) 2765–2778, https://doi.org/ 10.1016/j.cma.2010.04.011. [39] C. Miehe, F. Welschinger, M. Hofacker, Thermodynamically consistent phase-field models of fracture: Variational principles and multi-field FE implementations, Int. J. Numer. Meth. Eng. 83 (2010) 1273–1311, https://doi.org/10.1002/nme.2861. [40] S. Zhou, T. Rabczuk, X. Zhuang, Phase field modeling of quasi-static and dynamic crack propagation: COMSOL implementation and case studies, Adv. Eng. Softw. 122 (2018) 31–49, https://doi.org/10.1016/j.advengsoft.2018.03.012. [41] S. Zhou, X. Zhuang, H. Zhu, T. Rabczuk, Phase field modelling of crack propagation, branching and coalescence in rocks, Theor. Appl. Fract. Mech. 96 (2018) 174–192, https://doi.org/10.1016/j.tafmec.2018.04.011. [42] T.T. Nguyen, J. Yvonnet, M. Bornert, C. Chateau, F. Bilteryst, E. Steib, Large-scale simulations of quasi-brittle microcracking in realistic highly heterogeneous microstructures obtained from micro CT imaging, Extreme Mech. Lett. 17 (2017) 50–55, https://doi.org/10.1016/j.eml.2017.09.013. [43] H. Amor, J.-J. Marigo, C. Maurini, Regularized formulation of the variational brittle fracture with unilateral contact: Numerical experiments, J. Mech. Phys. Solids 57 (2009) 1209–1229, https://doi.org/10.1016/j.jmps.2009.04.011. [44] M.J. Borden, C.V. Verhoosel, M.A. Scott, T.J.R. Hughes, C.M. Landis, A phase-field description of dynamic brittle fracture, Comput. Methods Appl. Mech. Eng. 217–220 (2012) 77–95, https://doi.org/10.1016/j.cma.2012.01.008.
+[45] E. Tann ́e, T. Li, B. Bourdin, J.-J. Marigo, C. Maurini, Crack nucleation in variational phase-field models of brittle fracture, J. Mech. Phys. Solids 110 (2018) 80–99, https://doi.org/10.1016/j.jmps.2017.09.006. [46] G. Molna ́r, A. Doitrand, R. Estevez, A. Gravouil, Toughness or strength? Regularization in phase-field fracture explained by the coupled criterion, Theor. Appl. Fract. Mech. 109 (2020), 102736, https://doi.org/10.1016/j. tafmec.2020.102736. [47] A. Kumar, B. Bourdin, G.A. Francfort, O. Lopez-Pamies, Revisiting nucleation in the phase-field approach to brittle fracture, J. Mech. Phys. Solids 142 (2020), 104027, https://doi.org/10.1016/j.jmps.2020.104027. [48] D. Leguillon, D. Quesada, C. Putot, E. Martin, Prediction of crack initiation at blunt notches and cavities – size effects, Eng. Fract. Mech. 74 (2007) 2420–2436, https://doi.org/10.1016/j.engfracmech.2006.11.008. [49] P. Khajavi, J. Chevalier, P. Vang Hendriksen, J.W. Tavacoli, L. Gremillard, H., Lund Frandsen, Double Torsion testing of thin porous zirconia supports for energy applications: Toughness and slow crack growth assessment, J. Eur. Ceram. Soc. 40 (2020) 3191–3199, https://doi.org/10.1016/j.jeurceramsoc.2020.02.019. [50] M.L. Dunn, W. Suwito, S. Cunningham, Fracture initiation at sharp notches: Correlation using critical stress intensities, Int. J. Solids Struct. 34 (1997) 3873–3883, https://doi.org/10.1016/S0020-7683(96)00236-3. [51] T.L. Anderson, Fracture Mechanics: Fundamentals and Applications, Taylor & Francis Group, 2005. [52] A. Lanzini, P. Leone, P. Asinari, Microstructural characterization of solid oxide fuel cell electrodes by image analysis technique, J. Power Sources 194 (2009) 408–422, https://doi.org/10.1016/j.jpowsour.2009.04.062. [53] H. Moussaoui, J. Laurencin, Y. Gavet, G. Delette, M. Hubert, P. Cloetens, T. Le Bihan, J. Debayle, Stochastic geometrical modeling of solid oxide cells electrodes validated on 3D reconstructions, Comput. Mater. Sci. 143 (2018) 262–276, https:// doi.org/10.1016/j.commatsci.2017.11.015. [54] H. Moussaoui, J. Debayle, Y. Gavet, G. Delette, M. Hubert, P. Cloetens, J. Laurencin, 3D geometrical characterization and modelling of solid oxide cells electrodes microstructure by image analysis, in: H. Nagahara, K. Umeda, A. Yamashita (Eds.), Tokyo, Japan, 2017: p. 1033804. https://doi.org/10.1117/1 2.2264376. [55] P. Abrahamsen, A review of Gaussian random fields and correlation functions, Research Council of Norway (1997), https://doi.org/10.13140/ RG.2.2.23937.20325. [56] A. Doitrand, D. Leguillon, Comparison between 2D and 3D applications of the coupled criterion to crack initiation prediction in scarf adhesive joints, Int. J. Adhes. Adhes. 85 (2018) 69–76, https://doi.org/10.1016/j.ijadhadh.2018.05.022. [57] C. Kuhn, A. Schlüter, R. Müller, On degradation functions in phase field fracture models, Comput. Mater. Sci. 108 (2015) 374–384, https://doi.org/10.1016/j. commatsci.2015.05.034. [58] A. Doitrand, R. Henry, J. Chevalier, S. Meille, Revisiting the strength of micronscale ceramic platelets, J. Am. Ceram. Soc. 103 (2020) 6991–7000, https://doi. org/10.1111/jace.17148. [59] D.N. Boccaccini, H.L. Frandsen, S. Soprani, M. Cannio, T. Klemensø, V. Gil, P. V. Hendriksen, Influence of porosity on mechanical properties of tetragonal stabilized zirconia, J. Eur. Ceram. Soc. 38 (2018) 1720–1735, https://doi.org/ 10.1016/j.jeurceramsoc.2017.09.029. [60] A. Nakajo, J. Kuebler, A. Faes, U.F. Vogt, H.J. Schindler, L.-K. Chiang, S. Modena, J. Van herle, T. Hocker, Compilation of mechanical properties for the structural analysis of solid oxide fuel cell stacks. Constitutive materials of anode-supported cells, Ceram. Int. 38 (5) (2012) 3907–3927, https://doi.org/10.1016/j. ceramint.2012.01.043. [61] A. Selçuk, A. Atkinson, Strength and Toughness of Tape-Cast Yttria-Stabilized Zirconia, J. Am. Ceram. Soc. 83 (2004) 2029–2035, https://doi.org/10.1111/ j.1151-2916.2000.tb01507.x.
+A. Abaza et al.

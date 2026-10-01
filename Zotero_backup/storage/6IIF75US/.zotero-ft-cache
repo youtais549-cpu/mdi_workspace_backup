@@ -1,0 +1,544 @@
+メインコンテンツへスキップ
+記事へスキップ
+提供:横浜国立大学
+PDFを見る
+全号をダウンロード
+原子力工学と技術
+第51巻第3号、2019年6月、769-775ページ
+原記事
+分子動力学シミュレーションで研究された3C-SiCの引張強度に対する点欠陥および粒界の影響
+著者リンク オーバーレイパネルを開く
+李盈盈 a b
+,
+燕李c
+,
+魏霄a b
+もっと表示
+シェア
+引用
+https://doi.org/10.1016/j.net.2018.12.010
+権利とコンテンツの入手
+クリエイティブ・コモンズ・ライセンスの下で
+オープンアクセス
+概要
+照射された3C-SiCの引張強度は、SiC 人工的な点欠陥、 対称傾斜粒界(GBs)を持つSiC、GBを持つ照射SiCは300Kの分子動力学シミュレーションを用いて調査されます。照射されたSiC試料では、照射線量の増加とともに引張強度が低下します。ヤング率は照射線量の増加とともに減少し、これは実験およびシミュレーションデータとよく一致しています。人工的な点欠陥の場合、設計された点欠陥は低濃度時のSiCの引張強度を劇的に低下させます。本研究で研究した点欠陥の中で、空缺が強度を最も著しく低下させます。SiC対称傾斜GBは純粋なSiCの引張強度を低下させます。照射条件下では、結晶界を持つすべてのSiC試料の引張強度は低下し、高線量照射後に結晶界が消失するため、ある値に収束します。
+前 号
+次
+キーワード
+分子動力学カーバイドシリコン点欠陥晶界照射引張強度
+1. はじめに
+炭化ケイ素(SiC)およびその複合材料は、軽水炉(LWR)の有望な被覆材であり、核融合系にも利用可能です[1]、[2]、[3]。本質的に低い中性子吸収断面積、高温強度[4]、クリープ耐性[5]、優れた酸化耐性[6]、[7]、低い活性化特性により、SiCは照射環境で使用される有望な材料となっています。SiC系繊維[8]はSiCの脆性特性を克服でき、SiC繊維強化SiCマトリックス(SiC/SiC)構造複合材料は核装置に使用可能です。
+中性子照射下でのSiCの物理的特性は、微細構造、膨張、熱特性、電気的特性、機械的特性、クリープなどを含み、集中的に研究・検討されています[9]、[10]、[11]、[12]。中性子照射後、非成形化は約300 Kで起こります。高温照射条件下では、「黒斑」や自己間隙原子の小さなクラスターが現れます[9], [10]。照射条件下での微細構造の進化はSiCの力学的性質に影響を与える可能性があります。中性子照射は1000 K未満の温度でSiC弾性率を低下させます[9]、[13]。SiCの破壊靭性は中間照射温度範囲で増加します[9]。SiCの強度はSi/C比[9]、[14]に依存します。高純度のCVD SiCは優れた照射耐性を示し、非化学量論のSiCの強度は中性子照射下で著しく低下します。さらに、低温での高線量照射後には非晶質構造が現れ、中性子照射後のSiCの硬度と弾性率が低下します[15]。
+分子動力学(MD)シミュレーションは通常、材料の照射損傷を研究するために用いられます[16]、[17]、[18]、[19]、[20]。変位カスケード過程の一次損傷、すなわち原子スケールで発生する点欠陥や小クラスターの短期的損傷は、MDシミュレーションで適切に扱われています[19]。SiCの力学的特性、例えば弾性定数、体積率および弾性モジュライ、損傷蓄積による低温照射膨張などはMDでシミュレーションされ、実験結果とも一致しています[21]、[22]。照射下での微細構造損傷の進化は複雑であり、欠陥の蓄積、移動、除去などが含まれます。そのため、複雑な欠陥を持つ大規模システムでは、このプロセスをシミュレートするために長時間シミュレーション手法が必要です。例えば、運動学的モンテカルロシミュレーション[23]、温度加速動力学(TAD)[24]、活性化-緩和技術(ART nouveau)[25]、[25]、クラスターダイナミクス(CD)モデリング[26]などが照射進化のシミュレーションに提案されています。
+The point defect evolution in SiC during the irradiation process has been investigated by molecular dynamics simulations [27], [28], [29], [30], [31], [32]. In these works, a PKA of 10 keV Si is chosen to start an irradiation process simulation and the evolution of interstitials, vacancies, and antisite defects is studied. The irradiation processes generate more carbon interstitials and vacancies than the silicon related point defects [30]. After the overlap of cascades, the size and number of interstitial clusters increase, showing the accumulation of irradiation damage. Xi et al. investigated the role of point defects on the elastic modulus of irradiated 3C-SiC with molecular dynamics simulations [33]. They found that the Young's modulus increases with the increase of concentration of
+CSi
+ (carbon occupies silicon site), while decreases with the concentrations of other types of point defects.
+Grain boundaries (GB) may affect the mechanical properties of SiC during the irradiation process. Wang et al. have observed the grain boundary enhanced amorphization in SiC during the irradiation process with Kr ion implantation experiments [34]. Swaminathan et al. have investigated structure evolution of the tilt grain boundaries in β-SiC under irradiation condition with molecular dynamics cascade simulations [35]. Jin et al. investigated the grain boundary effects on the mechanical properties of irradiated nanocrystalline SiC using molecular dynamics simulations [36]. The hardness of SiC with GB is found decreasing dramatically with the increase of irradiation dose. Bringuier et al. have investigated the grain boundary dynamics of SiC bicrystals under shear deformation [37].
+Since mechanical properties are important for SiC as a structural material, the flexural strength of SiC has been studied with experimental methods under neutron irradiation condition [1], [8], [9], [38], [39]. Because the flexural strength is slightly larger than the tensile strength, the tensile strength can be used to estimate the flexural strength [40]. In this paper the tensile strength of irradiated SiC is calculated with atomic-scale molecular dynamics simulation. During the irradiation process, defects are generated which may affect the mechanical properties. In order to evaluate the effects from different defects, samples with various types of point defects, SiC GBs are generated manually and the tensile strengths of these samples are calculated respectively. Our results show that the tensile strength of SiC decreases with the increase of irradiation dose and it converges to certain value finally. Irradiation generated point defects are important for the tensile strength, especially the vacancies. The grain boundary also decrease the tensile strength of SiC. The grain boundaries disappear after high dose irradiation due to the amorphous transformation happens.
+2. Computational methods
+The MD simulations are performed using LAMMPS program (Large Scale Atomic/Molecular Massively Parallel Simulator [41]) in our study. There are two SiC potentials used in our simulation for different purposes. The analytical bond-order potential developed by Erhart and Albe [42] is used to describe the Si–C interaction in structure generation and mechanical calculation. The potential well reproduces lattice and elastic constants of 3C-SiC. The calculation of point defects formation energies is comparable to first principles data [42]. It is also used to study the crack tip behavior and deformation mechanism of SiC [43], [44]. Meanwhile, the Tersoff potential developed by Devanathan [45] in combination with Ziegler, Biersack and Littmark (ZBL) short-range potential [46] is used to describe high energy atomic collisions in SiC. The potential is widely used in cascade simulation of SiC [27], [35], [47], [48]. The OVITO program is used for visualization and analysis of structures [49].
+2.1. Generation of SiC with point defects
+Since various point defects are generated during the irradiation process, different types of artificial point defects are generated to investigate the point defect effects on the mechanical properties of SiC and evaluate their differences. There are
+16×16×50
+ unit cells with 102,400 atoms in the simulation box initially. Then some Si or C atoms are added, removed, or replaced to generate vacancies, interstitials, and anti-site defects. Because there are many types of point defects in SiC during the irradiation process, some of them with lower formation energies are chosen to study in this work. The formation energies of various point defects in SiC have calculated with both empirical potential [42] and ab initio method [50] which are listed in Table 1. For interstitial defects, the formation energies of two interstitial configurations (Ci–C
+<100>
+ and Ci–Si
+〈110〉
+ dumbbells) are relatively low compared with other interstitial configurations with both of first principles and empirical potential calculations. As a result, they are studied in the present work. In the defect of Ci–C
+<100>
+, an interstitial carbon atom and another carbon atom share a carbon site and they form a C-C atom pair along
+〈100〉
+ direction. In the defect of Ci–Si
+<110>
+, an interstitial carbon and a silicon atom share a silicon site, which form a C-Si atom pair along
+<110>
+ direction. For vacancy type point defects, both of carbon vacancy (
+VC
+) and silicon vacancy (
+VSi
+) are studied. There are two types of antisite defects studied in this work, a carbon atom occupying a silicon site (
+CSi
+) and a silicon atom occupying a carbon site (
+SiC
+).
+
+Table 1. The formation energies of interstitials, vacancies, and antisite defects calculated by ab initio method [50] and empirical potentials [42]. DFT-LDA refers to density-functional theory within the framework of the local density approximation. EA05 refers to Erhart-Albe potential. The bold defects are selected in the present calculations.
+
+Empty Cell
+	Defects	DFT-LDA [50]	EA05 [42]
+Interstitial	Ci–C
+<100>
+	3.16	5.12
+Sii–C 
+<100>
+	10.05	13.37
+Ci–Si 
+<100>
+	3.59	8.24
+Sii–Si 
+<100>
+	9.32	17.72
+Ci–C 
+<110>
+	3.32	10.64
+Ci–Si 
+<110>
+	3.28	5.12
+CTC	6.41	12.68
+CTSi	5.84	9.38
+SiTC	6.17	17.35
+SiTSi	8.71	18.15
+Vacancy	
+VC
+	5.48	1.93
+
+VSi
+	6.64	4.55
+Antisite	
+CSi
+	1.32	2.19
+
+SiC
+	7.20	2.36
+The point defect concentrations range from 0% to 50%. The concentration of point defects is defined as the number of added (interstitials), removed (vacancies), and replaced atoms (antisites) divided by the number of original total atoms in the super cell. The man-made point defects are uniformly distributed in the system. For example, partial carbon atoms are randomly chosen to be deleted to generate carbon vacancies with certain concentration. The upper bound of 50% is applied because it is the maximum concentration of antisite defects of
+CSi
+ and
+SiC
+.
+2.2. Generation of grain boundaries in SiC
+The symmetric (110)
+<001>
+ tilt grain boundaries (GB) in SiC with tilt angles in the range from 0° to 90° are constructed. Including 0° and 90°, totally 26 grain boundary configurations with different tilt angles are generated. The (110) plane of a perfect crystal is the median plane of the generated GBs (GB 1 plane in Fig. 1(a)). The tilt rotation axis is along the [001] direction. All the GB structures are inside orthorhombic boxes with periodic boundary conditions in three directions and the schematic of a GB is shown in Fig. 1(a). There are two grains and two GBs (GB 1 and GB 2) planes in Fig. 1(a). The x direction is parallel to the tilt rotation axis of [001]. The symmetric tilt GB structures are generated with the online software GB Studio [51]. The length of
+Lx
+ is equal to five times of lattice constant (2.18
+nm
+) and it is the same for all the generated GB structures.
+Ly
+,
+Lz
+ are about 20
+nm
+ and the number of atoms are about 100,000 for all the GB configurations.
+Download: Download high-res image (312KB)
+Download: Download full-size image
+
+Fig. 1. (a) The schematic of a GB structure. (b) The tensile strength and the formation energy of symmetric (110)
+<001>
+ tilt GBs as functions of tilt angle.
+
+Due to the existence of a large number of SiC grain boundary configurations, we are trying to find the global minimum energy configurations for the SiC grain boundaries. Once a grain boundary is generated with GB Studio, the upper grain is shifted in x and y directions for certain distances and then MD relaxation is used to calculate the system energies. We suppose the configuration with the lowest formation energy is the one for this type grain boundary, or the grain boundary with corresponding angle. The optimization method used here is a simplified version of that from Wojdyr et al.'s work [52]. The optimization procedure can be described as follows:
+—
+the upper grain is displaced in x or y direction with an increment of 1 Å, until next periodic position. Suppose there are m shifted configurations for the grain boundary with certain tilt angle.
+—
+for each configuration generated in the above step, increase the temperature of the system to 3500 K in 5000 steps. Then quench the system to 100 K in 20,000 steps. The canonical ensemble (NVT) is applied in two steps. The time step is 1
+fs
+ and the total relaxation time is 25
+ps
+. A configuration is recorded every 5000 steps and six configurations (including the initial one) are recorded in this procedure.
+—
+the system energies of the
+6m
+ saving configurations are minimized with conjugate gradient algorithm. The structure with the lowest system energy is considered as an optimized one for the grain boundary with this tilt angle.
+The GB formation energies of optimized structures are shown in Fig. 1(b). For the GBs with small angles, the GB formation energy increases with the increase of the tilt angles. For the GBs with large angles, the GB energies do not change too much. The GB energy as a function of the tilt angle is similar to that from Wojdyr et al.'s work [52].
+2.3. Irradiation simulation of cascade overlap
+In this paper, the irradiation simulations of cascade overlap for SiC and SiC GBs are carried out with the same cascade overlap simulation procedure of SiC in our previous work [22]. Isothermal-isobaric (NPT) ensemble is applied to relax the internal stress before cascade overlap simulations and the external pressure is 0 Pa. The irradiation temperature is 300 K. Each cascade simulation is followed by a subsequent annealing process. In order to see the dose effect, totally 300 iterations are performed for the cascade simulations for each sample. The microcanonical ensemble (NVE) is applied for the cascade process and NPT ensemble is used for the annealing process. In the cascade process, we randomly choose a Si atom as PKA and its initial kinetic energy is set as 10 keV. Each cascade process lasts 6.2
+ps
+ with variable time steps. The time step setting criteria guarantees all the atoms would not move longer than 1.5% of the lattice constant per time step. During the cascade procedure, the system temperature increases. The following annealing process lasts 50
+ps
+ and cools the system temperature down.
+In our calculation, ‘MD-dpa’ is used to define the irradiation dose in irradiated SiC. It is used to describe the displacement per atom during the molecular dynamics simulation and the detailed calculation scheme of the irradiation dose is described in Ref. [22]. The overall irradiation dose for the 300 overlapped cascades is 0.47 MD-dpa.
+2.4. Tensile strength calculation
+The stress-strain curves under uniaxial tensile conditions are calculated for the bulk SiC, SiC with point defects, SiC GBs, irradiated SiC, and irradiated SiC GBs at 300 K. Before the tensile load is applied, NPT ensemble is used to release the internal stress for all the samples. The relaxation time is 10
+ps
+ and the time step is 1
+fs
+. Then the tensile strain is applied in the z direction on a sample studied in this work and the deformation rate is
+0.0005/ps
+. During this process the stresses in the other two directions x and y are kept as 0 Pa and the stress in the z direction is calculated with LAMMPS. The stress-strain curves are plotted with the engineering strains and the corresponding output z direction stresses. The maximum stress in one curve is the tensile strength of this sample.
+3. Results and discussions
+3.1. Tensile strength of irradiated SiC
+Irradiation effect on the mechanical properties of SiC is an interesting topic if SiC is chosen as a cladding material for nuclear reactors. In this section, neutron irradiation process is simulated with MD simulations and the mechanical property is evaluated with stress-strain curve. A stoichiometric SiC sample is generated first without irradiation condition and the stress-strain curve is calculated under uni-axial tensile strain condition in the [001] direction. The stress-strain curve of the un-irradiated SiC sample is shown in Fig. 2(a). The stress increases with the increase of tensile strain and drops abruptly after the maximal point. It demonstrates the brittle fracture property of a ceramic material. Our calculated tensile strength is 85.5 GPa, which is close to Xue et al.'s simulation data of
+∼
+ 90.8 GPa [53].
+Download: Download high-res image (557KB)
+Download: Download full-size image
+
+Fig. 2. (a) The stress-strain curves of un-irradiated and irradiated 3C-SiC samples under uni-axial tensile strain condition in [001] direction at 300 K. (b) Tensile strength and Young's modulus of bulk SiC as a function of the irradiation dose at 300 K. (c) The pair correlation functions of SiC at different irradiation dose.
+
+For the irradiation sample, the material configuration is saved every 10 cascade overlaps and totally 30 configurations are used to evaluate the irradiation dose effect on the mechanical property of SiC. All of these 30 snapshots are relaxed to release the internal stress and then uni-axial tensile strain condition is applied to calculate the stress-strain curves of these samples. The same strain rate is applied on the irradiated samples as that on the un-irradiated SiC sample. Since different sample represents different irradiation does, the corresponding tensile strength difference is the function of irradiation dose.
+The tensile strength as a function of irradiation dose is plotted in Fig. 2(b). The tensile strength generally decreases with the increase of irradiation dose. The strength decreases at low dose dramatically and it converges to 25.1 GPa finally. The tensile strength of bulk SiC drops about 71% after the irradiation process of 300 overlaps of cascade at 300 K. The Young's modulus decreases with the increase of irradiation dose, as shown in Fig. 2(b), which agrees well with the experimental [9], [13], [15] and the simulation work [21]. The Young's modulus retains 75% after 300 PKA irradiation at 300 K, which is close to the experiment mean value 83% [9], [13]. Gao and Weber have calculated the elastic constants, the bulk modulus, and elastic modulus for SiC under irradiation condition with MD simulations [21]. The mechanical parameters generally decrease with the increase of dose and they saturate at doses greater than 0.1 MD-dpa. This phenomenon is similar with our simulations. The authors claim that the point defects and small clusters induce the changes of mechanical properties of SiC at 300 K at low irradiation dose and crystalline-to-amorphous (
+c−a
+) transformation happens at large dose which makes the mechanical property saturated [21]. The point defect effects on the tensile strength of SiC are investigated in the next section. The
+c−a
+ transformation is analyzed with pair correlation functions.
+The structures at different irradiation dose are analyzed with pair correlation function and the result is shown in Fig. 2(c). First of all, C-C bonds appear and it suggests that carbon cluster may exist after irradiation. Second, the peak of C-Si drops dramatically. These two observations suggest that the chemical disorder (
+χ=NC−C/NC−Si
+) increases after irradiation. Third, the pair correlation function curve becomes flat showing that amorphous structure appears after irradiation. Our results agree with the research works from other groups. For example,
+c−a
+ transformation is found by neutron irradiation at 0.5 dpa [15] and atomic-scale simulations at 0.28 dpa [29]. In atomic-scale simulation, the c-a transformation is analyzed with topological method and chemical disorder parameter [21], [53]. Xue et al. claim that the strength of SiC decreases with the increase of chemical disorder and it saturates at large chemical disorder condition. Besides, the pair correlation function of 0.47 dpa irradiated SiC agrees well with simulated and experimental radial distribution functions of amorphous SiC [54], [55]. Especially, via the pair distribution function calculation, the C-C, Si-C, and Si-Si bond lengths are evaluated and they are 1.57, 1.91, and 2.99 Å, which are close to the corresponding values from Ishimaru et al.,’s experimental data of 1.51, 1.88, 3.07 Å (see Fig. 2(c)) [54].
+3.2. Point defect effects on the tensile strength of SiC
+Under irradiation condition, all kinds of point defects will be generated and the concentration of the defects may increase with the increase of the irradiation dose. In order to investigate the concentration effects on the mechanical properties, samples with different type point defects of various concentrations are generated. The defects are uniformly distributed in the samples. The concentration for each defect ranges from 0 to 0.5 and the concentration interval is 0.05. The point defects of Ci–C
+〈100〉
+, Ci–Si
+<110>
+,
+VC
+,
+VSi
+,
+CSi
+, and
+SiC
+ are considered in this work.
+Uni-axial tensile strain is applied on the SiC samples with various point defects. For each concentration of certain defect, the tensile stress-strain relation is simulated at 300 K and the strength is evaluated. The tensile strengths as functions of point defect concentration are shown in Fig. 3. Since high radiation dose may increase the concentration of certain point defect. The defect concentration of the irradiated sample is described as the radiation dose (the upper x axis of ‘MD-dpa’) in Fig. 3. Although the ‘MD-dpa’ is not accurate to describe the concentration of point defect, it is still can be used to evaluate the trend of the tensile strength.
+Download: Download high-res image (343KB)
+Download: Download full-size image
+
+Fig. 3. Tensile strengths of SiC as functions of defect concentration for six types of point defects. The stress-strain curves are simulated at 300 K. The upper x axis is used to evaluate the concentration of the defects generated by irradiation process of the irradiated sample.
+
+For the irradiation sample, the tensile strength decreases with the increase of irradiation dose as shown in Fig. 3. At low defect concentration region, the tensile strengths decrease with the increase of the point defect concentration for the six type of defects. The vacancies decrease the strength dramatically compared with other defects and it suggests that vacancies generated by irradiation process affect the mechanical properties of SiC seriously. Especially, carbon vacancies
+VC
+ drop the tensile strength of SiC the most seriously. The concentration-strength curves for Ci–C
+<100>
+ and Ci–Si
+<110>
+ are very close. The antisite defects,
+CSi
+ and
+SiC
+ decrease the strength of SiC at low defect concentration region and increase the strength under high concentration condition. In general, the irradiation induced strength decrease of SiC mainly results from the low dose irradiation.
+3.3. Grain boundary effects on the tensile strength of SiC
+Besides the point defects, grain boundaries may affect the mechanical properties of SiC. Totally 26 grain boundary configurations with different tilt angles are generated to study the mechanical property. The tensile strengths are evaluated with the stress-strain curves under the uni-axial tension strain condition in z direction. The GB tensile strength as a function of tilt angles is shown in Fig. 1(b). The tensile strengths of the samples with tilt angles in the range of
+0∘<θ<90∘
+ are lower than that of the sample with the angles of 0° and 90°. The average strength with a grain boundary is about 60% of the strength of the bulk 3C-SiC. It shows that grain boundaries decrease the strength of SiC. A grain boundary sample with the angle of
+θ=8.7∘
+ (
+Σ85
+) and the one with angle of
+θ=36.9∘
+ (
+Σ5
+) are selected as to study the SiC GB effects on tension properties under irradiation condition.
+3.4. Tensile strength of irradiated SiC GBs
+Two SiC grain boundary samples with tilt angles of 8.7° and 36.9° are irradiated at 300 K. Uni-axial tensile strains are applied on the configurations of the irradiated samples along z direction. During the irradiation process, configurations are recorded every 5000 time steps and these configurations are used to evaluate the irradiation dose effect. The tensile strengths of the SiC GBs as functions of the number of PKA atoms are plotted in Fig. 4. The number of PKA atoms denotes the number of overlapped cascades, or irradiation dose. At low irradiation dose, the tensile strengths of the SiC GBs are lower than that of bulk SiC. The strength of the sample with a tilt angle of 8.7° is higher than that with an angle of 36.9°. Including a bulk SiC sample without any grain boundary, all of the three strength curves decrease with the increase of the irradiation dose. Eventually, the three curves merge together. As we know, SiC undergoes
+c−a
+ transformation after irradiation at 300 K. The final strength of the SiC samples with or without a grain boundary may be the strength of an amorphous structure after irradiation. The SiC samples with a GB before and after irradiation are shown in Fig. 5. After the irradiation of 200 PKA, the lattice structure of the two samples with grain boundaries disappears and we cannot see the grain boundaries any more. It demonstrates that the SiC samples become amorphous structure after high dose irradiation. The results show that the GB effect on tensile strength dominates under low irradiation dose conditions and it disappears under high dose conditions.
+Download: Download high-res image (274KB)
+Download: Download full-size image
+
+Fig. 4. The tensile strengths of irradiated SiC samples with symmetric tilt GBs as functions of PKA cascade times.
+
+Download: Download high-res image (1MB)
+Download: Download full-size image
+
+Fig. 5. The SiC grain boundary samples with a tilt angle of (a) 8.7° and (b) 36.9° before irradiation and after irradiation of 200 PKAs.
+
+Experimental works show that the strength of high purity CVD SiC is excellent under neutron irradiation conditions [9]. Our calculations show that the point defects and grain boundaries decrease the mechanical properties of SiC after irradiation. Kiani et al. found that the room-temperature plasticity of 6H-SiC crystal is controlled by glide of dislocations [56]. Stacking faults are also generated during the fabrication process [57], [58]. The relationship between the microstructure defects and mechanical properties of SiC under irradiation condition needs further investigations.
+4. Conclusions
+The tensile strengths of irradiated bulk SiC, SiC samples with designed point defects, SiC samples with GBs, and irradiated SiC GBs are investigated using molecular dynamics simulation at 300 K. For irradiated bulk SiC, the strength decreases with the increase of irradiation dose and finally converges. The Young's modulus decreases with the increase of irradiation dose which agrees well with experiment work. The designed point defects dramatically decrease the tensile strength of SiC. Among the point defects studied in this work, the vacancies drop the strength the most seriously. The tensile strength of a SiC sample with grain boundary is lower than that of a bulk sample without grain boundary. Under irradiated condition, the tensile strengths of all SiC samples with grain boundaries decrease and converge to certain value because the structures become amorphous and the grain boundaries disappear after high dose irradiation.
+Acknowledgments
+This work is supported by National Science and Technology Major Project of China under Contract No. 2015ZX06004001–002. It is also supported by Project of State Power Investment Corporation under Contract No. B-ZY04-201701.
+参考文献
+[1]
+T. 小柳、Y.加藤
+J. Nucl.Mater., 494(2017年), pp. 46-54
+View PDF
+View articleスコパスでのビュー
+[2]
+Y. 加藤、L.スニード、C.ヘナガー、T.野沢、T.日ノ木、A.イヴェコヴィ、S.ノバック、S.G.デ・ビセンテ
+J. Nucl.Mater., 455 (1) (2014), pp. 387-397
+View PDF
+View articleスコパスでのビュー
+[3]
+W.-J.キム、D.キム、J.Y.パーク
+核。Eng. Technol., 45巻4号(2013年), pp. 565-572
+Scopusにおける
+View PDF
+View articleCrossrefビュー
+[4]
+K. ユエ、D.カーペンター, H.ファインロス
+核。Eng. Int., 55 (2010), pp. 14-16
+スコパスでのビュー
+[5]
+Y. 加藤、L.L.スニード、C.M.パリッシュ、T.日ノ木
+J. Nucl.Mater., 434 (1–3) (2013), pp. 141-151
+View PDF
+View articleスコパスでのビュー
+[6]
+T. チェン、J.R.カイザー、M.P.ブレイディ、K.A.テラニ、B.A.パイント
+J. Nucl.Mater., 427 (1–3) (2012), pp. 396-400
+View PDF
+View articleスコパスでのビュー
+[7]
+B. ピント、K。テラーニ、M。ブレイディ、T。チェン、J。カイザー
+J. Nucl.Mater., 440 (1–3) (2013), pp. 420-427
+View PDF
+View articleView in Scopus
+[8]
+Y. 加藤、T.野沢、C.シ、K.小澤、T.小柳、W.ポーター、L.L.スニード
+J. Nucl.Mater., 462 (2015), pp. 450-457
+View PDF
+View articleView in Scopus
+[9]
+L.L.スニード、T.野沢、Y.加藤、T.-S.ビョン、S.近藤、D.A.ペッティ
+J. Nucl. Mater., 371 (1–3) (2007), pp. 329-377
+View PDF
+View articleView in Scopus
+[10]
+D. Sprouster, T. Koyanagi, E. Dooryhee, S. Ghose, Y. Katoh, L. Ecker
+Scripta Mater., 143 (2018), pp. 176-180
+View PDF
+View articleView in Scopus
+[11]
+A.G. Perez-Bergquist, T. Nozawa, C. Shih, K.J. Leonard, L.L. Snead, Y. Katoh
+J. Nucl. Mater., 462 (2015), pp. 443-449
+View PDF
+View articleView in Scopus
+[12]
+M.I. Idris, H. Konishi, M. Imai, K. Yoshida, T. Yano
+Energy Procedia, 71 (2015), pp. 328-336
+View PDF
+View articleView in Scopus
+[13]
+Osborne, M. C., Hay, J. C., Snead, L. L., and Steiner, D. J. Am. Ceram. Soc. 82(9), 2490–2496.
+Google Scholar
+[14]
+Y. Li, W. Xiao
+Comput. Mater. Sci., 110 (2015), pp. 215-220
+View PDF
+View article
+[15]
+L. Snead, S. Zinkle, J. Hay, M. Osborne
+Nucl. Instrum. Methods Phys. Res. Sect. B Beam Interact. Mater. Atoms, 141 (1998), pp. 123-132
+View PDF
+View articleView in Scopus
+[16]
+C. Zhang, H.-Z. Song, F. Mao, C.-J. Wang, D.-Q. Wang, F.-S. Zhang
+Nucl. Instrum. Methods Phys. Res. Sect. B Beam Interact. Mater. Atoms, 406 (2017), pp. 470-474
+View PDF
+View articleView in Scopus
+[17]
+A. Chartier, L.V. Brutzel, J. Pageot
+Carbon, 133 (2018), pp. 224-231
+View PDF
+View articleView in Scopus
+[18]
+A. Petersen, V. Gillette
+J. Nucl. Mater., 503 (2018), pp. 157-163
+View PDF
+View articleView in Scopus
+[19]
+M. Suhail, B. Puliyeri, P. Chaudhuri, R. Annabattula, N. Swaminathan
+Fusion Eng. Des., 136 (2018), pp. 914-919
+View PDF
+View articleView in Scopus
+[20]
+Q. Sahi, Y.-S. Kim
+Nucl. Eng. Technol., 50 (6) (2018), pp. 907-914
+View PDF
+View articleView in Scopus
+[21]
+F. Gao, W.J. Weber
+Phys. Rev. B, 69 (2004), p. 224108
+[22]
+Y. Li, W. Xiao, H. Li
+J. Nucl. Mater., 480 (2016), pp. 75-79
+View PDF
+View article
+[23]
+H. Xu, R.E. Stoller, L.K. Béland, Y.N. Osetsky
+Comput. Mater. Sci., 100 (2015), pp. 135-143
+View PDF
+View articleView in Scopus
+[24]
+X.-M. Bai, A.F. Voter, R.G. Hoagland, M. Nastasi, B.P. Uberuaga
+Science, 327 (2010), p. 1631
+CrossrefView in Scopus
+[25]
+M. Trochet, L.K. Béland, J.-F. Joly, P. Brommer, N. Mousseau
+Phys. Rev. B, 91 (2015), p. 224106
+CrossrefView in Scopus
+[26]
+A.A. Kohnert, B.D. Wirth, L. Capolungo
+Comput. Mater. Sci., 149 (2018), pp. 442-459
+View PDF
+View articleView in Scopus
+[27]
+D.E. Farrell, N. Bernstein, W.K. Liu
+J. Nucl. Mater., 385 (2009), pp. 572-581
+View PDF
+View articleView in Scopus
+[28]
+F. Gao, W.J. Weber
+Phys. Rev. B, 66 (2002), Article 024106
+[29]
+F. Gao, W.J. Weber
+J. Mater. Res., 18 (2003), pp. 1877-1883
+View in Scopus
+[30]
+Y. Katoh, L.L. Snead, I. Szlufarska, W.J. Weber
+Curr. Opin. Solid State Mater. Sci., 16 (3) (2012), pp. 143-152
+View PDF
+View articleView in Scopus
+[31]
+L.J. Porter, J. Li, S. Yip
+J. Nucl. Mater., 246 (1) (1997), pp. 53-59
+View PDF
+View articleView in Scopus
+[32]
+J. Li, L. Porter, S. Yip
+J. Nucl. Mater., 255 (2) (1998), pp. 139-152
+View PDF
+View articleView in Scopus
+[33]
+J. Xi, P. Zhang, C. He, H. Zang, D. Guo, T. Li
+Nucl. Instrum. Methods Phys. Res. Sect. B Beam Interact. Mater. Atoms, 356 (2015), pp. 62-68
+View PDF
+View articleView in Scopus
+[34]
+X. Wang, L. Jamison, K. Sridharan, D. Morgan, P. Voyles, I. Szlufarska
+Acta Mater., 99 (2015), pp. 7-15
+View PDF
+View articleCrossref
+[35]
+N. Swaminathan, M. Wojdyr, D.D. Morgan, I. Szlufarska
+J. Appl. Phys., 111 (5) (2012), p. 054918
+View in Scopus
+[36]
+E. Jin, L.-S. Niu, E. Lin, X. Song
+J. Appl. Phys., 111 (10) (2012), p. 104322
+View in Scopus
+[37]
+S. Bringuier, V.R. Manga, K. Runge, P. Deymier, K. Muralidharan
+Mater. Sci. Eng., A, 634 (2015), pp. 161-166
+View PDF
+View articleView in Scopus
+[38]
+T. Koyanagi, T. Nozawa, Y. Katoh, L.L. Snead
+J. Eur. Ceram. Soc., 38 (4) (2018), pp. 1087-1094
+View PDF
+View articleView in Scopus
+[39]
+K.A. Terrani, C. Ang, L.L. Snead, Y. Katoh
+J. Nucl. Mater., 499 (2018), pp. 242-247
+View PDF
+View articleView in Scopus
+[40]
+https://en.wikipedia.org/wiki/Flexural_strength.
+Google Scholar
+[41]
+S. Plimpton
+J. Comput. Phys., 117 (1995), pp. 1-19
+View PDF
+View articleView in Scopus
+[42]
+P. Erhart, K. Albe
+Phys. Rev. B, 71 (2005), p. 035211
+Jan
+CrossrefView in Scopus
+[43]
+K. Leung, Z. Pan, D. Warner
+Acta Mater., 77 (2014), pp. 324-334
+View PDF
+View articleView in Scopus
+[44]
+S.Z. Chavoshi, X. Luo
+Mater. Sci. Eng., A, 654 (2016), pp. 400-417
+View PDF
+View articleView in Scopus
+[45]
+R. Devanathan, T.D. de la Rubia, W. Weber
+J. Nucl. Mater., 253 (1–3) (1998), pp. 47-52
+View PDF
+View articleView in Scopus
+[46]
+J.F. Ziegler, J.P. Biersack, U. Littmark
+The Stopping and Ranges of Ions in Solids, vol. 1, Pergamon (1985)
+[47]
+J. Wallace, D. Chen, J. Wang, L. Shao
+Nucl. Instrum. Methods Phys. Res. Sect. B Beam Interact. Mater. Atoms, 307 (2013), pp. 81-85
+View PDF
+View articleView in Scopus
+[48]
+Y. Zhang, M. Ishimaru, T. Varga, T. Oda, C. Hardiman, H. Xue, Y. Katoh, S. Shannon, W.J. Weber
+Phys. Chem. Chem. Phys., 14 (2012), pp. 13429-13436
+CrossrefView in Scopus
+[49]
+A. Stukowski
+Model. Simulat. Mater. Sci. Eng., 18 (1) (2010), p. 015012
+CrossrefView in Scopus
+[50]
+F. Gao, E.J. Bylaska, W.J. Weber, L.R. Corrales
+Phys. Rev. B, 64 (2001), p. 245208
+[51]
+H. Ogawa
+Mater. Trans., 47 (11) (2006), pp. 2706-2710
+CrossrefView in Scopus
+[52]
+M. Wojdyr, S. Khalil, Y. Liu, I. Szlufarska
+Model. Simulat. Mater. Sci. Eng., 18 (7) (2010), p. 075009
+CrossrefView in Scopus
+[53]
+K. Xue, L.-S. Niu
+J. Appl. Phys., 106 (8) (2009), p. 083505
+View in Scopus
+[54]
+M. Ishimaru, I.-T. Bae, Y. Hirotsu, S. Matsumura, K.E. Sickafus
+Phys. Rev. Lett., 89 (2002), p. 055502
+[55]
+M. Ishimaru, A. Hirata, M. Naito, I.-T. Bae, Y. Zhang, W.J. Weber
+J. Appl. Phys., 104 (3) (2008), p. 033503
+View in Scopus
+[56]
+S. Kiani, K. Leung, V. Radmilovic, A. Minor, J.-M. Yang, D. Warner, S. Kodambaka
+Acta Mater., 80 (2014), pp. 400-406
+View PDF
+View articleView in Scopus
+[57]
+F.L. Via, A. Severino, R. Anzalone, C. Bongiorno, G. Litrico, M. Mauceri, M. Schoeler, P. Schuh, P. Wellmann
+Mater. Sci. Semicond. Process., 78 (2018), pp. 57-68
+[58]
+H. Cheng, M. Yang, Y. Lai, M. Hu, Q. Li, R. Tu, S. Zhang, M. Han, T. Goto, L. Zhang
+J. Eur. Ceram. Soc., 38 (9) (2018), pp. 3057-3063
+View PDF
+View articleView in Scopus
+Cited by (26)
+Atomistic insights into tensile damage of functionally Graded Al-SiC composites
+2025, International Journal of Mechanical Sciences
+Show abstract
+Grain boundary effects on chemical disorders and amorphization-induced swelling in 3C-SiC under high-temperature irradiation: From atomic simulation insight
+2024, Journal of the European Ceramic Society
+Citation Excerpt :
+
+The stress rises proportionally with tensile strain and undergoes an abrupt decrease upon reaching its maximum value, indicative of the characteristic brittle fracture behavior in ceramic materials. The tensile strengths at different damage doses range from 21.1 to 41.6 GPa, which is quite close to the simulation results of Li et al. [16] for STGB of 22.3–44.1 GPa. As the dose increases, amorphization escalates, leading to a corresponding reduction in peak stress and an increase in strain.
+
+Show abstract
+Effects of grain boundary volume fraction on the threshold dose of irradiation-induced SiC amorphization at 30 °C
+2023, Journal of the European Ceramic Society
+Citation Excerpt :
+
+Hence, it is reasonable to consider that amorphization is one of the reasons causing deterioration of the mechanical properties of HNLS. In contrast, previous studies have suggested that C–C bonds can increase the Young's modulus and strength, while Si–Si bonds and dangling bonds have the potential to lower them [49,50]. The strengthening induced by C–C bonds may not compensate for the weakening of the mechanical properties caused by the combined effect of the dilution of Si–C bonds and the enhancement of Si–Si bonds, eventually deteriorating the mechanical properties of SiC [32].
+
+Show abstract
+Irradiation-induced chemical disordering in ceramics: The case of SiC
+2022, Journal of Nuclear Materials
+Citation Excerpt :
+
+Understanding the contribution of individual defects has been advanced by atomic-scale modeling. Li et al. conducted molecular dynamics simulations to investigate the effects of point defects on tensile strength of SiC lattice [57]. All the defect type decreases the strength at low-defect concentrations.
+
+Show abstract
+Preparation and characterization of porous zircon aggregates by granulation method: Roles of the polymorphism of Al2O3
+2021, Journal of the European Ceramic Society
+Show abstract
+Molecular Dynamics Simulation Studies of Properties, Preparation, and Performance of Silicon Carbide Materials: A Review
+2023, Energies
+View all citing articles on Scopus
+© 2018年 韓国原子力協会、エルゼビア韓国LLC発行。
+ScienceDirectについて
+リモートアクセス
+連絡先とサポート
+利用規約
+プライバシーポリシー
+Cookie 設定
+
+このサイトのすべてのコンテンツ:著作権2026 Elsevier B.V.、そのライセンサーおよび寄稿者に帰属©します。テキストおよびデータマイニング、AIトレーニング、その他類似技術に関する権利は一切を保持します。すべてのオープンアクセスコンテンツには、関連するライセンス条件が適用されます。

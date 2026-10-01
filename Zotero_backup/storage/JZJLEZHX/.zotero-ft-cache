@@ -1,0 +1,263 @@
+1131
+日本 機 械 学 会 論 文 集(A編) 72巻720号(2006-8)
+論 文 No.05-0738
+単結晶シ リコンの破壊挙動に及ぼす欠陥寸法の
+影響 に関す る分子動力学解析*
+藤 井 朋 之*1, 秋 庭 義 明*1
+Molecular Dynamics Analysis for Effect of Defect Size on Fracture Behavior of Single Crystal Silicon
+TToommooyyuukkii FFUUJJIIII aanndd YYoosshhiiaakkii AAKKIINNIIWAW*A2 *2
+*2 Department of Mechanical Science and Engineering, Nagoya University, Furo-cho, Chikusa-ku, Nagoya-shi, Aichi, 464-8603 Japan
+Thin films of single crystal silicon are expected to many applications for semiconductor devices and MEMS well. It is important to evaluate the mechanical properties of the thin film. Especially, it is essential to clarify the strength and fracture properties of the thin film with stress concentrations. In this study, MEAM molecular dynamics simulation is conducted to investigate the effect of notch depth on the deformation and fracture behavior. The loading direction is [110] and the notch is in the [001] direction on (110) plane. In a smooth specimen, Young's modulus was 153.1 GPa which is less than that of the bulk material. In notched specimens, the stress at crack propagation decreases with increasing notch depth. When the notch depth is shorter than 1 nm, the stress intensity factor at the crack propagation decrease with decreasing notch depth. However, when the notch depth is longer than 1 nm, the stress intensity factor is nearly constant irrespective of notch depth.
+Key Words: Molecular Dynamics, Atomic Simulation, Single Crystal Silicon, Notch, Brittle Fracture
+1. 緒 言
+近 年,微 細化 が 進 ん だ半 導 体 プ ロセ ス技 術 を応 用 し て,基 板 の シ リコン ウエ ハ 上 に微 小 な構 造 体 を作成 す
+るマ イ ク ロマ シニ ン グ技 術 が広 く研 究 され てい る。 こ
+の よ うな技 術 に よって 作成 され たMEMS(Micro-Electro
+Mechanical System)は 微 小 セ ンサや マイ ク ロマ シ ンへ の
+応 用 が期 待 され て い る.MEMSデ バ イ ス で は,シ リ コ
+ン薄 膜 を 単独 も し くは積 層 し構 造 材 料 と して用 い るた
+め,こ の よ うな デ バ イ ス の設 計 のた め に は薄 膜 の機 械
+的 物 性 の評 価 が 重 要 とな る.薄 膜 の機 械 的特 性 は バル ク の特 性 とは しば しば 異 な る こ とが知 られ てお り,こ
+れ らデ バ イ ス お よび シ ステ ムの 設 計 や 製 造 の た め に,
+薄 膜 の材 料 特 性 評価 は重 要 で あ る.特 に各種 デバ イ ス の 実 用化 に 関 して は,薄 膜 の信 頼 性 に関 す る特 性,と
+りわ け応 力集 中部 を 有す る部 材 の 強度 ・破 壊 特 性 の 評
+価 が 不 可 欠 で あ る.さ らに,薄 膜 の よ うな微 小 材 料 に
+お い て は,ミ ク ロな視 点 に基 づ く材 料 特 性 の評 価 が重
+要 で あ り,原 子 ス ケ ール の 力 学 的評 価 が可 能 な分 子 動 力 学法 が 有効 で あ る.
+Komanduriら(1)は,単 結 晶 シ リコン とゲル マ ニ ウム
+にお い て 単軸 引張 負 荷 の分 子 動 力 学解 析 を行 い,応 力
+ひず み 関係 よ りヤ ン グ率 を算 出 しバル ク材 と一致 して い る こ とを 示 した.さ らに,最 大応 力 に及 ぼ す負 荷 ひ
+ず み 速度 の影 響 につ い て示 した.し か しなが ら,破 壊
+挙 動 の 結 晶学 的 ・破 壊 力学 的 考 察 は詳 細 には な され て お らず,不 明 な点 が 多 い.Baileyら(2)やPrezら(3)は,
+単結 晶 シ リ コン に お い て,切 欠 きや 予 き裂 を導 入 し, き裂 周 辺 の原 子 に連 続 体 力学 に基 づ くき裂 周 辺 の変 位
+分布 を与 え る こ とで,破 壊 じん 性 の評 価 とき裂伝 ぱ挙
+動 の結 晶 学 的 考 察 を行 った.し か しな が ら,破 壊 挙動 に及 ぼす 欠 陥寸 法 の 影響 につ い て は明 らか で は ない.
+* 原 稿 受 付2005年7月11日. *1 正員,名 古 屋大 学 大 学院 工 学 研 究 科(〒464-8603名 古 屋 市 千 種 区不老 町). E-mail : akiniwa@mech. nagoya-u. ac. jp
+13
+
+
+1132 単結晶 シ リコンの破壊挙 動 に及 ぼす欠陥寸法 の影響 に関 す る分子動力学 解析
+そ こで 本研 究 で は,薄 膜 の破 壊 に関 す る基 礎 的 な 知
+見 を得 るた め,種 々 の寸 法 の微 小 欠 陥 を有 す る単 結 晶 シ リ コン薄 膜 を対象 と し,分 子 動 力 学 法 に よ る変 形 お
+よび 破壊 解 析 を行 い,破 壊 挙動 に及 ぼす 微 小 欠 陥 の 影
+響 につ い て検 討 を行 った,さ らに,切 欠 き を き裂 とみ な し連 続 体 力 学 との比 較 を行 った.
+2. 解 析 方 法
+2・1 解 析 モデ ル 解 析 対 象 は,図1に 示す 単 結 晶
+シ リコン薄 膜 と した.(a)は 平 滑材,(b)は 片 側切 欠 き材
+で あ る.解 析 モ デ ル は,x-y面 が(110)面 で,大 き さ
+14√2a×10a×3√2a(aは 格子 定 数)で あ る.z軸 方 向 に
+周 期 境 界 条 件 を課 す こ とに よ っ て薄 膜 と した.な お,
+平 滑 材 にお け る総原 子 数 は7,613個 で あ る.ま た,片
+側 切 欠 き材 で は,モ デル 片 側 中 央部 の原 子 を取 り除 く こ とで切 欠 き を導 入 し,さ らに切 欠 き先 端 よ りモデ ル
+表 面 に仮 想 ス リ ッ トを設 け,解 析 中 は切 欠 きの左 右 の
+面 の相 互 作用 が な い もの と した.切 欠 き深 さは,0.543
+nmか ら3.80nmま で7通 りに変 化 させ た.な お,切 欠
+き深 さは モ デル 表 面 か ら切 欠 き底 の原 子 の重 心 ま で の
+距離 と した.
+分 子 動 力 学 計 算 にお い て,原 子 間 ポ テ ン シ ャル は, DawとBaskesに よっ て提 案 され てい る原 子 埋 め込 み法
+(Embeded Atom Method, EAM)(4)(5)に電 子密 度 の結 合角 依
+存性 を 考慮 した修 正 原 子 埋 め 込 み法(Modified Embeded
+(a) Smooth specimen
+(b) Notched specimen
+Atom Method, MEAM)(6)(7)を採 用 した.系 の全 ポ テ ン シ ャ
+ル は,全 電子 エ ネ ル ギ ー とイ オ ン斥 力 に よ る2体 間 の
+相 互 作 用 の和 と して,
+(1)
+と表 され る.こ こで,添 え字i等 は,個 々の 原子 を表
+し,ρiは 電 子 密度,Fiは 電子 密 度 ρiをもつ場 に原 子 を
+埋 め込 む 際 に必 要 なエ ネル ギ ー,φijは2体 間 の相 互 作
+用.rijは 原 子iと 原 子j間 の距 離 で あ る.な お,原 子 間
+相 互作 用 の カ ッ トオ フ距離 は,第4近 接 原 子 を含 む0.6
+nmと した.
+時 間積 分 法 に は高 精度 かつ 安 定 なvelocity-Verlet法(8)
+を使 用 した.な お,積 分 の時 間 ス テ ップ Δtは1fsと し
+た.ま た,系 の 温 度 は原 子 の速 度 に スケ ー リン グ倍 率
+を乗ず る こ とで一 定 とす る温 度 ス ケ ー リン グ法(9)を用 い た.な お,領 域 分割 法 を用 い計 算 の効 率 化 を行 った.
+2・2 引張 ひず み 負荷 方 法 と計 算 手 順 最 初 に,格
+子 定 数aを0.543nmと して 図1に 示 した よ うに原 子 を
+ダイ ヤ モ ン ド構 造 に配 置 し,初 期 温度300Kと す るた
+め,原 子 に初 期速 度 をMaxwell分 布 に従 うよ うにBox
+Muller法(10)によ り与 え,そ の 後2000fsの 初期 緩 和 計算
+Fig. 1. Analytical models of smooth and notched specimen.
+Fig. 2. Bounday condition for applied displacement.
+Table 1. Analytical conditions for fracture simulation.
+14
+
+
+単結晶 シ リコンの破壊挙 動 に及 ぼす欠陥寸法 の影 響 に関 する分子動力学 解析 1133
+を行 っ た.初 期 緩 和 の 後,図2に 示 す よ うにモ デル 両
+端 の 原子 にx軸 方 向 に公 称 ひず み が Δε=0.002(片 側 に
+つ き Δε=0.001)と な る強 制 変位 を与 え,さ らに1000fs
+の緩 和計 算 を行 った.こ の強 制変 位 と1000fsの 緩 和計
+算 を1ス テ ップ と して,強 制変 位 を行 っ たx軸 方 向 の
+平 均 応 力 が破 壊 に よ って 十分 解 放 され る まで 繰 り返 し
+計 算 を行 った.本 解 析 に お け る,解析 条 件 を表1に 示 す.
+2・3 原 子 系 の応 力評価 原 子 に 作用 す る応 力(以
+後 原 子応 力 と称 す)は,ポ テ ン シ ャル の微 係 数 と原 子
+の速 度 よ り次式 で与 え られ る(11).
+(2)
+こ こで,添 え字 α,βは指 標,Ω,mは 原子 の体 積 お よ
+び 質 量,pjaは 原 子iの 運 動 量の α方 向成 分,Eは ポテ
+ン シャル で あ る.さ ら に,系 の平 均応 力 は,次 式 で表
+され る,原 子応 力 の 全原 子 の 平 均 と した.
+(3)
+こ こで,Nは 系の 全原 子 数 で あ る.な お,本 解 析 にお
+いて,固 定 端 に 作用 す る反 力 か ら算 出 した系 に働 く作
+用 応 力 と,式(2)お よび(3)で 評 価 され る系 の平 均 原子
+応 力 は ほ ぼ一 致す る こ とを確 認 して い る.
+3. 解 析 結 果 と 考 察
+3・1 変 形 ・破壊 過 程 図3にx軸 方 向垂 直応 力 σxx
+と公 称垂 直 ひず み εxxの関係 を示 す.図 中 の実 線 は 平 滑
+材 の結 果 で あ り,破 線 等 は 切欠 き材 の 結果 で あ る.た だ し,垂 直 応 力 σxxは,式(2)お よび(3)よ り算 出 した
+平均 原 子応 力 の緩 和 計 算 の1000fsの 後半 の500fsの 平
+均 で あ る.ま ず,平 滑材 で は,負 荷 ひ ず み εxxの増 加 に
+した が っ て,平 均応 力 σxxが単調 に増 加 してお り,負 荷
+ひず み0.166に おい て 平均 応 力 が最 大 値15.9GPaと な
+り,そ の 後急 激 に減少 した.一 般 に シ リ コン は室 温 で はぜ い性 破 壊 す る こ とが知 られ てお り,解 析 の結 果 と
+一致 す る.ま た,応 力-ひ ず み 関係 の 直線 部(0.0<ε
+<0.02)よ り得 られ るヤ ング率 は,153.1GPaと な った.
+表2に 示すMEAMポ テ ンシ ャル の 弾性 定 数 で算 出 され
+る[110]方 向 にお け るヤ ン グ率 は167.3GPaで あ り(7),本
+解 析 の結 果 よ りもや や大 きい.薄 膜 にお い て,弾 性 定 数 は表 面構 造 の 不均 質 性 とそ れ に伴 う内 部 変位 の 影響
+を受 け て減 少 す るこ とが,Izumiら に よ って 報告 され て
+お り(12),本解 析 の傾 向 と一 致 した.
+図4に 弾性 率 と切 欠 き深 さの 関係 を示 す.こ こで,
+弾 性 率cは,次 式 で 定 義 し,平 滑材 にお け るヤ ン グ率
+と同様 に,応 力-ひ ず み 関係 の 直線 部 の傾 き よ り算 出
+した.
+(4)
+また,図 中の実線はモデル を連続体 と仮定 し有限要
+素法に より計算 した結果で ある.な お,有 限要素解析 には汎用有限要素解析 ソフ トMSC.Marc2001を用い,平
+面ひずみ条件で弾性解析 を行った.解 析に用いた弾性 定数はMEAMポ テ ンシャルの解析値であ り,表2に 示
+す.切 欠 き深 さの増 大に従い,弾 性率が減少 してい る ことがわかる.ま た,有 限要素法による結果 と比較す ると,弾 性率が平滑材 と同様に有限要素法の結果 よ り も分子動 力学の結果のほ うが小 さくなってお り,分 子 動力学法 による解析では表面の影響 が強 く現れ てい る
+Table 2. Elastic constants for Si in the MEAM(7).
+Fig. 3. Stress-strain curves of smooth
+and notched specimens.
+Fig. 4. Elastic modulus vs. notch depth.
+15
+
+
+1134 単結 晶 シリコンの破壊挙動 に及ぼす欠陥 寸法の影響 に関す る分子動 力学解析
+と考 え られ る.ま た,弾 性 率 の切 欠 き深 さに対 す る変
+化 の傾 向 は,有 限要 素 法 に よる結 果 と一致 した.
+図5に 切 欠 き材 にお け る き裂 伝 ぱ 開始 にお け る平 均
+応 力 と切 欠 き深 さの 関係 を示 す.な お,き 裂伝 ぱ 開始 点 は,破 壊 に よっ て き裂 先 端 の原 子 応 力 が 急激 に減 少
+す る直 前 の条 件 と した.き 裂 伝 ぱ 開始 応 力 は切 欠 き深
+さが 増 大す る ほ ど低 下 した.
+図6に 切欠 き長 さ2.17nmに お け る シ ミュ レー シ ョ
+ン結 果 の原 子 配 置 を示 す.(a)は 初 期 緩 和 終 了後,(b)が
+き裂 伝 ぱ 開始 直 前 の負 荷 ひず み0.072,(c)き 裂伝 ぱ開
+始 で ある負 荷 ひ ず み0.074,(d)が 破 壊 後 で あ る.(a)で
+は,薄 膜表 面,特 に モデ ル 下 部 に お い て原 子 が 再配 置
+してい るこ とが わ か る.モ デ ル 下部 の 原 子 はx軸 方 向
+に は,結 合手 を有 して い な いた め 再 配置 しや す く,原
+子 の再 配 置 の結 果,弾 性 率 がバ ル ク材 に比 べ 減 少す る と考 え られ る.(b)で は,切 欠 きが 開 口 して お り,特 に
+切 欠 き先端 に変 形 が集 中 し,(c)で は 切欠 き底 にお け る
+原 子 間 の 結合 が切 断 され,き 裂 が発 生 して い る こ とが わ か る.つ い で,(d)で 示す よ うに,き 裂 が荷 重 軸 に垂
+直 な(110)面 を[001]方 向に 直線 的 に進 展 し破 壊 に 至 っ
+た. 3・2 き裂 伝 ぱ開 始 条 件 切 欠 き を き裂 と見 な し,
+き裂 伝 ぱ 開始 にお け る応 力 拡 大係 数Kinによ って き 裂伝
+ぱ 開 始 条 件 の評 価 を行 った.な お,応 力 拡 大係 数 は,
+次式 に よっ て算 出 した.
+(5)
+ここで,σinは き裂 伝 ぱ 開始 に お け るx軸 方 向 の垂 直
+平均 応 力 σxxであ り図5に 示 した き裂 伝 ぱ開 始応 力 に
+対応 し,tは 切 欠 き深 さで切 欠 き底 原 子 の重 心 位 置 ま
+で の長 さ,Wは 膜 厚 で あ る.ま た,Fは 形 状 に 関す る
+修 正 係 数 で あ る.単 結 晶材 料 に お け る応 力拡 大 係 数 の
+(a)After initial relaxation, ε=0.000
+(b)Before crack pmpagation, ε=0.072,
+(c)Crack propagation, ε=0.074
+(d)After separated, (ε=0.082)
+評 価 に は,簡 便 的 に等 方性 を仮 定 した評 価 が行 わ れ る こ とが あ るた め(13),予め体 積 力法 を用 い等 方性 の均
+質 体 を仮 定 し,図2に 示す 境 界 条件 の下 で,種 々 の き
+裂 長 さにお け る修 正 係 数 を算 出 し次 の6次 式 で近似 し
+た.
+(6)
+図7に 応力拡大係数 と切欠き深 さの関係 を示す.図 中 の丸印が式(6)よ り導出 した応力拡大係数である.切
+欠 きが2nm程 度 より短 い場合には切欠きが短いほど
+き裂伝ぱ開始 における応力拡大係数は小 さくな り,切
+Fig. 5. Critical stress vs. notch depth.
+Fig. 6. Snapshots of fracture process.
+16
+
+
+単結晶 シ リコ ンの破壊挙動 に及 ぼす欠 陥寸法 の影響 に関す る分 子動力学解析 1135
+欠 き が2nm程 度 よ り長 い場 合 に は切 欠 き深 さに よ ら
+ず ほ ぼ一 定 とな った.そ の 一 定値 は本 ポ テ ン シ ャル を
+用 い た場 合0.747MPa√mで あ る.さ らに,形 状 に 関
+す る修 正係 数Fを 境 界 要 素 法 に よ り異 方性 を考慮 して
+前 述 と同様 に 次 の6次 式 で 近似 した.
+(7)
+図 中の 三 角印 が 式(7)よ り導 出 した応 力 拡 大係 数 で あ
+る.異 方性 を考 慮 した応 力 拡 大係 数 は,切 欠 きが お お
+よそ1nm以 上 では,0.693MPa√mで 一 定 とな り,1nm
+よ り小 さな切 欠 きで は等 方 性 に よ る評 価 と同様 にそ の 一 定値 よ り小 さ くな っ た.Izumiら(12)は,単 結 晶Si薄
+膜 にお い て 表面 の原 子 弾性 定 数 お よび 内部 変位 の変 動 が原 子 層3層 程度 に及 ぶ こ とを示 して お り,切 欠 き深
+さ0.543nmで は切 欠 き先 端原 子 が この 変動 領 域程 度 に
+存 在 す るた め,切 欠 き先端 が表 面 の影 響 を受 け な い条 件 よ りも応 力拡 大 係 数 が低 下 した と考 え られ る.
+ま た,バ ル ク材 にお け る{110}面 の破 壊 じん 性値 は
+0.89MPa√mで あ り(14),本解 析 で得 られ たKinよ り も
+大 きい.Baileyら(2)は 単 結 晶 シ リコ ンのV型 切 欠 き材
+にお い てMEAMに よ る分 子 動 力学 解 析 を行 い,切 欠 き
+近 傍 に連続 体 力 学 に基 づ く変位 場 を与 え るこ とで 切 欠 き底 か らの き裂伝 ぱ開 始 条 件 を導 出 し,破 壊 じん性 が
+0.657MPam0.481に な る こ とを示 した.さ らに,解 析 結 果
+がsuwitoら(15)に よる実 験 結果0.76MPam0.481よ りもや
+や 小 さい こ とを示 して お り,本 解析 の結 果 に 対応 して い る.な お,膜 厚 の影 響 につ い て は今 後 の 系 統 的 な検
+討 が必 要 で あ る.
+図8に き裂伝ぱ開始直前のき裂先端か らのx軸 方向
+垂直原 子応力 σxxの分布を示す なお,原 子応力はz軸
+方向の原子にお けるx軸方向の垂直原子応力 σxのx平均
+とした.切 欠き先端 に応 力が集 中していることがわか る.ま た,切 欠 き近傍における原子応 力分布 は切欠き 深 さによらず,よ く一致 していることがわかる.ま た, 図9に 切欠 き深 さが1.63nmに おける分子動力学 による
+原子応力分布 と有限要素法に よる応力分布 の解析結果
+Fig. 7. Stress intensity factor for crack propagation.
+Fig. 8. Atomistic stress distribution from notch root.
+Fig. 9. Stress distribution calculated by MD and FEM.
+Fig. 10. Atomistic stress at notch root for crack
+propagation.
+17
+
+
+1136 単結 晶 シ リコ ンの破壊挙動 に及 ぼす欠 陥寸法の影響 に関す る分子 動力学解析
+を合わせて示す.な お,有 限要素解析 においては切欠 きをき裂 とみ なし,垂直応 力 σinに対応す る強制変位 を
+与えた.弾 性挙動 における分子動力学 による原子応力
+分布 は,有 限要素法の応 力分布にほぼ一致 し,本 モデ ル程度の原子系においては連続体力学 の適用 も可能 で
+ある.た だ し,原 子系における不均質 な構造が存在す る切欠 き先端や,モ デル表面では原子が安定な構 造に 再配置す るため原子応力が減少 してお り,原 子系にお ける不均質な構造体の詳細 な力学的評価 には分子動力 学法 が不可欠 と考 えられ る. 図10にき裂伝ぱ開始直前のき裂先端か らの原子応力
+σxxと切欠 き深 さの関係 を示す 切欠 き深 さによってば らつ きはあるがほぼ一定で,MEAMを 用いた場合約26
+GPaで 一定であることがわか る.よ って,原 子系にお
+いてき裂伝ぱ開始条件は,切 欠 き寸法依存性のない荷 重軸方 向の垂直原子応力による評価が有効 であると考 えられ る.な お,原 子応力の最大値はポテンシャルに
+依存す る量であ り,定 量的 には検討 が必要である.
+4. 結 言
+単結晶 シリコン薄膜の力学的特性評価のため,分 子 動力学法 を用いて種 々の寸法の切欠 きを導入 し,破 壊 シ ミュ レー シ ョンを実施 した.巨 視的な破壊挙動であ る応 力-ひ ずみ関係 を導出す るとともに,き 裂伝ぱ挙 動やき裂伝 ぱ開始条件 の結晶学的お よび破壊力学的検 討を行 った.得 られた主な結果 を以下に示す.
+(1) 引張負荷下では,切 欠 きの有無 によらず全ての モデルがぜ い性的に破壊 した.ま た,切 欠き材 におい て,き 裂 は荷重軸 と垂直な(110)面を[001]方向に伝 ぱ
+し,破 断 した.
+(2) 薄膜 のヤ ング率は,MEAMポ テンシャルの弾性 定数 より算 出され る値 よ り小 さくなった.こ れは,表 面近傍の原子の不均質構造 に起因 し,薄 膜では全体 に 対す る不均質構造の割合が増加す るためである. (3)切欠き深 さが増加す るほ ど,弾性率お よび最大応 力が小 さくなった.弾 性率の切欠き深 さに対する変化 の傾向は,有 限要素法 による結果 と同様 となった.
+(4) き裂伝 ぱ開始におけ る異方性 を考慮 した応力拡 大係数は切欠 き深 さが1nmよ りも小 さい場合には切欠 き深 さの減少 とともに減少す るが,1nmよ りも大きい
+場合 にはほぼ一定 となった.切 欠 きが小 さい場合 は, 切欠 き先端原子が表面構造 の影響を受 けるもの と考 え られ る.
+(5) き裂伝 ぱ開始 時の切欠 き先端 の負荷軸方 向垂 直原子応力は切欠 き寸法によ らずほぼ一定であった.
+参考文献
+(1) Komanduri, R. et al, Molecular dynamics simulations of uniaxial tension at nanoscale of semiconductor materials for micro-electro-mechanical systems (MEMS) applications, Materials Science and Engineering, A, Vol.340, (2003), pp.58-67.
+(2) Bailey, N.P. and Sethna, J.P., Macroscopic measure
+of the cohesive length scale: Fracture of notched single crystal silicon, Physical Review, B. Vol.68, (2003), pp.205204.
+(3) Prez, R. and Gumbsch, P., An ab initio study of the cleavage anisotropy in silicon, Acta Materialia, Vol.48, (2000), pp.4517-4530.
+(4) Daw, M.S. and Baskes, M.I., Semiempirical Quan
+tum Mechanical Calculation of Hydrogen Embrittlement in Metals, Physical Review Letters, Vol.50, (1983), pp.1285-1288.
+(5) Daw, M.S. and Baskes, M.I., Embedded-atom
+method: Derivation and application to impurities, surfaces, and other defects in metals, Physical Review,B,Vol. 29, (1984), pp.6443-6453.
+(6) Baskes, M.I., Modified embedded-atom potentials for cubic materials and impurities, Physical Review, B, Vol.46, (1992), pp. 2727-2742.
+(7) Baskes, M.I. et al, Semiempirical modified embe
+ded-atom potentials for silicon and germanium, Physical Review, B, Vol.40, (1989), pp. 6085-6100.
+(8) Ueda, A., Molecular simulation, (2003), pp.82-85, Shokabo., (in Japanese)
+(9) Kitagawa, H. et al, Molecular dymanics method for beginners, (1997), Yokendo Ltd., pp.22-23. (in Japanese)
+(10) Miyatake, O., Wakimoto K., Random number and Monte Cairo method. Morikita Shuppan Co., Ltd., (1978), pp.22, (in Japanese)
+(11) Egami, T. et al, Philosophical Magazine, A, Vol.
+41, (1980), pp.883.
+(12) Izumi, S. et al, A method for calculating surface
+stress and surface elastic constants by molecular dynamics; Application to the surface of crystal and amorphous silicon, Thin Solid Films, Vol.467/1-2, (2004), pp.253-260.
+(13) Li, X. et al, Anisotropy in fracture of single crystal
+silicon film characterized under uniaxial tensile condition, Sensors and Actuators, A, Vol.117, (2005), pp.143-150
+(14) Michot G, Crystal Properties and Preparation,
+Vol.17-18, (1988), pp.55-98
+(15) Suwito W. et al, Fracture initiation at sharp
+notches in single crystal silicon, Journal of Applied Physics, 83, (1998), pp. 3574-3582
+18

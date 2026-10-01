@@ -16,7 +16,7 @@ vmd-2.0.1a1.bin.LINUXAMD64.tar.gz
 .anaconda/
 .landscape/
 .dotnet/
-.gemini/
+# .gemini/
 .npm/
 
 # Ignore outputs and large files
@@ -31,3 +31,5 @@ vmd-2.0.1a1.bin.LINUXAMD64.tar.gz
 *.o
 *.a
 *.dump
+*.db
+*.webp

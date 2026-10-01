@@ -1,0 +1,73 @@
+LAMMPS (22 Jul 2025 - Update 4)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+# 初期設定
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes   # ← この行を追加しました！
+
+# モデルの構築
+region box block 0 10.0 0 10.0 0 10.0
+create_box 2 box
+Created orthogonal box = (0 0 0) to (10 10 10)
+  1 by 1 by 1 MPI processor grid
+mass 1 28.085
+mass 2 12.011
+create_atoms 1 single 4.0 5.0 5.0
+Created 1 atoms
+  using lattice units in orthogonal box = (0 0 0) to (10 10 10)
+  create_atoms CPU = 0.000 seconds
+create_atoms 2 single 6.0 5.0 5.0
+Created 1 atoms
+  using lattice units in orthogonal box = (0 0 0) to (10 10 10)
+  create_atoms CPU = 0.001 seconds
+
+# 原子に初期速度を与える
+velocity all create 300.0 12345
+
+# MDI通信とMD計算の設定
+fix 1 all mdi/qm elements Si C
+fix 2 all nve
+
+# 出力設定と実行
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+run 5
+WARNING: No pairwise cutoff or binsize set. Atom sorting therefore disabled. (src/atom.cpp:2499)
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:212)
+Per MPI rank memory allocation (min/avg/max) = 2.301 | 2.301 | 2.301 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   300            0              0             -877.85827      41.419513    
+         1   377.19443      0              0             -877.85828      52.077366    
+         2   525.86179      0              0             -877.85826      72.603131    
+         3   743.15204      0              0             -877.85818      102.60332    
+         4   1025.0395      0              0             -877.85797      141.52212    
+         5   1364.0108      0              0             -877.85786      188.32222    
+Loop time of 159.815 on 1 procs for 5 steps with 2 atoms
+
+Performance: 0.003 ns/day, 8878.616 hours/ns, 0.031 timesteps/s, 0.063 atom-step/s
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 1.3281e-05 | 1.3281e-05 | 1.3281e-05 |   0.0 |  0.00
+Output  | 0.0013926  | 0.0013926  | 0.0013926  |   0.0 |  0.00
+Modify  | 159.81     | 159.81     | 159.81     |   0.0 |100.00
+Other   |            | 4.749e-05  |            |       |  0.00
+
+Nlocal:              2 ave           2 max           2 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:03:16

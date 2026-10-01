@@ -1,0 +1,33 @@
+# Ignore large folders and environments
+miniconda3/
+lammps_src/
+lammps_build/
+q-e-local/
+.cache/
+.conda/
+.vscode-server/
+.local/
+Atomeye/
+vmd-2.0.1a1/
+vmd-2.0.1a1.bin.LINUXAMD64.tar.gz
+
+# Ignore system/app specific
+.antigravity-ide-server/
+.anaconda/
+.landscape/
+.dotnet/
+.gemini/
+.npm/
+
+# Ignore outputs and large files
+*.lammpstrj
+*.out
+*.log
+*.tar.gz
+*.tar.bz2
+*.tar
+*.zip
+*.so
+*.o
+*.a
+*.dump

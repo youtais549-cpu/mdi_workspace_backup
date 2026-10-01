@@ -1,0 +1,43 @@
+&CONTROL
+   calculation      = 'scf'
+   tstress          = .true.
+   tprnfor          = .true.
+   outdir           = './tmp'
+   disk_io          = 'minimal'
+   pseudo_dir       = './'
+/
+&SYSTEM
+   ecutwfc          = 40.0
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'gaussian'
+   ntyp             = 2
+   nat              = 2
+   ibrav            = 0
+/
+&ELECTRONS
+   electron_maxstep = 200
+   conv_thr         = 1e-05
+   mixing_beta      = 0.3
+   mixing_ndim      = 10
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Si 28.085 Si.upf
+C 12.011 C.upf
+
+K_POINTS gamma
+
+CELL_PARAMETERS angstrom
+10.00000000000000 0.00000000000000 0.00000000000000
+0.00000000000000 10.00000000000000 0.00000000000000
+0.00000000000000 0.00000000000000 10.00000000000000
+
+ATOMIC_POSITIONS angstrom
+Si 4.0149950051 5.0094859515 5.0099522594 
+C 5.9649375807 4.9778192532 4.9767288980 
+

@@ -1,0 +1,6 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
+gitlab.com	0	0	1788932213	31536000
+pseudopotentials.quantum-espresso.org	0	1	1784870450	31536000
+github.com	0	1	1790359723	31536000

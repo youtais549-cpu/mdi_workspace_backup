@@ -1,0 +1,22 @@
+# 初期設定
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes   
+
+# モデルの読み込み
+read_data 2H-SiC_supercell_3x3x2.data
+mass 1 28.085
+mass 2 12.011
+
+# 原子に初期速度を与える
+velocity all create 300.0 12345
+
+# MDI通信とMD計算の設定
+fix 1 all mdi/qm elements Si C
+fix 2 all nve
+
+# 出力設定と実行
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+run 5

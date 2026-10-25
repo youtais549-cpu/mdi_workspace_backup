@@ -1,0 +1,26 @@
+# 2H-SiC {10-10} 3x3x4 スラブモデル (4周期 8層 144原子, 真空層 5.0 Å) 【再開用】
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+# 1. 途中緩和済み構造 (Timestep 44) の読み込み
+read_data slab_10-10_144atoms_restart.data
+
+# 原子質量 (Type 1: C, Type 2: Si - ASEの英名昇順ソートと完全一致)
+mass 1 12.011
+mass 2 28.085
+
+# 2. MDI 通信設定 (Quantum ESPRESSO を QM エンジンとして連成)
+fix 1 all mdi/qm elements C Si
+
+# 3. 出力設定
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+dump_modify 1 append yes
+
+# 4. 表面構造緩和の再開 (minimize)
+# 閾値 1.0e-3 eV/Å に達するまで継続
+minimize 0.0 1.0e-3 100 1000
+
+undump 1

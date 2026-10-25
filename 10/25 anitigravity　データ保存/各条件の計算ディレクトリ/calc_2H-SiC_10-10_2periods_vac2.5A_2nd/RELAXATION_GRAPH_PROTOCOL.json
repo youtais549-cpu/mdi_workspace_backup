@@ -1,0 +1,59 @@
+{
+    "protocol_name": "MDI_Structure_Relaxation_Graph_Protocol",
+    "version": "1.0",
+    "description": "構造緩和計算完了時に自動生成する3種推移グラフの標準指示書",
+    "style_specification": {
+        "width_cm": 8.0,
+        "height_cm": 6.2,
+        "dpi": 600,
+        "formats": ["png", "pdf", "svg"],
+        "line_color": "#8A2BE2",
+        "line_width": 1.2,
+        "marker": "^",
+        "marker_size": 45,
+        "marker_facecolor": "none",
+        "marker_edgecolor": "#8A2BE2",
+        "marker_linewidth": 1.2,
+        "font_label_family": "MS Mincho",
+        "font_label_size": 10.5,
+        "font_tick_family": "Times New Roman",
+        "font_tick_size": 9.5,
+        "mathtext_font": "stix",
+        "box_ticks": {
+            "top": true,
+            "right": true,
+            "direction": "in"
+        }
+    },
+    "graphs": [
+        {
+            "id": "Total_Energy_progression",
+            "title": "全エネルギー推移グラフ",
+            "x_label": "構造緩和ステップ数 [Step]",
+            "y_label": "系全体のエネルギー [$\\mathrm{eV}$]",
+            "data_source": "qe_engine.log or espresso.pwo or log.lammps",
+            "y_margin_ev": 1.5
+        },
+        {
+            "id": "Total_Force_progression",
+            "title": "全原子作用力推移グラフ",
+            "x_label": "構造緩和ステップ数 [Step]",
+            "y_label": "Total force [$\\mathrm{Ry/au}$]",
+            "data_source": "espresso.pwo (Total force = ...)",
+            "y_min": -0.005
+        },
+        {
+            "id": "Total_SCF_Correction_progression",
+            "title": "SCF補正値推移グラフ",
+            "x_label": "構造緩和ステップ数 [Step]",
+            "y_label": "Total SCF correction [$\\mathrm{Ry/au}$]",
+            "data_source": "espresso.pwo (Total SCF correction = ...)",
+            "y_min": -0.0001
+        }
+    ],
+    "auto_backup": {
+        "sync_to_google_drive": true,
+        "metadata_file": "fracture_metadata.json",
+        "script_reference": "master_run_gpu.sh"
+    }
+}

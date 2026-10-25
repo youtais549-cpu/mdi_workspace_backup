@@ -1,0 +1,8 @@
+Host colab
+    HostName 0.tcp.ap.ngrok.io
+    User root
+    Port 26991
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+    IdentityFile /home/yamazaki/mdi_workspace_backup/.ssh/id_ed25519
+    LogLevel ERROR

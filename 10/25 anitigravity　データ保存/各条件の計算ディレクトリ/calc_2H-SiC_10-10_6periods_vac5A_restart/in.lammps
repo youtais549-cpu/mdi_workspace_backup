@@ -1,0 +1,36 @@
+# 2H-SiC {10-10} 6周期 (12層, 216原子) スラブ構造緩和 【Step 38 からのリスタート計算】
+# ==============================================================================
+# 【設計思想と収束閾値の物理的根拠】
+# 1. 初期構造: Step 38 到達最安定構造 (E_slab = -95,463.94 eV)
+# 2. DFT (Quantum ESPRESSO) の SCF 収束閾値 conv_thr = 1.0e-5 Ry
+# 3. 最適化収束条件 (in.lammps.optimized_conv 準拠):
+#    ftol = 1.0e-2 eV/Å (0.010 eV/Å ≈ 0.0004 Ry/au)
+#    etol = 1.0e-6
+#    maxiter = 100, maxeval = 150
+# ==============================================================================
+
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+# 1. 構造ファイルの読み込み (Step 38 最安定構造)
+read_data slab_10-10_216atoms_relaxed_step38.data
+
+# 原子質量 (Type 1: C, Type 2: Si - ASEの英名昇順ソートと完全一致)
+mass 1 12.011
+mass 2 28.085
+
+# 2. MDI 通信設定 (Quantum ESPRESSO を QM エンジンとして連成)
+fix 1 all mdi/qm elements C Si
+
+# 3. 出力設定
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+dump_modify 1 append yes
+
+# 4. 表面構造緩和 (minimize)
+# 構文: minimize etol ftol maxiter maxeval
+minimize 1.0e-6 1.0e-2 100 150
+
+undump 1

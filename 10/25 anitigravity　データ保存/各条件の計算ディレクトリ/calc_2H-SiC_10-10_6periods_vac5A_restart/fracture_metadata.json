@@ -1,0 +1,27 @@
+{
+    "cleavage_plane": "10-10",
+    "n_periods": 6,
+    "n_layers": 12,
+    "natoms": 216,
+    "vacuum_thickness_angstrom": 5.0,
+    "supercell_xy": [
+        3,
+        3
+    ],
+    "cell_slab": [
+        9.228,
+        15.144,
+        25.095400138231955
+    ],
+    "cell_bulk": [
+        9.228,
+        15.144,
+        31.9667297044912
+    ],
+    "area_A_angstrom2": 139.748832,
+    "total_area_2A_angstrom2": 279.497664,
+    "unit_conversion_eV_A2_to_J_m2": 16.021766,
+    "effective_denominator": 17.44487243166577,
+    "slab_data_file": "slab_10-10_216atoms.data",
+    "bulk_data_file": "bulk_10-10_216atoms.data"
+}

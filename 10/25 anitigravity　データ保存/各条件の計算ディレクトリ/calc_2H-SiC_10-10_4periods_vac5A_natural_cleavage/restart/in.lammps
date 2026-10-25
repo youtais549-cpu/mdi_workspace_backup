@@ -1,0 +1,31 @@
+# 2H-SiC {10-10} 4周期 (144原子) 自然へき開面スラブ構造緩和 【リスタート版】
+# ==============================================================================
+# 前回の Step 5 緩和済み構造 (E_slab = -63821.994 eV) から緩和を再開。
+# etol = 1.0e-8 に引き下げ、力の収束 (ftol = 1.0e-2 eV/Å) まで継続探索を行う。
+# ==============================================================================
+
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+# 1. 構造ファイルの読み込み (Step 5 緩和済み構造)
+read_data slab_10-10_144atoms_restart.data
+
+# 原子質量 (Type 1: C, Type 2: Si)
+mass 1 12.011
+mass 2 28.085
+
+# 2. MDI 通信設定 (Quantum ESPRESSO を QM エンジンとして連成)
+fix 1 all mdi/qm elements C Si
+
+# 3. 出力設定
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+dump_modify 1 append yes
+
+# 4. 表面構造緩和 (minimize)
+# 構文: minimize etol ftol maxiter maxeval
+minimize 1.0e-8 1.0e-2 100 150
+
+undump 1

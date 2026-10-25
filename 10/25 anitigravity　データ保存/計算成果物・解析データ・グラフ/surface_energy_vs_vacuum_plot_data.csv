@@ -1,0 +1,4 @@
+﻿Vacuum_Thickness_Angstrom,Surface_Fracture_Energy_J_m2,Literature_Value_J_m2,E_slab_eV,E_bulk_eV,Delta_E_eV,Area_2A_Angstrom2,Model
+2.5,2.4703,3.03,-31892.263,-31935.3572,43.0942,279.4977,2H-SiC {10-10} Slab 4-layers 72-atoms (Vac 2.5A)
+5.0,2.4485,3.03,-31892.643,-31935.3572,42.7142,279.4977,2H-SiC {10-10} Slab 4-layers 72-atoms (Vac 5.0A)
+10.0,2.4488,3.03,-31892.638,-31935.3572,42.7192,279.4977,2H-SiC {10-10} Slab 4-layers 72-atoms (Vac 10.0A)

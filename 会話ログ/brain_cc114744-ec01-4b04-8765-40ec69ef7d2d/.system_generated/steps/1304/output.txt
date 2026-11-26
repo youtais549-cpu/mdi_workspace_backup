@@ -1,0 +1,25 @@
+Created At: 2026-11-19T12:08:34+09:00
+Completed At: 2026-11-19T12:08:35+09:00
+Command exited with code 0.
+
+Command output:
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 10463 Nov 19 11:41 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/generate_unrelaxed_energy_progression_graphs.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   940 Nov 19 11:41 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/copy_energy_graphs.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  1048 Nov 17 12:41 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/find_wm.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  1656 Nov 17 12:27 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/copy_unrelaxed_code_to_nas.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  2056 Nov 17 01:42 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/sync_unrelaxed_aimd_8periods_to_nas.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 17101 Nov 17 01:42 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_vac3.0A_unrelaxed_aimd_100steps.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  3886 Nov 13 15:58 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/sync_aimd_8periods_to_nas.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 31660 Nov 13 15:49 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_vac3.0A_relax_and_aimd_100steps.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  4263 Nov 10 16:24 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/create_2periods_vac0.5A_model.py
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL 32087 Nov 10 15:23 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_periods_sweep_1_to_10.py
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL  4136 Nov  8 23:10 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/sync_all_periods_to_nas.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  2176 Nov  8 22:41 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/copy_summary_to_nas.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 15162 Nov  8 22:40 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/generate_default_surface_energy_graphs.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 20058 Nov  8 22:26 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_2periods_small_vacuum_sweep.py
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL 22662 Nov  6 15:14 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_2periods_vacuum_sweep_0.5_to_10A.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  2982 Nov  6 15:13 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/sync_all_2periods_to_nas.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  3320 Nov  6 13:53 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/sync_8periods_to_nas.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  1010 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_print_mpi_err.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   389 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/test_pwx2.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  6277 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/stream_iteration.py

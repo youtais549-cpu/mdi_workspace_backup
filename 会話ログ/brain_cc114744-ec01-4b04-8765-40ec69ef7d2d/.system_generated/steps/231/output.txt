@@ -1,0 +1,6 @@
+Command exited with code 0.
+
+Command output:
+ASE Ry: 13.605693012183622
+MDI Ha/eV: 13.605693010316418
+E_bulk (ASE Ry): -127726.1628161633

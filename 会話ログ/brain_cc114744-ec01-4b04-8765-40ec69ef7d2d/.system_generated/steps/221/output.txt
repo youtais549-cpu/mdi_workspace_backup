@@ -1,0 +1,38 @@
+Command exited with code 0.
+
+Command output:
+Loading 2H-SiC unit cell from /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/research_simulations/2H-SiC.cif...
+
+============================================================
+ 8-Periods (16 layers, 288 atoms) True Bulk & Slab Models
+============================================================
+  - Total Atoms       : 288 (Si: 144, C: 144)
+  - Bulk Cell (0 Å)   : Lx=9.2280 Å, Ly=15.1440 Å, Lz=21.311153 Å
+  - Slab Cell (vac 5Å): Lx=9.2280 Å, Ly=15.1440 Å, Lz=29.535401 Å
+  - Number of Layers  : 16 layers
+  - Interlayer dz     : [0.8881, 1.7758, 0.8881, 1.7758] ... [1.7758, 0.8881] Å
+    (Both ends dense ~0.8881 Å preserved, outer cleavage sparse ~1.7758 Å)
+============================================================
+
+✅ Generated all 8-period (288 atoms) files in /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_true_bulk_scf
+============================================================
+ Starting 8-Periods (288 atoms) True Bulk 1-Point SCF
+ Hardware : Core Ultra 9 285K (24 cores) / RAM 64GB / RTX 5080 16GB
+ Parallel : MPI_NP=12 x OMP_NUM_THREADS=2 (Total 24 threads)
+============================================================
+name, driver_version, memory.total [MiB], temperature.gpu, power.draw [W]
+NVIDIA GeForce RTX 5080, 595.79, 16303 MiB, 30, 45.23 W
+============================================================
+ 8-Periods (288 atoms) True Bulk SCF Finished in 212s!
+!    total energy              =   -9387.69989164 Ry
+     Total force =     0.086008     Total SCF correction =     0.000458
+============================================================
+------------------------------------------------------------
+ [8周期 (288原子) 真のバルク SCF 検証結果]
+  - 全エネルギー E_bulk (Ry) : -9387.69989164 Ry
+  - 全エネルギー E_bulk (eV) : -127726.1639 eV
+  - 1原子あたりエネルギー    : -443.4936 eV/atom (基準: -443.55 eV/atom)
+  - 2周期 (72原子) の4倍比   : -9388.81842920 Ry (差分: 1.118538 Ry)
+  - Total force              : 0.086008 Ry/au
+  -> fracture_metadata.json に確定値を記録しました。
+------------------------------------------------------------

@@ -1,0 +1,7 @@
+Command exited with code 0.
+
+Command output:
+pos:	0
+flags:	02
+mnt_id:	121
+ino:	8

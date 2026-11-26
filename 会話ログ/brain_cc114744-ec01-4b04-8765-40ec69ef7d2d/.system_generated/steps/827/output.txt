@@ -1,0 +1,43 @@
+Command exited with code 0.
+
+Command output:
+#!/usr/bin/env python3
+"""
+auto_generate_progression_graphs.py (WORKSTATION4WSL / RTX 5080 新環境対応版)
+指示書 (RELAXATION_GRAPH_PROTOCOL.json) に基づき、
+計算ログから自動で 3 種の推移グラフ (PNG 600dpi, PDF, SVG) を生成し、
+計算成果物ディレクトリおよびバックアップ先へ即時保存する汎用エンジン。
+"""
+
+import os
+import sys
+import re
+import json
+import numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+import matplotlib.ticker as ticker
+
+
+def find_protocol():
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    workspace_dir = os.path.dirname(script_dir)
+    candidates = [
+        "RELAXATION_GRAPH_PROTOCOL.json",
+        os.path.join(script_dir, "RELAXATION_GRAPH_PROTOCOL.json"),
+        os.path.join(workspace_dir, "RELAXATION_GRAPH_PROTOCOL.json"),
+        "/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/RELAXATION_GRAPH_PROTOCOL.json",
+    ]
+    for c in candidates:
+        if os.path.exists(c):
+            with open(c, 'r', encoding='utf-8') as f:
+                return json.load(f)
+    return None
+
+
+def parse_logs():
+    """qe_engine.log, espresso.pwo (または espresso_all_steps.pwo), log.lammps から推移データを自動抽出"""
+    steps = []
+    energies = []

@@ -1,0 +1,64 @@
+Created At: 2026-11-20T09:11:19+09:00
+Completed At: 2026-11-20T09:11:19+09:00
+Command exited with code 0.
+
+Command output:
+total 50748
+drwxrwxrwx  4 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov 20 09:11 .
+drwxrwxrwx 74 WORKSTATION4WSL WORKSTATION4WSL    24576 Nov 19 12:13 ..
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    50869 Nov 20 09:11 AIMD_Bulk_Temperature_and_Energy_300steps.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   353814 Nov 20 09:11 AIMD_Bulk_Temperature_and_Energy_300steps.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   132037 Nov 20 09:11 AIMD_Bulk_Temperature_and_Energy_300steps.svg
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   858332 Nov 19 12:13 C.upf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     2104 Nov 19 12:13 RELAXATION_GRAPH_PROTOCOL.json
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL  1691876 Nov 19 12:13 Si.upf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    29931 Nov 20 09:11 Total_Energy_progression.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   218724 Nov 20 09:11 Total_Energy_progression.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   106039 Nov 20 09:11 Total_Energy_progression.svg
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    27562 Nov 20 09:11 Total_Force_progression.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   190879 Nov 20 09:11 Total_Force_progression.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   101251 Nov 20 09:11 Total_Force_progression.svg
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    28859 Nov 20 09:11 Total_SCF_Correction_progression.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   256778 Nov 20 09:11 Total_SCF_Correction_progression.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   104824 Nov 20 09:11 Total_SCF_Correction_progression.svg
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov 19 12:13 __pycache__
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     1843 Nov 20 09:11 aimd_bulk_300steps_ensemble_stats.json
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    36949 Nov 20 09:11 aimd_bulk_300steps_summary.csv
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    10302 Nov 19 12:13 auto_generate_progression_graphs.py
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    37161 Nov 20 09:10 bulk_10-10_288atoms_aimd_300steps_final.data
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    23956 Nov 19 12:13 bulk_10-10_288atoms_true_bulk.cif
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    24144 Nov 19 12:13 bulk_10-10_288atoms_true_bulk.data
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    15665 Nov 19 12:13 bulk_10-10_288atoms_true_bulk.xyz
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     1626 Nov 19 12:13 dft_settings.py
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL  7391123 Nov 20 09:10 dump.lammpstrj
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     1368 Nov 20 09:10 espresso.err
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    13691 Nov 20 09:06 espresso.pwi
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    64943 Nov 20 09:10 espresso.pwo
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL 19531805 Nov 20 09:10 espresso_all_steps.pwo
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     1946 Nov 19 12:13 in.lammps
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    64943 Nov 20 09:10 live_espresso.pwo
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    46417 Nov 20 09:10 lmp.log
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    48269 Nov 20 09:10 log.lammps
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     2132 Nov 19 12:13 make_xyz.py
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL  3657341 Nov 20 09:11 md_animation.xyz
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL  3657341 Nov 20 09:11 md_nvt_animation.xyz
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL 10091072 Nov 19 12:13 msmincho.ttc
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    76626 Nov 20 09:10 qe_engine.log
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    12880 Nov 19 12:13 qe_mdi_engine_rtx5080.py
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL  1190736 Nov 19 12:13 times.ttf
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov 20 09:10 tmp
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    37257 Nov 20 09:11 エネルギー変化量推移_バルクAIMD_word_8cm.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   285546 Nov 20 09:11 エネルギー変化量推移_バルクAIMD_word_8cm.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    72077 Nov 20 09:11 エネルギー変化量推移_バルクAIMD_word_8cm.svg
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    50869 Nov 20 09:11 エネルギー総合推移_バルクAIMD_プレゼン仕様.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   353814 Nov 20 09:11 エネルギー総合推移_バルクAIMD_プレゼン仕様.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   132037 Nov 20 09:11 エネルギー総合推移_バルクAIMD_プレゼン仕様.svg
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    24333 Nov 20 09:11 ポテンシャルエネルギー推移_バルクAIMD_word_8cm.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   201190 Nov 20 09:11 ポテンシャルエネルギー推移_バルクAIMD_word_8cm.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    49006 Nov 20 09:11 ポテンシャルエネルギー推移_バルクAIMD_word_8cm.svg
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    21240 Nov 20 09:11 全エネルギー推移_バルクAIMD_word_8cm.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   139624 Nov 20 09:11 全エネルギー推移_バルクAIMD_word_8cm.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    42644 Nov 20 09:11 全エネルギー推移_バルクAIMD_word_8cm.svg
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    18189 Nov 20 09:11 温度推移_バルクAIMD_word_8cm.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   177944 Nov 20 09:11 温度推移_バルクAIMD_word_8cm.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    36336 Nov 20 09:11 温度推移_バルクAIMD_word_8cm.svg

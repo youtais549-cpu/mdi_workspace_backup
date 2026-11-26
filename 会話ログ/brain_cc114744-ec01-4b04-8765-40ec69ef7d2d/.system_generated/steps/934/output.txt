@@ -1,0 +1,18 @@
+Command exited with code 0.
+
+Command output:
+23,2026-11-06,10-10,2,4,72,7.5,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-31892.6303,-31935.3572,42.7269,279.4977,2.4493,2.27,2.44,+7.9,"calc_2H-SiC_10-10_2periods_vac7.5A_rtx5080","calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080"
+24,2026-11-06,10-10,2,4,72,8.0,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-31892.6301,-31935.3572,42.7271,279.4977,2.4493,2.27,2.44,+7.9,"calc_2H-SiC_10-10_2periods_vac8.0A_rtx5080","calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080"
+25,2026-11-06,10-10,2,4,72,8.5,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-31892.6342,-31935.3572,42.7230,279.4977,2.4490,2.27,2.44,+7.9,"calc_2H-SiC_10-10_2periods_vac8.5A_rtx5080","calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080"
+26,2026-11-06,10-10,2,4,72,9.0,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-31892.6302,-31935.3572,42.7270,279.4977,2.4493,2.27,2.44,+7.9,"calc_2H-SiC_10-10_2periods_vac9.0A_rtx5080","calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080"
+27,2026-11-06,10-10,2,4,72,9.5,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-31892.6323,-31935.3572,42.7249,279.4977,2.4491,2.27,2.44,+7.9,"calc_2H-SiC_10-10_2periods_vac9.5A_rtx5080","calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080"
+28,2026-11-06,10-10,2,4,72,10.0,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-31892.6264,-31935.3572,42.7308,279.4977,2.4495,2.27,2.44,+7.9,"calc_2H-SiC_10-10_2periods_vac10.0A_rtx5080","calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080"
+29,2026-11-08,10-10,2,4,72,0.75,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-31934.5092,-31935.3572,0.8480,279.4977,0.0486,2.27,2.44,-97.9,"calc_2H-SiC_10-10_2periods_vac0.75A_rtx5080","calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080"
+30,2026-11-08,10-10,2,4,72,0.25,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-31872.4811,-31935.3572,62.8761,279.4977,3.6043,2.27,2.44,+58.8,"calc_2H-SiC_10-10_2periods_vac0.25A_rtx5080","calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080"
+31,2026-11-08,10-10,2,4,72,0.0,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-31796.2057,-31935.3572,139.1515,279.4977,7.9766,2.27,2.44,+251.4,"calc_2H-SiC_10-10_2periods_vac0.0A_rtx5080","calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080"
+32,2026-11-08,10-10,1,2,36,5.0,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-15945.0989,-15878.4827,-66.6162,279.4977,-3.8187,2.27,2.44,-268.2,"calc_2H-SiC_10-10_1periods_vac5A_natural_cleavage","true_bulk_scf"
+33,2026-11-08,10-10,3,6,108,5.0,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-47856.6115,-47860.8847,4.2732,279.4977,0.2450,2.27,2.44,-89.2,"calc_2H-SiC_10-10_3periods_vac5A_natural_cleavage","true_bulk_scf"
+34,2026-11-09,10-10,5,10,180,5.0,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-79787.7398,-79792.9123,5.1724,279.4977,0.2965,2.27,2.44,-86.9,"calc_2H-SiC_10-10_5periods_vac5A_natural_cleavage","true_bulk_scf"
+35,2026-11-09,10-10,7,14,252,5.0,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-111719.3218,-111724.5080,5.1863,279.4977,0.2973,2.27,2.44,-86.9,"calc_2H-SiC_10-10_7periods_vac5A_natural_cleavage","true_bulk_scf"
+36,2026-11-09,10-10,9,18,324,5.0,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-143650.8317,-143656.1675,5.3358,279.4977,0.3059,2.27,2.44,-86.5,"calc_2H-SiC_10-10_9periods_vac5A_natural_cleavage","true_bulk_scf"
+37,2026-11-09,10-10,10,20,360,5.0,3x3,"CG_minimize (minimize 1.0e-6 1.0e-2 100 150)",40.0,320.0,gamma,-159616.6027,-159657.6701,41.0674,279.4977,2.3541,2.27,2.44,+3.7,"calc_2H-SiC_10-10_10periods_vac5A_natural_cleavage","true_bulk_scf"

@@ -1,0 +1,85 @@
+============================================================
+ Step 1: Micromamba パッケージマネージャの確認 (sudo 不要)
+============================================================
+✅ Micromamba ready: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/micromamba/bin/micromamba
+============================================================
+ Step 2: Quantum ESPRESSO (pw.x) & Python 3.11 & CMake の高速導入
+============================================================
+[+] 0.0s
+[+] 0.1s
+[+] 0.2s
+[+] 0.3s
+[+] 0.4s
+[+] 0.5s
+[+] 0.6s
+[+] 0.7s
+[+] 0.8s
+[+] 0.9s
+[+] 1.0s
+[+] 1.1s
+[+] 1.2s
+[+] 1.3s
+[+] 1.4s
+[+] 1.5s
+[+] 1.6s
+[+] 1.7s
+[+] 1.8s
+[+] 1.9s
+[+] 2.0s
+[+] 2.1s
+[+] 2.2s
+[+] 2.3s
+[+] 2.4s
+[+] 2.5s
+[+] 2.6s
+[+] 2.7s
+[+] 2.8s
+[+] 2.9s
+[+] 3.0s
+[+] 3.1s
+[+] 3.2s
+[+] 3.3s
+[+] 3.4s
+[+] 3.5s
+[+] 3.6s
+[+] 3.7s
+[+] 3.8s
+[+] 3.9s
+[+] 4.0s
+[+] 4.1s
+[+] 4.2s
+[+] 4.3s
+[+] 4.4s
+[+] 4.5s
+[+] 4.6s
+[+] 4.7s
+[+] 4.8s
+[+] 4.9s
+[+] 5.0s
+[+] 5.1s
+[+] 5.2s
+[+] 5.3s
+[+] 5.4s
+[+] 5.5s
+[+] 5.6s
+[+] 5.7s
+[+] 5.8s
+[+] 5.9s
+[+] 6.0s
+warning  libmamba Retrying in 2 seconds
+warning  libmamba Retrying in 2 seconds
+warning  libmamba Retrying in 2 seconds
+warning  libmamba Retrying in 2 seconds
+warning  libmamba Retrying in 2 seconds
+warning  libmamba Retrying in 2 seconds
+warning  libmamba Retrying in 2 seconds
+warning  libmamba Retrying in 2 seconds
+critical libmamba Multiple errors occurred:
+    Download error (6) Could not resolve hostname [https://conda.anaconda.org/conda-forge/noarch/repodata.json.zst]
+    Could not resolve host: conda.anaconda.org
+    Subdir conda-forge/noarch not loaded!
+    If you run into this error repeatedly, your package cache may be corrupted.
+    Please try running `mamba clean -a` to remove this cache before retrying the operation.
+    
+    If you still are having issues, please report the error on `mamba-org/mamba`'s issue tracker:
+    https://github.com/mamba-org/mamba/issues/new?assignees=&labels=&projects=&template=bug.yml

@@ -1,0 +1,48 @@
+Command exited with code 0.
+
+Command output:
+total 15292
+drwxrwxrwx 5 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  8 23:37 .
+drwxrwxrwx 8 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  9 04:40 ..
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL   858332 Nov  8 23:24 C.upf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     2104 Nov  8 23:24 RELAXATION_GRAPH_PROTOCOL.json
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  1691876 Nov  8 23:24 Si.upf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL    25407 Nov  8 23:37 Total_Energy_progression.pdf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL   174829 Nov  8 23:37 Total_Energy_progression.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL    43763 Nov  8 23:37 Total_Energy_progression.svg
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL    22450 Nov  8 23:37 Total_Force_progression.pdf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL   170236 Nov  8 23:37 Total_Force_progression.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL    38472 Nov  8 23:37 Total_Force_progression.svg
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL    23924 Nov  8 23:37 Total_SCF_Correction_progression.pdf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL   157597 Nov  8 23:37 Total_SCF_Correction_progression.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL    40461 Nov  8 23:37 Total_SCF_Correction_progression.svg
+drwxrwxrwx 2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  8 23:24 __pycache__
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL    10302 Nov  8 23:24 auto_generate_progression_graphs.py
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     9476 Nov  8 23:24 bulk_10-10_108atoms_true_bulk.cif
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     9204 Nov  8 23:24 bulk_10-10_108atoms_true_bulk.data
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     5942 Nov  8 23:24 bulk_10-10_108atoms_true_bulk.xyz
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     1626 Nov  8 23:24 dft_settings.py
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL    23463 Nov  8 23:37 dump.lammpstrj
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     1368 Nov  8 23:37 espresso.err
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     5620 Nov  8 23:36 espresso.pwi
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL   406696 Nov  8 23:37 espresso.pwo
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL   406696 Nov  8 23:37 espresso_all_steps.pwo
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     5408 Nov  8 23:24 espresso_bulk_scf.pwi
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL    32821 Nov  8 23:24 espresso_bulk_scf.pwo
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL      988 Nov  8 23:37 fracture_metadata.json
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL      623 Nov  8 23:24 in.lammps
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL      623 Nov  8 23:24 in.lammps.optimized_conv
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     2999 Nov  8 23:37 lmp.log
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     3541 Nov  8 23:37 log.lammps
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     2132 Nov  8 23:24 make_xyz.py
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL    32123 Nov  8 23:37 md_animation.xyz
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 10091072 Nov  8 23:24 msmincho.ttc
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     9076 Nov  8 23:37 qe_engine.log
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL    14915 Nov  8 23:24 qe_mdi_engine_rtx5080.py
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     9668 Nov  8 23:24 slab_10-10_108atoms_vac5A.cif
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     9204 Nov  8 23:24 slab_10-10_108atoms_vac5A.data
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     8026 Nov  8 23:24 slab_10-10_108atoms_vac5A.xyz
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL     8325 Nov  8 23:37 slab_10-10_108atoms_vac5A_relaxed.data
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  1190736 Nov  8 23:24 times.ttf
+drwxrwxrwx 3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  8 23:37 tmp
+drwxrwxrwx 3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  8 23:24 tmp_bulk

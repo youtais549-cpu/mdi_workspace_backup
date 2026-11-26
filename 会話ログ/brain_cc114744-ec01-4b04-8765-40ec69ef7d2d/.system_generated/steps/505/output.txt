@@ -1,0 +1,33 @@
+Command exited with code 0.
+
+Command output:
+Nov 06 17:50:52 WORKSTATION4 ollama[113]: slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 2163, t_last = 100092704700
+Nov 06 17:50:52 WORKSTATION4 ollama[113]: srv  get_availabl: updating prompt cache
+Nov 06 17:50:52 WORKSTATION4 ollama[113]: srv   prompt_save:  - saving prompt with length 2163, total state size = 405.588 MiB (draft: 0.000 MiB)
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: srv          load:  - looking for better prompt, base f_keep = 0.002, f_sim = 0.002
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: srv          load:    - prompt with length    2151, lcp =       4, f_keep = 0.002, f_sim = 0.002
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: srv          load:    - prompt with length    2149, lcp =       4, f_keep = 0.002, f_sim = 0.002
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: srv          load:    - prompt with length    2163, lcp =       4, f_keep = 0.002, f_sim = 0.002
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: srv        update:  - cache state: 3 prompts, 1211.890 MiB (limits: 8192.000 MiB, 4096 tokens, 43687 est)
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: srv        update:    - prompt 0x39ed3f50:    2151 tokens, checkpoints:  0,   403.338 MiB
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: srv        update:    - prompt 0x39ed1600:    2149 tokens, checkpoints:  0,   402.963 MiB
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: srv        update:    - prompt 0x39ed0d00:    2163 tokens, checkpoints:  0,   405.588 MiB
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: srv  get_availabl: prompt cache update took 249.63 ms
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: slot launch_slot_: id  0 | task -1 | sampler params:
+Nov 06 17:50:53 WORKSTATION4 ollama[113]:         repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+Nov 06 17:50:53 WORKSTATION4 ollama[113]:         dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+Nov 06 17:50:53 WORKSTATION4 ollama[113]:         top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.800
+Nov 06 17:50:53 WORKSTATION4 ollama[113]:         mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: slot launch_slot_: id  0 | task 332 | processing task, is_child = 0
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: slot   operator(): id  0 | task 332 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 2050
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: slot   operator(): id  0 | task 332 | cached n_tokens = 4, memory_seq_rm [4, end)
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: slot   operator(): id  0 | task 332 | cached n_tokens = 516, memory_seq_rm [516, end)
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: slot   operator(): id  0 | task 332 | cached n_tokens = 1028, memory_seq_rm [1028, end)
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: slot   operator(): id  0 | task 332 | cached n_tokens = 1540, memory_seq_rm [1540, end)
+Nov 06 17:50:53 WORKSTATION4 ollama[113]: slot init_sampler: id  0 | task 332 | init sampler, took 0.14 ms, tokens: text = 2050, total = 2050
+Nov 06 17:50:55 WORKSTATION4 ollama[113]: [GIN] 2026/11/06 - 17:50:55 | 200 |    2.46s |       127.0.0.1 | POST     "/api/generate"
+Nov 06 17:50:55 WORKSTATION4 ollama[113]: srv          stop: cancel task, id_task = 332
+Nov 06 17:50:55 WORKSTATION4 ollama[113]: slot      release: id  0 | task 332 | stop processing: n_tokens = 2162, truncated = 0
+Nov 06 17:50:55 WORKSTATION4 ollama[113]: srv  update_slots: all slots are idle
+Nov 06 17:58:25 WORKSTATION4 ollama[113]: [GIN] 2026/11/06 - 17:58:25 | 200 | 151.448µs |       127.0.0.1 | GET      "/api/ps"

@@ -1,0 +1,50 @@
+Created At: 2026-11-20T17:11:15+09:00
+Completed At: 2026-11-20T17:11:16+09:00
+Command exited with code 0.
+
+Command output:
+  収束条件やモデル条件（周期数・真空厚）を変更する際は、**既存のファイルを上書きせず、必ず新しく独立したディレクトリ（例: `calc_2H-SiC_10-10_<N>periods_vac<X>A/`）およびファイル（`in.lammps.optimized_conv` など）を作成して保存・実行すること**。
+  Google Drive 上にも独立したフォルダ（例: `[101_0]<N>周期<X>Å/`）を必ず新規作成し、5分間隔の自動バックアップループを確立すること。
+
+## 10. 結晶面切断（へき開面）の物理的前提厳守とモデル整合性（絶対遵守）
+- **自然へき開面の物理的前提**:
+  き裂進展・脆性破壊シミュレーションにおけるスラブ切断面は、エネルギー最小となる「粗結合面（$dz \approx 1.776\text{ \AA}$ の弱結合面）」でなければならず、強結合ペア（$dz \approx 0.888\text{ \AA}$）を引きちぎる切断は厳禁。
+- **モデル拡張時の ASE surface 統一**:
+  周期数変更（2周期 $\to$ 4周期 $\to$ 6周期）時は手動計算スクリプトを使わず、ASE `surface(bulk, indices=(1, 0, 0), layers=2*N)` で統一生成し、両端が密結合保持（外側が粗結合切断）であることを確認すること。
+- **異常値の早期検知と妥当性評価**:
+  表面破壊エネルギー $\gamma$ が文献値（$\approx 2.45\text{ J/m}^2$）から大きく乖離した場合、「スラブ厚み依存性」や「オーダーが合っている」などと安易に正当化せず、切断面の終端原子・結合状態を最優先で疑い検証すること。
+
+## 11. 新環境（WSL / Antigravity IDE）における拡張機能・表示言語・ルール管理規約
+- **WSL リモート環境の拡張機能管理**:
+  - [`.vscode/extensions.json`](.vscode/extensions.json) は推奨拡張機能リストの定義ファイルであり、WSL（Ubuntu）接続時は Python (`ms-python.python`)、Pylance (`ms-python.vscode-pylance`)、C/C++ (`ms-vscode.cpptools`)、LAMMPS (`thfriedrich.lammps`) 等が **「WSL: UBUNTU - インストール済み」** 側にもインストール・有効化されていることを確認すること。
+- **表示言語（日本語パック）の反映手順**:
+  - `ms-ceintl.vscode-language-pack-ja` 導入後、コマンドパレット（`Ctrl+Shift+P`）$\to$ `Configure Display Language` $\to$ `日本語 (ja)` を選択し、**IDE を再起動（Restart）** することで UI 表示言語に反映される。
+- **恒久ルールの正本統一（重複注入防止）**:
+  - ワークスペースルールの正本は [`AGENTS.md`](AGENTS.md) に一本化する。[`GEMINI.md`](GEMINI.md) は正本への参照ポインタのみを記載し、同一ルール全文の二重注入によるコンテキスト枠（Rules Budget 20,000 tokens）の浪費と更新不整合を防止する。
+
+## 12. 第一原理分子動力学 (AIMD) 完全状態引き継ぎ（シームレス再開）プロトコル（必須）
+- **熱浴内部変数の不連続リセット防止**:
+  LAMMPS の単なる `read_data` 再開では、Nosé-Hoover 熱浴（`fix nvt`）の内部状態変数（熱浴運動量 $\dot{\eta}$ や摩擦係数 $\eta$）がゼロリセットされ、温度プロファイルの位相と熱流が乱れてしまう。
+- **QE 出力キャッシュリプレイによる 100% 完全復元方式**:
+  計算を途中ステップ（例: Step 300）から延長・再開する際は、前セッションの `espresso_all_steps.pwo` から全過去ステップのエネルギーと力を MDI エンジン側でキャッシュリプレイ（DFT 再計算なし、約 30 秒で通過）して LAMMPS に渡すこと。
+  これにより、再開境界において原子座標・速度だけでなく、Nosé-Hoover 熱浴の内部変数まで 1 ビットの狂いもなく完全復元（`Files are identical`）される。
+- **波動関数・電荷密度の連続性保持**:
+  再開ステップ以降は、`tmp/pwscf.save/` に保持された直前ステップの収束済み波動関数 (`wfc1.hdf5`) と電子密度 (`charge-density.hdf5`) を `startingwfc = 'file'`, `startingpot = 'file'`, `disk_io = 'medium'` で引き継ぎ、実機 QE GPU SCF 計算へシームレスに移行すること。
+- **リスタートバイナリ出力の標準化**:
+  不慮の停止や追加延長に備え、入力スクリプトには定期的な `restart 50 restart.bulk_step` および終了時の `write_restart` を常備すること。
+
+## 13. 有限温度熱平衡化（Equilibration）とアンサンブル平均取得基準
+- **初期熱配分と過渡領域の認識**:
+  0 K 完全結晶構造（ポテンシャル極小点）から AIMD を開始した場合、エネルギー等分配則（フォノン励起）により初期に運動エネルギーが急減（温度が $\sim 78\text{ K}$ まで一時的に低下）する。
+- **熱浴時定数 $\tau_T$ とアンサンブル平均の必要ステップ数**:
+  Nosé-Hoover 熱浴の時定数が $\tau_T = 100\text{ fs}$（100 steps）の場合、**最初の 100 ステップは過渡的な熱平衡化領域であり、アンサンブル平均の対象としては不十分**である。
+  真の熱平衡状態における物性値（平均ポテンシャルエネルギー $\langle E_{\text{pot}}\rangle$、平均全エネルギー $\langle E_{\text{tot}}\rangle$、熱力学的表面破壊エネルギー $\gamma_{T}$）を算出する際は、最低でも $3\tau_T \sim 6\tau_T$（300 〜 600 steps）を計算し、初期過渡期を除外した後半領域から統計平均を算出すること。
+
+## 14. Winmostar 3D ビューアーおよび NAS 連携の運用標準
+- **Winmostar 表示トラブル（画面外ロスト）の即時解決**:
+  Winmostar で分子が画面外に消えて水色画面（ブランク）になる場合は、ズーム倍率の過大（300%等）による視野外パンが原因である。ショートカットキー `Ctrl + F`（全体表示 / Fit View）を押すか、右上の `Open Viewer` ボタンで別ウィンドウ専用ビューアーを起動することで即座に中央センタリング表示する。
+- **NAS 連携・PowerShell 実行の文字コード保護**:
+  WSL から Windows NAS（`\\192.168.12.69\...`）への同期スクリプトは、日本語パスや波括弧 `{101_0}`、全角スペースを含むため、PowerShell を UTF-16LE + Base64 エンコード（`-EncodedCommand`）で呼び出すこと。
+  また、ユーザー指定のバックアップフォルダ（例: `バルクモデル`, `バルクモデル2`）は上書きせず独立作成し、既存の計算成果物を完全保護すること。
+
+詳細規約は [`.agents/rules/colab_t4_gpu_aimd_workflow.md`](.agents/rules/colab_t4_gpu_aimd_workflow.md) および [`.agents/rules/surface_fracture_slab_rules.md`](.agents/rules/surface_fracture_slab_rules.md) を参照すること。

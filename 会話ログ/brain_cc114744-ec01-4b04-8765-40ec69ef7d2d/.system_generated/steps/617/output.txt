@@ -1,0 +1,46 @@
+Command exited with code 0.
+
+Command output:
+90-        "Si.upf",
+91-        "RELAXATION_GRAPH_PROTOCOL.json",
+92-        "dft_settings.py",
+93-        "make_xyz.py",
+94-        "msmincho.ttc",
+95-        "times.ttf",
+96-        "auto_generate_progression_graphs.py",
+97-        "qe_mdi_engine_rtx5080.py",
+98-    ]:
+99-        src_asset = os.path.join(TEMPLATE_DIR, asset)
+100-        dst_asset = os.path.join(calc_dir, asset)
+101-        if not os.path.exists(dst_asset):
+102-            shutil.copyfile(src_asset, dst_asset)
+103-
+104-    # 2周期バルクSCFログも同梱
+105-    for bulk_file in ["2H-SiC_10-10_bulk_3x3x2_72atoms.data", "espresso_bulk_scf.pwi", "espresso_bulk_scf.pwo"]:
+106-        src_bf = os.path.join(BULK_2P_DIR, bulk_file)
+107-        if os.path.exists(src_bf):
+108-            shutil.copyfile(src_bf, os.path.join(calc_dir, bulk_file))
+109-
+110:    # 2. ASE surface() による 2周期 (4層, 72原子) 自然へき開面スラブモデルの構築
+111-    bulk_cif = ase.io.read(CIF_INPUT)
+112:    slab_unit = surface(bulk_cif, indices=(1, 0, 0), layers=2, vacuum=None)
+113-    slab_3x3 = slab_unit * (3, 3, 1)
+114-
+115-    pos = slab_3x3.positions.copy()
+116-    z_min = float(np.min(pos[:, 2]))
+117-    z_max = float(np.max(pos[:, 2]))
+118-    thickness = z_max - z_min
+119-
+120-    # 下部真空層 = vac_val [Å], 上部真空層 = vac_val [Å] (合計 2 * vac_val [Å])
+121-    pos[:, 2] = pos[:, 2] - z_min + vac_val
+122-    slab_3x3.positions = pos
+123-
+124-    cell = slab_3x3.cell.copy()
+125-    cell[2, 2] = thickness + 2.0 * vac_val
+126-    slab_3x3.cell = cell
+127-    slab_3x3.pbc = [True, True, True]
+128-
+129-    # 層間間隔プロファイルの厳格検証 ([0.8881, 1.7758, 0.8881])
+130-    z_unique = np.unique(np.round(slab_3x3.positions[:, 2], 4))
+131-    diffs = [round(float(z_unique[i + 1] - z_unique[i]), 4) for i in range(len(z_unique) - 1)]
+132-    if len(diffs) != 3 or abs(diffs[0] - 0.8881) > 0.005 or abs(diffs[1] - 1.7758) > 0.005:

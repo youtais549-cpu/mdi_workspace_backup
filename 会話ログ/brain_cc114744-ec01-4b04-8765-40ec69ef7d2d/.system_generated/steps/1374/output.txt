@@ -1,0 +1,8 @@
+Created At: 2026-11-20T13:42:11+09:00
+Completed At: 2026-11-20T13:42:14+09:00
+Command exited with code 0.
+
+Command output:
+Loaded steps count: 301
+Step 0 PE: -127726.152683 Fmax: 0.13746
+Step 300 PE: -127718.041747 Fmax: 2.13295

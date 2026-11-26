@@ -1,0 +1,4 @@
+Command exited with code 1.
+
+Command output:
+UID          PID    PPID  C STIME TTY          TIME CMD

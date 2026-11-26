@@ -1,0 +1,19 @@
+Created At: 2026-11-24T11:13:34+09:00
+Completed At: 2026-11-24T11:13:35+09:00
+Command exited with code 0.
+
+Command output:
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 318502 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/AIMD_Surface_Displacement_and_Gap_400steps.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 452068 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/AIMD_Temperature_and_Energy_400steps.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 283892 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/Total_Energy_progression.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 288927 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/Total_Force_progression.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 287543 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/Total_SCF_Correction_progression.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 357198 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/エネルギー変化量推移_未緩和AIMD_400steps_word_8cm.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 357198 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/エネルギー変化量推移_未緩和AIMD_word_8cm.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 452068 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/エネルギー総合推移_未緩和AIMD_400steps_プレゼン仕様.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 215505 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/ポテンシャルエネルギー推移_未緩和AIMD_400steps_word_8cm.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 215505 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/ポテンシャルエネルギー推移_未緩和AIMD_word_8cm.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 146759 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/全エネルギー推移_未緩和AIMD_400steps_word_8cm.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 146759 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/全エネルギー推移_未緩和AIMD_word_8cm.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 199825 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/温度推移_未緩和AIMD_400steps_word_8cm.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 199825 Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/温度推移_未緩和AIMD_word_8cm.png

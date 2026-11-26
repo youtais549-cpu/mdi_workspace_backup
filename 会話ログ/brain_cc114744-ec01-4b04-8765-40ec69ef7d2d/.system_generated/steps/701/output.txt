@@ -1,0 +1,18 @@
+Command exited with code 0.
+
+Command output:
+total 2556
+drwxrwxrwx  5 WORKSTATION4WSL WORKSTATION4WSL     280 Nov  8 22:22 .
+drwxrwxrwt 17 nobody          nogroup             380 Nov  8 22:23 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  8 22:20 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  8 22:20 Si.upf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    3145 Nov  8 22:20 test_0.0.pwi
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   10352 Nov  8 22:21 test_0.0.pwo
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   10845 Nov  8 22:24 test_0.0_out.pwo
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    3146 Nov  8 22:20 test_0.25.pwi
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   10353 Nov  8 22:21 test_0.25.pwo
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    3146 Nov  8 22:20 test_0.75.pwi
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   11240 Nov  8 22:21 test_0.75.pwo
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL      40 Nov  8 22:21 tmp_0.0
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL      40 Nov  8 22:21 tmp_0.25
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL      40 Nov  8 22:21 tmp_0.75

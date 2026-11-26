@@ -1,0 +1,13 @@
+Command exited with code 0.
+
+Command output:
+N= 1 (natoms= 36): bulk_Lz=2.6639 A, min_dist=1.8845 A
+N= 2 (natoms= 72): bulk_Lz=5.3278 A, min_dist=1.8845 A
+N= 3 (natoms=108): bulk_Lz=7.9917 A, min_dist=1.8845 A
+N= 4 (natoms=144): bulk_Lz=10.6556 A, min_dist=1.8845 A
+N= 5 (natoms=180): bulk_Lz=13.3195 A, min_dist=1.8845 A
+N= 6 (natoms=216): bulk_Lz=15.9834 A, min_dist=1.8845 A
+N= 7 (natoms=252): bulk_Lz=18.6473 A, min_dist=1.8845 A
+N= 8 (natoms=288): bulk_Lz=21.3112 A, min_dist=1.8845 A
+N= 9 (natoms=324): bulk_Lz=23.9750 A, min_dist=1.8845 A
+N=10 (natoms=360): bulk_Lz=26.6389 A, min_dist=1.8845 A

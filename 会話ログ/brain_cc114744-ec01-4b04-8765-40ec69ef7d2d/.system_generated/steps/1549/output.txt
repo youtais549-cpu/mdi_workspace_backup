@@ -1,0 +1,12 @@
+Created At: 2026-11-24T11:39:44+09:00
+Completed At: 2026-11-24T11:39:46+09:00
+Command exited with code 0.
+
+Command output:
+ls: cannot access '/opt/': No such file or directory
+CPU(s):                                  24
+On-line CPU(s) list:                     0-23
+Model name:                              Intel(R) Core(TM) Ultra 9 285K
+Thread(s) per core:                      1
+Core(s) per socket:                      24
+NUMA node0 CPU(s):                       0-23

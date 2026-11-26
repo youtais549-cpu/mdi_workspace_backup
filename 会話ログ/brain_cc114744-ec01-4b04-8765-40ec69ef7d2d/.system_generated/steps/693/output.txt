@@ -1,0 +1,44 @@
+Command exited with code 0.
+
+Command output:
+    if env_pw:
+        log(f"Using user-specified QE_PW_COMMAND: {env_pw}")
+        return env_pw
+
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    workspace_dir = os.path.dirname(script_dir)
+    home_dir = os.path.expanduser("~")
+
+    candidates = [
+        os.path.join(script_dir, "bin", "pw.x"),
+        "/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x",
+        os.path.join(workspace_dir, "calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080", "bin", "pw.x"),
+        os.path.join(workspace_dir, "bin", "pw.x"),
+        os.path.join(home_dir, ".local", "bin", "pw.x"),
+        "/usr/local/bin/pw.x",
+        shutil.which("pw.x"),
+    ]
+    pw_bin = None
+    for cand in candidates:
+        if cand and os.path.exists(cand) and os.access(cand, os.X_OK):
+            pw_bin = cand
+            break
+
+    if not pw_bin:
+        error("pw.x binary not found!")
+
+    is_gpu_binary = False
+    try:
+        ldd_out = subprocess.check_output(["ldd", pw_bin], text=True, stderr=subprocess.DEVNULL)
+        if any(k in ldd_out for k in ["libcuda", "libcudart", "libacc", "libnvf", "libcufft", "libcublas"]):
+            is_gpu_binary = True
+    except Exception:
+        pass
+
+    if is_gpu_binary:
+        os.environ.setdefault("OMP_NUM_THREADS", os.environ.get("QE_OMP_THREADS", "8"))
+        cmd = f"{pw_bin} -ndiag 1"
+        log(f"Detected GPU-accelerated pw.x: {cmd} (OMP_NUM_THREADS={os.environ['OMP_NUM_THREADS']})")
+        return cmd
+    else:
+        # Core Ultra 9 285K (24コア) を最大限活用: 12 MPI × 2 OpenMP = 24 threads

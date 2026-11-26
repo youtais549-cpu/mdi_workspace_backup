@@ -1,0 +1,6 @@
+Command exited with code 0.
+
+Command output:
+N=1 (36 atoms) with true lattice vector: all atoms have {3} bonds!
+N=2 (72 atoms) with true lattice vector: all atoms have {4} bonds!
+N=3 (108 atoms) with true lattice vector: all atoms have {4} bonds!

@@ -1,0 +1,8 @@
+Command exited with code 1.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/sync_8periods_to_nas.py:5: SyntaxWarning: "\R" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\R"? A raw string is also an option.
+  NAS (\\192.168.12.69\Results\yamazaki\research\{101_0}8周期５Å) へ安全に保存するスクリプト
+[Info] smbclient (None) or ~/.smbcredentials (exists=False) not available.
+[Error] Windows PowerShell not found at /mnt/c/...
+❌ All NAS transfer methods failed.

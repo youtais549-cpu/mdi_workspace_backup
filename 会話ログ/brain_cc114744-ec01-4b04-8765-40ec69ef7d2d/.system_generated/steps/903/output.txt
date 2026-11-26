@@ -1,0 +1,54 @@
+Command exited with code 0.
+
+Command output:
+def build(lattice, basis, layers, tol, periodic):
+    surf = lattice.copy()
+    scaled = solve(basis.T, surf.get_scaled_positions().T).T
+    scaled -= np.floor(scaled + tol)
+
+    scaled[abs(scaled) < tol] = 0.0
+
+    surf.set_scaled_positions(scaled)
+    surf.set_cell(np.dot(basis, surf.cell), scale_atoms=True)
+    surf *= (1, 1, layers)
+    surf.set_tags(create_tags((1, len(lattice), layers)))
+
+    a1, a2, a3 = surf.cell
+    surf.set_cell(
+        [
+            a1,
+            a2,
+            np.cross(a1, a2)
+            * np.dot(a3, np.cross(a1, a2))
+            / norm(np.cross(a1, a2)) ** 2,
+        ]
+    )
+
+    # Change unit cell to have the x-axis parallel with a surface vector
+    # and z perpendicular to the surface:
+    a1, a2, a3 = surf.cell
+    surf.set_cell(
+        [
+            (norm(a1), 0, 0),
+            (
+                np.dot(a1, a2) / norm(a1),
+                np.sqrt(norm(a2) ** 2 - (np.dot(a1, a2) / norm(a1)) ** 2),
+                0,
+            ),
+            (0, 0, norm(a3)),
+        ],
+        scale_atoms=True,
+    )
+
+    surf.pbc = (True, True, periodic)
+
+    # Move atoms into the unit cell:
+    scaled = surf.get_scaled_positions()
+    scaled[:, :2] %= 1
+    surf.set_scaled_positions(scaled)
+
+    if not periodic:
+        surf.cell[2] = 0.0
+
+    return surf
+

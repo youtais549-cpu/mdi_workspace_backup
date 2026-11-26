@@ -1,0 +1,24 @@
+# 2H-SiC {10-10} 5周期 (10層, 180原子) 真空層 5.0 Å スラブ構造緩和入力スクリプト
+# 【最適化収束条件標準: minimize 1.0e-6 1.0e-2 100 150 (AGENTS.md §9)】
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+read_data slab_10-10_180atoms_vac5A.data
+
+# Type 1: C (12.011), Type 2: Si (28.085) (AGENTS.md §2)
+mass 1 12.011
+mass 2 28.085
+
+fix 1 all mdi/qm elements C Si
+
+thermo 1
+thermo_modify flush yes
+dump 1 all custom 1 dump.lammpstrj id type x y z
+dump_modify 1 append yes flush yes
+
+minimize 1.0e-6 1.0e-2 100 150
+
+undump 1
+write_data slab_10-10_180atoms_vac5A_relaxed.data

@@ -1,0 +1,13 @@
+Created At: 2026-11-26T13:28:45+09:00
+Completed At: 2026-11-26T13:28:47+09:00
+Command exited with code 0.
+
+Command output:
+Completed steps: Step 0 .. 349 (350 frames out of 401)
+All steps Temp: 299.18 +/- 31.70 K
+Step 100..349 Temp: 298.56 +/- 30.91 K
+Step 200..349 Temp: 298.80 +/- 28.49 K
+Step 200..349 PE: -127673.92 +/- 1.05 eV
+Step 200..349 Etot: -127662.83 +/- 0.054 eV
+Gap mean: 9.9213 A, min: 9.6899 A, max: 10.2197 A
+Recent 20 steps avg time/step: 467.0s (7.78 min)

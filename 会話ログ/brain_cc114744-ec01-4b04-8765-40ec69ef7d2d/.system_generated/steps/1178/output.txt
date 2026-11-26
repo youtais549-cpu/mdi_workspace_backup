@@ -1,0 +1,34 @@
+Created At: 2026-11-17T01:16:49+09:00
+Completed At: 2026-11-17T01:16:49+09:00
+Command exited with code 0.
+
+Command output:
+Total frames: 101
+Z levels (sorted): [ 3.06  3.2   3.79  3.81  5.64  5.65  6.52  6.53  8.32  8.33  9.2   9.21
+ 10.99 11.   11.87 11.88 13.65 13.66 14.54 14.55 16.32 16.33 17.21 17.22
+ 19.01 19.02 19.89 21.73 21.75 22.34 22.48]
+
+=== [Step 100 (Final) Displacement Statistics] ===
+All 288 atoms:
+  Max 3D displacement |dr|: 0.1515 A (Atom 190, Type Si)
+  Mean 3D displacement: 0.0603 A
+  Max |dz|: 0.1351 A (Atom 190)
+  Max |dx|: 0.1047 A, Max |dy|: 0.1205 A
+
+Top Surface (Layer 16, 18 atoms):
+  Max |dr|: 0.1515 A
+  Max dz (outward into vacuum): +0.1351 A (Atom 190, Si)
+  Min dz (inward into slab): -0.0626 A (Atom 158, Si)
+  Mean dz: +0.0126 A
+
+Bottom Surface (Layer 1, 18 atoms):
+  Max |dr|: 0.1314 A
+  Max -dz (outward into vacuum): +0.1042 A (Atom 132, C)
+  Min -dz (inward into slab): -0.0818 A
+  Mean dz: -0.0141 A
+
+=== [Trajectory-wide Maximum Displacements (Steps 0 - 100)] ===
+Global Max 3D Displacement: 0.1652 A (Step 22, Atom 53, Type Si)
+Global Max |dz|: 0.1351 A (Step 100, Atom 190, Type Si)
+Top surface max outward dz into vacuum: +0.1351 A
+Bottom surface max outward -dz into vacuum: +0.1042 A

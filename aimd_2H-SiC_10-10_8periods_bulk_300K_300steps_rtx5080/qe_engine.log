@@ -1,0 +1,608 @@
+[QE-MDI Engine] Initializing MDI Engine with options: -role ENGINE -name QE -method TCP -port 8045 -hostname localhost
+[QE-MDI Engine] Waiting for MDI driver connection...
+[QE-MDI Engine] Connected to MDI driver! Entering communication loop...
+[QE-MDI Engine] Received >NATOMS: 288
+[QE-MDI Engine] --- [Step 0] Starting SCF (288 atoms, startingpot/wfc=atomic, z_min=0.0000A, z_max=19.5354A, gap=1.7758A) ---
+[QE-MDI Engine] --- [Step 0] Done in 195.78s (11 SCF iters) | E_pot: -127726.1527 eV | Fmax: 0.13746 eV/A | gap: 1.7758 A ---
+[QE-MDI Engine] --- [Step 1] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0001A, z_max=21.3111A, gap=0.0002A) ---
+[QE-MDI Engine] --- [Step 1] Done in 262.93s (17 SCF iters) | E_pot: -127725.9914 eV | Fmax: 0.52483 eV/A | gap: 0.0002 A ---
+[QE-MDI Engine] --- [Step 2] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0002A, z_max=21.3111A, gap=0.0003A) ---
+[QE-MDI Engine] --- [Step 2] Done in 257.74s (17 SCF iters) | E_pot: -127725.5265 eV | Fmax: 0.90487 eV/A | gap: 0.0003 A ---
+[QE-MDI Engine] --- [Step 3] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0004A, z_max=21.3111A, gap=0.0005A) ---
+[QE-MDI Engine] --- [Step 3] Done in 267.83s (18 SCF iters) | E_pot: -127724.7937 eV | Fmax: 1.26542 eV/A | gap: 0.0005 A ---
+[QE-MDI Engine] --- [Step 4] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0000A, z_max=21.3093A, gap=0.0019A) ---
+[QE-MDI Engine] --- [Step 4] Done in 252.27s (17 SCF iters) | E_pot: -127723.8503 eV | Fmax: 1.59910 eV/A | gap: 0.0019 A ---
+[QE-MDI Engine] --- [Step 5] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0001A, z_max=21.3091A, gap=0.0022A) ---
+[QE-MDI Engine] --- [Step 5] Done in 252.28s (17 SCF iters) | E_pot: -127722.7700 eV | Fmax: 1.89606 eV/A | gap: 0.0022 A ---
+[QE-MDI Engine] --- [Step 6] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0003A, z_max=21.3091A, gap=0.0023A) ---
+[QE-MDI Engine] --- [Step 6] Done in 246.58s (17 SCF iters) | E_pot: -127721.6369 eV | Fmax: 2.20754 eV/A | gap: 0.0023 A ---
+[QE-MDI Engine] --- [Step 7] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0005A, z_max=21.3093A, gap=0.0024A) ---
+[QE-MDI Engine] --- [Step 7] Done in 248.28s (17 SCF iters) | E_pot: -127720.5376 eV | Fmax: 2.46614 eV/A | gap: 0.0024 A ---
+[QE-MDI Engine] --- [Step 8] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0008A, z_max=21.3096A, gap=0.0023A) ---
+[QE-MDI Engine] --- [Step 8] Done in 247.72s (17 SCF iters) | E_pot: -127719.5539 eV | Fmax: 2.65462 eV/A | gap: 0.0023 A ---
+[QE-MDI Engine] --- [Step 9] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0012A, z_max=21.3101A, gap=0.0022A) ---
+[QE-MDI Engine] --- [Step 9] Done in 238.94s (16 SCF iters) | E_pot: -127718.7545 eV | Fmax: 2.76240 eV/A | gap: 0.0022 A ---
+[QE-MDI Engine] --- [Step 10] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0015A, z_max=21.3108A, gap=0.0019A) ---
+[QE-MDI Engine] --- [Step 10] Done in 239.06s (16 SCF iters) | E_pot: -127718.1889 eV | Fmax: 2.79969 eV/A | gap: 0.0019 A ---
+[QE-MDI Engine] --- [Step 11] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0005A, z_max=21.2868A, gap=0.0249A) ---
+[QE-MDI Engine] --- [Step 11] Done in 233.06s (16 SCF iters) | E_pot: -127717.8826 eV | Fmax: 2.78475 eV/A | gap: 0.0249 A ---
+[QE-MDI Engine] --- [Step 12] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0013A, z_max=21.2865A, gap=0.0260A) ---
+[QE-MDI Engine] --- [Step 12] Done in 232.08s (15 SCF iters) | E_pot: -127717.8354 eV | Fmax: 2.80435 eV/A | gap: 0.0260 A ---
+[QE-MDI Engine] --- [Step 13] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0009A, z_max=21.2865A, gap=0.0256A) ---
+[QE-MDI Engine] --- [Step 13] Done in 252.68s (16 SCF iters) | E_pot: -127718.0232 eV | Fmax: 2.78565 eV/A | gap: 0.0256 A ---
+[QE-MDI Engine] --- [Step 14] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0005A, z_max=21.2869A, gap=0.0248A) ---
+[QE-MDI Engine] --- [Step 14] Done in 246.42s (16 SCF iters) | E_pot: -127718.4006 eV | Fmax: 2.72846 eV/A | gap: 0.0248 A ---
+[QE-MDI Engine] --- [Step 15] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0014A, z_max=21.3111A, gap=0.0014A) ---
+[QE-MDI Engine] --- [Step 15] Done in 238.61s (16 SCF iters) | E_pot: -127718.9082 eV | Fmax: 2.63584 eV/A | gap: 0.0014 A ---
+[QE-MDI Engine] --- [Step 16] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0012A, z_max=21.3106A, gap=0.0018A) ---
+[QE-MDI Engine] --- [Step 16] Done in 237.04s (16 SCF iters) | E_pot: -127719.4786 eV | Fmax: 2.51100 eV/A | gap: 0.0018 A ---
+[QE-MDI Engine] --- [Step 17] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0008A, z_max=21.3099A, gap=0.0021A) ---
+[QE-MDI Engine] --- [Step 17] Done in 236.90s (16 SCF iters) | E_pot: -127720.0438 eV | Fmax: 2.35770 eV/A | gap: 0.0021 A ---
+[QE-MDI Engine] --- [Step 18] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0004A, z_max=21.3093A, gap=0.0023A) ---
+[QE-MDI Engine] --- [Step 18] Done in 236.61s (16 SCF iters) | E_pot: -127720.5420 eV | Fmax: 2.24261 eV/A | gap: 0.0023 A ---
+[QE-MDI Engine] --- [Step 19] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0031A, z_max=21.3111A, gap=0.0032A) ---
+[QE-MDI Engine] --- [Step 19] Done in 244.75s (16 SCF iters) | E_pot: -127720.9226 eV | Fmax: 2.21047 eV/A | gap: 0.0032 A ---
+[QE-MDI Engine] --- [Step 20] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0027A, z_max=21.3104A, gap=0.0035A) ---
+[QE-MDI Engine] --- [Step 20] Done in 240.89s (16 SCF iters) | E_pot: -127721.1502 eV | Fmax: 2.17387 eV/A | gap: 0.0035 A ---
+[QE-MDI Engine] --- [Step 21] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0008A, z_max=21.3097A, gap=0.0023A) ---
+[QE-MDI Engine] --- [Step 21] Done in 257.33s (16 SCF iters) | E_pot: -127721.2066 eV | Fmax: 2.13430 eV/A | gap: 0.0023 A ---
+[QE-MDI Engine] --- [Step 22] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0019A, z_max=21.3088A, gap=0.0043A) ---
+[QE-MDI Engine] --- [Step 22] Done in 249.80s (16 SCF iters) | E_pot: -127721.0911 eV | Fmax: 2.09291 eV/A | gap: 0.0043 A ---
+[QE-MDI Engine] --- [Step 23] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0014A, z_max=21.3096A, gap=0.0029A) ---
+[QE-MDI Engine] --- [Step 23] Done in 233.42s (15 SCF iters) | E_pot: -127720.8200 eV | Fmax: 2.05001 eV/A | gap: 0.0029 A ---
+[QE-MDI Engine] --- [Step 24] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0009A, z_max=21.3067A, gap=0.0054A) ---
+[QE-MDI Engine] --- [Step 24] Done in 222.66s (14 SCF iters) | E_pot: -127720.4241 eV | Fmax: 2.00498 eV/A | gap: 0.0054 A ---
+[QE-MDI Engine] --- [Step 25] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0004A, z_max=21.3084A, gap=0.0032A) ---
+[QE-MDI Engine] --- [Step 25] Done in 218.62s (14 SCF iters) | E_pot: -127719.9457 eV | Fmax: 1.98481 eV/A | gap: 0.0032 A ---
+[QE-MDI Engine] --- [Step 26] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0096A, z_max=21.3111A, gap=0.0097A) ---
+[QE-MDI Engine] --- [Step 26] Done in 217.48s (14 SCF iters) | E_pot: -127719.4347 eV | Fmax: 2.13998 eV/A | gap: 0.0097 A ---
+[QE-MDI Engine] --- [Step 27] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0019A, z_max=21.3106A, gap=0.0025A) ---
+[QE-MDI Engine] --- [Step 27] Done in 225.40s (14 SCF iters) | E_pot: -127718.9438 eV | Fmax: 2.34300 eV/A | gap: 0.0025 A ---
+[QE-MDI Engine] --- [Step 28] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0040A, z_max=21.3101A, gap=0.0051A) ---
+[QE-MDI Engine] --- [Step 28] Done in 225.71s (14 SCF iters) | E_pot: -127718.5238 eV | Fmax: 2.51334 eV/A | gap: 0.0051 A ---
+[QE-MDI Engine] --- [Step 29] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0059A, z_max=21.3097A, gap=0.0074A) ---
+[QE-MDI Engine] --- [Step 29] Done in 217.84s (14 SCF iters) | E_pot: -127718.2191 eV | Fmax: 2.61811 eV/A | gap: 0.0074 A ---
+[QE-MDI Engine] --- [Step 30] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0075A, z_max=21.3092A, gap=0.0094A) ---
+[QE-MDI Engine] --- [Step 30] Done in 234.18s (15 SCF iters) | E_pot: -127718.0632 eV | Fmax: 2.65547 eV/A | gap: 0.0094 A ---
+[QE-MDI Engine] --- [Step 31] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0081A, z_max=21.3088A, gap=0.0104A) ---
+[QE-MDI Engine] --- [Step 31] Done in 249.59s (16 SCF iters) | E_pot: -127718.0761 eV | Fmax: 2.68993 eV/A | gap: 0.0104 A ---
+[QE-MDI Engine] --- [Step 32] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0074A, z_max=21.3102A, gap=0.0084A) ---
+[QE-MDI Engine] --- [Step 32] Done in 249.15s (16 SCF iters) | E_pot: -127718.2619 eV | Fmax: 2.68691 eV/A | gap: 0.0084 A ---
+[QE-MDI Engine] --- [Step 33] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0006A, z_max=21.3081A, gap=0.0036A) ---
+[QE-MDI Engine] --- [Step 33] Done in 248.91s (16 SCF iters) | E_pot: -127718.6087 eV | Fmax: 2.62704 eV/A | gap: 0.0036 A ---
+[QE-MDI Engine] --- [Step 34] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0024A, z_max=21.3078A, gap=0.0057A) ---
+[QE-MDI Engine] --- [Step 34] Done in 233.00s (15 SCF iters) | E_pot: -127719.0897 eV | Fmax: 2.51223 eV/A | gap: 0.0057 A ---
+[QE-MDI Engine] --- [Step 35] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0045A, z_max=21.3076A, gap=0.0081A) ---
+[QE-MDI Engine] --- [Step 35] Done in 232.27s (15 SCF iters) | E_pot: -127719.6659 eV | Fmax: 2.35082 eV/A | gap: 0.0081 A ---
+[QE-MDI Engine] --- [Step 36] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0034A, z_max=21.3074A, gap=0.0072A) ---
+[QE-MDI Engine] --- [Step 36] Done in 232.89s (15 SCF iters) | E_pot: -127720.2897 eV | Fmax: 2.25829 eV/A | gap: 0.0072 A ---
+[QE-MDI Engine] --- [Step 37] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0022A, z_max=21.3097A, gap=0.0036A) ---
+[QE-MDI Engine] --- [Step 37] Done in 230.02s (14 SCF iters) | E_pot: -127720.9099 eV | Fmax: 2.12461 eV/A | gap: 0.0036 A ---
+[QE-MDI Engine] --- [Step 38] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0009A, z_max=21.3071A, gap=0.0050A) ---
+[QE-MDI Engine] --- [Step 38] Done in 226.58s (14 SCF iters) | E_pot: -127721.4761 eV | Fmax: 1.94426 eV/A | gap: 0.0050 A ---
+[QE-MDI Engine] --- [Step 39] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0029A, z_max=21.3108A, gap=0.0033A) ---
+[QE-MDI Engine] --- [Step 39] Done in 225.15s (14 SCF iters) | E_pot: -127721.9433 eV | Fmax: 1.88785 eV/A | gap: 0.0033 A ---
+[QE-MDI Engine] --- [Step 40] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0004A, z_max=21.3095A, gap=0.0021A) ---
+[QE-MDI Engine] --- [Step 40] Done in 240.59s (14 SCF iters) | E_pot: -127722.2759 eV | Fmax: 1.83611 eV/A | gap: 0.0021 A ---
+[QE-MDI Engine] --- [Step 41] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0027A, z_max=21.3103A, gap=0.0035A) ---
+[QE-MDI Engine] --- [Step 41] Done in 230.66s (14 SCF iters) | E_pot: -127722.4504 eV | Fmax: 1.77673 eV/A | gap: 0.0035 A ---
+[QE-MDI Engine] --- [Step 42] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0057A, z_max=21.3083A, gap=0.0085A) ---
+[QE-MDI Engine] --- [Step 42] Done in 228.42s (14 SCF iters) | E_pot: -127722.4568 eV | Fmax: 1.71741 eV/A | gap: 0.0085 A ---
+[QE-MDI Engine] --- [Step 43] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0045A, z_max=21.3071A, gap=0.0085A) ---
+[QE-MDI Engine] --- [Step 43] Done in 235.20s (14 SCF iters) | E_pot: -127722.2993 eV | Fmax: 1.77857 eV/A | gap: 0.0085 A ---
+[QE-MDI Engine] --- [Step 44] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0032A, z_max=21.3072A, gap=0.0071A) ---
+[QE-MDI Engine] --- [Step 44] Done in 230.09s (14 SCF iters) | E_pot: -127721.9958 eV | Fmax: 1.82252 eV/A | gap: 0.0071 A ---
+[QE-MDI Engine] --- [Step 45] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0019A, z_max=21.3074A, gap=0.0056A) ---
+[QE-MDI Engine] --- [Step 45] Done in 225.87s (14 SCF iters) | E_pot: -127721.5757 eV | Fmax: 1.99362 eV/A | gap: 0.0056 A ---
+[QE-MDI Engine] --- [Step 46] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0007A, z_max=21.3095A, gap=0.0023A) ---
+[QE-MDI Engine] --- [Step 46] Done in 229.22s (14 SCF iters) | E_pot: -127721.0780 eV | Fmax: 2.16495 eV/A | gap: 0.0023 A ---
+[QE-MDI Engine] --- [Step 47] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0010A, z_max=21.3106A, gap=0.0015A) ---
+[QE-MDI Engine] --- [Step 47] Done in 228.47s (14 SCF iters) | E_pot: -127720.5478 eV | Fmax: 2.31652 eV/A | gap: 0.0015 A ---
+[QE-MDI Engine] --- [Step 48] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0033A, z_max=21.3096A, gap=0.0049A) ---
+[QE-MDI Engine] --- [Step 48] Done in 220.35s (14 SCF iters) | E_pot: -127720.0321 eV | Fmax: 2.44074 eV/A | gap: 0.0049 A ---
+[QE-MDI Engine] --- [Step 49] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0015A, z_max=21.3086A, gap=0.0040A) ---
+[QE-MDI Engine] --- [Step 49] Done in 223.16s (14 SCF iters) | E_pot: -127719.5765 eV | Fmax: 2.53004 eV/A | gap: 0.0040 A ---
+[QE-MDI Engine] --- [Step 50] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0068A, z_max=21.3104A, gap=0.0075A) ---
+[QE-MDI Engine] --- [Step 50] Done in 235.95s (14 SCF iters) | E_pot: -127719.2206 eV | Fmax: 2.57804 eV/A | gap: 0.0075 A ---
+[QE-MDI Engine] --- [Step 51] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0078A, z_max=21.3093A, gap=0.0096A) ---
+[QE-MDI Engine] --- [Step 51] Done in 224.79s (14 SCF iters) | E_pot: -127718.9947 eV | Fmax: 2.57978 eV/A | gap: 0.0096 A ---
+[QE-MDI Engine] --- [Step 52] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0082A, z_max=21.3098A, gap=0.0096A) ---
+[QE-MDI Engine] --- [Step 52] Done in 223.21s (14 SCF iters) | E_pot: -127718.9170 eV | Fmax: 2.53614 eV/A | gap: 0.0096 A ---
+[QE-MDI Engine] --- [Step 53] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0082A, z_max=21.3104A, gap=0.0090A) ---
+[QE-MDI Engine] --- [Step 53] Done in 233.61s (14 SCF iters) | E_pot: -127718.9920 eV | Fmax: 2.60363 eV/A | gap: 0.0090 A ---
+[QE-MDI Engine] --- [Step 54] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0077A, z_max=21.3110A, gap=0.0078A) ---
+[QE-MDI Engine] --- [Step 54] Done in 226.00s (14 SCF iters) | E_pot: -127719.2103 eV | Fmax: 2.59696 eV/A | gap: 0.0078 A ---
+[QE-MDI Engine] --- [Step 55] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0005A, z_max=21.3069A, gap=0.0048A) ---
+[QE-MDI Engine] --- [Step 55] Done in 235.96s (15 SCF iters) | E_pot: -127719.5497 eV | Fmax: 2.55926 eV/A | gap: 0.0048 A ---
+[QE-MDI Engine] --- [Step 56] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0012A, z_max=21.3076A, gap=0.0048A) ---
+[QE-MDI Engine] --- [Step 56] Done in 250.90s (16 SCF iters) | E_pot: -127719.9777 eV | Fmax: 2.51264 eV/A | gap: 0.0048 A ---
+[QE-MDI Engine] --- [Step 57] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0019A, z_max=21.3082A, gap=0.0048A) ---
+[QE-MDI Engine] --- [Step 57] Done in 255.21s (16 SCF iters) | E_pot: -127720.4546 eV | Fmax: 2.40709 eV/A | gap: 0.0048 A ---
+[QE-MDI Engine] --- [Step 58] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0013A, z_max=21.3093A, gap=0.0031A) ---
+[QE-MDI Engine] --- [Step 58] Done in 254.43s (16 SCF iters) | E_pot: -127720.9379 eV | Fmax: 2.24692 eV/A | gap: 0.0031 A ---
+[QE-MDI Engine] --- [Step 59] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0035A, z_max=21.3106A, gap=0.0041A) ---
+[QE-MDI Engine] --- [Step 59] Done in 260.57s (16 SCF iters) | E_pot: -127721.3862 eV | Fmax: 2.03965 eV/A | gap: 0.0041 A ---
+[QE-MDI Engine] --- [Step 60] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0002A, z_max=21.3075A, gap=0.0038A) ---
+[QE-MDI Engine] --- [Step 60] Done in 266.26s (16 SCF iters) | E_pot: -127721.7629 eV | Fmax: 1.79505 eV/A | gap: 0.0038 A ---
+[QE-MDI Engine] --- [Step 61] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0026A, z_max=21.3081A, gap=0.0056A) ---
+[QE-MDI Engine] --- [Step 61] Done in 259.39s (16 SCF iters) | E_pot: -127722.0390 eV | Fmax: 1.68453 eV/A | gap: 0.0056 A ---
+[QE-MDI Engine] --- [Step 62] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0006A, z_max=21.3081A, gap=0.0036A) ---
+[QE-MDI Engine] --- [Step 62] Done in 255.61s (16 SCF iters) | E_pot: -127722.1953 eV | Fmax: 1.59097 eV/A | gap: 0.0036 A ---
+[QE-MDI Engine] --- [Step 63] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0005A, z_max=21.3096A, gap=0.0021A) ---
+[QE-MDI Engine] --- [Step 63] Done in 258.03s (16 SCF iters) | E_pot: -127722.2229 eV | Fmax: 1.67248 eV/A | gap: 0.0021 A ---
+[QE-MDI Engine] --- [Step 64] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0040A, z_max=21.3111A, gap=0.0040A) ---
+[QE-MDI Engine] --- [Step 64] Done in 256.81s (16 SCF iters) | E_pot: -127722.1233 eV | Fmax: 1.83537 eV/A | gap: 0.0040 A ---
+[QE-MDI Engine] --- [Step 65] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0008A, z_max=21.2955A, gap=0.0165A) ---
+[QE-MDI Engine] --- [Step 65] Done in 256.96s (16 SCF iters) | E_pot: -127721.9074 eV | Fmax: 1.99516 eV/A | gap: 0.0165 A ---
+[QE-MDI Engine] --- [Step 66] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0029A, z_max=21.3095A, gap=0.0046A) ---
+[QE-MDI Engine] --- [Step 66] Done in 253.72s (16 SCF iters) | E_pot: -127721.5936 eV | Fmax: 2.13431 eV/A | gap: 0.0046 A ---
+[QE-MDI Engine] --- [Step 67] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0006A, z_max=21.3076A, gap=0.0042A) ---
+[QE-MDI Engine] --- [Step 67] Done in 257.40s (16 SCF iters) | E_pot: -127721.2063 eV | Fmax: 2.24895 eV/A | gap: 0.0042 A ---
+[QE-MDI Engine] --- [Step 68] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0055A, z_max=21.3069A, gap=0.0097A) ---
+[QE-MDI Engine] --- [Step 68] Done in 251.32s (16 SCF iters) | E_pot: -127720.7730 eV | Fmax: 2.36485 eV/A | gap: 0.0097 A ---
+[QE-MDI Engine] --- [Step 69] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0054A, z_max=21.3061A, gap=0.0105A) ---
+[QE-MDI Engine] --- [Step 69] Done in 247.74s (16 SCF iters) | E_pot: -127720.3227 eV | Fmax: 2.47546 eV/A | gap: 0.0105 A ---
+[QE-MDI Engine] --- [Step 70] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0025A, z_max=21.3066A, gap=0.0070A) ---
+[QE-MDI Engine] --- [Step 70] Done in 249.06s (16 SCF iters) | E_pot: -127719.8829 eV | Fmax: 2.51613 eV/A | gap: 0.0070 A ---
+[QE-MDI Engine] --- [Step 71] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0070A, z_max=21.3111A, gap=0.0070A) ---
+[QE-MDI Engine] --- [Step 71] Done in 251.21s (16 SCF iters) | E_pot: -127719.4785 eV | Fmax: 2.48693 eV/A | gap: 0.0070 A ---
+[QE-MDI Engine] --- [Step 72] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0039A, z_max=21.3102A, gap=0.0049A) ---
+[QE-MDI Engine] --- [Step 72] Done in 258.48s (16 SCF iters) | E_pot: -127719.1302 eV | Fmax: 2.40324 eV/A | gap: 0.0049 A ---
+[QE-MDI Engine] --- [Step 73] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0008A, z_max=21.3075A, gap=0.0044A) ---
+[QE-MDI Engine] --- [Step 73] Done in 250.18s (16 SCF iters) | E_pot: -127718.8537 eV | Fmax: 2.35481 eV/A | gap: 0.0044 A ---
+[QE-MDI Engine] --- [Step 74] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0057A, z_max=21.3088A, gap=0.0080A) ---
+[QE-MDI Engine] --- [Step 74] Done in 256.47s (16 SCF iters) | E_pot: -127718.6590 eV | Fmax: 2.29139 eV/A | gap: 0.0080 A ---
+[QE-MDI Engine] --- [Step 75] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0089A, z_max=21.3061A, gap=0.0140A) ---
+[QE-MDI Engine] --- [Step 75] Done in 257.37s (16 SCF iters) | E_pot: -127718.5509 eV | Fmax: 2.27167 eV/A | gap: 0.0140 A ---
+[QE-MDI Engine] --- [Step 76] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0086A, z_max=21.3062A, gap=0.0135A) ---
+[QE-MDI Engine] --- [Step 76] Done in 250.95s (16 SCF iters) | E_pot: -127718.5287 eV | Fmax: 2.21166 eV/A | gap: 0.0135 A ---
+[QE-MDI Engine] --- [Step 77] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0083A, z_max=21.3071A, gap=0.0123A) ---
+[QE-MDI Engine] --- [Step 77] Done in 248.35s (16 SCF iters) | E_pot: -127718.5865 eV | Fmax: 2.13032 eV/A | gap: 0.0123 A ---
+[QE-MDI Engine] --- [Step 78] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0080A, z_max=21.3082A, gap=0.0109A) ---
+[QE-MDI Engine] --- [Step 78] Done in 257.38s (16 SCF iters) | E_pot: -127718.7144 eV | Fmax: 2.12476 eV/A | gap: 0.0109 A ---
+[QE-MDI Engine] --- [Step 79] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0002A, z_max=21.3092A, gap=0.0021A) ---
+[QE-MDI Engine] --- [Step 79] Done in 256.86s (16 SCF iters) | E_pot: -127718.8985 eV | Fmax: 2.08794 eV/A | gap: 0.0021 A ---
+[QE-MDI Engine] --- [Step 80] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0043A, z_max=21.3108A, gap=0.0046A) ---
+[QE-MDI Engine] --- [Step 80] Done in 259.58s (16 SCF iters) | E_pot: -127719.1228 eV | Fmax: 2.07526 eV/A | gap: 0.0046 A ---
+[QE-MDI Engine] --- [Step 81] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0017A, z_max=21.3110A, gap=0.0018A) ---
+[QE-MDI Engine] --- [Step 81] Done in 255.70s (16 SCF iters) | E_pot: -127719.3696 eV | Fmax: 2.00862 eV/A | gap: 0.0018 A ---
+[QE-MDI Engine] --- [Step 82] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0007A, z_max=21.3068A, gap=0.0050A) ---
+[QE-MDI Engine] --- [Step 82] Done in 255.05s (16 SCF iters) | E_pot: -127719.6214 eV | Fmax: 2.00699 eV/A | gap: 0.0050 A ---
+[QE-MDI Engine] --- [Step 83] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0014A, z_max=21.3061A, gap=0.0065A) ---
+[QE-MDI Engine] --- [Step 83] Done in 257.96s (16 SCF iters) | E_pot: -127719.8618 eV | Fmax: 1.98264 eV/A | gap: 0.0065 A ---
+[QE-MDI Engine] --- [Step 84] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0022A, z_max=21.3097A, gap=0.0036A) ---
+[QE-MDI Engine] --- [Step 84] Done in 256.45s (16 SCF iters) | E_pot: -127720.0763 eV | Fmax: 2.00192 eV/A | gap: 0.0036 A ---
+[QE-MDI Engine] --- [Step 85] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0020A, z_max=21.3039A, gap=0.0092A) ---
+[QE-MDI Engine] --- [Step 85] Done in 257.21s (16 SCF iters) | E_pot: -127720.2537 eV | Fmax: 2.17879 eV/A | gap: 0.0092 A ---
+[QE-MDI Engine] --- [Step 86] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0004A, z_max=21.3027A, gap=0.0088A) ---
+[QE-MDI Engine] --- [Step 86] Done in 251.75s (16 SCF iters) | E_pot: -127720.3862 eV | Fmax: 2.29708 eV/A | gap: 0.0088 A ---
+[QE-MDI Engine] --- [Step 87] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0040A, z_max=21.3100A, gap=0.0051A) ---
+[QE-MDI Engine] --- [Step 87] Done in 250.83s (16 SCF iters) | E_pot: -127720.4694 eV | Fmax: 2.35252 eV/A | gap: 0.0051 A ---
+[QE-MDI Engine] --- [Step 88] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0045A, z_max=21.3096A, gap=0.0060A) ---
+[QE-MDI Engine] --- [Step 88] Done in 262.26s (16 SCF iters) | E_pot: -127720.5027 eV | Fmax: 2.39061 eV/A | gap: 0.0060 A ---
+[QE-MDI Engine] --- [Step 89] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0018A, z_max=21.3073A, gap=0.0057A) ---
+[QE-MDI Engine] --- [Step 89] Done in 258.97s (16 SCF iters) | E_pot: -127720.4885 eV | Fmax: 2.52269 eV/A | gap: 0.0057 A ---
+[QE-MDI Engine] --- [Step 90] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0013A, z_max=21.3060A, gap=0.0064A) ---
+[QE-MDI Engine] --- [Step 90] Done in 255.75s (16 SCF iters) | E_pot: -127720.4316 eV | Fmax: 2.60046 eV/A | gap: 0.0064 A ---
+[QE-MDI Engine] --- [Step 91] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0011A, z_max=21.3110A, gap=0.0013A) ---
+[QE-MDI Engine] --- [Step 91] Done in 260.14s (16 SCF iters) | E_pot: -127720.3387 eV | Fmax: 2.61825 eV/A | gap: 0.0013 A ---
+[QE-MDI Engine] --- [Step 92] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0058A, z_max=21.3097A, gap=0.0073A) ---
+[QE-MDI Engine] --- [Step 92] Done in 257.13s (16 SCF iters) | E_pot: -127720.2180 eV | Fmax: 2.57307 eV/A | gap: 0.0073 A ---
+[QE-MDI Engine] --- [Step 93] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0060A, z_max=21.3086A, gap=0.0085A) ---
+[QE-MDI Engine] --- [Step 93] Done in 259.27s (16 SCF iters) | E_pot: -127720.0783 eV | Fmax: 2.46489 eV/A | gap: 0.0085 A ---
+[QE-MDI Engine] --- [Step 94] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0061A, z_max=21.3078A, gap=0.0094A) ---
+[QE-MDI Engine] --- [Step 94] Done in 259.05s (16 SCF iters) | E_pot: -127719.9291 eV | Fmax: 2.29688 eV/A | gap: 0.0094 A ---
+[QE-MDI Engine] --- [Step 95] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0062A, z_max=21.3073A, gap=0.0100A) ---
+[QE-MDI Engine] --- [Step 95] Done in 256.12s (16 SCF iters) | E_pot: -127719.7801 eV | Fmax: 2.21490 eV/A | gap: 0.0100 A ---
+[QE-MDI Engine] --- [Step 96] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0062A, z_max=21.3070A, gap=0.0103A) ---
+[QE-MDI Engine] --- [Step 96] Done in 258.38s (16 SCF iters) | E_pot: -127719.6408 eV | Fmax: 2.30925 eV/A | gap: 0.0103 A ---
+[QE-MDI Engine] --- [Step 97] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0062A, z_max=21.3070A, gap=0.0104A) ---
+[QE-MDI Engine] --- [Step 97] Done in 264.58s (16 SCF iters) | E_pot: -127719.5202 eV | Fmax: 2.35122 eV/A | gap: 0.0104 A ---
+[QE-MDI Engine] --- [Step 98] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0063A, z_max=21.3073A, gap=0.0101A) ---
+[QE-MDI Engine] --- [Step 98] Done in 262.87s (16 SCF iters) | E_pot: -127719.4266 eV | Fmax: 2.46029 eV/A | gap: 0.0101 A ---
+[QE-MDI Engine] --- [Step 99] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0063A, z_max=21.3091A, gap=0.0083A) ---
+[QE-MDI Engine] --- [Step 99] Done in 257.80s (16 SCF iters) | E_pot: -127719.3669 eV | Fmax: 2.63278 eV/A | gap: 0.0083 A ---
+[QE-MDI Engine] --- [Step 100] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0010A, z_max=21.3085A, gap=0.0037A) ---
+[QE-MDI Engine] --- [Step 100] Done in 262.34s (16 SCF iters) | E_pot: -127719.3460 eV | Fmax: 2.73273 eV/A | gap: 0.0037 A ---
+[QE-MDI Engine] --- [Step 101] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0040A, z_max=21.3094A, gap=0.0057A) ---
+[QE-MDI Engine] --- [Step 101] Done in 260.17s (16 SCF iters) | E_pot: -127719.3664 eV | Fmax: 2.75330 eV/A | gap: 0.0057 A ---
+[QE-MDI Engine] --- [Step 102] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0031A, z_max=21.3105A, gap=0.0037A) ---
+[QE-MDI Engine] --- [Step 102] Done in 260.39s (16 SCF iters) | E_pot: -127719.4281 eV | Fmax: 2.69193 eV/A | gap: 0.0037 A ---
+[QE-MDI Engine] --- [Step 103] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0006A, z_max=21.3009A, gap=0.0109A) ---
+[QE-MDI Engine] --- [Step 103] Done in 258.30s (16 SCF iters) | E_pot: -127719.5277 eV | Fmax: 2.55188 eV/A | gap: 0.0109 A ---
+[QE-MDI Engine] --- [Step 104] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0019A, z_max=21.3097A, gap=0.0033A) ---
+[QE-MDI Engine] --- [Step 104] Done in 261.12s (16 SCF iters) | E_pot: -127719.6592 eV | Fmax: 2.43355 eV/A | gap: 0.0033 A ---
+[QE-MDI Engine] --- [Step 105] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0009A, z_max=21.3076A, gap=0.0044A) ---
+[QE-MDI Engine] --- [Step 105] Done in 252.50s (16 SCF iters) | E_pot: -127719.8135 eV | Fmax: 2.35329 eV/A | gap: 0.0044 A ---
+[QE-MDI Engine] --- [Step 106] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0046A, z_max=21.3096A, gap=0.0061A) ---
+[QE-MDI Engine] --- [Step 106] Done in 252.25s (16 SCF iters) | E_pot: -127719.9789 eV | Fmax: 2.22120 eV/A | gap: 0.0061 A ---
+[QE-MDI Engine] --- [Step 107] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0060A, z_max=21.3074A, gap=0.0097A) ---
+[QE-MDI Engine] --- [Step 107] Done in 270.44s (17 SCF iters) | E_pot: -127720.1426 eV | Fmax: 2.05068 eV/A | gap: 0.0097 A ---
+[QE-MDI Engine] --- [Step 108] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0073A, z_max=21.3053A, gap=0.0131A) ---
+[QE-MDI Engine] --- [Step 108] Done in 267.02s (17 SCF iters) | E_pot: -127720.2912 eV | Fmax: 2.08231 eV/A | gap: 0.0131 A ---
+[QE-MDI Engine] --- [Step 109] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0085A, z_max=21.3036A, gap=0.0161A) ---
+[QE-MDI Engine] --- [Step 109] Done in 265.44s (17 SCF iters) | E_pot: -127720.4122 eV | Fmax: 2.24508 eV/A | gap: 0.0161 A ---
+[QE-MDI Engine] --- [Step 110] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0096A, z_max=21.3021A, gap=0.0187A) ---
+[QE-MDI Engine] --- [Step 110] Done in 269.51s (17 SCF iters) | E_pot: -127720.4950 eV | Fmax: 2.37612 eV/A | gap: 0.0187 A ---
+[QE-MDI Engine] --- [Step 111] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0075A, z_max=21.3034A, gap=0.0153A) ---
+[QE-MDI Engine] --- [Step 111] Done in 265.61s (17 SCF iters) | E_pot: -127720.5317 eV | Fmax: 2.44151 eV/A | gap: 0.0153 A ---
+[QE-MDI Engine] --- [Step 112] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0038A, z_max=21.3066A, gap=0.0084A) ---
+[QE-MDI Engine] --- [Step 112] Done in 273.10s (17 SCF iters) | E_pot: -127720.5181 eV | Fmax: 2.43722 eV/A | gap: 0.0084 A ---
+[QE-MDI Engine] --- [Step 113] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0007A, z_max=21.3111A, gap=0.0007A) ---
+[QE-MDI Engine] --- [Step 113] Done in 270.63s (17 SCF iters) | E_pot: -127720.4541 eV | Fmax: 2.36258 eV/A | gap: 0.0007 A ---
+[QE-MDI Engine] --- [Step 114] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0020A, z_max=21.3071A, gap=0.0061A) ---
+[QE-MDI Engine] --- [Step 114] Done in 263.12s (17 SCF iters) | E_pot: -127720.3438 eV | Fmax: 2.22043 eV/A | gap: 0.0061 A ---
+[QE-MDI Engine] --- [Step 115] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0052A, z_max=21.3044A, gap=0.0120A) ---
+[QE-MDI Engine] --- [Step 115] Done in 248.37s (16 SCF iters) | E_pot: -127720.1955 eV | Fmax: 2.19042 eV/A | gap: 0.0120 A ---
+[QE-MDI Engine] --- [Step 116] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0085A, z_max=21.3067A, gap=0.0129A) ---
+[QE-MDI Engine] --- [Step 116] Done in 252.19s (16 SCF iters) | E_pot: -127720.0209 eV | Fmax: 2.26533 eV/A | gap: 0.0129 A ---
+[QE-MDI Engine] --- [Step 117] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0117A, z_max=21.3100A, gap=0.0128A) ---
+[QE-MDI Engine] --- [Step 117] Done in 250.38s (16 SCF iters) | E_pot: -127719.8345 eV | Fmax: 2.30927 eV/A | gap: 0.0128 A ---
+[QE-MDI Engine] --- [Step 118] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0087A, z_max=21.3109A, gap=0.0089A) ---
+[QE-MDI Engine] --- [Step 118] Done in 241.10s (15 SCF iters) | E_pot: -127719.6523 eV | Fmax: 2.32138 eV/A | gap: 0.0089 A ---
+[QE-MDI Engine] --- [Step 119] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0015A, z_max=21.3051A, gap=0.0076A) ---
+[QE-MDI Engine] --- [Step 119] Done in 226.57s (14 SCF iters) | E_pot: -127719.4907 eV | Fmax: 2.30317 eV/A | gap: 0.0076 A ---
+[QE-MDI Engine] --- [Step 120] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0020A, z_max=21.3069A, gap=0.0062A) ---
+[QE-MDI Engine] --- [Step 120] Done in 248.50s (14 SCF iters) | E_pot: -127719.3644 eV | Fmax: 2.25549 eV/A | gap: 0.0062 A ---
+[QE-MDI Engine] --- [Step 121] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0042A, z_max=21.3090A, gap=0.0064A) ---
+[QE-MDI Engine] --- [Step 121] Done in 230.38s (14 SCF iters) | E_pot: -127719.2854 eV | Fmax: 2.18961 eV/A | gap: 0.0064 A ---
+[QE-MDI Engine] --- [Step 122] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0052A, z_max=21.3111A, gap=0.0052A) ---
+[QE-MDI Engine] --- [Step 122] Done in 226.02s (14 SCF iters) | E_pot: -127719.2614 eV | Fmax: 2.17605 eV/A | gap: 0.0052 A ---
+[QE-MDI Engine] --- [Step 123] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0021A, z_max=21.2978A, gap=0.0154A) ---
+[QE-MDI Engine] --- [Step 123] Done in 229.38s (14 SCF iters) | E_pot: -127719.2952 eV | Fmax: 2.31737 eV/A | gap: 0.0154 A ---
+[QE-MDI Engine] --- [Step 124] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0028A, z_max=21.3074A, gap=0.0066A) ---
+[QE-MDI Engine] --- [Step 124] Done in 235.10s (14 SCF iters) | E_pot: -127719.3840 eV | Fmax: 2.40613 eV/A | gap: 0.0066 A ---
+[QE-MDI Engine] --- [Step 125] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0006A, z_max=21.3014A, gap=0.0103A) ---
+[QE-MDI Engine] --- [Step 125] Done in 230.03s (14 SCF iters) | E_pot: -127719.5197 eV | Fmax: 2.43115 eV/A | gap: 0.0103 A ---
+[QE-MDI Engine] --- [Step 126] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0041A, z_max=21.3095A, gap=0.0057A) ---
+[QE-MDI Engine] --- [Step 126] Done in 227.39s (14 SCF iters) | E_pot: -127719.6897 eV | Fmax: 2.41538 eV/A | gap: 0.0057 A ---
+[QE-MDI Engine] --- [Step 127] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0026A, z_max=21.3073A, gap=0.0064A) ---
+[QE-MDI Engine] --- [Step 127] Done in 228.03s (14 SCF iters) | E_pot: -127719.8780 eV | Fmax: 2.43031 eV/A | gap: 0.0064 A ---
+[QE-MDI Engine] --- [Step 128] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0010A, z_max=21.3051A, gap=0.0071A) ---
+[QE-MDI Engine] --- [Step 128] Done in 228.39s (14 SCF iters) | E_pot: -127720.0666 eV | Fmax: 2.40029 eV/A | gap: 0.0071 A ---
+[QE-MDI Engine] --- [Step 129] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0053A, z_max=21.3106A, gap=0.0058A) ---
+[QE-MDI Engine] --- [Step 129] Done in 239.23s (14 SCF iters) | E_pot: -127720.2374 eV | Fmax: 2.56149 eV/A | gap: 0.0058 A ---
+[QE-MDI Engine] --- [Step 130] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0044A, z_max=21.3091A, gap=0.0064A) ---
+[QE-MDI Engine] --- [Step 130] Done in 225.24s (14 SCF iters) | E_pot: -127720.3738 eV | Fmax: 2.76726 eV/A | gap: 0.0064 A ---
+[QE-MDI Engine] --- [Step 131] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0017A, z_max=21.3077A, gap=0.0052A) ---
+[QE-MDI Engine] --- [Step 131] Done in 223.90s (14 SCF iters) | E_pot: -127720.4619 eV | Fmax: 2.91989 eV/A | gap: 0.0052 A ---
+[QE-MDI Engine] --- [Step 132] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0032A, z_max=21.3100A, gap=0.0043A) ---
+[QE-MDI Engine] --- [Step 132] Done in 221.67s (14 SCF iters) | E_pot: -127720.4920 eV | Fmax: 3.01533 eV/A | gap: 0.0043 A ---
+[QE-MDI Engine] --- [Step 133] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0024A, z_max=21.3068A, gap=0.0068A) ---
+[QE-MDI Engine] --- [Step 133] Done in 220.78s (14 SCF iters) | E_pot: -127720.4591 eV | Fmax: 3.05234 eV/A | gap: 0.0068 A ---
+[QE-MDI Engine] --- [Step 134] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0018A, z_max=21.3037A, gap=0.0093A) ---
+[QE-MDI Engine] --- [Step 134] Done in 218.02s (14 SCF iters) | E_pot: -127720.3633 eV | Fmax: 3.03251 eV/A | gap: 0.0093 A ---
+[QE-MDI Engine] --- [Step 135] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0013A, z_max=21.3025A, gap=0.0099A) ---
+[QE-MDI Engine] --- [Step 135] Done in 219.97s (14 SCF iters) | E_pot: -127720.2102 eV | Fmax: 2.95979 eV/A | gap: 0.0099 A ---
+[QE-MDI Engine] --- [Step 136] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0003A, z_max=21.3014A, gap=0.0100A) ---
+[QE-MDI Engine] --- [Step 136] Done in 220.91s (14 SCF iters) | E_pot: -127720.0099 eV | Fmax: 2.83957 eV/A | gap: 0.0100 A ---
+[QE-MDI Engine] --- [Step 137] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0008A, z_max=21.3090A, gap=0.0030A) ---
+[QE-MDI Engine] --- [Step 137] Done in 216.72s (14 SCF iters) | E_pot: -127719.7766 eV | Fmax: 2.67811 eV/A | gap: 0.0030 A ---
+[QE-MDI Engine] --- [Step 138] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0009A, z_max=21.3065A, gap=0.0056A) ---
+[QE-MDI Engine] --- [Step 138] Done in 220.61s (14 SCF iters) | E_pot: -127719.5273 eV | Fmax: 2.48214 eV/A | gap: 0.0056 A ---
+[QE-MDI Engine] --- [Step 139] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0013A, z_max=21.3040A, gap=0.0085A) ---
+[QE-MDI Engine] --- [Step 139] Done in 221.93s (14 SCF iters) | E_pot: -127719.2808 eV | Fmax: 2.39663 eV/A | gap: 0.0085 A ---
+[QE-MDI Engine] --- [Step 140] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0020A, z_max=21.3046A, gap=0.0086A) ---
+[QE-MDI Engine] --- [Step 140] Done in 215.69s (14 SCF iters) | E_pot: -127719.0557 eV | Fmax: 2.37175 eV/A | gap: 0.0086 A ---
+[QE-MDI Engine] --- [Step 141] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0024A, z_max=21.3070A, gap=0.0066A) ---
+[QE-MDI Engine] --- [Step 141] Done in 217.58s (14 SCF iters) | E_pot: -127718.8694 eV | Fmax: 2.33966 eV/A | gap: 0.0066 A ---
+[QE-MDI Engine] --- [Step 142] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0002A, z_max=21.3108A, gap=0.0005A) ---
+[QE-MDI Engine] --- [Step 142] Done in 234.19s (14 SCF iters) | E_pot: -127718.7362 eV | Fmax: 2.41811 eV/A | gap: 0.0005 A ---
+[QE-MDI Engine] --- [Step 143] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0014A, z_max=21.3082A, gap=0.0044A) ---
+[QE-MDI Engine] --- [Step 143] Done in 218.48s (14 SCF iters) | E_pot: -127718.6668 eV | Fmax: 2.43247 eV/A | gap: 0.0044 A ---
+[QE-MDI Engine] --- [Step 144] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0046A, z_max=21.3057A, gap=0.0100A) ---
+[QE-MDI Engine] --- [Step 144] Done in 217.22s (14 SCF iters) | E_pot: -127718.6665 eV | Fmax: 2.38052 eV/A | gap: 0.0100 A ---
+[QE-MDI Engine] --- [Step 145] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0069A, z_max=21.3089A, gap=0.0092A) ---
+[QE-MDI Engine] --- [Step 145] Done in 217.83s (14 SCF iters) | E_pot: -127718.7354 eV | Fmax: 2.26542 eV/A | gap: 0.0092 A ---
+[QE-MDI Engine] --- [Step 146] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0009A, z_max=21.3029A, gap=0.0092A) ---
+[QE-MDI Engine] --- [Step 146] Done in 228.13s (15 SCF iters) | E_pot: -127718.8677 eV | Fmax: 2.25461 eV/A | gap: 0.0092 A ---
+[QE-MDI Engine] --- [Step 147] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0019A, z_max=21.3080A, gap=0.0051A) ---
+[QE-MDI Engine] --- [Step 147] Done in 226.99s (15 SCF iters) | E_pot: -127719.0524 eV | Fmax: 2.20374 eV/A | gap: 0.0051 A ---
+[QE-MDI Engine] --- [Step 148] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0008A, z_max=21.2953A, gap=0.0167A) ---
+[QE-MDI Engine] --- [Step 148] Done in 228.85s (15 SCF iters) | E_pot: -127719.2741 eV | Fmax: 2.24201 eV/A | gap: 0.0167 A ---
+[QE-MDI Engine] --- [Step 149] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0007A, z_max=21.2939A, gap=0.0179A) ---
+[QE-MDI Engine] --- [Step 149] Done in 229.49s (15 SCF iters) | E_pot: -127719.5139 eV | Fmax: 2.27559 eV/A | gap: 0.0179 A ---
+[QE-MDI Engine] --- [Step 150] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0016A, z_max=21.2980A, gap=0.0147A) ---
+[QE-MDI Engine] --- [Step 150] Done in 240.04s (15 SCF iters) | E_pot: -127719.7512 eV | Fmax: 2.36576 eV/A | gap: 0.0147 A ---
+[QE-MDI Engine] --- [Step 151] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0035A, z_max=21.3033A, gap=0.0113A) ---
+[QE-MDI Engine] --- [Step 151] Done in 248.48s (16 SCF iters) | E_pot: -127719.9652 eV | Fmax: 2.50704 eV/A | gap: 0.0113 A ---
+[QE-MDI Engine] --- [Step 152] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0064A, z_max=21.3088A, gap=0.0088A) ---
+[QE-MDI Engine] --- [Step 152] Done in 246.49s (16 SCF iters) | E_pot: -127720.1358 eV | Fmax: 2.56949 eV/A | gap: 0.0088 A ---
+[QE-MDI Engine] --- [Step 153] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0031A, z_max=21.3012A, gap=0.0131A) ---
+[QE-MDI Engine] --- [Step 153] Done in 249.38s (16 SCF iters) | E_pot: -127720.2463 eV | Fmax: 2.55005 eV/A | gap: 0.0131 A ---
+[QE-MDI Engine] --- [Step 154] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0009A, z_max=21.3027A, gap=0.0094A) ---
+[QE-MDI Engine] --- [Step 154] Done in 249.77s (16 SCF iters) | E_pot: -127720.2840 eV | Fmax: 2.45080 eV/A | gap: 0.0094 A ---
+[QE-MDI Engine] --- [Step 155] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0140A, z_max=21.3093A, gap=0.0158A) ---
+[QE-MDI Engine] --- [Step 155] Done in 249.08s (16 SCF iters) | E_pot: -127720.2418 eV | Fmax: 2.29662 eV/A | gap: 0.0158 A ---
+[QE-MDI Engine] --- [Step 156] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0193A, z_max=21.3066A, gap=0.0238A) ---
+[QE-MDI Engine] --- [Step 156] Done in 249.34s (16 SCF iters) | E_pot: -127720.1193 eV | Fmax: 2.37697 eV/A | gap: 0.0238 A ---
+[QE-MDI Engine] --- [Step 157] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0228A, z_max=21.3060A, gap=0.0280A) ---
+[QE-MDI Engine] --- [Step 157] Done in 252.56s (16 SCF iters) | E_pot: -127719.9226 eV | Fmax: 2.43192 eV/A | gap: 0.0280 A ---
+[QE-MDI Engine] --- [Step 158] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0231A, z_max=21.3067A, gap=0.0276A) ---
+[QE-MDI Engine] --- [Step 158] Done in 248.12s (16 SCF iters) | E_pot: -127719.6648 eV | Fmax: 2.45812 eV/A | gap: 0.0276 A ---
+[QE-MDI Engine] --- [Step 159] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0232A, z_max=21.3073A, gap=0.0270A) ---
+[QE-MDI Engine] --- [Step 159] Done in 261.41s (16 SCF iters) | E_pot: -127719.3642 eV | Fmax: 2.45338 eV/A | gap: 0.0270 A ---
+[QE-MDI Engine] --- [Step 160] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0226A, z_max=21.3078A, gap=0.0259A) ---
+[QE-MDI Engine] --- [Step 160] Done in 263.66s (17 SCF iters) | E_pot: -127719.0435 eV | Fmax: 2.43983 eV/A | gap: 0.0259 A ---
+[QE-MDI Engine] --- [Step 161] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0209A, z_max=21.3083A, gap=0.0238A) ---
+[QE-MDI Engine] --- [Step 161] Done in 265.15s (17 SCF iters) | E_pot: -127718.7271 eV | Fmax: 2.40415 eV/A | gap: 0.0238 A ---
+[QE-MDI Engine] --- [Step 162] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0188A, z_max=21.3087A, gap=0.0212A) ---
+[QE-MDI Engine] --- [Step 162] Done in 263.56s (17 SCF iters) | E_pot: -127718.4395 eV | Fmax: 2.32876 eV/A | gap: 0.0212 A ---
+[QE-MDI Engine] --- [Step 163] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0164A, z_max=21.3092A, gap=0.0184A) ---
+[QE-MDI Engine] --- [Step 163] Done in 264.48s (17 SCF iters) | E_pot: -127718.2029 eV | Fmax: 2.39781 eV/A | gap: 0.0184 A ---
+[QE-MDI Engine] --- [Step 164] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0136A, z_max=21.3103A, gap=0.0145A) ---
+[QE-MDI Engine] --- [Step 164] Done in 268.85s (17 SCF iters) | E_pot: -127718.0351 eV | Fmax: 2.43577 eV/A | gap: 0.0145 A ---
+[QE-MDI Engine] --- [Step 165] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0017A, z_max=21.3102A, gap=0.0027A) ---
+[QE-MDI Engine] --- [Step 165] Done in 270.72s (17 SCF iters) | E_pot: -127717.9484 eV | Fmax: 2.43844 eV/A | gap: 0.0027 A ---
+[QE-MDI Engine] --- [Step 166] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0042A, z_max=21.3109A, gap=0.0044A) ---
+[QE-MDI Engine] --- [Step 166] Done in 265.86s (17 SCF iters) | E_pot: -127717.9485 eV | Fmax: 2.51291 eV/A | gap: 0.0044 A ---
+[QE-MDI Engine] --- [Step 167] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0006A, z_max=21.3019A, gap=0.0098A) ---
+[QE-MDI Engine] --- [Step 167] Done in 265.00s (17 SCF iters) | E_pot: -127718.0344 eV | Fmax: 2.52322 eV/A | gap: 0.0098 A ---
+[QE-MDI Engine] --- [Step 168] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0015A, z_max=21.3031A, gap=0.0096A) ---
+[QE-MDI Engine] --- [Step 168] Done in 263.32s (17 SCF iters) | E_pot: -127718.1984 eV | Fmax: 2.46770 eV/A | gap: 0.0096 A ---
+[QE-MDI Engine] --- [Step 169] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0027A, z_max=21.3098A, gap=0.0040A) ---
+[QE-MDI Engine] --- [Step 169] Done in 265.64s (17 SCF iters) | E_pot: -127718.4272 eV | Fmax: 2.34764 eV/A | gap: 0.0040 A ---
+[QE-MDI Engine] --- [Step 170] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0040A, z_max=21.3071A, gap=0.0081A) ---
+[QE-MDI Engine] --- [Step 170] Done in 263.40s (17 SCF iters) | E_pot: -127718.7026 eV | Fmax: 2.24477 eV/A | gap: 0.0081 A ---
+[QE-MDI Engine] --- [Step 171] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0055A, z_max=21.3071A, gap=0.0096A) ---
+[QE-MDI Engine] --- [Step 171] Done in 266.75s (17 SCF iters) | E_pot: -127719.0033 eV | Fmax: 2.24407 eV/A | gap: 0.0096 A ---
+[QE-MDI Engine] --- [Step 172] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0053A, z_max=21.3099A, gap=0.0066A) ---
+[QE-MDI Engine] --- [Step 172] Done in 263.86s (17 SCF iters) | E_pot: -127719.3065 eV | Fmax: 2.19381 eV/A | gap: 0.0066 A ---
+[QE-MDI Engine] --- [Step 173] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0001A, z_max=21.3098A, gap=0.0014A) ---
+[QE-MDI Engine] --- [Step 173] Done in 251.60s (16 SCF iters) | E_pot: -127719.5893 eV | Fmax: 2.11674 eV/A | gap: 0.0014 A ---
+[QE-MDI Engine] --- [Step 174] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0009A, z_max=21.3111A, gap=0.0009A) ---
+[QE-MDI Engine] --- [Step 174] Done in 262.77s (17 SCF iters) | E_pot: -127719.8310 eV | Fmax: 2.21279 eV/A | gap: 0.0009 A ---
+[QE-MDI Engine] --- [Step 175] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0007A, z_max=21.3085A, gap=0.0034A) ---
+[QE-MDI Engine] --- [Step 175] Done in 263.59s (17 SCF iters) | E_pot: -127720.0144 eV | Fmax: 2.24492 eV/A | gap: 0.0034 A ---
+[QE-MDI Engine] --- [Step 176] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0018A, z_max=21.3053A, gap=0.0077A) ---
+[QE-MDI Engine] --- [Step 176] Done in 267.57s (17 SCF iters) | E_pot: -127720.1270 eV | Fmax: 2.21151 eV/A | gap: 0.0077 A ---
+[QE-MDI Engine] --- [Step 177] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0027A, z_max=21.3111A, gap=0.0028A) ---
+[QE-MDI Engine] --- [Step 177] Done in 264.31s (17 SCF iters) | E_pot: -127720.1626 eV | Fmax: 2.11685 eV/A | gap: 0.0028 A ---
+[QE-MDI Engine] --- [Step 178] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0033A, z_max=21.3075A, gap=0.0070A) ---
+[QE-MDI Engine] --- [Step 178] Done in 264.53s (17 SCF iters) | E_pot: -127720.1210 eV | Fmax: 1.97780 eV/A | gap: 0.0070 A ---
+[QE-MDI Engine] --- [Step 179] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0012A, z_max=21.3092A, gap=0.0031A) ---
+[QE-MDI Engine] --- [Step 179] Done in 261.67s (17 SCF iters) | E_pot: -127720.0087 eV | Fmax: 1.93133 eV/A | gap: 0.0031 A ---
+[QE-MDI Engine] --- [Step 180] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0040A, z_max=21.3110A, gap=0.0042A) ---
+[QE-MDI Engine] --- [Step 180] Done in 258.90s (16 SCF iters) | E_pot: -127719.8381 eV | Fmax: 2.08006 eV/A | gap: 0.0042 A ---
+[QE-MDI Engine] --- [Step 181] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0016A, z_max=21.3086A, gap=0.0042A) ---
+[QE-MDI Engine] --- [Step 181] Done in 258.47s (16 SCF iters) | E_pot: -127719.6261 eV | Fmax: 2.25415 eV/A | gap: 0.0042 A ---
+[QE-MDI Engine] --- [Step 182] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0034A, z_max=21.3096A, gap=0.0050A) ---
+[QE-MDI Engine] --- [Step 182] Done in 256.78s (16 SCF iters) | E_pot: -127719.3931 eV | Fmax: 2.37336 eV/A | gap: 0.0050 A ---
+[QE-MDI Engine] --- [Step 183] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0004A, z_max=21.3104A, gap=0.0011A) ---
+[QE-MDI Engine] --- [Step 183] Done in 254.00s (16 SCF iters) | E_pot: -127719.1605 eV | Fmax: 2.43133 eV/A | gap: 0.0011 A ---
+[QE-MDI Engine] --- [Step 184] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0035A, z_max=21.3110A, gap=0.0037A) ---
+[QE-MDI Engine] --- [Step 184] Done in 248.63s (16 SCF iters) | E_pot: -127718.9490 eV | Fmax: 2.42433 eV/A | gap: 0.0037 A ---
+[QE-MDI Engine] --- [Step 185] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0002A, z_max=21.3088A, gap=0.0026A) ---
+[QE-MDI Engine] --- [Step 185] Done in 251.75s (16 SCF iters) | E_pot: -127718.7765 eV | Fmax: 2.36016 eV/A | gap: 0.0026 A ---
+[QE-MDI Engine] --- [Step 186] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0004A, z_max=21.2864A, gap=0.0251A) ---
+[QE-MDI Engine] --- [Step 186] Done in 252.95s (16 SCF iters) | E_pot: -127718.6566 eV | Fmax: 2.36159 eV/A | gap: 0.0251 A ---
+[QE-MDI Engine] --- [Step 187] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0003A, z_max=21.2866A, gap=0.0248A) ---
+[QE-MDI Engine] --- [Step 187] Done in 256.24s (16 SCF iters) | E_pot: -127718.5975 eV | Fmax: 2.51572 eV/A | gap: 0.0248 A ---
+[QE-MDI Engine] --- [Step 188] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0018A, z_max=21.3110A, gap=0.0019A) ---
+[QE-MDI Engine] --- [Step 188] Done in 258.74s (16 SCF iters) | E_pot: -127718.6014 eV | Fmax: 2.66693 eV/A | gap: 0.0019 A ---
+[QE-MDI Engine] --- [Step 189] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0013A, z_max=21.3104A, gap=0.0020A) ---
+[QE-MDI Engine] --- [Step 189] Done in 269.08s (16 SCF iters) | E_pot: -127718.6643 eV | Fmax: 2.76581 eV/A | gap: 0.0020 A ---
+[QE-MDI Engine] --- [Step 190] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0003A, z_max=21.3095A, gap=0.0019A) ---
+[QE-MDI Engine] --- [Step 190] Done in 266.02s (16 SCF iters) | E_pot: -127718.7766 eV | Fmax: 2.80703 eV/A | gap: 0.0019 A ---
+[QE-MDI Engine] --- [Step 191] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0007A, z_max=21.3105A, gap=0.0014A) ---
+[QE-MDI Engine] --- [Step 191] Done in 264.99s (16 SCF iters) | E_pot: -127718.9241 eV | Fmax: 2.78834 eV/A | gap: 0.0014 A ---
+[QE-MDI Engine] --- [Step 192] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0005A, z_max=21.3097A, gap=0.0020A) ---
+[QE-MDI Engine] --- [Step 192] Done in 281.27s (17 SCF iters) | E_pot: -127719.0893 eV | Fmax: 2.71101 eV/A | gap: 0.0020 A ---
+[QE-MDI Engine] --- [Step 193] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0004A, z_max=21.3090A, gap=0.0026A) ---
+[QE-MDI Engine] --- [Step 193] Done in 277.21s (17 SCF iters) | E_pot: -127719.2529 eV | Fmax: 2.57859 eV/A | gap: 0.0026 A ---
+[QE-MDI Engine] --- [Step 194] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0005A, z_max=21.3085A, gap=0.0031A) ---
+[QE-MDI Engine] --- [Step 194] Done in 281.10s (17 SCF iters) | E_pot: -127719.3963 eV | Fmax: 2.39830 eV/A | gap: 0.0031 A ---
+[QE-MDI Engine] --- [Step 195] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0006A, z_max=21.3082A, gap=0.0035A) ---
+[QE-MDI Engine] --- [Step 195] Done in 271.73s (17 SCF iters) | E_pot: -127719.5026 eV | Fmax: 2.34452 eV/A | gap: 0.0035 A ---
+[QE-MDI Engine] --- [Step 196] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0009A, z_max=21.3094A, gap=0.0026A) ---
+[QE-MDI Engine] --- [Step 196] Done in 269.21s (17 SCF iters) | E_pot: -127719.5589 eV | Fmax: 2.44965 eV/A | gap: 0.0026 A ---
+[QE-MDI Engine] --- [Step 197] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0010A, z_max=21.3086A, gap=0.0035A) ---
+[QE-MDI Engine] --- [Step 197] Done in 264.61s (17 SCF iters) | E_pot: -127719.5572 eV | Fmax: 2.64042 eV/A | gap: 0.0035 A ---
+[QE-MDI Engine] --- [Step 198] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0019A, z_max=21.3102A, gap=0.0028A) ---
+[QE-MDI Engine] --- [Step 198] Done in 263.12s (17 SCF iters) | E_pot: -127719.4953 eV | Fmax: 2.76700 eV/A | gap: 0.0028 A ---
+[QE-MDI Engine] --- [Step 199] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0025A, z_max=21.3104A, gap=0.0033A) ---
+[QE-MDI Engine] --- [Step 199] Done in 270.05s (17 SCF iters) | E_pot: -127719.3768 eV | Fmax: 2.82057 eV/A | gap: 0.0033 A ---
+[QE-MDI Engine] --- [Step 200] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0006A, z_max=21.3051A, gap=0.0067A) ---
+[QE-MDI Engine] --- [Step 200] Done in 281.04s (17 SCF iters) | E_pot: -127719.2108 eV | Fmax: 2.85504 eV/A | gap: 0.0067 A ---
+[QE-MDI Engine] --- [Step 201] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0024A, z_max=21.3067A, gap=0.0069A) ---
+[QE-MDI Engine] --- [Step 201] Done in 267.42s (17 SCF iters) | E_pot: -127719.0108 eV | Fmax: 2.96649 eV/A | gap: 0.0069 A ---
+[QE-MDI Engine] --- [Step 202] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0046A, z_max=21.3080A, gap=0.0077A) ---
+[QE-MDI Engine] --- [Step 202] Done in 255.79s (16 SCF iters) | E_pot: -127718.7937 eV | Fmax: 3.01568 eV/A | gap: 0.0077 A ---
+[QE-MDI Engine] --- [Step 203] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0052A, z_max=21.3090A, gap=0.0073A) ---
+[QE-MDI Engine] --- [Step 203] Done in 255.55s (16 SCF iters) | E_pot: -127718.5776 eV | Fmax: 3.00128 eV/A | gap: 0.0073 A ---
+[QE-MDI Engine] --- [Step 204] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0048A, z_max=21.3097A, gap=0.0062A) ---
+[QE-MDI Engine] --- [Step 204] Done in 250.67s (16 SCF iters) | E_pot: -127718.3807 eV | Fmax: 2.92689 eV/A | gap: 0.0062 A ---
+[QE-MDI Engine] --- [Step 205] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0025A, z_max=21.3100A, gap=0.0036A) ---
+[QE-MDI Engine] --- [Step 205] Done in 252.44s (16 SCF iters) | E_pot: -127718.2193 eV | Fmax: 2.79924 eV/A | gap: 0.0036 A ---
+[QE-MDI Engine] --- [Step 206] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0030A, z_max=21.3100A, gap=0.0041A) ---
+[QE-MDI Engine] --- [Step 206] Done in 239.63s (15 SCF iters) | E_pot: -127718.1062 eV | Fmax: 2.69649 eV/A | gap: 0.0041 A ---
+[QE-MDI Engine] --- [Step 207] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0006A, z_max=21.3107A, gap=0.0010A) ---
+[QE-MDI Engine] --- [Step 207] Done in 243.77s (15 SCF iters) | E_pot: -127718.0502 eV | Fmax: 2.65428 eV/A | gap: 0.0010 A ---
+[QE-MDI Engine] --- [Step 208] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0027A, z_max=21.3094A, gap=0.0044A) ---
+[QE-MDI Engine] --- [Step 208] Done in 243.96s (15 SCF iters) | E_pot: -127718.0541 eV | Fmax: 2.63101 eV/A | gap: 0.0044 A ---
+[QE-MDI Engine] --- [Step 209] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0020A, z_max=21.3078A, gap=0.0053A) ---
+[QE-MDI Engine] --- [Step 209] Done in 244.06s (15 SCF iters) | E_pot: -127718.1153 eV | Fmax: 2.58239 eV/A | gap: 0.0053 A ---
+[QE-MDI Engine] --- [Step 210] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0013A, z_max=21.3093A, gap=0.0031A) ---
+[QE-MDI Engine] --- [Step 210] Done in 247.05s (15 SCF iters) | E_pot: -127718.2253 eV | Fmax: 2.49027 eV/A | gap: 0.0031 A ---
+[QE-MDI Engine] --- [Step 211] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0005A, z_max=21.3054A, gap=0.0063A) ---
+[QE-MDI Engine] --- [Step 211] Done in 255.60s (16 SCF iters) | E_pot: -127718.3704 eV | Fmax: 2.35951 eV/A | gap: 0.0063 A ---
+[QE-MDI Engine] --- [Step 212] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0151A, z_max=21.3108A, gap=0.0155A) ---
+[QE-MDI Engine] --- [Step 212] Done in 262.23s (16 SCF iters) | E_pot: -127718.5327 eV | Fmax: 2.28610 eV/A | gap: 0.0155 A ---
+[QE-MDI Engine] --- [Step 213] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0160A, z_max=21.3100A, gap=0.0172A) ---
+[QE-MDI Engine] --- [Step 213] Done in 255.32s (16 SCF iters) | E_pot: -127718.6921 eV | Fmax: 2.30786 eV/A | gap: 0.0172 A ---
+[QE-MDI Engine] --- [Step 214] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0167A, z_max=21.3090A, gap=0.0188A) ---
+[QE-MDI Engine] --- [Step 214] Done in 258.04s (16 SCF iters) | E_pot: -127718.8283 eV | Fmax: 2.30240 eV/A | gap: 0.0188 A ---
+[QE-MDI Engine] --- [Step 215] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0173A, z_max=21.3081A, gap=0.0203A) ---
+[QE-MDI Engine] --- [Step 215] Done in 258.10s (16 SCF iters) | E_pot: -127718.9227 eV | Fmax: 2.27298 eV/A | gap: 0.0203 A ---
+[QE-MDI Engine] --- [Step 216] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0178A, z_max=21.3072A, gap=0.0218A) ---
+[QE-MDI Engine] --- [Step 216] Done in 261.31s (16 SCF iters) | E_pot: -127718.9606 eV | Fmax: 2.22399 eV/A | gap: 0.0218 A ---
+[QE-MDI Engine] --- [Step 217] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0181A, z_max=21.3063A, gap=0.0229A) ---
+[QE-MDI Engine] --- [Step 217] Done in 253.22s (16 SCF iters) | E_pot: -127718.9334 eV | Fmax: 2.25887 eV/A | gap: 0.0229 A ---
+[QE-MDI Engine] --- [Step 218] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0152A, z_max=21.3054A, gap=0.0210A) ---
+[QE-MDI Engine] --- [Step 218] Done in 253.30s (16 SCF iters) | E_pot: -127718.8391 eV | Fmax: 2.32130 eV/A | gap: 0.0210 A ---
+[QE-MDI Engine] --- [Step 219] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0123A, z_max=21.3045A, gap=0.0190A) ---
+[QE-MDI Engine] --- [Step 219] Done in 253.24s (16 SCF iters) | E_pot: -127718.6835 eV | Fmax: 2.34317 eV/A | gap: 0.0190 A ---
+[QE-MDI Engine] --- [Step 220] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0094A, z_max=21.3037A, gap=0.0168A) ---
+[QE-MDI Engine] --- [Step 220] Done in 239.01s (15 SCF iters) | E_pot: -127718.4790 eV | Fmax: 2.32429 eV/A | gap: 0.0168 A ---
+[QE-MDI Engine] --- [Step 221] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0064A, z_max=21.3030A, gap=0.0146A) ---
+[QE-MDI Engine] --- [Step 221] Done in 242.87s (15 SCF iters) | E_pot: -127718.2437 eV | Fmax: 2.26883 eV/A | gap: 0.0146 A ---
+[QE-MDI Engine] --- [Step 222] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0028A, z_max=21.3023A, gap=0.0117A) ---
+[QE-MDI Engine] --- [Step 222] Done in 247.02s (15 SCF iters) | E_pot: -127717.9994 eV | Fmax: 2.39824 eV/A | gap: 0.0117 A ---
+[QE-MDI Engine] --- [Step 223] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0005A, z_max=21.3109A, gap=0.0007A) ---
+[QE-MDI Engine] --- [Step 223] Done in 233.28s (14 SCF iters) | E_pot: -127717.7696 eV | Fmax: 2.52195 eV/A | gap: 0.0007 A ---
+[QE-MDI Engine] --- [Step 224] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0178A, z_max=21.3088A, gap=0.0202A) ---
+[QE-MDI Engine] --- [Step 224] Done in 228.80s (14 SCF iters) | E_pot: -127717.5772 eV | Fmax: 2.57145 eV/A | gap: 0.0202 A ---
+[QE-MDI Engine] --- [Step 225] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0173A, z_max=21.3072A, gap=0.0213A) ---
+[QE-MDI Engine] --- [Step 225] Done in 233.02s (14 SCF iters) | E_pot: -127717.4417 eV | Fmax: 2.59845 eV/A | gap: 0.0213 A ---
+[QE-MDI Engine] --- [Step 226] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0167A, z_max=21.3101A, gap=0.0177A) ---
+[QE-MDI Engine] --- [Step 226] Done in 236.42s (14 SCF iters) | E_pot: -127717.3772 eV | Fmax: 2.62051 eV/A | gap: 0.0177 A ---
+[QE-MDI Engine] --- [Step 227] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0035A, z_max=21.3068A, gap=0.0079A) ---
+[QE-MDI Engine] --- [Step 227] Done in 232.26s (14 SCF iters) | E_pot: -127717.3912 eV | Fmax: 2.63614 eV/A | gap: 0.0079 A ---
+[QE-MDI Engine] --- [Step 228] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0082A, z_max=21.3080A, gap=0.0113A) ---
+[QE-MDI Engine] --- [Step 228] Done in 228.14s (14 SCF iters) | E_pot: -127717.4836 eV | Fmax: 2.58279 eV/A | gap: 0.0113 A ---
+[QE-MDI Engine] --- [Step 229] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0130A, z_max=21.3098A, gap=0.0143A) ---
+[QE-MDI Engine] --- [Step 229] Done in 228.71s (14 SCF iters) | E_pot: -127717.6470 eV | Fmax: 2.45934 eV/A | gap: 0.0143 A ---
+[QE-MDI Engine] --- [Step 230] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0005A, z_max=21.3106A, gap=0.0011A) ---
+[QE-MDI Engine] --- [Step 230] Done in 240.86s (15 SCF iters) | E_pot: -127717.8677 eV | Fmax: 2.26822 eV/A | gap: 0.0011 A ---
+[QE-MDI Engine] --- [Step 231] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0006A, z_max=21.3103A, gap=0.0014A) ---
+[QE-MDI Engine] --- [Step 231] Done in 260.94s (16 SCF iters) | E_pot: -127718.1270 eV | Fmax: 2.20912 eV/A | gap: 0.0014 A ---
+[QE-MDI Engine] --- [Step 232] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0015A, z_max=21.3007A, gap=0.0120A) ---
+[QE-MDI Engine] --- [Step 232] Done in 258.56s (16 SCF iters) | E_pot: -127718.4025 eV | Fmax: 2.20058 eV/A | gap: 0.0120 A ---
+[QE-MDI Engine] --- [Step 233] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0025A, z_max=21.3008A, gap=0.0128A) ---
+[QE-MDI Engine] --- [Step 233] Done in 256.34s (16 SCF iters) | E_pot: -127718.6711 eV | Fmax: 2.14814 eV/A | gap: 0.0128 A ---
+[QE-MDI Engine] --- [Step 234] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0031A, z_max=21.3009A, gap=0.0134A) ---
+[QE-MDI Engine] --- [Step 234] Done in 269.63s (16 SCF iters) | E_pot: -127718.9103 eV | Fmax: 2.05443 eV/A | gap: 0.0134 A ---
+[QE-MDI Engine] --- [Step 235] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0036A, z_max=21.3010A, gap=0.0138A) ---
+[QE-MDI Engine] --- [Step 235] Done in 281.19s (16 SCF iters) | E_pot: -127719.1005 eV | Fmax: 1.97800 eV/A | gap: 0.0138 A ---
+[QE-MDI Engine] --- [Step 236] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0038A, z_max=21.3039A, gap=0.0111A) ---
+[QE-MDI Engine] --- [Step 236] Done in 267.02s (16 SCF iters) | E_pot: -127719.2268 eV | Fmax: 1.92964 eV/A | gap: 0.0111 A ---
+[QE-MDI Engine] --- [Step 237] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0011A, z_max=21.3079A, gap=0.0044A) ---
+[QE-MDI Engine] --- [Step 237] Done in 261.12s (16 SCF iters) | E_pot: -127719.2807 eV | Fmax: 2.01984 eV/A | gap: 0.0044 A ---
+[QE-MDI Engine] --- [Step 238] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0008A, z_max=21.3092A, gap=0.0028A) ---
+[QE-MDI Engine] --- [Step 238] Done in 262.21s (16 SCF iters) | E_pot: -127719.2602 eV | Fmax: 2.06412 eV/A | gap: 0.0028 A ---
+[QE-MDI Engine] --- [Step 239] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0030A, z_max=21.3061A, gap=0.0081A) ---
+[QE-MDI Engine] --- [Step 239] Done in 258.08s (16 SCF iters) | E_pot: -127719.1700 eV | Fmax: 2.10203 eV/A | gap: 0.0081 A ---
+[QE-MDI Engine] --- [Step 240] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0023A, z_max=21.3032A, gap=0.0103A) ---
+[QE-MDI Engine] --- [Step 240] Done in 257.00s (16 SCF iters) | E_pot: -127719.0215 eV | Fmax: 2.14066 eV/A | gap: 0.0103 A ---
+[QE-MDI Engine] --- [Step 241] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0014A, z_max=21.3004A, gap=0.0121A) ---
+[QE-MDI Engine] --- [Step 241] Done in 252.45s (16 SCF iters) | E_pot: -127718.8310 eV | Fmax: 2.20704 eV/A | gap: 0.0121 A ---
+[QE-MDI Engine] --- [Step 242] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0002A, z_max=21.3095A, gap=0.0019A) ---
+[QE-MDI Engine] --- [Step 242] Done in 253.39s (16 SCF iters) | E_pot: -127718.6183 eV | Fmax: 2.25168 eV/A | gap: 0.0019 A ---
+[QE-MDI Engine] --- [Step 243] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0100A, z_max=21.3107A, gap=0.0104A) ---
+[QE-MDI Engine] --- [Step 243] Done in 253.55s (16 SCF iters) | E_pot: -127718.4048 eV | Fmax: 2.42139 eV/A | gap: 0.0104 A ---
+[QE-MDI Engine] --- [Step 244] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0098A, z_max=21.3092A, gap=0.0118A) ---
+[QE-MDI Engine] --- [Step 244] Done in 258.62s (16 SCF iters) | E_pot: -127718.2109 eV | Fmax: 2.54405 eV/A | gap: 0.0118 A ---
+[QE-MDI Engine] --- [Step 245] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0093A, z_max=21.3092A, gap=0.0112A) ---
+[QE-MDI Engine] --- [Step 245] Done in 256.69s (16 SCF iters) | E_pot: -127718.0541 eV | Fmax: 2.60820 eV/A | gap: 0.0112 A ---
+[QE-MDI Engine] --- [Step 246] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0084A, z_max=21.3058A, gap=0.0137A) ---
+[QE-MDI Engine] --- [Step 246] Done in 252.27s (16 SCF iters) | E_pot: -127717.9466 eV | Fmax: 2.60551 eV/A | gap: 0.0137 A ---
+[QE-MDI Engine] --- [Step 247] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0078A, z_max=21.3043A, gap=0.0147A) ---
+[QE-MDI Engine] --- [Step 247] Done in 253.10s (16 SCF iters) | E_pot: -127717.8945 eV | Fmax: 2.66171 eV/A | gap: 0.0147 A ---
+[QE-MDI Engine] --- [Step 248] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0068A, z_max=21.3029A, gap=0.0150A) ---
+[QE-MDI Engine] --- [Step 248] Done in 274.54s (16 SCF iters) | E_pot: -127717.8972 eV | Fmax: 2.71093 eV/A | gap: 0.0150 A ---
+[QE-MDI Engine] --- [Step 249] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0055A, z_max=21.3016A, gap=0.0151A) ---
+[QE-MDI Engine] --- [Step 249] Done in 257.43s (16 SCF iters) | E_pot: -127717.9470 eV | Fmax: 2.73052 eV/A | gap: 0.0151 A ---
+[QE-MDI Engine] --- [Step 250] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0040A, z_max=21.3004A, gap=0.0148A) ---
+[QE-MDI Engine] --- [Step 250] Done in 260.24s (16 SCF iters) | E_pot: -127718.0309 eV | Fmax: 2.72556 eV/A | gap: 0.0148 A ---
+[QE-MDI Engine] --- [Step 251] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0015A, z_max=21.2993A, gap=0.0133A) ---
+[QE-MDI Engine] --- [Step 251] Done in 260.47s (16 SCF iters) | E_pot: -127718.1318 eV | Fmax: 2.70170 eV/A | gap: 0.0133 A ---
+[QE-MDI Engine] --- [Step 252] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0002A, z_max=21.3093A, gap=0.0020A) ---
+[QE-MDI Engine] --- [Step 252] Done in 254.58s (16 SCF iters) | E_pot: -127718.2308 eV | Fmax: 2.66423 eV/A | gap: 0.0020 A ---
+[QE-MDI Engine] --- [Step 253] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0109A, z_max=21.3090A, gap=0.0130A) ---
+[QE-MDI Engine] --- [Step 253] Done in 256.29s (16 SCF iters) | E_pot: -127718.3091 eV | Fmax: 2.61754 eV/A | gap: 0.0130 A ---
+[QE-MDI Engine] --- [Step 254] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0053A, z_max=21.3064A, gap=0.0100A) ---
+[QE-MDI Engine] --- [Step 254] Done in 252.84s (16 SCF iters) | E_pot: -127718.3507 eV | Fmax: 2.56451 eV/A | gap: 0.0100 A ---
+[QE-MDI Engine] --- [Step 255] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0111A, z_max=21.3110A, gap=0.0113A) ---
+[QE-MDI Engine] --- [Step 255] Done in 254.72s (16 SCF iters) | E_pot: -127718.3439 eV | Fmax: 2.50582 eV/A | gap: 0.0113 A ---
+[QE-MDI Engine] --- [Step 256] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0038A, z_max=21.3058A, gap=0.0092A) ---
+[QE-MDI Engine] --- [Step 256] Done in 262.50s (16 SCF iters) | E_pot: -127718.2828 eV | Fmax: 2.44050 eV/A | gap: 0.0092 A ---
+[QE-MDI Engine] --- [Step 257] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0123A, z_max=21.3077A, gap=0.0158A) ---
+[QE-MDI Engine] --- [Step 257] Done in 269.40s (17 SCF iters) | E_pot: -127718.1682 eV | Fmax: 2.36591 eV/A | gap: 0.0158 A ---
+[QE-MDI Engine] --- [Step 258] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0126A, z_max=21.3005A, gap=0.0233A) ---
+[QE-MDI Engine] --- [Step 258] Done in 265.65s (17 SCF iters) | E_pot: -127718.0071 eV | Fmax: 2.46516 eV/A | gap: 0.0233 A ---
+[QE-MDI Engine] --- [Step 259] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0132A, z_max=21.2997A, gap=0.0247A) ---
+[QE-MDI Engine] --- [Step 259] Done in 269.52s (17 SCF iters) | E_pot: -127717.8126 eV | Fmax: 2.56873 eV/A | gap: 0.0247 A ---
+[QE-MDI Engine] --- [Step 260] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0142A, z_max=21.3002A, gap=0.0251A) ---
+[QE-MDI Engine] --- [Step 260] Done in 265.80s (17 SCF iters) | E_pot: -127717.6023 eV | Fmax: 2.63848 eV/A | gap: 0.0251 A ---
+[QE-MDI Engine] --- [Step 261] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0153A, z_max=21.3008A, gap=0.0257A) ---
+[QE-MDI Engine] --- [Step 261] Done in 257.29s (16 SCF iters) | E_pot: -127717.3969 eV | Fmax: 2.74100 eV/A | gap: 0.0257 A ---
+[QE-MDI Engine] --- [Step 262] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0166A, z_max=21.3015A, gap=0.0262A) ---
+[QE-MDI Engine] --- [Step 262] Done in 252.91s (16 SCF iters) | E_pot: -127717.2183 eV | Fmax: 2.76016 eV/A | gap: 0.0262 A ---
+[QE-MDI Engine] --- [Step 263] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0111A, z_max=21.3030A, gap=0.0192A) ---
+[QE-MDI Engine] --- [Step 263] Done in 253.82s (16 SCF iters) | E_pot: -127717.0867 eV | Fmax: 2.69552 eV/A | gap: 0.0192 A ---
+[QE-MDI Engine] --- [Step 264] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0049A, z_max=21.3048A, gap=0.0113A) ---
+[QE-MDI Engine] --- [Step 264] Done in 251.78s (16 SCF iters) | E_pot: -127717.0185 eV | Fmax: 2.62449 eV/A | gap: 0.0113 A ---
+[QE-MDI Engine] --- [Step 265] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0186A, z_max=21.3092A, gap=0.0205A) ---
+[QE-MDI Engine] --- [Step 265] Done in 264.79s (16 SCF iters) | E_pot: -127717.0245 eV | Fmax: 2.66982 eV/A | gap: 0.0205 A ---
+[QE-MDI Engine] --- [Step 266] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0145A, z_max=21.3088A, gap=0.0168A) ---
+[QE-MDI Engine] --- [Step 266] Done in 259.11s (16 SCF iters) | E_pot: -127717.1086 eV | Fmax: 2.67528 eV/A | gap: 0.0168 A ---
+[QE-MDI Engine] --- [Step 267] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0108A, z_max=21.3112A, gap=0.0108A) ---
+[QE-MDI Engine] --- [Step 267] Done in 255.72s (16 SCF iters) | E_pot: -127717.2671 eV | Fmax: 2.81533 eV/A | gap: 0.0108 A ---
+[QE-MDI Engine] --- [Step 268] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0025A, z_max=21.3064A, gap=0.0072A) ---
+[QE-MDI Engine] --- [Step 268] Done in 255.52s (16 SCF iters) | E_pot: -127717.4894 eV | Fmax: 2.93434 eV/A | gap: 0.0072 A ---
+[QE-MDI Engine] --- [Step 269] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0046A, z_max=21.3075A, gap=0.0082A) ---
+[QE-MDI Engine] --- [Step 269] Done in 255.34s (16 SCF iters) | E_pot: -127717.7586 eV | Fmax: 2.97094 eV/A | gap: 0.0082 A ---
+[QE-MDI Engine] --- [Step 270] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0022A, z_max=21.3087A, gap=0.0046A) ---
+[QE-MDI Engine] --- [Step 270] Done in 258.18s (16 SCF iters) | E_pot: -127718.0536 eV | Fmax: 2.92256 eV/A | gap: 0.0046 A ---
+[QE-MDI Engine] --- [Step 271] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0003A, z_max=21.3100A, gap=0.0015A) ---
+[QE-MDI Engine] --- [Step 271] Done in 260.00s (16 SCF iters) | E_pot: -127718.3512 eV | Fmax: 2.79332 eV/A | gap: 0.0015 A ---
+[QE-MDI Engine] --- [Step 272] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0002A, z_max=21.3101A, gap=0.0012A) ---
+[QE-MDI Engine] --- [Step 272] Done in 277.26s (17 SCF iters) | E_pot: -127718.6278 eV | Fmax: 2.59348 eV/A | gap: 0.0012 A ---
+[QE-MDI Engine] --- [Step 273] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0002A, z_max=21.3093A, gap=0.0021A) ---
+[QE-MDI Engine] --- [Step 273] Done in 283.27s (17 SCF iters) | E_pot: -127718.8621 eV | Fmax: 2.33809 eV/A | gap: 0.0021 A ---
+[QE-MDI Engine] --- [Step 274] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0002A, z_max=21.3089A, gap=0.0025A) ---
+[QE-MDI Engine] --- [Step 274] Done in 270.62s (16 SCF iters) | E_pot: -127719.0366 eV | Fmax: 2.17711 eV/A | gap: 0.0025 A ---
+[QE-MDI Engine] --- [Step 275] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0044A, z_max=21.3091A, gap=0.0065A) ---
+[QE-MDI Engine] --- [Step 275] Done in 270.46s (16 SCF iters) | E_pot: -127719.1393 eV | Fmax: 2.14956 eV/A | gap: 0.0065 A ---
+[QE-MDI Engine] --- [Step 276] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0059A, z_max=21.3096A, gap=0.0074A) ---
+[QE-MDI Engine] --- [Step 276] Done in 263.35s (16 SCF iters) | E_pot: -127719.1642 eV | Fmax: 2.20686 eV/A | gap: 0.0074 A ---
+[QE-MDI Engine] --- [Step 277] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0073A, z_max=21.3106A, gap=0.0078A) ---
+[QE-MDI Engine] --- [Step 277] Done in 266.81s (16 SCF iters) | E_pot: -127719.1109 eV | Fmax: 2.24366 eV/A | gap: 0.0078 A ---
+[QE-MDI Engine] --- [Step 278] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0007A, z_max=21.3036A, gap=0.0083A) ---
+[QE-MDI Engine] --- [Step 278] Done in 265.72s (16 SCF iters) | E_pot: -127718.9848 eV | Fmax: 2.33161 eV/A | gap: 0.0083 A ---
+[QE-MDI Engine] --- [Step 279] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0023A, z_max=21.3077A, gap=0.0057A) ---
+[QE-MDI Engine] --- [Step 279] Done in 264.86s (16 SCF iters) | E_pot: -127718.7958 eV | Fmax: 2.37274 eV/A | gap: 0.0057 A ---
+[QE-MDI Engine] --- [Step 280] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0018A, z_max=21.3065A, gap=0.0064A) ---
+[QE-MDI Engine] --- [Step 280] Done in 257.26s (16 SCF iters) | E_pot: -127718.5572 eV | Fmax: 2.36617 eV/A | gap: 0.0064 A ---
+[QE-MDI Engine] --- [Step 281] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0059A, z_max=21.3095A, gap=0.0075A) ---
+[QE-MDI Engine] --- [Step 281] Done in 254.80s (16 SCF iters) | E_pot: -127718.2845 eV | Fmax: 2.44953 eV/A | gap: 0.0075 A ---
+[QE-MDI Engine] --- [Step 282] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0023A, z_max=21.3028A, gap=0.0106A) ---
+[QE-MDI Engine] --- [Step 282] Done in 257.92s (16 SCF iters) | E_pot: -127717.9949 eV | Fmax: 2.56355 eV/A | gap: 0.0106 A ---
+[QE-MDI Engine] --- [Step 283] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0035A, z_max=21.3046A, gap=0.0100A) ---
+[QE-MDI Engine] --- [Step 283] Done in 258.04s (16 SCF iters) | E_pot: -127717.7057 eV | Fmax: 2.72839 eV/A | gap: 0.0100 A ---
+[QE-MDI Engine] --- [Step 284] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0012A, z_max=21.3065A, gap=0.0059A) ---
+[QE-MDI Engine] --- [Step 284] Done in 258.63s (16 SCF iters) | E_pot: -127717.4342 eV | Fmax: 2.85319 eV/A | gap: 0.0059 A ---
+[QE-MDI Engine] --- [Step 285] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0105A, z_max=21.3099A, gap=0.0118A) ---
+[QE-MDI Engine] --- [Step 285] Done in 258.24s (16 SCF iters) | E_pot: -127717.1960 eV | Fmax: 2.92617 eV/A | gap: 0.0118 A ---
+[QE-MDI Engine] --- [Step 286] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0078A, z_max=21.3101A, gap=0.0088A) ---
+[QE-MDI Engine] --- [Step 286] Done in 258.80s (16 SCF iters) | E_pot: -127717.0047 eV | Fmax: 3.00144 eV/A | gap: 0.0088 A ---
+[QE-MDI Engine] --- [Step 287] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0007A, z_max=21.3096A, gap=0.0023A) ---
+[QE-MDI Engine] --- [Step 287] Done in 259.33s (16 SCF iters) | E_pot: -127716.8707 eV | Fmax: 2.98947 eV/A | gap: 0.0023 A ---
+[QE-MDI Engine] --- [Step 288] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0004A, z_max=21.3101A, gap=0.0014A) ---
+[QE-MDI Engine] --- [Step 288] Done in 257.49s (16 SCF iters) | E_pot: -127716.8008 eV | Fmax: 2.87958 eV/A | gap: 0.0014 A ---
+[QE-MDI Engine] --- [Step 289] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0023A, z_max=21.3111A, gap=0.0024A) ---
+[QE-MDI Engine] --- [Step 289] Done in 255.14s (16 SCF iters) | E_pot: -127716.7970 eV | Fmax: 2.93250 eV/A | gap: 0.0024 A ---
+[QE-MDI Engine] --- [Step 290] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0041A, z_max=21.3091A, gap=0.0061A) ---
+[QE-MDI Engine] --- [Step 290] Done in 253.70s (16 SCF iters) | E_pot: -127716.8567 eV | Fmax: 2.99261 eV/A | gap: 0.0061 A ---
+[QE-MDI Engine] --- [Step 291] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0058A, z_max=21.3094A, gap=0.0076A) ---
+[QE-MDI Engine] --- [Step 291] Done in 254.56s (16 SCF iters) | E_pot: -127716.9725 eV | Fmax: 2.99395 eV/A | gap: 0.0076 A ---
+[QE-MDI Engine] --- [Step 292] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0001A, z_max=21.3093A, gap=0.0020A) ---
+[QE-MDI Engine] --- [Step 292] Done in 253.93s (16 SCF iters) | E_pot: -127717.1326 eV | Fmax: 2.93425 eV/A | gap: 0.0020 A ---
+[QE-MDI Engine] --- [Step 293] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0027A, z_max=21.3089A, gap=0.0049A) ---
+[QE-MDI Engine] --- [Step 293] Done in 254.90s (16 SCF iters) | E_pot: -127717.3215 eV | Fmax: 2.81370 eV/A | gap: 0.0049 A ---
+[QE-MDI Engine] --- [Step 294] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0052A, z_max=21.3083A, gap=0.0081A) ---
+[QE-MDI Engine] --- [Step 294] Done in 256.76s (16 SCF iters) | E_pot: -127717.5213 eV | Fmax: 2.63403 eV/A | gap: 0.0081 A ---
+[QE-MDI Engine] --- [Step 295] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0075A, z_max=21.3084A, gap=0.0102A) ---
+[QE-MDI Engine] --- [Step 295] Done in 259.13s (16 SCF iters) | E_pot: -127717.7134 eV | Fmax: 2.41738 eV/A | gap: 0.0102 A ---
+[QE-MDI Engine] --- [Step 296] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0009A, z_max=21.3062A, gap=0.0059A) ---
+[QE-MDI Engine] --- [Step 296] Done in 259.25s (16 SCF iters) | E_pot: -127717.8794 eV | Fmax: 2.37973 eV/A | gap: 0.0059 A ---
+[QE-MDI Engine] --- [Step 297] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0044A, z_max=21.3070A, gap=0.0086A) ---
+[QE-MDI Engine] --- [Step 297] Done in 263.25s (16 SCF iters) | E_pot: -127718.0039 eV | Fmax: 2.30814 eV/A | gap: 0.0086 A ---
+[QE-MDI Engine] --- [Step 298] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0003A, z_max=21.3093A, gap=0.0021A) ---
+[QE-MDI Engine] --- [Step 298] Done in 259.22s (16 SCF iters) | E_pot: -127718.0754 eV | Fmax: 2.25544 eV/A | gap: 0.0021 A ---
+[QE-MDI Engine] --- [Step 299] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0040A, z_max=21.3022A, gap=0.0129A) ---
+[QE-MDI Engine] --- [Step 299] Done in 266.64s (16 SCF iters) | E_pot: -127718.0880 eV | Fmax: 2.17290 eV/A | gap: 0.0129 A ---
+[QE-MDI Engine] --- [Step 300] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0006A, z_max=21.3003A, gap=0.0114A) ---
+[QE-MDI Engine] --- [Step 300] Done in 260.89s (16 SCF iters) | E_pot: -127718.0417 eV | Fmax: 2.13295 eV/A | gap: 0.0114 A ---
+[QE-MDI Engine] Received EXIT command from driver.
+[QE-MDI Engine] MDI Engine execution terminated cleanly.

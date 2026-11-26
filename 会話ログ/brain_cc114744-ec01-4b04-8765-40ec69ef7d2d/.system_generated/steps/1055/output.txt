@@ -1,0 +1,13 @@
+Created At: 2026-11-12T12:05:13+09:00
+Completed At: 2026-11-12T12:05:16+09:00
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/lib/python3.11/site-packages/ase/io/lammpsdata.py:72: FutureWarning: "style" is deprecated; please use "atom_style".
+  warnings.warn(
+Bulk z_levels: [0.888 1.776 3.552 4.44 ]
+Lz_bulk: 5.327788284081866
+Bulk dz12 (dense): 0.888
+Bulk dz23 (sparse): 1.776
+Bulk dz34 (dense): 0.8880000000000003
+Bulk dz41 across PBC (sparse): 1.775788284081866

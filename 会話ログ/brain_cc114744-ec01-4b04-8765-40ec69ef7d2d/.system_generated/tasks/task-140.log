@@ -1,0 +1,17 @@
+============================================================
+ Step 1: Micromamba パッケージマネージャの導入 (sudo 不要)
+============================================================
+bin/micromamba
+✅ Micromamba ready: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/micromamba/bin/micromamba
+============================================================
+ Step 2: 科学計算・第一原理環境 (/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080) の構築
+         (Python 3.11, NumPy, SciPy, Matplotlib, ASE, PyMDI, QE, CMake, OpenMPI)
+============================================================
+[+] 0.0s
+[+] 0.1s
+conda-forge/linux-64 (check shards) ━━━━━━━━━━━━╸━━━━━━━━   0.0 B Checking  0.0s
+conda-forge/noarch (check shards)   ━━━━━━━━╸━━━━━━━━━━━━   0.0 B Checking  0.0sFetch Shard Index for conda-forge/linux-64                                                      ⧖ StartingFetch Shard Index for conda-forge/linux-64                                                ✔ Done (0.1 sec)
+Fetch Shard Index for conda-forge/noarch                                                        ⧖ StartingFetch Shard Index for conda-forge/noarch                                                  ✔ Done (0.1 sec)
+Fetching and Parsing Packages' Shards                                                           ⧖ StartingFetching and Parsing Packages' Shards                                                     ✔ Done (4.1 sec)
+
+Resolving Environment                                                                           ⧖ Starting

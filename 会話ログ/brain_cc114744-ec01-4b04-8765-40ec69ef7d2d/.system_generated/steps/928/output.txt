@@ -1,0 +1,8 @@
+Command exited with code 0.
+
+Command output:
+N=1 after wrap: neighbor counts = {4}
+N=3 after wrap: neighbor counts = {4}
+N=5 after wrap: neighbor counts = {4}
+N=7 after wrap: neighbor counts = {4}
+N=9 after wrap: neighbor counts = {4}

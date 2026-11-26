@@ -1,0 +1,19 @@
+[2026-11-13 15:48:16] ==============================================================================
+[2026-11-13 15:48:16] Phase 1: Starting 0 K Structural Optimization for 8-period Vac 3.0 Å Slab
+[2026-11-13 15:48:16] ==============================================================================
+[2026-11-13 15:48:16] Created slab_10-10_288atoms_vac3.0A_init.data: 288 atoms, z_min=3.0613 Å, z_max=22.4741 Å, Lz=25.535401 Å (initial inter-slab gap = 6.1226 Å)
+Converted 2 frames to md_animation.xyz
+/home/WORKSTATION4WSL/.config/matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-zrhpcrpn because there was an issue with the default path (/home/WORKSTATION4WSL/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[AutoGraph] Parsed 3 data points. Steps: [0 1 2]
+[AutoGraph] Successfully generated all 3 progression graphs (PNG, PDF, SVG) in:
+  - /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_vac3.0A_rtx5080
+[2026-11-13 16:09:11] Phase 1 Completed in 1253.7s (3 SCF steps): E_slab = -127685.1605 eV, dE = 41.0023 eV, gamma = 2.3504 J/m^2
+[2026-11-13 16:09:11] ==============================================================================
+[2026-11-13 16:09:11] Phase 2: Starting 300 K NVT AIMD (100 steps = 100 fs) for 8-period Vac 3.0 Å
+[2026-11-13 16:09:11] ==============================================================================
+[2026-11-13 16:09:12] Copied converged ground-state wavefunctions (./tmp/pwscf.save) from Phase 1 to AIMD directory.
+Converted 101 frames to md_animation.xyz
+Converted 101 frames to md_nvt_animation.xyz
+[2026-11-14 01:10:08] Phase 2 (300 K AIMD 100 steps) Completed in 32456.4s (540.9 min)!
+[2026-11-14 01:10:08] ALL PHASES COMPLETED SUCCESSFULLY!

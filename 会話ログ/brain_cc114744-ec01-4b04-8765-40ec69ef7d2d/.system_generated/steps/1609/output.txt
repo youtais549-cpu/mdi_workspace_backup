@@ -1,0 +1,31 @@
+Created At: 2026-11-26T13:35:50+09:00
+Completed At: 2026-11-26T13:35:52+09:00
+Command exited with code 0.
+
+Command output:
+    10.1808  10.1837  10.2171  10.2516  10.3039  10.3294  10.3677  10.3797
+    10.4041  10.4261  10.4416  10.4517  10.4700  10.5287  10.5360  10.5536
+    10.5624  10.5790  10.5886
+
+     the Fermi energy is     6.0825 ev
+
+!    total energy              =   -9383.78338163 Ry
+     total all-electron energy =    -94503.617937 Ry
+     estimated scf accuracy    <       0.00000752 Ry
+     smearing contrib. (-TS)   =      -0.00000000 Ry
+     internal energy E=F+TS    =   -9383.78338163 Ry
+
+     The total energy is F=E-TS. E is the sum of the following terms:
+     one-electron contribution =  -23594.64143123 Ry
+     hartree contribution      =   12397.94996302 Ry
+     xc contribution           =   -1576.54205457 Ry
+     ewald contribution        =    9400.57658635 Ry
+     one-center paw contrib.   =   -6011.12644520 Ry
+
+     convergence has been achieved in  25 iterations
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 26327 Nov 25 06:50 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/restart.slab_vac5.0A_unrelaxed_step.100
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 26327 Nov 25 13:01 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/restart.slab_vac5.0A_unrelaxed_step.150
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 26327 Nov 25 19:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/restart.slab_vac5.0A_unrelaxed_step.200
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 26327 Nov 26 01:10 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/restart.slab_vac5.0A_unrelaxed_step.250
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 26327 Nov 26 07:32 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/restart.slab_vac5.0A_unrelaxed_step.300
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 26327 Nov 25 01:15 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/restart.slab_vac5.0A_unrelaxed_step.50

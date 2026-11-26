@@ -1,0 +1,95 @@
+LAMMPS (2 Aug 2023 - Update 3)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+# 2H-SiC {10-10} スラブ構造緩和計算入力スクリプト 【最適化収束条件版】
+# ==============================================================================
+# 【設計思想と収束閾値の物理的根拠】
+# 1. DFT (Quantum ESPRESSO) の SCF 収束閾値 conv_thr = 1.0e-5 Ry において、
+#    Hellmann-Feynman 力の数値ノイズ限界 (フロア) は ~0.0002 Ry/au (≈ 0.0051 eV/Å)。
+# 2. 従来の ftol = 1.0e-3 eV/Å (0.0010 eV/Å) はノイズ限界の 5〜8 倍厳しく、
+#    原子数が増大した系（144原子以上）では統計的に永遠に満たされない。
+# 3. 本設定では、ftol = 1.0e-2 eV/Å (0.010 eV/Å ≈ 0.0004 Ry/au) に設定し、
+#    物理的な構造緩和完了時点で自然に自動正常終了するように最適化。
+# 4. さらに etol = 1.0e-6 を併用し、エネルギー底打ちによる安全停止を二重化。
+# ==============================================================================
+
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+# 1. 構造ファイルの読み込み (対象モデルに合わせてファイル名を指定)
+read_data slab_10-10_144atoms.data
+Reading data file ...
+  orthogonal box = (0 0 0) to (9.228 15.144 18.879825)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  144 atoms
+  read_data CPU = 0.001 seconds
+
+# 原子質量 (Type 1: C, Type 2: Si - ASEの英名昇順ソートと完全一致)
+mass 1 12.011
+mass 2 28.085
+
+# 2. MDI 通信設定 (Quantum ESPRESSO を QM エンジンとして連成)
+fix 1 all mdi/qm elements C Si
+
+# 3. 出力設定
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+dump_modify 1 append yes
+
+# 4. 表面構造緩和 (minimize)
+# 構文: minimize etol ftol maxiter maxeval
+# - etol: 1.0e-6 (相対エネルギー差 <= 10^-6 で収束)
+# - ftol: 1.0e-2 eV/Å (最大作用力 <= 0.01 eV/Å で収束、DFTノイズ限界直上)
+# - maxiter: 100 (最大CG反復ステップ数)
+# - maxeval: 150 (最大力評価回数、過去実績 55〜60 回に基づく安全上限)
+minimize 1.0e-6 1.0e-2 100 150
+WARNING: No pairwise cutoff or binsize set. Atom sorting therefore disabled. (src/atom.cpp:2366)
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Atoms may get lost. (src/comm_brick.cpp:210)
+Per MPI rank memory allocation (min/avg/max) = 3.44 | 3.44 | 3.44 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0              0              0             -63810.67       0            
+         1   0              0              0             -63819.489      0            
+         2   0              0              0             -63821.532      0            
+         3   0              0              0             -63821.861      0            
+         4   0              0              0             -63821.939      0            
+         5   0              0              0             -63821.994      0            
+Loop time of 5885.45 on 1 procs for 5 steps with 144 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+     -63810.6696076814  -63821.9385492361  -63821.9939618179
+  Force two-norm initial, final = 19.222888 1.0090145
+  Force max component initial, final = 2.4664755 0.14069796
+  Final line search alpha, max atom move = 0.23742543 0.033405275
+  Iterations, force evaluations = 5 9
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 4.6194e-05 | 4.6194e-05 | 4.6194e-05 |   0.0 |  0.00
+Output  | 0.00092641 | 0.00092641 | 0.00092641 |   0.0 |  0.00
+Modify  | 5885.5     | 5885.5     | 5885.5     |   0.0 |100.00
+Other   |            | 0.0004613  |            |       |  0.00
+
+Nlocal:            144 ave         144 max         144 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:             12 ave          12 max          12 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+
+undump 1
+Total wall time: 1:49:13

@@ -1,0 +1,34 @@
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_vac5A_natural_cleavage/create_4periods_natural_cleavage_slab.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/generate_slabs.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/sync_8periods_to_nas.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/prepare_true_bulk_144_scf.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/view_slab_winmostar.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/プログラム・解析スクリプト/generate_slabs.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/プログラム・解析スクリプト/prepare_true_bulk_144_scf.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/プログラム・解析スクリプト/view_slab_winmostar.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/プログラム・解析スクリプト/prepare_bulk_144_scf.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/プログラム・解析スクリプト/research_simulations/create_10-10_bulk_3x3x2.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/プログラム・解析スクリプト/research_simulations/view_slab_winmostar.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/プログラム・解析スクリプト/research_simulations/create_10-10_slab_3x3x2.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/プログラム・解析スクリプト/research_simulations/create_10-10_slab.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/prepare_bulk_144_scf.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/myenv/lib/python3.11/site-packages/ase/test/calculator/crystal/test_bulk.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/myenv/lib/python3.11/site-packages/ase/test/calculator/dftb/test_dftb_relax_bulk.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/myenv/lib/python3.11/site-packages/ase/test/build_/test_bulk.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/myenv/lib/python3.11/site-packages/ase/test/build_/test_build_bulk.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/myenv/lib/python3.11/site-packages/ase/build/bulk.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/myenv/lib/python3.11/site-packages/ase/ga/slab_operators.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/myenv/lib/python3.11/site-packages/ase/gui/surfaceslab.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/各条件の計算ディレクトリ/calc_2H-SiC_10-10_4periods_vac5A_natural_cleavage/create_4periods_natural_cleavage_slab.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/各条件の計算ディレクトリ/calc_2H-SiC_10-10_8periods_vac5A_natural_cleavage/generate_8periods_comparison_graph.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/各条件の計算ディレクトリ/calc_2H-SiC_10-10_8periods_true_bulk_scf/create_8periods_bulk_and_slab_models.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/{101_0}8周期５Å/generate_8periods_comparison_graph.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_vac5A_natural_cleavage/generate_8periods_comparison_graph.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/research_simulations/create_10-10_bulk_3x3x2.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/research_simulations/view_slab_winmostar.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/research_simulations/create_10-10_slab_3x3x2.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/research_simulations/create_10-10_slab.py
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_true_bulk_scf/create_8periods_bulk_and_slab_models.py

@@ -1,0 +1,98 @@
+LAMMPS (2 Aug 2023 - Update 3)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+# ==============================================================================
+# 2H-SiC {10-10} 72原子スラブモデル (2周期, 真空層 2.5Å, 合計真空5.0Å)
+# 第一原理構造緩和計算 【最適化収束条件版・2回目再検証】
+# ==============================================================================
+# 【設計思想と収束閾値の物理的根拠】
+# 1. DFT (Quantum ESPRESSO) の SCF 収束閾値 conv_thr = 1.0e-5 Ry において、
+#    Hellmann-Feynman 力の数値ノイズ限界 (フロア) は ~0.0002 Ry/au (≈ 0.0051 eV/Å)。
+# 2. 従来の ftol = 1.0e-3 eV/Å (0.0010 eV/Å) はノイズ限界の 5〜8 倍厳しく、
+#    統計的に永遠に満たされず計算が停止しなかった。
+# 3. 本設定では、ftol = 1.0e-2 eV/Å (0.010 eV/Å ≈ 0.0004 Ry/au) に最適化し、
+#    物理的な構造緩和完了時点で自然に自動正常終了させる。
+# 4. さらに etol = 1.0e-6 を併用し、エネルギー底打ちによる安全停止を二重化。
+# ==============================================================================
+
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+# 1. 初期構造の読み込み (モデル構築は以前と完全に同一の72原子, 真空2.5Å)
+read_data 2H-SiC_10-10_slab_3x3x2_vac2.5A.data
+Reading data file ...
+  orthogonal box = (0 0 0) to (9.228 15.144 8.5520364)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  72 atoms
+  read_data CPU = 0.001 seconds
+
+# 原子質量 (Type 1: C, Type 2: Si - ASEの英名昇順ソートと完全一致)
+mass 1 12.011
+mass 2 28.085
+
+# 2. MDI 通信設定 (Quantum ESPRESSO を QM エンジンとして連成)
+fix 1 all mdi/qm elements C Si
+
+# 3. 出力設定
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+dump_modify 1 append yes
+
+# 4. 表面構造緩和 (minimize)
+# 構文: minimize etol ftol maxiter maxeval
+# - etol: 1.0e-6 (相対エネルギー差 <= 10^-6 で収束)
+# - ftol: 1.0e-2 eV/Å (最大作用力 <= 0.01 eV/Å で収束、DFTノイズ限界直上)
+# - maxiter: 100 (最大CG反復ステップ数)
+# - maxeval: 150 (最大力評価回数)
+minimize 1.0e-6 1.0e-2 100 150
+WARNING: No pairwise cutoff or binsize set. Atom sorting therefore disabled. (src/atom.cpp:2366)
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Atoms may get lost. (src/comm_brick.cpp:210)
+Per MPI rank memory allocation (min/avg/max) = 3.433 | 3.433 | 3.433 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0              0              0             -31878.93       0            
+         1   0              0              0             -31888.904      0            
+         2   0              0              0             -31891.22       0            
+         3   0              0              0             -31891.898      0            
+         4   0              0              0             -31892.168      0            
+         5   0              0              0             -31892.234      0            
+         6   0              0              0             -31892.252      0            
+Loop time of 1707 on 1 procs for 6 steps with 72 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+     -31878.9304133603  -31892.2343002972  -31892.2524589979
+  Force two-norm initial, final = 19.843878 0.57381292
+  Force max component initial, final = 2.5140491 0.090572765
+  Final line search alpha, max atom move = 0.77417757 0.070119404
+  Iterations, force evaluations = 6 10
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 4.7856e-05 | 4.7856e-05 | 4.7856e-05 |   0.0 |  0.00
+Output  | 0.00069423 | 0.00069423 | 0.00069423 |   0.0 |  0.00
+Modify  | 1707       | 1707       | 1707       |   0.0 |100.00
+Other   |            | 0.0003718  |            |       |  0.00
+
+Nlocal:             72 ave          72 max          72 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:              6 ave           6 max           6 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+
+undump 1
+Total wall time: 0:31:43

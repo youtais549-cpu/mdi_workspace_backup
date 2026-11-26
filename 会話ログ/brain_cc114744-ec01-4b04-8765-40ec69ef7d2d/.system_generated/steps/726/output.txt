@@ -1,0 +1,38 @@
+Command exited with code 0.
+
+Command output:
+108-    )
+109-    ax.add_artist(anchored_box)
+110-
+111-    # 4. 軸範囲の設定
+112-    ax.set_xlim(0.0, 16.0)
+113:    ax.set_ylim(0.0, 5.0)
+114-
+115-    # 5. 目盛りの設定 (Times New Roman 11.5 pt, 原点 0.0 は縦軸と共用)
+116-    font_tick = fm.FontProperties(fname=times_path, size=11.5)
+117-
+118-    x_ticks = [0.0, 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0]
+--
+199-    )
+200-    ax.add_artist(anchored_box)
+201-
+202-    # 軸範囲
+203-    ax.set_xlim(0.0, 16.0)
+204:    ax.set_ylim(0.0, 5.0)
+205-
+206-    font_times_tick = fm.FontProperties(fname=times_path, size=9.5)
+207-    font_mincho_label = fm.FontProperties(fname=mincho_path, size=10.5)
+208-
+209-    x_ticks = [0.0, 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0]
+--
+285-        bbox_transform=ax.transAxes
+286-    )
+287-    ax.add_artist(anchored_box)
+288-
+289-    ax.set_xlim(0.0, 16.0)
+290:    ax.set_ylim(2.2, 3.2)
+291-
+292-    font_tick = fm.FontProperties(fname=times_path, size=11.5)
+293-    x_ticks = [0.0, 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0]
+294-    ax.set_xticks(x_ticks)
+295-    ax.set_xticklabels([f"{x:.1f}" for x in x_ticks], fontproperties=font_tick)

@@ -1,0 +1,23 @@
+Created At: 2026-11-26T13:36:28+09:00
+Completed At: 2026-11-26T13:36:39+09:00
+Command exited with code 0.
+
+Command output:
+     atom  287 type  2   force =     0.04706004   -0.01194841    0.04817739
+     atom  288 type  2   force =    -0.00540878   -0.07865219   -0.00914104
+
+     Total force =     0.921760     Total SCF correction =     0.006769
+
+
+     Computing stress (Cartesian axis) and pressure
+
+
+     negative rho (up, down):  3.346E-04 0.000E+00
+[QE-MDI Engine] --- [Step 348] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9111A, z_max=24.6098A, gap=9.8367A) ---
+[QE-MDI Engine] --- [Step 348] Done in 527.18s (25 SCF iters) | E_pot: -127673.2110 eV | Fmax: 3.45077 eV/A | gap: 9.8367 A ---
+[QE-MDI Engine] --- [Step 349] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9088A, z_max=24.6070A, gap=9.8372A) ---
+[QE-MDI Engine] --- [Step 349] Done in 723.71s (25 SCF iters) | E_pot: -127673.0071 eV | Fmax: 3.35924 eV/A | gap: 9.8372 A ---
+[QE-MDI Engine] --- [Step 350] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9075A, z_max=24.6035A, gap=9.8394A) ---
+       347   284.32547      0              0              10.54781      -127673.46     -127662.92      2729.5454      3.3402044      23.322562    
+       348   277.49795      0              0              10.294525     -127673.21     -127662.92      2664.0008      3.3092121      23.494872    
+       349   271.98043      0              0              10.089838     -127673.01     -127662.92      2611.0322      3.2377496      23.622222    

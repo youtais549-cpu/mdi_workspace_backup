@@ -1,0 +1,13 @@
+Command exited with code 0.
+
+Command output:
+N= 1 (layers= 2, natoms= 72): bulk_Lz=  2.6639 A, slab_Lz= 13.5520 A | ends: 0.8881 ... 0.8881
+N= 2 (layers= 4, natoms=144): bulk_Lz=  5.3278 A, slab_Lz= 18.8798 A | ends: 0.8881 ... 0.8881
+N= 3 (layers= 6, natoms=216): bulk_Lz=  7.9917 A, slab_Lz= 24.2076 A | ends: 0.8881 ... 0.8882
+N= 4 (layers= 8, natoms=288): bulk_Lz= 10.6556 A, slab_Lz= 29.5354 A | ends: 0.8881 ... 0.8882
+N= 5 (layers=10, natoms=360): bulk_Lz= 13.3195 A, slab_Lz= 34.8632 A | ends: 0.8881 ... 0.8882
+N= 6 (layers=12, natoms=432): bulk_Lz= 15.9834 A, slab_Lz= 40.1910 A | ends: 0.8881 ... 0.8882
+N= 7 (layers=14, natoms=504): bulk_Lz= 18.6473 A, slab_Lz= 45.5188 A | ends: 0.8881 ... 0.8881
+N= 8 (layers=16, natoms=576): bulk_Lz= 21.3112 A, slab_Lz= 50.8466 A | ends: 0.8881 ... 0.8881
+N= 9 (layers=18, natoms=648): bulk_Lz= 23.9750 A, slab_Lz= 56.1743 A | ends: 0.8881 ... 0.8881
+N=10 (layers=20, natoms=720): bulk_Lz= 26.6389 A, slab_Lz= 61.5021 A | ends: 0.8881 ... 0.8881

@@ -1,0 +1,45 @@
+Created At: 2026-11-24T19:13:27+09:00
+Completed At: 2026-11-24T19:13:42+09:00
+Command exited with code 0.
+
+Command output:
+=== Target Data NAS Directory: \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}８周期5.0Å ===
+
+=== Target Code NAS Directory: \\192.168.12.69\Results\yamazaki\research\実行コード\{101_0}8周期5.0Å　構造最適化なし ===
+Name                                              Length
+----                                              ------
+auto_generate_progression_graphs.py                10302
+C.upf                                             858332
+dft_settings.py                                     1626
+dump.lammpstrj                                         0
+espresso.err                                           0
+espresso.pwi                                       13686
+espresso.pwo                                       28476
+in.lammps                                           2142
+lmp.log                                               21
+log.lammps                                            21
+make_xyz.py                                         2132
+msmincho.ttc                                    10091072
+qe_engine.log                                        409
+qe_mdi_engine_rtx5080.py                           12880
+RELAXATION_GRAPH_PROTOCOL.json                      2104
+run_8periods_vac5.0A_unrelaxed_aimd_400steps.py    25766
+Si.upf                                           1691876
+slab_10-10_288atoms_vac5.0A_unrelaxed.cif          25089
+slab_10-10_288atoms_vac5.0A_unrelaxed.data         24144
+slab_10-10_288atoms_vac5.0A_unrelaxed.xyz          20985
+times.ttf                                        1190736
+auto_generate_progression_graphs.py                10302
+dft_settings.py                                     1626
+in.lammps                                           2142
+make_xyz.py                                         2132
+qe_mdi_engine_rtx5080.py                           12880
+RELAXATION_GRAPH_PROTOCOL.json                      2104
+run_8periods_vac5.0A_unrelaxed_aimd_400steps.py    25766
+slab_10-10_288atoms_vac5.0A_unrelaxed.data         24144
+sync_unrelaxed_vac5.0A_400steps_to_nas.py           3816
+
+
+
+STDERR: #< CLIXML
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>モジュールを初めて使用するための準備しています。</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="progress" RefId="1"><TNRef RefId="0" /><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>モジュールを初めて使用するための準備しています。</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="2"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>=== Target Data NAS Directory: \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}８周期5.0Å ===</ToString><Props><Obj N="MessageData" RefId="3"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>=== Target Data NAS Directory: \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}８周期5.0Å ===</ToString><Props><S N="Message">=== Target Data NAS Directory: \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}８周期5.0Å ===</S><B N="NoNewLine">false</B><S N="ForegroundColor">DarkYellow</S><S N="BackgroundColor">DarkMagenta</S></Props></Obj><S N="Source">Write-Host</S><DT N="TimeGenerated">2026-11-24T19:13:42.7958665+09:00</DT><Obj N="Tags" RefId="4"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">WORKSTATION4\WORKSTATION4</S><S N="Computer">WORKSTATION4</S><U32 N="ProcessId">17440</U32><U32 N="NativeThreadId">16964</U32><U32 N="ManagedThreadId">16</U32></Props></Obj><Obj S="information" RefId="5"><TNRef RefId="1" /><ToString>=== Target Code NAS Directory: \\192.168.12.69\Results\yamazaki\research\実行コード\{101_0}8周期5.0Å　構造最適化なし ===</ToString><Props><Obj N="MessageData" RefId="6"><TNRef RefId="2" /><ToString>=== Target Code NAS Directory: \\192.168.12.69\Results\yamazaki\research\実行コード\{101_0}8周期5.0Å　構造最適化なし ===</ToString><Props><S N="Message">=== Target Code NAS Directory: \\192.168.12.69\Results\yamazaki\research\実行コード\{101_0}8周期5.0Å　構造最適化なし ===</S><B N="NoNewLine">false</B><S N="ForegroundColor">DarkYellow</S><S N="BackgroundColor">DarkMagenta</S></Props></Obj><S N="Source">Write-Host</S><DT N="TimeGenerated">2026-11-24T19:13:42.8144251+09:00</DT><Obj N="Tags" RefId="7"><TNRef RefId="3" /><LST><S>PSHOST</S></LST></Obj><S N="User">WORKSTATION4\WORKSTATION4</S><S N="Computer">WORKSTATION4</S><U32 N="ProcessId">17440</U32><U32 N="NativeThreadId">16964</U32><U32 N="ManagedThreadId">16</U32></Props></Obj></Objs>

@@ -1,0 +1,12 @@
+Task: cc114744-ec01-4b04-8765-40ec69ef7d2d/task-851
+Status: RUNNING
+Log: file:///home/WORKSTATION4WSL/.gemini/antigravity/brain/cc114744-ec01-4b04-8765-40ec69ef7d2d/.system_generated/tasks/task-851.log
+Log output:
+./calc_2H-SiC_10-10_4periods_vac5A_natural_cleavage/create_4periods_natural_cleavage_slab.py:19:    slab_unit = surface(bulk_cif, indices=(1, 0, 0), layers=4, vacuum=None)
+./run_periods_sweep_1_to_10.py:77:    slab_unit = surface(bulk_cif, indices=(1, 0, 0), layers=N, vacuum=None)
+./run_2periods_vacuum_sweep_0.5_to_10A.py:112:    slab_unit = surface(bulk_cif, indices=(1, 0, 0), layers=2, vacuum=None)
+./run_2periods_small_vacuum_sweep.py:129:    slab_unit = surface(bulk_cif, indices=(1, 0, 0), layers=2, vacuum=None)
+./プログラム・解析スクリプト/create_6periods_natural_cleavage_model.py:23:    slab_unit = surface(bulk_cif, indices=(1, 0, 0), layers=6, vacuum=None)
+./calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/create_2periods_vac5A_model.py:26:    slab_unit = surface(bulk_cif, indices=(1, 0, 0), layers=2, vacuum=None)
+
+Last progress: 0s ago

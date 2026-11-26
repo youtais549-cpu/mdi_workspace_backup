@@ -1,0 +1,26 @@
+Command exited with code 0.
+
+Command output:
+[2026-11-10 14:54:44] 🔄 Starting Bulk SCF Re-execution for Odd Periods: [1, 3, 5, 7, 9]
+[2026-11-10 14:54:44] --- [Period 1] Step 1: Running True Bulk 1-Point SCF (36 atoms, v3=[-1.538, 0.000, 2.6639] Å) ---
+[2026-11-10 14:54:51] --- [Period 1] Bulk SCF Done in 6.9s | E_bulk=-15909.6170 eV (-1169.33528422 Ry) | -441.9338 eV/atom (Target: -443.5 eV/atom) ---
+[2026-11-10 14:54:51] ✅ [Period 1 Bulk Updated] Natoms=36 | Bulk: 6.9s | E_bulk=-15909.6170 eV | E_slab=-15945.0989 eV | ΔE=-35.4819 eV | γ=-2.0339 J/m²
+[2026-11-10 14:54:51]   -> Staged locally at: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/nas_staging_periods/{101_0}1周期5Å (includes bulk & slab calculation data)
+[2026-11-10 14:54:51] --- [Period 3] Step 1: Running True Bulk 1-Point SCF (108 atoms, v3=[-1.538, 0.000, 7.9917] Å) ---
+[2026-11-10 14:55:16] --- [Period 3] Bulk SCF Done in 24.6s | E_bulk=-47898.6918 eV (-3520.48891023 Ry) | -443.5064 eV/atom (Target: -443.5 eV/atom) ---
+[2026-11-10 14:55:16] ✅ [Period 3 Bulk Updated] Natoms=108 | Bulk: 24.6s | E_bulk=-47898.6918 eV | E_slab=-47856.6115 eV | ΔE=42.0803 eV | γ=2.4122 J/m²
+[2026-11-10 14:55:16]   -> Staged locally at: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/nas_staging_periods/{101_0}3周期5Å (includes bulk & slab calculation data)
+[2026-11-10 14:55:16] --- [Period 5] Step 1: Running True Bulk 1-Point SCF (180 atoms, v3=[-1.538, 0.000, 13.3195] Å) ---
+[2026-11-10 14:56:19] --- [Period 5] Bulk SCF Done in 63.6s | E_bulk=-79828.2809 eV (-5867.27042866 Ry) | -443.4904 eV/atom (Target: -443.5 eV/atom) ---
+[2026-11-10 14:56:19] ✅ [Period 5 Bulk Updated] Natoms=180 | Bulk: 63.6s | E_bulk=-79828.2809 eV | E_slab=-79787.7398 eV | ΔE=40.5411 eV | γ=2.3240 J/m²
+[2026-11-10 14:56:19]   -> Staged locally at: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/nas_staging_periods/{101_0}5周期5Å (includes bulk & slab calculation data)
+[2026-11-10 14:56:19] --- [Period 7] Step 1: Running True Bulk 1-Point SCF (252 atoms, v3=[-1.538, 0.000, 18.6473] Å) ---
+[2026-11-10 14:58:19] --- [Period 7] Bulk SCF Done in 119.5s | E_bulk=-111760.3079 eV (-8214.23112173 Ry) | -443.4933 eV/atom (Target: -443.5 eV/atom) ---
+[2026-11-10 14:58:19] ✅ [Period 7 Bulk Updated] Natoms=252 | Bulk: 119.5s | E_bulk=-111760.3079 eV | E_slab=-111719.3218 eV | ΔE=40.9861 eV | γ=2.3495 J/m²
+[2026-11-10 14:58:19]   -> Staged locally at: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/nas_staging_periods/{101_0}7周期5Å (includes bulk & slab calculation data)
+[2026-11-10 14:58:19] --- [Period 9] Step 1: Running True Bulk 1-Point SCF (324 atoms, v3=[-1.538, 0.000, 23.9750] Å) ---
+[2026-11-10 15:02:31] --- [Period 9] Bulk SCF Done in 251.7s | E_bulk=-143691.9059 eV (-10561.16029095 Ry) | -443.4935 eV/atom (Target: -443.5 eV/atom) ---
+[2026-11-10 15:02:31] ✅ [Period 9 Bulk Updated] Natoms=324 | Bulk: 251.7s | E_bulk=-143691.9059 eV | E_slab=-143650.8317 eV | ΔE=41.0742 eV | γ=2.3545 J/m²
+[2026-11-10 15:02:31]   -> Staged locally at: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/nas_staging_periods/{101_0}9周期5Å (includes bulk & slab calculation data)
+[2026-11-10 15:02:31] ✅ Updated period comparison graph: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/周期数と表面破壊エネルギーの関係.png/.pdf/.svg
+[2026-11-10 15:02:31] 🎉 All odd period bulk SCF updates & graphs completed!

@@ -1,0 +1,1185 @@
+============================================================
+ Step 1: Micromamba パッケージマネージャの確認 (sudo 不要)
+============================================================
+✅ Micromamba ready: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/micromamba/bin/micromamba
+============================================================
+ Step 2: Quantum ESPRESSO (pw.x) & Python 3.11 & CMake の高速導入
+============================================================
+Using Cached Shard Index for conda-forge/linux-64                                                   ✔ Done
+Using Cached Shard Index for conda-forge/noarch                                                     ✔ Done
+Fetching and Parsing Packages' Shards                                                           ⧖ StartingFetching and Parsing Packages' Shards                                                     ✔ Done (0.1 sec)
+
+Resolving Environment                                                                           ⧖ StartingResolving Environment                                                                     ✔ Done (0.3 sec)
+
+Transaction
+
+  Prefix: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080
+
+  Updating specs:
+
+   - python=3.11
+   - pip
+   - cmake
+   - qe
+
+
+  Package                   Version  Build                     Channel          Size
+──────────────────────────────────────────────────────────────────────────────────────
+  Install:
+──────────────────────────────────────────────────────────────────────────────────────
+
+  + _openmp_mutex               4.5  8_kmp_llvm                conda-forge       8kB
+  + aws-c-auth                1.0.0  h7648d90_2                conda-forge     136kB
+  + aws-c-cal                 1.0.0  hcf7459e_1                conda-forge      59kB
+  + aws-c-common              1.0.5  hebe6cf0_0                conda-forge     279kB
+  + aws-c-compression         1.0.0  ha404f16_1                conda-forge      22kB
+  + aws-c-http                1.0.0  h392d1a3_1                conda-forge     233kB
+  + aws-c-io                  1.0.0  h07ba609_0                conda-forge     184kB
+  + aws-c-s3                  1.0.0  hfe03eda_1                conda-forge     164kB
+  + aws-c-sdkutils            1.0.1  ha404f16_0                conda-forge      72kB
+  + aws-checksums             1.0.1  ha404f16_0                conda-forge     105kB
+  + bzip2                     1.0.8  hda65f42_10               conda-forge     258kB
+  + c-ares                   1.34.9  hebe6cf0_0                conda-forge     234kB
+  + ca-certificates      2026.10.23  hbd8a1cb_0                conda-forge     130kB
+  + cmake                     4.4.5  hff7ac6b_0                conda-forge      26MB
+  + elpa                2026.02.002  mpi_openmpi_h33b1e68_2    conda-forge      12MB
+  + fftw                     3.3.11  nompi_h3b011a4_100        conda-forge       2MB
+  + hdf5                      2.2.0  mpi_openmpi_h0b8148c_1    conda-forge       5MB
+  + icu                        78.3  py310h44b86e0_2           conda-forge      14MB
+  + keyutils                  1.6.3  h7cc23a3_1                conda-forge     135kB
+  + krb5                     1.22.2  hbc21106_2                conda-forge       1MB
+  + ld_impl_linux-64         2.46.1  default_hbd61a6d_103      conda-forge     742kB
+  + libaec                    1.1.7  h659bb9a_0                conda-forge      38kB
+  + libblas                  3.11.0  12_h4a7cf45_openblas      conda-forge      18kB
+  + libcap                     2.78  h084b8d7_1                conda-forge     124kB
+  + libcurl                  8.23.0  ha042cf0_0                conda-forge     506kB
+  + libedit            3.1.20260512  pl5321h373387f_0          conda-forge     136kB
+  + libev                      4.33  h280c20c_3                conda-forge      43kB
+  + libevent                 2.1.12  h5348a74_2                conda-forge     431kB
+  + libexpat                  2.9.0  hd2095e1_0                conda-forge      79kB
+  + libfabric                 2.7.0  ha770c72_0                conda-forge      14kB
+  + libfabric1                2.7.0  hf0f7150_0                conda-forge     768kB
+  + libffi                    3.7.0  h81df57d_1                conda-forge      68kB
+  + libgcc                   16.2.0  ha9f2e26_7                conda-forge       1MB
+  + libgfortran              16.2.0  h69a702a_7                conda-forge      29kB
+  + libgfortran5             16.2.0  h6b99dfc_7                conda-forge       3MB
+  + libhwloc                 2.13.0  default_he001693_1000     conda-forge       2MB
+  + libiconv                   1.18  h0cb94f2_3                conda-forge     789kB
+  + liblapack                3.11.0  12_h47877c9_openblas      conda-forge      18kB
+  + liblzma                   5.8.3  hb03c661_1                conda-forge     113kB
+  + libnghttp2               1.71.0  hc5e5977_0                conda-forge     823kB
+  + libnl                    3.11.0  hb03c661_1                conda-forge     735kB
+  + libnsl                    2.0.1  hb9d3cd8_1                conda-forge      34kB
+  + libopenblas              0.3.34  openmp_h156ec52_2         conda-forge       7MB
+  + libpmix                   5.0.8  h31fc519_4                conda-forge     731kB
+  + libpsl                   0.23.1  hd9e3e90_1                conda-forge      73kB
+  + libpython               3.11.18  ha57cdbe_0_cpython        conda-forge       8MB
+  + libsqlite                3.54.1  h13e7031_0                conda-forge     984kB
+  + libssh2                  1.11.1  h6154650_1                conda-forge     306kB
+  + libstdcxx                16.2.0  h934c35e_7                conda-forge       7MB
+  + libsystemd0               262.1  h26e0ef7_0                conda-forge     575kB
+  + libudev1                  262.1  h26e0ef7_0                conda-forge     185kB
+  + libuuid                  2.42.4  hcfc3c73_0                conda-forge      34kB
+  + libuv                    1.52.1  h280c20c_1                conda-forge     420kB
+  + libxcrypt                4.4.38  h280c20c_0                conda-forge     102kB
+  + libxml2                  2.15.4  h7df9aa5_1                conda-forge      47kB
+  + libxml2-16               2.15.4  hf3af7cc_1                conda-forge     569kB
+  + libzlib                   1.3.2  h25fd6f3_3                conda-forge      64kB
+  + llvm-openmp              23.1.5  h7148c6a_0                conda-forge       6MB
+  + mpi                       1.0.1  openmpi                   conda-forge       7kB
+  + ncurses                     6.6  hdb14827_1                conda-forge     911kB
+  + openmpi                  5.0.11  hee33aa4_0                conda-forge       4MB
+  + openssl                   3.6.5  h781a0a9_0                conda-forge       3MB
+  + packaging                  26.3  pyhc364b38_0              conda-forge     116kB
+  + pip                      26.2.2  pyh8b19718_2              conda-forge       1MB
+  + pkg-config               0.29.2  h1114479_1013             conda-forge     141kB
+  + python                  3.11.18  h5f976f7_0_cpython        conda-forge      23MB
+  + qe                          7.6  mpi_openmpi_hdb26816_104  conda-forge     144MB
+  + rdma-core                  65.0  h7b4f2e6_0                conda-forge       1MB
+  + readline                    8.3  hd6e31c0_1                conda-forge     349kB
+  + rhash                     1.4.6  hb03c661_2                conda-forge     195kB
+  + s2n                       1.7.7  ha5dc4ae_0                conda-forge     394kB
+  + scalapack                 2.2.0  h606478a_6                conda-forge       2MB
+  + setuptools               84.2.1  pyhe730653_0              conda-forge     567kB
+  + tk                       8.6.13  noxft_h1df4ec4_4          conda-forge       4MB
+  + tzdata                    2026e  h5d301ff_0                conda-forge     119kB
+  + ucc                       1.8.0  h539fd1b_2                conda-forge      13MB
+  + ucx                      1.22.0  h6cc3e34_1                conda-forge       9MB
+  + wheel                    0.48.0  pyhd8ed1ab_0              conda-forge      35kB
+  + zstd                      1.5.7  hb78ec9c_7                conda-forge     601kB
+
+  Summary:
+
+  Install: 79 packages
+
+  Total download: 314MB
+
+──────────────────────────────────────────────────────────────────────────────────────
+
+
+warning  libmamba Security Warning: This transaction includes executing package scripts (pre/post-link/unlink) if present. These scripts can contain arbitrary code. Please ensure you trust the package sources.
+
+Transaction starting
+[+] 0.0s
+Downloading      ╸━━━━━━━━━━━━━━━━━━━━━━   0.0 B                            0.0s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━━━       0                            0.0s[+] 0.1s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━━━   0.0 B cmake                      0.0s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━━━       0                            0.0s[+] 0.2s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━━━   7.9MB cmake                      0.1s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━━━       0                            0.0s[+] 0.3s
+Downloading  (5) ━╸━━━━━━━━━━━━━━━━━━━━━  20.8MB cmake                      0.2s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━━━       0                            0.0succ                                                 13.0MB @  33.2MB/s  0.3s
+[+] 0.4s
+Downloading  (5) ━╸━━━━━━━━━━━━━━━━━━━━━  32.5MB cmake                      0.3s
+Extracting   (1) ━━━━━━━━━━╸━━━━━━━━━━━━       0 ucc                        0.0s[+] 0.5s
+Downloading  (5) ━━━╸━━━━━━━━━━━━━━━━━━━  42.9MB elpa                       0.4s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━━━       1                            0.1s[+] 0.6s
+Downloading  (5) ━━━━╸━━━━━━━━━━━━━━━━━━  54.3MB elpa                       0.5s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━━━       1                            0.1selpa                                                11.6MB @  37.7MB/s  0.3s
+[+] 0.7s
+Downloading  (5) ━━━━━╸━━━━━━━━━━━━━━━━━  67.0MB cmake                      0.6s
+Extracting   (1) ━━━━━━━━━━━━╸━━━━━━━━━━       1 elpa                       0.1s[+] 0.8s
+Downloading  (5) ━━━━━━╸━━━━━━━━━━━━━━━━  78.7MB cmake                      0.7s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━━━       2                            0.2sucx                                                  9.3MB @  45.2MB/s  0.2s
+[+] 0.9s
+Downloading  (5) ━━━━━━━╸━━━━━━━━━━━━━━━  90.8MB cmake                      0.8s
+Extracting   (1) ━━━━━━━━━━━━━╸━━━━━━━━━       2 ucx                        0.2s[+] 1.0s
+Downloading  (5) ━━━━━━━╸━━━━━━━━━━━━━━━  99.4MB cmake                      0.9s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━━━       3                            0.3slibpython                                            7.8MB @  47.2MB/s  0.2s
+[+] 1.1s
+Downloading  (5) ━━━━━━━━╸━━━━━━━━━━━━━━ 110.8MB icu                        1.0s
+Extracting       ╸━━━━━━━━━━━━━━━━━━━━━━       4                            0.3slibopenblas                                          6.9MB @  57.8MB/s  0.1s
+cmake                                               26.1MB @  22.7MB/s  1.1s
+[+] 1.2s
+Downloading  (5) ━━━━━━━━━╸━━━━━━━━━━━━━ 121.2MB icu                        1.1s
+Extracting   (1) ╸╸━━━━━━━━━━━━━━━━━━━━━       5 cmake                      0.3slibstdcxx                                            6.6MB @  46.4MB/s  0.1s
+[+] 1.3s
+Downloading  (5) ━━━━━━━━━━╸━━━━━━━━━━━━ 134.2MB icu                        1.2s
+Extracting   (2) ╸━╸━━━━━━━━━━━━━━━━━━━━       5 cmake                      0.4shdf5                                                 4.6MB @  40.2MB/s  0.1s
+[+] 1.4s
+Downloading  (5) ━━━━━━━━━━╸━━━━━━━━━━━━ 144.7MB icu                        1.3s
+Extracting   (1) ━╸╸━━━━━━━━━━━━━━━━━━━━       7 hdf5                       0.5sllvm-openmp                                          6.1MB @  19.2MB/s  0.3s
+openmpi                                              4.0MB @  34.2MB/s  0.1s
+[+] 1.5s
+Downloading  (5) ━━━━━━━━━━━╸━━━━━━━━━━━ 156.9MB openssl                    1.4s
+Extracting   (1) ━╸╸━━━━━━━━━━━━━━━━━━━━       9 openmpi                    0.6sopenssl                                              3.2MB @  24.1MB/s  0.1s
+[+] 1.6s
+Downloading  (5) ━━━━━━━━━━━━╸━━━━━━━━━━ 168.0MB icu                        1.5s
+Extracting   (1) ━╸━╸━━━━━━━━━━━━━━━━━━━      10 openssl                    0.7stk                                                   3.6MB @  17.6MB/s  0.2s
+libgfortran5                                         2.5MB @  26.6MB/s  0.1s
+[+] 1.7s
+Downloading  (5) ━━━━━━━━━━━━━╸━━━━━━━━━ 178.5MB icu                        1.6s
+Extracting       ━━╸━━━━━━━━━━━━━━━━━━━━      13                            0.8sfftw                                                 2.2MB @   8.2MB/s  0.1s
+libhwloc                                             2.4MB @  23.8MB/s  0.1s
+[+] 1.8s
+Downloading  (5) ━━━━━━━━━━━━━╸━━━━━━━━━ 188.7MB icu                        1.7s
+Extracting       ━━━╸━━━━━━━━━━━━━━━━━━━      15                            0.8skrb5                                                 1.4MB @   4.0MB/s  0.1s
+rdma-core                                            1.3MB @  ??.?MB/s  0.0s
+[+] 1.9s
+Downloading  (5) ━━━━━━━━━━━━━━╸━━━━━━━━ 200.7MB icu                        1.8s
+Extracting       ━━━╸━━━━━━━━━━━━━━━━━━━      17                            0.8spip                                                  1.1MB @  20.2MB/s  0.1s
+libgcc                                               1.1MB @  ??.?MB/s  0.0s
+[+] 2.0s
+Downloading  (5) ━━━━━━━━━━━━━━━╸━━━━━━━ 211.3MB libsqlite                  1.9s
+Extracting       ━━━━╸━━━━━━━━━━━━━━━━━━      19                            0.8slibsqlite                                          983.7kB @  ??.?MB/s  0.0s
+ncurses                                            911.2kB @   4.9MB/s  0.1s
+python                                              23.3MB @  10.5MB/s  2.0s
+[+] 2.1s
+Downloading  (5) ━━━━━━━━━━━━━━━╸━━━━━━━ 223.2MB icu                        2.0s
+Extracting   (2) ━━━━╸━╸━━━━━━━━━━━━━━━━      20 ncurses                    0.8slibiconv                                           789.5kB @  ??.?MB/s  0.0s
+libnghttp2                                         822.8kB @  ??.?MB/s  0.0s
+libfabric1                                         768.0kB @  ??.?MB/s  0.0s
+ld_impl_linux-64                                   742.1kB @  ??.?MB/s  0.0s
+libnl                                              735.0kB @  ??.?MB/s  0.0s
+libpmix                                            731.1kB @  ??.?MB/s  0.0s
+[+] 2.2s
+Downloading  (5) ━━━━━━━━━━━━━━━━╸━━━━━━ 233.8MB icu                        2.1s
+Extracting   (3) ━━━━━━╸━╸━━━━━━━━━━━━━━      25 libnl                      0.9szstd                                               601.3kB @  ??.?MB/s  0.0s
+libsystemd0                                        574.7kB @   9.7MB/s  0.1s
+libxml2-16                                         569.1kB @  ??.?MB/s  0.0s
+libcurl                                            505.7kB @  ??.?MB/s  0.0s
+setuptools                                         567.4kB @  ??.?MB/s  0.0s
+[+] 2.3s
+Downloading  (5) ━━━━━━━━━━━━━━━━╸━━━━━━ 241.9MB icu                        2.2s
+Extracting   (1) ━━━━━━━━╸╸━━━━━━━━━━━━━      32 setuptools                 1.0slibevent                                           431.0kB @  ??.?MB/s  0.0s
+libuv                                              420.0kB @  ??.?MB/s  0.0s
+s2n                                                394.1kB @  ??.?MB/s  0.0s
+readline                                           348.9kB @  ??.?MB/s  0.0s
+libssh2                                            306.0kB @  ??.?MB/s  0.0s
+aws-c-common                                       278.7kB @  ??.?MB/s  0.0s
+[+] 2.4s
+Downloading  (5) ━━━━━━━━━━━━━━━━━╸━━━━━ 250.3MB icu                        2.3s
+Extracting   (1) ━━━━━━━━━━╸╸━━━━━━━━━━━      38 aws-c-common               1.1sbzip2                                              257.8kB @  ??.?MB/s  0.0s
+c-ares                                             233.8kB @  ??.?MB/s  0.0s
+aws-c-http                                         232.8kB @  ??.?MB/s  0.0s
+scalapack                                            2.0MB @   2.7MB/s  0.7s
+rhash                                              195.0kB @  ??.?MB/s  0.0s
+libudev1                                           184.9kB @  ??.?MB/s  0.0s
+aws-c-io                                           184.4kB @  ??.?MB/s  0.0s
+aws-c-s3                                           163.6kB @  ??.?MB/s  0.0s
+icu                                                 14.5MB @   5.7MB/s  2.4s
+libedit                                            135.9kB @  ??.?MB/s  0.0s
+[+] 2.5s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━╸━━━━ 260.2MB aws-c-auth                 2.4s
+Extracting   (2) ━━━━━━━━━━━━╸━╸━━━━━━━━      47 icu                        1.2saws-c-auth                                         135.5kB @  ??.?MB/s  0.0s
+pkg-config                                         141.4kB @  ??.?MB/s  0.0s
+keyutils                                           135.3kB @  ??.?MB/s  0.0s
+ca-certificates                                    130.1kB @  ??.?MB/s  0.0s
+libcap                                             124.3kB @  ??.?MB/s  0.0s
+tzdata                                             119.2kB @  ??.?MB/s  0.0s
+liblzma                                            113.0kB @  ??.?MB/s  0.0s
+packaging                                          116.4kB @  ??.?MB/s  0.0s
+aws-checksums                                      105.1kB @  ??.?MB/s  0.0s
+libxcrypt                                          102.0kB @  ??.?MB/s  0.0s
+libexpat                                            78.9kB @  ??.?MB/s  0.0s
+libpsl                                              72.5kB @  ??.?MB/s  0.0s
+aws-c-sdkutils                                      71.6kB @  ??.?MB/s  0.0s
+libffi                                              68.0kB @  ??.?MB/s  0.0s
+libzlib                                             63.7kB @  ??.?MB/s  0.0s
+aws-c-cal                                           59.2kB @  ??.?MB/s  0.0s
+libev                                               43.2kB @  ??.?MB/s  0.0s
+[+] 2.6s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━╸━━━━ 266.6MB libaec                     2.5s
+Extracting   (1) ━━━━━━━━━━━━━━━━━╸━╸━━━      65 libev                      1.3swheel                                               34.5kB @  ??.?MB/s  0.0s
+libxml2                                             46.6kB @  ??.?MB/s  0.0s
+libaec                                              37.7kB @  ??.?MB/s  0.0s
+libuuid                                             34.4kB @  ??.?MB/s  0.0s
+libnsl                                              33.7kB @  ??.?MB/s  0.0s
+libblas                                             18.1kB @  ??.?MB/s  0.0s
+libgfortran                                         28.6kB @  ??.?MB/s  0.0s
+liblapack                                           18.1kB @  ??.?MB/s  0.0s
+aws-c-compression                                   22.1kB @  ??.?MB/s  0.0s
+libfabric                                           14.4kB @  ??.?MB/s  0.0s
+mpi                                                  6.6kB @  ??.?MB/s  0.0s
+_openmp_mutex                                        8.1kB @  ??.?MB/s  0.0s
+[+] 2.7s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━╸━━━━ 271.7MB qe                         2.6s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━╸━      78                            1.4s[+] 2.8s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━╸━━━ 276.3MB qe                         2.7s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━╸━      78                            1.4s[+] 2.9s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━╸━━━ 280.6MB qe                         2.8s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━╸━      78                            1.4s[+] 3.0s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━╸━━━ 285.7MB qe                         2.9s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━╸━      78                            1.4s[+] 3.1s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━━╸━━ 290.3MB qe                         3.0s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━╸━      78                            1.4s[+] 3.2s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━━╸━━ 294.4MB qe                         3.1s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━╸━      78                            1.4s[+] 3.3s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━━╸━━ 299.0MB qe                         3.2s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━╸━      78                            1.4s[+] 3.4s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━━━╸━ 303.3MB qe                         3.3s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━╸━      78                            1.4s[+] 3.5s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━━━╸━ 307.7MB qe                         3.4s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━╸━      78                            1.4s[+] 3.6s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━━━╸━ 311.8MB qe                         3.5s
+Extracting       ━━━━━━━━━━━━━━━━━━━━━╸━      78                            1.4sqe                                                 144.3MB @  39.6MB/s  3.6s
+[+] 3.7s
+Downloading      ━━━━━━━━━━━━━━━━━━━━━━━ 313.8MB                            3.6s
+Extracting   (1) ━━━━━━━━━━━━━━━━━━━━━╸━      78 qe                         1.4s[+] 3.8s
+Downloading      ━━━━━━━━━━━━━━━━━━━━━━━ 313.8MB                            3.6s
+Extracting   (1) ━━━━━━━━━━━━━━━━━━━━━╸━      78 qe                         1.5s[+] 3.9s
+Downloading      ━━━━━━━━━━━━━━━━━━━━━━━ 313.8MB                            3.6s
+Extracting   (1) ━━━━━━━━━━━━━━━━━━━━━╸━      78 qe                         1.6s[+] 4.0s
+Downloading      ━━━━━━━━━━━━━━━━━━━━━━━ 313.8MB                            3.6s
+Extracting   (1) ━━━━━━━━━━━━━━━━━━━━━╸━      78 qe                         1.7s[+] 4.1s
+Downloading      ━━━━━━━━━━━━━━━━━━━━━━━ 313.8MB                            3.6s
+Extracting   (1) ━━━━━━━━━━━━━━━━━━━━━╸━      78 qe                         1.8sLinking libzlib-1.3.2-h25fd6f3_3
+Linking llvm-openmp-23.1.5-h7148c6a_0
+Linking zstd-1.5.7-hb78ec9c_7
+Linking _openmp_mutex-4.5-8_kmp_llvm
+Linking ld_impl_linux-64-2.46.1-default_hbd61a6d_103
+Linking libgcc-16.2.0-ha9f2e26_7
+Linking libev-4.33-h280c20c_3
+Linking keyutils-1.6.3-h7cc23a3_1
+Linking aws-c-common-1.0.5-hebe6cf0_0
+Linking pkg-config-0.29.2-h1114479_1013
+Linking libcap-2.78-h084b8d7_1
+Linking c-ares-1.34.9-hebe6cf0_0
+Linking libnsl-2.0.1-hb9d3cd8_1
+Linking libffi-3.7.0-h81df57d_1
+Linking libiconv-1.18-h0cb94f2_3
+Linking libnl-3.11.0-hb03c661_1
+Linking libgfortran5-16.2.0-h6b99dfc_7
+Linking bzip2-1.0.8-hda65f42_10
+Linking rhash-1.4.6-hb03c661_2
+Linking libuv-1.52.1-h280c20c_1
+Linking liblzma-5.8.3-hb03c661_1
+Linking ncurses-6.6-hdb14827_1
+Linking tk-8.6.13-noxft_h1df4ec4_4
+Linking libstdcxx-16.2.0-h934c35e_7
+Linking libuuid-2.42.4-hcfc3c73_0
+Linking libpython-3.11.18-ha57cdbe_0_cpython
+Linking libxcrypt-4.4.38-h280c20c_0
+Linking libexpat-2.9.0-hd2095e1_0
+Linking aws-c-sdkutils-1.0.1-ha404f16_0
+Linking aws-c-compression-1.0.0-ha404f16_1
+Linking aws-checksums-1.0.1-ha404f16_0
+Linking libsystemd0-262.1-h26e0ef7_0
+Linking libudev1-262.1-h26e0ef7_0
+Linking libgfortran-16.2.0-h69a702a_7
+Linking libedit-3.1.20260512-pl5321h373387f_0
+Linking readline-8.3-hd6e31c0_1
+Linking libaec-1.1.7-h659bb9a_0
+Linking icu-78.3-py310h44b86e0_2
+Linking rdma-core-65.0-h7b4f2e6_0
+Linking libopenblas-0.3.34-openmp_h156ec52_2
+Linking fftw-3.3.11-nompi_h3b011a4_100
+Linking libpsl-0.23.1-hd9e3e90_1
+Linking libxml2-16-2.15.4-hf3af7cc_1
+Linking libsqlite-3.54.1-h13e7031_0
+Linking ucx-1.22.0-h6cc3e34_1
+warning  libmamba Executing post-link script for package 'ucx'.
+
+To enable CUDA support, UCX requires the CUDA Runtime library (libcudart).
+The library can be installed with the appropriate command below:
+
+* For CUDA 12, run:    conda install cuda-cudart cuda-version=12
+* For CUDA 13, run:    conda install cuda-cudart cuda-version=13
+
+If any of the packages you requested use CUDA then CUDA should already
+have been installed for you.
+
+
+Linking libfabric1-2.7.0-hf0f7150_0
+Linking libblas-3.11.0-12_h4a7cf45_openblas
+Linking libxml2-2.15.4-h7df9aa5_1
+Linking ucc-1.8.0-h539fd1b_2
+warning  libmamba Executing post-link script for package 'ucc'.
+setting libfabric environment variables for conda-build
+FI_PROVIDER=tcp
+
+To enable CUDA support, UCX requires the CUDA Runtime library (libcudart).
+The library can be installed with the appropriate command below:
+
+* For CUDA 12, run:    conda install cuda-cudart cuda-version=12
+* For CUDA 13, run:    conda install cuda-cudart cuda-version=13
+
+If any of the packages you requested use CUDA then CUDA should already
+have been installed for you.
+
+
+To enable CUDA support, please follow UCX's instruction above.
+
+To additionally enable NCCL support, run:    conda install nccl
+
+
+Linking libfabric-2.7.0-ha770c72_0
+Linking liblapack-3.11.0-12_h47877c9_openblas
+Linking libhwloc-2.13.0-default_he001693_1000
+Linking tzdata-2026e-h5d301ff_0
+Linking mpi-1.0.1-openmpi
+Linking ca-certificates-2026.10.23-hbd8a1cb_0
+Linking openssl-3.6.5-h781a0a9_0
+Linking aws-c-cal-1.0.0-hcf7459e_1
+Linking libssh2-1.11.1-h6154650_1
+Linking krb5-1.22.2-hbc21106_2
+Linking libnghttp2-1.71.0-hc5e5977_0
+Linking s2n-1.7.7-ha5dc4ae_0
+Linking libevent-2.1.12-h5348a74_2
+Linking python-3.11.18-h5f976f7_0_cpython
+Linking libcurl-8.23.0-ha042cf0_0
+Linking aws-c-io-1.0.0-h07ba609_0
+Linking libpmix-5.0.8-h31fc519_4
+Linking cmake-4.4.5-hff7ac6b_0
+Linking aws-c-http-1.0.0-h392d1a3_1
+Linking openmpi-5.0.11-hee33aa4_0
+warning  libmamba Executing post-link script for package 'openmpi'.
+setting libfabric environment variables for conda-build
+FI_PROVIDER=tcp
+setting openmpi environment variables for conda-build
+
+To enable CUDA support, UCX requires the CUDA Runtime library (libcudart).
+The library can be installed with the appropriate command below:
+
+* For CUDA 12, run:    conda install cuda-cudart cuda-version=12
+* For CUDA 13, run:    conda install cuda-cudart cuda-version=13
+
+If any of the packages you requested use CUDA then CUDA should already
+have been installed for you.
+
+
+To enable CUDA support, please follow UCX's instruction above.
+
+To additionally enable NCCL support, run:    conda install nccl
+
+
+On Linux, Open MPI is built with CUDA awareness but it is disabled by default.
+To enable it, please set the environment variable
+OMPI_MCA_opal_cuda_support=true
+before launching your MPI processes.
+Equivalently, you can set the MCA parameter in the command line:
+mpiexec --mca opal_cuda_support 1 ...
+Note that you might also need to set UCX_MEMTYPE_CACHE=n for CUDA awareness via
+UCX. Please consult UCX documentation for further details.
+
+
+Linking aws-c-auth-1.0.0-h7648d90_2
+Linking scalapack-2.2.0-h606478a_6
+Linking aws-c-s3-1.0.0-hfe03eda_1
+Linking elpa-2026.02.002-mpi_openmpi_h33b1e68_2
+Linking hdf5-2.2.0-mpi_openmpi_h0b8148c_1
+Linking qe-7.6-mpi_openmpi_hdb26816_104
+Linking packaging-26.3-pyhc364b38_0
+Linking setuptools-84.2.1-pyhe730653_0
+Linking wheel-0.48.0-pyhd8ed1ab_0
+Linking pip-26.2.2-pyh8b19718_2
+
+Transaction finished
+
+
+To activate this environment, use:
+
+    micromamba activate /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080
+
+Or to execute a single command in this environment, use:
+
+    micromamba run -p /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080 mycommand
+
+============================================================
+ Step 3: Python パッケージ (NumPy, SciPy, Matplotlib, ASE, PyMDI) の導入
+============================================================
+✅ Python packages (ase, pymdi, numpy, scipy, matplotlib) installed.
+============================================================
+ Step 4: 論文・Word グラフ用フォント (MS明朝 / Times New Roman) 配置
+============================================================
+✅ Fonts copied to calculation directory.
+============================================================
+ Step 5: LAMMPS (PKG_MDI=ON) の 24スレッド高速ビルド (Core Ultra 9 285K)
+============================================================
+Cloning into '/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps'...
+remote: Enumerating objects: 16002, done.        
+remote: Counting objects:   0% (1/16002)        remote: Counting objects:   1% (161/16002)        remote: Counting objects:   2% (321/16002)        remote: Counting objects:   3% (481/16002)        remote: Counting objects:   4% (641/16002)        remote: Counting objects:   5% (801/16002)        remote: Counting objects:   6% (961/16002)        remote: Counting objects:   7% (1121/16002)        remote: Counting objects:   8% (1281/16002)        remote: Counting objects:   9% (1441/16002)        remote: Counting objects:  10% (1601/16002)        remote: Counting objects:  11% (1761/16002)        remote: Counting objects:  12% (1921/16002)        remote: Counting objects:  13% (2081/16002)        remote: Counting objects:  14% (2241/16002)        remote: Counting objects:  15% (2401/16002)        remote: Counting objects:  16% (2561/16002)        remote: Counting objects:  17% (2721/16002)        remote: Counting objects:  18% (2881/16002)        remote: Counting objects:  19% (3041/16002)        remote: Counting objects:  20% (3201/16002)        remote: Counting objects:  21% (3361/16002)        remote: Counting objects:  22% (3521/16002)        remote: Counting objects:  23% (3681/16002)        remote: Counting objects:  24% (3841/16002)        remote: Counting objects:  25% (4001/16002)        remote: Counting objects:  26% (4161/16002)        remote: Counting objects:  27% (4321/16002)        remote: Counting objects:  28% (4481/16002)        remote: Counting objects:  29% (4641/16002)        remote: Counting objects:  30% (4801/16002)        remote: Counting objects:  31% (4961/16002)        remote: Counting objects:  32% (5121/16002)        remote: Counting objects:  33% (5281/16002)        remote: Counting objects:  34% (5441/16002)        remote: Counting objects:  35% (5601/16002)        remote: Counting objects:  36% (5761/16002)        remote: Counting objects:  37% (5921/16002)        remote: Counting objects:  38% (6081/16002)        remote: Counting objects:  39% (6241/16002)        remote: Counting objects:  40% (6401/16002)        remote: Counting objects:  41% (6561/16002)        remote: Counting objects:  42% (6721/16002)        remote: Counting objects:  43% (6881/16002)        remote: Counting objects:  44% (7041/16002)        remote: Counting objects:  45% (7201/16002)        remote: Counting objects:  46% (7361/16002)        remote: Counting objects:  47% (7521/16002)        remote: Counting objects:  48% (7681/16002)        remote: Counting objects:  49% (7841/16002)        remote: Counting objects:  50% (8001/16002)        remote: Counting objects:  51% (8162/16002)        remote: Counting objects:  52% (8322/16002)        remote: Counting objects:  53% (8482/16002)        remote: Counting objects:  54% (8642/16002)        remote: Counting objects:  55% (8802/16002)        remote: Counting objects:  56% (8962/16002)        remote: Counting objects:  57% (9122/16002)        remote: Counting objects:  58% (9282/16002)        remote: Counting objects:  59% (9442/16002)        remote: Counting objects:  60% (9602/16002)        remote: Counting objects:  61% (9762/16002)        remote: Counting objects:  62% (9922/16002)        remote: Counting objects:  63% (10082/16002)        remote: Counting objects:  64% (10242/16002)        remote: Counting objects:  65% (10402/16002)        remote: Counting objects:  66% (10562/16002)        remote: Counting objects:  67% (10722/16002)        remote: Counting objects:  68% (10882/16002)        remote: Counting objects:  69% (11042/16002)        remote: Counting objects:  70% (11202/16002)        remote: Counting objects:  71% (11362/16002)        remote: Counting objects:  72% (11522/16002)        remote: Counting objects:  73% (11682/16002)        remote: Counting objects:  74% (11842/16002)        remote: Counting objects:  75% (12002/16002)        remote: Counting objects:  76% (12162/16002)        remote: Counting objects:  77% (12322/16002)        remote: Counting objects:  78% (12482/16002)        remote: Counting objects:  79% (12642/16002)        remote: Counting objects:  80% (12802/16002)        remote: Counting objects:  81% (12962/16002)        remote: Counting objects:  82% (13122/16002)        remote: Counting objects:  83% (13282/16002)        remote: Counting objects:  84% (13442/16002)        remote: Counting objects:  85% (13602/16002)        remote: Counting objects:  86% (13762/16002)        remote: Counting objects:  87% (13922/16002)        remote: Counting objects:  88% (14082/16002)        remote: Counting objects:  89% (14242/16002)        remote: Counting objects:  90% (14402/16002)        remote: Counting objects:  91% (14562/16002)        remote: Counting objects:  92% (14722/16002)        remote: Counting objects:  93% (14882/16002)        remote: Counting objects:  94% (15042/16002)        remote: Counting objects:  95% (15202/16002)        remote: Counting objects:  96% (15362/16002)        remote: Counting objects:  97% (15522/16002)        remote: Counting objects:  98% (15682/16002)        remote: Counting objects:  99% (15842/16002)        remote: Counting objects: 100% (16002/16002)        remote: Counting objects: 100% (16002/16002), done.        
+remote: Compressing objects:   0% (1/11568)        remote: Compressing objects:   1% (116/11568)        remote: Compressing objects:   2% (232/11568)        remote: Compressing objects:   3% (348/11568)        remote: Compressing objects:   4% (463/11568)        remote: Compressing objects:   5% (579/11568)        remote: Compressing objects:   6% (695/11568)        remote: Compressing objects:   7% (810/11568)        remote: Compressing objects:   8% (926/11568)        remote: Compressing objects:   9% (1042/11568)        remote: Compressing objects:  10% (1157/11568)        remote: Compressing objects:  11% (1273/11568)        remote: Compressing objects:  12% (1389/11568)        remote: Compressing objects:  13% (1504/11568)        remote: Compressing objects:  14% (1620/11568)        remote: Compressing objects:  15% (1736/11568)        remote: Compressing objects:  16% (1851/11568)        remote: Compressing objects:  17% (1967/11568)        remote: Compressing objects:  18% (2083/11568)        remote: Compressing objects:  19% (2198/11568)        remote: Compressing objects:  20% (2314/11568)        remote: Compressing objects:  21% (2430/11568)        remote: Compressing objects:  22% (2545/11568)        remote: Compressing objects:  23% (2661/11568)        remote: Compressing objects:  23% (2664/11568)        remote: Compressing objects:  24% (2777/11568)        remote: Compressing objects:  25% (2892/11568)        remote: Compressing objects:  26% (3008/11568)        remote: Compressing objects:  27% (3124/11568)        remote: Compressing objects:  28% (3240/11568)        remote: Compressing objects:  29% (3355/11568)        remote: Compressing objects:  30% (3471/11568)        remote: Compressing objects:  31% (3587/11568)        remote: Compressing objects:  32% (3702/11568)        remote: Compressing objects:  33% (3818/11568)        remote: Compressing objects:  34% (3934/11568)        remote: Compressing objects:  35% (4049/11568)        remote: Compressing objects:  36% (4165/11568)        remote: Compressing objects:  37% (4281/11568)        remote: Compressing objects:  37% (4351/11568)        remote: Compressing objects:  38% (4396/11568)        remote: Compressing objects:  39% (4512/11568)        remote: Compressing objects:  40% (4628/11568)        remote: Compressing objects:  41% (4743/11568)        remote: Compressing objects:  42% (4859/11568)        remote: Compressing objects:  43% (4975/11568)        remote: Compressing objects:  44% (5090/11568)        remote: Compressing objects:  45% (5206/11568)        remote: Compressing objects:  46% (5322/11568)        remote: Compressing objects:  47% (5437/11568)        remote: Compressing objects:  48% (5553/11568)        remote: Compressing objects:  49% (5669/11568)        remote: Compressing objects:  49% (5686/11568)        remote: Compressing objects:  50% (5784/11568)        remote: Compressing objects:  51% (5900/11568)        remote: Compressing objects:  52% (6016/11568)        remote: Compressing objects:  53% (6132/11568)        remote: Compressing objects:  54% (6247/11568)        remote: Compressing objects:  55% (6363/11568)        remote: Compressing objects:  56% (6479/11568)        remote: Compressing objects:  57% (6594/11568)        remote: Compressing objects:  58% (6710/11568)        remote: Compressing objects:  59% (6826/11568)        remote: Compressing objects:  60% (6941/11568)        remote: Compressing objects:  61% (7057/11568)        remote: Compressing objects:  62% (7173/11568)        remote: Compressing objects:  63% (7288/11568)        remote: Compressing objects:  64% (7404/11568)        remote: Compressing objects:  65% (7520/11568)        remote: Compressing objects:  66% (7635/11568)        remote: Compressing objects:  67% (7751/11568)        remote: Compressing objects:  68% (7867/11568)        remote: Compressing objects:  69% (7982/11568)        remote: Compressing objects:  70% (8098/11568)        remote: Compressing objects:  71% (8214/11568)        remote: Compressing objects:  72% (8329/11568)        remote: Compressing objects:  73% (8445/11568)        remote: Compressing objects:  74% (8561/11568)        remote: Compressing objects:  75% (8676/11568)        remote: Compressing objects:  76% (8792/11568)        remote: Compressing objects:  77% (8908/11568)        remote: Compressing objects:  78% (9024/11568)        remote: Compressing objects:  79% (9139/11568)        remote: Compressing objects:  80% (9255/11568)        remote: Compressing objects:  81% (9371/11568)        remote: Compressing objects:  82% (9486/11568)        remote: Compressing objects:  83% (9602/11568)        remote: Compressing objects:  83% (9624/11568)        remote: Compressing objects:  84% (9718/11568)        remote: Compressing objects:  85% (9833/11568)        remote: Compressing objects:  86% (9949/11568)        remote: Compressing objects:  87% (10065/11568)        remote: Compressing objects:  88% (10180/11568)        remote: Compressing objects:  89% (10296/11568)        remote: Compressing objects:  90% (10412/11568)        remote: Compressing objects:  91% (10527/11568)        remote: Compressing objects:  92% (10643/11568)        remote: Compressing objects:  93% (10759/11568)        remote: Compressing objects:  94% (10874/11568)        remote: Compressing objects:  95% (10990/11568)        remote: Compressing objects:  96% (11106/11568)        remote: Compressing objects:  97% (11221/11568)        remote: Compressing objects:  98% (11337/11568)        remote: Compressing objects:  99% (11453/11568)        remote: Compressing objects: 100% (11568/11568)        remote: Compressing objects: 100% (11568/11568), done.        
+Receiving objects:   0% (1/16002)Receiving objects:   1% (161/16002)Receiving objects:   2% (321/16002)Receiving objects:   3% (481/16002)Receiving objects:   4% (641/16002)Receiving objects:   5% (801/16002)Receiving objects:   6% (961/16002)Receiving objects:   7% (1121/16002), 10.68 MiB | 21.34 MiB/sReceiving objects:   8% (1281/16002), 10.68 MiB | 21.34 MiB/sReceiving objects:   9% (1441/16002), 10.68 MiB | 21.34 MiB/sReceiving objects:   9% (1509/16002), 25.09 MiB | 25.06 MiB/sReceiving objects:  10% (1601/16002), 25.09 MiB | 25.06 MiB/sReceiving objects:  11% (1761/16002), 40.54 MiB | 26.58 MiB/sReceiving objects:  12% (1921/16002), 40.54 MiB | 26.58 MiB/sReceiving objects:  13% (2081/16002), 40.54 MiB | 26.58 MiB/sReceiving objects:  14% (2241/16002), 40.54 MiB | 26.58 MiB/sReceiving objects:  15% (2401/16002), 40.54 MiB | 26.58 MiB/sReceiving objects:  15% (2402/16002), 56.37 MiB | 27.43 MiB/sReceiving objects:  16% (2561/16002), 56.37 MiB | 27.43 MiB/sReceiving objects:  17% (2721/16002), 56.37 MiB | 27.43 MiB/sReceiving objects:  18% (2881/16002), 56.37 MiB | 27.43 MiB/sReceiving objects:  19% (3041/16002), 72.23 MiB | 27.94 MiB/sReceiving objects:  20% (3201/16002), 72.23 MiB | 27.94 MiB/sReceiving objects:  21% (3361/16002), 72.23 MiB | 27.94 MiB/sReceiving objects:  21% (3519/16002), 72.23 MiB | 27.94 MiB/sReceiving objects:  22% (3521/16002), 72.23 MiB | 27.94 MiB/sReceiving objects:  23% (3681/16002), 88.13 MiB | 28.29 MiB/sReceiving objects:  24% (3841/16002), 88.13 MiB | 28.29 MiB/sReceiving objects:  25% (4001/16002), 88.13 MiB | 28.29 MiB/sReceiving objects:  26% (4161/16002), 88.13 MiB | 28.29 MiB/sReceiving objects:  27% (4321/16002), 103.88 MiB | 28.48 MiB/sReceiving objects:  28% (4481/16002), 103.88 MiB | 28.48 MiB/sReceiving objects:  29% (4641/16002), 103.88 MiB | 28.48 MiB/sReceiving objects:  29% (4642/16002), 103.88 MiB | 28.48 MiB/sReceiving objects:  30% (4801/16002), 103.88 MiB | 28.48 MiB/sReceiving objects:  31% (4961/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  32% (5121/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  33% (5281/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  34% (5441/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  35% (5601/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  36% (5761/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  37% (5921/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  38% (6081/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  39% (6241/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  40% (6401/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  41% (6561/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  42% (6721/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  43% (6881/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  44% (7041/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  45% (7201/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  46% (7361/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  47% (7521/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  48% (7681/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  49% (7841/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  50% (8001/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  51% (8162/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  52% (8322/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  53% (8482/16002), 119.61 MiB | 28.64 MiB/sReceiving objects:  54% (8642/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  55% (8802/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  56% (8962/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  57% (9122/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  57% (9246/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  58% (9282/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  59% (9442/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  60% (9602/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  61% (9762/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  62% (9922/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  63% (10082/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  64% (10242/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  65% (10402/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  66% (10562/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  67% (10722/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  68% (10882/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  69% (11042/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  70% (11202/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  71% (11362/16002), 135.43 MiB | 28.77 MiB/sReceiving objects:  72% (11522/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  73% (11682/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  74% (11842/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  75% (12002/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  76% (12162/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  77% (12322/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  78% (12482/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  79% (12642/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  80% (12802/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  81% (12962/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  82% (13122/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  83% (13282/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  84% (13442/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  85% (13602/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  86% (13762/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  87% (13922/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  88% (14082/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  89% (14242/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  90% (14402/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  91% (14562/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  92% (14722/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  93% (14882/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  94% (15042/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  95% (15202/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  96% (15362/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  97% (15522/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  98% (15682/16002), 151.21 MiB | 29.66 MiB/sReceiving objects:  99% (15842/16002), 151.21 MiB | 29.66 MiB/sremote: Total 16002 (delta 5714), reused 8750 (delta 4208), pack-reused 0 (from 0)        
+Receiving objects: 100% (16002/16002), 151.21 MiB | 29.66 MiB/sReceiving objects: 100% (16002/16002), 163.97 MiB | 28.92 MiB/s, done.
+Resolving deltas:   0% (0/5714)Resolving deltas:   1% (58/5714)Resolving deltas:   2% (116/5714)Resolving deltas:   3% (172/5714)Resolving deltas:   4% (229/5714)Resolving deltas:   5% (286/5714)Resolving deltas:   6% (344/5714)Resolving deltas:   7% (400/5714)Resolving deltas:   8% (458/5714)Resolving deltas:   9% (515/5714)Resolving deltas:  10% (572/5714)Resolving deltas:  11% (629/5714)Resolving deltas:  12% (688/5714)Resolving deltas:  13% (743/5714)Resolving deltas:  14% (800/5714)Resolving deltas:  15% (858/5714)Resolving deltas:  16% (916/5714)Resolving deltas:  17% (972/5714)Resolving deltas:  18% (1029/5714)Resolving deltas:  19% (1086/5714)Resolving deltas:  20% (1143/5714)Resolving deltas:  21% (1201/5714)Resolving deltas:  22% (1258/5714)Resolving deltas:  23% (1316/5714)Resolving deltas:  24% (1372/5714)Resolving deltas:  25% (1429/5714)Resolving deltas:  26% (1486/5714)Resolving deltas:  27% (1543/5714)Resolving deltas:  28% (1600/5714)Resolving deltas:  29% (1658/5714)Resolving deltas:  30% (1716/5714)Resolving deltas:  31% (1772/5714)Resolving deltas:  32% (1830/5714)Resolving deltas:  33% (1886/5714)Resolving deltas:  34% (1944/5714)Resolving deltas:  35% (2000/5714)Resolving deltas:  36% (2059/5714)Resolving deltas:  37% (2115/5714)Resolving deltas:  38% (2172/5714)Resolving deltas:  39% (2229/5714)Resolving deltas:  40% (2286/5714)Resolving deltas:  41% (2343/5714)Resolving deltas:  42% (2400/5714)Resolving deltas:  43% (2458/5714)Resolving deltas:  44% (2516/5714)Resolving deltas:  45% (2574/5714)Resolving deltas:  46% (2629/5714)Resolving deltas:  47% (2686/5714)Resolving deltas:  48% (2743/5714)Resolving deltas:  49% (2800/5714)Resolving deltas:  50% (2857/5714)Resolving deltas:  51% (2915/5714)Resolving deltas:  52% (2972/5714)Resolving deltas:  53% (3029/5714)Resolving deltas:  54% (3086/5714)Resolving deltas:  55% (3144/5714)Resolving deltas:  56% (3200/5714)Resolving deltas:  57% (3257/5714)Resolving deltas:  58% (3315/5714)Resolving deltas:  59% (3372/5714)Resolving deltas:  60% (3429/5714)Resolving deltas:  61% (3486/5714)Resolving deltas:  62% (3543/5714)Resolving deltas:  63% (3600/5714)Resolving deltas:  64% (3657/5714)Resolving deltas:  65% (3715/5714)Resolving deltas:  66% (3772/5714)Resolving deltas:  67% (3829/5714)Resolving deltas:  68% (3886/5714)Resolving deltas:  69% (3944/5714)Resolving deltas:  70% (4000/5714)Resolving deltas:  71% (4057/5714)Resolving deltas:  72% (4115/5714)Resolving deltas:  73% (4174/5714)Resolving deltas:  74% (4229/5714)Resolving deltas:  75% (4286/5714)Resolving deltas:  76% (4344/5714)Resolving deltas:  77% (4401/5714)Resolving deltas:  78% (4457/5714)Resolving deltas:  79% (4517/5714)Resolving deltas:  80% (4572/5714)Resolving deltas:  81% (4630/5714)Resolving deltas:  82% (4686/5714)Resolving deltas:  83% (4743/5714)Resolving deltas:  84% (4800/5714)Resolving deltas:  85% (4857/5714)Resolving deltas:  86% (4915/5714)Resolving deltas:  87% (4972/5714)Resolving deltas:  88% (5029/5714)Resolving deltas:  89% (5086/5714)Resolving deltas:  90% (5143/5714)Resolving deltas:  91% (5200/5714)Resolving deltas:  92% (5257/5714)Resolving deltas:  93% (5315/5714)Resolving deltas:  94% (5372/5714)Resolving deltas:  95% (5429/5714)Resolving deltas:  96% (5486/5714)Resolving deltas:  97% (5543/5714)Resolving deltas:  98% (5601/5714)Resolving deltas:  99% (5657/5714)Resolving deltas: 100% (5714/5714)Resolving deltas: 100% (5714/5714), done.
+Updating files:  55% (8571/15419)Updating files:  56% (8635/15419)Updating files:  57% (8789/15419)Updating files:  58% (8944/15419)Updating files:  59% (9098/15419)Updating files:  60% (9252/15419)Updating files:  61% (9406/15419)Updating files:  62% (9560/15419)Updating files:  63% (9714/15419)Updating files:  64% (9869/15419)Updating files:  65% (10023/15419)Updating files:  66% (10177/15419)Updating files:  67% (10331/15419)Updating files:  68% (10485/15419)Updating files:  69% (10640/15419)Updating files:  70% (10794/15419)Updating files:  71% (10948/15419)Updating files:  72% (11102/15419)Updating files:  73% (11256/15419)Updating files:  74% (11411/15419)Updating files:  75% (11565/15419)Updating files:  76% (11719/15419)Updating files:  77% (11873/15419)Updating files:  78% (12027/15419)Updating files:  79% (12182/15419)Updating files:  80% (12336/15419)Updating files:  81% (12490/15419)Updating files:  82% (12644/15419)Updating files:  83% (12798/15419)Updating files:  84% (12952/15419)Updating files:  85% (13107/15419)Updating files:  86% (13261/15419)Updating files:  87% (13415/15419)Updating files:  88% (13569/15419)Updating files:  89% (13723/15419)Updating files:  90% (13878/15419)Updating files:  91% (14032/15419)Updating files:  92% (14186/15419)Updating files:  93% (14340/15419)Updating files:  94% (14494/15419)Updating files:  95% (14649/15419)Updating files:  96% (14803/15419)Updating files:  97% (14957/15419)Updating files:  98% (15111/15419)Updating files:  99% (15265/15419)Updating files: 100% (15419/15419)Updating files: 100% (15419/15419), done.
+CMake Warning (deprecated) at CMakeLists.txt:22 (cmake_policy):
+  The OLD behavior for policy CMP0109 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- The CXX compiler identification is GNU 15.2.0
+-- The C compiler identification is GNU 15.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Running check for auto-generated files from make-based build system
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3.1")
+-- Looking for C++ include omp.h
+-- Looking for C++ include omp.h - found
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5") found components: CXX
+-- Found GZIP: /usr/bin/gzip
+-- MDI download requested - we will build our own
+-- Generating style headers...
+-- Generating style source files...
+-- Generating package registry...
+-- Generating lmpinstalledpkgs.h...
+-- Found Git: /usr/bin/git (found version "2.53.0")
+-- Found Python3: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/python3.11 (found version "3.11.18") found components: Interpreter
+-- The following tools and libraries have been found and configured:
+ * ZLIB
+ * OpenMP
+ * Git
+ * Python3
+
+-- <<< Build configuration >>>
+   LAMMPS Version:   2026.9.30.0 patch_30Sep2026
+   Operating System: Linux Ubuntu" 26.04
+   CMake Version:    4.4.5
+   Build type:       Release
+   Install path:     /home/WORKSTATION4WSL/.local
+   Generator:        Unix Makefiles using /usr/bin/gmake
+-- Enabled packages: MANYBODY;MDI
+-- <<< Compilers and Flags: >>>
+-- C++ Compiler:     /usr/bin/g++
+      Type:          GNU
+      Version:       15.2.0
+      C++ Standard:  17
+      C++ Flags:     -O3 -DNDEBUG
+      Defines:       LAMMPS_ZLIB;LAMMPS_SMALLBIG;LAMMPS_MEMALIGN=64;LAMMPS_OMP_COMPAT=4;LAMMPS_GZIP;LMP_MDI
+-- C compiler:       /usr/bin/gcc
+      Type:          GNU
+      Version:       15.2.0
+      C Flags:       -O3 -DNDEBUG
+-- <<< Linker flags: >>>
+-- Executable name:  lmp
+-- Static library flags:    
+-- Configuring done (3.6s)
+CMake Warning at CMakeLists.txt:275 (add_executable):
+  Cannot generate a safe runtime search path for target lmp because files in
+  some directories may conflict with libraries in implicit directories:
+
+    runtime library [libgomp.so.1] in /usr/lib/gcc/x86_64-linux-gnu/15 may be hidden by files in:
+      /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/lib
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/lib
+
+  Some of these libraries may not be found correctly.
+
+
+-- Generating done (0.0s)
+-- Build files have been written to: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build
+[  1%] Generating includes/lammps/compute.h
+[  1%] Creating directories for 'mdi_build'
+[  1%] Generating includes/lammps/error.h
+[  1%] Generating includes/lammps/dihedral.h
+[  1%] Generating includes/lammps/domain.h
+[  1%] Generating includes/lammps/platform.h
+[  1%] Generating includes/lammps/force.h
+[  1%] Generating includes/lammps/exceptions.h
+-- Git Directory: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/.git
+[  1%] Generating includes/lammps/group.h
+[  1%] Built target error.h
+[  1%] Built target compute.h
+[  1%] Generating includes/lammps/info.h
+[  1%] Generating includes/lammps/bond.h
+[  1%] Generating includes/lammps/angle.h
+[  2%] Generating includes/lammps/input.h
+[  2%] Generating includes/lammps/fix.h
+[  2%] Built target dihedral.h
+[  2%] Generating includes/lammps/atom.h
+[  2%] Built target force.h
+[  2%] Built target platform.h
+[  2%] Built target exceptions.h
+[  3%] Performing download step (download, verify and extract) for 'mdi_build'
+[  3%] Built target domain.h
+[  3%] Generating includes/lammps/json.h
+-- Generating lmpgitversion.h...
+[  3%] Generating includes/lammps/command.h
+[  4%] Generating includes/lammps/json_fwd.h
+[  4%] Generating includes/lammps/kspace.h
+[  4%] Generating includes/lammps/comm.h
+[  4%] Built target group.h
+[  4%] Generating includes/lammps/citeme.h
+[  5%] Generating includes/lammps/lammps.h
+[  5%] Built target fix.h
+-- Downloading...
+   dst='/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/src/v1.4.26.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/MolSSI-MDI/MDI_Library/archive/v1.4.26.tar.gz'
+[  5%] Built target info.h
+[  5%] Built target input.h
+[  5%] Generating includes/lammps/improper.h
+[  5%] Built target atom.h
+[  5%] Built target angle.h
+[  5%] Built target bond.h
+[  5%] Built target json.h
+[  5%] Generating includes/lammps/region.h
+[  5%] Generating includes/lammps/pointers.h
+[  6%] Generating includes/lammps/timer.h
+[  6%] Built target command.h
+[  6%] Built target kspace.h
+[  6%] Built target json_fwd.h
+[  6%] Built target comm.h
+[  6%] Built target gitversion
+[  6%] Generating includes/lammps/universe.h
+[  6%] Generating includes/lammps/update.h
+[  6%] Generating includes/lammps/utils.h
+[  6%] Built target lammps.h
+[  6%] Built target citeme.h
+[  7%] Generating includes/lammps/variable.h
+[  7%] Built target improper.h
+[  7%] Built target timer.h
+[  7%] Built target region.h
+[  8%] Generating includes/lammps/fmt/format.h
+[  8%] Generating includes/lammps/fmt/core.h
+[  8%] Built target pointers.h
+[  8%] Built target update.h
+[  8%] Built target utils.h
+[  8%] Generating includes/lammps/lattice.h
+[  8%] Built target universe.h
+[  8%] Generating includes/lammps/nlohmann/json.hpp
+[  9%] Generating includes/lammps/lmppython.h
+[  9%] Generating includes/lammps/nlohmann/json_fwd.hpp
+[  9%] Generating includes/lammps/library.h
+[  9%] Built target variable.h
+[  9%] Generating includes/lammps/lmptype.h
+[ 10%] Generating includes/lammps/memory.h
+[ 10%] Generating includes/lammps/neighbor.h
+[ 10%] Generating includes/lammps/modify.h
+[ 10%] Built target fmt_core.h
+[ 10%] Built target fmt_format.h
+[ 10%] Generating includes/lammps/output.h
+[ 11%] Generating includes/lammps/pair.h
+[ 11%] Generating includes/lammps/neigh_list.h
+[ 11%] Built target lattice.h
+[ 11%] Built target json_json_fwd.hpp
+[ 11%] Built target json_json.hpp
+[ 11%] Built target lmppython.h
+[ 11%] Built target lmptype.h
+[ 11%] Built target library.h
+[ 11%] Built target memory.h
+[ 11%] Built target neighbor.h
+[ 11%] Built target modify.h
+[ 11%] Built target output.h
+[ 11%] Built target pair.h
+[ 11%] Built target neigh_list.h
+-- verifying file...
+       file='/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/src/v1.4.26.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/src/v1.4.26.tar.gz'
+     dst='/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/src/mdi_build'
+-- extracting... [tar xf]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 11%] No update step for 'mdi_build'
+[ 11%] No patch step for 'mdi_build'
+[ 11%] Performing configure step for 'mdi_build'
+CMake Warning (deprecated) at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- The C compiler identification is GNU 15.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found Python: /usr/bin/python3.14 (found version "3.14.4") found components: Interpreter Development Development.Module Development.Embed
+Compiling without MPI.
+-- Configuring done (2.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/src/mdi_build-build
+[ 11%] Performing build step for 'mdi_build'
+[ 11%] Building C object MDI_Library/CMakeFiles/mdi.dir/mdi.c.o
+[ 22%] Building C object MDI_Library/CMakeFiles/mdi.dir/mdi_global.c.o
+[ 33%] Building C object MDI_Library/CMakeFiles/mdi.dir/mdi_general.c.o
+[ 44%] Building C object MDI_Library/CMakeFiles/mdi.dir/mdi_tcp.c.o
+[ 55%] Building C object MDI_Library/CMakeFiles/mdi.dir/mdi_mpi.c.o
+[ 66%] Building C object MDI_Library/CMakeFiles/mdi.dir/mdi_test.c.o
+[ 77%] Building C object MDI_Library/CMakeFiles/mdi.dir/mdi_lib.c.o
+[ 88%] Building C object MDI_Library/CMakeFiles/mdi.dir/mdi_plug_py.c.o
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/src/mdi_build/MDI_Library/mdi_general.c: In function ‘general_init’:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/src/mdi_build/MDI_Library/mdi_general.c:320:5: warning: ignoring return value of ‘freopen’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  320 |     freopen(output_file, "w", stdout);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/src/mdi_build/MDI_Library/mdi_general.c:169:60: warning: ‘__builtin___snprintf_chk’ output may be truncated before the last format character [-Wformat-truncation=]
+  169 |       snprintf(this_code->name, strlen(argv[iarg+1])+1, "%s", argv[iarg+1]);
+      |                                                            ^
+In file included from /usr/include/stdio.h:974,
+                 from /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/src/mdi_build/MDI_Library/mdi_general.c:7:
+In function ‘snprintf’,
+    inlined from ‘general_init’ at /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/src/mdi_build/MDI_Library/mdi_general.c:169:7:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: note: ‘__builtin___snprintf_chk’ output between 1 and 257 bytes into a destination of size 256
+   68 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   69 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   70 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/src/mdi_build/MDI_Library/mdi_general.c: In function ‘general_init’:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/src/mdi_build/MDI_Library/mdi_general.c:139:52: warning: ‘__builtin___snprintf_chk’ output may be truncated before the last format character [-Wformat-truncation=]
+  139 |       snprintf(this_code->role, strlen(role)+1, "%s", role);
+      |                                                    ^
+In function ‘snprintf’,
+    inlined from ‘general_init’ at /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/src/mdi_build/MDI_Library/mdi_general.c:139:7:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:68:10: note: ‘__builtin___snprintf_chk’ output between 1 and 257 bytes into a destination of size 256
+   68 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   69 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   70 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+[100%] Linking C static library libmdi.a
+[100%] Built target mdi
+[ 11%] Performing install step for 'mdi_build'
+[100%] Built target mdi
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/include/mdi/mdi.h
+-- Installing: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/lib/mdi/libmdi.a
+-- Installing: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/share/cmake/mdi/mdiConfig.cmake
+-- Installing: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/share/cmake/mdi/mdiConfigVersion.cmake
+-- Installing: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/share/cmake/mdi/mdiTargets.cmake
+-- Installing: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/build/mdi_build_ext/share/cmake/mdi/mdiTargets-release.cmake
+[ 11%] Completed 'mdi_build'
+[ 11%] Built target mdi_build
+[ 11%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/angle.cpp.o
+[ 11%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/angle_hybrid.cpp.o
+[ 11%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/angle_deprecated.cpp.o
+[ 11%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/angle_write.cpp.o
+[ 12%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/angle_zero.cpp.o
+[ 12%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/arg_info.cpp.o
+[ 12%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/atom_map.cpp.o
+[ 12%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/atom.cpp.o
+[ 12%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/atom_vec.cpp.o
+[ 12%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/atom_vec_body.cpp.o
+[ 13%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/atom_vec_atomic.cpp.o
+[ 13%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/atom_vec_sphere.cpp.o
+[ 13%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/atom_vec_hybrid.cpp.o
+[ 14%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/atom_vec_line.cpp.o
+[ 14%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/atom_vec_charge.cpp.o
+[ 14%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/atom_vec_ellipsoid.cpp.o
+[ 14%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/atom_vec_tri.cpp.o
+[ 14%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/bond_hybrid.cpp.o
+[ 14%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/bond_deprecated.cpp.o
+[ 15%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/bond.cpp.o
+[ 15%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/body.cpp.o
+[ 15%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/bond_zero.cpp.o
+[ 15%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/balance.cpp.o
+[ 15%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/change_box.cpp.o
+[ 16%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/citeme.cpp.o
+[ 16%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/comm.cpp.o
+[ 16%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/comm_brick.cpp.o
+[ 16%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/comm_tiled.cpp.o
+[ 16%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute.cpp.o
+[ 17%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_aggregate_atom.cpp.o
+[ 17%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_angle.cpp.o
+[ 17%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_angle_local.cpp.o
+[ 17%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_angmom_chunk.cpp.o
+[ 18%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_bond.cpp.o
+[ 18%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_bond_local.cpp.o
+[ 18%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_centro_atom.cpp.o
+[ 18%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_centroid_stress_atom.cpp.o
+[ 18%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_chunk.cpp.o
+[ 19%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_chunk_atom.cpp.o
+[ 19%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_chunk_spread_atom.cpp.o
+[ 19%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_cluster_atom.cpp.o
+[ 19%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_cna_atom.cpp.o
+[ 19%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_com.cpp.o
+[ 20%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_com_chunk.cpp.o
+[ 20%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_coord_atom.cpp.o
+[ 20%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_count_type.cpp.o
+[ 20%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_deprecated.cpp.o
+[ 21%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_dihedral_local.cpp.o
+[ 21%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_dihedral.cpp.o
+[ 21%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_dipole.cpp.o
+[ 21%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_dipole_chunk.cpp.o
+[ 21%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_displace_atom.cpp.o
+[ 21%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_erotate_sphere.cpp.o
+[ 22%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_erotate_sphere_atom.cpp.o
+[ 22%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_fragment_atom.cpp.o
+[ 22%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_global_atom.cpp.o
+[ 22%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_gyration.cpp.o
+[ 22%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_group_group.cpp.o
+[ 23%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_gyration_chunk.cpp.o
+[ 23%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_heat_flux.cpp.o
+[ 23%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_improper.cpp.o
+[ 23%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_improper_local.cpp.o
+[ 23%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_inertia.cpp.o
+[ 24%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_inertia_chunk.cpp.o
+[ 24%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_ke.cpp.o
+[ 24%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_ke_atom.cpp.o
+[ 24%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_msd.cpp.o
+[ 24%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_msd_chunk.cpp.o
+[ 25%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_omega_chunk.cpp.o
+[ 25%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_orientorder_atom.cpp.o
+[ 25%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_pair.cpp.o
+[ 25%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_pair_local.cpp.o
+[ 25%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_pe.cpp.o
+[ 26%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_pe_atom.cpp.o
+[ 26%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_pressure.cpp.o
+[ 26%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_property_atom.cpp.o
+[ 26%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_property_chunk.cpp.o
+[ 26%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_property_grid.cpp.o
+[ 27%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_property_local.cpp.o
+[ 27%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_reduce_chunk.cpp.o
+[ 27%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_reduce.cpp.o
+[ 27%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_rdf.cpp.o
+[ 27%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_reduce_region.cpp.o
+[ 28%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_slice.cpp.o
+[ 28%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_stress_atom.cpp.o
+[ 28%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_temp.cpp.o
+[ 28%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_temp_chunk.cpp.o
+[ 28%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_temp_com.cpp.o
+[ 29%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_temp_deform.cpp.o
+[ 29%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_temp_partial.cpp.o
+[ 29%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_temp_profile.cpp.o
+[ 29%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_temp_ramp.cpp.o
+[ 30%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_temp_region.cpp.o
+[ 30%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_temp_sphere.cpp.o
+[ 30%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_torque_chunk.cpp.o
+[ 30%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_vacf.cpp.o
+[ 30%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_vacf_chunk.cpp.o
+[ 31%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/compute_vcm_chunk.cpp.o
+[ 31%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/create_atoms.cpp.o
+[ 31%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/create_bonds.cpp.o
+[ 31%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/create_box.cpp.o
+[ 31%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/creator_registry.cpp.o
+[ 32%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/delete_atoms.cpp.o
+[ 32%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/delete_bonds.cpp.o
+[ 32%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/deprecated.cpp.o
+[ 32%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dihedral_deprecated.cpp.o
+[ 32%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dihedral.cpp.o
+[ 33%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dihedral_hybrid.cpp.o
+[ 33%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dihedral_write.cpp.o
+[ 33%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dihedral_zero.cpp.o
+[ 33%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/displace_atoms.cpp.o
+[ 33%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/domain.cpp.o
+[ 34%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dump.cpp.o
+[ 34%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dump_atom.cpp.o
+[ 34%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dump_cfg.cpp.o
+[ 34%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dump_custom.cpp.o
+[ 35%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dump_grid.cpp.o
+[ 35%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dump_deprecated.cpp.o
+[ 35%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dump_grid_vtk.cpp.o
+[ 35%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dump_local.cpp.o
+[ 35%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/dump_xyz.cpp.o
+[ 35%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/error.cpp.o
+[ 35%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix.cpp.o
+[ 36%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/finish.cpp.o
+[ 36%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_adapt.cpp.o
+[ 36%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_addforce.cpp.o
+[ 37%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_ave_chunk.cpp.o
+[ 37%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_ave_atom.cpp.o
+[ 37%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_ave_correlate.cpp.o
+[ 37%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_ave_grid.cpp.o
+[ 37%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_ave_histo.cpp.o
+[ 37%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_ave_histo_weight.cpp.o
+[ 38%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_ave_time.cpp.o
+[ 38%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_aveforce.cpp.o
+[ 38%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_balance.cpp.o
+[ 38%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_bond_history.cpp.o
+[ 38%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_box_relax.cpp.o
+[ 39%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_deform.cpp.o
+[ 39%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_deposit.cpp.o
+[ 39%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_deprecated.cpp.o
+[ 39%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_dt_reset.cpp.o
+[ 39%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_dummy.cpp.o
+[ 40%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_efield.cpp.o
+[ 40%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_enforce2d.cpp.o
+[ 40%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_evaporate.cpp.o
+[ 40%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_external.cpp.o
+[ 40%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_gravity.cpp.o
+[ 41%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_group.cpp.o
+[ 41%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_halt.cpp.o
+[ 41%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_heat.cpp.o
+[ 41%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_indent.cpp.o
+[ 41%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_langevin.cpp.o
+[ 42%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_lineforce.cpp.o
+[ 42%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_minimize.cpp.o
+[ 42%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_momentum.cpp.o
+[ 42%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_move.cpp.o
+[ 43%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_neigh_history.cpp.o
+[ 43%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_nh.cpp.o
+[ 43%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_nh_sphere.cpp.o
+[ 43%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_nph.cpp.o
+[ 43%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_nph_sphere.cpp.o
+[ 44%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_npt.cpp.o
+[ 44%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_npt_sphere.cpp.o
+[ 44%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_nve.cpp.o
+[ 44%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_nve_limit.cpp.o
+[ 44%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_nve_noforce.cpp.o
+[ 44%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_nvt.cpp.o
+[ 45%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_nve_sphere.cpp.o
+[ 45%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_nvt_sllod.cpp.o
+[ 45%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_nvt_sphere.cpp.o
+[ 45%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_pair.cpp.o
+[ 46%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_planeforce.cpp.o
+[ 46%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_press_berendsen.cpp.o
+[ 46%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_press_langevin.cpp.o
+[ 46%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_print.cpp.o
+[ 46%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_property_atom.cpp.o
+[ 47%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_read_restart.cpp.o
+[ 47%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_recenter.cpp.o
+[ 47%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_respa.cpp.o
+[ 47%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_restrain.cpp.o
+[ 47%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_set.cpp.o
+[ 48%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_setforce.cpp.o
+[ 48%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_spring.cpp.o
+[ 48%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_spring_chunk.cpp.o
+[ 48%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_spring_self.cpp.o
+[ 48%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_store_atom.cpp.o
+[ 50%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_store_force.cpp.o
+[ 50%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_store_global.cpp.o
+[ 50%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_store_local.cpp.o
+[ 50%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_store_state.cpp.o
+[ 50%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_temp_berendsen.cpp.o
+[ 51%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_temp_rescale.cpp.o
+[ 51%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_thermal_conductivity.cpp.o
+[ 51%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_vector.cpp.o
+[ 51%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_viscous.cpp.o
+[ 51%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_wall.cpp.o
+[ 52%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_wall_harmonic.cpp.o
+[ 52%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_wall_harmonic_outside.cpp.o
+[ 52%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_wall_lj1043.cpp.o
+[ 52%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_wall_lj126.cpp.o
+[ 52%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_wall_lj93.cpp.o
+[ 53%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_wall_morse.cpp.o
+[ 53%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_wall_reflect.cpp.o
+[ 53%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_wall_region.cpp.o
+[ 53%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fix_wall_table.cpp.o
+[ 53%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fmtlib_format.cpp.o
+[ 54%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/fmtlib_os.cpp.o
+[ 54%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/force.cpp.o
+[ 54%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/grid2d.cpp.o
+[ 54%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/grid3d.cpp.o
+[ 54%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/group.cpp.o
+[ 55%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/imbalance.cpp.o
+[ 55%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/imbalance_group.cpp.o
+[ 55%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/imbalance_neigh.cpp.o
+[ 55%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/imbalance_store.cpp.o
+[ 56%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/imbalance_time.cpp.o
+[ 56%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/imbalance_var.cpp.o
+[ 56%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/improper.cpp.o
+[ 56%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/improper_deprecated.cpp.o
+[ 56%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/improper_hybrid.cpp.o
+[ 56%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/info.cpp.o
+[ 57%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/improper_zero.cpp.o
+[ 57%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/input.cpp.o
+[ 57%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/integrate.cpp.o
+[ 57%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/irregular.cpp.o
+[ 58%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/kspace.cpp.o
+[ 58%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/kspace_deprecated.cpp.o
+[ 58%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/kspace_zero.cpp.o
+[ 58%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/label_map.cpp.o
+[ 59%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/lammps.cpp.o
+[ 59%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/lattice.cpp.o
+[ 59%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/library.cpp.o
+[ 59%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/lmppython.cpp.o
+[ 59%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/math_eigen.cpp.o
+[ 59%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/math_extra.cpp.o
+[ 60%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/math_special.cpp.o
+[ 60%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/memory.cpp.o
+[ 60%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/min.cpp.o
+[ 60%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/min_cg.cpp.o
+[ 60%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/min_deprecated.cpp.o
+[ 61%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/min_fire.cpp.o
+[ 61%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/min_hftn.cpp.o
+[ 61%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/min_linesearch.cpp.o
+[ 61%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/min_quickmin.cpp.o
+[ 61%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/min_sd.cpp.o
+[ 62%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/minimize.cpp.o
+[ 62%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/modify.cpp.o
+[ 62%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/molecule.cpp.o
+[ 62%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/my_page.cpp.o
+[ 62%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/my_pool_chunk.cpp.o
+[ 63%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/nbin.cpp.o
+[ 63%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/nbin_manual.cpp.o
+[ 63%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/nbin_multi.cpp.o
+[ 63%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/nbin_standard.cpp.o
+[ 63%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/neigh_list.cpp.o
+[ 64%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/neigh_request.cpp.o
+[ 64%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/neighbor.cpp.o
+[ 64%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair.cpp.o
+[ 64%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_bin.cpp.o
+[ 64%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_bin_ghost.cpp.o
+[ 65%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_copy.cpp.o
+[ 65%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_halffull.cpp.o
+[ 65%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_multi.cpp.o
+[ 65%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_nsq.cpp.o
+[ 65%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_nsq_ghost.cpp.o
+[ 66%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_respa_bin.cpp.o
+[ 66%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_respa_nsq.cpp.o
+[ 66%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_skip.cpp.o
+[ 66%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_skip_respa.cpp.o
+[ 66%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_skip_size_off2on.cpp.o
+[ 67%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_skip_size_off2on_oneside.cpp.o
+[ 67%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/npair_trim.cpp.o
+[ 67%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/nstencil.cpp.o
+[ 67%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/nstencil_bin.cpp.o
+[ 67%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/nstencil_ghost_bin.cpp.o
+[ 68%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/nstencil_manual.cpp.o
+[ 68%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/nstencil_multi.cpp.o
+[ 68%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/ntopo.cpp.o
+[ 68%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/ntopo_angle_all.cpp.o
+[ 69%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/ntopo_angle_partial.cpp.o
+[ 69%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/ntopo_angle_template.cpp.o
+[ 69%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/ntopo_bond_all.cpp.o
+[ 69%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/ntopo_bond_partial.cpp.o
+[ 69%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/ntopo_bond_template.cpp.o
+[ 70%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/ntopo_dihedral_all.cpp.o
+[ 70%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/ntopo_dihedral_partial.cpp.o
+[ 70%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/ntopo_dihedral_template.cpp.o
+[ 70%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/ntopo_improper_all.cpp.o
+[ 70%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/ntopo_improper_partial.cpp.o
+[ 71%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/ntopo_improper_template.cpp.o
+[ 71%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/output.cpp.o
+[ 71%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair.cpp.o
+[ 71%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_born.cpp.o
+[ 72%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_buck_coul_cut.cpp.o
+[ 72%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_buck.cpp.o
+[ 72%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_coul_cut.cpp.o
+[ 72%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_coul_dsf.cpp.o
+[ 72%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_coul_debye.cpp.o
+[ 72%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_coul_wolf.cpp.o
+[ 73%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_deprecated.cpp.o
+[ 73%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_hybrid.cpp.o
+[ 73%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_hybrid_molecular.cpp.o
+[ 73%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_hybrid_overlay.cpp.o
+[ 73%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_hybrid_scaled.cpp.o
+[ 74%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_lj_cut.cpp.o
+[ 74%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_lj_cut_coul_cut.cpp.o
+[ 74%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_lj_expand.cpp.o
+[ 74%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_morse.cpp.o
+[ 74%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_soft.cpp.o
+[ 75%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_table.cpp.o
+[ 75%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_yukawa.cpp.o
+[ 75%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_zbl.cpp.o
+[ 75%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_zero.cpp.o
+[ 75%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pair_zero_coul.cpp.o
+[ 76%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/platform.cpp.o
+[ 76%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/potential_file_reader.cpp.o
+[ 76%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/procmap.cpp.o
+[ 76%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/random_mars.cpp.o
+[ 76%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/random_park.cpp.o
+[ 77%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/rcb.cpp.o
+[ 77%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/read_data.cpp.o
+[ 77%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/read_dump.cpp.o
+[ 77%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/read_restart.cpp.o
+[ 77%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/reader.cpp.o
+[ 78%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/reader_native.cpp.o
+[ 78%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/reader_xyz.cpp.o
+[ 78%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/region.cpp.o
+[ 78%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/region_block.cpp.o
+[ 78%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/region_cone.cpp.o
+[ 79%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/region_cylinder.cpp.o
+[ 79%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/region_deprecated.cpp.o
+[ 79%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/region_ellipsoid.cpp.o
+[ 79%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/region_intersect.cpp.o
+[ 79%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/region_plane.cpp.o
+[ 80%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/region_prism.cpp.o
+[ 80%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/region_sphere.cpp.o
+[ 80%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/region_union.cpp.o
+[ 80%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/replicate.cpp.o
+[ 81%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/rerun.cpp.o
+[ 81%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/reset_atoms_id.cpp.o
+[ 81%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/reset_atoms_mol.cpp.o
+[ 81%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/reset_atoms_image.cpp.o
+[ 81%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/respa.cpp.o
+[ 82%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/run.cpp.o
+[ 82%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/safe_pointers.cpp.o
+[ 82%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/set.cpp.o
+[ 82%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/special.cpp.o
+[ 82%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/stl_reader.cpp.o
+[ 83%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/table_file_reader.cpp.o
+[ 83%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/tabular_function.cpp.o
+[ 83%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/text_file_reader.cpp.o
+[ 83%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/thermo.cpp.o
+[ 83%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/timer.cpp.o
+[ 84%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/tokenizer.cpp.o
+[ 84%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/universe.cpp.o
+[ 84%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/update.cpp.o
+[ 84%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/utils.cpp.o
+[ 84%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/variable.cpp.o
+[ 85%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/velocity.cpp.o
+[ 85%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/verlet.cpp.o
+[ 85%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/vtk_writer.cpp.o
+[ 85%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/write_coeff.cpp.o
+[ 85%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/write_data.cpp.o
+[ 86%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/write_dump.cpp.o
+[ 86%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/write_molecule.cpp.o
+[ 86%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/write_restart.cpp.o
+[ 86%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/STUBS/mpi.cpp.o
+[ 86%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/fix_qeq_comb.cpp.o
+[ 87%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_adp.cpp.o
+[ 87%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_airebo.cpp.o
+[ 87%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_airebo_bc.cpp.o
+[ 87%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_airebo_morse.cpp.o
+[ 87%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_atm.cpp.o
+[ 88%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_bop.cpp.o
+[ 88%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_comb.cpp.o
+[ 88%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_comb3.cpp.o
+[ 88%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_eam.cpp.o
+[ 88%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_eam_alloy.cpp.o
+[ 89%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_eam_cd.cpp.o
+[ 89%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_eam_fs.cpp.o
+[ 89%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_eam_he.cpp.o
+[ 89%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_edip.cpp.o
+[ 89%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_edip_multi.cpp.o
+[ 90%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_eim.cpp.o
+[ 90%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_extep.cpp.o
+[ 90%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_gw.cpp.o
+[ 90%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_gw_zbl.cpp.o
+[ 90%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_lcbop.cpp.o
+[ 91%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_local_density.cpp.o
+[ 91%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_meam_spline.cpp.o
+[ 91%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_meam_sw_spline.cpp.o
+[ 91%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_nb3b_screened.cpp.o
+[ 91%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_nb3b_harmonic.cpp.o
+[ 92%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_polymorphic.cpp.o
+[ 92%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_rebo.cpp.o
+[ 92%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_rebomos.cpp.o
+[ 92%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_sw.cpp.o
+[ 92%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_sw_angle_table.cpp.o
+[ 93%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_sw_mod.cpp.o
+[ 93%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_tersoff.cpp.o
+[ 93%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_tersoff_mod.cpp.o
+[ 93%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_tersoff_mod_c.cpp.o
+In file included from /usr/include/stdio.h:974,
+                 from /usr/include/c++/15/cstdio:47,
+                 from /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pointers.h:29,
+                 from /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/variable.h:17,
+                 from /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/variable.cpp:14:
+In function ‘char* fgets(char*, int, FILE*)’,
+    inlined from ‘int LAMMPS_NS::VarReader::read_scalar(char*)’ at /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/variable.cpp:5913:18:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:313:26: warning: argument 1 is null but the corresponding size argument 2 value is 256 [-Wnonnull]
+  313 |     return __fgets_alias (__s, __n, __stream);
+      |            ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/features.h:539,
+                 from /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h:727,
+                 from /usr/include/c++/15/cstdint:40,
+                 from /usr/include/c++/15/cinttypes:40,
+                 from /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/lmptype.h:45,
+                 from /home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/pointers.h:25:
+/usr/include/x86_64-linux-gnu/bits/stdio2-decl.h: In member function ‘int LAMMPS_NS::VarReader::read_scalar(char*)’:
+/usr/include/x86_64-linux-gnu/bits/stdio2-decl.h:96:14: note: in a call to function ‘char* __fgets_alias(char*, int, FILE*)’ declared with attribute ‘access (write_only, 1, 2)’
+   96 | extern char *__REDIRECT (__fgets_alias,
+      |              ^~~~~~~~~~
+[ 94%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_tersoff_table.cpp.o
+[ 94%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_tersoff_zbl.cpp.o
+[ 94%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_threebody_table.cpp.o
+[ 94%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_vashishta.cpp.o
+[ 94%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MANYBODY/pair_vashishta_table.cpp.o
+[ 95%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MDI/fix_mdi_engine.cpp.o
+[ 95%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MDI/fix_mdi_qm.cpp.o
+[ 95%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MDI/fix_mdi_qmmm.cpp.o
+[ 95%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MDI/library_mdi.cpp.o
+[ 95%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MDI/mdi_command.cpp.o
+[ 96%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MDI/mdi_engine.cpp.o
+[ 96%] Building CXX object CMakeFiles/lammps.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/MDI/mdi_plugin.cpp.o
+[ 96%] Building CXX object CMakeFiles/lammps.dir/styles/style_pair.cpp.o
+[ 96%] Building CXX object CMakeFiles/lammps.dir/styles/style_bond.cpp.o
+[ 96%] Building CXX object CMakeFiles/lammps.dir/styles/style_angle.cpp.o
+[ 97%] Building CXX object CMakeFiles/lammps.dir/styles/style_dihedral.cpp.o
+[ 97%] Building CXX object CMakeFiles/lammps.dir/styles/style_improper.cpp.o
+[ 97%] Building CXX object CMakeFiles/lammps.dir/styles/style_kspace.cpp.o
+[ 97%] Building CXX object CMakeFiles/lammps.dir/styles/style_fix.cpp.o
+[ 97%] Building CXX object CMakeFiles/lammps.dir/styles/style_compute.cpp.o
+[ 98%] Building CXX object CMakeFiles/lammps.dir/styles/style_integrate.cpp.o
+[ 98%] Building CXX object CMakeFiles/lammps.dir/styles/style_minimize.cpp.o
+[ 98%] Building CXX object CMakeFiles/lammps.dir/styles/style_region.cpp.o
+[ 98%] Building CXX object CMakeFiles/lammps.dir/styles/style_dump.cpp.o
+[ 98%] Building CXX object CMakeFiles/lammps.dir/styles/style_command.cpp.o
+[100%] Building CXX object CMakeFiles/lammps.dir/styles/style_atom.cpp.o
+[100%] Building CXX object CMakeFiles/lammps.dir/styles/style_body.cpp.o
+[100%] Building CXX object CMakeFiles/lammps.dir/styles/style_reader.cpp.o
+[100%] Building CXX object CMakeFiles/lammps.dir/styles/package_registry.cpp.o
+[100%] Linking CXX static library liblammps.a
+[100%] Built target lammps
+[100%] Building CXX object CMakeFiles/lmp.dir/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/src/main.cpp.o
+[100%] Linking CXX executable lmp
+[100%] Built target lmp
+✅ LAMMPS (PKG_MDI=ON) built and installed to /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/bin/lmp
+============================================================
+ 🎉 セットアップ完了！
+  - Python : /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/python3
+  - pw.x   : /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/bin/pw.x
+  - lmp    : /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/bin/lmp
+============================================================

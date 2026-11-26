@@ -1,0 +1,34 @@
+{
+    "cleavage_plane": "10-10",
+    "cleavage_type": "natural_cleavage_sparse_bond",
+    "n_periods": 8,
+    "n_layers": 16,
+    "natoms": 288,
+    "vacuum_thickness_angstrom": 5.0,
+    "supercell_xy": [
+        3,
+        3
+    ],
+    "cell_slab": [
+        9.228,
+        15.144,
+        29.53540130124298
+    ],
+    "cell_bulk": [
+        9.228,
+        15.144,
+        21.311153136327466
+    ],
+    "area_A_angstrom2": 139.748832,
+    "total_area_2A_angstrom2": 279.497664,
+    "unit_conversion_eV_A2_to_J_m2": 16.021766,
+    "effective_denominator": 17.44487243166577,
+    "expected_bulk_energy_eV_approx": -127741.4248,
+    "slab_data_file": "slab_10-10_288atoms_vac5A.data",
+    "bulk_data_file": "bulk_10-10_288atoms_true_bulk.data",
+    "true_bulk_scf_energy_Ry": -9387.69989164,
+    "true_bulk_scf_energy_eV": -127726.1628,
+    "energy_per_atom_eV": -443.493621,
+    "total_force_Ry_au": 0.086008,
+    "total_scf_correction_Ry_au": 0.000458
+}

@@ -1,0 +1,8 @@
+============================================================
+ Starting LAMMPS + QE MDI Slab Relaxation (RTX 5080 / Ultra 9 285K)
+ Model: 2H-SiC {10-10} 2-Periods (72 atoms), Vacuum 5.0 Å
+ Convergence Standard: minimize 1.0e-6 1.0e-2 100 150
+ LAMMPS Binary: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/bin/lmp | TCP Port: 8021
+============================================================
+1. Starting LAMMPS MDI driver...
+2. Starting Python QE MDI engine (RTX 5080)...

@@ -1,0 +1,5 @@
+Command exited with code 0.
+
+Command output:
+N=1 (36 atoms): E_bulk = -15909.6170 eV (-441.9338 eV/atom), Total force = 0.232142 Ry/au
+N=3 (108 atoms): E_bulk = -47898.6918 eV (-443.5064 eV/atom), Total force = 0.045975 Ry/au

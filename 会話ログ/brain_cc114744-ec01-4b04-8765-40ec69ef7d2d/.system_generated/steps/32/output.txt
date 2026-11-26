@@ -1,0 +1,23 @@
+Command exited with code 0.
+
+Command output:
+total 15044
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:24 計算成果物・解析データ・グラフ
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:24 環境設定・フォント
+drwxrwxrwx  4 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:24 学習内容と運用ルール
+drwxrwxrwx 20 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:24 各条件の計算ディレクトリ
+drwxrwxrwx  4 WORKSTATION4WSL WORKSTATION4WSL    12288 Nov  5 03:24 プログラム・解析スクリプト
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:24 会話ログ
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:24 学習プロポーザル全世代集（v1〜v9）
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    50489 Nov  5 03:17 周期数と表面破壊エネルギーの関係.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    28442 Nov  5 03:17 周期数と表面破壊エネルギーの関係_word_8cm.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    90486 Nov  5 03:17 周期数と表面破壊エネルギーの関係.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    50840 Nov  5 03:17 周期数と表面破壊エネルギーの関係_word_8cm.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   134363 Nov  5 03:17 周期数と表面破壊エネルギーの関係_word_8cm.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    48036 Nov  5 03:17 surface_energy_vs_vacuum_word_12A.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    28900 Nov  5 03:17 surface_energy_vs_vacuum_word_12A.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    88348 Nov  5 03:17 surface_energy_vs_periods_vac5A.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    27033 Nov  5 03:17 surface_energy_vs_periods_vac5A.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    47167 Nov  5 03:17 test_word_8cm_16A.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     9440 Nov  5 03:17 test_font.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    28964 Nov  5 03:17 surface_energy_vs_vacuum_word_16A.pdf

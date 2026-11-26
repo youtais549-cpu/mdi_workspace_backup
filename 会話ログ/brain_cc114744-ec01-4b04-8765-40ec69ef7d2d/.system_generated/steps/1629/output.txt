@@ -1,0 +1,8 @@
+Created At: 2026-11-26T13:38:16+09:00
+Completed At: 2026-11-26T13:38:17+09:00
+Command exited with code 0.
+
+Command output:
+ls: cannot access '/home/WORKSTATION4WSL/.gemini/antigravity/.git': No such file or directory
+ls: cannot access '/home/WORKSTATION4WSL/.gemini/antigravity/scratch/.git': No such file or directory
+ls: cannot access '/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/.git': No such file or directory

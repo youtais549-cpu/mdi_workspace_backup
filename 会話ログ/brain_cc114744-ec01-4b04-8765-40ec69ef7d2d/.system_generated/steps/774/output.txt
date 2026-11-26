@@ -1,0 +1,4 @@
+Command exited with code 0.
+
+Command output:
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 26379 Nov  8 23:07 run_periods_sweep_1_to_10.py

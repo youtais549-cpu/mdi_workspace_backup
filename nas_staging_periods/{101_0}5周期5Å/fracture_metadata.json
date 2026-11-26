@@ -1,0 +1,39 @@
+{
+    "model_name": "2H-SiC_10-10_5periods_vac5A",
+    "plane": "{10-10}",
+    "n_periods": 5,
+    "n_layers": 10,
+    "n_atoms": 180,
+    "vacuum_thickness_angstrom": 5.0,
+    "box_lx_ly_lz_A": [
+        9.228,
+        15.144,
+        21.5437
+    ],
+    "cross_sectional_area_2A_A2": 279.497664,
+    "true_bulk_scf_energy_Ry": -5867.27042866,
+    "true_bulk_scf_energy_eV": -79828.2809,
+    "convergence_settings": "minimize 1.0e-6 1.0e-2 100 150",
+    "dft_settings": {
+        "ecutwfc_Ry": 40.0,
+        "ecutrho_Ry": 320.0,
+        "conv_thr_Ry": 1e-05,
+        "k_points": "gamma",
+        "mixing_beta": 0.3
+    },
+    "target_nas_folder": "{101_0}5周期5Å",
+    "created_at": "2026-11-08T23:39:10.597423",
+    "relaxed_slab_energy_eV": -79787.7398,
+    "delta_energy_eV": 40.5411,
+    "surface_fracture_energy_J_m2": 2.324,
+    "diff_percent": 2.4,
+    "bulk_elapsed_seconds": 63.6,
+    "slab_elapsed_seconds": 1633.8,
+    "total_elapsed_seconds": 1697.4,
+    "n_scf_steps": 10,
+    "bulk_cell_vector_v3_A": [
+        -1.538,
+        0.0,
+        13.3195
+    ]
+}

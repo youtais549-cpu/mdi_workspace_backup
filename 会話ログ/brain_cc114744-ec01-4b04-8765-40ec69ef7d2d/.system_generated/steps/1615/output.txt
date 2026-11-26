@@ -1,0 +1,14 @@
+Created At: 2026-11-26T13:36:50+09:00
+Completed At: 2026-11-26T13:36:54+09:00
+Command exited with code 0.
+
+Command output:
+DETECTED restart.350! Size: 26327
+[QE-MDI Engine] --- [Step 349] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9088A, z_max=24.6070A, gap=9.8372A) ---
+[QE-MDI Engine] --- [Step 349] Done in 723.71s (25 SCF iters) | E_pot: -127673.0071 eV | Fmax: 3.35924 eV/A | gap: 9.8372 A ---
+[QE-MDI Engine] --- [Step 350] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9075A, z_max=24.6035A, gap=9.8394A) ---
+[QE-MDI Engine] --- [Step 350] Done in 736.59s (25 SCF iters) | E_pot: -127672.8659 eV | Fmax: 3.22966 eV/A | gap: 9.8394 A ---
+[QE-MDI Engine] --- [Step 351] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9074A, z_max=24.5993A, gap=9.8434A) ---
+       348   277.49795      0              0              10.294525     -127673.21     -127662.92      2664.0008      3.3092121      23.494872    
+       349   271.98043      0              0              10.089838     -127673.01     -127662.92      2611.0322      3.2377496      23.622222    
+       350   268.1602       0              0              9.9481163     -127672.87     -127662.92      2574.3577      3.1300576      23.699403    

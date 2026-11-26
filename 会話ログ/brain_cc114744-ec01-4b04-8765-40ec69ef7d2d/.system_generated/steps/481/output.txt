@@ -1,0 +1,26 @@
+Command exited with code 0.
+
+Command output:
+COMMAND    PID            USER  FD   TYPE DEVICE SIZE/OFF    NODE NAME
+bash    333485 WORKSTATION4WSL cwd    DIR   8,48    20480   94863 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup
+bash    333485 WORKSTATION4WSL rtd    DIR   8,48     4096       2 /
+bash    333485 WORKSTATION4WSL txt    REG   8,48  1540520    1466 /usr/bin/bash
+bash    333485 WORKSTATION4WSL mem    REG   8,48  2190608   13611 /usr/lib/x86_64-linux-gnu/libc.so.6
+bash    333485 WORKSTATION4WSL mem    REG   8,48   369120   13653 /usr/lib/locale/C.utf8/LC_CTYPE
+bash    333485 WORKSTATION4WSL mem    REG   8,48       50   13659 /usr/lib/locale/C.utf8/LC_NUMERIC
+bash    333485 WORKSTATION4WSL mem    REG   8,48     3360   13662 /usr/lib/locale/C.utf8/LC_TIME
+bash    333485 WORKSTATION4WSL mem    REG   8,48     1406   13652 /usr/lib/locale/C.utf8/LC_COLLATE
+bash    333485 WORKSTATION4WSL mem    REG   8,48      270   13657 /usr/lib/locale/C.utf8/LC_MONETARY
+bash    333485 WORKSTATION4WSL mem    REG   8,48       48   13656 /usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+bash    333485 WORKSTATION4WSL mem    REG   8,48    27028   13607 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+bash    333485 WORKSTATION4WSL mem    REG   8,48   212504   14481 /usr/lib/x86_64-linux-gnu/libtinfo.so.6.6
+bash    333485 WORKSTATION4WSL mem    REG   8,48       34   13660 /usr/lib/locale/C.utf8/LC_PAPER
+bash    333485 WORKSTATION4WSL mem    REG   8,48       62   13658 /usr/lib/locale/C.utf8/LC_NAME
+bash    333485 WORKSTATION4WSL mem    REG   8,48      127   13651 /usr/lib/locale/C.utf8/LC_ADDRESS
+bash    333485 WORKSTATION4WSL mem    REG   8,48       47   13661 /usr/lib/locale/C.utf8/LC_TELEPHONE
+bash    333485 WORKSTATION4WSL mem    REG   8,48       23   13655 /usr/lib/locale/C.utf8/LC_MEASUREMENT
+bash    333485 WORKSTATION4WSL mem    REG   8,48      258   13654 /usr/lib/locale/C.utf8/LC_IDENTIFICATION
+bash    333485 WORKSTATION4WSL mem    REG   8,48   254864   13608 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+bash    333485 WORKSTATION4WSL   0r  FIFO   0,15      0t0 7905002 pipe
+bash    333485 WORKSTATION4WSL   1w  FIFO   0,15      0t0 7905003 pipe
+bash    333485 WORKSTATION4WSL   2w  FIFO   0,15      0t0 7905004 pipe

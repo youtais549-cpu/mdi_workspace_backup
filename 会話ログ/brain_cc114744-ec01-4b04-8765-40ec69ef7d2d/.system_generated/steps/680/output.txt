@@ -1,0 +1,26 @@
+Command exited with code 0.
+
+Command output:
+164-    if is_gpu_binary:
+165-        os.environ.setdefault("OMP_NUM_THREADS", os.environ.get("QE_OMP_THREADS", "8"))
+166-        cmd = f"{pw_bin} -ndiag 1"
+167-        log(f"Detected GPU-accelerated pw.x: {cmd} (OMP_NUM_THREADS={os.environ['OMP_NUM_THREADS']})")
+168-        return cmd
+169-    else:
+170-        # Core Ultra 9 285K (24コア) を最大限活用: 12 MPI × 2 OpenMP = 24 threads
+171-        mpi_np = int(os.environ.get("QE_MPI_NP", "12"))
+172-        omp_threads = os.environ.get("QE_OMP_THREADS", "2")
+173-        os.environ["OMP_NUM_THREADS"] = omp_threads
+174:        mpirun_bin = shutil.which("mpirun") or "/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun"
+175:        if mpirun_bin and os.path.exists(mpirun_bin) and mpi_np > 1:
+176:            cmd = f"{mpirun_bin} --oversubscribe -np {mpi_np} {pw_bin} -ndiag 1"
+177-        else:
+178-            cmd = f"{pw_bin} -ndiag 1"
+179-        log(f"Detected CPU/MPI pw.x: {cmd} (MPI_NP={mpi_np}, OMP_NUM_THREADS={omp_threads})")
+180-        return cmd
+181-
+182-
+183-def load_dft_config():
+184-    """外部の dft_settings.py から DFT 条件を動的に読み込み"""
+185-    default_config = {
+186-        'ecutwfc': 40.0,

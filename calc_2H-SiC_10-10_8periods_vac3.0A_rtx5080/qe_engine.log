@@ -1,0 +1,12 @@
+[QE-MDI Engine] Initializing MDI Engine with options: -role ENGINE -name QE -method TCP -port 8038 -hostname localhost
+[QE-MDI Engine] Waiting for MDI driver connection...
+[QE-MDI Engine] Connected to MDI driver! Entering communication loop...
+[QE-MDI Engine] Received >NATOMS: 288
+[QE-MDI Engine] --- [Step 0] Starting SCF (288 atoms, startingpot/wfc=atomic, z_min=3.0613A, z_max=22.4741A, gap=6.1226A) ---
+[QE-MDI Engine] --- [Step 0] Done in 394.65s (20 SCF iters) | E_pot: -127685.1198 eV | Fmax: 0.17182 eV/A | gap: 6.1226 A ---
+[QE-MDI Engine] --- [Step 1] Starting SCF (288 atoms, startingpot/wfc=file, z_min=3.0140A, z_max=22.5214A, gap=6.0280A) ---
+[QE-MDI Engine] --- [Step 1] Done in 431.80s (18 SCF iters) | E_pot: -127673.3848 eV | Fmax: 4.95072 eV/A | gap: 6.0280 A ---
+[QE-MDI Engine] --- [Step 2] Starting SCF (288 atoms, startingpot/wfc=file, z_min=3.0592A, z_max=22.4762A, gap=6.1183A) ---
+[QE-MDI Engine] --- [Step 2] Done in 423.51s (19 SCF iters) | E_pot: -127685.1493 eV | Fmax: 0.09103 eV/A | gap: 6.1183 A ---
+[QE-MDI Engine] Received EXIT command from driver.
+[QE-MDI Engine] MDI Engine execution terminated cleanly.

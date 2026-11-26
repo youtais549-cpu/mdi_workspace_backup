@@ -1,0 +1,26 @@
+Created At: 2026-11-23T02:54:02+09:00
+Completed At: 2026-11-23T02:54:04+09:00
+Command exited with code 0.
+
+Command output:
+[QE-MDI Engine] --- [Step 96] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127673.8603 eV | Fmax: 3.59771 eV/A | gap: 5.9603 A ---
+[QE-MDI Engine] --- [Step 97] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127673.9360 eV | Fmax: 3.33206 eV/A | gap: 5.9588 A ---
+[QE-MDI Engine] --- [Step 98] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127673.9737 eV | Fmax: 3.25253 eV/A | gap: 5.9586 A ---
+[QE-MDI Engine] --- [Step 99] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127673.9763 eV | Fmax: 3.10540 eV/A | gap: 5.9595 A ---
+[QE-MDI Engine] --- [Step 100] Done in 0.00s (18 SCF iters) [RESTORED CACHE] | E_pot: -127673.9548 eV | Fmax: 2.89653 eV/A | gap: 5.9614 A ---
+[QE-MDI Engine] --- [Step 101] Starting SCF (288 atoms, startingpot/wfc=file, z_min=2.9985A, z_max=22.5699A, gap=5.9641A) ---
+
+     total energy              =   -9383.97013258 Ry
+     estimated scf accuracy    <       0.64123685 Ry
+
+     iteration #  2     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  5.57E-05,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is       48.9 secs
+
+     total energy              =   -9383.79098832 Ry
+     estimated scf accuracy    <       0.45836729 Ry
+
+     iteration #  3     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap

@@ -1,0 +1,55 @@
+LAMMPS (30 Sep 2026)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (0 0 0) to (9.228 15.144 25.535401)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  288 atoms
+  read_data CPU = 0.001 seconds
+Setting up cg style minimization ...
+  Unit style    : metal
+  Current step  : 0
+WARNING: No pairwise cutoff or binsize set. Atom sorting therefore disabled. (src/atom.cpp:2486)
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+Per MPI rank memory allocation (min/avg/max) = 3.454 | 3.454 | 3.454 Mbytes
+   Step          Temp          PotEng         TotEng         Press           Fmax          Fnorm     
+         0   0             -127685.12     -127685.12      0              0.17122981     1.4406788    
+         1   0             -127685.15     -127685.15      0              0.083758313    0.84133628   
+Loop time of 855.76 on 1 procs for 1 steps with 288 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+     -127685.119752287  -127685.119752287  -127685.149336095
+  Force two-norm initial, final = 1.4406788 0.84133628
+  Force max component initial, final = 0.17122981 0.083758313
+  Final line search alpha, max atom move = 0.58401045 0.04891573
+  Iterations, force evaluations = 1 2
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 6.432e-06  | 6.432e-06  | 6.432e-06  |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 855.76     | 855.76     | 855.76     |   0.0 |100.00
+Other   |            | 0.0004851  |            |       |  0.00
+
+Nlocal:            288 ave         288 max         288 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+System init for write_data ...
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+Total wall time: 0:20:53

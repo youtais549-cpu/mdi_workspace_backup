@@ -1,0 +1,19 @@
+Command exited with code 0.
+
+Command output:
+============================================================
+ Starting 2H-SiC Bulk 1-Point SCF Verification (72 atoms)
+ Hardware: Core Ultra 9 285K / RAM 64GB / RTX 5080 16GB
+ Using pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/bin/pw.x
+============================================================
+name, driver_version, memory.total [MiB], temperature.gpu, power.draw [W]
+NVIDIA GeForce RTX 5080, 595.79, 16303 MiB, 50, 47.75 W
+[MPI Mode] Running: mpirun -np 8 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/bin/pw.x -ndiag 1 < espresso_bulk_scf.pwi > espresso_bulk_scf.pwo
+============================================================
+ Bulk SCF Finished in 97s!
+!    total energy              =   -2347.20460730 Ry
+     Total force =     0.056746     Total SCF correction =     0.001022
+------------------------------------------------------------
+ [検証基準値 (T4 GPU 確定値)]
+   E_bulk = -2347.1950 Ry = -31,935.3562 eV (-443.5466 eV/atom)
+============================================================

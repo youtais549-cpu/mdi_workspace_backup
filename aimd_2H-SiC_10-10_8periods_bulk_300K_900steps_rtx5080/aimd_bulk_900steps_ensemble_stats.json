@@ -1,0 +1,73 @@
+{
+    "natoms": 288,
+    "n_periods": 8,
+    "target_temp_K": 300.0,
+    "total_steps": 900,
+    "bulk_0K_scf_energy_eV": -127726.1628,
+    "ensemble_all_0_to_900": {
+        "window": "Step 0..900 (901 points)",
+        "temp_mean_K": 259.1273465205327,
+        "temp_std_K": 61.6512193156474,
+        "etotal_mean_eV": -127706.90912319646,
+        "etotal_std_eV": 4.30884169670763,
+        "pe_mean_eV": -127716.5219200888,
+        "pe_std_eV": 2.328664876928748,
+        "ke_mean_eV": 9.61301861342952,
+        "ke_std_eV": 2.2871160656132354
+    },
+    "ensemble_phase1_0_to_300": {
+        "window": "Step 0..300 (301 points)",
+        "temp_mean_K": 185.78210034883722,
+        "temp_std_K": 38.24175587628307,
+        "etotal_mean_eV": -127712.41548172758,
+        "etotal_std_eV": 1.8689790194776257,
+        "pe_mean_eV": -127719.30757475086,
+        "pe_std_eV": 1.434482009799566,
+        "ke_mean_eV": 6.892081489036544,
+        "ke_std_eV": 1.418679706814981
+    },
+    "ensemble_phase2_300_to_600": {
+        "window": "Step 300..600 (301 points)",
+        "temp_mean_K": 283.89057777408635,
+        "temp_std_K": 30.598011760801324,
+        "etotal_mean_eV": -127705.05604651161,
+        "etotal_std_eV": 1.9993021999870588,
+        "pe_mean_eV": -127715.58734219271,
+        "pe_std_eV": 1.1585439850499533,
+        "ke_mean_eV": 10.531676597009966,
+        "ke_std_eV": 1.1351146901183176
+    },
+    "ensemble_phase3_600_to_900": {
+        "window": "Step 600..900 (301 points)",
+        "temp_mean_K": 307.9234345182724,
+        "temp_std_K": 24.9823669450246,
+        "etotal_mean_eV": -127703.24667774087,
+        "etotal_std_eV": 1.001153284702659,
+        "pe_mean_eV": -127714.66963455151,
+        "pe_std_eV": 0.8872426580266307,
+        "ke_mean_eV": 11.423239366777409,
+        "ke_std_eV": 0.9267873650585795
+    },
+    "ensemble_equil_400_to_900": {
+        "window": "Step 400..900 (501 points)",
+        "temp_mean_K": 304.6467446706587,
+        "temp_std_K": 24.14656502551424,
+        "etotal_mean_eV": -127703.49253493013,
+        "etotal_std_eV": 1.1052327729094855,
+        "pe_mean_eV": -127714.79399201597,
+        "pe_std_eV": 0.8769706249255567,
+        "ke_mean_eV": 11.30168184271457,
+        "ke_std_eV": 0.895781081580741
+    },
+    "ensemble_equil_500_to_900": {
+        "window": "Step 500..900 (401 points)",
+        "temp_mean_K": 309.16530291770573,
+        "temp_std_K": 22.608078641415343,
+        "etotal_mean_eV": -127703.15294264337,
+        "etotal_std_eV": 0.9090143296850228,
+        "pe_mean_eV": -127714.62194513717,
+        "pe_std_eV": 0.811317519033896,
+        "ke_mean_eV": 11.469309786533666,
+        "ke_std_eV": 0.8387068270239585
+    }
+}

@@ -1,0 +1,47 @@
+Created At: 2026-11-26T13:34:50+09:00
+Completed At: 2026-11-26T13:34:54+09:00
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity:
+total 16
+drwxrwxrwx 9 WORKSTATION4WSL WORKSTATION4WSL  180 Nov 26 13:34 .
+dr-xr-xr-x 5 WORKSTATION4WSL WORKSTATION4WSL  100 Nov 26 13:34 ..
+drwxr-xr-x 2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov 11 12:55 bin
+dr-xr-xr-x 3 WORKSTATION4WSL WORKSTATION4WSL   60 Nov 26 13:34 brain
+drwxr-xr-x 4 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov 11 12:55 builtin
+drwxrwxrwx 2 WORKSTATION4WSL WORKSTATION4WSL   40 Nov 26 13:34 conversations
+drwxrwxrwx 2 WORKSTATION4WSL WORKSTATION4WSL   40 Nov 26 13:34 persistent_terminals
+drwxr-xr-x 3 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  6 11:48 plugin_data
+drwxr-xr-x 9 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 18:53 scratch
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch:
+total 11164
+drwxr-xr-x  9 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 18:53 .
+drwxrwxrwx  9 WORKSTATION4WSL WORKSTATION4WSL      180 Nov 26 13:34 ..
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:24 .agent
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:24 .agents
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:31 .vscode
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    16380 Nov  5 13:43 AGENTS.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL      364 Nov  5 13:43 GEMINI.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     3274 Nov  5 03:17 GRAPH_STYLE_SPEC.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     2104 Nov  5 03:17 RELAXATION_GRAPH_PROTOCOL.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     7479 Nov  5 13:43 RESTORE_INSTRUCTIONS_20261025.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     9088 Nov  5 03:17 SURFACE_ENERGY_RESULTS.md
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     9434 Nov  5 03:17 auto_generate_progression_graphs.py
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 18:53 lammps_mdi_build
+drwxr-xr-x 14 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 18:53 mdi_env_rtx5080
+drwxrwxrwx 78 WORKSTATION4WSL WORKSTATION4WSL    24576 Nov 24 19:12 mdi_workspace_backup
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 18:43 micromamba
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL 10091072 Nov  5 03:17 msmincho.ttc
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1856 Nov  5 03:17 surface_energy_results.csv
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL  1190736 Nov  5 03:17 times.ttf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     7896 Nov  5 03:17 学習内容と知見の全体総括.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    13454 Nov  5 03:17 環境構築およびデータ復旧指示書.txt
+17M	/home/WORKSTATION4WSL/.gemini/antigravity/bin
+37M	/home/WORKSTATION4WSL/.gemini/antigravity/brain
+692K	/home/WORKSTATION4WSL/.gemini/antigravity/builtin
+0	/home/WORKSTATION4WSL/.gemini/antigravity/conversations
+0	/home/WORKSTATION4WSL/.gemini/antigravity/persistent_terminals
+8.0K	/home/WORKSTATION4WSL/.gemini/antigravity/plugin_data
+15G	/home/WORKSTATION4WSL/.gemini/antigravity/scratch

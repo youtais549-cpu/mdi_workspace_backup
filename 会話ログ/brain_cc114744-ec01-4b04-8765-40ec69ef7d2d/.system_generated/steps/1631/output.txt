@@ -1,0 +1,6 @@
+Created At: 2026-11-26T13:38:25+09:00
+Completed At: 2026-11-26T13:38:27+09:00
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build/lammps/.git

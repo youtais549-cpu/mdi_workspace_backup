@@ -1,0 +1,7 @@
+Created At: 2026-11-13T14:42:16+09:00
+Completed At: 2026-11-13T14:42:17+09:00
+Command exited with code 0.
+
+Command output:
+calc_2H-SiC_10-10_8periods_true_bulk_scf
+calc_2H-SiC_10-10_8periods_vac5A_natural_cleavage

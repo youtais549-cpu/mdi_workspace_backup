@@ -1,0 +1,6 @@
+Created At: 2026-11-23T00:17:18+09:00
+Completed At: 2026-11-23T00:17:18+09:00
+Command exited with code 127.
+
+Command output:
+bash: line 1: jq: command not found

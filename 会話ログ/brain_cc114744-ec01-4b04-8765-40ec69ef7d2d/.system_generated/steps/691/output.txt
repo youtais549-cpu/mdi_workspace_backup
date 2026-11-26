@@ -1,0 +1,64 @@
+Command exited with code 0.
+
+Command output:
+
+    pe_ev = atoms.get_potential_energy()
+    forces_ev_angstrom = atoms.get_forces()
+    elapsed = time.time() - t0
+
+    # 各ステップの espresso.pwo を履歴ファイルにも追記保存（全ステップの Total force / SCF correction 追跡用）
+    if os.path.exists("espresso.pwo"):
+        with open("espresso.pwo", "r", encoding="utf-8", errors="ignore") as f_in:
+            pwo_text = f_in.read()
+        with open("espresso_all_steps.pwo", "a", encoding="utf-8") as f_out:
+            f_out.write(f"\n=== STEP {step_counter} ===\n")
+            f_out.write(pwo_text)
+
+    fmax_ev_ang = float(np.max(np.linalg.norm(forces_ev_angstrom, axis=1)))
+    qm_pe = pe_ev * ev_to_hartree
+    qm_forces = forces_ev_angstrom * force_conv
+
+    # auto_generate_progression_graphs.py 互換フォーマットでログ出力
+    log(
+        f"--- Step Done in {elapsed:.2f}s! Total Energy: {pe_ev:.4f} eV "
+        f"({qm_pe:.6f} Hartree) | Fmax: {fmax_ev_ang:.5f} eV/A | {query_rtx5080_status()} ---"
+    )
+    last_evaluated_coords = np.copy(qm_coords)
+    step_counter += 1
+
+
+def execute_command(command, mdicomm, object_ptr):
+    global exitflag
+    if command == "EXIT":
+        log("Received EXIT command from driver.")
+        exitflag = True
+    elif command == ">NATOMS":
+        receive_qm_natoms(mdicomm)
+    elif command == ">CELL":
+        receive_box(mdicomm)
+    elif command == ">ELEMENTS":
+        receive_qm_elements(mdicomm)
+    elif command == ">TYPES":
+        receive_qm_types(mdicomm)
+    elif command == ">COORDS":
+        receive_qm_coords(mdicomm)
+    elif command in ["<ENERGY", "<PE"]:
+        evaluate()
+        ierr = mdi.MDI_Send(qm_pe, 1, mdi.MDI_DOUBLE, mdicomm)
+        if ierr:
+            error("MDI: <ENERGY send failed")
+    elif command == "<FORCES":
+        evaluate()
+        ierr = mdi.MDI_Send(qm_forces, 3 * qm_natoms, mdi.MDI_DOUBLE, mdicomm)
+        if ierr:
+            error("MDI: <FORCES send failed")
+    else:
+        error(f"Unrecognized MDI command: {command}")
+    return 0
+
+
+if __name__ == "__main__":
+    configure_rtx5080_environment()
+
+    args = sys.argv
+    mdi_option = ""

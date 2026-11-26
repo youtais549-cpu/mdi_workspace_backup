@@ -1,0 +1,20 @@
+Command exited with code 0.
+
+Command output:
+total 16
+drwxrwxrwt 13 root            root             320 Nov  6 17:59 .
+drwx------  2 WORKSTATION4WSL WORKSTATION4WSL   60 Nov  6 17:59 agy-plugin-cli-560592165
+drwxr-xr-x  4 WORKSTATION4WSL WORKSTATION4WSL  160 Nov  6 17:58 ompi.20143
+-rw-------  1 WORKSTATION4WSL WORKSTATION4WSL  270 Nov  6 17:42 tmp0a7fxt_s.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   73 Nov  6 16:09 Modelfile32
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  261 Nov  6 15:58 Modelfile
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL   60 Nov  6 15:13 matplotlib_cache_sic
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL   60 Nov  6 13:40 data-gym-cache
+drwx------  3 root            root              60 Nov  6 06:48 systemd-private-8c20491c015f4d9190ec9a19b1986235-polkit.service-J0xRRo
+drwxr-xr-x  4 WORKSTATION4WSL WORKSTATION4WSL  160 Nov  5 19:08 ompi.223
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL   40 Nov  5 14:11 cline
+drwx------  3 root            root              60 Nov  5 14:02 systemd-private-8c20491c015f4d9190ec9a19b1986235-systemd-logind.service-0hHAyp
+drwx------  3 root            root              60 Nov  5 14:02 systemd-private-8c20491c015f4d9190ec9a19b1986235-chrony.service-T6QDhX
+drwx------  2 root            root              40 Nov  5 14:02 snap-private-tmp
+drwxr-xr-x 19 root            root            4096 Nov  5 14:02 ..
+drwxrwxrwx  2 root            root              60 Nov  5 14:02 .X11-unix

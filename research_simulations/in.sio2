@@ -1,0 +1,25 @@
+# --- SiO2 ReaxFF 計算レシピ ---
+
+# 1. 基本設定
+units           real
+atom_style      charge
+
+# 2. 構造データの読み込み（あなたが作ったファイル名を指定）
+read_data       sio2.lmp
+
+# 3. ReaxFFの物理法則を読み込む
+pair_style      reaxff NULL
+pair_coeff      * * ffield.reax Si O
+
+# 4. 電荷計算の設定（ReaxFFでは必須の設定です）
+fix             1 all qeq/reax 1 0.0 10.0 1e-6 reaxff
+
+# 5. シミュレーションの条件設定（温度300KでNVTアンサンブル）
+fix             2 all nvt temp 300.0 300.0 100.0
+
+# 6. 結果を画面に出す設定
+thermo          10
+thermo_style    custom step temp press etotal
+
+# 7. 計算実行（1000ステップ実行します）
+run             1000

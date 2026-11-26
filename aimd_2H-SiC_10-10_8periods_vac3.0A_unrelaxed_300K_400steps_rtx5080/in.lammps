@@ -1,0 +1,53 @@
+# ==============================================================================
+# 2H-SiC {10-10} 8周期 (16層, 288原子) スラブモデル (真空層 各3.0Å, ギャップ 6.0Å)
+# 【構造最適化なし (未緩和初期構造)】300K NVT 第一原理分子動力学:
+# Step 100 からの完全引き継ぎ追加 300 steps (通算 400 steps = 400 fs = 0.4 ps)
+# ==============================================================================
+units           metal
+dimension       3
+boundary        p p p
+atom_style      atomic
+atom_modify     map yes
+
+# 1. 初期構造の読み込み (8周期・真空3.0Å の 0K 構造最適化を行っていない理想切断スラブ構造)
+read_data       slab_10-10_288atoms_vac3.0A_unrelaxed.data
+
+# 原子質量設定 (Rule 2: Type 1: C = 12.011, Type 2: Si = 28.085)
+mass            1 12.011
+mass            2 28.085
+
+pair_style      none
+
+# 2. MDI 通信設定 (Quantum ESPRESSO を第一原理 QM エンジンとして連成)
+fix             1 all mdi/qm elements C Si
+
+# 3. 初期熱運動速度の付与 (Maxwell-Boltzmann 分布 @ 300K, 同一乱数シード 87654)
+velocity        all create 300.0 87654 mom yes rot yes dist gaussian
+
+# 4. 運動方程式の数値積分 & サーモスタット設定 (NVT アンサンブル @ 300K)
+timestep        0.001
+fix             2 all nvt temp 300.0 300.0 0.1
+
+# 5. スラブ特有の重心ドリフト防止 (50ステップごとに全並進運動量をゼロにリセット)
+fix             3 all momentum 50 linear 1 1 1
+
+# 6. 出力設定 & ログ記録
+thermo_style    custom step temp epair emol ke pe etotal press fmax fnorm
+thermo          1
+thermo_modify   flush yes
+
+dump            1 all custom 1 dump.lammpstrj id type x y z vx vy vz fx fy fz
+dump_modify     1 sort id flush yes
+
+# 7. Step 0..100 をキャッシュリプレイして位置・速度・熱浴内部変数を100%完全復元し、チェックポイントを出力
+run             100
+write_restart   restart.slab_unrelaxed_100steps_restored
+write_data      slab_10-10_288atoms_vac3.0A_unrelaxed_aimd_100steps_restored_check.data
+
+# 8. Step 101..400 の追加 300 ステップを実機 QE GPU SCF (Step 100 の波動関数・電荷密度引き継ぎ) で連続実行
+restart         50 restart.slab_unrelaxed_step
+run             300
+
+write_restart   restart.slab_unrelaxed_400steps_final
+write_data      slab_10-10_288atoms_vac3.0A_unrelaxed_aimd_400steps_final.data
+undump          1

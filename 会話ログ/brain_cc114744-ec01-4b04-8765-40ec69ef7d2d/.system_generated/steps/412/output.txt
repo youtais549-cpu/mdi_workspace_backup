@@ -1,0 +1,24 @@
+Command exited with code 0.
+
+Command output:
+[Step 1] Staging files to /mnt/c/temp_sic_sync/stage_8periods ...
+[Step 2] Copying to \\192.168.12.69\Results\yamazaki\research\{101_0}8周期５Å ...
+TARGET_DIR=\\192.168.12.69\Results\yamazaki\research\{101_0}8周期５Å
+COPIED_COUNT=50
+  - auto_generate_progression_graphs.py (10302 bytes)
+  - bulk_10-10_288atoms.data (24144 bytes)
+  - bulk_10-10_288atoms_true_bulk.cif (23956 bytes)
+  - bulk_10-10_288atoms_true_bulk.data (24144 bytes)
+  - bulk_10-10_288atoms_true_bulk.xyz (15665 bytes)
+  - C.upf (858332 bytes)
+  - dft_settings.py (1626 bytes)
+  - dump.lammpstrj (43476 bytes)
+  - espresso.err (1368 bytes)
+  - espresso.pwi (13702 bytes)
+  - espresso.pwo (537480 bytes)
+  - espresso_all_steps.pwo (537480 bytes)
+  - espresso_bulk_8periods.pwi (13103 bytes)
+  - espresso_bulk_8periods.pwo (64815 bytes)
+  - fracture_metadata.json (1146 bytes)
+
+✅ NAS への全ファイル保存が完了しました！

@@ -1,0 +1,19 @@
+Command exited with code 0.
+
+Command output:
+Converted 2 frames to md_animation.xyz
+/home/WORKSTATION4WSL/.config/matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-a9n05cdt because there was an issue with the default path (/home/WORKSTATION4WSL/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[AutoGraph] Parsed 2 data points. Steps: [0 1]
+[AutoGraph] Successfully generated all 3 progression graphs (PNG, PDF, SVG) in:
+  - /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  28K Nov  5 19:10 Total_Energy_progression.pdf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 121K Nov  5 19:10 Total_Energy_progression.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  39K Nov  5 19:10 Total_Energy_progression.svg
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  22K Nov  5 19:10 Total_Force_progression.pdf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 113K Nov  5 19:10 Total_Force_progression.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  34K Nov  5 19:10 Total_Force_progression.svg
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  22K Nov  5 19:10 Total_SCF_Correction_progression.pdf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 120K Nov  5 19:10 Total_SCF_Correction_progression.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  34K Nov  5 19:10 Total_SCF_Correction_progression.svg
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 6.1K Nov  5 19:10 md_animation.xyz

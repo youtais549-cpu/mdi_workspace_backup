@@ -1,0 +1,25 @@
+Created At: 2026-11-24T19:13:14+09:00
+Completed At: 2026-11-24T19:13:17+09:00
+Command exited with code 0.
+
+Command output:
+[QE-MDI Engine] Initializing MDI Engine with options: -role ENGINE -name QE -method TCP -port 8052 -hostname localhost
+[QE-MDI Engine] Waiting for MDI driver connection...
+[QE-MDI Engine] Connected to MDI driver! Entering communication loop...
+[QE-MDI Engine] Received >NATOMS: 288
+[QE-MDI Engine] --- [Step 0] Starting SCF (288 atoms, startingpot/wfc=atomic, z_min=5.0000A, z_max=24.5354A, gap=10.0000A) ---
+
+     starting charge    1151.9135, renormalised to    1152.0000
+
+     negative rho (up, down):  4.358E-06 0.000E+00
+     Starting wfcs are 1152 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     total cpu time spent up to now is       10.1 secs
+
+     per-process dynamical memory:   476.3 Mb
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap

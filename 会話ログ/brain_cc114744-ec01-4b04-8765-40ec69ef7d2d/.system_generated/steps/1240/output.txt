@@ -1,0 +1,6 @@
+Created At: 2026-11-17T12:41:06+09:00
+Completed At: 2026-11-17T12:41:10+09:00
+Command exited with code 0.
+
+Command output:
+Clipboard set to NAS file path.

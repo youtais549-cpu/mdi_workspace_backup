@@ -1,0 +1,36 @@
+Created At: 2026-11-26T13:34:04+09:00
+Completed At: 2026-11-26T13:34:06+09:00
+Command exited with code 0.
+
+Command output:
+[QE-MDI Engine] --- [Step 345] Done in 492.80s (24 SCF iters) | E_pot: -127674.0527 eV | Fmax: 3.42746 eV/A | gap: 9.8439 A ---
+[QE-MDI Engine] --- [Step 346] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9187A, z_max=24.6129A, gap=9.8411A) ---
+[QE-MDI Engine] --- [Step 346] Done in 496.35s (24 SCF iters) | E_pot: -127673.7500 eV | Fmax: 3.49169 eV/A | gap: 9.8411 A ---
+[QE-MDI Engine] --- [Step 347] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9146A, z_max=24.6118A, gap=9.8382A) ---
+[QE-MDI Engine] --- [Step 347] Done in 494.59s (23 SCF iters) | E_pot: -127673.4638 eV | Fmax: 3.49705 eV/A | gap: 9.8382 A ---
+[QE-MDI Engine] --- [Step 348] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9111A, z_max=24.6098A, gap=9.8367A) ---
+[QE-MDI Engine] --- [Step 348] Done in 527.18s (25 SCF iters) | E_pot: -127673.2110 eV | Fmax: 3.45077 eV/A | gap: 9.8367 A ---
+[QE-MDI Engine] --- [Step 349] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9088A, z_max=24.6070A, gap=9.8372A) ---
+[QE-MDI Engine] --- [Step 349] Done in 723.71s (25 SCF iters) | E_pot: -127673.0071 eV | Fmax: 3.35924 eV/A | gap: 9.8372 A ---
+[QE-MDI Engine] --- [Step 350] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9075A, z_max=24.6035A, gap=9.8394A) ---
+     estimated scf accuracy    <       0.00012368 Ry
+
+     iteration # 20     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  1.07E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.057E-04 0.000E+00
+
+     total cpu time spent up to now is      553.1 secs
+
+     total energy              =   -9383.78339108 Ry
+     estimated scf accuracy    <       0.00009716 Ry
+
+     iteration # 21     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 26327 Nov 25 06:50 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/restart.slab_vac5.0A_unrelaxed_step.100
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 26327 Nov 25 13:01 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/restart.slab_vac5.0A_unrelaxed_step.150
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 26327 Nov 25 19:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/restart.slab_vac5.0A_unrelaxed_step.200
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 26327 Nov 26 01:10 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/restart.slab_vac5.0A_unrelaxed_step.250
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 26327 Nov 26 07:32 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/restart.slab_vac5.0A_unrelaxed_step.300
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 26327 Nov 25 01:15 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/restart.slab_vac5.0A_unrelaxed_step.50

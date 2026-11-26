@@ -1,0 +1,23 @@
+Created At: 2026-11-24T18:51:40+09:00
+Completed At: 2026-11-24T19:10:34+09:00
+Command exited with code 0.
+
+Command output:
+=== Folders in \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法 ===
+
+=== Folders in \\192.168.12.69\Results\yamazaki\research\実行コード ===
+Name                                    PSIsContainer
+----                                    -------------
+{101_0}8周期3.0Å　構造最適化なし                  True
+{101_0}8周期3.0Å構造最適化なしtest run           True
+{101_0}８周期3.0Åtest run                        True
+{101_0}８周期5.0Å                                True
+{101_0}8周期3.0Å　構造最適化なし                  True
+{101_0}8周期3.0Å構造最適化なし　test run          True
+{101_0}8周期5.0Å　構造最適化なし                  True
+{101_0}８周期3.0Åtest runコード                   True
+create_2periods_vac0.5A_model.py                False
+run_2periods_vacuum_sweep_0.5_to_10A.py         False
+
+
+

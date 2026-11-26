@@ -1,0 +1,24 @@
+Created At: 2026-11-26T13:37:17+09:00
+Completed At: 2026-11-26T13:37:20+09:00
+Command exited with code 0.
+
+Command output:
+total 684172
+drwxrwxrwx 2 WORKSTATION4WSL WORKSTATION4WSL      4096 Nov 26 13:36 .
+drwxrwxrwx 3 WORKSTATION4WSL WORKSTATION4WSL      4096 Nov 26 13:36 ..
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL    858332 Nov 26 13:36 C.upf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL   1691876 Nov 26 13:36 Si.upf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  37701948 Nov 26 13:36 charge-density.hdf5
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL    154379 Nov 26 13:36 data-file-schema.xml
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL   1280449 Nov 26 13:36 paw.txt
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 658882136 Nov 26 13:36 wfc1.hdf5
+     Parallel routines
+
+     PWSCF        :  21m39.63s CPU  12m14.61s WALL
+
+
+   This run was terminated on:  13:36:53  26Nov2026            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

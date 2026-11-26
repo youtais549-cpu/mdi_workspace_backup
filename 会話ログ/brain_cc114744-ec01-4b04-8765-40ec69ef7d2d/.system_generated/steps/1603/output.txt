@@ -1,0 +1,21 @@
+Created At: 2026-11-26T13:35:03+09:00
+Completed At: 2026-11-26T13:35:05+09:00
+Command exited with code 0.
+
+Command output:
+16K	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/AGENTS.md
+4.0K	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/GEMINI.md
+4.0K	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/GRAPH_STYLE_SPEC.md
+4.0K	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/RELAXATION_GRAPH_PROTOCOL.json
+8.0K	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/RESTORE_INSTRUCTIONS_20261025.md
+12K	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/SURFACE_ENERGY_RESULTS.md
+12K	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/auto_generate_progression_graphs.py
+759M	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/lammps_mdi_build
+1.4G	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080
+12G	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup
+19M	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/micromamba
+9.7M	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/msmincho.ttc
+4.0K	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/surface_energy_results.csv
+1.2M	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/times.ttf
+8.0K	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/学習内容と知見の全体総括.md
+16K	/home/WORKSTATION4WSL/.gemini/antigravity/scratch/環境構築およびデータ復旧指示書.txt

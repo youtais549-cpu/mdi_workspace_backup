@@ -1,0 +1,12 @@
+Command exited with code 0.
+
+Command output:
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL  9434 Nov  5 03:17 auto_generate_progression_graphs.py
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL 11477 Nov  5 03:17 generate_final_graph.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  8895 Nov  5 03:17 generate_past_calculations_progression_graphs.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  9665 Nov  5 03:17 generate_relaxation_analysis_graphs.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  5690 Nov  5 03:17 generate_surface_energy_vs_periods_graph.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  8967 Nov  5 03:17 generate_word_standard_progression_graphs.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  6048 Nov  5 03:17 plot_surface_energy_preview.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   267 Nov  5 03:17 surface_energy_vs_periods_plot_data.csv
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   456 Nov  5 03:17 surface_energy_vs_vacuum_plot_data.csv

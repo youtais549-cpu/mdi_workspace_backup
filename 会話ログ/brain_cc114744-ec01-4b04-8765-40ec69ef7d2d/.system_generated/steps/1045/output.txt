@@ -1,0 +1,12 @@
+Created At: 2026-11-12T12:02:20+09:00
+Completed At: 2026-11-12T12:02:22+09:00
+Command exited with code 1.
+
+Command output:
+=== Vacuum = 0.0 A (total gap 2*vac = 0.00 A, Lz = 3.5520 A, gamma = 7.9766 J/m2, n_steps = 38) ===
+  Layer 1 (init z=0.0000): final z_Si=1.7761, z_C=1.7760, mean_z=1.7760, buckling(z_C-z_Si)=-0.0000 A
+  Layer 2 (init z=0.8880): final z_Si=0.9358, z_C=0.8346, mean_z=0.8852, buckling(z_C-z_Si)=-0.1012 A
+  Layer 3 (init z=2.6640): final z_Si=2.6161, z_C=2.7174, mean_z=2.6668, buckling(z_C-z_Si)=+0.1013 A
+Traceback (most recent call last):
+  File "<string>", line 46, in <module>
+IndexError: index 3 is out of bounds for axis 0 with size 3

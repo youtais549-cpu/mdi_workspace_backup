@@ -1,0 +1,67 @@
+[QE-MDI RTX5080 Engine] Initializing MDI Engine (RTX 5080 / Ultra 9 285K) with options: -role ENGINE -name QE -method TCP -port 8062 -hostname localhost
+[QE-MDI RTX5080 Engine] GPU: NVIDIA GeForce RTX 5080 | VRAM: 732/16303 MiB | Util: 0% | Temp: 47C | Power: 47.55W
+[QE-MDI RTX5080 Engine] Waiting for MDI driver connection...
+[QE-MDI RTX5080 Engine] Connected to MDI driver! Entering communication loop...
+[QE-MDI RTX5080 Engine] Received >NATOMS: 72
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 0] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 744/16303 MiB | Util: 0% | Temp: 47C | Power: 47.61W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 16.91s! Total Energy: -30543.2823 eV (-1122.444932 Hartree) | Fmax: 262.98955 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 737/16303 MiB | Util: 0% | Temp: 47C | Power: 47.21W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 1] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 737/16303 MiB | Util: 0% | Temp: 47C | Power: 49.10W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 14.87s! Total Energy: -31418.0901 eV (-1154.593524 Hartree) | Fmax: 112.55012 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 736/16303 MiB | Util: 0% | Temp: 47C | Power: 46.98W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 2] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 736/16303 MiB | Util: 1% | Temp: 47C | Power: 46.37W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 13.77s! Total Energy: -31722.4266 eV (-1165.777683 Hartree) | Fmax: 27.42865 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 736/16303 MiB | Util: 0% | Temp: 47C | Power: 47.36W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 3] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 723/16303 MiB | Util: 0% | Temp: 47C | Power: 47.50W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 13.53s! Total Energy: -31783.0070 eV (-1168.003974 Hartree) | Fmax: 17.82522 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 735/16303 MiB | Util: 0% | Temp: 47C | Power: 47.48W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 4] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 722/16303 MiB | Util: 0% | Temp: 47C | Power: 47.52W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 15.88s! Total Energy: -31839.1625 eV (-1170.067651 Hartree) | Fmax: 9.48361 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 731/16303 MiB | Util: 0% | Temp: 47C | Power: 47.94W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 5] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 748/16303 MiB | Util: 2% | Temp: 47C | Power: 48.13W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 13.96s! Total Energy: -31863.4268 eV (-1170.959346 Hartree) | Fmax: 3.57058 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 739/16303 MiB | Util: 0% | Temp: 47C | Power: 47.93W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 6] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 726/16303 MiB | Util: 0% | Temp: 47C | Power: 47.88W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 14.14s! Total Energy: -31870.7825 eV (-1171.229666 Hartree) | Fmax: 1.48212 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 739/16303 MiB | Util: 3% | Temp: 47C | Power: 46.71W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 7] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 739/16303 MiB | Util: 0% | Temp: 47C | Power: 47.76W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 11.88s! Total Energy: -31866.6606 eV (-1171.078186 Hartree) | Fmax: 4.49079 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 739/16303 MiB | Util: 1% | Temp: 47C | Power: 46.69W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 8] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 739/16303 MiB | Util: 0% | Temp: 47C | Power: 47.11W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 14.30s! Total Energy: -31872.1712 eV (-1171.280699 Hartree) | Fmax: 0.55196 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 739/16303 MiB | Util: 2% | Temp: 47C | Power: 46.47W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 9] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 739/16303 MiB | Util: 0% | Temp: 47C | Power: 46.32W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 11.95s! Total Energy: -31863.8652 eV (-1170.975458 Hartree) | Fmax: 6.04924 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 726/16303 MiB | Util: 0% | Temp: 47C | Power: 47.45W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 10] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 739/16303 MiB | Util: 1% | Temp: 47C | Power: 46.74W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 14.62s! Total Energy: -31872.3345 eV (-1171.286697 Hartree) | Fmax: 0.42151 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 739/16303 MiB | Util: 0% | Temp: 47C | Power: 47.67W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 11] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 726/16303 MiB | Util: 0% | Temp: 47C | Power: 47.79W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 14.92s! Total Energy: -31870.7282 eV (-1171.227669 Hartree) | Fmax: 1.73862 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 726/16303 MiB | Util: 0% | Temp: 47C | Power: 48.02W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 12] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 739/16303 MiB | Util: 0% | Temp: 47C | Power: 47.45W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 12.12s! Total Energy: -31872.4662 eV (-1171.291537 Hartree) | Fmax: 0.23016 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 739/16303 MiB | Util: 0% | Temp: 47C | Power: 47.58W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 13] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 726/16303 MiB | Util: 0% | Temp: 47C | Power: 47.17W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 13.93s! Total Energy: -31866.1857 eV (-1171.060735 Hartree) | Fmax: 4.89564 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 739/16303 MiB | Util: 0% | Temp: 47C | Power: 47.24W ---
+[QE-MDI RTX5080 Engine] Detected CPU/MPI pw.x: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/mpirun --oversubscribe -np 12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x -ndiag 1 (MPI_NP=12, OMP_NUM_THREADS=2)
+[QE-MDI RTX5080 Engine] Loaded DFT_CONFIG from dft_settings.py
+[QE-MDI RTX5080 Engine] --- [Step 14] Running SCF with QE (72 atoms) | GPU: NVIDIA GeForce RTX 5080 | VRAM: 739/16303 MiB | Util: 2% | Temp: 47C | Power: 46.97W ---
+[QE-MDI RTX5080 Engine] --- Step Done in 12.28s! Total Energy: -31872.4811 eV (-1171.292086 Hartree) | Fmax: 0.10298 eV/A | GPU: NVIDIA GeForce RTX 5080 | VRAM: 743/16303 MiB | Util: 3% | Temp: 47C | Power: 48.20W ---
+[QE-MDI RTX5080 Engine] Received EXIT command from driver.
+[QE-MDI RTX5080 Engine] MDI Engine execution terminated cleanly.

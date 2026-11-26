@@ -1,0 +1,26 @@
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwi:CELL_PARAMETERS (angstrom)
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwi-      9.22800000       0.00000000       0.00000000
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwi-      0.00000000      15.14400000       0.00000000
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwi-      0.00000000       0.00000000       5.32778828
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwi-ATOMIC_POSITIONS (angstrom)
+--
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_true_bulk_scf/espresso.pwi:CELL_PARAMETERS (angstrom)
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_true_bulk_scf/espresso.pwi-        9.22800000        0.00000000        0.00000000
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_true_bulk_scf/espresso.pwi-        0.00000000       15.14400000        0.00000000
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_true_bulk_scf/espresso.pwi-        0.00000000        0.00000000       10.65557657
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_true_bulk_scf/espresso.pwi-ATOMIC_POSITIONS (angstrom)
+--
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_true_bulk_scf/espresso.pwi:CELL_PARAMETERS angstrom
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_true_bulk_scf/espresso.pwi-9.22800000000000 0.00000000000000 0.00000000000000
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_true_bulk_scf/espresso.pwi-0.00000000000000 15.14400000000000 0.00000000000000
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_true_bulk_scf/espresso.pwi-0.00000000000000 0.00000000000000 15.98361301716112
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_true_bulk_scf/espresso.pwi-
+--
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_true_bulk_scf/espresso.pwi:CELL_PARAMETERS angstrom
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_true_bulk_scf/espresso.pwi-9.22800000000000 0.00000000000000 0.00000000000000
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_true_bulk_scf/espresso.pwi-0.00000000000000 15.14400000000000 0.00000000000000
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_true_bulk_scf/espresso.pwi-0.00000000000000 0.00000000000000 21.31120130124298
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_true_bulk_scf/espresso.pwi-

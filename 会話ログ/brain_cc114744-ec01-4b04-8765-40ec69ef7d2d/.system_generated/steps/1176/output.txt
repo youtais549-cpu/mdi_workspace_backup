@@ -1,0 +1,10 @@
+Created At: 2026-11-17T01:16:32+09:00
+Completed At: 2026-11-17T01:16:33+09:00
+Command exited with code 0.
+
+Command output:
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 214618 Nov 14 01:11 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_300K_100steps_rtx5080/AIMD_Surface_Displacement_and_Gap_100steps.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 197567 Nov 14 01:11 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_300K_100steps_rtx5080/AIMD_Temperature_and_Energy_100steps.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 199171 Nov 14 01:11 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_300K_100steps_rtx5080/Total_Energy_progression.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 170912 Nov 14 01:11 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_300K_100steps_rtx5080/Total_Force_progression.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 262161 Nov 14 01:11 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_300K_100steps_rtx5080/Total_SCF_Correction_progression.png

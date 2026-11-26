@@ -1,0 +1,16 @@
+Created At: 2026-11-23T02:46:50+09:00
+Completed At: 2026-11-23T02:49:14+09:00
+Command exited with code 0.
+
+Command output:
+=== Folders in \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法 ===
+
+=== Target Exists: \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}8周期3.0Å　構造最適化なし ===
+Name                                   PSIsContainer
+----                                   -------------
+{101_0}8周期3.0Å　構造最適化なし                 True
+{101_0}8周期3.0Å構造最適化なしtest run          True
+{101_0}８周期3.0Åtest run                       True
+
+
+

@@ -1,0 +1,49 @@
+Created At: 2026-11-20T13:45:51+09:00
+Completed At: 2026-11-20T13:45:53+09:00
+Command exited with code 2.
+
+Command output:
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_600steps_rtx5080/qe_engine.log <==
+[QE-MDI Engine] --- [Step 145] Done in 0.00s (14 SCF iters) [RESTORED CACHE] | E_pot: -127718.7354 eV | Fmax: 2.26542 eV/A | gap: 0.0092 A ---
+[QE-MDI Engine] --- [Step 146] Done in 0.00s (15 SCF iters) [RESTORED CACHE] | E_pot: -127718.8677 eV | Fmax: 2.25461 eV/A | gap: 0.0092 A ---
+[QE-MDI Engine] --- [Step 147] Done in 0.00s (15 SCF iters) [RESTORED CACHE] | E_pot: -127719.0524 eV | Fmax: 2.20374 eV/A | gap: 0.0051 A ---
+[QE-MDI Engine] --- [Step 148] Done in 0.00s (15 SCF iters) [RESTORED CACHE] | E_pot: -127719.2741 eV | Fmax: 2.24201 eV/A | gap: 0.0167 A ---
+[QE-MDI Engine] --- [Step 149] Done in 0.00s (15 SCF iters) [RESTORED CACHE] | E_pot: -127719.5139 eV | Fmax: 2.27559 eV/A | gap: 0.0179 A ---
+[QE-MDI Engine] --- [Step 150] Done in 0.00s (15 SCF iters) [RESTORED CACHE] | E_pot: -127719.7512 eV | Fmax: 2.36576 eV/A | gap: 0.0147 A ---
+[QE-MDI Engine] --- [Step 151] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127719.9652 eV | Fmax: 2.50704 eV/A | gap: 0.0113 A ---
+[QE-MDI Engine] --- [Step 152] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127720.1358 eV | Fmax: 2.56949 eV/A | gap: 0.0088 A ---
+[QE-MDI Engine] --- [Step 153] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127720.2463 eV | Fmax: 2.55005 eV/A | gap: 0.0131 A ---
+[QE-MDI Engine] --- [Step 154] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127720.2840 eV | Fmax: 2.45080 eV/A | gap: 0.0094 A ---
+[QE-MDI Engine] --- [Step 155] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127720.2418 eV | Fmax: 2.29662 eV/A | gap: 0.0158 A ---
+[QE-MDI Engine] --- [Step 156] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127720.1193 eV | Fmax: 2.37697 eV/A | gap: 0.0238 A ---
+[QE-MDI Engine] --- [Step 157] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127719.9226 eV | Fmax: 2.43192 eV/A | gap: 0.0280 A ---
+[QE-MDI Engine] --- [Step 158] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127719.6648 eV | Fmax: 2.45812 eV/A | gap: 0.0276 A ---
+[QE-MDI Engine] --- [Step 159] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127719.3642 eV | Fmax: 2.45338 eV/A | gap: 0.0270 A ---
+[QE-MDI Engine] --- [Step 160] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127719.0435 eV | Fmax: 2.43983 eV/A | gap: 0.0259 A ---
+[QE-MDI Engine] --- [Step 161] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127718.7271 eV | Fmax: 2.40415 eV/A | gap: 0.0238 A ---
+[QE-MDI Engine] --- [Step 162] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127718.4395 eV | Fmax: 2.32876 eV/A | gap: 0.0212 A ---
+[QE-MDI Engine] --- [Step 163] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127718.2029 eV | Fmax: 2.39781 eV/A | gap: 0.0184 A ---
+[QE-MDI Engine] --- [Step 164] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127718.0351 eV | Fmax: 2.43577 eV/A | gap: 0.0145 A ---
+
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_600steps_rtx5080/log.lammps <==
+       144   158.84247      0              0              5.8926844     -127718.67     -127712.77      2113.3778      1.9300801      19.987212    
+       145   161.21648      0              0              5.9807544     -127718.74     -127712.75      2144.9636      1.9406062      19.827318    
+       146   165.30113      0              0              6.1322856     -127718.87     -127712.74      2199.3094      1.9989419      19.562316    
+       147   170.80575      0              0              6.336494      -127719.05     -127712.72      2272.5476      2.0022975      19.207737    
+       148   177.32154      0              0              6.5782147     -127719.27     -127712.7       2359.2393      1.9604145      18.786258    
+       149   184.35113      0              0              6.8389959     -127719.51     -127712.67      2452.7671      2.0327774      18.325817    
+       150   191.34245      0              0              7.0983576     -127719.75     -127712.65      2545.7857      2.0820703      17.859002    
+       151   197.72603      0              0              7.3351735     -127719.97     -127712.63      2630.7183      2.1363322      17.422131    
+       152   202.96591      0              0              7.5295607     -127720.14     -127712.61      2700.4342      2.1537761      17.054883    
+       153   206.60407      0              0              7.664528      -127720.25     -127712.58      2748.8395      2.1289524      16.794423    
+       154   208.2946       0              0              7.7272426     -127720.28     -127712.56      2771.3317      2.0585162      16.672302    
+       155   207.84184      0              0              7.7104461     -127720.24     -127712.53      2765.3077      2.0926278      16.707634    
+       156   205.22551      0              0              7.6133865     -127720.12     -127712.51      2730.4979      2.2265095      16.902226    
+       157   200.60886      0              0              7.4421197     -127719.92     -127712.48      2669.074       2.3247917      17.240086    
+       158   194.33054      0              0              7.2092088     -127719.66     -127712.46      2585.5418      2.3855014      17.68946     
+       159   186.88077      0              0              6.9328394     -127719.36     -127712.43      2486.4235      2.4075995      18.208376    
+       160   178.86715      0              0              6.6355532     -127719.04     -127712.41      2379.8035      2.3913627      18.749113    
+       161   170.95307      0              0              6.3419591     -127718.73     -127712.39      2274.5076      2.3369055      19.268845    
+       162   163.792        0              0              6.0763003     -127718.44     -127712.36      2179.2306      2.2813622      19.728393    
+       163   157.97844      0              0              5.8606309     -127718.2      -127712.34      2101.882       2.3697076      20.096645    
+diff: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_600steps_rtx5080/bulk_10-10_288atoms_aimd_300steps_restored_check.data: No such file or directory

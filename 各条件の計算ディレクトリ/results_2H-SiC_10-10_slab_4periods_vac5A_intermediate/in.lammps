@@ -1,0 +1,26 @@
+# 2H-SiC {10-10} 3x3x4 スラブモデル (4周期 8層 144原子, 真空層 5.0 Å)
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+# 1. 初期構造の読み込み (4周期 8層 144原子, 真空層 5.0 Å)
+read_data slab_10-10_144atoms.data
+
+# 原子質量 (Type 1: C, Type 2: Si - ASEの英名昇順ソートと完全一致)
+mass 1 12.011
+mass 2 28.085
+
+# 2. MDI 通信設定 (Quantum ESPRESSO を QM エンジンとして連成)
+fix 1 all mdi/qm elements C Si
+
+# 3. 出力設定
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+dump_modify 1 append yes
+
+# 4. 表面構造緩和 (minimize) - 表面破壊エネルギー評価用の力極小化
+# 力の閾値 1.0e-3 eV/Å 以下になるまで共役勾配法(CG)でエネルギー最小化
+minimize 0.0 1.0e-3 100 1000
+
+undump 1

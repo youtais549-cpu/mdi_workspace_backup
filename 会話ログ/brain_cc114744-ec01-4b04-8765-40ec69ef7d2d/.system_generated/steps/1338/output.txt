@@ -1,0 +1,58 @@
+Created At: 2026-11-19T13:04:00+09:00
+Completed At: 2026-11-19T13:04:01+09:00
+Command exited with code 0.
+
+Command output:
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_300steps_rtx5080/qe_engine.log <==
+[QE-MDI Engine] --- [Step 0] Starting SCF (288 atoms, startingpot/wfc=atomic, z_min=0.0000A, z_max=19.5354A, gap=1.7758A) ---
+[QE-MDI Engine] --- [Step 0] Done in 195.78s (11 SCF iters) | E_pot: -127726.1527 eV | Fmax: 0.13746 eV/A | gap: 1.7758 A ---
+[QE-MDI Engine] --- [Step 1] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0001A, z_max=21.3111A, gap=0.0002A) ---
+[QE-MDI Engine] --- [Step 1] Done in 262.93s (17 SCF iters) | E_pot: -127725.9914 eV | Fmax: 0.52483 eV/A | gap: 0.0002 A ---
+[QE-MDI Engine] --- [Step 2] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0002A, z_max=21.3111A, gap=0.0003A) ---
+[QE-MDI Engine] --- [Step 2] Done in 257.74s (17 SCF iters) | E_pot: -127725.5265 eV | Fmax: 0.90487 eV/A | gap: 0.0003 A ---
+[QE-MDI Engine] --- [Step 3] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0004A, z_max=21.3111A, gap=0.0005A) ---
+[QE-MDI Engine] --- [Step 3] Done in 267.83s (18 SCF iters) | E_pot: -127724.7937 eV | Fmax: 1.26542 eV/A | gap: 0.0005 A ---
+[QE-MDI Engine] --- [Step 4] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0000A, z_max=21.3093A, gap=0.0019A) ---
+[QE-MDI Engine] --- [Step 4] Done in 252.27s (17 SCF iters) | E_pot: -127723.8503 eV | Fmax: 1.59910 eV/A | gap: 0.0019 A ---
+[QE-MDI Engine] --- [Step 5] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0001A, z_max=21.3091A, gap=0.0022A) ---
+[QE-MDI Engine] --- [Step 5] Done in 252.28s (17 SCF iters) | E_pot: -127722.7700 eV | Fmax: 1.89606 eV/A | gap: 0.0022 A ---
+[QE-MDI Engine] --- [Step 6] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0003A, z_max=21.3091A, gap=0.0023A) ---
+[QE-MDI Engine] --- [Step 6] Done in 246.58s (17 SCF iters) | E_pot: -127721.6369 eV | Fmax: 2.20754 eV/A | gap: 0.0023 A ---
+[QE-MDI Engine] --- [Step 7] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0005A, z_max=21.3093A, gap=0.0024A) ---
+[QE-MDI Engine] --- [Step 7] Done in 248.28s (17 SCF iters) | E_pot: -127720.5376 eV | Fmax: 2.46614 eV/A | gap: 0.0024 A ---
+[QE-MDI Engine] --- [Step 8] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0008A, z_max=21.3096A, gap=0.0023A) ---
+[QE-MDI Engine] --- [Step 8] Done in 247.72s (17 SCF iters) | E_pot: -127719.5539 eV | Fmax: 2.65462 eV/A | gap: 0.0023 A ---
+[QE-MDI Engine] --- [Step 9] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0012A, z_max=21.3101A, gap=0.0022A) ---
+[QE-MDI Engine] --- [Step 9] Done in 238.94s (16 SCF iters) | E_pot: -127718.7545 eV | Fmax: 2.76240 eV/A | gap: 0.0022 A ---
+[QE-MDI Engine] --- [Step 10] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0015A, z_max=21.3108A, gap=0.0019A) ---
+[QE-MDI Engine] --- [Step 10] Done in 239.06s (16 SCF iters) | E_pot: -127718.1889 eV | Fmax: 2.79969 eV/A | gap: 0.0019 A ---
+[QE-MDI Engine] --- [Step 11] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0005A, z_max=21.2868A, gap=0.0249A) ---
+[QE-MDI Engine] --- [Step 11] Done in 233.06s (16 SCF iters) | E_pot: -127717.8826 eV | Fmax: 2.78475 eV/A | gap: 0.0249 A ---
+[QE-MDI Engine] --- [Step 12] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0013A, z_max=21.2865A, gap=0.0260A) ---
+
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_300steps_rtx5080/log.lammps <==
+thermo_style    custom step temp epair emol ke pe etotal press fmax fnorm
+thermo          1
+thermo_modify   flush yes
+
+dump            1 all custom 1 dump.lammpstrj id type x y z vx vy vz fx fy fz
+dump_modify     1 sort id flush yes
+
+# 7. AIMD 実行 (300 steps = 300 fs = 0.3 ps)
+run             300
+WARNING: No pairwise cutoff or binsize set. Atom sorting therefore disabled. (src/atom.cpp:2486)
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+Per MPI rank memory allocation (min/avg/max) = 2.329 | 2.329 | 2.329 Mbytes
+   Step          Temp          E_pair         E_mol          KinEng         PotEng         TotEng         Press           Fmax          Fnorm     
+         0   300            0              0              11.129298     -127726.15     -127715.02      3991.4597      0.11192192     2.2113464    
+         1   295.67736      0              0              10.968939     -127725.99     -127715.02      3933.9476      0.47242812     3.8761286    
+         2   283.21196      0              0              10.506501     -127725.53     -127715.02      3768.097       0.82817187     6.6580248    
+         3   263.57375      0              0              9.7779698     -127724.79     -127715.02      3506.8134      1.1687505      9.5144226    
+         4   238.28907      0              0              8.8399671     -127723.85     -127715.01      3170.404       1.5126286      12.257742    
+         5   209.32329      0              0              7.7654045     -127722.77     -127715         2785.0183      1.8222521      14.781727    
+         6   178.94019      0              0              6.6382627     -127721.64     -127715         2380.7752      2.0859838      17.007214    
+         7   149.47621      0              0              5.5452177     -127720.54     -127714.99      1988.7609      2.2987336      18.876303    
+         8   123.11909      0              0              4.5674302     -127719.55     -127714.99      1638.0829      2.4557966      20.342403    
+         9   101.70446      0              0              3.7729975     -127718.75     -127714.98      1353.1641      2.553932       21.377641    
+        10   86.559276      0              0              3.2111467     -127718.19     -127714.98      1151.6595      2.5896112      21.945359    
+        11   78.367         0              0              2.9072324     -127717.88     -127714.98      1042.6624      2.5630895      22.067975    

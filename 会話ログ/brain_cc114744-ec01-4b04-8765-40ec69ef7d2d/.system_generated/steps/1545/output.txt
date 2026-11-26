@@ -1,0 +1,66 @@
+Created At: 2026-11-24T11:39:26+09:00
+Completed At: 2026-11-24T11:39:27+09:00
+Command exited with code 0.
+
+Command output:
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL  696 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/backup_weekly_logs.sh
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL 1290 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/build_qe_cmake_fixed.sh
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  612 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/build_qe_gpu_serial.sh
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL  201 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/monitor_scf.sh
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL  836 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/nas_sync_loop.sh
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  403 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/pw_wrapper.sh
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  620 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/remote_build.sh
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  766 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/remote_build_cmake.sh
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 3431 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/setup_nas_sync.sh
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 2673 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/switch_to_bulk.sh
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL  797 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/sync_live_espresso.sh
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL   35 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/test_wrapper.sh
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL 1448 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/upload_to_nas.sh
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/:
+total 14356
+drwxrwxrwx  5 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 19:10 .
+drwxrwxrwx 77 WORKSTATION4WSL WORKSTATION4WSL    24576 Nov 23 02:52 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6215 Nov  5 14:38 2H-SiC_10-10_bulk_3x3x2_72atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6607 Nov  5 14:38 2H-SiC_10-10_slab_3x3x2_vac5A.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6215 Nov  5 14:38 2H-SiC_10-10_slab_3x3x2_vac5A.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6573 Nov  5 14:38 2H-SiC_10-10_slab_3x3x2_vac5A.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   858332 Nov  5 14:38 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     2104 Nov  5 14:38 RELAXATION_GRAPH_PROTOCOL.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  1691876 Nov  5 14:38 Si.upf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    28337 Nov  5 19:10 Total_Energy_progression.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   123746 Nov  5 19:10 Total_Energy_progression.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    39008 Nov  5 19:10 Total_Energy_progression.svg
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    22073 Nov  5 19:10 Total_Force_progression.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   115066 Nov  5 19:10 Total_Force_progression.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    34150 Nov  5 19:10 Total_Force_progression.svg
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    21994 Nov  5 19:10 Total_SCF_Correction_progression.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   121900 Nov  5 19:10 Total_SCF_Correction_progression.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    34074 Nov  5 19:10 Total_SCF_Correction_progression.svg
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 18:58 __pycache__
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    10171 Nov  5 18:39 auto_generate_progression_graphs.py
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 18:54 bin
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     3882 Nov  5 14:42 create_2periods_vac5A_model.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     1626 Nov  5 14:38 dft_settings.py
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     4412 Nov  5 19:08 dump.lammpstrj
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL        0 Nov  5 19:08 espresso.err
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     4005 Nov  5 19:08 espresso.pwi
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    13867 Nov  5 19:10 espresso.pwo
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    53721 Nov  5 19:08 espresso_all_steps.pwo
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     4618 Nov  5 14:38 espresso_bulk_scf.pwi
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    25900 Nov  5 18:56 espresso_bulk_scf.pwo
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1257 Nov  5 18:39 fracture_metadata.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1679 Nov  5 19:00 in.lammps
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL       21 Nov  5 18:58 lmp.log
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL       21 Nov  5 18:58 log.lammps
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     2132 Nov  5 14:38 make_xyz.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     3237 Nov  5 14:42 master_run_rtx5080.sh
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     6152 Nov  5 19:10 md_animation.xyz
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL 10091072 Nov  5 18:53 msmincho.ttc
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     2460 Nov  5 19:08 qe_engine.log
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    15879 Nov  5 18:54 qe_mdi_engine_rtx5080.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     3484 Nov  5 19:00 run_bulk_scf_rtx5080.sh
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     4865 Nov  5 19:00 run_slab_rtx5080.sh
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     4128 Nov  5 18:53 setup_local_rtx5080_env.sh
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL  1190736 Nov  5 18:53 times.ttf
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 19:08 tmp

@@ -1,0 +1,10 @@
+Command exited with code 0.
+
+Command output:
+CIF cell: Cell([[3.076, 0.0, 0.0], [-1.5379999999999994, 2.6638941420409337, 0.0], [0.0, 0.0, 5.048]])
+CIF natoms: 4
+CIF symbols: ['Si', 'Si', 'C', 'C']
+N=1: cell=0.0000, natoms=4, symbols=['Si', 'Si', 'C', 'C']
+N=2: cell=0.0000, natoms=8, symbols=['Si', 'Si', 'C', 'C']
+N=3: cell=0.0000, natoms=12, symbols=['Si', 'Si', 'C', 'C']
+N=4: cell=0.0000, natoms=16, symbols=['Si', 'Si', 'C', 'C']

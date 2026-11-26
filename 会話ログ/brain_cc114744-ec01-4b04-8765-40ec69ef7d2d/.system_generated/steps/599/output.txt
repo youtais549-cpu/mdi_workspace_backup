@@ -1,0 +1,7 @@
+Command exited with code 0.
+
+Command output:
+-r-xr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL  8990160 Nov  6 18:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/msgothic.ttc
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL 10091072 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/msmincho.ttc
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL  1190736 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/times.ttf
+-r-xr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL  1170096 Nov  6 18:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/timesbd.ttf

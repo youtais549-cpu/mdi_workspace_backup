@@ -1,0 +1,96 @@
+Command exited with code 0.
+
+Command output:
+research_simulations/:
+total 18184
+drwxr-xr-x  4 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:17 .
+drwxrwxrwx 70 WORKSTATION4WSL WORKSTATION4WSL    24576 Nov 10 16:08 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1766 Nov  5 03:17 2H-SiC.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6643 Nov  5 03:17 2H-SiC_10-10_bulk_3x3x2_72atoms.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6215 Nov  5 03:17 2H-SiC_10-10_bulk_3x3x2_72atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     5432 Nov  5 03:17 2H-SiC_10-10_bulk_3x3x2_72atoms.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6607 Nov  5 03:17 2H-SiC_10-10_slab_3x3x2_4layers_vacuum.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6215 Nov  5 03:17 2H-SiC_10-10_slab_3x3x2_4layers_vacuum.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     5432 Nov  5 03:17 2H-SiC_10-10_slab_3x3x2_4layers_vacuum.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   234205 Nov  5 03:17 2H-SiC_10-10_slab_3x3x2_structure.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1224 Nov  5 03:17 2H-SiC_10-10_slab_4layers_vacuum.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL      902 Nov  5 03:17 2H-SiC_10-10_slab_4layers_vacuum.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL      822 Nov  5 03:17 2H-SiC_10-10_slab_4layers_vacuum.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     3087 Nov  5 03:17 2H-SiC_10-10_slab_4layers_vacuum_2x2.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     2895 Nov  5 03:17 2H-SiC_10-10_slab_4layers_vacuum_2x2.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     2552 Nov  5 03:17 2H-SiC_10-10_slab_4layers_vacuum_2x2.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   186617 Nov  5 03:17 2H-SiC_10-10_slab_clear.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   497861 Nov  5 03:17 2H-SiC_10-10_slab_structure.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   232284 Nov  5 03:17 2H-SiC_10-10_slab_vs_bulk_comparison.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1626 Nov  5 03:17 2H-SiC_hexagon.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL      765 Nov  5 03:17 2H-SiC_hexagon.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     2288 Nov  5 03:17 2H-SiC_hexagon_frame.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1409 Nov  5 03:17 2H-SiC_hexagon_frame.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1656 Nov  5 03:17 2H-SiC_supercell_2x2x1.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    20793 Nov  5 03:17 2H-SiC_supercell_3x3x10.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    22840 Nov  5 03:17 2H-SiC_supercell_3x3x10.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     4592 Nov  5 03:17 2H-SiC_supercell_3x3x2.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6252 Nov  5 03:17 2H-SiC_supercell_3x3x2.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     4683 Nov  5 03:17 2H-SiC_supercell_3x3x2.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 17172863 Nov  5 03:17 atomsk
+drwxr-xr-x  7 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:17 atomsk_b0.13.1_Linux-amd64
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     4333 Nov  5 03:17 check_polarity.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6099 Nov  5 03:17 create_10-10_bulk_3x3x2.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     4867 Nov  5 03:17 create_10-10_slab.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     5563 Nov  5 03:17 create_10-10_slab_3x3x2.py
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  6 18:04 cut_planes
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    12745 Nov  5 03:17 ffield.reax
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL      756 Nov  5 03:17 in.sio2
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL        0 Nov  5 03:17 input_tmp.in
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL      788 Nov  5 03:17 log.lammps
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1115 Nov  5 03:17 make_supercell.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL      178 Nov  5 03:17 sio2.lmp
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     2269 Nov  5 03:17 view_slab_winmostar.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL      140 Nov  5 03:17 write_lammps_data.py
+
+''$'\343\203\227\343\203\255\343\202\260\343\203\251\343\203\240\343\203\273\350\247\243\346\236\220\343\202\271\343\202\257\343\203\252\343\203\227\343\203\210''/research_simulations/':
+total 18168
+drwxr-xr-x 4 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:17 .
+drwxrwxrwx 4 WORKSTATION4WSL WORKSTATION4WSL    12288 Nov  5 03:24 ..
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     1766 Nov  5 03:17 2H-SiC.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     6643 Nov  5 03:17 2H-SiC_10-10_bulk_3x3x2_72atoms.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     6215 Nov  5 03:17 2H-SiC_10-10_bulk_3x3x2_72atoms.data
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     5432 Nov  5 03:17 2H-SiC_10-10_bulk_3x3x2_72atoms.xyz
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     6607 Nov  5 03:17 2H-SiC_10-10_slab_3x3x2_4layers_vacuum.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     6215 Nov  5 03:17 2H-SiC_10-10_slab_3x3x2_4layers_vacuum.data
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     5432 Nov  5 03:17 2H-SiC_10-10_slab_3x3x2_4layers_vacuum.xyz
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   234205 Nov  5 03:17 2H-SiC_10-10_slab_3x3x2_structure.png
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     1224 Nov  5 03:17 2H-SiC_10-10_slab_4layers_vacuum.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL      902 Nov  5 03:17 2H-SiC_10-10_slab_4layers_vacuum.data
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL      822 Nov  5 03:17 2H-SiC_10-10_slab_4layers_vacuum.xyz
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     3087 Nov  5 03:17 2H-SiC_10-10_slab_4layers_vacuum_2x2.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     2895 Nov  5 03:17 2H-SiC_10-10_slab_4layers_vacuum_2x2.data
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     2552 Nov  5 03:17 2H-SiC_10-10_slab_4layers_vacuum_2x2.xyz
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   186617 Nov  5 03:17 2H-SiC_10-10_slab_clear.png
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   497861 Nov  5 03:17 2H-SiC_10-10_slab_structure.png
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   232284 Nov  5 03:17 2H-SiC_10-10_slab_vs_bulk_comparison.png
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     1626 Nov  5 03:17 2H-SiC_hexagon.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL      765 Nov  5 03:17 2H-SiC_hexagon.xyz
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     2288 Nov  5 03:17 2H-SiC_hexagon_frame.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     1409 Nov  5 03:17 2H-SiC_hexagon_frame.xyz
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     1656 Nov  5 03:17 2H-SiC_supercell_2x2x1.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    20793 Nov  5 03:17 2H-SiC_supercell_3x3x10.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    22840 Nov  5 03:17 2H-SiC_supercell_3x3x10.xyz
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     4592 Nov  5 03:17 2H-SiC_supercell_3x3x2.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     6252 Nov  5 03:17 2H-SiC_supercell_3x3x2.data
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     4683 Nov  5 03:17 2H-SiC_supercell_3x3x2.xyz
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 17172863 Nov  5 03:17 atomsk
+drwxr-xr-x 7 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:17 atomsk_b0.13.1_Linux-amd64
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     4333 Nov  5 03:17 check_polarity.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     6099 Nov  5 03:17 create_10-10_bulk_3x3x2.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     4867 Nov  5 03:17 create_10-10_slab.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     5563 Nov  5 03:17 create_10-10_slab_3x3x2.py
+drwxr-xr-x 2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:17 cut_planes
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    12745 Nov  5 03:17 ffield.reax
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL      756 Nov  5 03:17 in.sio2
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL        0 Nov  5 03:17 input_tmp.in
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL      788 Nov  5 03:17 log.lammps
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     1115 Nov  5 03:17 make_supercell.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL      178 Nov  5 03:17 sio2.lmp
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL     2269 Nov  5 03:17 view_slab_winmostar.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL      140 Nov  5 03:17 write_lammps_data.py

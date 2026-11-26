@@ -1,0 +1,11 @@
+Created At: 2026-11-20T12:57:22+09:00
+Completed At: 2026-11-20T12:57:23+09:00
+Command exited with code 0.
+
+Command output:
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 353814 Nov 20 12:57 /home/WORKSTATION4WSL/.gemini/antigravity/brain/cc114744-ec01-4b04-8765-40ec69ef7d2d/AIMD_Bulk_Temperature_and_Energy_300steps.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 285546 Nov 20 12:57 /home/WORKSTATION4WSL/.gemini/antigravity/brain/cc114744-ec01-4b04-8765-40ec69ef7d2d/エネルギー変化量推移_バルクAIMD_word_8cm.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 353814 Nov 20 12:57 /home/WORKSTATION4WSL/.gemini/antigravity/brain/cc114744-ec01-4b04-8765-40ec69ef7d2d/エネルギー総合推移_バルクAIMD_プレゼン仕様.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 201190 Nov 20 12:57 /home/WORKSTATION4WSL/.gemini/antigravity/brain/cc114744-ec01-4b04-8765-40ec69ef7d2d/ポテンシャルエネルギー推移_バルクAIMD_word_8cm.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 139624 Nov 20 12:57 /home/WORKSTATION4WSL/.gemini/antigravity/brain/cc114744-ec01-4b04-8765-40ec69ef7d2d/全エネルギー推移_バルクAIMD_word_8cm.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 177944 Nov 20 12:57 /home/WORKSTATION4WSL/.gemini/antigravity/brain/cc114744-ec01-4b04-8765-40ec69ef7d2d/温度推移_バルクAIMD_word_8cm.png

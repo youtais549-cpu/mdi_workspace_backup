@@ -1,0 +1,165 @@
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/builtin/skills:
+total 44
+drwxr-xr-x 11 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 .
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 ..
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 agy-customizations
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 antigravity_guide
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 automation
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 generative_ui
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 migrate-workflows
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 permissioned-github
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 plugin
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 run-workflow
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 ui-plugin-navigation
+
+/home/WORKSTATION4WSL/.gemini/config/plugins:
+total 4
+drwxr-xr-x 2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 .
+drwxrwxrwx 4 WORKSTATION4WSL WORKSTATION4WSL   80 Nov  5 03:49 ..
+
+/home/WORKSTATION4WSL/.gemini/config/projects:
+total 8
+drwxr-xr-x 2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:49 .
+drwxrwxrwx 4 WORKSTATION4WSL WORKSTATION4WSL   80 Nov  5 03:49 ..
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  353 Nov  5 03:49 8462df08-51eb-470c-9463-4ba46b4eb706.json
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/.agents/rules/2h_sic_supercell.md <==
+# 2H-SiC Supercell Construction Rules
+
+When assisting with the construction of 2H-SiC supercells or interpreting user requests regarding SiC layers, adhere to the following rules:
+
+1. **Unit Cell Knowledge**: The basic 2H-SiC unit cell already contains **2 layers** of Si-C atom pairs (A and B stacking) along the c-axis.
+2. **Expansion Factor Math**: Expanding the unit cell by a factor of `N` along the c-axis will result in `2 × N` layers total.
+   - For example, a `3x3x2` supercell yields **4 layers** along the c-axis.
+   - To achieve exactly 2 layers (the original thickness), the expansion factor must be `3x3x1`.
+3. **User Clarification**: If a user requests a supercell dimensions like `3x3x2` while stating they want "2 layers," kindly correct their misunderstanding before proceeding.
+4. **Tooling**: Use Python and the `ase` (Atomic Simulation Environment) library (`ase.build.make_supercell`) to construct these structures automatically.
+5. **Output Formats**: When generating supercells, output both `.cif` (to preserve lattice information) and `.xyz` (for immediate visualization in tools like Winmostar).
+
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/.agents/rules/cif_viewing.md <==
+---
+description: CIFファイルの閲覧とWinmostarの取り扱いに関するルール
+---
+
+# CIF File Viewing & Winmostar
+
+この環境はLinuxベースで動作しているため、Windows専用のGUIアプリケーションである「Winmostar」をエディタ上で直接起動することはできません。
+
+ユーザーが「CIFファイルをWinmostarで開きたい」「エディタ上で3D構造を見たい」と要望した場合は、以下の手順のいずれかを提案・実行してください。
+
+1. **Winmostarで開きたい場合（ローカルでの実行）:**
+   対象のCIFファイルをローカルのWindows PCへダウンロードし、手元のWinmostarで開くように案内する。
+
+2. **エディタ上で3D構造を確認したい場合（推奨）:**
+   - エディタの拡張機能（`3Dmol` など）のインストール方法を案内する。
+   - または、`py3Dmol` を使用してCIFファイルをHTMLに変換するPythonスクリプト（`cif_viewer.py`など）を提供・実行し、生成されたHTMLファイルをエディタ上で開くように案内する。
+
+**禁止事項:**
+- Linux環境内で `winmostar` コマンドを探したり、インストールを試みること。
+
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/.agents/rules/colab_t4_gpu_aimd_workflow.md <==
+# Google Colab (T4 GPU) 遠隔第一原理MD & 表面破壊エネルギー計算規約
+
+Google Colaboratory (T4 GPU) 上で MDI (LAMMPS + Quantum ESPRESSO) 連成計算および表面破壊エネルギー評価を行う際は、本規約に厳格に従うこと。
+
+---
+
+## 1. Google Drive 自動同期・バックアップ規約
+* **パスの対応関係**:
+  * Windows 側: `G:\マイドライブ\MD_backup\`
+  * Colab 側: `/content/drive/MyDrive/MD_backup/`
+  * 両者は完全同期ディレクトリであるため、計算プロセス中の自動バックアップ先は必ず `/content/drive/MyDrive/MD_backup/` を指定すること。
+* **バックアップループ**:
+  * `master_run_gpu.sh` 内で 5分間隔のバックグラウンドループ（`while true; do ... sleep 300; done &`）を実行し、以下の拡張子を同期すること：
+    `*.lammpstrj`, `*.xyz`, `*.log`, `*.pwo`, `*.pwi`, `nohup.out`
+* **結果ファイルの上書き防止と個別アーカイブ規約（厳格義務）**:
+  * 既存の計算結果（`dump.lammpstrj`, `espresso.pwo`, `md_animation.xyz`, `log.lammps`, `qe_engine.log` 等）を、後続の別計算（バルク計算、他の方位、異なるカットオフ等）によって直接上書きしたり、スクリプトの `rm -rf` で安易に一括消去することは**絶対禁止**。
+  * 各計算が完了した際、または次の新しい計算を同一環境で開始する前には、必ずモデル名・面方位・計算種別・日付を付与した独立ディレクトリ（例: `2H-SiC_10-10_slab_relaxed_YYYYMMDD/`）を Google Drive およびローカルに作成し、全成果物を完全退避・保護すること。
+  * 今回の成果物は `2H-SiC_10-10_slab_relaxed_20261020/`（Google Drive: `G:\マイドライブ\MD_backup\2H-SiC_10-10_slab_relaxed_20261020\`、ローカル: `results_2H-SiC_10-10_slab_relaxed_20261020/`）に永続保存されている。
+
+---
+
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/.agents/rules/gdrive_rclone_auth.md <==
+---
+description: Google Driveのマウント認証（rclone）を行う際の必須手順
+---
+
+# Google Drive Headless Authentication
+
+この環境（画面なしのLinuxサーバー）で `rclone` 等を用いてGoogle Driveをマウントする際は、Googleのセキュリティ制限により「ヘッドレス環境でのURL発行による認証（Out-of-band認証）」がブロックされて失敗します。
+
+そのため、エージェントはマウント処理を行う際、以下の手順を必ずユーザーに案内してください。
+
+1. ユーザー自身のローカルPC（Windowsなど）に `rclone` をインストールしてもらう。
+2. ローカルPCのコマンドラインで `rclone authorize "drive"` を実行してもらう。
+3. ブラウザで認証後、ターミナルに出力されるトークン（`{"access_token":...}` を含む文字列）をチャットに貼り付けてもらう。
+4. エージェントはそのトークンを使用して `~/.config/rclone/rclone.conf` を作成し、マウントを行う。
+
+**禁止事項:**
+- エージェント自身が `rclone config` のインタラクティブフローを進めたり、`google-drive-ocamlfuse -headless` でURLを発行してユーザーにアクセスさせようと試みること（必ず失敗するため）。
+
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/.agents/rules/nas_connection.md <==
+---
+name: NAS Connection and Upload Rules
+description: ネットワーク制限下でのNASへの安全なファイル転送方法
+---
+
+# NAS Connection Guidelines
+
+この環境（仮想環境・コンテナ等）では、OS標準のカーネルマウント（`mount -t cifs`）がファイアウォールやセキュリティ制限によってフリーズする既知の問題があります。
+
+今後、ファイルやバックアップをNAS（例: `//192.168.12.69/Backup`）へ送信するタスクを依頼された場合は、以下のルールに従ってください。
+
+## ルール
+1. **マウントコマンドの使用禁止**: `mount.cifs` は絶対に使用しないでください。
+2. **smbclientの使用**: ファイルの転送には必ずユーザー空間で動作する `smbclient` コマンドを使用してください。
+3. **認証情報の安全な取り扱い**: パスワードをコマンドラインに直接含めないでください。`~/.smbcredentials` などの認証ファイルを使用し、パーミッションは `600` に設定して `smbclient -A` で読み込ませてください。
+
+## smbclientでのアップロード手順の例
+```bash
+smbclient "//192.168.12.69/Backup" -A "$HOME/.smbcredentials" -c 'cd "Yamazaki-tj\新しいフォルダー (2)"; put "local_file.txt" "remote_file.txt"'
+```
+
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/.agents/rules/peer_review_coaching.md <==
+# Peer Review & Academic Coaching Rules for SiC Fracture Research
+
+When interacting with the user regarding their research on SiC surface fracture energy and slab models (especially in preparation for posters, presentations, and defense), strictly follow these rules:
+
+## 1. Coaching Style (Peer Reviewer Persona)
+- **Do Not Give Away Answers Immediately**: Follow the professor's guidance from seminars: do not overwhelm the user with ready-made answers. Encourage the user to explain and reason in their own words.
+- **Peer Reviewer Perspective**: Act as a rigorous, knowledgeable peer reviewer / committee member specializing in density functional theory (DFT), molecular dynamics (MD), crystallography, and fracture mechanics.
+- **Literature-Grounded Questions**: Frame questions and counter-arguments based on established academic literature (e.g., Rauls et al. 1999, Inomata & Inoue 1970, King & Antonelli 2007) and physical principles.
+- **Socratic Method**: Point out physical, geometric, or terminological inconsistencies in the user's answers, and prompt them with targeted follow-up questions to guide them to the correct scientific consensus.
+
+## 2. Command Execution & Scripting Constraints
+- **NO Autonomous Simulation Runs**: NEVER start expensive computational calculations (e.g., executing `pw.x`, `lmp`, or launching Colab workflows) without explicit user confirmation. Always stop at model generation, script preparation, and geometric/stoichiometric verification.
+- **Avoid `python3 -c "..."` One-Liners**: Do NOT execute multiline or complex Python code via inline `python3 -c` shell commands, as they frequently cause syntax/escaping errors.
+- **Write Standalone Scripts**: Always write verification and analysis tools as clean Python files (e.g., `check_polarity.py`, `create_10-10_slab_3x3x2.py`) saved in the workspace, and execute them as `python3 <script_name>.py`.
+
+## 3. Visualization and Tooling
+- Support viewing structures in Winmostar (via `view_slab_winmostar.py` or `.bashrc` alias `wm`).
+- Output all atomic models in `.cif` (preserving periodic cell vectors and boundary conditions), `.xyz` (for quick visualizers), and `.data` (for LAMMPS).
+
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/.agents/rules/surface_fracture_slab_rules.md <==
+# Surface Fracture Energy & 2H-SiC Slab Model Standards
+
+When assisting with model generation, theoretical explanation, or validation of surface fracture energy calculations for 2H-SiC, adhere strictly to these principles:
+
+## 1. Surface Fracture Energy Definition
+- **Formula**:
+  $$\gamma = \frac{\Delta E}{2A} = \frac{E_{\text{slab}}(N) - E_{\text{bulk}}(N)}{2A}$$
+- **Equal Number of Atoms ($N$)**: The slab model ($E_{\text{slab}}$) and the bulk reference model ($E_{\text{bulk}}$) MUST have the exact same number of atoms and stoichiometry ("same size cake").
+- **Denominator $2A$**: Cleaving along 1 plane of cross-sectional area $A$ creates **two** surfaces (top and bottom), resulting in a total newly created surface area of $2A$.
+- **Physical Meaning of $\Delta E$**: $\Delta E$ represents the chemical bond breaking energy PLUS the surface structural relaxation energy (reconstruction / strain release of under-coordinated surface atoms). It is NOT the intrinsic energy of the surface atoms alone.
+
+## 2. Material & Crystal Plane Selection
+- **Material: 2H-SiC (Wurtzite)**
+  - *Primary reason*: Smallest periodic stacking repeat along the c-axis (1 repeat = 2 layers), minimizing unit cell dimensions and DFT/MD computational cost.
+  - *Secondary reason*: Inomata & Inoue (1970) establishes 2H-SiC as a stable phase below 1400°C (including room temperature ~30°C).
+- **Crystal Plane: $\{10\bar{1}0\}$ Prismatic Plane (m-plane)**
+  - *Non-polar Surface*: Stoichiometric 1:1 ratio of Si and C in every layer. Net dipole moment along $z$ is strictly zero (Tasker Type I), preventing artificial electrostatic divergence in the vacuum layer (unlike polar $(0001)$ basal planes).
+  - *Minimal Complexity*: Avoids complex tilted pyramidal planes (e.g., $\{10\bar{1}1\}$ or $\{11\bar{2}2\}$), having minimal unit cell area ($a \times c$) compared to $\{11\bar{2}0\}$ (which requires $\sqrt{3}a \times c$).
+  - *Benchmark Data*: Allows direct validation against Rauls et al., Solid State Commun. 111, 459 (1999).
+

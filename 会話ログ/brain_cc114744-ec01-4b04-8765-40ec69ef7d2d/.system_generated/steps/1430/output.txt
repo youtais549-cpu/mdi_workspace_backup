@@ -1,0 +1,43 @@
+Created At: 2026-11-22T02:11:28+09:00
+Completed At: 2026-11-22T02:11:31+09:00
+Command exited with code 0.
+
+Command output:
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_900steps_rtx5080/qe_engine.log <==
+[QE-MDI Engine] --- [Step 587] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127713.6752 eV | Fmax: 3.15448 eV/A | gap: 0.0013 A ---
+[QE-MDI Engine] --- [Step 588] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127713.5372 eV | Fmax: 3.03267 eV/A | gap: 0.0040 A ---
+[QE-MDI Engine] --- [Step 589] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127713.4474 eV | Fmax: 3.19620 eV/A | gap: 0.0027 A ---
+[QE-MDI Engine] --- [Step 590] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127713.4146 eV | Fmax: 3.39665 eV/A | gap: 0.0020 A ---
+[QE-MDI Engine] --- [Step 591] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127713.4429 eV | Fmax: 3.60039 eV/A | gap: 0.0020 A ---
+[QE-MDI Engine] --- [Step 592] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127713.5310 eV | Fmax: 3.76216 eV/A | gap: 0.0028 A ---
+[QE-MDI Engine] --- [Step 593] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127713.6717 eV | Fmax: 3.86505 eV/A | gap: 0.0044 A ---
+[QE-MDI Engine] --- [Step 594] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127713.8522 eV | Fmax: 3.89934 eV/A | gap: 0.0056 A ---
+[QE-MDI Engine] --- [Step 595] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127714.0546 eV | Fmax: 3.85790 eV/A | gap: 0.0067 A ---
+[QE-MDI Engine] --- [Step 596] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127714.2571 eV | Fmax: 3.73767 eV/A | gap: 0.0077 A ---
+[QE-MDI Engine] --- [Step 597] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127714.4365 eV | Fmax: 3.54074 eV/A | gap: 0.0087 A ---
+[QE-MDI Engine] --- [Step 598] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127714.5709 eV | Fmax: 3.27390 eV/A | gap: 0.0056 A ---
+[QE-MDI Engine] --- [Step 599] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127714.6421 eV | Fmax: 3.01246 eV/A | gap: 0.0109 A ---
+[QE-MDI Engine] --- [Step 600] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127714.6396 eV | Fmax: 3.14372 eV/A | gap: 0.0145 A ---
+[QE-MDI Engine] --- [Step 601] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0114A, z_max=21.3056A, gap=0.0170A) ---
+
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_900steps_rtx5080/log.lammps <==
+Dangerous builds = 0
+write_restart   restart.bulk_600steps_restored
+System init for write_restart ...
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+write_data      bulk_10-10_288atoms_aimd_600steps_restored_check.data
+System init for write_data ...
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+
+# 8. Step 601..900 の追加 300 ステップを実機 QE GPU SCF (Step 600 の波動関数・電荷密度引き継ぎ) で連続実行
+restart         50 restart.bulk_step
+run             300
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+Per MPI rank memory allocation (min/avg/max) = 3.631 | 3.631 | 3.631 Mbytes
+   Step          Temp          E_pair         E_mol          KinEng         PotEng         TotEng         Press           Fmax          Fnorm     
+       600   334.4215       0              0              12.406256     -127714.64     -127702.23      4449.4331      2.9132468      23.592702    
+Loop time of 77802 on 1 procs for 300 steps with 288 atoms
+
+Performance: 0.000 ns/day, 72038.919 hours/ns, 0.004 timesteps/s, 1.111 atom-step/s
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+

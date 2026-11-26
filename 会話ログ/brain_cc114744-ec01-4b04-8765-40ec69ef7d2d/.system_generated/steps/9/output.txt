@@ -1,0 +1,20 @@
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/builtin/:
+total 16
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 .
+drwxrwxrwx  7 WORKSTATION4WSL WORKSTATION4WSL  140 Nov  5 03:49 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   72 Nov  5 03:12 .checksum
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  722 Nov  5 03:12 .manifest
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    0 Nov  5 03:12 keep.txt
+drwxr-xr-x 11 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 skills
+
+/home/WORKSTATION4WSL/.gemini/config/:
+total 8
+drwxrwxrwx 4 WORKSTATION4WSL WORKSTATION4WSL   80 Nov  5 03:49 .
+dr-xr-xr-x 5 WORKSTATION4WSL WORKSTATION4WSL  100 Nov  5 03:49 ..
+drwxr-xr-x 2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 plugins
+drwxr-xr-x 2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:49 projects
+bash: line 2: jq: command not found
+curl: (7) Failed to connect to localhost port 34677 after 0 ms: Could not connect to server

@@ -1,0 +1,34 @@
+Created At: 2026-11-24T15:28:46+09:00
+Completed At: 2026-11-24T15:28:59+09:00
+Command exited with code 0.
+
+Command output:
+=== Folders in \\192.168.12.69\Results\yamazaki\research\実行コード ===
+
+--- Contents of {101_0}8周期3.0Å　構造最適化なし ---
+--- Contents of {101_0}8周期3.0Å構造最適化なし　test run ---
+--- Contents of {101_0}８周期3.0Åtest runコード ---
+Name                                            PSIsContainer
+----                                            -------------
+{101_0}8周期3.0Å　構造最適化なし                          True
+{101_0}8周期3.0Å構造最適化なし　test run                  True
+{101_0}８周期3.0Åtest runコード                           True
+create_2periods_vac0.5A_model.py                        False
+run_2periods_vacuum_sweep_0.5_to_10A.py                 False
+auto_generate_progression_graphs.py                          
+dft_settings.py                                              
+in.lammps                                                    
+make_xyz.py                                                  
+qe_mdi_engine_rtx5080.py                                     
+run_8periods_vac3.0A_unrelaxed_aimd_100steps.py              
+slab_10-10_288atoms_vac3.0A_unrelaxed.data                   
+dft_settings.py                                              
+in.lammps.aimd_300K_100steps                                 
+in.lammps.optimized_conv                                     
+qe_mdi_engine_rtx5080.py                                     
+run_8periods_vac3.0A_relax_and_aimd_100steps.py              
+slab_10-10_288atoms_vac3.0A_init.data                        
+slab_10-10_288atoms_vac3.0A_relaxed.data                     
+
+
+

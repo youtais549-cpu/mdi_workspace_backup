@@ -1,0 +1,8 @@
+Created At: 2026-11-22T02:11:41+09:00
+Completed At: 2026-11-22T02:11:41+09:00
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_600steps_rtx5080/log.lammps:       600   334.4215       0              0              12.406256     -127714.64     -127702.23      4449.4331      2.9132468      23.592702    
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_900steps_rtx5080/log.lammps:       600   334.4215       0              0              12.406256     -127714.64     -127702.23      4449.4331      2.9132468      23.592702    
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_900steps_rtx5080/log.lammps:       600   334.4215       0              0              12.406256     -127714.64     -127702.23      4449.4331      2.9132468      23.592702    

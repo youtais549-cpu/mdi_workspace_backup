@@ -1,0 +1,6 @@
+Created At: 2026-11-26T13:37:35+09:00
+Completed At: 2026-11-26T13:37:37+09:00
+Command exited with code 1.
+
+Command output:
+ERROR: Invalid command-line argument: -r (src/lammps.cpp:486)

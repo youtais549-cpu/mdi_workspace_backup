@@ -1,0 +1,26 @@
+Command exited with code 0.
+
+Command output:
+{
+  "id": "8462df08-51eb-470c-9463-4ba46b4eb706",
+  "name": "mdi_workspace_backup",
+  "projectResources": {
+    "resources": [
+      {
+        "folderUri": "file:///home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup"
+      }
+    ]
+  },
+  "permissionGrants": {
+    "v2Migrated": true
+  },
+  "settings": {},
+  "isWorkspaceOnly": false
+}
+total 20
+drwxr-x--- 6 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:13 .
+dr-xr-xr-x 5 WORKSTATION4WSL WORKSTATION4WSL  100 Nov  5 03:50 ..
+drwx------ 2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:47 antigravity
+drwxr-xr-x 3 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 02:57 fish
+drwxr-x--- 2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 02:36 ubuntu-insights
+drwxr-xr-x 2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 02:57 uv

@@ -1,0 +1,31 @@
+# ==============================================================================
+# 2H-SiC {10-10} 8周期 (16層, 288原子) 真空層 3.0 Å スラブ 0 K 構造緩和
+# (8周期・真空5.0Å緩和済み構造から真空層を 5.0Å → 3.0Å に詰めた初期構造の微調整緩和)
+# ==============================================================================
+units           metal
+dimension       3
+boundary        p p p
+atom_style      atomic
+atom_modify     map yes
+
+read_data       slab_10-10_288atoms_vac3.0A_init.data
+
+# Rule 2: Type 1 = C (12.011), Type 2 = Si (28.085)
+mass            1 12.011
+mass            2 28.085
+
+pair_style      none
+
+fix             1 all mdi/qm elements C Si
+thermo_style    custom step temp pe etotal press fmax fnorm
+thermo          1
+thermo_modify   flush yes
+
+dump            1 all custom 1 dump.lammpstrj id type x y z fx fy fz
+dump_modify     1 sort id flush yes
+
+# Rule 9: 最適化収束条件標準
+min_style       cg
+minimize        1.0e-6 1.0e-2 100 150
+
+write_data      slab_10-10_288atoms_vac3.0A_relaxed.data

@@ -1,0 +1,20 @@
+Command exited with code 0.
+
+Command output:
+total 2772
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 19:17 .
+drwxrwxrwx 63 WORKSTATION4WSL WORKSTATION4WSL   24576 Nov  8 22:40 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  5 19:17 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  5 19:17 Si.upf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   23956 Nov  5 19:17 bulk_10-10_288atoms_true_bulk.cif
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   24144 Nov  5 19:17 bulk_10-10_288atoms_true_bulk.data
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   15665 Nov  5 19:17 bulk_10-10_288atoms_true_bulk.xyz
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    7586 Nov  5 19:18 create_8periods_bulk_and_slab_models.py
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   13103 Nov  5 19:17 espresso.pwi
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   64815 Nov  5 19:20 espresso.pwo
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     953 Nov  5 19:22 fracture_metadata.json
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    4325 Nov  5 19:17 run_bulk_8periods_rtx5080.sh
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   25089 Nov  5 19:17 slab_10-10_288atoms_vac5A.cif
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   24144 Nov  5 19:17 slab_10-10_288atoms_vac5A.data
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   20985 Nov  5 19:17 slab_10-10_288atoms_vac5A.xyz
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 19:20 tmp

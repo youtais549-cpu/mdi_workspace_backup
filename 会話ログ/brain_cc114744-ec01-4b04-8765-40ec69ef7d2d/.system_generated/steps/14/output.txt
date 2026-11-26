@@ -1,0 +1,9 @@
+Command exited with code 0.
+
+Command output:
+total 8
+dr-xr-xr-x 5 WORKSTATION4WSL WORKSTATION4WSL  100 Nov  5 03:50 .
+dr-xr-xr-x 3 WORKSTATION4WSL WORKSTATION4WSL   60 Nov  5 03:50 ..
+drwxr-x--- 8 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 .cache
+drwxr-x--- 6 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:13 .config
+dr-xr-xr-x 5 WORKSTATION4WSL WORKSTATION4WSL  100 Nov  5 03:50 .gemini

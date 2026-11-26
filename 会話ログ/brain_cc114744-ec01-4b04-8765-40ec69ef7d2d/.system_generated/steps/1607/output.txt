@@ -1,0 +1,25 @@
+Created At: 2026-11-26T13:35:38+09:00
+Completed At: 2026-11-26T13:35:38+09:00
+Command exited with code 0.
+
+Command output:
+     negative rho (up, down):  1.555E-04 0.000E+00
+
+     total cpu time spent up to now is      629.5 secs
+
+     total energy              =   -9383.78338854 Ry
+     estimated scf accuracy    <       0.00002951 Ry
+
+     iteration # 24     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  2.56E-09,  avg # of iterations =  2.0
+
+     negative rho (up, down):  2.457E-04 0.000E+00
+
+     total cpu time spent up to now is      649.6 secs
+
+     total energy              =   -9383.78338729 Ry
+     estimated scf accuracy    <       0.00002045 Ry
+
+     iteration # 25     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap

@@ -1,0 +1,7 @@
+Command exited with code 0.
+
+Command output:
+total 12
+drwx------ 2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:47 .
+drwxr-x--- 6 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:13 ..
+-rw------- 1 WORKSTATION4WSL WORKSTATION4WSL   17 Nov  5 03:47 credential-user-scope

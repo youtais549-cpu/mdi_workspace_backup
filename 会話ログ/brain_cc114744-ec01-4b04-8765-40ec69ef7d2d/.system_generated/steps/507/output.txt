@@ -1,0 +1,4 @@
+Command exited with code 1.
+
+Command output:
+cat: /proc/329410/stack: Permission denied

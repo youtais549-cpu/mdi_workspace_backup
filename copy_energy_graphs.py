@@ -1,0 +1,20 @@
+import subprocess
+import base64
+
+ps_code = r'''
+$targetDir = "\\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}8周期3.0Å構造最適化なしtest run"
+$srcDir = "\\wsl.localhost\Ubuntu\home\WORKSTATION4WSL\.gemini\antigravity\scratch\mdi_workspace_backup\aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_100steps_rtx5080"
+
+$files = Get-ChildItem -LiteralPath $srcDir | Where-Object { $_.Name -like "*エネルギー*" }
+foreach ($f in $files) {
+    Copy-Item -LiteralPath $f.FullName -Destination $targetDir -Force
+    Write-Host "COPIED:" $f.Name
+}
+'''
+
+enc = base64.b64encode(ps_code.encode("utf-16le")).decode("ascii")
+res = subprocess.run(["/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe", "-NoProfile", "-EncodedCommand", enc], capture_output=True)
+print(res.stdout.decode("cp932", errors="replace"))
+if res.stderr:
+    print("STDERR:", res.stderr.decode("cp932", errors="replace"))
+

@@ -1,0 +1,19 @@
+# SiO2 unit cell
+ 
+3 atoms
+2 atom types
+
+0.0 5.0 xlo xhi
+0.0 5.0 ylo yhi
+0.0 5.0 zlo zhi
+
+Masses
+
+1 28.0855
+2 15.999
+
+Atoms
+
+1 1 0.0 0.0 0.0 0
+2 2 2.5 0.0 0.0 0
+3 2 0.0 2.5 0.0 0

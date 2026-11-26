@@ -1,0 +1,8 @@
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.config/matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-k5jlqv4b because there was an issue with the default path (/home/WORKSTATION4WSL/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[AutoGraph] Parsed 8 data points. Steps: [0 1 2 3 4 5 6 7]
+[AutoGraph] Successfully generated all 3 progression graphs (PNG, PDF, SVG) in:
+  - /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_vac5A_natural_cleavage

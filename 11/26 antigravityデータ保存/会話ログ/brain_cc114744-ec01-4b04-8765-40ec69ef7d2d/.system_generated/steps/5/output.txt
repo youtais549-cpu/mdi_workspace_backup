@@ -1,0 +1,18 @@
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/:
+total 12
+drwxrwxrwx 7 WORKSTATION4WSL WORKSTATION4WSL  140 Nov  5 03:49 .
+dr-xr-xr-x 5 WORKSTATION4WSL WORKSTATION4WSL  100 Nov  5 03:49 ..
+drwxr-xr-x 2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:14 bin
+dr-xr-xr-x 3 WORKSTATION4WSL WORKSTATION4WSL   60 Nov  5 03:49 brain
+drwxr-xr-x 3 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:12 builtin
+drwxrwxrwx 2 WORKSTATION4WSL WORKSTATION4WSL   40 Nov  5 03:49 conversations
+drwxr-xr-x 6 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 03:31 scratch
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/.agents/:
+total 24
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:24 .
+drwxrwxrwx 32 WORKSTATION4WSL WORKSTATION4WSL 16384 Nov  5 03:31 ..
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:24 rules

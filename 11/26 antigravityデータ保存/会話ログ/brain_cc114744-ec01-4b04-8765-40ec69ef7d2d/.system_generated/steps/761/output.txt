@@ -1,0 +1,8 @@
+Command exited with code 0.
+
+Command output:
+layers=1: len(z_unique)=2, natoms=4, 3x3 natoms=36
+layers=2: len(z_unique)=4, natoms=8, 3x3 natoms=72
+layers=4: len(z_unique)=8, natoms=16, 3x3 natoms=144
+layers=6: len(z_unique)=12, natoms=24, 3x3 natoms=216
+layers=8: len(z_unique)=16, natoms=32, 3x3 natoms=288

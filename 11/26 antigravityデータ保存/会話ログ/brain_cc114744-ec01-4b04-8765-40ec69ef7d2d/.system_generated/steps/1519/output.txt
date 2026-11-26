@@ -1,0 +1,25 @@
+Created At: 2026-11-23T15:34:49+09:00
+Completed At: 2026-11-23T15:34:49+09:00
+Task: cc114744-ec01-4b04-8765-40ec69ef7d2d/task-1495
+Status: RUNNING
+Log: file:///home/WORKSTATION4WSL/.gemini/antigravity/brain/cc114744-ec01-4b04-8765-40ec69ef7d2d/.system_generated/tasks/task-1495.log
+Log output:
+<truncated 5347 lines>
+            start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 1875, in _execute_child
+    self._posix_spawn(args, executable, env, restore_signals, close_fds,
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                      p2cread, p2cwrite,
+                      ^^^^^^^^^^^^^^^^^^
+                      c2pread, c2pwrite,
+                      ^^^^^^^^^^^^^^^^^^
+                      errread, errwrite)
+                      ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 1819, in _posix_spawn
+    self.pid = os.posix_spawn(executable, args, env, **kwargs)
+               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe'
+[2026-11-23 15:33:44] Synced current files to NAS ({101_0}8周期3.0Å　構造最適化なし).
+
+Last progress: 1m4s ago

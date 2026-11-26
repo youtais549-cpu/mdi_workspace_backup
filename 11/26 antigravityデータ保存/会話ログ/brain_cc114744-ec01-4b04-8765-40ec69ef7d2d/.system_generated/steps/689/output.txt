@@ -1,0 +1,64 @@
+Command exited with code 0.
+
+Command output:
+            import importlib.util
+            spec = importlib.util.spec_from_file_location("dft_settings", "dft_settings.py")
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            if hasattr(mod, 'DFT_CONFIG'):
+                default_config.update(mod.DFT_CONFIG)
+                log("Loaded DFT_CONFIG from dft_settings.py")
+    except Exception as e:
+        log(f"Notice: Using default DFT parameters ({e})")
+    return default_config
+
+
+def allocate_qm():
+    global qm_elements, qm_coords, qm_forces, last_evaluated_coords
+    n = qm_natoms
+    qm_elements = np.empty(n, dtype=np.int32)
+    qm_coords = np.empty((n, 3), dtype=np.float64)
+    qm_forces = np.empty((n, 3), dtype=np.float64)
+    last_evaluated_coords = None
+
+
+def receive_qm_natoms(mdicomm):
+    global qm_natoms
+    qm_natoms = mdi.MDI_Recv(1, mdi.MDI_INT, mdicomm)
+    log(f"Received >NATOMS: {qm_natoms}")
+    allocate_qm()
+
+
+def receive_box(mdicomm):
+    global flag_box
+    flag_box = True
+    ierr = mdi.MDI_Recv(9, mdi.MDI_DOUBLE, mdicomm, buf=box)
+    if ierr:
+        error("MDI: >CELL reception failed")
+
+
+def receive_qm_coords(mdicomm):
+    if not qm_natoms:
+        error("Cannot receive >COORDS if # atoms = 0")
+    ierr = mdi.MDI_Recv(3 * qm_natoms, mdi.MDI_DOUBLE, mdicomm, buf=qm_coords)
+    if ierr:
+        error("MDI: >COORDS reception failed")
+
+
+def receive_qm_elements(mdicomm):
+    if not qm_natoms:
+        error("Cannot receive >ELEMENTS if # atoms = 0")
+    ierr = mdi.MDI_Recv(qm_natoms, mdi.MDI_INT, mdicomm, buf=qm_elements)
+    if ierr:
+        error("MDI: >ELEMENTS reception failed")
+
+
+def receive_qm_types(mdicomm):
+    if not qm_natoms:
+        error("Cannot receive >TYPES if # atoms = 0")
+    types = np.empty(qm_natoms, dtype=np.int32)
+    ierr = mdi.MDI_Recv(qm_natoms, mdi.MDI_INT, mdicomm, buf=types)
+    if ierr:
+        error("MDI: >TYPES reception failed")
+    for i, t in enumerate(types):
+        sym = type_to_symbol.get(int(t), 'C')

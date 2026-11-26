@@ -1,0 +1,7 @@
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.cache/open-interpreter
+/home/WORKSTATION4WSL/.cache/uv/simple-v27/pypi/open-interpreter.rkyv
+/home/WORKSTATION4WSL/.cache/uv/wheels-v7/pypi/open-interpreter
+/home/WORKSTATION4WSL/.config/open-interpreter

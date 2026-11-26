@@ -1,0 +1,36 @@
+Command exited with code 0.
+
+Command output:
+============================================================
+ Starting LAMMPS + QE MDI 8-Period Slab Relaxation
+ Environment : Core Ultra 9 285K (24 cores) / RAM 64GB / RTX 5080 16GB
+ Model       : 2H-SiC {10-10} 8-Periods (16 layers, 288 atoms), Vacuum 5.0 Å
+ Convergence : minimize 1.0e-6 1.0e-2 100 150 (AGENTS.md §9)
+ Parallelism : MPI_NP=12 x OMP_NUM_THREADS=2 (24 threads)
+ LAMMPS Bin  : /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/lmp | TCP Port: 8028
+============================================================
+1. Starting LAMMPS MDI driver...
+2. Starting Python QE MDI engine...
+============================================================
+ Calculation Completed Successfully!
+ 3. Converting trajectory to Winmostar XYZ format (sorted by Atom ID)...
+Converted 5 frames to md_animation.xyz
+ 4. Generating 3 progression graphs according to protocol...
+/home/WORKSTATION4WSL/.config/matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-rjuf30m0 because there was an issue with the default path (/home/WORKSTATION4WSL/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[AutoGraph] Parsed 8 data points. Steps: [0 1 2 3 4 5 6 7]
+[AutoGraph] Successfully generated all 3 progression graphs (PNG, PDF, SVG) in:
+  - /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_vac5A_natural_cleavage
+ 5. Evaluating 8-Period Surface Fracture Energy γ...
+------------------------------------------------------------
+  [8周期 (16層, 288原子) 表面破壊エネルギー算出結果]
+  - E_bulk (288 atoms) : -127726.1628 eV (-9387.69989164 Ry)
+  - E_slab (relaxed)   : -127685.0579 eV (QE: -127685.0579 eV)
+  - ΔE = E_slab-E_bulk : 41.1049 eV
+  - 全破面積 2A        : 279.4977 Å²
+  - 表面破壊エネルギー γ: 2.3563 J/m²
+  - 文献値比較 (Rauls 1999 緩和後 2.27 J/m²): +3.8%
+  - 文献値比較 (Rauls 1999 実測/ダイマー 3.03 J/m²)
+------------------------------------------------------------
+ Done!
+============================================================

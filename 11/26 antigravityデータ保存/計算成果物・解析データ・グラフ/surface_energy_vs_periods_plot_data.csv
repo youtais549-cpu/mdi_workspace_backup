@@ -1,0 +1,3 @@
+﻿Periods,Vacuum_A,E_slab_eV,E_bulk_eV,Delta_E_eV,Area_2A_A2,Gamma_J_m2,Note
+2,5.0,-31892.643,-31935.3572,42.7142,279.4977,2.4485,"converged (72 atoms, vac 5A)"
+4,5.0,-63822.0658,-63863.3059,41.2401,279.4977,2.364,"converged (144 atoms, natural cleavage vac 5A)"

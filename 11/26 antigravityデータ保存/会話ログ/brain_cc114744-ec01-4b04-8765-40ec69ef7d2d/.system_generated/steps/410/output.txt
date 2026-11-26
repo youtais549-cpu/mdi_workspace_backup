@@ -1,0 +1,4 @@
+Command exited with code 1.
+
+Command output:
+[Error] Windows PowerShell not found at /mnt/c/...

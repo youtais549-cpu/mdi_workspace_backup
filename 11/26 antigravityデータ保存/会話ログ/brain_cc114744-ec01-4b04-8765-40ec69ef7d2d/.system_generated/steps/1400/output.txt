@@ -1,0 +1,45 @@
+Created At: 2026-11-20T17:10:50+09:00
+Completed At: 2026-11-20T17:10:51+09:00
+Command exited with code 0.
+
+Command output:
+- **ログとグラフの 1 対 1 対応・他フォルダ流用禁止の保証**:
+  各計算ディレクトリおよび Google Drive バックアップフォルダに保存される 3 種推移グラフは、必ず**そのフォルダ直下の `espresso.pwo` および `log.lammps` から直接パースして生成された固有のデータであること**を保証する。他フォルダのグラフファイルをコピー・流用することは厳禁とする。
+- **体裁仕様（厳格準拠）**:
+  - 寸法: 横 8.0 cm × 縦 6.2 cm（Word 配置最適化）
+  - フォント: 軸ラベル MS明朝 10.5 pt、目盛り数字 Times New Roman 9.5 pt、数式 STIX
+  - マーカー: 中抜き紫三角マーカー（`marker='^'`, `facecolors='none'`, `edgecolors='#8A2BE2'`, `s=45`, `linewidths=1.2`）＋折れ線（`#8A2BE2`, `lw=1.2`）
+  - 枠線・目盛り: 4辺枠線（`top=True, right=True`）、内向き目盛り（`direction='in'`）
+  - 文献値の点線は不要。
+
+## 9. スラブ構造緩和における最適化収束条件標準 (`minimize 1.0e-6 1.0e-2 100 150`) と非上書き原則（必須）
+- **最適化収束条件の恒久標準（全規模スラブ共通）**:
+  QEのSCF収束閾値（`conv_thr = 1.0e-5 Ry`）に伴う Hellmann-Feynman 力のノイズ限界（$\approx 0.005 \sim 0.008\text{ eV/\AA}$）を考慮し、2周期・4周期・6周期を含むすべてのスラブ構造緩和入力スクリプトで以下を標準とする：
+  ```lammps
+  minimize 1.0e-6 1.0e-2 100 150
+  ```
+  - `ftol = 1.0e-2 eV/Å`（$= 0.010\text{ eV/\AA} \approx 0.0004\text{ Ry/au}$）: 物理的な構造緩和完了時点で自然に自動正常終了させる。
+  - `etol = 1.0e-6`: エネルギー底打ち（$\Delta E \le 0.06\text{ eV}$）による二重セーフティネット。
+  - `maxiter = 100, maxeval = 150`: 安全上限ステップ数。
+  - **実証済み妥当性**: 2周期・真空2.5 Å において、旧条件での未収束状態から本設定により 31分43秒 で自然収束し、表面破壊エネルギーの差異はわずか $+0.0006\text{ J/m}^2$（誤差 0.02%）と完全一致することが実証済み。
+- **条件変更時の非上書き原則と新規ディレクトリ・ファイル作成**:
+  収束条件やモデル条件（周期数・真空厚）を変更する際は、**既存のファイルを上書きせず、必ず新しく独立したディレクトリ（例: `calc_2H-SiC_10-10_<N>periods_vac<X>A/`）およびファイル（`in.lammps.optimized_conv` など）を作成して保存・実行すること**。
+  Google Drive 上にも独立したフォルダ（例: `[101_0]<N>周期<X>Å/`）を必ず新規作成し、5分間隔の自動バックアップループを確立すること。
+
+## 10. 結晶面切断（へき開面）の物理的前提厳守とモデル整合性（絶対遵守）
+- **自然へき開面の物理的前提**:
+  き裂進展・脆性破壊シミュレーションにおけるスラブ切断面は、エネルギー最小となる「粗結合面（$dz \approx 1.776\text{ \AA}$ の弱結合面）」でなければならず、強結合ペア（$dz \approx 0.888\text{ \AA}$）を引きちぎる切断は厳禁。
+- **モデル拡張時の ASE surface 統一**:
+  周期数変更（2周期 $\to$ 4周期 $\to$ 6周期）時は手動計算スクリプトを使わず、ASE `surface(bulk, indices=(1, 0, 0), layers=2*N)` で統一生成し、両端が密結合保持（外側が粗結合切断）であることを確認すること。
+- **異常値の早期検知と妥当性評価**:
+  表面破壊エネルギー $\gamma$ が文献値（$\approx 2.45\text{ J/m}^2$）から大きく乖離した場合、「スラブ厚み依存性」や「オーダーが合っている」などと安易に正当化せず、切断面の終端原子・結合状態を最優先で疑い検証すること。
+
+## 11. 新環境（WSL / Antigravity IDE）における拡張機能・表示言語・ルール管理規約
+- **WSL リモート環境の拡張機能管理**:
+  - [`.vscode/extensions.json`](.vscode/extensions.json) は推奨拡張機能リストの定義ファイルであり、WSL（Ubuntu）接続時は Python (`ms-python.python`)、Pylance (`ms-python.vscode-pylance`)、C/C++ (`ms-vscode.cpptools`)、LAMMPS (`thfriedrich.lammps`) 等が **「WSL: UBUNTU - インストール済み」** 側にもインストール・有効化されていることを確認すること。
+- **表示言語（日本語パック）の反映手順**:
+  - `ms-ceintl.vscode-language-pack-ja` 導入後、コマンドパレット（`Ctrl+Shift+P`）$\to$ `Configure Display Language` $\to$ `日本語 (ja)` を選択し、**IDE を再起動（Restart）** することで UI 表示言語に反映される。
+- **恒久ルールの正本統一（重複注入防止）**:
+  - ワークスペースルールの正本は [`AGENTS.md`](AGENTS.md) に一本化する。[`GEMINI.md`](GEMINI.md) は正本への参照ポインタのみを記載し、同一ルール全文の二重注入によるコンテキスト枠（Rules Budget 20,000 tokens）の浪費と更新不整合を防止する。
+
+詳細規約は [`.agents/rules/colab_t4_gpu_aimd_workflow.md`](.agents/rules/colab_t4_gpu_aimd_workflow.md) および [`.agents/rules/surface_fracture_slab_rules.md`](.agents/rules/surface_fracture_slab_rules.md) を参照すること。

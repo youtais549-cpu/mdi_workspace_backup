@@ -1,0 +1,80 @@
+[2026-11-08 23:20:21] 🌟 Starting Periods Sweep Automation for 6 conditions: [1, 3, 5, 7, 9, 10]
+[2026-11-08 23:20:21] ============================================================
+[2026-11-08 23:20:21] 🚀 Starting Period 1 Calculation Flow (Target NAS: {101_0}1周期5Å)
+[2026-11-08 23:20:21] ============================================================
+[2026-11-08 23:20:21] --- [Period 1] Step 1: Running True Bulk 1-Point SCF (36 atoms, Lz=2.6639 Å) ---
+[2026-11-08 23:20:29] --- [Period 1] Bulk SCF Done in 7.2s | E_bulk=-15878.4827 eV (-1167.04695028 Ry) | -441.0690 eV/atom (Target: -443.5 eV/atom) ---
+[2026-11-08 23:20:29] --- [Period 1] Step 2: Running MDI Slab Relaxation (36 atoms, vacuum 5.0 Å) ---
+Converted 8 frames to md_animation.xyz
+[AutoGraph] Parsed 11 data points. Steps: [ 0  1  2  3  4  5  6  7  8  9 10]
+[AutoGraph] Successfully generated all 3 progression graphs (PNG, PDF, SVG) in:
+  - /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_1periods_vac5A_natural_cleavage
+[2026-11-08 23:24:04] ✅ [Period 1] Complete! Natoms=36 | Bulk: 7.2s | Slab: 3.6 min (11 evals) | E_slab=-15945.0989 eV | ΔE=-66.6162 eV | γ=-3.8187 J/m²
+[2026-11-08 23:24:05]   -> Staged locally at: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/nas_staging_periods/{101_0}1周期5Å (includes bulk & slab calculation data)
+[2026-11-08 23:24:05] ✅ Updated period comparison graph: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/周期数と表面破壊エネルギーの関係.png/.pdf/.svg
+[2026-11-08 23:24:05] ============================================================
+[2026-11-08 23:24:05] 🚀 Starting Period 3 Calculation Flow (Target NAS: {101_0}3周期5Å)
+[2026-11-08 23:24:05] ============================================================
+[2026-11-08 23:24:05] --- [Period 3] Step 1: Running True Bulk 1-Point SCF (108 atoms, Lz=7.9917 Å) ---
+[2026-11-08 23:24:30] --- [Period 3] Bulk SCF Done in 24.9s | E_bulk=-47860.8847 eV (-3517.71014263 Ry) | -443.1563 eV/atom (Target: -443.5 eV/atom) ---
+[2026-11-08 23:24:30] --- [Period 3] Step 2: Running MDI Slab Relaxation (108 atoms, vacuum 5.0 Å) ---
+Converted 7 frames to md_animation.xyz
+[AutoGraph] Parsed 12 data points. Steps: [ 0  1  2  3  4  5  6  7  8  9 10 11]
+[AutoGraph] Successfully generated all 3 progression graphs (PNG, PDF, SVG) in:
+  - /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_3periods_vac5A_natural_cleavage
+[2026-11-08 23:37:50] ✅ [Period 3] Complete! Natoms=108 | Bulk: 24.9s | Slab: 13.3 min (12 evals) | E_slab=-47856.6115 eV | ΔE=4.2732 eV | γ=0.2450 J/m²
+[2026-11-08 23:37:50]   -> Staged locally at: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/nas_staging_periods/{101_0}3周期5Å (includes bulk & slab calculation data)
+[2026-11-08 23:37:50] ✅ Updated period comparison graph: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/周期数と表面破壊エネルギーの関係.png/.pdf/.svg
+[2026-11-08 23:37:50] ============================================================
+[2026-11-08 23:37:50] 🚀 Starting Period 5 Calculation Flow (Target NAS: {101_0}5周期5Å)
+[2026-11-08 23:37:50] ============================================================
+[2026-11-08 23:37:50] --- [Period 5] Step 1: Running True Bulk 1-Point SCF (180 atoms, Lz=13.3195 Å) ---
+[2026-11-08 23:39:10] --- [Period 5] Bulk SCF Done in 79.6s | E_bulk=-79792.9123 eV (-5864.67088059 Ry) | -443.2940 eV/atom (Target: -443.5 eV/atom) ---
+[2026-11-08 23:39:10] --- [Period 5] Step 2: Running MDI Slab Relaxation (180 atoms, vacuum 5.0 Å) ---
+Converted 6 frames to md_animation.xyz
+[AutoGraph] Parsed 10 data points. Steps: [0 1 2 3 4 5 6 7 8 9]
+[AutoGraph] Successfully generated all 3 progression graphs (PNG, PDF, SVG) in:
+  - /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_5periods_vac5A_natural_cleavage
+[2026-11-09 00:06:25] ✅ [Period 5] Complete! Natoms=180 | Bulk: 79.6s | Slab: 27.2 min (10 evals) | E_slab=-79787.7398 eV | ΔE=5.1724 eV | γ=0.2965 J/m²
+[2026-11-09 00:06:25]   -> Staged locally at: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/nas_staging_periods/{101_0}5周期5Å (includes bulk & slab calculation data)
+[2026-11-09 00:06:25] ✅ Updated period comparison graph: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/周期数と表面破壊エネルギーの関係.png/.pdf/.svg
+[2026-11-09 00:06:25] ============================================================
+[2026-11-09 00:06:25] 🚀 Starting Period 7 Calculation Flow (Target NAS: {101_0}7周期5Å)
+[2026-11-09 00:06:25] ============================================================
+[2026-11-09 00:06:25] --- [Period 7] Step 1: Running True Bulk 1-Point SCF (252 atoms, Lz=18.6473 Å) ---
+[2026-11-09 00:09:03] --- [Period 7] Bulk SCF Done in 158.4s | E_bulk=-111724.5080 eV (-8211.59987934 Ry) | -443.3512 eV/atom (Target: -443.5 eV/atom) ---
+[2026-11-09 00:09:03] --- [Period 7] Step 2: Running MDI Slab Relaxation (252 atoms, vacuum 5.0 Å) ---
+Converted 6 frames to md_animation.xyz
+[AutoGraph] Parsed 10 data points. Steps: [0 1 2 3 4 5 6 7 8 9]
+[AutoGraph] Successfully generated all 3 progression graphs (PNG, PDF, SVG) in:
+  - /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_7periods_vac5A_natural_cleavage
+[2026-11-09 01:06:29] ✅ [Period 7] Complete! Natoms=252 | Bulk: 158.4s | Slab: 57.4 min (10 evals) | E_slab=-111719.3218 eV | ΔE=5.1863 eV | γ=0.2973 J/m²
+[2026-11-09 01:06:29]   -> Staged locally at: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/nas_staging_periods/{101_0}7周期5Å (includes bulk & slab calculation data)
+[2026-11-09 01:06:30] ✅ Updated period comparison graph: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/周期数と表面破壊エネルギーの関係.png/.pdf/.svg
+[2026-11-09 01:06:30] ============================================================
+[2026-11-09 01:06:30] 🚀 Starting Period 9 Calculation Flow (Target NAS: {101_0}9周期5Å)
+[2026-11-09 01:06:30] ============================================================
+[2026-11-09 01:06:30] --- [Period 9] Step 1: Running True Bulk 1-Point SCF (324 atoms, Lz=23.9750 Å) ---
+[2026-11-09 01:11:46] --- [Period 9] Bulk SCF Done in 316.7s | E_bulk=-143656.1675 eV (-10558.53356321 Ry) | -443.3832 eV/atom (Target: -443.5 eV/atom) ---
+[2026-11-09 01:11:46] --- [Period 9] Step 2: Running MDI Slab Relaxation (324 atoms, vacuum 5.0 Å) ---
+Converted 5 frames to md_animation.xyz
+[AutoGraph] Parsed 8 data points. Steps: [0 1 2 3 4 5 6 7]
+[AutoGraph] Successfully generated all 3 progression graphs (PNG, PDF, SVG) in:
+  - /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_9periods_vac5A_natural_cleavage
+[2026-11-09 02:40:11] ✅ [Period 9] Complete! Natoms=324 | Bulk: 316.7s | Slab: 88.4 min (8 evals) | E_slab=-143650.8317 eV | ΔE=5.3358 eV | γ=0.3059 J/m²
+[2026-11-09 02:40:11]   -> Staged locally at: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/nas_staging_periods/{101_0}9周期5Å (includes bulk & slab calculation data)
+[2026-11-09 02:40:11] ✅ Updated period comparison graph: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/周期数と表面破壊エネルギーの関係.png/.pdf/.svg
+[2026-11-09 02:40:11] ============================================================
+[2026-11-09 02:40:11] 🚀 Starting Period 10 Calculation Flow (Target NAS: {101_0}10周期5Å)
+[2026-11-09 02:40:11] ============================================================
+[2026-11-09 02:40:11] --- [Period 10] Step 1: Running True Bulk 1-Point SCF (360 atoms, Lz=26.6389 Å) ---
+[2026-11-09 02:44:51] --- [Period 10] Bulk SCF Done in 280.3s | E_bulk=-159657.6701 eV (-11734.62231550 Ry) | -443.4935 eV/atom (Target: -443.5 eV/atom) ---
+[2026-11-09 02:44:51] --- [Period 10] Step 2: Running MDI Slab Relaxation (360 atoms, vacuum 5.0 Å) ---
+Converted 5 frames to md_animation.xyz
+[AutoGraph] Parsed 8 data points. Steps: [0 1 2 3 4 5 6 7]
+[AutoGraph] Successfully generated all 3 progression graphs (PNG, PDF, SVG) in:
+  - /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_10periods_vac5A_natural_cleavage
+[2026-11-09 04:40:10] ✅ [Period 10] Complete! Natoms=360 | Bulk: 280.3s | Slab: 115.3 min (8 evals) | E_slab=-159616.6027 eV | ΔE=41.0674 eV | γ=2.3541 J/m²
+[2026-11-09 04:40:10]   -> Staged locally at: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/nas_staging_periods/{101_0}10周期5Å (includes bulk & slab calculation data)
+[2026-11-09 04:40:10] ✅ Updated period comparison graph: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/周期数と表面破壊エネルギーの関係.png/.pdf/.svg
+[2026-11-09 04:40:10] 🎉 All requested period calculations completed!

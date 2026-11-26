@@ -1,0 +1,4 @@
+Command exited with code 0.
+
+Command output:
+Step 350 restart file detected! Size: 26327

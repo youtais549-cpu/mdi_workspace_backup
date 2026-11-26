@@ -1,0 +1,10 @@
+Command exited with code 0.
+
+Command output:
+interpret 329410 WORKSTATION4WSL txt       REG               8,48 21828192   32942 /home/WORKSTATION4WSL/.local/share/uv/python/cpython-3.11.18-linux-x86_64-gnu/bin/python3.11
+interpret 329410 WORKSTATION4WSL   0u      CHR              136,5      0t0       8 /dev/pts/5
+interpret 329410 WORKSTATION4WSL   1u      CHR              136,5      0t0       8 /dev/pts/5
+interpret 329410 WORKSTATION4WSL   2u      CHR              136,5      0t0       8 /dev/pts/5
+interpret 329410 WORKSTATION4WSL  22w      REG               8,48        0  119476 /home/WORKSTATION4WSL/.antigravity-ide-server/data/logs/20261105T141203/ptyhost.log
+interpret 329410 WORKSTATION4WSL  23w      REG               8,48        0  119368 /home/WORKSTATION4WSL/.antigravity-ide-server/data/logs/20261105T141203/remoteTelemetry.log
+interpret 329410 WORKSTATION4WSL  24w      REG               8,48     2838  115030 /home/WORKSTATION4WSL/.antigravity-ide-server/data/logs/20261105T141203/remoteagent.log

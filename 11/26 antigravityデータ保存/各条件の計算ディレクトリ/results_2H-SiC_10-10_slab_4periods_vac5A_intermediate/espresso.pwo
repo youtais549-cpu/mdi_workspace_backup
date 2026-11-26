@@ -1,0 +1,408 @@
+
+     Program PWSCF v.7.2 starts on 22Oct2026 at  0:35:13 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     6882 MiB available memory on the printing compute node when the environment starts
+ 
+     Reading input from espresso.pwi
+Warning: card &CELL ignored
+Warning: card / ignored
+Warning: card &FCP ignored
+Warning: card / ignored
+Warning: card &RISM ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+     file Si.upf: wavefunction(s)  3S 3P renormalized
+     file C.upf: wavefunction(s)  2S 2P renormalized
+
+     gamma-point specific algorithms are used
+     Message from routine setup:
+     using ibrav=0 with symmetry is DISCOURAGED, use correct ibrav instead
+ 
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum       12717    6361   1591              1802289   637075   79713
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      17.4384  a.u.
+     unit-cell volume          =   18642.2785 (a.u.)^3
+     number of atoms/cell      =          144
+     number of atomic types    =            2
+     number of electrons       =       576.00
+     number of Kohn-Sham states=          346
+     kinetic-energy cutoff     =      40.0000  Ry
+     charge density cutoff     =     320.0000  Ry
+     scf convergence threshold =      1.0E-05
+     mixing beta               =       0.3000
+     number of iterations used =            8  local-TF  mixing
+     Exchange-correlation= SLA  PW   PBX  PBC
+                           (   1   4   3   4   0   0   0)
+
+     GPU acceleration is ACTIVE.
+
+
+     celldm(1)=  17.438393  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.641092   0.000000 )  
+               a(3) = (   0.000000   0.000000   2.142134 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  0.609350  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.466824 )  
+
+
+     PseudoPot. # 1 for Si read from file:
+     ./Si.upf
+     MD5 check sum: c39c59da582df4a0d9f10159256ea34e
+     Pseudo is Projector augmented-wave + core cor, Zval =  4.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1141 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for C  read from file:
+     ./C.upf
+     MD5 check sum: 5f16ad9a65e90284d1d834d4ab3b0f7d
+     Pseudo is Projector augmented-wave + core cor, Zval =  4.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1073 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Si             4.00    28.08500     Si( 1.00)
+        C              4.00    12.01100     C ( 1.00)
+
+      8 Sym. Ops., with inversion, found ( 4 have fractional translation)
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Si  tau(   1) = (   0.0000000   0.0000000   0.3331065  )
+         2           C   tau(   2) = (   0.1261684   0.2402320   0.6317650  )
+         3           Si  tau(   3) = (   0.1442679   0.0000000   0.5604621  )
+         4           C   tau(   4) = (   0.0000000   0.3209202   0.6365192  )
+         5           Si  tau(   5) = (   0.0000000   0.0000000   0.7798892  )
+         6           C   tau(   6) = (   0.2489825   0.2916217   0.6912209  )
+         7           Si  tau(   7) = (   0.1793836   0.0000000   0.9599550  )
+         8           C   tau(   8) = (   0.0000000   0.2837473   1.1202131  )
+         9           Si  tau(   9) = (   0.0000000   0.0000000   1.1574894  )
+        10           C   tau(  10) = (   0.1788727   0.2660359   1.0637485  )
+        11           Si  tau(  11) = (   0.1445156   0.0000000   1.3829314  )
+        12           C   tau(  12) = (   0.0000000   0.2523894   1.4541008  )
+        13           Si  tau(  13) = (   0.0000000   0.0000000   1.6480903  )
+        14           C   tau(  14) = (   0.1389641   0.2107071   1.4053607  )
+        15           Si  tau(  15) = (   0.2198166   0.0000000   1.8054234  )
+        16           C   tau(  16) = (   0.0000000   0.2821952   1.5996919  )
+        17           Si  tau(  17) = (   0.0000000   0.5519233   0.3256754  )
+        18           C   tau(  18) = (   0.1370500   0.8205462   0.6024862  )
+        19           Si  tau(  19) = (   0.1445935   0.5596658   0.5478466  )
+        20           C   tau(  20) = (   0.0000000   0.8205462   0.6112538  )
+        21           Si  tau(  21) = (   0.0000000   0.5040912   0.7579649  )
+        22           C   tau(  22) = (   0.2491815   0.8205462   0.6893819  )
+        23           Si  tau(  23) = (   0.1622555   0.6171682   0.9668372  )
+        24           C   tau(  24) = (   0.0000000   0.8205462   1.0598158  )
+        25           Si  tau(  25) = (   0.0000000   0.4894187   1.1560963  )
+        26           C   tau(  26) = (   0.1335691   0.8205462   1.0096528  )
+        27           Si  tau(  27) = (   0.1720475   0.5424084   1.3763336  )
+        28           C   tau(  28) = (   0.0000000   0.8205462   1.4534827  )
+        29           Si  tau(  29) = (   0.0000000   0.5416832   1.6235146  )
+        30           C   tau(  30) = (   0.1352854   0.8205462   1.3830516  )
+        31           Si  tau(  31) = (   0.2165610   0.5474869   1.8010471  )
+        32           C   tau(  32) = (   0.0000000   0.8205462   1.6042547  )
+        33           Si  tau(  33) = (   0.0000000   1.0891691   0.3256754  )
+        34           C   tau(  34) = (   0.1261684   1.4008603   0.6317650  )
+        35           Si  tau(  35) = (   0.1445935   1.0814265   0.5478466  )
+        36           C   tau(  36) = (   0.0000000   1.3201722   0.6365192  )
+        37           Si  tau(  37) = (   0.0000000   1.1370012   0.7579649  )
+        38           C   tau(  38) = (   0.2489825   1.3494706   0.6912209  )
+        39           Si  tau(  39) = (   0.1622555   1.0239241   0.9668372  )
+        40           C   tau(  40) = (   0.0000000   1.3573450   1.1202131  )
+        41           Si  tau(  41) = (   0.0000000   1.1516737   1.1560963  )
+        42           C   tau(  42) = (   0.1788727   1.3750564   1.0637485  )
+        43           Si  tau(  43) = (   0.1720475   1.0986840   1.3763336  )
+        44           C   tau(  44) = (   0.0000000   1.3887029   1.4541008  )
+        45           Si  tau(  45) = (   0.0000000   1.0994091   1.6235146  )
+        46           C   tau(  46) = (   0.1389641   1.4303852   1.4053607  )
+        47           Si  tau(  47) = (   0.2165610   1.0936055   1.8010471  )
+        48           C   tau(  48) = (   0.0000000   1.3588972   1.5996919  )
+        49           Si  tau(  49) = (   0.2801829   0.0000000   0.3367108  )
+        50           C   tau(  50) = (   0.5000000   0.2821957   0.5424420  )
+        51           Si  tau(  51) = (   0.5000000   0.0000000   0.4940436  )
+        52           C   tau(  52) = (   0.3610371   0.2107065   0.7367729  )
+        53           Si  tau(  53) = (   0.3554833   0.0000000   0.7592026  )
+        54           C   tau(  54) = (   0.5000000   0.2523900   0.6880337  )
+        55           Si  tau(  55) = (   0.5000000   0.0000000   0.9846460  )
+        56           C   tau(  56) = (   0.3211307   0.2660339   1.0783850  )
+        57           Si  tau(  57) = (   0.3206172   0.0000000   1.1821783  )
+        58           C   tau(  58) = (   0.5000000   0.2837446   1.0219203  )
+        59           Si  tau(  59) = (   0.5000000   0.0000000   1.3622450  )
+        60           C   tau(  60) = (   0.2510174   0.2916219   1.4509124  )
+        61           Si  tau(  61) = (   0.3557315   0.0000000   1.5816721  )
+        62           C   tau(  62) = (   0.5000000   0.3209206   1.5056149  )
+        63           Si  tau(  63) = (   0.5000000   0.0000000   1.8090263  )
+        64           C   tau(  64) = (   0.3738308   0.2402321   1.5103686  )
+        65           Si  tau(  65) = (   0.2834395   0.5474873   0.3410868  )
+        66           C   tau(  66) = (   0.5000000   0.8205462   0.5378796  )
+        67           Si  tau(  67) = (   0.5000000   0.5416838   0.5186197  )
+        68           C   tau(  68) = (   0.3647121   0.8205462   0.7590816  )
+        69           Si  tau(  69) = (   0.3279522   0.5424083   0.7658003  )
+        70           C   tau(  70) = (   0.5000000   0.8205462   0.6886506  )
+        71           Si  tau(  71) = (   0.5000000   0.4894232   0.9860376  )
+        72           C   tau(  72) = (   0.3664294   0.8205462   1.1324815  )
+        73           Si  tau(  73) = (   0.3377448   0.6171714   1.1752973  )
+        74           C   tau(  74) = (   0.5000000   0.8205462   1.0823179  )
+        75           Si  tau(  75) = (   0.5000000   0.5040914   1.3841696  )
+        76           C   tau(  76) = (   0.2508148   0.8205462   1.4527527  )
+        77           Si  tau(  77) = (   0.3554065   0.5596644   1.5942871  )
+        78           C   tau(  78) = (   0.5000000   0.8205462   1.5308818  )
+        79           Si  tau(  79) = (   0.5000000   0.5519242   1.8164584  )
+        80           C   tau(  80) = (   0.3629514   0.8205462   1.5396480  )
+        81           Si  tau(  81) = (   0.2834395   1.0936051   0.3410868  )
+        82           C   tau(  82) = (   0.5000000   1.3588967   0.5424420  )
+        83           Si  tau(  83) = (   0.5000000   1.0994085   0.5186197  )
+        84           C   tau(  84) = (   0.3610371   1.4303858   0.7367729  )
+        85           Si  tau(  85) = (   0.3279522   1.0986841   0.7658003  )
+        86           C   tau(  86) = (   0.5000000   1.3887023   0.6880337  )
+        87           Si  tau(  87) = (   0.5000000   1.1516691   0.9860376  )
+        88           C   tau(  88) = (   0.3211307   1.3750584   1.0783850  )
+        89           Si  tau(  89) = (   0.3377448   1.0239210   1.1752973  )
+        90           C   tau(  90) = (   0.5000000   1.3573477   1.0219203  )
+        91           Si  tau(  91) = (   0.5000000   1.1370009   1.3841696  )
+        92           C   tau(  92) = (   0.2510174   1.3494705   1.4509124  )
+        93           Si  tau(  93) = (   0.3554065   1.0814280   1.5942871  )
+        94           C   tau(  94) = (   0.5000000   1.3201718   1.5056149  )
+        95           Si  tau(  95) = (   0.5000000   1.0891682   1.8164584  )
+        96           C   tau(  96) = (   0.3738308   1.4008602   1.5103686  )
+        97           Si  tau(  97) = (   0.7198171   0.0000000   0.3367108  )
+        98           C   tau(  98) = (   0.8738316   0.2402320   0.6317650  )
+        99           Si  tau(  99) = (   0.8557321   0.0000000   0.5604621  )
+       100           C   tau( 100) = (   0.6389629   0.2107065   0.7367729  )
+       101           Si  tau( 101) = (   0.6445167   0.0000000   0.7592026  )
+       102           C   tau( 102) = (   0.7510175   0.2916217   0.6912209  )
+       103           Si  tau( 103) = (   0.8206164   0.0000000   0.9599550  )
+       104           C   tau( 104) = (   0.6788693   0.2660339   1.0783850  )
+       105           Si  tau( 105) = (   0.6793828   0.0000000   1.1821783  )
+       106           C   tau( 106) = (   0.8211273   0.2660359   1.0637485  )
+       107           Si  tau( 107) = (   0.8554844   0.0000000   1.3829314  )
+       108           C   tau( 108) = (   0.7489826   0.2916219   1.4509124  )
+       109           Si  tau( 109) = (   0.6442685   0.0000000   1.5816721  )
+       110           C   tau( 110) = (   0.8610359   0.2107071   1.4053607  )
+       111           Si  tau( 111) = (   0.7801834   0.0000000   1.8054234  )
+       112           C   tau( 112) = (   0.6261692   0.2402321   1.5103686  )
+       113           Si  tau( 113) = (   0.7165605   0.5474873   0.3410868  )
+       114           C   tau( 114) = (   0.8629500   0.8205462   0.6024862  )
+       115           Si  tau( 115) = (   0.8554065   0.5596658   0.5478466  )
+       116           C   tau( 116) = (   0.6352879   0.8205462   0.7590816  )
+       117           Si  tau( 117) = (   0.6720478   0.5424083   0.7658003  )
+       118           C   tau( 118) = (   0.7508185   0.8205462   0.6893819  )
+       119           Si  tau( 119) = (   0.8377445   0.6171682   0.9668372  )
+       120           C   tau( 120) = (   0.6335706   0.8205462   1.1324815  )
+       121           Si  tau( 121) = (   0.6622552   0.6171714   1.1752973  )
+       122           C   tau( 122) = (   0.8664309   0.8205462   1.0096528  )
+       123           Si  tau( 123) = (   0.8279525   0.5424084   1.3763336  )
+       124           C   tau( 124) = (   0.7491852   0.8205462   1.4527527  )
+       125           Si  tau( 125) = (   0.6445935   0.5596644   1.5942871  )
+       126           C   tau( 126) = (   0.8647146   0.8205462   1.3830516  )
+       127           Si  tau( 127) = (   0.7834390   0.5474869   1.8010471  )
+       128           C   tau( 128) = (   0.6370486   0.8205462   1.5396480  )
+       129           Si  tau( 129) = (   0.7165605   1.0936051   0.3410868  )
+       130           C   tau( 130) = (   0.8738316   1.4008603   0.6317650  )
+       131           Si  tau( 131) = (   0.8554065   1.0814265   0.5478466  )
+       132           C   tau( 132) = (   0.6389629   1.4303858   0.7367729  )
+       133           Si  tau( 133) = (   0.6720478   1.0986841   0.7658003  )
+       134           C   tau( 134) = (   0.7510175   1.3494706   0.6912209  )
+       135           Si  tau( 135) = (   0.8377445   1.0239241   0.9668372  )
+       136           C   tau( 136) = (   0.6788693   1.3750584   1.0783850  )
+       137           Si  tau( 137) = (   0.6622552   1.0239210   1.1752973  )
+       138           C   tau( 138) = (   0.8211273   1.3750564   1.0637485  )
+       139           Si  tau( 139) = (   0.8279525   1.0986840   1.3763336  )
+       140           C   tau( 140) = (   0.7489826   1.3494705   1.4509124  )
+       141           Si  tau( 141) = (   0.6445935   1.0814280   1.5942871  )
+       142           C   tau( 142) = (   0.8610359   1.4303852   1.4053607  )
+       143           Si  tau( 143) = (   0.7834390   1.0936055   1.8010471  )
+       144           C   tau( 144) = (   0.6261692   1.4008602   1.5103686  )
+
+     number of k points=     1  Gaussian smearing, width (Ry)=  0.0100
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:   901145 G-vectors     FFT dimensions: ( 100, 180, 216)
+
+     Smooth grid:   318538 G-vectors     FFT dimensions: (  72, 120, 160)
+
+     Estimated max dynamical RAM per process >       7.35 GB
+
+     Check: negative core charge=   -0.000004
+
+     Initial potential from superposition of free atoms
+
+     starting charge     575.9567, renormalised to     576.0000
+     Starting wfcs are  576 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     total cpu time spent up to now is       34.7 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is       67.4 secs
+
+     total energy              =   -4681.34638522 Ry
+     estimated scf accuracy    <      33.55660082 Ry
+
+     iteration #  2     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  5.83E-03,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is       96.5 secs
+
+     total energy              =   -4679.13701373 Ry
+     estimated scf accuracy    <      13.33441937 Ry
+
+     iteration #  3     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  2.32E-03,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is      126.3 secs
+
+     total energy              =   -4679.04427671 Ry
+     estimated scf accuracy    <       2.73286313 Ry
+
+     iteration #  4     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  4.74E-04,  avg # of iterations =  6.0
+
+     total cpu time spent up to now is      158.9 secs
+
+     total energy              =   -4679.44002264 Ry
+     estimated scf accuracy    <       0.33053716 Ry
+
+     iteration #  5     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  5.74E-05,  avg # of iterations = 12.0
+
+     total cpu time spent up to now is      194.3 secs
+
+     total energy              =   -4679.44877310 Ry
+     estimated scf accuracy    <       0.17038297 Ry
+
+     iteration #  6     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  2.96E-05,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is      224.5 secs
+
+     total energy              =   -4679.45089517 Ry
+     estimated scf accuracy    <       0.08539387 Ry
+
+     iteration #  7     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  1.48E-05,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is      255.0 secs
+
+     total energy              =   -4679.44877030 Ry
+     estimated scf accuracy    <       0.04031057 Ry
+
+     iteration #  8     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  7.00E-06,  avg # of iterations =  7.0
+
+     total cpu time spent up to now is      287.5 secs
+
+     total energy              =   -4679.44967209 Ry
+     estimated scf accuracy    <       0.00742232 Ry
+
+     iteration #  9     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  1.29E-06,  avg # of iterations = 13.0
+
+     total cpu time spent up to now is      322.7 secs
+
+     total energy              =   -4679.45143227 Ry
+     estimated scf accuracy    <       0.00484941 Ry
+
+     iteration # 10     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  8.42E-07,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is      353.4 secs
+
+     total energy              =   -4679.45133519 Ry
+     estimated scf accuracy    <       0.00214912 Ry
+
+     iteration # 11     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  3.73E-07,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is      384.7 secs
+
+     total energy              =   -4679.45143093 Ry
+     estimated scf accuracy    <       0.00032383 Ry
+
+     iteration # 12     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  5.62E-08,  avg # of iterations =  5.0
+
+     total cpu time spent up to now is      418.0 secs
+
+     total energy              =   -4679.45148571 Ry
+     estimated scf accuracy    <       0.00007202 Ry
+
+     iteration # 13     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  1.25E-08,  avg # of iterations =  5.0
+
+     total cpu time spent up to now is      452.3 secs
+
+     total energy              =   -4679.45149272 Ry
+     estimated scf accuracy    <       0.00002484 Ry
+
+     iteration # 14     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap

@@ -1,0 +1,5 @@
+Command exited with code 0.
+
+Command output:
+WORKSTA+  338052    2772  0 18:05 pts/6    00:00:00 bash -c ps -ef | grep sync_all_2periods
+WORKSTA+  338054  338052  0 18:05 pts/6    00:00:00 grep sync_all_2periods

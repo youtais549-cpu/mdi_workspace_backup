@@ -1,0 +1,6 @@
+Step 0 Energy: -1754.0914556966698
+Files in tmp/pwscf.save: ['wfc1.hdf5', 'C.upf', 'Si.upf', 'data-file-schema.xml', 'paw.txt', 'charge-density.hdf5']
+Step 1 Energy: -1754.0811700656823
+  PWO:      Starting wfcs from file
+  PWO:      convergence has been achieved in   5 iterations
+  PWO:      wfcinit      :      1.39s CPU      0.27s WALL (       1 calls)

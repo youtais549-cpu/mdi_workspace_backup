@@ -1,0 +1,17 @@
+Created At: 2026-11-17T11:30:18+09:00
+Completed At: 2026-11-17T11:30:29+09:00
+Command exited with code 1.
+
+Command output:
+Traceback (most recent call last):
+  File "/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/sync_unrelaxed_aimd_8periods_to_nas.py", line 40, in <module>
+    res = subprocess.run(
+          ^^^^^^^^^^^^^^^
+  File "/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/lib/python3.11/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe'

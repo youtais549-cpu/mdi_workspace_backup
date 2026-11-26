@@ -1,0 +1,39 @@
+# ==============================================================================
+# 2H-SiC {10-10} 72原子スラブモデル (2周期 4層, 真空層 5.0Å, 合計真空 10.0Å)
+# ローカル新環境 (Core Ultra 9 285K / RAM 64GB / RTX 5080 16GB) 動作確認用入力スクリプト
+# ==============================================================================
+# 【準拠ルール】
+# - AGENTS.md §2: Type 1 = C (12.011), Type 2 = Si (28.085)
+# - AGENTS.md §9: 全スラブ共通の最適化収束条件標準 (minimize 1.0e-6 1.0e-2 100 150)
+# - AGENTS.md §10: 自然へき開面 (粗結合面 dz ≈ 1.776 Å 切断、両端密結合ペア 0.888 Å 保持)
+# ==============================================================================
+
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+# 1. 初期構造の読み込み (2周期 4層 72原子, 真空層 5.0Å)
+read_data 2H-SiC_10-10_slab_3x3x2_vac5A.data
+
+# 原子質量 (Type 1: C, Type 2: Si - ASEの英名昇順ソートと完全一致)
+mass 1 12.011
+mass 2 28.085
+
+# 2. MDI 通信設定 (Quantum ESPRESSO を QM エンジンとして連成)
+fix 1 all mdi/qm elements C Si
+
+# 3. 出力設定
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+dump_modify 1 append yes
+
+# 4. 0 K 表面構造緩和 (共役勾配法 CG minimize)
+# 構文: minimize etol ftol maxiter maxeval
+# - etol = 1.0e-6   (相対エネルギー差 <= 10^-6 で収束)
+# - ftol = 1.0e-2   (最大作用力 <= 0.010 eV/Å ≈ 0.0004 Ry/au、DFTノイズ限界直上で自然終了)
+# - maxiter = 100   (最大CG反復ステップ数)
+# - maxeval = 150   (最大力評価回数)
+minimize 1.0e-6 1.0e-2 100 150
+
+undump 1

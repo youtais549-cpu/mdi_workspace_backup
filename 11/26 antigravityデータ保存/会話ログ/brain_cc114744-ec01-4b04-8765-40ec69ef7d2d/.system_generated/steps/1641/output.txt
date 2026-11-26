@@ -1,0 +1,33 @@
+Created At: 2026-11-26T13:39:22+09:00
+Completed At: 2026-11-26T13:39:23+09:00
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/会話ログ:
+total 896
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL   4096 Nov  5 03:24 .
+drwxrwxrwx 78 WORKSTATION4WSL WORKSTATION4WSL  24576 Nov 24 19:12 ..
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL   4096 Nov  5 03:17 raw_transcripts
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 880613 Nov  5 03:17 会話ログ_全履歴_20261025.txt
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/学習内容と運用ルール:
+total 108
+drwxrwxrwx  4 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  6 11:56 .
+drwxrwxrwx 78 WORKSTATION4WSL WORKSTATION4WSL 24576 Nov 24 19:12 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 16380 Nov  5 13:43 AGENTS.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  3274 Nov  5 03:17 GRAPH_STYLE_SPEC.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  2104 Nov  5 03:17 RELAXATION_GRAPH_PROTOCOL.json
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 個別運用ルール群
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 13:43 学習プロポーザル全世代集（v1〜v9）
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  7896 Nov  5 03:17 学習内容と知見の全体総括.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 34785 Nov  6 11:56 学習内容まとめ.txt
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/環境設定・フォント:
+total 11068
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:24 .
+drwxrwxrwx 78 WORKSTATION4WSL WORKSTATION4WSL    24576 Nov 24 19:12 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     3695 Nov  5 03:17 conda_environment.yml
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     7747 Nov  5 03:17 conda_requirements.txt
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL 10091072 Nov  5 03:17 msmincho.ttc
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL      221 Nov  5 03:17 ssh_config_backup.txt
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL  1190736 Nov  5 03:17 times.ttf

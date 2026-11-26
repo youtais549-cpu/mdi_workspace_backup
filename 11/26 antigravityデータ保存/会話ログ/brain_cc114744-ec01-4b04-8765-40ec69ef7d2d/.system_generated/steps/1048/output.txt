@@ -1,0 +1,11 @@
+Created At: 2026-11-12T12:04:13+09:00
+Completed At: 2026-11-12T12:04:15+09:00
+Command exited with code 1.
+
+Command output:
+Layer atom counts: [18, 18, 18, 18]
+Vac(A) |   Lz(A) | Gap_ini | Gap_rel |    dGap | d_SiC_ini | d_SiC_rel | dz12_rel | dz23_rel | dz34_rel | Buckle_L4 |   gamma
+------------------------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<string>", line 42, in <module>
+KeyError: 'cell'

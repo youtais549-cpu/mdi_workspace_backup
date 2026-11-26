@@ -1,0 +1,9 @@
+Created At: 2026-11-23T15:35:02+09:00
+Completed At: 2026-11-23T15:35:02+09:00
+Command exited with code 0.
+
+Command output:
+Steps count: 121 (Step 101 .. 221)
+Temp: mean=299.36 K, std=31.86 K, min=234.63 K, max=354.50 K
+PE: mean=-127673.86 eV, std=1.18 eV
+Etot: mean=-127662.75 eV, std=0.01 eV

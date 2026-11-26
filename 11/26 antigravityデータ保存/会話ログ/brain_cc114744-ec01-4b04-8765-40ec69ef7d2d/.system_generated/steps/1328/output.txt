@@ -1,0 +1,35 @@
+Created At: 2026-11-19T12:12:50+09:00
+Completed At: 2026-11-19T12:12:52+09:00
+Command exited with code 1.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py:392: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+  style_ax(ax, "MDステップ [step]", "全エネルギー [$\mathrm{eV}$]")
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py:406: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+  style_ax(ax, "MDステップ [step]", "ポテンシャルエネルギー [$\mathrm{eV}$]")
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py:422: SyntaxWarning: "\D" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\D"? A raw string is also an option.
+  ax.plot(steps, d_etot, color="#8A2BE2", lw=1.2, label="全エネルギー $\Delta E_{\mathrm{tot}}$", zorder=4)
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py:424: SyntaxWarning: "\D" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\D"? A raw string is also an option.
+  ax.plot(steps, d_pe, color="#1E90FF", lw=1.1, ls="--", label="ポテンシャル $\Delta E_{\mathrm{pot}}$", zorder=3)
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py:425: SyntaxWarning: "\D" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\D"? A raw string is also an option.
+  ax.plot(steps, d_ke, color="#D2691E", lw=1.1, ls="-.", label="運動エネルギー $\Delta E_{\mathrm{kin}}$", zorder=3)
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py:426: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+  style_ax(ax, "MDステップ [step]", "初期値からのエネルギー変化 [$\mathrm{eV}$]")
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py:439: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+  style_ax(ax, "MDステップ [step]", "温度 [$\mathrm{K}$]")
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py:449: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+  ax1.set_ylabel("温度 $T$ [$\mathrm{K}$]", fontproperties=prop_label)
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py:454: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+  ax2.plot(steps, etot, color="#8A2BE2", lw=1.5, label="全エネルギー $E_{\mathrm{tot}} = E_{\mathrm{pot}} + E_{\mathrm{kin}}$")
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py:456: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+  ax2.set_ylabel("全エネルギー [$\mathrm{eV}$]", fontproperties=prop_label)
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py:465: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+  ax3.plot(steps, pe, color="#1E90FF", lw=1.5, label="ポテンシャルエネルギー $E_{\mathrm{pot}}$")
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py:469: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+  ax3.set_xlabel("時間 / MDステップ [$\mathrm{fs}$]", fontproperties=prop_label)
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py:470: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+  ax3.set_ylabel("ポテンシャル [$\mathrm{eV}$]", fontproperties=prop_label)
+Traceback (most recent call last):
+  File "/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/run_8periods_bulk_aimd_300steps.py", line 31, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

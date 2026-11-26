@@ -1,0 +1,16 @@
+Created At: 2026-11-23T02:53:14+09:00
+Completed At: 2026-11-23T02:53:17+09:00
+Command exited with code 0.
+
+Command output:
+[QE-MDI Engine] --- [Step 92] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127673.4509 eV | Fmax: 4.50444 eV/A | gap: 5.9767 A ---
+[QE-MDI Engine] --- [Step 93] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127673.5227 eV | Fmax: 4.62413 eV/A | gap: 5.9711 A ---
+[QE-MDI Engine] --- [Step 94] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127673.6327 eV | Fmax: 4.49139 eV/A | gap: 5.9665 A ---
+[QE-MDI Engine] --- [Step 95] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127673.7534 eV | Fmax: 4.13366 eV/A | gap: 5.9628 A ---
+[QE-MDI Engine] --- [Step 96] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127673.8603 eV | Fmax: 3.59771 eV/A | gap: 5.9603 A ---
+[QE-MDI Engine] --- [Step 97] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127673.9360 eV | Fmax: 3.33206 eV/A | gap: 5.9588 A ---
+[QE-MDI Engine] --- [Step 98] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127673.9737 eV | Fmax: 3.25253 eV/A | gap: 5.9586 A ---
+[QE-MDI Engine] --- [Step 99] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127673.9763 eV | Fmax: 3.10540 eV/A | gap: 5.9595 A ---
+[QE-MDI Engine] --- [Step 100] Done in 0.00s (18 SCF iters) [RESTORED CACHE] | E_pot: -127673.9548 eV | Fmax: 2.89653 eV/A | gap: 5.9614 A ---
+[QE-MDI Engine] --- [Step 101] Starting SCF (288 atoms, startingpot/wfc=file, z_min=2.9985A, z_max=22.5699A, gap=5.9641A) ---
+Files /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/slab_10-10_288atoms_vac3.0A_unrelaxed_aimd_100steps_final.data and /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/slab_10-10_288atoms_vac3.0A_unrelaxed_aimd_100steps_restored_check.data are identical

@@ -1,0 +1,1 @@
+Made 1 replacement in /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/qe_mdi_engine_rtx5080.py starting at line 75 (+1/-0 lines).

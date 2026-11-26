@@ -1,0 +1,9 @@
+Created At: 2026-11-17T12:37:43+09:00
+Completed At: 2026-11-17T12:37:46+09:00
+Command exited with code 0.
+
+Command output:
+TargetPath: C:\winmos11\winmostar.exe
+WorkingDirectory: C:\winmos11\wm_system\JMQueue
+Arguments: 
+

@@ -1,0 +1,29 @@
+Command exited with code 0.
+
+Command output:
+
+
+def is_condition_already_converged(calc_dir):
+    """既に計算が完了し、緩和後エネルギーとグラフが揃っているか判定"""
+    meta_path = os.path.join(calc_dir, "fracture_metadata.json")
+    log_path = os.path.join(calc_dir, "log.lammps")
+    graph_path = os.path.join(calc_dir, "Total_Energy_progression.png")
+    if os.path.exists(meta_path) and os.path.exists(log_path) and os.path.exists(graph_path):
+        try:
+            with open(meta_path, "r", encoding="utf-8") as f:
+                meta = json.load(f)
+            if "surface_fracture_energy_J_m2" in meta and "relaxed_slab_energy_eV" in meta:
+                with open(log_path, "r", encoding="utf-8", errors="ignore") as lf:
+                    if "Minimization stats:" in lf.read():
+                        return True
+        except Exception:
+            pass
+    return False
+
+
+def run_single_condition(idx, total_count, vac_val, vac_str, nas_folder_name, port):
+    """1つの真空層条件について構造緩和・XYZ変換・3種グラフ生成・γ算出を実行"""
+    calc_dir, slab_prefix = prepare_condition_directory(vac_val, vac_str, nas_folder_name, port)
+
+    if is_condition_already_converged(calc_dir):
+        log(f"[{idx}/{total_count}] [Skip] vac={vac_str} Å ({calc_dir}) is already converged.")

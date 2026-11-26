@@ -1,0 +1,80 @@
+LAMMPS (30 Sep 2026)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+# 2H-SiC {10-10} 7周期 (14層, 252原子) 真空層 5.0 Å スラブ構造緩和入力スクリプト
+# 【最適化収束条件標準: minimize 1.0e-6 1.0e-2 100 150 (AGENTS.md §9)】
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+read_data slab_10-10_252atoms_vac5A.data
+Reading data file ...
+  orthogonal box = (0 0 0) to (9.228 15.144 26.871507)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  252 atoms
+  read_data CPU = 0.001 seconds
+
+# Type 1: C (12.011), Type 2: Si (28.085) (AGENTS.md §2)
+mass 1 12.011
+mass 2 28.085
+
+fix 1 all mdi/qm elements C Si
+
+thermo 1
+thermo_modify flush yes
+dump 1 all custom 1 dump.lammpstrj id type x y z
+dump_modify 1 append yes flush yes
+
+minimize 1.0e-6 1.0e-2 100 150
+WARNING: No pairwise cutoff or binsize set. Atom sorting therefore disabled. (src/atom.cpp:2486)
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+Per MPI rank memory allocation (min/avg/max) = 3.451 | 3.451 | 3.451 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0              0              0             -111708.01      0            
+         1   0              0              0             -111716.72      0            
+         2   0              0              0             -111718.8       0            
+         3   0              0              0             -111719.17      0            
+         4   0              0              0             -111719.28      0            
+         5   0              0              0             -111719.32      0            
+Loop time of 3100.43 on 1 procs for 5 steps with 252 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+      -111708.01095405  -111719.280491806  -111719.321750386
+  Force two-norm initial, final = 19.165514 0.75210451
+  Force max component initial, final = 2.4591095 0.096390915
+  Final line search alpha, max atom move = 0.43222178 0.041662253
+  Iterations, force evaluations = 5 9
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 3.3386e-05 | 3.3386e-05 | 3.3386e-05 |   0.0 |  0.00
+Output  | 0.00074657 | 0.00074657 | 0.00074657 |   0.0 |  0.00
+Modify  | 3100.4     | 3100.4     | 3100.4     |   0.0 |100.00
+Other   |            | 0.0003557  |            |       |  0.00
+
+Nlocal:            252 ave         252 max         252 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:             21 ave          21 max          21 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+
+undump 1
+write_data slab_10-10_252atoms_vac5A_relaxed.data
+System init for write_data ...
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+Total wall time: 0:57:25

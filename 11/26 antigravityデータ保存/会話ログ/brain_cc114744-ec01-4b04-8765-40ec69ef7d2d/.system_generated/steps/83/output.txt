@@ -1,0 +1,86 @@
+Command exited with code 0.
+
+Command output:
+total 92
+drwxrwxrwx 20 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:24 .
+drwxrwxrwx 32 WORKSTATION4WSL WORKSTATION4WSL 16384 Nov  5 03:31 ..
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 2H-SiC_10-10_bulk_scf_20261020
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 2H-SiC_10-10_slab_vac2.5A_relaxed_20261020
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 aimd_nvt_300K_vac10A
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 calc_2H-SiC_10-10_2periods_vac2.5A_2nd
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 calc_2H-SiC_10-10_4periods_bulk_scf
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 calc_2H-SiC_10-10_4periods_true_bulk_scf
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 calc_2H-SiC_10-10_4periods_vac5A
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 calc_2H-SiC_10-10_4periods_vac5A_natural_cleavage
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 calc_2H-SiC_10-10_6periods_true_bulk_scf
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 calc_2H-SiC_10-10_6periods_vac5A
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 calc_2H-SiC_10-10_6periods_vac5A_natural_cleavage
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 calc_2H-SiC_10-10_6periods_vac5A_restart
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 results_2H-SiC_10-10_slab_4periods_vac5A_intermediate
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 results_2H-SiC_10-10_slab_4periods_vac5A_relaxed_20261022
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 results_2H-SiC_10-10_slab_relaxed_20261020
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 results_2H-SiC_10-10_slab_vac2.5A_relaxed_20261020
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 results_2H-SiC_10-10_slab_vac5A_relaxed_20261020
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 results_SiC_10-10_slab_relaxed
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_slab_vac2.5A_relaxed_20261020
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac2.5A_2nd
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_bulk_scf
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_true_bulk_scf
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_vac5A
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_vac5A
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_vac5A_natural_cleavage
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_vac5A_natural_cleavage
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_true_bulk_scf
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_vac5A
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_vac5A
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_vac5A_natural_cleavage
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_vac5A_natural_cleavage
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_vac5A_restart
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_vac5A_restart
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/results_2H-SiC_10-10_slab_4periods_vac5A_intermediate
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/results_2H-SiC_10-10_slab_4periods_vac5A_intermediate
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/results_2H-SiC_10-10_slab_4periods_vac5A_relaxed_20261022
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/results_2H-SiC_10-10_slab_4periods_vac5A_relaxed_20261022
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/results_2H-SiC_10-10_slab_relaxed_20261020
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/results_2H-SiC_10-10_slab_vac2.5A_relaxed_20261020
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/results_2H-SiC_10-10_slab_vac5A_relaxed_20261020
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/results_2H-SiC_10-10_slab_vac5A_relaxed_20261020
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/results_SiC_10-10_slab_relaxed
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/surface_energy_vs_periods_vac5A.pdf
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/surface_energy_vs_periods_vac5A.png
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/surface_energy_vs_periods_vac5A.svg
+Thu Nov  5 14:35:39 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.54                 Driver Version: 595.79         CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5080        On  |   00000000:02:00.0  On |                  N/A |
+| 30%   30C    P0             43W /  360W |     471MiB /  16303MiB |      1%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A              26      G   /Xwayland                             N/A      |
++-----------------------------------------------------------------------------------------+
+CPU(s):                                  24
+Model name:                              Intel(R) Core(TM) Ultra 9 285K
+Thread(s) per core:                      1
+Socket(s):                               1
+NUMA node0 CPU(s):                       0-23
+               total        used        free      shared  buff/cache   available
+Mem:            31Gi       1.8Gi        28Gi       4.1Mi       1.6Gi        29Gi
+Swap:          8.0Gi          0B       8.0Gi
+/usr/bin/python3
+/usr/local/bin/:
+total 42780
+drwxr-xr-x  2 nobody nogroup     4096 Nov  5 02:41 .
+drwxr-xr-x 11 nobody nogroup     4096 Aug 27 23:10 ..
+-rwxr-xr-x  1 nobody nogroup 43796048 Nov  3 15:40 ollama

@@ -1,0 +1,6 @@
+Command exited with code 0.
+
+Command output:
+cp: cannot stat '/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/C.upf': No such file or directory
+cp: cannot stat '/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/Si.upf': No such file or directory
+PWI files created for test.

@@ -1,0 +1,4 @@
+Command exited with code 0.
+
+Command output:
+N=3 neighbor counts: {4}

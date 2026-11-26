@@ -1,0 +1,12 @@
+Command exited with code 0.
+
+Command output:
+/usr/bin/gcc
+/usr/bin/g++
+/usr/bin/make
+/usr/bin/git
+/usr/bin/pip
+/usr/bin/python3
+sudo: The "no new privileges" flag is set, which prevents sudo from running as root.
+sudo: If sudo is running in a container, you may need to adjust the container configuration to disable the flag.
+sudo requires password or blocked

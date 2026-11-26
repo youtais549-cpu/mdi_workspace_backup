@@ -1,0 +1,20 @@
+Command exited with code 2.
+
+Command output:
+============================================================
+ Step 1: Micromamba パッケージマネージャの導入 (sudo 不要)
+============================================================
+
+bzip2: Compressed file ends unexpectedly;
+	perhaps it is corrupted?  *Possible* reason follows.
+bzip2: Inappropriate ioctl for device
+	Input file = (stdin), output file = (stdout)
+
+It is possible that the compressed file(s) have become corrupted.
+You can use the -tvv option to test integrity of such files.
+
+You can use the `bzip2recover' program to attempt to recover
+data from undamaged sections of corrupted files.
+
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now

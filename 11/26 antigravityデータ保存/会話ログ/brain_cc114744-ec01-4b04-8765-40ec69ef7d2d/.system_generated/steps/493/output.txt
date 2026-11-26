@@ -1,0 +1,5 @@
+Command exited with code 0.
+
+Command output:
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 13:05 open-interpreter
+drwxr-xr-x  4 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 13:06 open-interpreter

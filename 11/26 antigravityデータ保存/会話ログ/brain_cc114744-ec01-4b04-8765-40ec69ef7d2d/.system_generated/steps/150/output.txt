@@ -1,0 +1,6 @@
+Command exited with code 0.
+
+Command output:
+2.10.0
+list: The following argument was not expected: --show-sources
+Run with --help for more information.

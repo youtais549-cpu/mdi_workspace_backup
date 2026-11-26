@@ -1,0 +1,8 @@
+Command exited with code 0.
+
+Command output:
+[Info] smbclient (None) or ~/.smbcredentials (exists=False) not available.
+[Method 2] Staging to /mnt/c/temp_sic_sync and copying to UNC path via Windows PowerShell...
+COPIED_COUNT=0
+
+✅ Windows UNC copy succeeded!

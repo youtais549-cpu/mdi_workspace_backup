@@ -1,0 +1,110 @@
+LAMMPS (2 Aug 2023 - Update 3)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+# 2H-SiC {10-10} 3x3x2 スラブモデル (72原子) 計算入力スクリプト
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+# 1. 初期構造の読み込み (3x3x2, 72原子)
+# (A) スラブモデル (4層, 真空各10Å)
+read_data 2H-SiC_10-10_slab_3x3x2_vac5A.data
+Reading data file ...
+  orthogonal box = (0 0 0) to (9.228 15.144 13.552036)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  72 atoms
+  read_data CPU = 0.001 seconds
+# (B) バルク基準モデル (真空なし) を計算する場合は上記をコメントアウトし、下記を有効化:
+# read_data 2H-SiC_10-10_bulk_3x3x2_72atoms.data
+
+# 原子質量 (Type 1: C, Type 2: Si - ASEの英名昇順ソートと完全一致)
+mass 1 12.011
+mass 2 28.085
+
+# 2. MDI 通信設定 (Quantum ESPRESSO を QM エンジンとして連成)
+fix 1 all mdi/qm elements C Si
+
+# 3. 出力設定
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+dump_modify 1 append yes
+
+# -------------------------------------------------------------
+# 【計算モードの選択】
+# (A) 表面構造緩和 (minimize) - 表面破壊エネルギー評価用の力極小化
+# -------------------------------------------------------------
+# 力の閾値 1.0e-3 eV/Å 以下になるまで共役勾配法(CG)でエネルギー最小化
+minimize 0.0 1.0e-3 100 1000
+WARNING: No pairwise cutoff or binsize set. Atom sorting therefore disabled. (src/atom.cpp:2366)
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Atoms may get lost. (src/comm_brick.cpp:210)
+Per MPI rank memory allocation (min/avg/max) = 3.433 | 3.433 | 3.433 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0              0              0             -31879.351      0            
+         1   0              0              0             -31889.348      0            
+         2   0              0              0             -31891.814      0            
+         3   0              0              0             -31892.159      0            
+         4   0              0              0             -31892.531      0            
+         5   0              0              0             -31892.616      0            
+         6   0              0              0             -31892.633      0            
+         7   0              0              0             -31892.641      0            
+         8   0              0              0             -31892.641      0            
+         9   0              0              0             -31892.643      0            
+        10   0              0              0             -31892.643      0            
+        11   0              0              0             -31892.643      0            
+        12   0              0              0             -31892.643      0            
+        13   0              0              0             -31892.643      0            
+        14   0              0              0             -31892.643      0            
+        15   0              0              0             -31892.643      0            
+        16   0              0              0             -31892.643      0            
+        17   0              0              0             -31892.643      0            
+        18   0              0              0             -31892.643      0            
+        19   0              0              0             -31892.643      0            
+Loop time of 14168.1 on 1 procs for 19 steps with 72 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+     -31879.3512048942  -31892.6431390946  -31892.6431390946
+  Force two-norm initial, final = 19.835355 0.0029992284
+  Force max component initial, final = 2.5526326 0.00059083951
+  Final line search alpha, max atom move = 0.0009765625 5.7699171e-07
+  Iterations, force evaluations = 19 58
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.00025645 | 0.00025645 | 0.00025645 |   0.0 |  0.00
+Output  | 0.0027537  | 0.0027537  | 0.0027537  |   0.0 |  0.00
+Modify  | 14168      | 14168      | 14168      |   0.0 |100.00
+Other   |            | 0.001577   |            |       |  0.00
+
+Nlocal:             72 ave          72 max          72 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:              6 ave           6 max           6 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+
+# -------------------------------------------------------------
+# (B) 有限温度第一原理MD (AIMD, 300K) を行う場合は上記をコメントアウトし、
+#     下記を有効にしてください:
+# -------------------------------------------------------------
+# velocity all create 300.0 12345
+# fix 2 all nve
+# timestep 0.001
+# run 20
+# -------------------------------------------------------------
+
+undump 1
+Total wall time: 4:00:27

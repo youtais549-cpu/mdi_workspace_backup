@@ -1,0 +1,41 @@
+# 2H-SiC {10-10} 6周期 (216原子) スラブ構造緩和計算入力スクリプト 【最適化収束条件版】
+# ==============================================================================
+# 【設計思想と収束閾値の物理的根拠】
+# 1. DFT (Quantum ESPRESSO) の SCF 収束閾値 conv_thr = 1.0e-5 Ry において、
+#    Hellmann-Feynman 力の数値ノイズ限界 (フロア) は ~0.0002 Ry/au (≈ 0.0051 eV/Å)。
+# 2. 従来の ftol = 1.0e-3 eV/Å (0.0010 eV/Å) はノイズ限界の 5〜8 倍厳しく、
+#    原子数が増大した系（144原子、216原子以上）では統計的に永遠に満たされない。
+# 3. 本設定では、ftol = 1.0e-2 eV/Å (0.010 eV/Å ≈ 0.0004 Ry/au) に設定し、
+#    物理的な構造緩和完了時点で自然に自動正常終了するように最適化。
+# 4. さらに etol = 1.0e-6 を併用し、エネルギー底打ちによる安全停止を二重化。
+# ==============================================================================
+
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+# 1. 構造ファイルの読み込み (216原子 6周期 自然へき開面スラブ)
+read_data slab_10-10_216atoms.data
+
+# 原子質量 (Type 1: C, Type 2: Si - ASEの英名昇順ソートと完全一致)
+mass 1 12.011
+mass 2 28.085
+
+# 2. MDI 通信設定 (Quantum ESPRESSO を QM エンジンとして連成)
+fix 1 all mdi/qm elements C Si
+
+# 3. 出力設定
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+dump_modify 1 append yes
+
+# 4. 表面構造緩和 (minimize)
+# 構文: minimize etol ftol maxiter maxeval
+# - etol: 1.0e-6 (相対エネルギー差 <= 10^-6 で収束)
+# - ftol: 1.0e-2 eV/Å (最大作用力 <= 0.01 eV/Å で収束、DFTノイズ限界直上)
+# - maxiter: 100 (最大CG反復ステップ数)
+# - maxeval: 150 (最大力評価回数)
+minimize 1.0e-6 1.0e-2 100 150
+
+undump 1

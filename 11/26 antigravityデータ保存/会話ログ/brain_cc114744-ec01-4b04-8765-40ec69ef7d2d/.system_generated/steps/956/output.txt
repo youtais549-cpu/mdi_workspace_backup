@@ -1,0 +1,16 @@
+Command exited with code 0.
+
+Command output:
+📦 Staging 6 folders to /mnt/c/temp_sic_sync/sweep_periods_all...
+SYNCED FOLDER: \\192.168.12.69\Results\yamazaki\research\{101_0}10蜻ｨ譛�5邃ｫ (39 files)
+SYNCED FOLDER: \\192.168.12.69\Results\yamazaki\research\{101_0}1蜻ｨ譛�5邃ｫ (39 files)
+SYNCED FOLDER: \\192.168.12.69\Results\yamazaki\research\{101_0}3蜻ｨ譛�5邃ｫ (39 files)
+SYNCED FOLDER: \\192.168.12.69\Results\yamazaki\research\{101_0}5蜻ｨ譛�5邃ｫ (39 files)
+SYNCED FOLDER: \\192.168.12.69\Results\yamazaki\research\{101_0}7蜻ｨ譛�5邃ｫ (39 files)
+SYNCED FOLDER: \\192.168.12.69\Results\yamazaki\research\{101_0}9蜻ｨ譛�5邃ｫ (39 files)
+SYNCED ROOT FILE: surface_energy_vs_periods_plot_data.csv
+SYNCED ROOT FILE: 蜻ｨ譛滓焚縺ｨ陦ｨ髱｢遐ｴ螢翫お繝阪Ν繧ｮ繝ｼ縺ｮ髢｢菫�.pdf
+SYNCED ROOT FILE: 蜻ｨ譛滓焚縺ｨ陦ｨ髱｢遐ｴ螢翫お繝阪Ν繧ｮ繝ｼ縺ｮ髢｢菫�.png
+SYNCED ROOT FILE: 蜻ｨ譛滓焚縺ｨ陦ｨ髱｢遐ｴ螢翫お繝阪Ν繧ｮ繝ｼ縺ｮ髢｢菫�.svg
+
+✅ All 6 folders and summary files synced to NAS successfully!

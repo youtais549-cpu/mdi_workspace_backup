@@ -1,0 +1,17 @@
+Created At: 2026-11-17T11:29:01+09:00
+Completed At: 2026-11-17T11:29:04+09:00
+Command exited with code 0.
+
+Command output:
+=== UNRELAXED AIMD: INWARD vs OUTWARD SURFACE DISPLACEMENT ===
+Top surface (Layer 16):
+  Max OUTWARD (+dz, into vacuum): +0.1613 A (Si max: +0.0015 A, C max: +0.1613 A)
+  Max INWARD  (-dz, into slab)  : -0.4747 A (Si min: -0.4747 A, C min: -0.2553 A)
+Bottom surface (Layer 1):
+  Max OUTWARD (-dz, into vacuum): +0.1638 A (Si max: -0.0000 A, C max: +0.1638 A)
+  Max INWARD  (+dz, into slab)  : +0.4257 A (Si max: +0.4257 A, C max: +0.2793 A)
+
+=== STEP 100 (FINAL) DISPLACEMENT ===
+All 288 atoms: Max 3D |dr| = 0.3325 A, Mean 3D |dr| = 0.0889 A, Max |dz| = 0.2853 A
+Top surface at Step 100: max outward +dz = +0.0343 A, max inward dz = -0.1982 A
+Bottom surface at Step 100: max outward -dz = +0.0042 A, max inward +dz = +0.1753 A

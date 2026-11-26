@@ -1,0 +1,107 @@
+Created At: 2026-11-24T11:38:47+09:00
+Completed At: 2026-11-24T11:38:50+09:00
+Command exited with code 0.
+
+Command output:
+
+     Program PWSCF v.7.6 starts on 24Nov2026 at  9:51:52 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      24 processor cores
+     Number of MPI processes:                12
+     Threads/MPI process:                     2
+
+     MPI processes distributed on     1 nodes
+     25211 MiB available memory on the printing compute node when the environment starts
+
+     Reading input from espresso.pwi
+Warning: card &CELL ignored
+Warning: card &FCP ignored
+Warning: card &RISM ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+     file Si.upf: wavefunction(s)  3S 3P renormalized
+     file C.upf: wavefunction(s)  2S 2P renormalized
+
+     gamma-point specific algorithms are used
+
+     R & G space division:  proc/nbgrp/npool/nimage =      12
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1058     529    131               194006    68578    8578
+     Max        1060     532    134               194028    68590    8584
+     Sum       12717    6361   1591              2328275   823007  102963
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      17.4384  a.u.
+     unit-cell volume          =   24081.7185 (a.u.)^3
+     number of atoms/cell      =          288
+     number of atomic types    =            2
+     number of electrons       =      1152.00
+     number of Kohn-Sham states=          691
+     kinetic-energy cutoff     =      40.0000  Ry
+     charge density cutoff     =     320.0000  Ry
+     scf convergence threshold =      1.0E-05
+     mixing beta               =       0.3000
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_INVALID_FLAG IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+	linux-vdso.so.1 (0x0000766493832000)
+	libhdf5_fortran.so.320 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libhdf5_fortran.so.320 (0x00007664937d5000)
+	libelpa.so.19 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libelpa.so.19 (0x0000766491400000)
+	libscalapack.so => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libscalapack.so (0x0000766490c00000)
+	libfftw3.so.3 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libfftw3.so.3 (0x0000766490800000)
+	libfftw3_omp.so.3 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libfftw3_omp.so.3 (0x00007664937cd000)
+	libmpi_mpifh.so.40 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libmpi_mpifh.so.40 (0x0000766493758000)
+	libgomp.so.1 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libgomp.so.1 (0x00007664912f0000)
+	libpthread.so.0 => /usr/lib/x86_64-linux-gnu/libpthread.so.0 (0x000076649374d000)
+	liblapack.so.3 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/liblapack.so.3 (0x000076648e190000)
+	libgfortran.so.5 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libgfortran.so.5 (0x000076648de00000)
+	libm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x0000766490ada000)
+	libgcc_s.so.1 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libgcc_s.so.1 (0x000076649371d000)
+	libc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x000076648da00000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000766493834000)
+	libhdf5_f90cstub.so.320 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/./libhdf5_f90cstub.so.320 (0x00007664936fd000)
+	libhdf5.so.320 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/./libhdf5.so.320 (0x000076648d400000)
+	libmpi_usempif08.so.40 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libmpi_usempif08.so.40 (0x00007664936b8000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libmpi_usempi_ignore_tkr.so.40 (0x00007664936a6000)
+	libmpi.so.40 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libmpi.so.40 (0x000076648d000000)
+	libquadmath.so.0 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libquadmath.so.0 (0x00007664917b7000)
+	libucc.so.1 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libucc.so.1 (0x000076649176a000)
+	libopen-pal.so.80 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libopen-pal.so.80 (0x000076648dcc8000)
+	libdl.so.2 => /usr/lib/x86_64-linux-gnu/libdl.so.2 (0x000076649369f000)
+	libfabric.so.1 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libfabric.so.1 (0x000076648ce31000)
+	libucp.so.0 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libucp.so.0 (0x000076648cd2e000)
+	libucs.so.0 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libucs.so.0 (0x0000766491280000)
+	libucm.so.0 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libucm.so.0 (0x0000766493682000)
+	libuct.so.0 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libuct.so.0 (0x0000766491240000)
+	libnl-route-3.so.200 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libnl-route-3.so.200 (0x000076648dc30000)

@@ -1,0 +1,75 @@
+Created At: 2026-11-24T11:39:15+09:00
+Completed At: 2026-11-24T11:39:17+09:00
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/:
+total 11164
+drwxr-xr-x  9 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 18:53 .
+drwxrwxrwx  9 WORKSTATION4WSL WORKSTATION4WSL      180 Nov 24 11:39 ..
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:24 .agent
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:24 .agents
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:31 .vscode
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    16380 Nov  5 13:43 AGENTS.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL      364 Nov  5 13:43 GEMINI.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     3274 Nov  5 03:17 GRAPH_STYLE_SPEC.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     2104 Nov  5 03:17 RELAXATION_GRAPH_PROTOCOL.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     7479 Nov  5 13:43 RESTORE_INSTRUCTIONS_20261025.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     9088 Nov  5 03:17 SURFACE_ENERGY_RESULTS.md
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     9434 Nov  5 03:17 auto_generate_progression_graphs.py
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 18:53 lammps_mdi_build
+drwxr-xr-x 14 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 18:53 mdi_env_rtx5080
+drwxrwxrwx 77 WORKSTATION4WSL WORKSTATION4WSL    24576 Nov 23 02:52 mdi_workspace_backup
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 18:43 micromamba
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL 10091072 Nov  5 03:17 msmincho.ttc
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1856 Nov  5 03:17 surface_energy_results.csv
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL  1190736 Nov  5 03:17 times.ttf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     7896 Nov  5 03:17 学習内容と知見の全体総括.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    13454 Nov  5 03:17 環境構築およびデータ復旧指示書.txt
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/bin/:
+total 11060
+drwxrwxrwx 2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 18:54 .
+drwxrwxrwx 5 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 19:10 ..
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL 11313072 Nov  5 18:54 lmp
+lrwxrwxrwx 1 WORKSTATION4WSL WORKSTATION4WSL       74 Nov  5 18:54 pw.x -> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/pw.x
+	linux-vdso.so.1 (0x00007d5f341ae000)
+	libhdf5_fortran.so.320 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libhdf5_fortran.so.320 (0x00007d5f34151000)
+	libelpa.so.19 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libelpa.so.19 (0x00007d5f31e00000)
+	libscalapack.so => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libscalapack.so (0x00007d5f31600000)
+	libfftw3.so.3 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libfftw3.so.3 (0x00007d5f31200000)
+	libfftw3_omp.so.3 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libfftw3_omp.so.3 (0x00007d5f34149000)
+	libmpi_mpifh.so.40 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libmpi_mpifh.so.40 (0x00007d5f340d4000)
+	libgomp.so.1 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libgomp.so.1 (0x00007d5f31cf0000)
+	libpthread.so.0 => /usr/lib/x86_64-linux-gnu/libpthread.so.0 (0x00007d5f340c9000)
+	liblapack.so.3 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/liblapack.so.3 (0x00007d5f2eb90000)
+	libgfortran.so.5 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libgfortran.so.5 (0x00007d5f2e800000)
+	libm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x00007d5f314da000)
+	libgcc_s.so.1 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libgcc_s.so.1 (0x00007d5f34099000)
+	libc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x00007d5f2e400000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007d5f341b0000)
+	libhdf5_f90cstub.so.320 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/./libhdf5_f90cstub.so.320 (0x00007d5f34079000)
+	libhdf5.so.320 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/./libhdf5.so.320 (0x00007d5f2de00000)
+	libmpi_usempif08.so.40 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libmpi_usempif08.so.40 (0x00007d5f321bd000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libmpi_usempi_ignore_tkr.so.40 (0x00007d5f321ab000)
+	libmpi.so.40 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libmpi.so.40 (0x00007d5f2da00000)
+	libquadmath.so.0 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libquadmath.so.0 (0x00007d5f32162000)
+	libucc.so.1 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libucc.so.1 (0x00007d5f31ca3000)
+	libopen-pal.so.80 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libopen-pal.so.80 (0x00007d5f2e6c8000)
+	libdl.so.2 => /usr/lib/x86_64-linux-gnu/libdl.so.2 (0x00007d5f34070000)
+	libfabric.so.1 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libfabric.so.1 (0x00007d5f2d831000)
+	libucp.so.0 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libucp.so.0 (0x00007d5f2d72e000)
+	libucs.so.0 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libucs.so.0 (0x00007d5f3146a000)
+	libucm.so.0 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libucm.so.0 (0x00007d5f31c88000)
+	libuct.so.0 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libuct.so.0 (0x00007d5f31c48000)
+	libnl-route-3.so.200 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libnl-route-3.so.200 (0x00007d5f2e630000)
+	libnl-3.so.200 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libnl-3.so.200 (0x00007d5f2eb6b000)
+	librt.so.1 => /usr/lib/x86_64-linux-gnu/librt.so.1 (0x00007d5f34069000)
+	libutil.so.1 => /usr/lib/x86_64-linux-gnu/libutil.so.1 (0x00007d5f3215d000)
+	libevent_core-2.1.so.7 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libevent_core-2.1.so.7 (0x00007d5f2e3c7000)
+	libevent_pthreads-2.1.so.7 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libevent_pthreads-2.1.so.7 (0x00007d5f32158000)
+	libhwloc.so.15 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libhwloc.so.15 (0x00007d5f2dda0000)
+	libpmix.so.2 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/libpmix.so.2 (0x00007d5f2d400000)
+	libaws-c-s3.so.1.0 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/././libaws-c-s3.so.1.0 (0x00007d5f2d6e2000)
+	libz.so.1 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/././libz.so.1 (0x00007d5f3144f000)
+	libsz.so.2 => /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080/bin/../lib/././libsz.so.2 (0x00007d5f2e622000)

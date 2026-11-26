@@ -1,0 +1,105 @@
+Command exited with code 0.
+
+Command output:
+interpret 329410                  WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410                  WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410                  WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329451 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329451 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329451 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329452 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329452 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329452 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329453 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329453 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329453 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329454 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329454 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329454 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329455 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329455 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329455 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329456 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329456 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329456 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329457 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329457 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329457 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329458 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329458 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329458 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329459 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329459 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329459 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329460 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329460 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329460 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329461 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329461 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329461 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329462 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329462 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329462 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329463 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329463 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329463 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329464 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329464 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329464 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329465 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329465 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329465 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329466 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329466 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329466 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329467 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329467 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329467 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329468 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329468 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329468 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329469 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329469 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329469 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329470 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329470 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329470 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329471 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329471 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329471 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329472 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329472 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329472 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329473 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329473 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329473 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 329581 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 329581 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 329581 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 330390 ZMQbg/Rea WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 330390 ZMQbg/Rea WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 330390 ZMQbg/Rea WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 330391 ZMQbg/IO/ WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 330391 ZMQbg/IO/ WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 330391 ZMQbg/IO/ WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 330392 ZMQbg/Rea WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 330392 ZMQbg/Rea WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 330392 ZMQbg/Rea WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 330393 ZMQbg/IO/ WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 330393 ZMQbg/IO/ WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 330393 ZMQbg/IO/ WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 330394 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 330394 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 330394 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 330473 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 330473 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 330473 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 333486 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 333486 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 333486 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+interpret 329410 333487 interpret WORKSTATION4WSL   37w     FIFO               0,15       0t0          7905002 pipe
+interpret 329410 333487 interpret WORKSTATION4WSL   38r     FIFO               0,15       0t0          7905003 pipe
+interpret 329410 333487 interpret WORKSTATION4WSL   41r     FIFO               0,15       0t0          7905004 pipe
+bash      333485                  WORKSTATION4WSL    0r     FIFO               0,15       0t0          7905002 pipe
+bash      333485                  WORKSTATION4WSL    1w     FIFO               0,15       0t0          7905003 pipe
+bash      333485                  WORKSTATION4WSL    2w     FIFO               0,15       0t0          7905004 pipe

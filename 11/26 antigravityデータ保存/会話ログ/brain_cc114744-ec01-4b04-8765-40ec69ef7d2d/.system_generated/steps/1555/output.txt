@@ -1,0 +1,25 @@
+Created At: 2026-11-24T15:29:17+09:00
+Completed At: 2026-11-24T15:29:31+09:00
+Command exited with code 0.
+
+Command output:
+=== Saved Execution Codes in \\192.168.12.69\Results\yamazaki\research\実行コード\{101_0}8周期3.0Å　構造最適化なし ===
+
+Name                                                           Length
+----                                                           ------
+auto_generate_progression_graphs.py                             10302
+dft_settings.py                                                  1626
+in.lammps                                                        2460
+make_xyz.py                                                      2132
+qe_mdi_engine_rtx5080.py                                        14793
+RELAXATION_GRAPH_PROTOCOL.json                                   2104
+run_8periods_vac3.0A_unrelaxed_aimd_continue_to_400steps.py     42569
+slab_10-10_288atoms_vac3.0A_unrelaxed.data                      21545
+slab_10-10_288atoms_vac3.0A_unrelaxed_aimd_100steps_final.data  37139
+slab_10-10_288atoms_vac3.0A_unrelaxed_aimd_400steps_final.data  37214
+sync_unrelaxed_400steps_to_nas.py                                2473
+
+
+
+STDERR: #< CLIXML
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>モジュールを初めて使用するための準備しています。</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="progress" RefId="1"><TNRef RefId="0" /><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>モジュールを初めて使用するための準備しています。</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="2"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>=== Saved Execution Codes in \\192.168.12.69\Results\yamazaki\research\実行コード\{101_0}8周期3.0Å　構造最適化なし ===</ToString><Props><Obj N="MessageData" RefId="3"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>=== Saved Execution Codes in \\192.168.12.69\Results\yamazaki\research\実行コード\{101_0}8周期3.0Å　構造最適化なし ===</ToString><Props><S N="Message">=== Saved Execution Codes in \\192.168.12.69\Results\yamazaki\research\実行コード\{101_0}8周期3.0Å　構造最適化なし ===</S><B N="NoNewLine">false</B><S N="ForegroundColor">DarkYellow</S><S N="BackgroundColor">DarkMagenta</S></Props></Obj><S N="Source">Write-Host</S><DT N="TimeGenerated">2026-11-24T15:29:31.0237224+09:00</DT><Obj N="Tags" RefId="4"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">WORKSTATION4\WORKSTATION4</S><S N="Computer">WORKSTATION4</S><U32 N="ProcessId">14088</U32><U32 N="NativeThreadId">29880</U32><U32 N="ManagedThreadId">16</U32></Props></Obj></Objs>

@@ -1,0 +1,410 @@
+Command exited with code 0.
+
+Command output:
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   6647 Nov  5 03:17  /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/create_6periods_natural_cleavage_model.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   4821 Nov  5 03:17  /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/generate_6periods_model.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   5690 Nov  5 03:17  /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/generate_surface_energy_vs_periods_graph.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    267 Nov  5 03:17  /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/surface_energy_vs_periods_plot_data.csv
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  27033 Nov  5 03:17  /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/surface_energy_vs_periods_vac5A.pdf
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  88348 Nov  5 03:17  /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/surface_energy_vs_periods_vac5A.png
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  47056 Nov  5 03:17  /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/surface_energy_vs_periods_vac5A.svg
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  28314 Nov  5 03:17 '/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/'$'\345\221\250\346\234\237\346\225\260\343\201\250\350\241\250\351\235\242\347\240\264\345\243\212\343\202\250\343\203\215\343\203\253\343\202\256\343\203\274\343\201\256\351\226\242\344\277\202''.pdf'
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  90486 Nov  5 03:17 '/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/'$'\345\221\250\346\234\237\346\225\260\343\201\250\350\241\250\351\235\242\347\240\264\345\243\212\343\202\250\343\203\215\343\203\253\343\202\256\343\203\274\343\201\256\351\226\242\344\277\202''.png'
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  50489 Nov  5 03:17 '/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/'$'\345\221\250\346\234\237\346\225\260\343\201\250\350\241\250\351\235\242\347\240\264\345\243\212\343\202\250\343\203\215\343\203\253\343\202\256\343\203\274\343\201\256\351\226\242\344\277\202''.svg'
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  28442 Nov  5 03:17 '/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/'$'\345\221\250\346\234\237\346\225\260\343\201\250\350\241\250\351\235\242\347\240\264\345\243\212\343\202\250\343\203\215\343\203\253\343\202\256\343\203\274\343\201\256\351\226\242\344\277\202''_word_8cm.pdf'
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 134363 Nov  5 03:17 '/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/'$'\345\221\250\346\234\237\346\225\260\343\201\250\350\241\250\351\235\242\347\240\264\345\243\212\343\202\250\343\203\215\343\203\253\343\202\256\343\203\274\343\201\256\351\226\242\344\277\202''_word_8cm.png'
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  50840 Nov  5 03:17 '/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/'$'\345\221\250\346\234\237\346\225\260\343\201\250\350\241\250\351\235\242\347\240\264\345\243\212\343\202\250\343\203\215\343\203\253\343\202\256\343\203\274\343\201\256\351\226\242\344\277\202''_word_8cm.svg'
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac2.5A_2nd:
+total 3304
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL   16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    6630 Nov  5 03:17 2H-SiC_10-10_slab_3x3x2_vac2.5A.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    6145 Nov  5 03:17 2H-SiC_10-10_slab_3x3x2_vac2.5A.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    6572 Nov  5 03:17 2H-SiC_10-10_slab_3x3x2_vac2.5A.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  5 03:17 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    2104 Nov  5 03:17 RELAXATION_GRAPH_PROTOCOL.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  5 03:17 Si.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   26371 Nov  5 03:17 Total_Energy_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  178087 Nov  5 03:17 Total_Energy_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   46118 Nov  5 03:17 Total_Energy_progression.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   23178 Nov  5 03:17 Total_Force_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  117582 Nov  5 03:17 Total_Force_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   40711 Nov  5 03:17 Total_Force_progression.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   23654 Nov  5 03:17 Total_SCF_Correction_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  115238 Nov  5 03:17 Total_SCF_Correction_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   40428 Nov  5 03:17 Total_SCF_Correction_progression.svg
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    9434 Nov  5 03:17 auto_generate_progression_graphs.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     120 Nov  5 03:17 espresso.err
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    4004 Nov  5 03:17 espresso.pwi
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   59563 Nov  5 03:17 espresso.pwo
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     882 Nov  5 03:17 fracture_metadata.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    2015 Nov  5 03:17 in.lammps
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    4738 Nov  5 03:17 log.lammps
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    2132 Nov  5 03:17 make_xyz.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    2650 Nov  5 03:17 master_run_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   21532 Nov  5 03:17 md_animation.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   10618 Nov  5 03:17 qe_mdi_engine_core.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    1681 Nov  5 03:17 run_colab_gpu.sh
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 tmp
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080:
+total 14344
+drwxrwxrwx  5 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 19:10 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL    16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6215 Nov  5 14:38 2H-SiC_10-10_bulk_3x3x2_72atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6607 Nov  5 14:38 2H-SiC_10-10_slab_3x3x2_vac5A.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6215 Nov  5 14:38 2H-SiC_10-10_slab_3x3x2_vac5A.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     6573 Nov  5 14:38 2H-SiC_10-10_slab_3x3x2_vac5A.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   858332 Nov  5 14:38 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     2104 Nov  5 14:38 RELAXATION_GRAPH_PROTOCOL.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  1691876 Nov  5 14:38 Si.upf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    28337 Nov  5 19:10 Total_Energy_progression.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   123746 Nov  5 19:10 Total_Energy_progression.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    39008 Nov  5 19:10 Total_Energy_progression.svg
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    22073 Nov  5 19:10 Total_Force_progression.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   115066 Nov  5 19:10 Total_Force_progression.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    34150 Nov  5 19:10 Total_Force_progression.svg
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    21994 Nov  5 19:10 Total_SCF_Correction_progression.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   121900 Nov  5 19:10 Total_SCF_Correction_progression.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    34074 Nov  5 19:10 Total_SCF_Correction_progression.svg
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 18:58 __pycache__
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    10171 Nov  5 18:39 auto_generate_progression_graphs.py
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 18:54 bin
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     3882 Nov  5 14:42 create_2periods_vac5A_model.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     1626 Nov  5 14:38 dft_settings.py
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     4412 Nov  5 19:08 dump.lammpstrj
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL        0 Nov  5 19:08 espresso.err
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     4005 Nov  5 19:08 espresso.pwi
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    13867 Nov  5 19:10 espresso.pwo
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    53721 Nov  5 19:08 espresso_all_steps.pwo
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     4618 Nov  5 14:38 espresso_bulk_scf.pwi
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    25900 Nov  5 18:56 espresso_bulk_scf.pwo
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1257 Nov  5 18:39 fracture_metadata.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1679 Nov  5 19:00 in.lammps
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL       21 Nov  5 18:58 lmp.log
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL       21 Nov  5 18:58 log.lammps
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     2132 Nov  5 14:38 make_xyz.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     3237 Nov  5 14:42 master_run_rtx5080.sh
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     6152 Nov  5 19:10 md_animation.xyz
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL 10091072 Nov  5 18:53 msmincho.ttc
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     2460 Nov  5 19:08 qe_engine.log
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    15879 Nov  5 18:54 qe_mdi_engine_rtx5080.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     3484 Nov  5 19:00 run_bulk_scf_rtx5080.sh
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     4865 Nov  5 19:00 run_slab_rtx5080.sh
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     4128 Nov  5 18:53 setup_local_rtx5080_env.sh
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL  1190736 Nov  5 18:53 times.ttf
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 19:08 tmp
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_bulk_scf:
+total 2544
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL   16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  5 03:17 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  5 03:17 Si.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   12192 Nov  5 03:17 bulk_10-10_144atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    9097 Nov  5 03:17 espresso.pwi
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     800 Nov  5 03:17 run_bulk_gpu.sh
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_true_bulk_scf:
+total 2544
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL   16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  5 03:17 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  5 03:17 Si.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   12122 Nov  5 03:17 bulk_10-10_144atoms_true_bulk.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    9097 Nov  5 03:17 espresso.pwi
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     533 Nov  5 03:17 run_bulk_gpu.sh
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_vac5A:
+total 2600
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL   16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  5 03:17 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  5 03:17 Si.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   12192 Nov  5 03:17 bulk_10-10_144atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     621 Nov  5 03:17 fracture_metadata.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     810 Nov  5 03:17 in.lammps
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    1930 Nov  5 03:17 in.lammps.optimized_conv
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     724 Nov  5 03:17 in.lammps.restart
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    5278 Nov  5 03:17 latest_structure.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    2132 Nov  5 03:17 make_xyz.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    2210 Nov  5 03:17 master_run_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   10618 Nov  5 03:17 qe_mdi_engine_core.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    1682 Nov  5 03:17 resume_run_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    1425 Nov  5 03:17 run_colab_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   12192 Nov  5 03:17 slab_10-10_144atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    5930 Nov  5 03:17 slab_10-10_144atoms_restart.data
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_vac5A_natural_cleavage:
+total 3408
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL   16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  5 03:17 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  5 03:17 Si.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   25834 Nov  5 03:17 Total_Energy_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  175693 Nov  5 03:17 Total_Energy_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   43443 Nov  5 03:17 Total_Energy_progression.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   23177 Nov  5 03:17 Total_Force_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  106027 Nov  5 03:17 Total_Force_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   38723 Nov  5 03:17 Total_Force_progression.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   23650 Nov  5 03:17 Total_SCF_Correction_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  115800 Nov  5 03:17 Total_SCF_Correction_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   40607 Nov  5 03:17 Total_SCF_Correction_progression.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   12464 Nov  5 03:17 bulk_10-10_144atoms.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   12192 Nov  5 03:17 bulk_10-10_144atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    7889 Nov  5 03:17 bulk_10-10_144atoms.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    5490 Nov  5 03:17 create_4periods_natural_cleavage_slab.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     120 Nov  5 03:17 espresso.err
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    7234 Nov  5 03:17 espresso.pwi
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  106799 Nov  5 03:17 espresso.pwo
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    2766 Nov  5 03:17 extract_restart_data.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     766 Nov  5 03:17 fracture_metadata.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    1930 Nov  5 03:17 in.lammps
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    4565 Nov  5 03:17 log.lammps
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    2132 Nov  5 03:17 make_xyz.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    2341 Nov  5 03:17 master_run_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   36606 Nov  5 03:17 md_animation.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   10618 Nov  5 03:17 qe_mdi_engine_core.py
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 restart
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    1425 Nov  5 03:17 run_colab_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   12842 Nov  5 03:17 slab_10-10_144atoms.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   12192 Nov  5 03:17 slab_10-10_144atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   10618 Nov  5 03:17 slab_10-10_144atoms.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   10032 Nov  5 03:17 slab_10-10_144atoms_restart.data
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_true_bulk_scf:
+total 2736
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL   16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  5 03:17 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  5 03:17 Si.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   18700 Nov  5 03:17 bulk_10-10_216atoms_true_bulk.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   18168 Nov  5 03:17 bulk_10-10_216atoms_true_bulk.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   11777 Nov  5 03:17 bulk_10-10_216atoms_true_bulk.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   10444 Nov  5 03:17 espresso.pwi
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  150154 Nov  5 03:17 espresso.pwo
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     676 Nov  5 03:17 fracture_metadata.json
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    1331 Nov  5 03:17 run_bulk_gpu.sh
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_vac5A:
+total 3288
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL   16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  5 03:17 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  5 03:17 Si.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   25221 Nov  5 03:17 Total_Energy_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  171803 Nov  5 03:17 Total_Energy_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   52529 Nov  5 03:17 Total_Energy_progression.svg
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL   18168 Nov  5 03:17 bulk_10-10_216atoms.data
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL   21925 Nov  5 03:17 espresso.pwo
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     621 Nov  5 03:17 fracture_metadata.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    4340 Nov  5 03:17 generate_6periods_progression_graphs.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    1864 Nov  5 03:17 in.lammps
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    1864 Nov  5 03:17 in.lammps.optimized_conv
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     579 Nov  5 03:17 lammps_steps_energy.csv
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    2132 Nov  5 03:17 make_xyz.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    2284 Nov  5 03:17 master_run_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  355904 Nov  5 03:17 md_animation.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   10618 Nov  5 03:17 qe_mdi_engine_core.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    1425 Nov  5 03:17 run_colab_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   17860 Nov  5 03:17 slab_10-10_216atoms.cif
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL   18168 Nov  5 03:17 slab_10-10_216atoms.data
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL   11777 Nov  5 03:17 slab_10-10_216atoms.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   18168 Nov  5 03:17 slab_10-10_216atoms_relaxed_step38.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   11777 Nov  5 03:17 slab_10-10_216atoms_relaxed_step38.xyz
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_vac5A_natural_cleavage:
+total 14712
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:17 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL    16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   858332 Nov  5 03:17 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     2104 Nov  5 03:17 RELAXATION_GRAPH_PROTOCOL.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  1691876 Nov  5 03:17 Si.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    25482 Nov  5 03:17 Total_Energy_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   172040 Nov  5 03:17 Total_Energy_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    42880 Nov  5 03:17 Total_Energy_progression.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    22836 Nov  5 03:17 Total_Force_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   115906 Nov  5 03:17 Total_Force_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    39418 Nov  5 03:17 Total_Force_progression.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    23684 Nov  5 03:17 Total_SCF_Correction_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   123995 Nov  5 03:17 Total_SCF_Correction_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    41626 Nov  5 03:17 Total_SCF_Correction_progression.svg
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     9434 Nov  5 03:17 auto_generate_progression_graphs.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    18700 Nov  5 03:17 bulk_10-10_216atoms.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    18168 Nov  5 03:17 bulk_10-10_216atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    11777 Nov  5 03:17 bulk_10-10_216atoms.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL      120 Nov  5 03:17 espresso.err
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    10468 Nov  5 03:17 espresso.pwi
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   153107 Nov  5 03:17 espresso.pwo
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL      953 Nov  5 03:17 fracture_metadata.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1902 Nov  5 03:17 in.lammps
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1902 Nov  5 03:17 in.lammps.optimized_conv
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     4541 Nov  5 03:17 log.lammps
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     2132 Nov  5 03:17 make_xyz.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     2482 Nov  5 03:17 master_run_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    54750 Nov  5 03:17 md_animation.xyz
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL 10091072 Nov  5 03:17 msmincho.ttc
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    10618 Nov  5 03:17 qe_mdi_engine_core.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     1681 Nov  5 03:17 run_colab_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    18934 Nov  5 03:17 slab_10-10_216atoms.cif
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    18168 Nov  5 03:17 slab_10-10_216atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    15802 Nov  5 03:17 slab_10-10_216atoms.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    27033 Nov  5 03:17 surface_energy_vs_periods_vac5A.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    88348 Nov  5 03:17 surface_energy_vs_periods_vac5A.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    47056 Nov  5 03:17 surface_energy_vs_periods_vac5A.svg
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL  1190736 Nov  5 03:17 times.ttf
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:17 tmp
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_vac5A_restart:
+total 2568
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL   16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  5 03:17 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  5 03:17 Si.upf
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     621 Nov  5 03:17 fracture_metadata.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    1269 Nov  5 03:17 in.lammps
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    2132 Nov  5 03:17 make_xyz.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    2338 Nov  5 03:17 master_run_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   10618 Nov  5 03:17 qe_mdi_engine_core.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    1415 Nov  5 03:17 run_colab_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   18168 Nov  5 03:17 slab_10-10_216atoms_relaxed_step38.data
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_true_bulk_scf:
+total 2760
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 19:17 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL   16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  5 19:17 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  5 19:17 Si.upf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   23956 Nov  5 19:17 bulk_10-10_288atoms_true_bulk.cif
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   24144 Nov  5 19:17 bulk_10-10_288atoms_true_bulk.data
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   15665 Nov  5 19:17 bulk_10-10_288atoms_true_bulk.xyz
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    7586 Nov  5 19:18 create_8periods_bulk_and_slab_models.py
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   13103 Nov  5 19:17 espresso.pwi
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   64815 Nov  5 19:20 espresso.pwo
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     953 Nov  5 19:22 fracture_metadata.json
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    4325 Nov  5 19:17 run_bulk_8periods_rtx5080.sh
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   25089 Nov  5 19:17 slab_10-10_288atoms_vac5A.cif
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   24144 Nov  5 19:17 slab_10-10_288atoms_vac5A.data
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   20985 Nov  5 19:17 slab_10-10_288atoms_vac5A.xyz
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 19:20 tmp
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_vac5A_natural_cleavage:
+total 15684
+drwxrwxrwx  4 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 20:36 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL    16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   858332 Nov  5 19:31 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     2104 Nov  5 19:31 RELAXATION_GRAPH_PROTOCOL.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  1691876 Nov  5 19:31 Si.upf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    25271 Nov  5 20:38 Total_Energy_progression.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   170283 Nov  5 20:38 Total_Energy_progression.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    42067 Nov  5 20:38 Total_Energy_progression.svg
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    21355 Nov  5 20:38 Total_Force_progression.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   143003 Nov  5 20:38 Total_Force_progression.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    33722 Nov  5 20:38 Total_Force_progression.svg
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    23372 Nov  5 20:38 Total_SCF_Correction_progression.pdf
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   161085 Nov  5 20:38 Total_SCF_Correction_progression.png
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    39710 Nov  5 20:38 Total_SCF_Correction_progression.svg
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 19:33 __pycache__
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    10302 Nov  5 20:38 auto_generate_progression_graphs.py
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    24144 Nov  5 19:31 bulk_10-10_288atoms.data
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    23956 Nov  5 19:31 bulk_10-10_288atoms_true_bulk.cif
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    24144 Nov  5 19:31 bulk_10-10_288atoms_true_bulk.data
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    15665 Nov  5 19:31 bulk_10-10_288atoms_true_bulk.xyz
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     1626 Nov  5 19:31 dft_settings.py
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    43476 Nov  5 20:36 dump.lammpstrj
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     1368 Nov  5 20:36 espresso.err
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    13702 Nov  5 20:29 espresso.pwi
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   537480 Nov  5 20:36 espresso.pwo
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL   537480 Nov  5 20:36 espresso_all_steps.pwo
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     1146 Nov  5 20:36 fracture_metadata.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     2031 Nov  5 19:34 in.lammps
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     2824 Nov  5 20:36 lmp.log
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     4774 Nov  5 20:36 log.lammps
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     2132 Nov  5 19:31 make_xyz.py
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    60745 Nov  5 20:36 md_animation.xyz
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL 10091072 Nov  5 19:31 msmincho.ttc
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL     6258 Nov  5 20:36 qe_engine.log
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    14915 Nov  5 19:34 qe_mdi_engine_rtx5080.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL     6076 Nov  5 19:34 run_slab_8periods_rtx5080.sh
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    24144 Nov  5 19:31 slab_10-10_288atoms.data
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    25089 Nov  5 19:31 slab_10-10_288atoms_vac5A.cif
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    24144 Nov  5 19:31 slab_10-10_288atoms_vac5A.data
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    20985 Nov  5 19:31 slab_10-10_288atoms_vac5A.xyz
+-rw-rw-rw-  1 WORKSTATION4WSL WORKSTATION4WSL    22387 Nov  5 20:36 slab_10-10_288atoms_vac5A_relaxed.data
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL  1190736 Nov  5 19:31 times.ttf
+drwxrwxrwx  3 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 20:36 tmp
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/results_2H-SiC_10-10_slab_4periods_vac5A_intermediate:
+total 2924
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL   16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  5 03:17 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  5 03:17 Si.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   12192 Nov  5 03:17 bulk_10-10_144atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    3452 Nov  5 03:17 create_restart_structure.py
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     521 Nov  5 03:17 espresso.err
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    7218 Nov  5 03:17 espresso.pwi
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   20700 Nov  5 03:17 espresso.pwo
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     621 Nov  5 03:17 fracture_metadata.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     810 Nov  5 03:17 in.lammps
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     724 Nov  5 03:17 in.lammps.restart
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    5278 Nov  5 03:17 latest_structure.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    4127 Nov  5 03:17 log.lammps
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    2132 Nov  5 03:17 make_xyz.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    2210 Nov  5 03:17 master_run_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  274580 Nov  5 03:17 md_animation.xyz
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL   10618 Nov  5 03:17 qe_mdi_engine_core.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    1681 Nov  5 03:17 resume_run_gpu.sh
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    1425 Nov  5 03:17 run_colab_gpu.sh
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    1464 Nov  5 03:17 run_colab_resume_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   12192 Nov  5 03:17 slab_10-10_144atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    5930 Nov  5 03:17 slab_10-10_144atoms_restart.data
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 tmp
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/results_2H-SiC_10-10_slab_4periods_vac5A_relaxed_20261022:
+total 4436
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 .
+drwxrwxrwx 36 WORKSTATION4WSL WORKSTATION4WSL   16384 Nov  5 19:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  5 03:17 C.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   29203 Nov  5 03:17 SCF_Accuracy_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  149135 Nov  5 03:17 SCF_Accuracy_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   48958 Nov  5 03:17 SCF_Accuracy_progression.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  5 03:17 Si.upf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   26293 Nov  5 03:17 Total_Energy_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  175233 Nov  5 03:17 Total_Energy_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   63119 Nov  5 03:17 Total_Energy_progression.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   23011 Nov  5 03:17 Total_Force_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  138484 Nov  5 03:17 Total_Force_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   54182 Nov  5 03:17 Total_Force_progression.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   23461 Nov  5 03:17 Total_SCF_Correction_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  142403 Nov  5 03:17 Total_SCF_Correction_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   52635 Nov  5 03:17 Total_SCF_Correction_progression.svg
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   12192 Nov  5 03:17 bulk_10-10_144atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    3131 Nov  5 03:17 energy_progression.csv
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL       0 Nov  5 03:17 espresso.err
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    7219 Nov  5 03:17 espresso.pwi
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   19491 Nov  5 03:17 espresso.pwo
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     621 Nov  5 03:17 fracture_metadata.json
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     724 Nov  5 03:17 in.lammps
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     724 Nov  5 03:17 in.lammps.restart
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL     657 Nov  5 03:17 lammps_steps_energy.csv
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    5278 Nov  5 03:17 latest_structure.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    2644 Nov  5 03:17 log.lammps
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    2132 Nov  5 03:17 make_xyz.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    2210 Nov  5 03:17 master_run_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  353896 Nov  5 03:17 md_animation.xyz
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   10618 Nov  5 03:17 qe_mdi_engine_core.py
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    1681 Nov  5 03:17 resume_run_gpu.sh
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    1425 Nov  5 03:17 run_colab_gpu.sh
+-rwxr-xr-x  1 WORKSTATION4WSL WORKSTATION4WSL    1464 Nov  5 03:17 run_colab_resume_gpu.sh
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   26973 Nov  5 03:17 scf_accuracy_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  119853 Nov  5 03:17 scf_accuracy_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   12192 Nov  5 03:17 slab_10-10_144atoms.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL    5930 Nov  5 03:17 slab_10-10_144atoms_restart.data
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   21051 Nov  5 03:17 total_energy_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  113847 Nov  5 03:17 total_energy_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   21731 Nov  5 03:17 total_force_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   94361 Nov  5 03:17 total_force_progression.png
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   21969 Nov  5 03:17 total_scf_correction_progression.pdf
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   96794 Nov  5 03:17 total_scf_correction_progression.png

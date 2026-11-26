@@ -1,0 +1,28 @@
+Command exited with code 0.
+
+Command output:
+        66        Si     tau(  66) = (   0.6666833   1.0940616   0.0962443  )
+        67        C      tau(  67) = (   0.8333167   1.5727135   0.0000000  )
+        68        C      tau(  68) = (   0.6666833   1.2991981   0.0962443  )
+        69        Si     tau(  69) = (   0.9999833   1.3675769   0.2886751  )
+        70        Si     tau(  70) = (   0.8333500   1.0940616   0.3849194  )
+        71        C      tau(  71) = (   0.9999833   1.5727135   0.2886751  )
+        72        C      tau(  72) = (   0.8333500   1.2991981   0.3849194  )
+
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:   161872 G-vectors     FFT dimensions: ( 100, 180,  40)
+
+     Smooth grid:    57310 G-vectors     FFT dimensions: (  72, 120,  27)
+
+     Estimated max dynamical RAM per process >      83.94 MB
+
+     Estimated total dynamical RAM >    1007.23 MB
+
+     Check: negative core charge=   -0.000003
+
+     Initial potential from superposition of free atoms
+
+     starting charge     287.9784, renormalised to     288.0000

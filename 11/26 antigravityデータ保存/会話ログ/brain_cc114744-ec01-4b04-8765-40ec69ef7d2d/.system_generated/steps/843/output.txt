@@ -1,0 +1,34 @@
+Command exited with code 0.
+
+Command output:
+./calc_2H-SiC_10-10_2periods_vac7.0A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac8.0A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac2.5A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac1.0A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac0.5A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac3.5A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_7periods_vac5A_natural_cleavage/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac4.0A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac9.0A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac2.0A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac8.5A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_10periods_vac5A_natural_cleavage/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac6.5A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac0.25A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac10.0A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_9periods_vac5A_natural_cleavage/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_5periods_vac5A_natural_cleavage/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_1periods_vac5A_natural_cleavage/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac9.5A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac1.5A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac7.5A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac3.0A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac5.5A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac6.0A_rtx5080/espresso_bulk_scf.pwo
+./{101_0}8周期５Å/espresso_bulk_8periods.pwo
+./calc_2H-SiC_10-10_2periods_vac5.0A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_3periods_vac5A_natural_cleavage/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac4.5A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac0.75A_rtx5080/espresso_bulk_scf.pwo
+./calc_2H-SiC_10-10_2periods_vac0.0A_rtx5080/espresso_bulk_scf.pwo

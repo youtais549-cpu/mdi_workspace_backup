@@ -1,0 +1,17 @@
+Command exited with code 0.
+
+Command output:
+Loading 2H-SiC unit cell from /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/research_simulations/2H-SiC.cif...
+
+============================================================
+ 8-Periods (16 layers, 288 atoms) True Bulk & Slab Models
+============================================================
+  - Total Atoms       : 288 (Si: 144, C: 144)
+  - Bulk Cell (0 Å)   : Lx=9.2280 Å, Ly=15.1440 Å, Lz=21.311201 Å
+  - Slab Cell (vac 5Å): Lx=9.2280 Å, Ly=15.1440 Å, Lz=29.535401 Å
+  - Number of Layers  : 16 layers
+  - Interlayer dz     : [0.8881, 1.7758, 0.8881, 1.7758] ... [1.7758, 0.8881] Å
+    (Both ends dense ~0.8881 Å preserved, outer cleavage sparse ~1.7758 Å)
+============================================================
+
+✅ Generated all 8-period (288 atoms) files in /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_true_bulk_scf

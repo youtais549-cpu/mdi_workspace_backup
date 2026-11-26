@@ -1,0 +1,16 @@
+Created At: 2026-11-13T15:44:42+09:00
+Completed At: 2026-11-13T15:44:44+09:00
+Command exited with code 0.
+
+Command output:
+calc_2H-SiC_10-10_8periods_vac5A_natural_cleavage/tmp:
+total 12
+drwxrwxrwx 3 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 20:36 .
+drwxrwxrwx 4 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 20:41 ..
+drwxrwxrwx 2 WORKSTATION4WSL WORKSTATION4WSL 4096 Nov  5 20:36 pwscf.save
+
+calc_2H-SiC_10-10_8periods_vac5A_natural_cleavage/tmp/pwscf.save:
+total 160
+drwxrwxrwx 2 WORKSTATION4WSL WORKSTATION4WSL   4096 Nov  5 20:36 .
+drwxrwxrwx 3 WORKSTATION4WSL WORKSTATION4WSL   4096 Nov  5 20:36 ..
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 155507 Nov  5 20:36 data-file-schema.xml

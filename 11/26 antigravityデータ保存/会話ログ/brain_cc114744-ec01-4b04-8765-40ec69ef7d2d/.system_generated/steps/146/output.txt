@@ -1,0 +1,5 @@
+Command exited with code 0.
+
+Command output:
+WORKSTA+      28  0.0  0.0   4952  3644 pts/5    Ss+  18:51   0:00 bash -c ps aux | grep -E "micromamba|setup_local" || true
+WORKSTA+      30  0.0  0.0   4264  2420 pts/5    S+   18:51   0:00 grep -E micromamba|setup_local

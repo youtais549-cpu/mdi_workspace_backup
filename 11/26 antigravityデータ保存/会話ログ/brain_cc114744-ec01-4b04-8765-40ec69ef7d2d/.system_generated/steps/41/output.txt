@@ -1,0 +1,15 @@
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/bin/:
+total 16480
+drwxr-xr-x 2 WORKSTATION4WSL WORKSTATION4WSL     4096 Nov  5 03:14 .
+drwxrwxrwx 7 WORKSTATION4WSL WORKSTATION4WSL      140 Nov  5 03:51 ..
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL       69 Nov  5 03:51 agentapi
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL 16863523 Nov  5 03:13 webm_encoder
+
+/home/WORKSTATION4WSL/.gemini/bin/:
+total 233016
+dr-xr-xr-x 2 WORKSTATION4WSL WORKSTATION4WSL        60 Nov  5 03:51 .
+dr-xr-xr-x 5 WORKSTATION4WSL WORKSTATION4WSL       100 Nov  5 03:51 ..
+-rwxr-xr-x 1 WORKSTATION4WSL WORKSTATION4WSL 238604688 Nov  4 11:54 agy

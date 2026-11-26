@@ -1,0 +1,13 @@
+# Python virtual environments & caches
+__pycache__/
+*.py[cod]
+myenv/
+cache/
+
+# Quantum ESPRESSO MPI rank scratch buffers & raw >100MB wavefunction binaries
+# (Step 350 wfc1.hdf5 is tracked via 45MB split archives wfc1.hdf5.gz.part_* + restore_wfc1_hdf5.sh)
+**/tmp/pwscf.wfc*
+**/tmp/pwscf.mix*
+**/tmp/pwscf.save/wfc1.hdf5
+**/prev_*_espresso_all_steps.pwo
+

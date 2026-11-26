@@ -1,0 +1,45 @@
+Created At: 2026-11-26T13:26:34+09:00
+Completed At: 2026-11-26T13:26:36+09:00
+Command exited with code 0.
+
+Command output:
+[QE-MDI Engine] --- [Step 338] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9690A, z_max=24.5879A, gap=9.9165A) ---
+[QE-MDI Engine] --- [Step 338] Done in 386.16s (16 SCF iters) | E_pot: -127675.2690 eV | Fmax: 3.24255 eV/A | gap: 9.9165 A ---
+[QE-MDI Engine] --- [Step 339] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9627A, z_max=24.5944A, gap=9.9038A) ---
+[QE-MDI Engine] --- [Step 339] Done in 423.89s (19 SCF iters) | E_pot: -127675.2854 eV | Fmax: 3.41520 eV/A | gap: 9.9038 A ---
+[QE-MDI Engine] --- [Step 340] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9568A, z_max=24.5999A, gap=9.8922A) ---
+[QE-MDI Engine] --- [Step 340] Done in 452.50s (21 SCF iters) | E_pot: -127675.2224 eV | Fmax: 3.52197 eV/A | gap: 9.8922 A ---
+[QE-MDI Engine] --- [Step 341] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9473A, z_max=24.6046A, gap=9.8781A) ---
+[QE-MDI Engine] --- [Step 341] Done in 469.93s (22 SCF iters) | E_pot: -127675.0861 eV | Fmax: 3.55650 eV/A | gap: 9.8781 A ---
+[QE-MDI Engine] --- [Step 342] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9390A, z_max=24.6082A, gap=9.8662A) ---
+[QE-MDI Engine] --- [Step 342] Done in 481.03s (23 SCF iters) | E_pot: -127674.8870 eV | Fmax: 3.51591 eV/A | gap: 9.8662 A ---
+[QE-MDI Engine] --- [Step 343] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9319A, z_max=24.6108A, gap=9.8565A) ---
+[QE-MDI Engine] --- [Step 343] Done in 498.40s (23 SCF iters) | E_pot: -127674.6380 eV | Fmax: 3.40441 eV/A | gap: 9.8565 A ---
+[QE-MDI Engine] --- [Step 344] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9261A, z_max=24.6125A, gap=9.8490A) ---
+[QE-MDI Engine] --- [Step 344] Done in 509.87s (24 SCF iters) | E_pot: -127674.3544 eV | Fmax: 3.29993 eV/A | gap: 9.8490 A ---
+[QE-MDI Engine] --- [Step 345] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9217A, z_max=24.6132A, gap=9.8439A) ---
+[QE-MDI Engine] --- [Step 345] Done in 492.80s (24 SCF iters) | E_pot: -127674.0527 eV | Fmax: 3.42746 eV/A | gap: 9.8439 A ---
+[QE-MDI Engine] --- [Step 346] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9187A, z_max=24.6129A, gap=9.8411A) ---
+[QE-MDI Engine] --- [Step 346] Done in 496.35s (24 SCF iters) | E_pot: -127673.7500 eV | Fmax: 3.49169 eV/A | gap: 9.8411 A ---
+[QE-MDI Engine] --- [Step 347] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9146A, z_max=24.6118A, gap=9.8382A) ---
+[QE-MDI Engine] --- [Step 347] Done in 494.59s (23 SCF iters) | E_pot: -127673.4638 eV | Fmax: 3.49705 eV/A | gap: 9.8382 A ---
+[QE-MDI Engine] --- [Step 348] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9111A, z_max=24.6098A, gap=9.8367A) ---
+[QE-MDI Engine] --- [Step 348] Done in 527.18s (25 SCF iters) | E_pot: -127673.2110 eV | Fmax: 3.45077 eV/A | gap: 9.8367 A ---
+[QE-MDI Engine] --- [Step 349] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9088A, z_max=24.6070A, gap=9.8372A) ---
+[QE-MDI Engine] --- [Step 349] Done in 723.71s (25 SCF iters) | E_pot: -127673.0071 eV | Fmax: 3.35924 eV/A | gap: 9.8372 A ---
+[QE-MDI Engine] --- [Step 350] Starting SCF (288 atoms, startingpot/wfc=file, z_min=4.9075A, z_max=24.6035A, gap=9.8394A) ---
+       335   319.59266      0              0              11.85614      -127674.76     -127662.9       3068.1131      3.1389575      22.163639    
+       336   325.99601      0              0              12.09369      -127675        -127662.9       3129.5857      2.7112851      21.815311    
+       337   330.64516      0              0              12.266162     -127675.17     -127662.91      3174.2179      3.0006869      21.596946    
+       338   333.23225      0              0              12.362137     -127675.27     -127662.91      3199.0542      3.239375       21.511175    
+       339   333.6459       0              0              12.377483     -127675.29     -127662.91      3203.0252      3.4150917      21.538476    
+       340   331.93418      0              0              12.313982     -127675.22     -127662.91      3186.5926      3.5201333      21.659651    
+       341   328.24696      0              0              12.177195     -127675.09     -127662.91      3151.195       3.5482231      21.849694    
+       342   322.86205      0              0              11.977427     -127674.89     -127662.91      3099.4995      3.4959513      22.081272    
+       343   316.13671      0              0              11.727933     -127674.64     -127662.91      3034.9357      3.3662515      22.339203    
+       344   308.46048      0              0              11.443162     -127674.35     -127662.91      2961.2433      3.1719188      22.607663    
+       345   300.27922      0              0              11.139657     -127674.05     -127662.91      2882.7027      3.2575214      22.869024    
+       346   292.06992      0              0              10.835111     -127673.75     -127662.91      2803.8928      3.3248688      23.111881    
+       347   284.32547      0              0              10.54781      -127673.46     -127662.92      2729.5454      3.3402044      23.322562    
+       348   277.49795      0              0              10.294525     -127673.21     -127662.92      2664.0008      3.3092121      23.494872    
+       349   271.98043      0              0              10.089838     -127673.01     -127662.92      2611.0322      3.2377496      23.622222    

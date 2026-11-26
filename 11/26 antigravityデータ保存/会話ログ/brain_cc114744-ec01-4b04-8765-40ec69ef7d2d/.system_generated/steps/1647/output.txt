@@ -1,0 +1,26 @@
+Created At: 2026-11-26T13:39:58+09:00
+Completed At: 2026-11-26T13:40:00+09:00
+Command exited with code 0.
+
+Command output:
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 454M Nov 20 09:10 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_300steps_rtx5080/tmp/pwscf.save/wfc1.hdf5
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 454M Nov 21 11:22 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_600steps_rtx5080/tmp/pwscf.save/wfc1.hdf5
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  56M Nov 23 00:14 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_900steps_rtx5080/espresso_all_steps.pwo
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 454M Nov 23 00:14 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_900steps_rtx5080/tmp/pwscf.save/wfc1.hdf5
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 544M Nov 14 01:10 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_300K_100steps_rtx5080/tmp/pwscf.save/wfc1.hdf5
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 544M Nov 17 11:27 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_100steps_rtx5080/tmp/pwscf.save/wfc1.hdf5
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 544M Nov 24 09:57 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.save/wfc1.hdf5
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 629M Nov 26 13:36 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.save/wfc1.hdf5
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  53M Nov 26 13:36 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.wfc1
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  53M Nov 26 13:36 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.wfc10
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  53M Nov 26 13:36 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.wfc11
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  53M Nov 26 13:36 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.wfc12
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  53M Nov 26 13:36 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.wfc2
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  53M Nov 26 13:36 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.wfc3
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  53M Nov 26 13:36 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.wfc4
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  53M Nov 26 13:36 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.wfc5
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  53M Nov 26 13:36 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.wfc6
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  53M Nov 26 13:36 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.wfc7
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  53M Nov 26 13:36 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.wfc8
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  53M Nov 26 13:36 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080/tmp/pwscf.wfc9
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 544M Nov 13 16:09 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_vac3.0A_rtx5080/tmp/pwscf.save/wfc1.hdf5

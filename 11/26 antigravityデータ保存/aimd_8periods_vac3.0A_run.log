@@ -1,0 +1,11 @@
+[2026-11-13 15:48:16] ==============================================================================
+[2026-11-13 15:48:16] Phase 1: Starting 0 K Structural Optimization for 8-period Vac 3.0 Å Slab
+[2026-11-13 15:48:16] ==============================================================================
+[2026-11-13 15:48:16] Created slab_10-10_288atoms_vac3.0A_init.data: 288 atoms, z_min=3.0613 Å, z_max=22.4741 Å, Lz=25.535401 Å (initial inter-slab gap = 6.1226 Å)
+[2026-11-13 16:09:11] Phase 1 Completed in 1253.7s (3 SCF steps): E_slab = -127685.1605 eV, dE = 41.0023 eV, gamma = 2.3504 J/m^2
+[2026-11-13 16:09:11] ==============================================================================
+[2026-11-13 16:09:11] Phase 2: Starting 300 K NVT AIMD (100 steps = 100 fs) for 8-period Vac 3.0 Å
+[2026-11-13 16:09:11] ==============================================================================
+[2026-11-13 16:09:12] Copied converged ground-state wavefunctions (./tmp/pwscf.save) from Phase 1 to AIMD directory.
+[2026-11-14 01:10:08] Phase 2 (300 K AIMD 100 steps) Completed in 32456.4s (540.9 min)!
+[2026-11-14 01:10:08] ALL PHASES COMPLETED SUCCESSFULLY!

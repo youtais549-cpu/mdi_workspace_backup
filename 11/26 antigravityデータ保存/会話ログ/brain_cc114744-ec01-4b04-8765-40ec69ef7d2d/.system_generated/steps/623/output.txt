@@ -1,0 +1,5 @@
+Command exited with code 0.
+
+Command output:
+37:CIF_INPUT = os.path.join(WORKSPACE_DIR, "research_simulations", "2H-SiC.cif")
+111:    bulk_cif = ase.io.read(CIF_INPUT)

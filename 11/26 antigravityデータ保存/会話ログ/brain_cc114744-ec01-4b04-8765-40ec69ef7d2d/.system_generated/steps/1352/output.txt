@@ -1,0 +1,40 @@
+Created At: 2026-11-20T09:11:27+09:00
+Completed At: 2026-11-20T09:11:27+09:00
+Command exited with code 0.
+
+Command output:
+       298   247.58591      0              0              9.1848582     -127718.08     -127708.89      3294.0973      1.9655629      19.666936    
+       299   248.71572      0              0              9.2267715     -127718.09     -127708.86      3309.1292      1.9091313      19.624396    
+       300   248.26919      0              0              9.2102066     -127718.04     -127708.83      3303.1883      1.9919092      19.692863    
+Loop time of 75228.4 on 1 procs for 300 steps with 288 atoms
+
+Performance: 0.000 ns/day, 69655.929 hours/ns, 0.004 timesteps/s, 1.149 atom-step/s
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.00084452 | 0.00084452 | 0.00084452 |   0.0 |  0.00
+Output  | 0.12138    | 0.12138    | 0.12138    |   0.0 |  0.00
+Modify  | 75228      | 75228      | 75228      |   0.0 |100.00
+Other   |            | 0.001774   |            |       |  0.00
+
+Nlocal:            288 ave         288 max         288 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:             42 ave          42 max          42 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+
+write_data      bulk_10-10_288atoms_aimd_300steps_final.data
+System init for write_data ...
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+undump          1
+Total wall time: 20:57:07

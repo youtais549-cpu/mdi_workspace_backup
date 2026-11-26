@@ -1,0 +1,9 @@
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.config/matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-oc2ropz3 because there was an issue with the default path (/home/WORKSTATION4WSL/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Loaded 20 data points: x in [0.5, 10.0], y in [0.2149, 2.5008]
+✅ デフォルト標準仕様グラフ生成完了: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/真空層の厚さと表面破壊エネルギーの関係_デフォルト仕様.png/.pdf/.svg
+✅ Word最適化仕様グラフ生成完了: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/真空層の厚さと表面破壊エネルギーの関係_Word最適化仕様.png/.pdf/.svg
+✅ プラトー拡大仕様グラフ生成完了: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/真空層の厚さと表面破壊エネルギーの関係_プラトー拡大仕様.png/.pdf/.svg

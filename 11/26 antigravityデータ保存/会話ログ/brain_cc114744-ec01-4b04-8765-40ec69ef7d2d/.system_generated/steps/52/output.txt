@@ -1,0 +1,15 @@
+Command exited with code 0.
+
+Command output:
+total 88
+drwxrwxrwx  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:24 .
+drwxrwxrwx 32 WORKSTATION4WSL WORKSTATION4WSL 16384 Nov  5 03:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  6533 Nov  5 03:17 learning_proposal_v1.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  5170 Nov  5 03:17 learning_proposal_v2.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  2908 Nov  5 03:17 learning_proposal_v3.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  5241 Nov  5 03:17 learning_proposal_v4.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  3750 Nov  5 03:17 learning_proposal_v5.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  5420 Nov  5 03:17 learning_proposal_v6.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  6970 Nov  5 03:17 learning_proposal_v7.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  6798 Nov  5 03:17 learning_proposal_v8.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  9153 Nov  5 03:17 learning_proposal_v9.md

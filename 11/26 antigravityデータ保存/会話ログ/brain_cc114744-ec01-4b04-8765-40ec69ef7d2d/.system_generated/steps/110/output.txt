@@ -1,0 +1,18 @@
+Command exited with code 0.
+
+Command output:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import numpy, ase, mdi; print('Python packages OK')
+    ^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'numpy'
+total 0
+dr-xr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL  60 Nov  5 14:37 .
+dr-xr-xr-x 16 WORKSTATION4WSL WORKSTATION4WSL 320 Nov  5 14:37 ..
+dr-xr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  60 Nov  5 14:37 wsl
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/プログラム・解析スクリプト/research_simulations/atomsk_b0.13.1_Linux-amd64/tools/lmp_ortho2tri.sh
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/プログラム・解析スクリプト/research_simulations/atomsk_b0.13.1_Linux-amd64/tools/lmp_charge2atom.sh
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/プログラム・解析スクリプト/research_simulations/atomsk_b0.13.1_Linux-amd64/tools/lmp_atom2charge.sh
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/research_simulations/atomsk_b0.13.1_Linux-amd64/tools/lmp_ortho2tri.sh
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/research_simulations/atomsk_b0.13.1_Linux-amd64/tools/lmp_charge2atom.sh
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/research_simulations/atomsk_b0.13.1_Linux-amd64/tools/lmp_atom2charge.sh

@@ -1,0 +1,72 @@
+Command exited with code 0.
+
+Command output:
+interpreter,329410/home/WORKSTATION4WSL/ai-agent/bin/int
+  ├─bash,333485
+  ├─python,330389 -m ipykernel_launcher -f/tmp/tmp0a7fx
+  │   ├─{python},330395
+  │   ├─{python},330396
+  │   ├─{python},330397
+  │   ├─{python},330398
+  │   ├─{python},330399
+  │   ├─{python},330400
+  │   ├─{python},330401
+  │   ├─{python},330402
+  │   ├─{python},330403
+  │   ├─{python},330417
+  │   ├─{python},330418
+  │   ├─{python},330419
+  │   ├─{python},330420
+  │   ├─{python},330421
+  │   ├─{python},330422
+  │   ├─{python},330423
+  │   ├─{python},330424
+  │   ├─{python},330425
+  │   ├─{python},330426
+  │   ├─{python},330427
+  │   ├─{python},330428
+  │   ├─{python},330429
+  │   ├─{python},330430
+  │   ├─{python},330431
+  │   ├─{python},330432
+  │   ├─{python},330433
+  │   ├─{python},330434
+  │   ├─{python},330435
+  │   ├─{python},330436
+  │   ├─{python},330437
+  │   ├─{python},330438
+  │   ├─{python},330439
+  │   ├─{python},330440
+  │   └─{python},330441
+  ├─{interpreter},329451
+  ├─{interpreter},329452
+  ├─{interpreter},329453
+  ├─{interpreter},329454
+  ├─{interpreter},329455
+  ├─{interpreter},329456
+  ├─{interpreter},329457
+  ├─{interpreter},329458
+  ├─{interpreter},329459
+  ├─{interpreter},329460
+  ├─{interpreter},329461
+  ├─{interpreter},329462
+  ├─{interpreter},329463
+  ├─{interpreter},329464
+  ├─{interpreter},329465
+  ├─{interpreter},329466
+  ├─{interpreter},329467
+  ├─{interpreter},329468
+  ├─{interpreter},329469
+  ├─{interpreter},329470
+  ├─{interpreter},329471
+  ├─{interpreter},329472
+  ├─{interpreter},329473
+  ├─{interpreter},329581
+  ├─{interpreter},330390
+  ├─{interpreter},330391
+  ├─{interpreter},330392
+  ├─{interpreter},330393
+  ├─{interpreter},330394
+  ├─{interpreter},330473
+  ├─{interpreter},333486
+  └─{interpreter},333487

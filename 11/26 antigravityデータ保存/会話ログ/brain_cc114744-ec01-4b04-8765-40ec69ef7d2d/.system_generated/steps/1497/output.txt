@@ -1,0 +1,26 @@
+Created At: 2026-11-23T02:53:01+09:00
+Completed At: 2026-11-23T02:53:04+09:00
+Command exited with code 2.
+
+Command output:
+[QE-MDI Engine] --- [Step 76] Done in 0.00s (23 SCF iters) [RESTORED CACHE] | E_pot: -127673.8626 eV | Fmax: 3.52346 eV/A | gap: 5.9544 A ---
+[QE-MDI Engine] --- [Step 77] Done in 0.00s (23 SCF iters) [RESTORED CACHE] | E_pot: -127673.9533 eV | Fmax: 3.65278 eV/A | gap: 5.9724 A ---
+[QE-MDI Engine] --- [Step 78] Done in 0.00s (24 SCF iters) [RESTORED CACHE] | E_pot: -127674.0744 eV | Fmax: 3.70160 eV/A | gap: 5.9837 A ---
+[QE-MDI Engine] --- [Step 79] Done in 0.00s (24 SCF iters) [RESTORED CACHE] | E_pot: -127674.2152 eV | Fmax: 3.65318 eV/A | gap: 5.9931 A ---
+[QE-MDI Engine] --- [Step 80] Done in 0.00s (23 SCF iters) [RESTORED CACHE] | E_pot: -127674.3590 eV | Fmax: 3.49728 eV/A | gap: 6.0018 A ---
+[QE-MDI Engine] --- [Step 81] Done in 0.00s (22 SCF iters) [RESTORED CACHE] | E_pot: -127674.4846 eV | Fmax: 3.22589 eV/A | gap: 6.0089 A ---
+[QE-MDI Engine] --- [Step 82] Done in 0.00s (23 SCF iters) [RESTORED CACHE] | E_pot: -127674.5696 eV | Fmax: 3.11541 eV/A | gap: 6.0130 A ---
+[QE-MDI Engine] --- [Step 83] Done in 0.00s (22 SCF iters) [RESTORED CACHE] | E_pot: -127674.5948 eV | Fmax: 3.25222 eV/A | gap: 6.0167 A ---
+[QE-MDI Engine] --- [Step 84] Done in 0.00s (21 SCF iters) [RESTORED CACHE] | E_pot: -127674.5488 eV | Fmax: 3.34972 eV/A | gap: 6.0196 A ---
+[QE-MDI Engine] --- [Step 85] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127674.4315 eV | Fmax: 3.40341 eV/A | gap: 6.0183 A ---
+[QE-MDI Engine] --- [Step 86] Done in 0.00s (15 SCF iters) [RESTORED CACHE] | E_pot: -127674.2550 eV | Fmax: 3.40970 eV/A | gap: 6.0167 A ---
+[QE-MDI Engine] --- [Step 87] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127674.0426 eV | Fmax: 3.55813 eV/A | gap: 6.0138 A ---
+[QE-MDI Engine] --- [Step 88] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127673.8254 eV | Fmax: 3.60730 eV/A | gap: 6.0057 A ---
+[QE-MDI Engine] --- [Step 89] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127673.6362 eV | Fmax: 3.73477 eV/A | gap: 5.9978 A ---
+[QE-MDI Engine] --- [Step 90] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127673.5022 eV | Fmax: 3.70689 eV/A | gap: 5.9902 A ---
+[QE-MDI Engine] --- [Step 91] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127673.4399 eV | Fmax: 4.14132 eV/A | gap: 5.9831 A ---
+[QE-MDI Engine] --- [Step 92] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127673.4509 eV | Fmax: 4.50444 eV/A | gap: 5.9767 A ---
+[QE-MDI Engine] --- [Step 93] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127673.5227 eV | Fmax: 4.62413 eV/A | gap: 5.9711 A ---
+[QE-MDI Engine] --- [Step 94] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127673.6327 eV | Fmax: 4.49139 eV/A | gap: 5.9665 A ---
+[QE-MDI Engine] --- [Step 95] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127673.7534 eV | Fmax: 4.13366 eV/A | gap: 5.9628 A ---
+diff: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_400steps_rtx5080/slab_10-10_288atoms_vac3.0A_unrelaxed_aimd_100steps_restored_check.data: No such file or directory

@@ -1,0 +1,6 @@
+Command exited with code 0.
+
+Command output:
+vac_val = 0.00 A: cell_z = 3.5520 A, min_dist = 0.6310 A
+vac_val = 0.25 A: cell_z = 4.0520 A, min_dist = 0.8051 A
+vac_val = 0.75 A: cell_z = 5.0520 A, min_dist = 1.6273 A

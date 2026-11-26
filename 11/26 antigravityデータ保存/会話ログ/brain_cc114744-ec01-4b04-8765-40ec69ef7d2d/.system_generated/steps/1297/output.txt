@@ -1,0 +1,7 @@
+Created At: 2026-11-19T11:39:11+09:00
+Completed At: 2026-11-19T11:40:42+09:00
+Command exited with code 0.
+
+Command output:
+<string>:4: SyntaxWarning: "\R" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\R"? A raw string is also an option.
+

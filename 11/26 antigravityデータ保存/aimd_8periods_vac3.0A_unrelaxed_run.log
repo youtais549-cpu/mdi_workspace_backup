@@ -1,0 +1,7 @@
+[2026-11-17 01:41:58] ==============================================================================
+[2026-11-17 01:41:58] Starting 300 K NVT AIMD (100 steps = 100 fs) from UNRELAXED 8-period Vac 3.0 Å Slab
+[2026-11-17 01:41:58] ==============================================================================
+[2026-11-17 01:41:58] Created unrelaxed initial structure slab_10-10_288atoms_vac3.0A_unrelaxed.data: 288 atoms, z_min=3.0000 Å, z_max=22.5354 Å, Lz=25.535401 Å (initial inter-slab gap = 6.0000 Å)
+[2026-11-17 11:28:00] Unrelaxed 300 K AIMD (100 steps) Completed in 35161.0s (586.0 min)!
+[2026-11-17 11:28:00] Generated summary CSV and AIMD analysis plots for unrelaxed initial structure.
+[2026-11-17 11:28:00] ALL UNRELAXED AIMD STEPS COMPLETED SUCCESSFULLY!

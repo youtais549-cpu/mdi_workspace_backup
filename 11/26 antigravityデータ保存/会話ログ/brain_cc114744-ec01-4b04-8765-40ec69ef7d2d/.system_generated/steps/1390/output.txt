@@ -1,0 +1,39 @@
+Created At: 2026-11-20T13:47:00+09:00
+Completed At: 2026-11-20T13:47:02+09:00
+Command exited with code 0.
+
+Command output:
+Files /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_300steps_rtx5080/bulk_10-10_288atoms_aimd_300steps_final.data and /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_600steps_rtx5080/bulk_10-10_288atoms_aimd_300steps_restored_check.data are identical
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_600steps_rtx5080/qe_engine.log <==
+[QE-MDI Engine] --- [Step 287] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127716.8707 eV | Fmax: 2.98947 eV/A | gap: 0.0023 A ---
+[QE-MDI Engine] --- [Step 288] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127716.8008 eV | Fmax: 2.87958 eV/A | gap: 0.0014 A ---
+[QE-MDI Engine] --- [Step 289] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127716.7970 eV | Fmax: 2.93250 eV/A | gap: 0.0024 A ---
+[QE-MDI Engine] --- [Step 290] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127716.8567 eV | Fmax: 2.99261 eV/A | gap: 0.0061 A ---
+[QE-MDI Engine] --- [Step 291] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127716.9725 eV | Fmax: 2.99395 eV/A | gap: 0.0076 A ---
+[QE-MDI Engine] --- [Step 292] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127717.1326 eV | Fmax: 2.93425 eV/A | gap: 0.0020 A ---
+[QE-MDI Engine] --- [Step 293] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127717.3215 eV | Fmax: 2.81370 eV/A | gap: 0.0049 A ---
+[QE-MDI Engine] --- [Step 294] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127717.5213 eV | Fmax: 2.63403 eV/A | gap: 0.0081 A ---
+[QE-MDI Engine] --- [Step 295] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127717.7134 eV | Fmax: 2.41738 eV/A | gap: 0.0102 A ---
+[QE-MDI Engine] --- [Step 296] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127717.8794 eV | Fmax: 2.37973 eV/A | gap: 0.0059 A ---
+[QE-MDI Engine] --- [Step 297] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127718.0039 eV | Fmax: 2.30814 eV/A | gap: 0.0086 A ---
+[QE-MDI Engine] --- [Step 298] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127718.0754 eV | Fmax: 2.25544 eV/A | gap: 0.0021 A ---
+[QE-MDI Engine] --- [Step 299] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127718.0880 eV | Fmax: 2.17290 eV/A | gap: 0.0129 A ---
+[QE-MDI Engine] --- [Step 300] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127718.0417 eV | Fmax: 2.13295 eV/A | gap: 0.0114 A ---
+[QE-MDI Engine] --- [Step 301] Starting SCF (288 atoms, startingpot/wfc=file, z_min=0.0090A, z_max=21.3080A, gap=0.0122A) ---
+
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_600steps_rtx5080/log.lammps <==
+Dangerous builds = 0
+write_restart   restart.bulk_300steps_restored
+System init for write_restart ...
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+write_data      bulk_10-10_288atoms_aimd_300steps_restored_check.data
+System init for write_data ...
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+
+# 8. Step 301..600 の追加 300 ステップを実機 QE GPU SCF (Step 300 の波動関数・電荷密度引き継ぎ) で連続実行
+restart         50 restart.bulk_step
+run             300
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+Per MPI rank memory allocation (min/avg/max) = 3.631 | 3.631 | 3.631 Mbytes
+   Step          Temp          E_pair         E_mol          KinEng         PotEng         TotEng         Press           Fmax          Fnorm     
+       300   248.26919      0              0              9.2102066     -127718.04     -127708.83      3303.1883      1.9919092      19.692863    

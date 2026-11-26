@@ -1,0 +1,63 @@
+Created At: 2026-11-14T01:12:06+09:00
+Completed At: 2026-11-15T14:30:18+09:00
+Command exited with code 0.
+
+Command output:
+=== [1] Code Directory: \\192.168.12.69\Results\yamazaki\research\実行コード\{101_0}８周期3.0Åtest runコード ===
+
+=== [2] Data Directory: \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}８周期3.0Åtest run ===
+Name                                                   Length
+----                                                   ------
+dft_settings.py                                          1626
+in.lammps.aimd_300K_100steps                             1896
+in.lammps.optimized_conv                                 1068
+qe_mdi_engine_rtx5080.py                                12880
+run_8periods_vac3.0A_relax_and_aimd_100steps.py         31660
+slab_10-10_288atoms_vac3.0A_init.data                   21526
+slab_10-10_288atoms_vac3.0A_relaxed.data                21524
+01_0K_構造最適化_初期構造作成                                
+02_300K_NVT_AIMD_100steps                                    
+aimd_100steps_summary.csv                               13543
+AIMD_Surface_Displacement_and_Gap_100steps.pdf          33835
+AIMD_Surface_Displacement_and_Gap_100steps.png         214618
+AIMD_Surface_Displacement_and_Gap_100steps.svg          79656
+AIMD_Temperature_and_Energy_100steps.pdf                27785
+AIMD_Temperature_and_Energy_100steps.png               197567
+AIMD_Temperature_and_Energy_100steps.svg                67218
+auto_generate_progression_graphs.py                     10302
+C.upf                                                  858332
+dft_settings.py                                          1626
+dump.lammpstrj                                        2477010
+espresso.err                                             1368
+espresso.pwi                                            13717
+espresso.pwo                                            65974
+espresso_all_steps.pwo                                6655230
+in.lammps                                                1896
+live_espresso.pwo                                       65974
+lmp.log                                                 17016
+log.lammps                                              18818
+make_xyz.py                                              2132
+md_animation.xyz                                      1227141
+md_nvt_animation.xyz                                  1227141
+msmincho.ttc                                         10091072
+qe_engine.log                                           25823
+qe_mdi_engine_rtx5080.py                                12880
+RELAXATION_GRAPH_PROTOCOL.json                           2104
+Si.upf                                                1691876
+slab_10-10_288atoms_vac3.0A_aimd_100steps_final.data    37273
+slab_10-10_288atoms_vac3.0A_relaxed.data                21524
+times.ttf                                             1190736
+Total_Energy_progression.pdf                            26532
+Total_Energy_progression.png                           199171
+Total_Energy_progression.svg                            61580
+Total_Force_progression.pdf                             24260
+Total_Force_progression.png                            170912
+Total_Force_progression.svg                             58543
+Total_SCF_Correction_progression.pdf                    25304
+Total_SCF_Correction_progression.png                   262161
+Total_SCF_Correction_progression.svg                    59782
+
+
+
+STDERR: #< CLIXML
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>モジュールを初めて使用するための準備しています。</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="progress" RefId="1"><TNRef RefId="0" /><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>モジュールを初めて使用するための準備しています。</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="2"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>=== [1] Code Directory: \\192.168.12.69\Results\yamazaki\research\実行コード\{101_0}８周期3.0Åtest runコード ===</ToString><Props><Obj N="MessageData" RefId="3"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>=== [1] Code Directory: \\192.168.12.69\Results\yamazaki\research\実行コード\{101_0}８周期3.0Åtest runコード ===</ToString><Props><S N="Message">=== [1] Code Directory: \\192.168.12.69\Results\yamazaki\research\実行コード\{101_0}８周期3.0Åtest runコード ===</S><B N="NoNewLine">false</B><S N="ForegroundColor">DarkYellow</S><S N="BackgroundColor">DarkMagenta</S></Props></Obj><S N="Source">Write-Host</S><DT N="TimeGenerated">2026-11-15T14:30:18.8672116+09:00</DT><Obj N="Tags" RefId="4"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">WORKSTATION4\WORKSTATION4</S><S N="Computer">WORKSTATION4</S><U32 N="ProcessId">26120</U32><U32 N="NativeThreadId">14340</U32><U32 N="ManagedThreadId">7</U32></Props></Obj><Obj S="information" RefId="5"><TNRef RefId="1" /><ToString>=== [2] Data Directory: \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}８周期3.0Åtest run ===</ToString><Props><Obj N="MessageData" RefId="6"><TNRef RefId="2" /><ToString>=== [2] Data Directory: \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}８周期3.0Åtest run ===</ToString><Props><S N="Message">=== [2] Data Directory: \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}８周期3.0Åtest run ===</S><B N="NoNewLine">false</B><S N="ForegroundColor">DarkYellow</S><S N="BackgroundColor">DarkMagenta</S></Props></Obj><S N="Source">Write-Host</S><DT N="TimeGenerated">2026-11-15T14:30:18.8903383+09:00</DT><Obj N="Tags" RefId="7"><TNRef RefId="3" /><LST><S>PSHOST</S></LST></Obj><S N="User">WORKSTATION4\WORKSTATION4</S><S N="Computer">WORKSTATION4</S><U32 N="ProcessId">26120</U32><U32 N="NativeThreadId">14340</U32><U32 N="ManagedThreadId">7</U32></Props></Obj></Objs>

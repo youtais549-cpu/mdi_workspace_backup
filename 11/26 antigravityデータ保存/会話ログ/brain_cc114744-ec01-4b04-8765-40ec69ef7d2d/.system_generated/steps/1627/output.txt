@@ -1,0 +1,6 @@
+Created At: 2026-11-26T13:38:02+09:00
+Completed At: 2026-11-26T13:38:06+09:00
+Command exited with code 0.
+
+Command output:
+[2026-11-26 13:38:06] Generated summary CSV, ensemble stats JSON, and unrelaxed Vac 5.0 Å slab 400-step AIMD plots.

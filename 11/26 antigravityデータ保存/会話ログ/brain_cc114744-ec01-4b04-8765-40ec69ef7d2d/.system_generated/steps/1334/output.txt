@@ -1,0 +1,11 @@
+Created At: 2026-11-19T12:14:04+09:00
+Completed At: 2026-11-19T12:14:04+09:00
+Command exited with code 0.
+
+Command output:
+[QE-MDI Engine] Initializing MDI Engine with options: -role ENGINE -name QE -method TCP -port 8045 -hostname localhost
+[QE-MDI Engine] Waiting for MDI driver connection...
+[QE-MDI Engine] Connected to MDI driver! Entering communication loop...
+[QE-MDI Engine] Received >NATOMS: 288
+[QE-MDI Engine] --- [Step 0] Starting SCF (288 atoms, startingpot/wfc=atomic, z_min=0.0000A, z_max=19.5354A, gap=1.7758A) ---
+LAMMPS (30 Sep 2026)

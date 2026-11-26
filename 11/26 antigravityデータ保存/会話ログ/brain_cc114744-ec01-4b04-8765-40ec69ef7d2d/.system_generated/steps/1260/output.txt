@@ -1,0 +1,13 @@
+Created At: 2026-11-19T11:29:52+09:00
+Completed At: 2026-11-19T11:29:53+09:00
+Command exited with code 0.
+
+Command output:
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  32K Nov 19 11:29 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_100steps_rtx5080/エネルギー変化量推移_未緩和AIMD_word_8cm.pdf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 221K Nov 19 11:29 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_100steps_rtx5080/エネルギー変化量推移_未緩和AIMD_word_8cm.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  34K Nov 19 11:29 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_100steps_rtx5080/エネルギー総合推移_未緩和AIMD_プレゼン仕様.pdf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 174K Nov 19 11:29 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_100steps_rtx5080/エネルギー総合推移_未緩和AIMD_プレゼン仕様.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  20K Nov 19 11:29 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_100steps_rtx5080/ポテンシャルエネルギー推移_未緩和AIMD_word_8cm.pdf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 154K Nov 19 11:29 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_100steps_rtx5080/ポテンシャルエネルギー推移_未緩和AIMD_word_8cm.png
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL  18K Nov 19 11:29 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_100steps_rtx5080/全エネルギー推移_未緩和AIMD_word_8cm.pdf
+-rw-rw-rw- 1 WORKSTATION4WSL WORKSTATION4WSL 119K Nov 19 11:29 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_vac3.0A_unrelaxed_300K_100steps_rtx5080/全エネルギー推移_未緩和AIMD_word_8cm.png

@@ -1,0 +1,8 @@
+Command exited with code 2.
+
+Command output:
+grep: /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_4periods_true_bulk_scf/espresso.pwo: No such file or directory
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_true_bulk_scf/espresso.pwo:!    total energy              =   -7040.74080096 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_6periods_true_bulk_scf/espresso.pwo:     Total force =     0.075914     Total SCF correction =     0.000401
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_true_bulk_scf/espresso.pwo:!    total energy              =   -9387.69989164 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_true_bulk_scf/espresso.pwo:     Total force =     0.086008     Total SCF correction =     0.000458

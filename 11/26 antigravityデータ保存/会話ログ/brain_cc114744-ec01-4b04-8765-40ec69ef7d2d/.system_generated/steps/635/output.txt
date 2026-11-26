@@ -1,0 +1,7 @@
+Command exited with code 0.
+
+Command output:
+35:TEMPLATE_DIR = os.path.join(WORKSPACE_DIR, "calc_2H-SiC_10-10_8periods_vac5A_natural_cleavage")
+99:        src_asset = os.path.join(TEMPLATE_DIR, asset)
+497:    mincho = os.path.join(TEMPLATE_DIR, "msmincho.ttc")
+498:    times = os.path.join(TEMPLATE_DIR, "times.ttf")

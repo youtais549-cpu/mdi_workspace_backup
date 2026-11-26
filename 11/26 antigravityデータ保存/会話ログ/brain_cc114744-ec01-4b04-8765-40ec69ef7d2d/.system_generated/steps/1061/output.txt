@@ -1,0 +1,55 @@
+Created At: 2026-11-13T14:18:54+09:00
+Completed At: 2026-11-13T14:18:55+09:00
+Command exited with code 0.
+
+Command output:
+./learning_proposal_v6.md
+./calc_2H-SiC_10-10_4periods_vac5A/in.lammps
+./calc_2H-SiC_10-10_4periods_vac5A/qe_mdi_engine_core.py
+./calc_2H-SiC_10-10_4periods_vac5A/in.lammps.optimized_conv
+./calc_2H-SiC_10-10_4periods_vac5A/in.lammps.restart
+./学習プロポーザル全世代集（v1〜v9）/learning_proposal_v6.md
+./学習プロポーザル全世代集（v1〜v9）/learning_proposal_v7.md
+./学習プロポーザル全世代集（v1〜v9）/learning_proposal_v5.md
+./学習プロポーザル全世代集（v1〜v9）/learning_proposal_v2.md
+./学習プロポーザル全世代集（v1〜v9）/learning_proposal_v8.md
+./学習プロポーザル全世代集（v1〜v9）/learning_proposal_v10.md
+./学習プロポーザル全世代集（v1〜v9）/learning_proposal_v9.md
+./学習プロポーザル全世代集（v1〜v9）/learning_proposal_v1.md
+./学習プロポーザル全世代集（v1〜v9）/learning_proposal_v4.md
+./学習プロポーザル全世代集（v1〜v9）/learning_proposal_v3.md
+./learning_proposal_v7.md
+./modular_aimd_framework
+./modular_aimd_framework/core_unchanging/qe_mdi_engine_core.py
+./modular_aimd_framework/parameters_variable/in.lammps.optimized_conv
+./modular_aimd_framework/parameters_variable/in.lammps.template
+./modular_aimd_framework/CONFIG_GUIDE.md
+./modular_aimd_framework/README.md
+./learning_proposal_v5.md
+./results_2H-SiC_10-10_slab_vac5A_relaxed_20261020/md_animation.xyz
+./results_2H-SiC_10-10_slab_vac5A_relaxed_20261020/in.lammps
+./results_2H-SiC_10-10_slab_vac5A_relaxed_20261020/qe_mdi_engine_gpu.py
+./calc_2H-SiC_10-10_2periods_vac7.0A_rtx5080/md_animation.xyz
+./calc_2H-SiC_10-10_2periods_vac7.0A_rtx5080/in.lammps
+./calc_2H-SiC_10-10_2periods_vac7.0A_rtx5080/qe_mdi_engine_rtx5080.py
+./calc_2H-SiC_10-10_2periods_vac7.0A_rtx5080/in.lammps.optimized_conv
+./AGENTS.md
+./calc_2H-SiC_10-10_4periods_vac5A_natural_cleavage/md_animation.xyz
+./calc_2H-SiC_10-10_4periods_vac5A_natural_cleavage/in.lammps
+./calc_2H-SiC_10-10_4periods_vac5A_natural_cleavage/qe_mdi_engine_core.py
+./calc_2H-SiC_10-10_4periods_vac5A_natural_cleavage/restart/md_animation.xyz
+./calc_2H-SiC_10-10_4periods_vac5A_natural_cleavage/restart/in.lammps
+./calc_2H-SiC_10-10_4periods_vac5A_natural_cleavage/restart/qe_mdi_engine_core.py
+./nas_staging_2periods/{101_0}2周期5.0Å/md_animation.xyz
+./nas_staging_2periods/{101_0}2周期5.0Å/in.lammps
+./nas_staging_2periods/{101_0}2周期5.0Å/qe_mdi_engine_rtx5080.py
+./nas_staging_2periods/{101_0}2周期5.0Å/in.lammps.optimized_conv
+./nas_staging_2periods/{101_0}2周期8.5Å/md_animation.xyz
+./nas_staging_2periods/{101_0}2周期8.5Å/in.lammps
+./nas_staging_2periods/{101_0}2周期8.5Å/qe_mdi_engine_rtx5080.py
+./nas_staging_2periods/{101_0}2周期8.5Å/in.lammps.optimized_conv
+./nas_staging_2periods/{101_0}2周期7.0Å/md_animation.xyz
+./nas_staging_2periods/{101_0}2周期7.0Å/in.lammps
+./nas_staging_2periods/{101_0}2周期7.0Å/qe_mdi_engine_rtx5080.py
+./nas_staging_2periods/{101_0}2周期7.0Å/in.lammps.optimized_conv
+./nas_staging_2periods/{101_0}2周期8Å/md_animation.xyz

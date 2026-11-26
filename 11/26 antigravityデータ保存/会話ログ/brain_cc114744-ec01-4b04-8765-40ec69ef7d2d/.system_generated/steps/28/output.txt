@@ -1,0 +1,9 @@
+Command exited with code 0.
+
+Command output:
+total 24
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:31 .
+drwxrwxrwx 32 WORKSTATION4WSL WORKSTATION4WSL 16384 Nov  5 03:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL   431 Nov  5 03:37 extensions.json
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 15113 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/AGENTS.md
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 15113 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/GEMINI.md

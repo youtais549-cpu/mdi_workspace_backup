@@ -1,0 +1,71 @@
+Created At: 2026-11-20T09:11:31+09:00
+Completed At: 2026-11-20T12:57:09+09:00
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/sync_bulk_aimd_8periods_to_nas.py:5: SyntaxWarning: "\R" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\R"? A raw string is also an option.
+  NAS (\\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}8周期3.0Å構造最適化なしtest run) に
+=== Target NAS Directory: \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}8周期3.0Å構造最適化なしtest run\バルクモデル ===
+
+Name                                                Length
+----                                                ------
+aimd_bulk_300steps_ensemble_stats.json                1843
+aimd_bulk_300steps_summary.csv                       36949
+AIMD_Bulk_Temperature_and_Energy_300steps.pdf        50869
+AIMD_Bulk_Temperature_and_Energy_300steps.png       353814
+AIMD_Bulk_Temperature_and_Energy_300steps.svg       132037
+auto_generate_progression_graphs.py                  10302
+bulk_10-10_288atoms_aimd_300steps_final.data         37161
+bulk_10-10_288atoms_true_bulk.cif                    23956
+bulk_10-10_288atoms_true_bulk.data                   24144
+bulk_10-10_288atoms_true_bulk.xyz                    15665
+C.upf                                               858332
+dft_settings.py                                       1626
+dump.lammpstrj                                     7391123
+espresso.err                                          1368
+espresso.pwi                                         13691
+espresso.pwo                                         64943
+espresso_all_steps.pwo                            19531805
+in.lammps                                             1946
+live_espresso.pwo                                    64943
+lmp.log                                              46417
+log.lammps                                           48269
+make_xyz.py                                           2132
+md_animation.xyz                                   3657341
+md_nvt_animation.xyz                               3657341
+msmincho.ttc                                      10091072
+qe_engine.log                                        76626
+qe_mdi_engine_rtx5080.py                             12880
+RELAXATION_GRAPH_PROTOCOL.json                        2104
+run_8periods_bulk_aimd_300steps.py                   22654
+Si.upf                                             1691876
+times.ttf                                          1190736
+Total_Energy_progression.pdf                         29931
+Total_Energy_progression.png                        218724
+Total_Energy_progression.svg                        106039
+Total_Force_progression.pdf                          27562
+Total_Force_progression.png                         190879
+Total_Force_progression.svg                         101251
+Total_SCF_Correction_progression.pdf                 28859
+Total_SCF_Correction_progression.png                256778
+Total_SCF_Correction_progression.svg                104824
+エネルギー変化量推移_バルクAIMD_word_8cm.pdf          37257
+エネルギー変化量推移_バルクAIMD_word_8cm.png         285546
+エネルギー変化量推移_バルクAIMD_word_8cm.svg          72077
+エネルギー総合推移_バルクAIMD_プレゼン仕様.pdf        50869
+エネルギー総合推移_バルクAIMD_プレゼン仕様.png       353814
+エネルギー総合推移_バルクAIMD_プレゼン仕様.svg       132037
+ポテンシャルエネルギー推移_バルクAIMD_word_8cm.pdf    24333
+ポテンシャルエネルギー推移_バルクAIMD_word_8cm.png   201190
+ポテンシャルエネルギー推移_バルクAIMD_word_8cm.svg    49006
+全エネルギー推移_バルクAIMD_word_8cm.pdf              21240
+全エネルギー推移_バルクAIMD_word_8cm.png             139624
+全エネルギー推移_バルクAIMD_word_8cm.svg              42644
+温度推移_バルクAIMD_word_8cm.pdf                     18189
+温度推移_バルクAIMD_word_8cm.png                    177944
+温度推移_バルクAIMD_word_8cm.svg                     36336
+
+
+
+STDERR: #< CLIXML
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>モジュールを初めて使用するための準備しています。</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="progress" RefId="1"><TNRef RefId="0" /><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>モジュールを初めて使用するための準備しています。</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="information" RefId="2"><TN RefId="1"><T>System.Management.Automation.InformationRecord</T><T>System.Object</T></TN><ToString>=== Target NAS Directory: \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}8周期3.0Å構造最適化なしtest run\バルクモデル ===</ToString><Props><Obj N="MessageData" RefId="3"><TN RefId="2"><T>System.Management.Automation.HostInformationMessage</T><T>System.Object</T></TN><ToString>=== Target NAS Directory: \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}8周期3.0Å構造最適化なしtest run\バルクモデル ===</ToString><Props><S N="Message">=== Target NAS Directory: \\192.168.12.69\Results\yamazaki\research\第一原理分子動力学法\{101_0}8周期3.0Å構造最適化なしtest run\バルクモデル ===</S><B N="NoNewLine">false</B><S N="ForegroundColor">DarkYellow</S><S N="BackgroundColor">DarkMagenta</S></Props></Obj><S N="Source">Write-Host</S><DT N="TimeGenerated">2026-11-20T12:57:09.344948+09:00</DT><Obj N="Tags" RefId="4"><TN RefId="3"><T>System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</T><T>System.Object</T></TN><LST><S>PSHOST</S></LST></Obj><S N="User">WORKSTATION4\WORKSTATION4</S><S N="Computer">WORKSTATION4</S><U32 N="ProcessId">35844</U32><U32 N="NativeThreadId">30700</U32><U32 N="ManagedThreadId">7</U32></Props></Obj></Objs>

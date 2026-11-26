@@ -1,0 +1,10 @@
+Created At: 2026-11-26T13:38:54+09:00
+Completed At: 2026-11-26T13:38:56+09:00
+Command exited with code 0.
+
+Command output:
+dr-xr-xr-x  5 WORKSTATION4WSL WORKSTATION4WSL   100 Nov 26 13:38 /home/WORKSTATION4WSL/.gemini
+drwxrwxrwx  9 WORKSTATION4WSL WORKSTATION4WSL   180 Nov 26 13:38 /home/WORKSTATION4WSL/.gemini/antigravity
+drwxr-xr-x  9 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 18:53 /home/WORKSTATION4WSL/.gemini/antigravity/scratch
+drwxrwxrwx 78 WORKSTATION4WSL WORKSTATION4WSL 24576 Nov 24 19:12 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup
+git version 2.53.0

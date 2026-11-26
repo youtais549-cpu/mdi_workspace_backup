@@ -1,0 +1,51 @@
+{
+    "natoms": 288,
+    "n_periods": 8,
+    "target_temp_K": 300.0,
+    "total_steps": 300,
+    "bulk_0K_scf_energy_eV": -127726.1628,
+    "ensemble_all_0_to_300": {
+        "window": "Step 0..300 (301 points)",
+        "temp_mean_K": 185.78210034883722,
+        "temp_std_K": 38.24175587628307,
+        "etotal_mean_eV": -127712.41548172758,
+        "etotal_std_eV": 1.8689790194776257,
+        "pe_mean_eV": -127719.30757475086,
+        "pe_std_eV": 1.434482009799566,
+        "ke_mean_eV": 6.892081489036544,
+        "ke_std_eV": 1.418679706814981
+    },
+    "ensemble_equil_50_to_300": {
+        "window": "Step 50..300 (251 points)",
+        "temp_mean_K": 191.80086231075697,
+        "temp_std_K": 29.996001261476103,
+        "etotal_mean_eV": -127711.93378486056,
+        "etotal_std_eV": 1.6693008584749272,
+        "pe_mean_eV": -127719.04920318726,
+        "pe_std_eV": 1.090107346293806,
+        "ke_mean_eV": 7.115363486055777,
+        "ke_std_eV": 1.1127814909806117
+    },
+    "ensemble_equil_100_to_300": {
+        "window": "Step 100..300 (201 points)",
+        "temp_mean_K": 199.63721427860693,
+        "temp_std_K": 24.99754239190782,
+        "etotal_mean_eV": -127711.3969154229,
+        "etotal_std_eV": 1.4217708241585045,
+        "pe_mean_eV": -127718.80298507462,
+        "pe_std_eV": 0.953174348210054,
+        "ke_mean_eV": 7.406073819900498,
+        "ke_std_eV": 0.9273503460918799
+    },
+    "ensemble_equil_150_to_300": {
+        "window": "Step 150..300 (151 points)",
+        "temp_mean_K": 207.4937266225166,
+        "temp_std_K": 22.83656570523465,
+        "etotal_mean_eV": -127710.80258278147,
+        "etotal_std_eV": 1.1134663158460671,
+        "pe_mean_eV": -127718.50013245032,
+        "pe_std_eV": 0.858349707792111,
+        "ke_mean_eV": 7.697532052980133,
+        "ke_std_eV": 0.8471831618659
+    }
+}

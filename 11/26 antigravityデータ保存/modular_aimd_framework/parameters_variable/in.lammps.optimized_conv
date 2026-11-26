@@ -1,0 +1,34 @@
+# 2H-SiC スラブ構造緩和計算入力テンプレート 【最適化収束条件版】
+# ==============================================================================
+# 第一原理計算 (Quantum ESPRESSO GPU) との MDI 連成用
+# ==============================================================================
+
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+# 1. 構造ファイルの読み込み (スクリプト側で動的に指定)
+read_data STRUCTURE_DATA_FILE
+
+# 原子質量 (Type 1: C, Type 2: Si)
+mass 1 12.011
+mass 2 28.085
+
+# 2. MDI 通信設定 (Quantum ESPRESSO を QM エンジンとして連成)
+fix 1 all mdi/qm elements C Si
+
+# 3. 出力設定
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+dump_modify 1 append yes
+
+# 4. 表面構造緩和 (minimize)
+# 【最適化された収束条件】
+# - etol: 1.0e-6 (エネルギー相対変化判定)
+# - ftol: 1.0e-2 eV/Å (DFT数値ノイズフロア ~0.006 eV/Å に合致した物理的閾値)
+# - maxiter: 100
+# - maxeval: 150
+minimize 1.0e-6 1.0e-2 100 150
+
+undump 1

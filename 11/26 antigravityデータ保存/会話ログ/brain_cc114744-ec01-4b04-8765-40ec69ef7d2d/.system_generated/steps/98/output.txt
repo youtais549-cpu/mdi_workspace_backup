@@ -1,0 +1,51 @@
+Command exited with code 0.
+
+Command output:
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 6860 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/modular_aimd_framework/CONFIG_GUIDE.md
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 1605 Nov  5 03:17 /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/modular_aimd_framework/README.md
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/modular_aimd_framework/:
+total 40
+drwxr-xr-x  4 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 .
+drwxrwxrwx 32 WORKSTATION4WSL WORKSTATION4WSL 16384 Nov  5 03:31 ..
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  6860 Nov  5 03:17 CONFIG_GUIDE.md
+-rw-r--r--  1 WORKSTATION4WSL WORKSTATION4WSL  1605 Nov  5 03:17 README.md
+drwxr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 core_unchanging
+drwxr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 parameters_variable
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/modular_aimd_framework/core_unchanging:
+total 44
+drwxr-xr-x 2 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 .
+drwxr-xr-x 4 WORKSTATION4WSL WORKSTATION4WSL  4096 Nov  5 03:17 ..
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  2132 Nov  5 03:17 make_xyz.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  4548 Nov  5 03:17 master_run_gpu.sh
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 10618 Nov  5 03:17 qe_mdi_engine_core.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  1425 Nov  5 03:17 run_colab_gpu.sh
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  7111 Nov  5 03:17 workflow_cli.py
+
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/modular_aimd_framework/parameters_variable:
+total 2656
+drwxr-xr-x 3 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 .
+drwxr-xr-x 4 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 ..
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL  858332 Nov  5 03:17 C.upf
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL 1691876 Nov  5 03:17 Si.upf
+drwxr-xr-x 2 WORKSTATION4WSL WORKSTATION4WSL    4096 Nov  5 03:17 __pycache__
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   11414 Nov  5 03:17 bulk_10-10_144atoms.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   12192 Nov  5 03:17 bulk_10-10_144atoms.data
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    7889 Nov  5 03:17 bulk_10-10_144atoms.xyz
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    5834 Nov  5 03:17 bulk_10-10_72atoms.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    6215 Nov  5 03:17 bulk_10-10_72atoms.data
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    4000 Nov  5 03:17 bulk_10-10_72atoms.xyz
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   15288 Nov  5 03:17 calc_surface_energy.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    1626 Nov  5 03:17 dft_settings.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL     621 Nov  5 03:17 fracture_metadata.json
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    7361 Nov  5 03:17 generate_models.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    1072 Nov  5 03:17 in.lammps.optimized_conv
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    1877 Nov  5 03:17 in.lammps.template
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    1198 Nov  5 03:17 model_settings.py
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   12115 Nov  5 03:17 slab_10-10_144atoms.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL   12192 Nov  5 03:17 slab_10-10_144atoms.data
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    7888 Nov  5 03:17 slab_10-10_144atoms.xyz
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    6320 Nov  5 03:17 slab_10-10_72atoms.cif
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    6215 Nov  5 03:17 slab_10-10_72atoms.data
+-rw-r--r-- 1 WORKSTATION4WSL WORKSTATION4WSL    4000 Nov  5 03:17 slab_10-10_72atoms.xyz

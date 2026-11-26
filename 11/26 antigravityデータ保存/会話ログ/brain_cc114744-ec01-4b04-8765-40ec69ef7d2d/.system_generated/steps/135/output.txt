@@ -1,0 +1,1 @@
+Made 1 replacement in /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/run_slab_rtx5080.sh starting at line 12 (+5/-1 lines).

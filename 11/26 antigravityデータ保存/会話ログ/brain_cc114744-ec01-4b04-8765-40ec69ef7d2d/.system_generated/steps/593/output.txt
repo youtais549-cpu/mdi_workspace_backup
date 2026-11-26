@@ -1,0 +1,16 @@
+Command exited with code 0.
+
+Command output:
+489:    plt.rcParams["mathtext.fontset"] = "stix"
+490:    plt.rcParams["svg.fonttype"] = "path"
+491:    plt.rcParams["xtick.direction"] = "in"
+492:    plt.rcParams["ytick.direction"] = "in"
+493:    plt.rcParams["xtick.top"] = True
+494:    plt.rcParams["ytick.right"] = True
+495:    plt.rcParams["axes.linewidth"] = 1.2
+506:    fig, ax = plt.subplots(figsize=(5.6, 4.4), dpi=300)
+525:    plt.subplots_adjust(left=0.18, right=0.95, top=0.94, bottom=0.18)
+527:    plt.savefig(f"{base}.png", dpi=300)
+528:    plt.savefig(f"{base}.pdf")
+529:    plt.savefig(f"{base}.svg")
+530:    plt.close()

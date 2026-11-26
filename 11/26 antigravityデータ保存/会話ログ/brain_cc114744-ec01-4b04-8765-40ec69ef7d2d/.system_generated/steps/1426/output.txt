@@ -1,0 +1,38 @@
+Created At: 2026-11-22T02:09:09+09:00
+Completed At: 2026-11-22T02:09:09+09:00
+Command exited with code 0.
+
+Command output:
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_900steps_rtx5080/qe_engine.log <==
+[QE-MDI Engine] --- [Step 98] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127719.4266 eV | Fmax: 2.46029 eV/A | gap: 0.0101 A ---
+[QE-MDI Engine] --- [Step 99] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127719.3669 eV | Fmax: 2.63278 eV/A | gap: 0.0083 A ---
+[QE-MDI Engine] --- [Step 100] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127719.3460 eV | Fmax: 2.73273 eV/A | gap: 0.0037 A ---
+[QE-MDI Engine] --- [Step 101] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127719.3664 eV | Fmax: 2.75330 eV/A | gap: 0.0057 A ---
+[QE-MDI Engine] --- [Step 102] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127719.4281 eV | Fmax: 2.69193 eV/A | gap: 0.0037 A ---
+[QE-MDI Engine] --- [Step 103] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127719.5277 eV | Fmax: 2.55188 eV/A | gap: 0.0109 A ---
+[QE-MDI Engine] --- [Step 104] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127719.6592 eV | Fmax: 2.43355 eV/A | gap: 0.0033 A ---
+[QE-MDI Engine] --- [Step 105] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127719.8135 eV | Fmax: 2.35329 eV/A | gap: 0.0044 A ---
+[QE-MDI Engine] --- [Step 106] Done in 0.00s (16 SCF iters) [RESTORED CACHE] | E_pot: -127719.9789 eV | Fmax: 2.22120 eV/A | gap: 0.0061 A ---
+[QE-MDI Engine] --- [Step 107] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127720.1426 eV | Fmax: 2.05068 eV/A | gap: 0.0097 A ---
+[QE-MDI Engine] --- [Step 108] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127720.2912 eV | Fmax: 2.08231 eV/A | gap: 0.0131 A ---
+[QE-MDI Engine] --- [Step 109] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127720.4122 eV | Fmax: 2.24508 eV/A | gap: 0.0161 A ---
+[QE-MDI Engine] --- [Step 110] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127720.4950 eV | Fmax: 2.37612 eV/A | gap: 0.0187 A ---
+[QE-MDI Engine] --- [Step 111] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127720.5317 eV | Fmax: 2.44151 eV/A | gap: 0.0153 A ---
+[QE-MDI Engine] --- [Step 112] Done in 0.00s (17 SCF iters) [RESTORED CACHE] | E_pot: -127720.5181 eV | Fmax: 2.43722 eV/A | gap: 0.0084 A ---
+
+==> /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/aimd_2H-SiC_10-10_8periods_bulk_300K_900steps_rtx5080/log.lammps <==
+        97   155.72797      0              0              5.7771436     -127719.52     -127713.74      2071.9398      2.2951906      18.21711     
+        98   153.65537      0              0              5.700255      -127719.43     -127713.73      2044.3641      2.3259948      18.44965     
+        99   152.49646      0              0              5.6572622     -127719.37     -127713.71      2028.945       2.3187255      18.618279    
+       100   152.38691      0              0              5.653198      -127719.35     -127713.69      2027.4874      2.2742809      18.711411    
+       101   153.3967       0              0              5.6906589     -127719.37     -127713.68      2040.9225      2.2554321      18.72161     
+       102   155.52304      0              0              5.7695413     -127719.43     -127713.66      2069.2132      2.2615161      18.64513     
+       103   158.68396      0              0              5.8868038     -127719.53     -127713.64      2111.2688      2.2711102      18.484793    
+       104   162.71316      0              0              6.0362779     -127719.66     -127713.62      2164.8768      2.2388128      18.24983     
+       105   167.36664      0              0              6.208911      -127719.81     -127713.6       2226.7907      2.1327537      17.957078    
+       106   172.3356       0              0              6.3932477     -127719.98     -127713.59      2292.902       1.9594082      17.630319    
+       107   177.27677      0              0              6.5765537     -127720.14     -127713.57      2358.6436      1.9371923      17.298607    
+       108   181.83249      0              0              6.7455601     -127720.29     -127713.55      2419.2568      1.9352655      16.994731    
+       109   185.65918      0              0              6.8875215     -127720.41     -127713.52      2470.1705      2.0400693      16.749385    
+       110   188.46842      0              0              6.9917377     -127720.49     -127713.5       2507.547       2.1431865      16.590708    
+       111   190.04688      0              0              7.0502948     -127720.53     -127713.48      2528.5482      2.1865402      16.539147    

@@ -1,0 +1,62 @@
+{
+    "natoms": 288,
+    "n_periods": 8,
+    "target_temp_K": 300.0,
+    "total_steps": 600,
+    "bulk_0K_scf_energy_eV": -127726.1628,
+    "ensemble_all_0_to_600": {
+        "window": "Step 0..600 (601 points)",
+        "temp_mean_K": 234.81398822795342,
+        "temp_std_K": 60.09452664074799,
+        "etotal_mean_eV": -127708.73560732113,
+        "etotal_std_eV": 4.1610352055999265,
+        "pe_mean_eV": -127717.44647254578,
+        "pe_std_eV": 2.2733267499726972,
+        "ke_mean_eV": 8.711049879034942,
+        "ke_std_eV": 2.229366415656252
+    },
+    "ensemble_first_half_0_to_300": {
+        "window": "Step 0..300 (301 points)",
+        "temp_mean_K": 185.78210034883722,
+        "temp_std_K": 38.24175587628307,
+        "etotal_mean_eV": -127712.41548172758,
+        "etotal_std_eV": 1.8689790194776257,
+        "pe_mean_eV": -127719.30757475086,
+        "pe_std_eV": 1.434482009799566,
+        "ke_mean_eV": 6.892081489036544,
+        "ke_std_eV": 1.418679706814981
+    },
+    "ensemble_second_half_300_to_600": {
+        "window": "Step 300..600 (301 points)",
+        "temp_mean_K": 283.89057777408635,
+        "temp_std_K": 30.598011760801324,
+        "etotal_mean_eV": -127705.05604651161,
+        "etotal_std_eV": 1.9993021999870588,
+        "pe_mean_eV": -127715.58734219271,
+        "pe_std_eV": 1.1585439850499533,
+        "ke_mean_eV": 10.531676597009966,
+        "ke_std_eV": 1.1351146901183176
+    },
+    "ensemble_equil_400_to_600": {
+        "window": "Step 400..600 (201 points)",
+        "temp_mean_K": 299.88799398009945,
+        "temp_std_K": 22.007986437481424,
+        "etotal_mean_eV": -127703.8544278607,
+        "etotal_std_eV": 1.153347192862895,
+        "pe_mean_eV": -127714.97945273633,
+        "pe_std_eV": 0.8250314023900698,
+        "ke_mean_eV": 11.12514333233831,
+        "ke_std_eV": 0.8164448455199035
+    },
+    "ensemble_equil_450_to_600": {
+        "window": "Step 450..600 (151 points)",
+        "temp_mean_K": 306.33087397350994,
+        "temp_std_K": 17.422566973476012,
+        "etotal_mean_eV": -127703.32251655626,
+        "etotal_std_eV": 0.7656925346854105,
+        "pe_mean_eV": -127714.68642384105,
+        "pe_std_eV": 0.6249941397030595,
+        "ke_mean_eV": 11.364159095364236,
+        "ke_std_eV": 0.6463365269436424
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "cleavage_plane": "10-10",
+    "cleavage_type": "natural_cleavage_sparse_bond",
+    "n_periods": 2,
+    "n_layers": 4,
+    "natoms": 72,
+    "vacuum_thickness_angstrom": 5.0,
+    "supercell_xy": [
+        3,
+        3
+    ],
+    "cell_slab": [
+        9.228,
+        15.144,
+        13.55203644899738
+    ],
+    "cell_bulk": [
+        9.228,
+        15.144,
+        5.327788284081859
+    ],
+    "area_A_angstrom2": 139.748832,
+    "total_area_2A_angstrom2": 279.497664,
+    "unit_conversion_eV_A2_to_J_m2": 16.021766,
+    "effective_denominator": 17.44487243166577,
+    "true_bulk_scf_energy_eV": -31935.3562,
+    "true_bulk_scf_energy_Ry": -2347.19503513,
+    "reference_t4_relaxed_slab_energy_eV": -31892.6430,
+    "reference_t4_surface_fracture_energy_J_m2": 2.4485,
+    "reference_rauls_dimer_J_m2": 3.03,
+    "hardware_profile": {
+        "cpu": "Intel Core Ultra 9 285K (24 cores)",
+        "ram": "64 GB",
+        "gpu": "NVIDIA GeForce RTX 5080 (16 GB VRAM, Blackwell sm_120)",
+        "os": "Windows 11 Pro (WSL2 Ubuntu)"
+    },
+    "slab_data_file": "2H-SiC_10-10_slab_3x3x2_vac5A.data",
+    "bulk_data_file": "2H-SiC_10-10_bulk_3x3x2_72atoms.data",
+    "backup_dir": "/mnt/g/マイドライブ/MD_backup/{101_0}2周期5Å_RTX5080検証"
+}
+

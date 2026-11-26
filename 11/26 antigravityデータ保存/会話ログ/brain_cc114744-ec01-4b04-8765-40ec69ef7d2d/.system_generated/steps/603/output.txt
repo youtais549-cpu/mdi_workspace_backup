@@ -1,0 +1,9 @@
+Command exited with code 1.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/generate_default_surface_energy_graphs.py:12: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+  - ラベル: 縦軸 `表面破壊エネルギー  $\mathrm{[J/m^2]}$`, 横軸 `真空層の厚さ  $\mathrm{[\AA]}$` (14.5 pt)
+Traceback (most recent call last):
+  File "/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/generate_default_surface_energy_graphs.py", line 27, in <module>
+    import matplotlib
+ModuleNotFoundError: No module named 'matplotlib'

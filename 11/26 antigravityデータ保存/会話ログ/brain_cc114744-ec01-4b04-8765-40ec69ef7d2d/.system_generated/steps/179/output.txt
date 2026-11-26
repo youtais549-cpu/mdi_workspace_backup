@@ -1,0 +1,24 @@
+Command exited with code 0.
+
+Command output:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwo:219:     total energy              =   -2348.79280325 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwo:228:     total energy              =   -2345.72535635 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwo:237:     total energy              =   -2347.18765080 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwo:246:     total energy              =   -2347.20691681 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwo:255:     total energy              =   -2347.20268852 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwo:264:     total energy              =   -2347.20493820 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwo:273:     total energy              =   -2347.20453482 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwo:282:     total energy              =   -2347.20460634 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwo:320:!    total energy              =   -2347.20460935 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/2H-SiC_10-10_bulk_scf_20261020/espresso.pwo:326:     The total energy is F=E-TS. E is the sum of the following terms:
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/espresso_bulk_scf.pwo:225:     total energy              =   -2348.79362872 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/espresso_bulk_scf.pwo:234:     total energy              =   -2345.72896549 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/espresso_bulk_scf.pwo:243:     total energy              =   -2347.18738415 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/espresso_bulk_scf.pwo:252:     total energy              =   -2347.20692500 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/espresso_bulk_scf.pwo:261:     total energy              =   -2347.20237932 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/espresso_bulk_scf.pwo:270:     total energy              =   -2347.20506649 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/espresso_bulk_scf.pwo:279:     total energy              =   -2347.20450531 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/espresso_bulk_scf.pwo:288:     total energy              =   -2347.20459947 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/espresso_bulk_scf.pwo:297:     total energy              =   -2347.20461181 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/espresso_bulk_scf.pwo:335:!    total energy              =   -2347.20460730 Ry
+/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080/espresso_bulk_scf.pwo:341:     The total energy is F=E-TS. E is the sum of the following terms:

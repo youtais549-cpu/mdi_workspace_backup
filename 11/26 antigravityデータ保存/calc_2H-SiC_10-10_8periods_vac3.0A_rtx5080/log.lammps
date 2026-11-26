@@ -1,0 +1,83 @@
+LAMMPS (30 Sep 2026)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+# ==============================================================================
+# 2H-SiC {10-10} 8周期 (16層, 288原子) 真空層 3.0 Å スラブ 0 K 構造緩和
+# (8周期・真空5.0Å緩和済み構造から真空層を 5.0Å → 3.0Å に詰めた初期構造の微調整緩和)
+# ==============================================================================
+units           metal
+dimension       3
+boundary        p p p
+atom_style      atomic
+atom_modify     map yes
+
+read_data       slab_10-10_288atoms_vac3.0A_init.data
+Reading data file ...
+  orthogonal box = (0 0 0) to (9.228 15.144 25.535401)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  288 atoms
+  read_data CPU = 0.001 seconds
+
+# Rule 2: Type 1 = C (12.011), Type 2 = Si (28.085)
+mass            1 12.011
+mass            2 28.085
+
+pair_style      none
+
+fix             1 all mdi/qm elements C Si
+thermo_style    custom step temp pe etotal press fmax fnorm
+thermo          1
+thermo_modify   flush yes
+
+dump            1 all custom 1 dump.lammpstrj id type x y z fx fy fz
+dump_modify     1 sort id flush yes
+
+# Rule 9: 最適化収束条件標準
+min_style       cg
+minimize        1.0e-6 1.0e-2 100 150
+WARNING: No pairwise cutoff or binsize set. Atom sorting therefore disabled. (src/atom.cpp:2486)
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+Per MPI rank memory allocation (min/avg/max) = 3.454 | 3.454 | 3.454 Mbytes
+   Step          Temp          PotEng         TotEng         Press           Fmax          Fnorm     
+         0   0             -127685.12     -127685.12      0              0.17122981     1.4406788    
+         1   0             -127685.15     -127685.15      0              0.083758313    0.84133628   
+Loop time of 855.76 on 1 procs for 1 steps with 288 atoms
+
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+     -127685.119752287  -127685.119752287  -127685.149336095
+  Force two-norm initial, final = 1.4406788 0.84133628
+  Force max component initial, final = 0.17122981 0.083758313
+  Final line search alpha, max atom move = 0.58401045 0.04891573
+  Iterations, force evaluations = 1 2
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 6.432e-06  | 6.432e-06  | 6.432e-06  |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 855.76     | 855.76     | 855.76     |   0.0 |100.00
+Other   |            | 0.0004851  |            |       |  0.00
+
+Nlocal:            288 ave         288 max         288 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+
+write_data      slab_10-10_288atoms_vac3.0A_relaxed.data
+System init for write_data ...
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:188)
+Total wall time: 0:20:53

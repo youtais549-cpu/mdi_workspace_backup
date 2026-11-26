@@ -1,0 +1,15 @@
+esbenp.prettier-vscode-12.4.0
+extensions.json
+github.copilot-chat-0.48.1
+ms-ceintl.vscode-language-pack-ja-1.118.2026052020
+ms-ceintl.vscode-language-pack-ja-1.130.2026072017
+ms-python.debugpy-2026.6.0-linux-x64
+ms-python.python-2026.4.0-linux-x64
+ms-python.vscode-pylance-2026.3.1
+ms-python.vscode-python-envs-1.36.0-linux-x64
+ms-vscode.cmake-tools-1.23.52
+ms-vscode.cpp-devtools-0.5.13
+ms-vscode.cpptools-1.33.4-linux-x64
+ms-vscode.cpptools-extension-pack-1.5.1
+ms-vscode.cpptools-themes-2.0.0
+thfriedrich.lammps-1.10.4

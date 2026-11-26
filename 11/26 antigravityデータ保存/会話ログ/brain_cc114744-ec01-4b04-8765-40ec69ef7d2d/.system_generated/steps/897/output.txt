@@ -1,0 +1,19 @@
+Command exited with code 0.
+
+Command output:
+N=1 periodic=True cell:
+[[3.076      0.         0.        ]
+ [0.         5.048      0.        ]
+ [0.         0.         2.66389414]]
+N=2 periodic=True cell:
+[[3.076      0.         0.        ]
+ [0.         5.048      0.        ]
+ [0.         0.         5.32778828]]
+N=3 periodic=True cell:
+[[3.076      0.         0.        ]
+ [0.         5.048      0.        ]
+ [0.         0.         7.99168243]]
+N=4 periodic=True cell:
+[[ 3.076       0.          0.        ]
+ [ 0.          5.048       0.        ]
+ [ 0.          0.         10.65557657]]

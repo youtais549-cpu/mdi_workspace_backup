@@ -1,0 +1,1 @@
+Made 1 replacement in /home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup/calc_2H-SiC_10-10_8periods_true_bulk_scf/fracture_metadata.json starting at line 29 (+2/-2 lines).

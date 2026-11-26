@@ -1,0 +1,40 @@
+{
+    "cleavage_plane": "10-10",
+    "cleavage_type": "natural_cleavage_sparse_bond",
+    "n_periods": 2,
+    "n_layers": 4,
+    "natoms": 72,
+    "vacuum_thickness_angstrom": 0.5,
+    "supercell_xy": [
+        3,
+        3
+    ],
+    "cell_slab": [
+        9.228,
+        15.144,
+        4.552036448997381
+    ],
+    "cell_bulk": [
+        9.228,
+        15.144,
+        5.327788
+    ],
+    "area_A_angstrom2": 139.748832,
+    "total_area_2A_angstrom2": 279.497664,
+    "unit_conversion_eV_A2_to_J_m2": 16.021766,
+    "effective_denominator": 17.44487243166577,
+    "true_bulk_scf_energy_Ry": -2347.2046073,
+    "true_bulk_scf_energy_eV": -31935.3572,
+    "reference_rauls_relaxed_J_m2": 2.27,
+    "reference_rauls_unrelaxed_J_m2": 2.44,
+    "reference_rauls_dimer_J_m2": 3.03,
+    "slab_data_file": "2H-SiC_10-10_slab_3x3x2_vac0.5A.data",
+    "bulk_data_file": "2H-SiC_10-10_bulk_3x3x2_72atoms.data",
+    "nas_folder_name": "{101_0}2周期0.5Å",
+    "relaxed_slab_energy_eV": -31914.1814,
+    "delta_energy_eV": 21.1758,
+    "surface_fracture_energy_J_m2": 1.2139,
+    "diff_percent": -46.5,
+    "elapsed_seconds": 187.0,
+    "n_scf_steps": 12
+}

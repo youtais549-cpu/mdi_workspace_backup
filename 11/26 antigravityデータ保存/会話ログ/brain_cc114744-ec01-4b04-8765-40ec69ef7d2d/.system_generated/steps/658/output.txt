@@ -1,0 +1,104 @@
+Command exited with code 0.
+
+Command output:
+4-==============================================================================
+5-2H-SiC {10-10} 2周期 (4層, 72原子) スラブモデルにおける
+6-真空層厚さ 0.5 Å 〜 10.0 Å (0.5 Å刻み・全20条件) 自動パラメトリックスイープ実行スクリプト
+7-==============================================================================
+8-"""
+9:import os
+10:import sys
+11:import re
+12:import csv
+13:import json
+14:import time
+15:import base64
+16:import shutil
+17:import datetime
+18:import subprocess
+19:import numpy as np
+20:import ase.io
+21:from ase.build import surface
+22:from ase.io.lammpsdata import write_lammps_data
+23-
+24-os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib_cache_sic"
+25-os.makedirs("/tmp/matplotlib_cache_sic", exist_ok=True)
+26-
+27:import matplotlib
+28-matplotlib.use("Agg")
+29:import matplotlib.pyplot as plt
+30:import matplotlib.font_manager as fm
+31:import matplotlib.ticker as ticker
+32-
+33-WORKSPACE_DIR = "/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_workspace_backup"
+34-ENV_PREFIX = "/home/WORKSTATION4WSL/.gemini/antigravity/scratch/mdi_env_rtx5080"
+35-TEMPLATE_DIR = os.path.join(WORKSPACE_DIR, "calc_2H-SiC_10-10_8periods_vac5A_natural_cleavage")
+36-BULK_2P_DIR = os.path.join(WORKSPACE_DIR, "calc_2H-SiC_10-10_2periods_vac5A_local_RTX5080")
+--
+76-    print(line, flush=True)
+77-    with open(os.path.join(WORKSPACE_DIR, "vacuum_sweep_2periods.log"), "a", encoding="utf-8") as lf:
+78-        lf.write(line + "\n")
+79-
+80-
+81:def prepare_condition_directory(vac_val, vac_str, nas_folder_name, port):
+82-    """各真空層厚さ V [Å] の専用ディレクトリと入力ファイル一式を生成"""
+83-    calc_dir_name = f"calc_2H-SiC_10-10_2periods_vac{vac_str}A_rtx5080"
+84-    calc_dir = os.path.join(WORKSPACE_DIR, calc_dir_name)
+85-    os.makedirs(calc_dir, exist_ok=True)
+86-
+--
+215-        except Exception:
+216-            pass
+217-    return False
+218-
+219-
+220:def run_single_condition(idx, total_count, vac_val, vac_str, nas_folder_name, port):
+221-    """1つの真空層条件について構造緩和・XYZ変換・3種グラフ生成・γ算出を実行"""
+222:    calc_dir, slab_prefix = prepare_condition_directory(vac_val, vac_str, nas_folder_name, port)
+223-
+224-    if is_condition_already_converged(calc_dir):
+225-        log(f"[{idx}/{total_count}] [Skip] vac={vac_str} Å ({calc_dir}) is already converged.")
+226-        stage_and_sync_to_nas(calc_dir, nas_folder_name)
+227-        return calc_dir
+--
+249-    t0 = time.time()
+250-    with open(os.path.join(calc_dir, "lmp.log"), "w") as lmp_out, open(
+251-        os.path.join(calc_dir, "qe_engine.log"), "w"
+252-    ) as qe_out:
+253-        lmp_proc = subprocess.Popen(
+254:            [lmp_bin, "-mdi", f"-role DRIVER -name LAMMPS -method TCP -port {port}", "-in", "in.lammps"],
+255-            cwd=calc_dir,
+256-            env=env,
+257-            stdout=lmp_out,
+258-            stderr=subprocess.STDOUT,
+259-        )
+--
+261-        qe_proc = subprocess.Popen(
+262-            [
+263-                py_bin,
+264-                "qe_mdi_engine_rtx5080.py",
+265-                "-mdi",
+266:                f"-role ENGINE -name QE -method TCP -port {port} -hostname localhost",
+267-            ],
+268-            cwd=calc_dir,
+269-            env=env,
+270-            stdout=qe_out,
+271-            stderr=subprocess.STDOUT,
+--
+532-
+533-def main():
+534-    filter_vacs = [float(x) for x in sys.argv[1:]] if len(sys.argv) > 1 else None
+535-    total_count = len(VACUUM_SWEEP_LIST)
+536-
+537:    base_port = 8030
+538-    for idx, (vac_val, vac_str, nas_folder_name) in enumerate(VACUUM_SWEEP_LIST, start=1):
+539-        if filter_vacs is not None and vac_val not in filter_vacs:
+540-            continue
+541:        port = base_port + idx
+542-        try:
+543:            run_single_condition(idx, total_count, vac_val, vac_str, nas_folder_name, port)
+544-        except Exception as e:
+545-            log(f"[{idx}/{total_count}] ❌ Error on vac={vac_str} Å: {e}")
+546-
+547-    log("🎉 All requested vacuum thickness calculations have finished!")
+548-

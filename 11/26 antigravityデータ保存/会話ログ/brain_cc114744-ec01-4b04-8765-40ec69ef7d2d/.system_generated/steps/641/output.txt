@@ -1,0 +1,28 @@
+Command exited with code 0.
+
+Command output:
+
+     Dense  grid:   230346 G-vectors     FFT dimensions: ( 100, 180,  60)
+
+     Smooth grid:    81396 G-vectors     FFT dimensions: (  72, 120,  40)
+
+     Estimated max dynamical RAM per process >     345.92 MB
+
+     Estimated total dynamical RAM >       1.35 GB
+
+     Check: negative core charge=   -0.000004
+
+     Initial potential from superposition of free atoms
+
+     starting charge     287.9784, renormalised to     288.0000
+     Starting wfcs are  288 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     total cpu time spent up to now is        8.8 secs
+
+     per-process dynamical memory:   143.3 Mb
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap

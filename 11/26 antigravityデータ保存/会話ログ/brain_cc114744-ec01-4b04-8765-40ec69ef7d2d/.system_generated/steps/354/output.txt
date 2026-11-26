@@ -1,0 +1,19 @@
+Command exited with code 0.
+
+Command output:
+Filesystem      Size  Used Avail Use% Mounted on
+                 16G     0   16G   0% /
+/dev/sdd       1007G   37G  919G   4% /bin
+                 16G     0   16G   0% /dev/shm
+/dev/sdd       1007G   37G  919G   4% /etc
+                 16G  4.0K   16G   1% /tmp/.X11-unix
+drivers         929G   96G  834G  11% /lib/wsl/drivers
+none             16G     0   16G   0% /lib/wsl/lib
+none             16G     0   16G   0% /lib/modules/6.18.54.1-microsoft-standard-WSL2
+/dev/sdb         97M   97M     0 100% /lib/linux-tools/6.18.54.1-microsoft-standard-WSL2
+none             16G  4.0K   16G   1% /mnt/wsl/resolv.conf
+tmpfs            16G  352K   16G   1% /tmp
+total 0
+dr-xr-xr-x  3 WORKSTATION4WSL WORKSTATION4WSL  60 Nov  6 11:47 .
+dr-xr-xr-x 16 WORKSTATION4WSL WORKSTATION4WSL 320 Nov  6 11:47 ..
+dr-xr-xr-x  2 WORKSTATION4WSL WORKSTATION4WSL  60 Nov  6 11:47 wsl

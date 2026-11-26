@@ -1,0 +1,8 @@
+Created At: 2026-11-23T15:34:40+09:00
+Completed At: 2026-11-23T15:34:40+09:00
+Command exited with code 0.
+
+Command output:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+WORKSTA+       1 62.1  0.4 2756824 133544 pts/0  Sl   15:34   0:00 /home/WORKSTA
+WORKSTA+      32  0.0  0.0   7164  4396 pts/18   Rs+  15:34   0:00 ps aux

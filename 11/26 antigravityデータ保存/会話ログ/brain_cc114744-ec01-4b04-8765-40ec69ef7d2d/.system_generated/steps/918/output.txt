@@ -1,0 +1,7 @@
+Command exited with code 0.
+
+Command output:
+N=1: unique bond lengths = [np.float64(1.884531), np.float64(1.885033), np.float64(1.893)]
+N=2: unique bond lengths = [np.float64(1.884531), np.float64(1.885033), np.float64(1.893)]
+N=3: unique bond lengths = [np.float64(1.884531), np.float64(1.885033), np.float64(1.893)]
+N=4: unique bond lengths = [np.float64(1.884531), np.float64(1.885033), np.float64(1.893)]

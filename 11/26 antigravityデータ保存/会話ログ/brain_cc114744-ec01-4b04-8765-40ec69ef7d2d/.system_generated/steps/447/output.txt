@@ -1,0 +1,28 @@
+Command exited with code 0.
+
+Command output:
+     ethr =  2.13E-06,  avg # of iterations =  8.0
+
+     negative rho (up, down):  8.308E-02 0.000E+00
+
+     total cpu time spent up to now is       52.0 secs
+
+     total energy              =   -2344.00490628 Ry
+     estimated scf accuracy    <       0.00128653 Ry
+
+     iteration # 14     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  4.47E-07,  avg # of iterations =  4.0
+
+     negative rho (up, down):  1.002E-02 0.000E+00
+
+     total cpu time spent up to now is       56.0 secs
+
+     total energy              =   -2344.00451003 Ry
+     estimated scf accuracy    <       0.00166325 Ry
+
+     iteration # 15     ecut=    40.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  4.47E-07,  avg # of iterations = 11.0
+
+     negative rho (up, down):  7.636E-03 0.000E+00

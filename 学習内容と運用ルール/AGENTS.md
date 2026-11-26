@@ -153,8 +153,10 @@
   Nosé-Hoover 熱浴の時定数が $\tau_T = 100\text{ fs}$（100 steps）の場合、**最初の 100 ステップは過渡的な熱平衡化領域であり、アンサンブル平均の対象としては不十分**である。
   真の熱平衡状態における物性値（平均ポテンシャルエネルギー $\langle E_{\text{pot}}\rangle$、平均全エネルギー $\langle E_{\text{tot}}\rangle$、熱力学的表面破壊エネルギー $\gamma_{T}$）を算出する際は、最低でも $3\tau_T \sim 6\tau_T$（300 〜 600 steps）を計算し、初期過渡期を除外した後半領域から統計平均を算出すること。
 
-## 14. Winmostar 3D ビューアーの運用標準
+## 14. Winmostar 3D ビューアーの運用標準および管理者権限（Admin / Sandbox Bypass）使用禁止
 - **Winmostar 表示トラブル（画面外ロスト）の即時解決**:
   Winmostar で分子が画面外に消えて水色画面（ブランク）になる場合は、ズーム倍率の過大（300%等）による視野外パンが原因である。ショートカットキー `Ctrl + F`（全体表示 / Fit View）を押すか、右上の `Open Viewer` ボタンで別ウィンドウ専用ビューアーを起動することで即座に中央センタリング表示する。
+- **管理者権限・ホストOS操作・サンドボックス外実行の絶対禁止（権限剥奪）**:
+  AI エージェントは本 PC の管理者権限（Admin / `sudo`）、サンドボックス回避（`BypassSandbox: true`）、Windows ホスト側コマンド（`powershell.exe`, `cmd.exe` 等）、および外部ネットワーク・NAS への接続を一切行使してはならない。すべての操作は標準サンドボックス内（`BypassSandbox: false`）の一般ユーザー権限および本ワークスペースディレクトリ内のみに厳格に限定する。
 
 詳細規約は [`.agents/rules/colab_t4_gpu_aimd_workflow.md`](.agents/rules/colab_t4_gpu_aimd_workflow.md) および [`.agents/rules/surface_fracture_slab_rules.md`](.agents/rules/surface_fracture_slab_rules.md) を参照すること。

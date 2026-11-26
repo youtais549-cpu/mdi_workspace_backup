@@ -57,3 +57,4 @@
 3. **Antigravity AI への再開指示**:
    移行後の Antigravity チャットにて以下のように指示してください：
    > 「`AGENTS.md` と `RESTORE_INSTRUCTIONS_20261126.md` を読み込んでください。`aimd_2H-SiC_10-10_8periods_vac5.0A_unrelaxed_300K_400steps_rtx5080` の Step 350 までの全データを引き継いで、残りの 50 ステップ（Step 351〜400）を再開してください。」
+

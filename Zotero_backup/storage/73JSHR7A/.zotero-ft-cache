@@ -1,0 +1,201 @@
+ScienceDirect
+Available online at www.sciencedirect.com
+Available online at www.sciencedirect.com
+ScienceDirect
+Structural Integrity Procedia 00 (2016) 000–000 www.elsevier.com/locate/procedia
+2452-3216 © 2016 The Authors. Published by Elsevier B.V. Peer-review under responsibility of the Scientific Committee of PCF 2016.
+XV Portuguese Conference on Fracture, PCF 2016, 10-12 February 2016, Paço de Arcos, Portugal
+Thermo-mechanical modeling of a high pressure turbine blade of an
+airplane gas turbine engine
+P. Brandãoa, V. Infanteb, A.M. Deusc*
+aDepartment of Mechanical Engineering, Instituto Superior Técnico, Universidade de Lisboa, Av. Rovisco Pais, 1, 1049-001 Lisboa, Portugal bIDMEC, Department of Mechanical Engineering, Instituto Superior Técnico, Universidade de Lisboa, Av. Rovisco Pais, 1, 1049-001 Lisboa, Portugal cCeFEMA, Department of Mechanical Engineering, Instituto Superior Técnico, Universidade de Lisboa, Av. Rovisco Pais, 1, 1049-001 Lisboa, Portugal
+Abstract
+During their operation, modern aircraft engine components are subjected to increasingly demanding operating conditions, especially the high pressure turbine (HPT) blades. Such conditions cause these parts to undergo different types of time-dependent degradation, one of which is creep. A model using the finite element method (FEM) was developed, in order to be able to predict the creep behaviour of HPT blades. Flight data records (FDR) for a specific aircraft, provided by a commercial aviation company, were used to obtain thermal and mechanical data for three different flight cycles. In order to create the 3D model needed for the FEM analysis, a HPT blade scrap was scanned, and its chemical composition and material properties were obtained. The data that was gathered was fed into the FEM model and different simulations were run, first with a simplified 3D rectangular block shape, in order to better establish the model, and then with the real 3D mesh obtained from the blade scrap. The overall expected behaviour in terms of displacement was observed, in particular at the trailing edge of the blade. Therefore such a model can be useful in the goal of predicting turbine blade life, given a set of FDR data.
+© 2016 The Authors. Published by Elsevier B.V. Peer-review under responsibility of the Scientific Committee of PCF 2016.
+Keywords: High Pressure Turbine Blade; Creep; Finite Element Method; 3D Model; Simulation.
+* Corresponding author. Tel.: +351 218419991. E-mail address: amd@tecnico.ulisboa.pt
+Procedia Structural Integrity 7 (2017) 307–314
+2452-3216 Copyright  2017 The Authors. Published by Elsevier B.V. Peer-review under responsibility of the Scientific Committee of the 3rd International Symposium on Fatigue Design and Material Defects. 10.1016/j.prostr.2017.11.093
+Copyright © 2017 The Authors. Published by Elsevier B.V. Peer-review under responsibility of the Scientific Committee of the 3rd International Symposium on Fatigue Design and Material Defects.
+ScienceDirect
+Structural Integrity Procedia 00 (2017) 000–000 www.elsevier.com/locate/procedia
+2452-3216 © 2017 The Authors. Published by Elsevier B.V. Peer-review under responsibility of the Scientific Committee of the 3rd International Symposium on Fatigue Design and Material Defects.
+3rd International Symposium on Fatigue Design and Material Defects, FDMD 2017, 19-22 September 2017, Lecco, Italy
+In-situ observation of crack propagation in silicon nitride ceramics
+Yuri Kadina*, Stefan Strobla, Charlotte Vieillarda, Paul Wijnbergenb and Vaclav Ocelikb
+aSKF Engineering & Research Center, Nieuwegein, The Netherlands bRijksuniversiteit Groningen, Department of Applied Physics. The Netherlands
+Abstract
+Using the four point bending inside scanning electron microscope (SEM), the in-situ visualization of crack propagation in silicon nitride ceramic under monotonic and cyclic loading was performed with notched specimens of prismatic shape. In the monotonic loading experiment the study focused on the visualization of inter- vs. trans-granular crack propagation and on the analysis of the material resistance to cracking in terms of R-curve. In the cyclic loading experiment the test was done under high load regime, sufficient for crack initiation and visible propagation within few cycles.
+© 2017 The Authors. Published by Elsevier B.V. Peer-review under responsibility of the Scientific Committee of the 3rd International Symposium on Fatigue Design and Material Defects.
+Keywords: Silicon nitride; hybrid bearing; structural ceramics; inter- trans-granular crack propagation; R-curve; cyclic loading
+1. Introduction
+Silicon nitride (Si3N4) ceramic is nowadays the state-of-the-art material for rolling elements in hybrid bearing due to superior mechanical properties (Wang et al. (2000)), as high hardness, stiffness and low weight. Other physical properties, like good resistance to corrosion and hydrogen embrittlement, thermal stability and high electrical insulation make ceramics to be superior over full steel bearings for special applications. The SKF hybrid bearings
+* Corresponding author. Tel.: +31306075779. E-mail address: yuri.kadin@skf.com
+Available online at www.sciencedirect.com
+ScienceDirect
+Structural Integrity Procedia 00 (2017) 000–000 www.elsevier.com/locate/procedia
+2452-3216 © 2017 The Authors. Published by Elsevier B.V. Peer-review under responsibility of the Scientific Committee of the 3rd International Symposium on Fatigue Design and Material Defects.
+3rd International Symposium on Fatigue Design and Material Defects, FDMD 2017, 19-22 September 2017, Lecco, Italy
+In-situ observation of crack propagation in silicon nitride ceramics
+Yuri Kadina*, Stefan Strobla, Charlotte Vieillarda, Paul Wijnbergenb and Vaclav Ocelikb
+aSKF Engineering & Research Center, Nieuwegein, The Netherlands bRijksuniversiteit Groningen, Department of Applied Physics. The Netherlands
+Abstract
+Using the four point bending inside scanning electron microscope (SEM), the in-situ visualization of crack propagation in silicon nitride ceramic under monotonic and cyclic loading was performed with notched specimens of prismatic shape. In the monotonic loading experiment the study focused on the visualization of inter- vs. trans-granular crack propagation and on the analysis of the material resistance to cracking in terms of R-curve. In the cyclic loading experiment the test was done under high load regime, sufficient for crack initiation and visible propagation within few cycles.
+© 2017 The Authors. Published by Elsevier B.V. Peer-review under responsibility of the Scientific Committee of the 3rd International Symposium on Fatigue Design and Material Defects.
+Keywords: Silicon nitride; hybrid bearing; structural ceramics; inter- trans-granular crack propagation; R-curve; cyclic loading
+1. Introduction
+Silicon nitride (Si3N4) ceramic is nowadays the state-of-the-art material for rolling elements in hybrid bearing due to superior mechanical properties (Wang et al. (2000)), as high hardness, stiffness and low weight. Other physical properties, like good resistance to corrosion and hydrogen embrittlement, thermal stability and high electrical insulation make ceramics to be superior over full steel bearings for special applications. The SKF hybrid bearings
+* Corresponding author. Tel.: +31306075779. E-mail address: yuri.kadin@skf.com
+
+
+308 Yuri Kadin et al. / Procedia Structural Integrity 7 (2017) 307–314
+2 Kadin et al. / Structural Integrity Procedia 00 (2017) 000–000
+comprise of steel rings and Si3N4 rolling elements (see Fig. 1). High hardness of ceramics however, has “another side of coin” and this is relatively low toughness inherent for these materials. Therefore ceramic components of bearings are less resistant to crack initiation and propagation in rolling contact fatigue than the components made of steel.
+Figure 1: Micrograph of the engineering ceramics Si3N4 used for rolling elements in hybrid SKF bearings.
+Nevertheless, there exist some toughening mechanisms for Si3N4, like crack kinking and arrest caused by the texture of sintered ceramics (see e.g. Xu et al. (2003)) and by the grain bridging (see e.g. Fünfschilling et al. (2011)), which is a potential toughening mechanism under cyclic loading (Greene et al. (2014)). The fracture resistance can be quantified in terms of the so-called R-curve, i.e. a material property relating a size of a crack to the crack propagation resistance. The size of propagating crack can be obtained by the compliance method, or by the direct measurement of crack length in-situ conditions (Fünfschilling et al. (2011)). It is rather complex and expensive to use the compliance method, because it requires high-precision equipment and calibration, so in the current work the crack extension is measured by the Scanning Electron Microscope (SEM). In addition to the crack size determination it can also provide the in-situ complex morphology of the crack propagating in a polycrystalline structure of Si3N4. As known, this material is sintered from hard Si3N4 grains (crystals) “glued” to each other by a glassy (amorphous) phase (see Fig. 1). This means that crack can propagate by the two different modes: through the Si3N4 grain (transgranularly) or along the glassy phase at grain boundaries (inter-granularly). Typically, a crack path in the Si3N4 ceramics consists of trans-granular and inter-granular segments, and the mode of crack propagation depends on the fracture properties of these two phases and the orientation of an incident crack relatively to grain boundaries (Taheri Mousavi et al. (2015)). The incident crack approaching to the grain boundary, can either penetrate into the new grain or deflect and propagate along the boundary. In the current work the crack path is depicted within the granular structure of Si3N4, which allows to visualize the trans-granular and inter-granular segments of a propagating crack at the sample surface. Si3N4 ceramics with different microstructures were tested in the current work under monotonic load and the material resistance to the crack propagation was compared in terms of R-curves. The fracture experiment was also done under cyclic load, visualizing the crack propagation in very low cycle fatigue regime.
+2. Experimental procedure
+The equipment used in the current study combines a bending test apparatus (Kammrath & Weiss bending module) with SEM providing sufficient magnification to be able to observe a propagating crack on the scales of the granular morphology presented in Fig. 1. The loading of specimen is performed in the four point bending test presented in Fig. 2a. The ceramic specimen has a prismatic shape and the external force, F, applied to the specimen, is equally
+– Si3N4 – Glassy phase
+
+
+Yuri Kadin et al. / Procedia Structural Integrity 7 (2017) 307–314 309
+Kadin et al. / Structural Integrity Procedia 00 (2017) 000–000 3
+partitioned between the two supporting rolls. The load is applied in terms of displacement control, in the stepwise manner: after each step the loading is stopped to take the SEM image. The bar is notched at the middle, and the SEM imaging is directed to the small area surrounding the root of a notch, where the crack is supposed to initiate. In order to distinguish between the inter- and trans-granular segments of a crack path, the specimen surface was mirror polished and subsequently plasma etched. This surface treatment is designed to visualize microstructure (see Fig. 2b) to improve the imaging contrast. In order to determine the fracture toughness of ceramic specimens the ISO 23146 was followed regarding a fourpoint bending test. This standard requires the specimen to have a length not less than 45 mm, a width, b, of 3.0 ± 0.2 mm and a height, w, of 4.0 ± 0.2 mm. With a diamond suspension and a razor blade a notch with a root radius, ρ, in a range of 3 to 7 μm was produced (see Fig. 2b). From this standard the fracture toughness can be estimated based on fracture mechanics, as:
+α
+α
+αY
+w
+L
+bw
+F
+K
+I 2(1 )1.5
+3 −
+= ,w
+α= a , (1a)
+2
+2
+(1 )
+(3.49 0.68 1.35 ) (1 )
+1.9887 1.326 α
+α αα α
+α
+α+
+− + ⋅⋅−
+Y = − − , (1b)
+where L is the distance between the two supports on which the load is applied, and a is the total crack depth (= notch depth a0 + crack extension ∆a). The fracture toughness, KIc, is evaluated by substituting into Eq. (1a) the critical value of force, F, at the time of the crack propagation. The notch has to be sufficiently deep that the specimen can be fractured under the load not exceeding the testing setup capabilities, e.g. the maximum of the applicable force for the load cell is about 200 N. By knowing the approximate value of KIc of Si3N4 (which according to literature is above to 5 MPa·m1/2) and using Eqs. (1), the required notch depth, a0, was estimated for specimen preparation.
+Figure 2: Notched specimen supported in the four point bending setup (a) and the micrograph of the etched surface at the notched zone (b).
+When an extension of crack initiating from a notch, ∆a, (see Fig. 2b) is sufficiently small, its propagation is influenced by the notch root, in a sense, that the KI value, given by Eqs. (1) has to be corrected, with respect to ∆a/ρ ratio, as was proposed by Damani and Danzer (1998):
+
+
+
+
+
+∆
+=⋅ ρ
+a
+KI KI Y
+*
+* tanh 2 , (2)
+where according to ISO 23146 the value of Y* can be taken as 1.12. It follows from Eq. (2), that KI*=KI when ∆a >> ρ, which means that the propagation of long crack is not influenced by the local stresses concentrated at the notch root. Since stable crack propagation can occur when ∆a/ρ< 2, the construction of R-curve should include the correction according to Eq. (2).
+Notch
+a
+Notch root
+b
+ρ
+ρ
+∆a
+
+
+310 Yuri Kadin et al. / Procedia Structural Integrity 7 (2017) 307–314
+4 Kadin et al. / Structural Integrity Procedia 00 (2017) 000–000
+3. Results
+A typical example for in-situ visualization of a propagating crack is given in Fig. 3. The SEM micrograph presents the propagating crack in which the inter-granular and trans-granular segments can be indicated (see Figs. 3a-3c). The granular microstructure presented in Fig. 3 has potential interest because the angles of grain boundaries can be identified from this micrograph, and the crack propagation behavior can be analyzed in terms of the energetic criterion proposed by Hutchinson and Suo (1992) (see also Taheri Mousavi et al. (2015)). They assumed the two competing modes of crack propagation in polycrystalline media: (i) in-plane crack propagation in which it penetrates into a grain (trans-granular), (ii) crack kinking towards the grain boundary (inter-granular). Which one of the two modes supposed to occur depends on the angle, β, between the incident crack and the grain boundary (see Fig. 4). The following equation:
+
+
+ 
+
+ 
+
+
+ +  +
+
+
+= +
+22
+2
+3
+sin
+2
+sin
+2
+3
+cos
+2
+3cos
+16
+1 β β ββ
+T
+I
+G
+G , (3)
+defines the ratio between the energy release rate in kinked, GI, (inter-granular) and in-plane, GT, (trans-granular) crack propagation. ΓI is the fracture toughness of interface (glassy phase) and ΓT is the fracture toughness of the grain (Si3N4). If GI/GT>ΓI/ΓT the crack will kink; the crack will propagate trans-granularly if GI/GT ≤ ΓI/ΓT.
+Figure 3: A typical micrograph of a crack propagating in a Si3N4 specimen. The trans-granular and inter-granular fragments of the crack are zoomed and presented in (a, c) and (b), respectively. Arrows indicate the direction of crack propagation.
+The curve defined by Eq. (3) along with the threshold value equal to ΓI/ΓT (see Fig. 4) defines the mode of crack propagation as the function of angle β. According to Taheri Mousavi (2015), the ΓI/ΓT ratio is around 0.37 (ΓI=15.8 J/m2 and ΓT=42.5 J/m2), and comparing Eq. (3) to ΓI/ΓT the condition for inter-granular and trans-granular mode are identified. As follows from Fig. 4, the crack propagates inter-granularly if β is below 77° and trans-granularly if it exceeds 77°. The predictions of Fig. 4 are partially consistent with the experimental observations in Fig. 3. In the case presented in Fig. 4a the grain boundary is almost vertical (β is close to 90°) which lead to trans-granular propagation, while in the case of Fig. 4b, the grain boundary angle is definitely below 77° and therefore crack propagates inter-granularly. On the other hand, in the case of Fig. 4c, crack propagates trans-granularly despite the
+b
+b
+a
+c
+c
+a
+
+
+Yuri Kadin et al. / Procedia Structural Integrity 7 (2017) 307–314 311
+Kadin et al. / Structural Integrity Procedia 00 (2017) 000–000 5
+low angle of grain boundary. This wrong prediction can be caused by the dynamic term (associated with the velocity of propagating crack) which is neglected in the currently used criterion or by the fact that at the surface we observe only traces of grain boundaries while their 3D characteristics are somewhat hidden. Note, that the theory developed by Xu et al. (2003) includes the dynamic effect, however it cannot be used here, because the velocity of crack propagation is not measured in the current experiment. Another possible reason is the underestimation of ΓI/ΓT threshold, which value is probably stochastic/heterogeneous and can vary from grain to grain.
+Figure 4: The crack propagation diagram based on the energy criterion of Hutchinson and Suo (1992).
+Figure 5: R-curves for the ceramics with the fine (a) and the coarse (b) microstructures.
+The R-curves are presented in Fig. 5 for the two different types of Si3N4 ceramics, which microstructures are presented in Fig. 6. The micrograph in Fig. 6a corresponds to a ceramic material with the fine microstructure which R-curve is presented in Fig. 5a, and the micrograph in Fig. 6b to the coarse microstructure which R-curve in Fig. 5b is demonstrated. The difference between the two microstructures is mainly due to grain size, defined by the length, l, and width, d, (see Fig. 6c). Five longest grains were identified from five randomly selected micrographs, which size is sufficiently large to represent statistically the material morphology. The average length of these 25 grains and the average ratio (l/d) define the representative large-grain geometry. It was found, that in the coarse microstructure (Fig. 6b) this representative length is 3.3 and the representative ratio is 1.2 times higher than in the case of the fine microstructure (Fig. 6a). As follows from Fig. 5, the microstructure play essential role in material resistance to crack propagation. The stable crack extension (prior to collapse fracture) is significantly longer in the case of coarse microstructure. According to Fig. 5 (in which the results of two tests are demonstrated) the maximum crack extension in the ceramics with the fine microstructure (see Fig. 6a) is about 45 μm, while according to Fig. 5b it is almost 5 times higher (>200 μm) for the ceramics with the coarse microstructure (see Fig. 6b). This difference can
+β
+Inter-granular Trans-granular
+GI/GT
+β [°]
+ΓI/ΓT
+Eq. (3)
+β
+ab
+KI, [MPa·m1/2]
+∆a, [μm]
+
+
+312 Yuri Kadin et al. / Procedia Structural Integrity 7 (2017) 307–314
+6 Kadin et al. / Structural Integrity Procedia 00 (2017) 000–000
+be explained in terms of energy which the crack has to spend during propagation for “jumping” from one grain to another. In the case of coarse structure the crack faces bigger grains and its propagation requires more energy. In other words, the total area of grain boundaries comprising a weaker glassy phase increases as the grain size decreases, and it enhances intergranular crack propagation. Based on the Finite Elements cohesive model, developed by Taheri Mousavi (2015) for simulation of fracture in Si3N4, it was also found that the energy dissipated in cracking increases and the relative percentage of intergranular fracture decreases as the grains become coarser. Note, that metals typically obey the opposite trend: according to the Hall-Petch effect the material strength increases with the downsizing of grains. This can be explained in terms of difference in mechanisms associated with failure of ceramic and metallic materials. In metals, dislocation movement (plasticity) is involved in the failure process which stipulates the Hall-Petch effect while in ceramic materials plasticity is very limited.
+Figure 6: Si3N4 ceramics with the fine (a) and the coarse (b) microstructure. Schematic of grain and its dimensions (c).
+The crack propagation under cyclic loading was investigated for the material with rough microstructure. The results of the cyclic loading experiment are presented in Figs. 7. This experiment was done in the two stages: in the first stage a crack was initiated from a notch under cyclic load which was progressively increased by 1N after each cycle (first 5 cycles, see Fig. 7a). In the second stage the peak load was kept constant till the specimen fractured. When the load during cycling was somewhere at the middle (around 50 N), the loading was paused to inspect whether the crack in the sample appeared. After 5 cycles the crack appeared, i.e. when a peak load of 96 N was
+a
+b
+c
+l
+d
+
+
+Yuri Kadin et al. / Procedia Structural Integrity 7 (2017) 307–314 313
+Kadin et al. / Structural Integrity Procedia 00 (2017) 000–000 7
+reached. From that moment the second stage has been started, and after each loading cycle a picture was taken to visualize the fatigue crack propagation up to fracture. Fig. 7b presents the crack size vs. the number of cycles at the second stage, and Figs. 8 demonstrate the SEM micrographs of propagating crack after 5, 6, 7 and 8 cycles of the second stage. Since the lowest force was slightly positive (10N), the loading ratio R=Fmin/Fmax in this experiment was approximately equal to 0.1.
+Figure 7: Low cycle fatigue experiment with rough microstructure ceramics. Cyclic force with progressively increasing peak load (a) and crack extension vs. number of cycles during the crack propagation stage (b).
+Figure 8: Crack propagating under cyclic loading. Micrographs (a-d) correspond to the crack propagation after 5, 6, 7 and 8 cycles, respectively. Fatigue crack under higher magnification (e).
+The results presented in Fig. 7b indicate extremely low cycle fatigue regime: as soon as the initiated crack was visible, its propagation till unstable fracture took only a few cycles (see again Fig. 7b). Such fast crack propagation
+ab
+ab
+cd
+e
+
+
+314 Yuri Kadin et al. / Procedia Structural Integrity 7 (2017) 307–314
+8 Kadin et al. / Structural Integrity Procedia 00 (2017) 000–000
+means that under high loading conditions (sufficient to initiate a visible crack) Si3N4 ceramics has limited potential to resist fatigue crack growth: as soon as a fatigue crack initiates it will rapidly lead to fracture. Such an observation is consistent with the theory of Ritchie (1999) proposing that brittle ceramic materials are much more sensitive to crack growth than ductile metals. Experimentally, they showed that the Paris exponent, which is responsible for the speed of fatigue crack propagation, is much higher in ceramics than in metals.
+4. Conclusions
+Fracture of Si3N4 ceramics under monotonic and cyclic loading was experimentally studied in the current work. The study focused on the visualization of inter- vs. trans-granular crack propagation and on the analysis of the material resistance to cracking in terms of R-curve. It was found that the energy based theory can quite reasonably predict whether the crack propagates inter- or trans-granularly. The resistance to crack propagation, as was indicated by the R-curve, is dependent on the microstructure: the Si3N4 with fine microstructure (small grain size) has lower resistance than the coarser (large grains) one, which is again consistent with the previous theoretical predictions. The cyclic loading experiment revealed that under high loading, which is sufficient to initiate a crack from the notch, the Si3N4 ceramics has limited potential to resist its further fatigue growth, which is stipulated by low ductility.
+5. References
+Damani, R.J., Danzer, R., 1998. A Method for Fracture Toughness Testing of Ceramics – Ready for Standartisation. Proc. 12th Biennial Conference on Fracture – ECF12, Sheffield, UK, 491-502. Fünfschilling, S., Fett, T., Hoffmann, M.J., Oberacker, R., Schwind, T., Wippler, J., Böhlke, T., Özcoban, H., Schneider, G.A., Becher, P.F., Kruzic, J.J., 2011. Mechanisms of Toughening in Silicon Nitrides: The Roles of Crack Bridging and Microstructure. Acta Materialia 59, 3978–3989. Greene, R.B., Fünfschilling, S., Fett, T., Hoffmann, M.J., Kruzic, J.J., 2014. Fatigue Threshold R-curves Predict Fatigue Endurance Strength for Self-Reinforced Silicon Nitride. J. American Ceramic Soc. 97, 577–583. Hutchinson, J.W., Suo, Z., 1992. Mixed Mode Cracking in Layered Materials. Advances in Appl. Mech. 29. 63-191. Ritchie, R.O., 1999. Mechanisms of Fatigue-Crack Propagation in Ductile and Brittle Solids, Int. J. Fracture 100, 55–83. Taheri Mousavi, S.M., 2015. Dynamic Crack Propagation in a Heterogeneous Ceramic Microstructure, Insights from a Cohesive Model. PhD Thesis, École polytechnique fédérale de Lausanne. Taheri Mousavi, S.M., Richart, N., Wolff, C., Molinari, J.F., 2015. Dynamic Crack Propagation in a Heterogeneous Ceramic Microstructure, Insights from a Cohesive Model. Acta Materialia 88, 136-146. Wang, L., Snidle, R.W., Gu, L., 2000. Rolling Contact Silicon Nitride Bearing Technology: a Review of Recent Research. Wear 246(1–2), 159173. Xu, L.R., Huang, Y.Y., Rosakis, A.J., 2003. Dynamic Crack Deflection and Penetration at Interfaces in Homogeneous Materials: Experimental Studies and Model Predictions. J. Mech. Phys. Solids 51, 461 – 486.

@@ -1,0 +1,568 @@
+メインコンテンツへスキップ
+記事へスキップ
+提供:横浜国立大学
+PDFを見る
+全号をダウンロード
+セラミックス・インターナショナル
+第50巻、第3号、パートA、2024年2月1日、4332-4349ページ
+ReaxFF分子動力学シミュレーションおよびSiC表面上の水とアルコールの化学反応に関する実験的検証
+著者リンク オーバーレイパネルを開く
+陳海波 a
+,
+陳嘉鵬 a c d e
+,
+呉傑雄 b
+,
+沈娟芬 a
+,
+雲雲谷a
+,
+陶孫a
+もっと表示
+シェア
+引用
+https://doi.org/10.1016/j.ceramint.2023.11.070
+権利とコンテンツの入手
+全文アクセス
+前 号
+次
+キーワード
+SiC研磨、化学機械研磨、ReaxFF分子動力学、表面相互作用、マイクロカッティング
+1. はじめに
+シリコンカーバイド(SiC)デバイスは、優れた熱機械的特性、卓越した化学的耐腐食性、そして広帯域ギャップ半導体材料としての卓越した性能により、電気自動車、風車変圧器、航空宇宙、原子力、半導体分野で広く応用されています[[1], [2]。[3]]。導電性の6H–SiC化合物は、高温環境での放射線耐性と高出力の光電子材料として大きな応用可能性を秘めています[4]。SiC中のSi原子とC原子は、堅牢な原子間共有結合を示し、非常に高い硬度、化学的不活性性、優れた熱伝導率を生み出します[5]。これらの特性はさまざまな用途に有利です。しかし、SiCの処理において課題をもたらします[6,7]。化学機械研磨(CMP)では、SiC表面材料の除去は摩擦化学反応によって支配されると考えられています[8]。材料の表面化学特性は、本研究の重要なテーマであるトライボロジー性能にとって極めて重要であると特定されました[[9], [10], [11], [12], [13]]。
+表面に吸着された物質の物質は親水性・疎水性に影響を与え、表面のSi–O–Si結合の形成に影響を与え、摩擦反応における材料の摩擦や摩耗に影響を与えます[14,15]。表面化学種(すなわちSi–H、Si–OH、Si–O–Si)がシリコン系材料の水域環境におけるトライボロジー挙動に与える影響については多くの研究が行われています[9,[14],[15],[16],[17],[18]。[19]、[20]、[21]、[22]、[23]、[24]]。これらの研究に基づき、水分子がシリコン表面に吸着できることは広く認められています。これらの水分子の一部は解離を起こし、その結果、水素原子やOH基が形成される現象、すなわち解離性吸着現象が起こります。逆に、吸着された水分子は解離せずにそのまま残るものがあり、これを分子吸着と呼びます。シリコンを含む材料の表面はHで終端されていました。2O種、H種、OH種です。シリコン表面はH種で終点を迎えます。Si–Hは疎水性であり、Si–OH基で覆われると親水性です[25]。疎水性シリコン表面は摩擦と摩耗が高く[9]、材料の機械的除去に有利です。表面のSi–OH基と隣接するSi原子間で行われる脱水および脱水素反応の過程は、界面で凝集性のあるSi–O–Si結合の形成につながることがあります[20,21]。これらの先行研究は、界面間のSi–O–Si結合の形成がSiの表面摩耗に重要な役割を果たすことを示唆しています。それにもかかわらず、摩擦に関する他のシミュレーションでは、H原子が接触界面を横断して地下領域へ移動すること[26,27]や、OH基の形成によるO原子の摩擦面への組み込み[28]も結合破裂や材料の劣化を引き起こす可能性があることが明らかになっています。
+シリコン系材料とは異なり、SiCは化学的にはるかに不活性であり、SiC表面上で化学反応が起こるのはより困難です[5,8,29,30]。SiC表面の摩擦や摩耗については多くの研究が行われています[4,[29]、[30]、[31]、[32]、[33]、[34]、[35]、[36]、[37]。また、SiC材料の表面摩耗においても重要な役割を果たすことが明らかになりました。しかし、これらの研究は主にSiCの機械的摩耗および SiC材料の熱酸化機構に焦点を当てています。これまでのところ、SiC材料表面の化学官能基がSiC表面の酸化に与える影響についての研究はほとんど行われていません。特に非水溶液系において顕著です。
+前回の報告では、メタンオールおよびエタノール溶媒が、SiCの固定研磨研磨において水溶媒よりも材料除去速度(MRR)を向上させ、表面品質が大幅に向上することが明らかになりました[39]。本研究では、ReaxFF法を用いた分子動力学シミュレーションを用いて、溶媒と6H–SiC(001)表面間の動的反応機構を様々な温度で検証しました。SiC(001)の表面は、水、メタノール、エタノールの3つの溶媒に300 K、1000 K、2000 Kの温度で曝露され、露出したSiC(001)表面における溶媒分子の物理的・化学的相互作用を様々な温度で調査しました。結合形成と解離のモデル化に長けており、原子数が大きい反応系のシミュレーションも可能であるため[40]、ReaxFF反応力場は6H–SiC表面上の溶媒分子の吸着および解離機構を検証するのに適した手法であることが証明されています。この主張は、現地での堅牢な研究によって裏付けられています[34]。シミュレーション結果の検証のために、研磨実験、表面粗さのAFM測定、溶媒腐食後のXPS表面組成解析が実施されました。SiC表面上の水溶媒とアルコール溶媒の相互作用メカニズムは、実験およびシミュレーション結果に基づき、SiC表面での研磨スラリーの化学的性質の理解を深め、SiCウェハー製造のための効果的かつ経済的に実現可能な研磨システムの開発に関する指針を提供することを目的としました。
+2. Simulation and experimental methods
+2.1. ReaxFF reactive force field method
+This study employs molecular dynamics simulations utilizing the ReaxFF reaction force field to examine the reaction mechanism between the SiC crystal surface and the solvent. For the purpose of this investigation, the ReaxFF reactive force field and three-dimensional periodic boundary conditions were employed in X, Y, and Z directions to conduct molecular dynamics simulations in order to explore the reaction mechanisms occurring between the SiC crystal surface and solvent. Through the utilization of this multiscale simulation method, which effectively combines the MD method and the finite element method, an atomic description of the interface and a continuous description in the bulk was achieved, thereby enhancing the accessible length scales [41]. The potential function served as a key tool to describe molecular interactions, with the interatomic forces being derivable from its derivatives. Notably, the molecular dynamics (MD) modeling approach was highly suitable for exploring various aspects such as nanoscale cutting, interface interactions, crystal orientations, and cutting directions [42]. This was achieved to bridge the gap that exists between MD simulations and the physical micro/nano polishing processes while taking into consideration the macro scale of the wafer and the micro/nanoscale of the wafer surface (3D topography). In contrast to nonreactive force fields, ReaxFF employs a universal correlation between bond order and bond distance, as well as between bond energy and bond order, enabling an accurate representation of bond formation and dissociation during the molecular dynamics simulations. The ReaxFF reaction molecular dynamics simulation technique not only demonstrates its ability to elucidate the intricate interplay between water and metal/metal oxide its portrayed outcomes in academic literature [24,[43], [44], [45]], but also presents satisfactory results in simulating the interaction linking water, crystalline silicon, and amorphous silica [9,[16], [17], [18], [19]]. Moreover, this methodology can be effortlessly expanded to encompass any framework comprised of diverse substances. We adopted the ReaxFF force field [34] developed based on the Si/C/O/H/N/S force combination to deal with the relationship between Si, O, C, and H atoms to properly describe SiC and the relationship between water and alcohol.
+2.2. Computational setup
+To reveal the reaction process between the 6H–SiC surface and solvents such as H2O, CH3OH, and C2H5OH, we established a model system comprising a SiC (001) substrate and a solution of H2O (or CH3OH, C2H5OH) to simulate the aforementioned interaction. In order to achieve a sensible density, we undergo a relaxation process within the NPT ensemble. Within a relaxation period, time of approximately 50 Ps, the system's volume can attain a state of relative stability. The model build-up and calculation process is conducted as follows: the 6H–SiC unit cell consisting of 1600 Si atoms and 1600 C atoms is established through the software database, and the 001 crystal plane is exposed to form the SiC substrate orientation. Solvent molecules were added to the model cells, using the NPT ensemble with a pressure set at 1 atm. After undergoing equilibration at a temperature of 50 K for a period of 50 Ps, with the aid of a Berendsen [46] thermal bath possessing a damping constant of 10 fs, the system is brought to a minimum potential energy, thereby forming the ultimate model, illustrated in Fig. 1. The intricacies of these models are clearly outlined in Table 1.
+Download: Download high-res image (762KB)
+Download: Download full-size image
+
+Fig. 1. Side view of SiC and solvent system, which contains Si, O, C, H.
+
+Table 1. Initial configurations of solvent and SiC surfaces.
+
+3D coordinate system	H2O	CH3OH	C2H5OH
+X (Å)	30.8	30.8	30.8
+Y (Å)	61.6	61.6	61.6
+Z (Å)	30.0	35.8	44.5
+t (Å)	18.3	18.3	18.3
+α (°)	90	90	90
+β (°)	90	90	90
+γ (°)	120	120	120
+N1	597	600	598
+N (C)	200	200	200
+N (Si)	200	200	200
+(t is the thickness of the SiC substrate, α represents the angle between the X-axis and the Z-axis in the unit coordinate system, while β denotes the angle between the Y-axis and the Z-axis in the same coordinate system. γ, on the other hand, signifies the angle between the X-axis and the Y-axis. N1 represents the overall quantity of solvent molecules in system. N (C) denotes the quantity of 1 monolayer (ML) carbon atoms, while N (Si) stands for the quantity of 1 monolayer (ML) silicon atoms.)
+Table 1 illustrates the prearranged dimensions (X, Y, Z) of the cell, the SiC substrate's thickness (t), the count of Si atoms, and the number of solvent molecules. Then the applied three-dimensional periodic boundary conditions were set along the X, Y, and Z directions, the number of simulation steps at 2,000,000 and the time step to 0.25 fs, NVT ensemble, and SiC (Si/C/O/H/N/S) force field were employed to carry out the simulation process. The temperature is regulated by a Berendsen thermostat possessing a damping coefficient of 5 fs, and the overall duration of the simulation is 500 Ps. All simulation processes were completed using the AMSjobs [40,47,48] calculation software ReaxFF module, the software version number is AMSjobs 2021.106. The influence of temperature on reaction kinetics implies that maintaining the desired kinetic behavior at the initial temperature can be achieved by increasing the temperature of the reaction system. To clearly illustrate the disparity in reaction rates between the sic surface and various solvents, three distinct temperatures were chosen to manifest the contrasting chemical reactivity of solvents on the sic surface. To study the effect of temperature, three temperature conditions, 300 K, 1000 K, and 2000 K, were adopted.
+2.3. Materials and polishing experimental methods
+In the polishing experiment, a colloidal silica polishing slurry with a particle size of 120 nm and a concentration of 20 wt% (Shanghai Yingzhi Grinding Co., Ltd.) was used to pre-polish the C side and Si face of the 2-inch SiC single wafer (Jiangyin Lanke Crystal Materials Co., Ltd., China) at 0.8 psi pressure for 30 min to make the wafer surface state consistent. Deionized water, methanol (CH3OH, CAS no.67-56-1, ≥99.5 %), and ethanol (C2H5OH, CAS no.64-17-5, ≥99.7 %) were prayed onto the fixed abrasive pad to polish the C-side and Si-side of the SiC wafer, respectively. The CMP polishing investigations were executed upon an ultra-precise annular polishing apparatus (ZDHP-30, Zhibang, China) utilizing a hydrophilic self-sharpening adhesive abrasion surface measuring 300 mm in diameter, which had been furnished by Nanjing University of Aeronautics and Astronautics. Each chemical-mechanical planarization (CMP) experiment was conducted at an applied pressure of 17.2 Kpa for a duration of 10 min, with the solvent flow rate set at 20 mL per minute, and the speed of the platen and carrier set at 20 and 50 revolutions per minute, respectively (Table 2). Each CMP experiment was replicated three times. Each CMP experiment was repeated 3 times. The experiment of solvothermal corrosion of SiC was carried out in a 100 ml capacity hydrothermal vessel. SiC particles were placed in three vessels filled with 30 ml of deionized water, CH3OH, and C2H5OH solvents respectively. The filled vessels were sealed and placed in an oven at 120 °C for 120 h. The reaction products were analyzed for XPS analysis.
+
+Table 2. CMP process parameters.
+
+Process parameters	Conditions
+Substrate	C/Si -face SiC, 2-inch
+Polisher	ZDHP-30
+Pad	Self-sharpening FAP
+Pressure	17.2 KPa
+Slurry flow rate	20 ml/min
+Platen/carrier speed	20/50 r/min
+Polishing time	10 min
+The SiC wafer masses pre- and post-polishing were assessed utilizing an OHAUS precision analytical balance, boasting a degree of accuracy to within 0.01 mg. Subsequent to this, MRR values were computed via appropriate methodologies [49].:
+(1)
+MRR=Δm/ρπr2t
+Concerning the given equation, the variable Δm indicates the quantity of mass that has been lost. The symbol ρ corresponds to the specific density of SiC which has a distinct value of 3.2 g/cm3. The variable r represents the radius of the SiC substrate, while t represents the duration of the polishing process.
+An Atomic Force Microscope (AFM, Nanosurf Isostage 300, Nasser Nanotechnology Co., Ltd.) was employed to gauge the surface morphology and roughness of the meticulously polished Silicon Carbide (SiC). The evaluated test region amounted to 10 μm × 10 μm, with each specimen subject to measurement at three distinct points. The elemental composition of the solvent-etched silicon carbide wafer was scrutinized using X-ray photoelectron spectroscopy (Thermo Scientific K-Alpha) with Al Kα (hv = 1486.6 eV) radiation.
+3. Results and discussion
+3.1. Surface structures of SiC after being exposed to H2O, CH3OH, C2H5OH
+Sorensen and Voter [50] adopted the assumption of the simple harmonic transition state theory and successfully achieved temperature-accelerated reaction kinetics. The time required for ReaxFF molecular dynamics simulation can be significantly shortened by raising the simulation reaction temperature while the reaction kinetic remains undisturbed. This approach is also employed in our simulation. The simulation is conducted at 300 K, 1000 K, and 2000 K for 500 Ps. After the SiC surface is exposed to H2O, CH3OH, or C2H5OH for 500 Ps, the potential energy of the system tends to be stabilized, and the chemical reaction on the SiC surface reaches a steady state.
+Fig. 2 presents a side view of the solvent reacting with the SiC surface at 300 K, 1000 K, and 2000 K while Fig. 3 is a top view of the solvent reacting with the SiC surface at 2000 K.
+Download: Download high-res image (2MB)
+Download: Download full-size image
+
+Fig. 2. Side views of the SiC surfaces reacting with (a) H2O, (b) CH3OH, and (c) C2H5OH after 500 Ps simulations at 300 K, 1000 K, and 2000 K.
+
+Download: Download high-res image (2MB)
+Download: Download full-size image
+
+Fig. 3. Top views of the SiC surfaces after 500 Ps simulations at 2000 K.
+
+From the side view of SiC at 300 K (Fig. 2(a)), H2O molecules are preferentially adsorbed on the Si face of SiC and form a uniform monolayer, but no H2O is found on the C face at all. Both CH3OH and C2H5OH are also preferentially adsorbed on the Si face of SiC substrates with a crowded surface alcohol molecule layer. Compared to the existence of H2O, there are a few alcohol species that are adsorbed on the C face, a trace amount of indication about alcohol reactivity towards Si face of SiC. At 300 K, all three solvent molecules mainly physically adsorb on the surface of SiC.
+As the temperature rises to 1000 K, the unreactive C face of SiC at 300 K suddenly becomes very reactive with H2O as shown in Fig. 2(b), some Si–C bonds are broken, and their reaction products are seen leaving the SiC surface. Surprisingly physically adsorbed H2O layer on the Si face of SiC keeps its well-arranged structure intact. These observations provide evidence about the more reactive nature of the C face versus Si face even though H2O molecules demonstrate strong affiliation with the Si face of SiC at 300 K. For alcohol molecules at 1000 K, chemical reactions are similar to H2O, which take place on C face, but not on Si face. One does have to take notice that the adsorbed water structure on the Si face at 1000 K is almost the same as that at 300 K (Fig. 2(b)), but the alkyl groups of alcohol molecules start moving away from the SiC surface (Fig. 2(e) and (h)), driving the OH functional group in close contact with Si atoms on the surface that leads to visibly longer Si–C bond on SiC.
+At 2000 K, many more Si–C bonds on the C face of SiC are broken as shown in Fig. 2(c), and the surface Si and C atoms react with H2O to form Si–OH and C–OH species. On the Si face, surface Si–OH and Si–H species can be clearly identified though the Si atom on the Si face is still strongly bonded to the bulk SiC structure as the SiC crystal structure remains intact.
+For alcohol molecules on the C face, varieties of chemical species are accumulated on the surface, and its detailed analysis will be presented in the following paragraph. The same can be said for reaction products on the Si face. To evaluate the detailed surface species on the surface of SiC, the top view of surface species on SiC after being exposed to water and alcohols at 2000 K is presented in Fig. 3. It can be seen that the SiC surface in aqueous solvent covers with terminal H, OH, H2O. On the other hand, in addition to the terminal H, OH, a large amount of alkyl and alkoxy groups are found on the surface of SiC in alcohol solvents, and there is also a small amount of surface vinyl species.
+The top view of the C face of SiC in the H2O solvent system at 2000 K reveals that there are Si–H, Si–H2, C–H, adjacent SiOH–SiOH, Si–O–Si reaction products and physically adsorbed H2O. Those hydride Si–H, Si–H2, and C–H species are chemical reaction results of surface Si or C with H2O. Si–H is also observed when the Si wafer is polished with an aqueous polishing slurry, suggesting that the Si atoms on the surface of the Si wafer and SiC experience similar chemical reaction processes though their reactivity differ significantly from each other. Similar reaction products are found on the Si face of SiC substrates (Fig. 3) except no physically adsorbed H2O is found, consistent with the hydrophobic nature of the Si-face. What is intriguing is that no matter whether the surface is Si or C on SiC substrates, the surface terminal species after being exposed to H2O are the same, in the form of Si–OH and Si–OH2 instead of C–OH and C–H2O, an indication that Si–OH and Si–OH2 are more thermodynamically stable than C–OH and C–H2O on SiC surface under our simulated conditions. It is worth noting that the Si face is mainly H-terminated in the form of C–H (Fig. 3 blue circle mark), while the C-surface is mainly H-terminated in the form of Si–H (Fig. 3 red circle mark). We speculate that on the Si face, when the Si–C bond is broken by reacting with H–OH, Si forms thermodynamically more stable Si–OH, the resulting H will bond with C to form C–H, vice versa.
+Different from H2O solvent, in the CH3OH, C2H5OH solvent system at 2000 K, it can be seen from the top view of Si and C face of SiC that in addition to the presence of H, OH, CH3OH, C2H5OH, a variety of CnH2n+1 (n = 1, 2), –OCH3, –CH2OH, –OCH2, –CHCH2 groups can be identified on the reacted surface. Those alkyl (-CH3, –CH2CH3) and alkenyl (-CHCH2) on the C face SiC are directly bonded to surface Si atoms to form organo-silicon species.
+On the SiC surface in all three solvents, H exists in two forms on C face: monohydride C–H, Si–H and dihydride CH2, Si–H2 (Fig. 3). On the Si face, however, only monohydride species C(Si)–H can be observed. In addition, oxygen atoms can penetrate deep into the SiC substrate to break Si–C bonds and form Si–O–Si, suggesting that as reaction temperature rises, oxygen atoms diffuse deeper into the bulk of the SiC surface to form Si–O–Si species (Fig. 2).
+3.2. Surface reaction mechanisms of H2O, CH3OH, C2H5OH on SiC substrates
+3.2.1. Surface reaction of H2O on SiC substrates
+Fig. 4 graphically depicts the detailed surface reaction process of SiC with H2O solvent, where the reacting molecules are marked and highlighted to clearly track the evolution of reaction steps. The process starts with a H2O (marked as O1) molecule diffusing close to the SiC surface (Fig. 4(a)), followed by breaking the H–OH bond to form a Si–OH species with surface Si (marked as Si1) (Fig. 4(b)) and Si–H with another neighboring Si (marked as Si2). The Si (marked as Si4) adjacent to the formed Si–OH (marked as Si3, O3) may become chemically more reactive, and initiate strong chemical adsorption with an H2O molecule (marked as O2) from the liquid phase. The bond strength of one OH group in chemical-sorbed Si–HO–H is weakened, and bridges with neighboring Si–OH to form HO–Si–OH–Si intermediate as depicted in Fig. 4(d), this meta-stable intermediate is then deprotonated and transferred at the interface through the water phase Fig. 4(e), resulting in that Si–OH2 turns into Si–OH, and the adjacent Si–OH becoming Si–OH2, of the OH2 that eventually leaves the adjacent Si (Fig. 4(f)), a switching identity of two adjacent Si3 and Si4 atoms in presence of liquid water. In addition, the newly formed Si–OH is also found to be capable of hopping between two neighboring Si as illustrated in Fig. 4(g)–(i)). The OH group bonded with one Si (marked as Si5) atom first approaches the adjacent Si6 atom to form Si–OH–Si, and then transfers to the adjacent Si atom via the Si–OH–Si intermediate (Fig. 4(g)–(i)), completing a cycle of OH group hopping.
+Download: Download high-res image (866KB)
+Download: Download full-size image
+
+Fig. 4. Interaction between H2O and SiC substrate surfaces. (a) H2O close to the SiC surface, (b) H2O dissociates on the SiC surface to form Si–OH and Si–H, (c) H2O and ortho-Si-OH adsorbed on Si atoms on the SiC surface, (d) formation of OH–H–OH intermediates at the interface, (e) H2O exchanges with ortho-Si-OH, (f) newly formed H2O desorption on the SiC surface, (g) adsorbed OH close to the ortho-Si atom, (h) Si–OH–Si intermediates, (i) OH is transferred to another Si atom.
+
+3.2.2. Surface reaction of alcohols on SiC substrates
+The reaction process of CH3OH and C2H5OH on SiC surfaces are similar, therefore only the reaction path of CH3OH solvent on SiC is presented in Fig. 5. For a better visual illustration, CH3OH molecules are marked and highlighted in these processes.
+Download: Download high-res image (912KB)
+Download: Download full-size image
+
+Fig. 5. Reaction between CH3OH and SiC substrate surface: Yellow is Si atom, red is O atom, gray is C atom, and white is H atom. (a) CH3OH adsorbed on the surface of SiC, (b) CH3OH dissociated on the surface of SiC to form Si–OH and Si–CH3, (c) CH3OH and ortho-Si-OH adsorbed on Si atoms on the surface of SiC, (d) formation of OH–H–OCH3 intermediate at the interface, (e) H2O formed by OH seizure of H desorption on the surface of SiC, (f) Si adsorption of H protons in Si–OCH3, (g) Si seizure of H protons in Si–OCH3, (h) Si–OCH2–Si intermediates, (i) H is transferred to the ortho-C atom, CH2O is detached from the SiC surface. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)
+
+Different from the adsorption and dissociation of H2O on the surface of SiC, there are two reaction pathways for CH3OH on the SiC surface. One is that when CH3OH diffuses towards the SiC surface, the O atom (marked as O1) in CH3OH is selectively adsorbed on a Si (marked as Si1) atom (Fig. 5(a)) and then decomposes on the Si face of SiC to form Si–OH and an organosilicon species Si–CH3 (Fig. 5(b)), similarly to what happened with H2O. The other pathway is that when CH3OH approaches the Si face of SiC, its O atom of the CH3OH directly bonds to the surface Si to form Si–OHCH3. The adjacent Si–OH captures the H in Si–OHCH3 intermediates to generate Si–H2O and Si–OCH3, and the H2O molecule of the formed Si–H2O later desorbs and leaves from the Si face (Fig. 5(e)). Therefore, two surface silicon species, Si–CH3 and Si–OCH3, are formed when CH3OH is exposed to the SiC surface, which is consistent with the simulation results by Silvestrelli using first principles [51], in which the Si–OHCH3 is a chemically kinetically favored reaction product while –OH and –CH3 species is thermos dynamically preferred on SiC surface. Notably, both surface reaction paths are reversible. An increase in reaction temperature often leads to CH3OH reaction switching from the Si–OHCH3 to Si–CH3 formation path.
+The CH3O–Si species goes through further reaction as follows. An adjacent Si atom bonds with one H atom of the CH3–O–Si to form Si–H and CH2–O–Si surface species (Fig. 5(f)–(g)), and the CH2–O–Si goes through a Si–O–CH2–Si intermediate state (Fig. 5(h)), eventually breaking the Si–C and Si–O bonds to form a CH2O molecule to leave the surface (Fig. 5(i)).
+Ethanol CH2CH3OH displays quite a different reaction path on the SiC surface. On the Si face of SiC, CH2CH3OH reacts with surface Si to form Si–OH and Si–CH2CH3. Of the later Si–CH2CH3, an uncoordinated ortho-Si bonds to the H of the terminal C of Si–CH2CH3 on the surface (Fig. 6(a)) to form Si–H and Si–CH2CH2 intermediates (Fig. 6(b)), eventually the intermediate Si–CH2CH2 releases a CH2CH2 molecule, by breaking Si–C bond from SiC surface (Fig. 6(c)); The other is that Si–CH2CH3 captures H in Si–H (Fig. 6(d)), breaks the Si–C bond (Fig. 6(e)), and release a C2H6 molecule from the surface of silicon carbide (Fig. 6(f)). These two reaction paths facilitate the transfer process of H atoms on the SiC surface.
+Download: Download high-res image (673KB)
+Download: Download full-size image
+
+Fig. 6. The reaction paths of ethanol on SiC.
+
+3.2.3. Chemical reactivity of solvent molecules on SiC surface
+The Chemical reactivity of water and alcohols on the SiC surface are compared by plotting the number of unreacted solvent molecules, the number of OH and H adsorbed on the surface, the number of O atoms that form Si–O–Si bonds, and the number of Si atoms and the number of C atoms that are detached from the reacted SiC surface versus reaction time in Fig. 7.
+Download: Download high-res image (2MB)
+Download: Download full-size image
+
+Fig. 7. The number of (a) solvent molecules, (b) the number of SiC–OH adsorption on the surface of SiC, (c) the number of SiC–H adsorbed on the surface of SiC, (d) the number of O atoms forming Si–O–Si bonds, (e) the number of Si atoms off-surface, (f) the number of C atoms off-surface during the simulation of interaction with SiC at 1000 K and 2000 K temperatures.
+
+The unreacted CH3OH and C2H5OH molecules are much fewer than H2O under the same reaction conditions over time (Fig. 7(a)). At 1000 K, no matter whether it is alcohols or H2O, the consumption of solvent molecules seems to reach a steady state after the first 100 Ps while a rapid alcohol molecule consumption keeps about the same rate through the whole reaction process at 2000 K, suggesting that at higher reaction temperatures, reaction products can quickly leave the reaction surface to expose fresh SiC for reaction to continue, and the kinetics of reaction products leaving reaction interface can keep up with the chemical reaction rate. While at lower temperatures, the reaction kinetics may be hindered by the desorption of reaction products from the reacted SiC surface. It is worth noting that even at 2000 K, the chemical reactivity of H2O with SiC surface remains slow, and seems to stop after the first 100 Ps, similar to what happened at 1000 K to alcohol molecules, one can speculate that the reaction products of water with SiC at 2000 K are thermodynamically stable on the reacted surface, no enough kinetic driving force to regenerate the reactive surface for reaction to continue.
+The OH groups on the SiC surface present the most intriguing information as shown in Fig. 7(b). At 1000 K for the first 100 Ps, the number of surface OH decreases as CH3OH > C2H5OH > H2O. The number of OH groups slowly increases over reaction time for H2O, reaches a maximum after 100 Ps, and becomes almost constant thereafter. For C2H5OH molecules on SiC at 1000 K, the number of produced surface OH groups steadily keep increase over time. The number of surface OH for CH3OH at 1000 K rapidly increases, reaches a maximum at about 50 Ps and remains flat thereafter. At 2000 K, the number of OH on the surface goes H2O > C2H5OH > CH3OH, a complete reverse of orders compared to that at 1000 K, the highest number of surface OH for H2O at 2000 K might be best interpreted as the reason for low reactivity of H2O at 2000 K because of its high stability to remain on the SiC surface. The number of OH groups steadily increases with reaction time for H2O while the OH groups for alcohols begin to steady drop after a quick rise for the first 50 Ps, especially for methanol, a clear indication of OH consumption as reactants for the following reaction on the SiC surface as reaction time proceeds.
+The number of H species on the SiC surface shows that C2H5OH produces the most H species compared to CH3OH and H2O, and H2O generates slightly more H species than methanol. There is no oxygen in the form of Si–O–Si, and no Si and C, which break their Si–C bonds in the bulk structure of SiC and form chemical bonds with solvent molecules from the balk SiC structure, to be found on the SiC surface at 1000 K. However, the total number of surface O atoms that form Si–O–Si bonds on the SiC surface at 2000 K increases with reaction time in Fig. 7(d), and follows the order of C2H5OH > CH3OH > H2O. The surface oxygen in the form of Si–O–Si must come from oxygen-containing solvent molecules since there is no oxygen in SiC substrates, and the number of oxygens in the form of Si–O–Si can be a good indicator to judge the reactivity of solvent molecules on SiC. The same can be said about the number of Si species that demonstrate the same pattern with reaction time. There is no C in H2O molecules, so it is no surprise no C species found on the SiC surface reacted with H2O. One can hardly differentiate CH3OH from C2H5OH on the number of C at 2000 K.
+Fig. 7(a) suggests that alcohols are very reactive on the SiC surface since they are consumed the most at any temperature and reaction time, and the surface OH that is generated by methanol reacting with SiC is more reactive at 2000 K, and can be quickly consumed by the following reaction as reactants. However, ethanol generates more surface hydrides than methanol and water at 2000 K.
+3.3. Oxidation reaction mechanisms of solvents on SiC surface
+3.3.1. Oxidation of SiC surface by H2O
+The chemical reaction of SiC with solvent molecules is investigated by tracking the reaction steps of the marked Si, C, and H2O molecules as depicted in Fig. 8. After the initial stage of reactions, the detailed reaction process is shown in Fig. 8(a-i). First, 3H2O molecules react with surface SiC to form 3 Si–OH and 3 C–H as depicted in Fig. 8(a), and each Si–OH is surrounded to three C–H, so is each C–H to three Si–OH. One of the newly formed C–H leads to Si(1)-C bond breaking, loosing a C–H in the process (Fig. 2(b)). The Si(1)-OH that breaks bonding with C–H is activated thereafter, and bonds with neighboring Si(3)-OH to form OH–Si(1)–OH–Si(3) surface species (Fig. 2(c)). Si(1) follows to break its other Si–C bond, and bonds with another neighboring Si–OH surface species to form HC-Si(1)=(OH)2–Si (Fig. 8(d)). In Fig. 8(e), Si(1) breaks down its last Si–C, to form three coordinated silicon oxy-oxide species. One by one, the three OH groups in surface Si(1) (OH)3 loose their hydrogen to adjacent Si–OH to form Si–HOH and Si(1)-O-Si (Fig. 8(f-i)). The H2O desorbs from the SiC surface to restore the surface Si to its initial unreacted state, and leaves the SiC surface partially covered with Si(1)-O-Si to complete the SiC surface oxidation process. In a brief summary, H2O first reacts with the SiC surface to form surface Si–OH and C–H. Of the formed C–H, OH–Si–C bond is being activated and weakened, and eventually is broken to form Si–OH, leading to C–Si-(OH)3 formation. The formed Si-(OH)3 facilitates the last Si–C bond to be broken. All three H in Si–OH are readily taken away one by one by its adjacent Si-OHs to form Si–O–Si and Si–HOH. The later Si–HOH looses its H2O, and Si restores to its initial state.
+Download: Download high-res image (1MB)
+Download: Download full-size image
+
+Fig. 8. The oxidation mechanism on the surface of SiC in H2O. yellow is Si atom, red is O atom, gray is C atom, white is H atom (a) OH adsorbed on the surface of SiC, (b) surface Si–C bond breakage, (c) Si–OH–Si intermediate formation, (d) OH transfer on the SiC surface, (e) OH transfer to intermediate ortho, (f) OH seizure of H protons in Si–OH–OSi, (g) H2O generated by Si leaves the surface, (h) OH continues to seize H protons in Si–OH–OSi, and (i) H2O leaves the SiC surface. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)
+
+3.3.2. Oxidation of SiC surface by alcohols
+The surface species on SiC after reaction with alcohols and gas phase products are identified and presented in Fig. 9. Comparing the surface and gas phase species of methanol reaction to that of ethanol at 2000 K, there are many more surface species in absolute numbers on SiC after reacting with methanol than those with ethanol (Fig. 9(a) vs Fig. 9(c)). On the other hand, the opposite is true for the gas phase products in absolute numbers (Fig. 9(b) vs Fig. 9(d)). These numbers clearly illustrate that ethanol is much more chemically reactive than methanol on SiC. For the methanol-SiC reaction at 2000 K, the main surface species are –CH3, –CH2, –COH3 (-CH2OH) with small amounts of –OCH3 and –CH; and the gas phase products are dominated by H2O, CH4, and small amount of CH2O and CH4O2(CH3OOH). For ethanol-SiC reaction at 2000 K, the surface species are very few, mostly CH5C(CH3CH2) and CH3C(CH2–CH), and abundant amount of gas phase products are found to be C2H4, H2O and small amount of C2H4O (CH3COH) and C2H6. The dominant gas phase products in ethanol-SiC reaction point to the reactive nature of the ethanol-SiC surface that drives out any intermediates.
+Download: Download high-res image (1MB)
+Download: Download full-size image
+
+Fig. 9. The main adsorption molecule types, numbers and chemical reaction products in CH3OH and C2H5OH solvent systems at 2000 K. (a) CH3OH adsorption products on the surface of SiC, (b) small molecule products of CH3OH interaction on the surface of SiC, (c) adsorption products of C2H5OH on the surface of SiC, (d) small molecule products of C2H5OH interaction on the surface of SiC.
+
+Following the same process as used for H2O, the main oxidation reaction process of SiC by methanol is tracked and presented in Fig. 10. First as CH3OH molecule diffuses to the SiC surface, H bonds with the surface C to form C3–H (Fig. 10(a)). Indeed, one can find many more C–H species by carefully examining the unhighlighted background. The formation of C–H leads to the surface Si–C bond reconstruction, and the Si atom is pulled up and exposed to the surface (Si1, Si2, Si3, and Si4 in Fig. 10(b)). Should there be no other surface species except Si, the adjacent Si would react, in turn, with activated CH3 group of the intermediate to form Si–CH3 and Si–OH (Si2–CH3)2 in Fig. 10(c)). Should there be Si–OH near the newly formed Si–CH3 intermediate as shown Si2–CH3 and Si(1)-OH in Fig. 10(d), Si(1) in Si(1)-OH initiates bonding with H in Si–CH3 to form an intermediate Si–H2C–H–Si–OH (Fig. 10(e)). Eventually, the Si–CH3 snaps away the H from Si–OH to form Si–O–Si and CH4 (Fig. 10(f)). The CH2O substance produced in the previous reaction (Fig. 5(i)) can also form an intermediate of Si–OCH2 with exposed surface Si (Fig. 10(g)), which reacts with the neighboring Si–OH, forming Si–O–Si bonds and Si–OCH3 (Fig. 10(h)). The resulting Si–O–CH3 and a neighboring Si atom form a Si - (O–CH3) – Si intermediate (Fig. 10(i)), followed by C–O bond cleavage (Fig. 10(j)), forming Si–CH3 and Si–O–Si (Fig. 10(k)). Here, three reaction pathways lead to soft surface Si–O–Si formation after CH3OH exposure to the surface of SiC: the 1st path is Si–CH3 snaps H from the neighboring Si–OH to produce CH4 and Si–O–Si; the 2nd path is the reaction of Si–OCH2 with adjacent Si–OH to produce Si–OCH3; the 3rd path is the C–O bond fracture of Si–OCH3, forming Si–CH3 and Si–O–Si with neighboring Si. These many pathways accelerated soft Si–O–Si formation, in turn, the MRR of SiC polishing in alcohols.
+Download: Download high-res image (2MB)
+Download: Download full-size image
+
+Fig. 10. The oxidation mechanism on the surface of SiC in CH3OH.
+
+The main reaction process of ethanol with SiC follows similar reaction mechanisms, and will not be detailed in this manuscript. Combining results from Fig. 9, Fig. 10, the reaction mechanisms for methanol can be outlined as follows:
+(2)
+CnH2n+1OH + SiC → CnH2n+1-HO-SiC
+(3)
+CnH2n+1-HO-SiC + SiC → CnH2n+1-SiC + HOSiC
+(4)
+CnH2n+1-HO-SiC + OH–SiC → CnH2n+1-O-SiC + HOH–SiC
+(5)
+HOH–SiC → SiC + H2O
+(6)
+CnH2n+1-O-SiC + SiC → CnH2n-O-SiC + H–SiC
+(7)
+CnH2n-O-SiC → CnH2n-O Si=C + C
+(8)
+CnH2n-O + Si → CnH2n-O + Si=
+(9)
+Si–CH3 + Si–OH → Si–O–Si + CH4
+(10)
+Si–OCH2 + Si–OH → Si–O–Si –O–CH3
+(11)
+Si–OCH3–Si + Si → Si–O–Si + Si–CH3
+The overall reaction of chemical interaction process to produce small molecular chemical products can be summarized as shown in formula (12):
+(12)
+2 CnH2n+1OH → CnH2n+2 + H2O (n = 1, 2)
+The outlined reaction processes can clearly explain the identified surface Si-CnH2n+1,Si–O–Si, Si–O-CnH2n+1 and gas phase H2O, CnH2n, CnH2n-O species. One can speculate the following reactions to take place though not major reactions:
+(13)
+CSi-CnH2n+1+ SiC → CSi-CnH2n + H–SiC
+(14)
+CSi-CnH2n → CSi + CnH2n
+Which should be able to be found in simulated results should be enough efforts to be made. The three outlined Si–O–Si formation pathways are the most persuasive evidence to explain the accelerated MRR of SiC by alcohol solvents.
+3.4. Polishing results of SiC on FAP pad
+3.4.1. MRR, sa and surface morphology of polished SiC wafers
+SiC substrates were polished by deionized water, methanol and ethanol solvents on a fixed abrasive pad. The MRRs of SiC substrates polished are compared in Fig. 11 along with the Sa results. Under the same polishing condition, polishing solvents apply a great influence on the MRR of SiC polishing [39], and exhibit different polishing performance toward to the C face and the Si face of SiC substrates [52]. In polishing experiments carried in this research on the C face (Fig. 11(a)), C2H5OH leads to the highest MRR at 43.07 μm/h, followed by H2O at 41.96 μm/h and CH3OH at 31.35 μm/h. On the Si face on the other hand (Fig. 11(b)), C2H5OH still provides the highest MRR at 82.99 μm/h, followed by CH3OH at 49.58 μm/h and H2O at 35.19 μm/h. Basically, no matter on C or Si face, C2H5OH displays the highest MRR among all three evaluated solvents, while CH3OH performs better on material removal of Si face and H2O polishes faster on C face of SiC, consistent with previous reports that C face is being polished through a reaction mechanism different from that of Si face. It becomes clear that on C face of SiC, aqueous solvent performs equally well as alcohol solvents. On the other hand, on Si face, alcohol solvents polish much more effectively than H2O, where C2H5OH polishes 92.67 % faster than H2O, and CH3OH 58.15 %.
+Download: Download high-res image (1MB)
+Download: Download full-size image
+
+Fig. 11. The MRR and surface roughness Sa of polished SiC C face and Si face with different solvents.
+
+Surface roughness of polished SiC substrates, no matter if it is C or Si face, is always lower when polished by alcohols than by water with the highest value at about 12 nm found on C face polished by H2O. In conventional wisdom, the MRR of CMP polishing goes head-to-head with Sa of the polished surface should the polishing be very mechanically driven. With the same fixed abrasive polishing pad and no free abrasives in polishing solvents, the surface roughness is determined by the only variable, the nature of polishing fluids. For H2O, surface Sa of polished SiC is always the highest among all these solvents no matter how high or low its MRR, indicating that chemical reactivity and kinetics of H2O with SiC is lower or slower than those of alcohols. For ethanol with about 97 % MRR improvement, the surface damage Sa on SiC is actually smaller than what H2O does, therefore one has to contribute the MRR improvement to accelerated chemical reactivity by ethanol with SiC. With this pleasant surprise by using nonaqueous polishing solvents, one can achieve MRR acceleration without sacrificing the process surface quality.
+Fig. 12 presents AFM 3D surface topographies of SiC wafers after C-face polishing using different solvents. The surface of the C-plane wafer polished with DI water (Fig. 12(a)) is covered with deep scratches and pits (be noted the Y axis scale) mixing with shallow scratches, the surface polished with methanol (Fig. 12(b)) and ethanol (Fig. 12(c)) exhibit many more scratches and fewer pits while those surface scratches are much shallower. These observed surface morphologies after polishing strongly support that the surface polishing of the SiC wafer with water is more dominated by mechanical abrasion and cutting, while these actions contributions are counter-compensated when nonaqueous solvents are employed in polishing SiC, resulting in better surface quality. We speculate that: the high chemical reactivity and fast kinetics of methanol and ethanol towards to SiC surface allow a top surface softening layer to be formed on the SiC wafer, which reduces the hardness of the wafer surface, makes it easier for the abrading and cutting action between the diamond abrasive grains and the wafer surface, and more plastic removal occurs that reduces surface damage on the surface by abrasives on FAP.
+Download: Download high-res image (2MB)
+Download: Download full-size image
+
+Fig. 12. AFM and 3D topography diagrams after polishing the C face of SiC wafer with different solvents (a) H2O, (b) CH3OH, (c) C2H5OH.
+
+Fig. 13 presents the AFM images and 3D surface topography of the polished Si face of the SiC wafers. Compared to Sa of the polished C face of SiC, the relative Sa improvement on the polished Si face of SiC is smaller in absolute value. However, considering the MRR improvement (>50 %), this Sa improvement becomes more significant. It is noteworthy to mention that, in general, the Sa of the polished Si face is comparatively smaller than that of the C face, which implies that the Si face exhibits a stronger mechanical resistance towards abrasion. In addition, the surface morphology of both the Si and C faces of the wafer that has been polished using H2O demonstrates similar outcomes. On the other hand, when comparing the H2O (Fig. 13(a)) polished Si face of the SiC wafer with the Si face that has been polished using methanol and ethanol (Fig. 13(b) and (c)), it is observed that the former exhibits more surface protrusions. This is attributed to the lack of chemical interaction between the solvent and the wafer surface, the difficulty in forming a surface softening layer, and the result of rigid removal between the wafer surface and the mechanical friction of diamond abrasive grains. In addition, on the wafer surface polished by the same solvent, the H2O polished Si face (Fig. 13(a)) has better surface quality than the C face (Fig. 12(a)). However, the surface quality of the C-face of the wafer treated with alcohol polishing is better than that of the Si-side. According to Fig. 12, Fig. 13, there exists a discrepancy in the Sa data acquired via AFM and 3D morphology measurements of polished SiC wafers likely due to the development of a C–C layered structure on the C face of SiC. The lubricious effects of alcoholic solvents facilitate the wetting behavior of these graphene-like C–C layered structures resulting in lower friction coefficients and wear rates [53], thus promoting the attainment of a smoother surface. Consequently, the C face exhibits a lower Sa. The different surface quality of C-side and Si-side of wafers treated with the same solvent further indicates that solvents produce different chemical contributions in polishing C-side and Si-side.
+Download: Download high-res image (2MB)
+Download: Download full-size image
+
+Fig. 13. AFM and 3D topography diagram after polishing the Si face of SiC wafer with different solvents (a) H2O, (b)CH3OH, (c) C2H5OH.
+
+3.4.2. XPS analysis of solvent corroded SiC wafer
+To further determine the chemical reactions between different solvents (H2O, CH3OH, and C2H5OH) and the SiC wafers, and to verify the molecular dynamics simulation results between the solvents and the SiC wafers. The XPS analysis is performed on the SiC wafer surface corroded by the different solvents to identify their chemical products on the wafer surfaces, as shown in Fig. 14, respectively. The binding energy peaks of C1s, O1s, Si2s, and Si2p photoelectrons on the C-face and the Si-face of the SiC wafers corroded by H2O, CH3OH, and C2H5OH. The ratio of O element to Si element scanned from the C-face of the SiC wafer etched by C2H5OH is the highest element, and the Si face etched by CH3OH possesses the similar peak. The elemental ratios of C and Si on the surface of etched SiC wafers by the solvents were higher than the normal stoichiometric ratio of 1, which may be caused by the chemical reactions between the solvents and the SiC surfaces. The relative intensities of the O1s binding energies of the C-face and the Si-face of the SiC wafers corroded by the solvents indicate the different chemical reactivity between the solvents and the SiC surfaces.
+Download: Download high-res image (393KB)
+Download: Download full-size image
+
+Fig. 14. XPS spectrums of (a) C-Face and (b)Si-Face of the SiC wafers etched with different solvents.
+
+The fitting analysis of Si2p, C1s, and high-resolution XPS spectrum of the solvent-etched SiC wafer surface is carried out, as shown in Fig. 15, Fig. 16. It can be seen from Fig. 15 that Si2p can be divided into four main peaks: Si–C (100.1 eV), Si–C–O (100.6 eV), SiOxCy (101.5 eV), Si–O2 (102.6 eV). It can be seen from Fig. 16 that C1s can be divided into 7 main peaks: Si–C (282.4 eV), Si4C4-xO2 (283.2 eV), C–C/C–H (284.6 eV), Si4C4O4(285.1 eV), C–O (286.3 eV), CO (288.0 eV), COOH (288.9 eV).
+Download: Download high-res image (1MB)
+Download: Download full-size image
+
+Fig. 15. Si2p spectrums of solvent corroded C face and Si face of SiC substrates consisting of (a) H2O–C Face, (b) H2O–Si Face, (c) CH3OH–C Face, (d) CH3OH–Si Face, (e) C2H5OH–C Face, (f) C2H5OH–Si Face.
+
+Download: Download high-res image (1MB)
+Download: Download full-size image
+
+Fig. 16. C1s spectrums of solvent-corroded C-face and Si-face of SiC substrates consisting of (a) H2O–C Face, (b) H2O–Si Face, (c) CH3OH–C Face, (d) CH3OH–Si Face, (e) C2H5OH–C Face, (f) C2H5OH–Si Face.
+
+On the interfacial plane where the solvent interacts with silicon carbide, the relative potency of Si–C species in relation to Si–C–O species serves as a paramount index of the extent of chemical reaction taking place on the corroded surface: an increased strength of Si–C species corresponds to a diminished occurrence of chemical reaction. Based on the data presented in Fig. 15, CH3OH exhibits the least chemical reactivity while C2H5OH exhibits the highest chemical reactivity in the context of solvent-substrate interaction with the C-face of SiC substrate. This observation aligns well with the observed removal rate of the C-face during polishing. Conversely, in the case of solvent interaction with the Si-face of the SiC substrate, H2O demonstrates the lowest chemical reactivity while C2H5OH exhibits the highest chemical reactivity. This result is also in agreement with the observed material removal rate of the Si-face during the three solvent polishing experiments. In summary, the XPS analysis results of three solvents corroding the C-face and the Si-face are consistent with the material removal rates of the SiC substrates, which indicates that the chemical reaction between the SiC surface and the solvent leads to the differences in material removal of the SiC substrates polished by the different solvents.
+The chemical state of C atoms was confirmed by analyzing the SiC surface corroded by three solvents. Four peaks around 282.4 eV, 283.2 eV, 284.6 eV, and 285.1 eV in Fig. 16 were fitted as the C1s peaks of the SiC substrates etched with different solvents. They correspond to the binding energies to Si–C, Si4C4-xO2, C–C/C–H, and Si4C4O4. The peaks are close 283.2 eV, 284.6 eV, and 285.1 eV due to the formation of SiC oxides on the SiC surface, which is the oxidation of the SiC surface via solvent corrosion. Careful observation shows that the peak intensity of this part of silicon carbide at 283.2–285.1 eV is sequentially enhanced from the C1s spectrum where SiC is corroded by H2O to CH3OH to C2H5OH. The interaction strength between the solvent on the Si-face and the C-face is C2H5OH > CH3OH > H2O, which is consistent with the results in the calculation simulation. C–O bonds were also observed around 286.3 eV when three solvents were used to polish SiC, suggesting that the chemical attack on the SiC surface comes from the polar –OH groups in the solvents. This is consistent with the results of the transfer of –OH on the SiC surface in the simulations of the previous two sections. These results demonstrate the accuracy of the solvent-SiC surface interaction mechanism in the computational simulation.
+Table 3 lists the relative percentages of surface species and chemical components on the C-face and Si-face of the SiC substrates, respectively, after interacting with the solvent. In the Si2p spectrum observed on the C face, it is noted that the relative atomic abundance of Si–C on the surface of SiC subjected to ethanol corrosion is the least, whereas the relative atomic concentration of Si–C on the SiC surface corroded by methanol demonstrates the highest values. The Si–C atomic content in the C1s spectrum of the SiC substrate's C face is comparatively minimal in ethanol. The diminished concentration of Si–C substantiates ethanol's superior chemical reactivity. This observation aligns with the enhanced MRR achieved by polishing the SiC substrate's C face using ethanol, as well as the outcomes from simulation calculations. Additionally, analyses of the Si2p and C1s spectra of the SiC surface etched with an alcohol solvent unveiled a higher presence of oxidized species (Si–O2, Si4C4-xO2, Si4C4O4), thereby further confirming the alcohol's capacity for extensive oxidation of the SiC surface as compared to water. The relative intensity of Si4C4O4 in the C1s spectrum of the C-face and Si-face of solvent-etched SiC corresponds to the MRR of SiC in polishing, reflecting the chemical contribution of solvation to the CMP processes.
+
+Table 3. Relative percentage content of chemical composition of the C-face of solvent-corroded SiC wafer (%).
+
+Element	Chemical state	H2O(C)	CH3OH(C)	C2H5OH(C)	H2O(Si)	CH3OH(Si)	C2H5OH(Si)
+Si2p	Si–C	49.09	59.85	30.32	35.52	25.58	28.68
+Si–C–O	46.69	27.64	44.17	53.73	48.20	57.71
+SiOxCy	–	–	15.24	–	–	–
+Si–O2	4.22	12.51	10.27	10.57	26.22	13.61
+C1s	Si–C	32.02	31.16	20.25	27.50	17.83	17.79
+Si4C4-xO2	20.19	34.71	20.55	18.71	26.29	15.79
+C–C/C–H	16.07	15.19	19.87	18.27	20.98	19.84
+Si4C4O4	23.76	12.45	27.06	17.70	21.03	31.05
+C–O	5.89	5.81	7.36	14.27	7.06	10.91
+CO	2.07	0.68	4.92	3.54	5.46	1.68
+COOR	–	–	–	–	1.35	2.95
+4. Conclusions
+In this paper, the reaction process of H2O, CH3OH, C2H5OH solvent molecules on SiC surface is studied by ReaxFF molecular dynamics simulation and polishing experiments. The simulation results show that the solvent molecule undergoes molecular adsorption and dissociative adsorption on the SiC surface, resulting in the surface covered with HO, OH, H, alkyl, alkoxy, and vinyl groups that bond to surface Si or C. The groups adsorbed on the surface of SiC can lead to the Si–C bond breaking. As the temperature rises, the surface reaction speeds up. The oxidation of SiC surface in water and alcohol solvent is divided into three stages: the first stage, the solvent molecules dissociate on the SiC surface and occupy the uncoordinated Si atoms and C atoms on the surface; the second stage, the solvent molecules dissociate the groups adsorbed on the surface of SiC, reduce the surface energy and promote the breaking of Si–C bonds; in the third stage, the migration of OH and H on the SiC surface induces the formation of Si–O–Si bonds, which promotes the continuous oxidation of the SiC surface. The results of solvent polishing experiment, atomic force microscope observation and solvent corrosion XPS experiment on SiC surface all support that the chemical activity of alcohols and water on the SiC surface differs significantly, especially on the Si-face of SiC, C2H5OH > CH3OH > H2O, where alcohols demonstrate higher chemical reactivity towards to SiC, validating results derived from ReaxFF simulation. Through these studies, we reveal in detail the mechanism of non-aqueous solvent enhanced material removal rate, and provide options for the use of novel non-aqueous polishing slurries in the third-generation semiconductor of silicon carbide polishing process.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+Acknowledgment
+The authors appreciate financial supports from National Natural Science Foundation of China (Grant No. 52075318), Jiangsu Key Laboratory of Precision and Micro-Manufacturing Technology, Open Project Funding of State Key Laboratory of Silicon and Advanced Semiconductor Materials (SKL2023-06), and Open Project Funding of State Key Laboratory for High Performance Tools (GXNGJSKL-2023).
+参考文献
+[1]
+P. ジョウ、T. サン、X。 シ、J. 李、Y。 朱、Z。 ワン
+ナノ研磨プロセス中の除去機構に影響を与えるSiCの空洞欠陥の原子規模研究
+トリボル。国際誌、145巻(2020年)、p. 106136、10.1016/j.triboint.2019.106136
+Google Scholarでの閲覧
+[2]
+K. 山村、T. 滝口、M. 上田 H. デン、A.N. 服部、ノースカロライナ州 ゼットツ
+単結晶SiCのプラズマ支援研磨による原子的に平坦なひずみのない表面を得る方法
+CIRP Annals, 60 (2011), pp. 571-574, 10.1016/j.cirp.2011.03.072
+Google Scholarでの閲覧
+[3]
+T. Kimoto
+Material science and device physics in SiC technology for high-voltage power devices
+Jpn. J. Appl. Phys., 54 (2015), Article 040103, 10.7567/jjap.54.040103
+View in ScopusGoogle Scholar
+[4]
+P. Zhou, X. Shi, J. Li, T. Sun, Y. Zhu, Z. Wang, J. Chen
+Molecular dynamics simulation of SiC removal mechanism in a fixed abrasive polishing process
+Ceram. Int., 45 (2019), pp. 14614-14624, 10.1016/j.ceramint.2019.04.180
+View PDF
+View articleView in ScopusGoogle Scholar
+[5]
+V.-T. Nguyen, T.-H. Fang
+Material removal and wear mechanism in abrasive polishing of SiO2/SiC using molecular dynamics
+Ceram. Int., 46 (2020), pp. 21578-21595, 10.1016/j.ceramint.2020.05.263
+View PDF
+View articleView in ScopusGoogle Scholar
+[6]
+B. Zhu, D. Zhao, H. Zhao
+A study of deformation behavior and phase transformation in 4H-SiC during nanoindentation process via molecular dynamics simulation
+Ceram. Int., 45 (2019), pp. 5150-5157, 10.1016/j.ceramint.2018.10.261
+View PDF
+View articleView in ScopusGoogle Scholar
+[7]
+Z. Tian, X. Xu, F. Jiang, J. Lu, Q. Luo, J. Lin
+Study on nanomechanical properties of 4H-SiC and 6H-SiC by molecular dynamics simulations
+Ceram. Int., 45 (2019), pp. 21998-22006, 10.1016/j.ceramint.2019.07.214
+View PDF
+View articleView in ScopusGoogle Scholar
+[8]
+Y.C. Lin, C.H. Kao
+A study on surface polishing of SiC with a tribochemical reaction mechanism
+Int. J. Adv. Des. Manuf. Technol., 25 (2004), pp. 33-40, 10.1007/s00170-003-1873-x
+View in ScopusGoogle Scholar
+[9]
+M. Wang, F. Duan, X. Mu
+Effect of surface silanol groups on friction and wear between amorphous silica surfaces
+Langmuir, 35 (2019), pp. 5463-5470, 10.1021/acs.langmuir.8b04291
+View in ScopusGoogle Scholar
+[10]
+J. Yu, L. Qian, B. Yu, Z. Zhou
+Effect of surface hydrophilicity on the nanofretting behavior of Si(100) in atmosphere and vacuum
+J. Appl. Phys., 108 (2010), 10.1063/1.3463306
+Google Scholar
+[11]
+P. Zhang, C. Chen, C. Xiao, L. Chen, L. Jiang, L. Qian
+Effects of surface chemical groups and environmental media on tribochemical running-in behaviors of silicon surface
+Tribol. Int., 128 (2018), pp. 174-180, 10.1016/j.triboint.2018.07.032
+View PDF
+View articleView in ScopusGoogle Scholar
+[12]
+E. Taran, Y. Kanda, I.U. Vakarelski, K. Higashitani
+Nonlinear friction characteristics between silica surfaces in high pH solution
+J. Colloid Interface Sci., 307 (2007), pp. 425-432, 10.1016/j.jcis.2006.12.036
+View PDF
+View articleView in ScopusGoogle Scholar
+[13]
+L. Chen, C. Xiao, B. Yu, S.H. Kim, L. Qian
+What governs friction of silicon oxide in humid environment: contact area between solids, water meniscus around the contact, or water layer structure?
+Langmuir, 33 (2017), pp. 9673-9679, 10.1021/acs.langmuir.7b02491
+View in ScopusGoogle Scholar
+[14]
+X. Wang, S.H. Kim, C. Chen, L. Chen, H. He, L. Qian
+Humidity dependence of tribochemical wear of monocrystalline silicon
+ACS Appl. Mater. Interfaces, 7 (2015), pp. 14785-14792, 10.1021/acsami.5b03043
+View in ScopusGoogle Scholar
+[15]
+C. Chen, C. Xiao, X. Wang, P. Zhang, L. Chen, Y. Qi, L. Qian
+Role of water in the tribochemical removal of bare silicon
+Appl. Surf. Sci., 390 (2016), pp. 696-702, 10.1016/j.apsusc.2016.08.175
+View PDF
+View articleView in ScopusGoogle Scholar
+[16]
+Z. Liu, J. Gong, C. Xiao, P. Shi, S.H. Kim, L. Chen, L. Qian
+Temperature-dependent mechanochemical wear of silicon in water: the role of Si-OH surfacial groups
+Langmuir, 35 (2019), pp. 7735-7743, 10.1021/acs.langmuir.9b00790
+View in ScopusGoogle Scholar
+[17]
+M. Wang, F. Duan
+Atomic-level material removal mechanisms of Si (110) chemical mechanical polishing: insights from ReaxFF reactive molecular dynamics simulations
+Langmuir, 37 (2021), pp. 2161-2169, 10.1021/acs.langmuir.0c03416
+View in ScopusGoogle Scholar
+[18]
+J. Yeon, A.C. van Duin, S.H. Kim
+Effects of water on tribochemical wear of silicon oxide interface: molecular dynamics (MD) study with reactive force field (ReaxFF)
+Langmuir, 32 (2016), pp. 1018-1026, 10.1021/acs.langmuir.5b04062
+View in ScopusGoogle Scholar
+[19]
+J. Wen, T. Ma, W. Zhang, A.C. van Duin, X. Lu
+Surface Orientation and Temperature effects on the interaction of silicon with water: molecular dynamics simulations using ReaxFF reactive force field
+J. Phys. Chem. A, 121 (2017), pp. 587-594, 10.1021/acs.jpca.6b11310
+View in ScopusGoogle Scholar
+[20]
+J. Wen, T. Ma, W. Zhang, A.C.T. van Duin, X. Lu
+Atomistic mechanisms of Si chemical mechanical polishing in aqueous H2O2: ReaxFF reactive molecular dynamics simulations
+Comput. Mater. Sci., 131 (2017), pp. 230-238, 10.1016/j.commatsci.2017.02.005
+View PDF
+View articleView in ScopusGoogle Scholar
+[21]
+J. Wen, T. Ma, W. Zhang, G. Psofogiannakis, A.C.T. van Duin, L. Chen, L. Qian, Y. Hu, X. Lu
+Atomic insight into tribochemical wear mechanism of silicon at the Si/SiO2 interface in aqueous environment: molecular dynamics simulations using ReaxFF reactive force field
+Appl. Surf. Sci., 390 (2016), pp. 216-223, 10.1016/j.apsusc.2016.08.082
+View PDF
+View articleView in ScopusGoogle Scholar
+[22]
+L. Chen, J. Wen, P. Zhang, B. Yu, C. Chen, T. Ma, X. Lu, S.H. Kim, L. Qian
+Nanomanufacturing of silicon surface with a single atomic layer precision via mechanochemical reactions
+Nat. Commun., 9 (2018), p. 1542, 10.1038/s41467-018-03930-5
+View in ScopusGoogle Scholar
+[23]
+L. Chen, H. He, X. Wang, S.H. Kim, L. Qian
+Tribology of Si/SiO2 in humid air: transition from severe chemical wear to wearless behavior at nanoscale
+Langmuir, 31 (2015), pp. 149-156, 10.1021/la504333j
+Google Scholar
+[24]
+J.C.A. Fogarty, H. M, A.Y. Grama, A.C.T. van Duin, S.A. Pandit
+A reactive molecular dynamics simulation of the silica-water interface
+J. Chem. Phys., 1329 (17) (2010), p. 174704, 10.1063/1.3407433
+View in ScopusGoogle Scholar
+[25]
+S.T.C. Patton, W. D, K.C. Eapen, J.S. abinski
+Effect of surface chemistry on the tribological performance of a MEMS electrostatic lateral output motor
+Tribol. Lett., 9 (2001), pp. 199-209, 10.1023/a:1018817123441
+View in ScopusGoogle Scholar
+[26]
+Y. Wang, J. Xu, Y. Ootani, S. Bai, Y. Higuchi, N. Ozawa, K. Adachi, J.M. Martin, M. Kubo
+Tight-binding quantum chemical molecular dynamics study on the friction and wear processes of diamond-like carbon coatings: effect of tensile stress
+ACS Appl. Mater. Interfaces, 9 (2017), pp. 34396-34404, 10.1021/acsami.7b07551
+View in ScopusGoogle Scholar
+[27]
+D.C. Yue, T.B. Ma, Y.Z. Hu, J. Yeon, A.C. van Duin, H. Wang, J. Luo
+Tribochemical mechanism of amorphous silica asperities in aqueous environment: a reactive molecular dynamics study
+Langmuir, 31 (2015), pp. 1429-1436, 10.1021/la5042663
+View in ScopusGoogle Scholar
+[28]
+K. Kawaguchi, H. Ito, T. Kuwahara, Y. Higuchi, N. Ozawa, M. Kubo
+Atomistic mechanisms of chemical mechanical polishing of a Cu surface in aqueous H2O2: tight-binding quantum chemical molecular dynamics simulations
+ACS Appl. Mater. Interfaces, 8 (2016), pp. 11830-11841, 10.1021/acsami.5b11910
+View in ScopusGoogle Scholar
+[29]
+V.-T. Nguyen, T.-H. Fang
+Material removal and interactions between an abrasive and a SiC substrate: a molecular dynamics simulation study
+Ceram. Int., 46 (2020), pp. 5623-5633, 10.1016/j.ceramint.2019.11.006
+View PDF
+View articleView in ScopusGoogle Scholar
+[30]
+Q. Luo, J. Lu, Z. Tian, F. Jiang
+Controllable material removal behavior of 6H-SiC wafer in nanoscale polishing
+Appl. Surf. Sci., 562 (2021), 10.1016/j.apsusc.2021.150219
+Google Scholar
+[31]
+Y. Sun, Y.-J. Liu, F. Xu
+ReaxFF molecular dynamics study on oxidation behavior of 3C-SiC: polar face effects
+Chin. Phys. B, 24 (2015), 10.1088/1674-1056/24/9/096203
+Google Scholar
+[32]
+Z. Chen, Z. Sun, X. Chen, Y. Wu, X. Niu, Y. Song
+ReaxFF reactive molecular dynamics study on oxidation behavior of 3C-SiC in H2O and O2
+Comput. Mater. Sci., 195 (2021), 10.1016/j.commatsci.2021.110475
+Google Scholar
+[33]
+X. Chen, Z. Sun, Z. Chen, Y. Song, X. Niu
+ReaxFF molecular dynamics simulation of oxidation behavior of 3C-SiC in O2 and CO2
+Comput. Mater. Sci., 191 (2021), 10.1016/j.commatsci.2021.110341
+Google Scholar
+[34]
+D.A. Newsome, D. Sengupta, H. Foroutan, M.F. Russo, A.C.T. van Duin
+Oxidation of silicon carbide by O2 and H2O: a ReaxFF reactive molecular dynamics study, Part I
+J. Phys. Chem. C, 116 (2012), pp. 16111-16121, 10.1021/jp306391p
+View in ScopusGoogle Scholar
+[35]
+V. Simonka, A. Hossinger, J. Weinbub, S. Selberherr
+ReaxFF reactive molecular dynamics study of orientation dependence of initial silicon carbide oxidation
+J. Phys. Chem. A, 121 (2017), pp. 8791-8798, 10.1021/acs.jpca.7b08983
+View in ScopusGoogle Scholar
+[36]
+V.-T. Nguyen, T.-H. Fang
+Abrasive mechanisms and interfacial mechanics of amorphous silicon carbide thin films in chemical-mechanical planarization
+J. Alloys Compd. (2020), p. 845, 10.1016/j.jallcom.2020.156100
+Google Scholar
+[37]
+J. Xi, C. Liu, D. Morgan, I. Szlufarska
+Deciphering water-solid reactions during hydrothermal corrosion of SiC
+Acta Mater., 209 (2021), 10.1016/j.actamat.2021.116803
+Google Scholar
+[38]
+T. Yamasaki, N. Tajima, T. Kaneko, N. Nishikawa, J. Nara, T. Schimizu, K. Kato, T. Ohno
+4H-SiC surface structures and oxidation mechanism revealed by using first-principles and classical molecular dynamics simulations
+Mater. Sci. Forum, 858 (2016), pp. 429-432
+https://doi.org/10.4028/www.scientific.net/MSF.858.429
+View in ScopusGoogle Scholar
+[39]
+H. Wang, F. Niu, J. Chen, Z. Jiang, W. Wang, Z. Bu, X. Wang, J. Li, Y. Zhu, T. Sun
+High efficiency polishing of silicon carbide by applying reactive non-aqueous fluids to fixed abrasive pads
+Ceram. Int., 48 (2022), pp. 7273-7282, 10.1016/j.ceramint.2021.11.288
+View PDF
+View articleView in ScopusGoogle Scholar
+[40]
+D.S. Van Duin A C T, F. Lorant, et al.
+ReaxFF: a reactive force field for hydrocarbons
+J. Phys. Chem., 105 (41) (2001), pp. 9396-9409, 10.1021/jp004368u
+Google Scholar
+[41]
+X. Sun, K. Cheng
+Multi-scale simulation of the nano-metric cutting process
+Int. J. Adv. Des. Manuf. Technol., 47 (2009), pp. 891-901, 10.1007/s00170-009-2125-5
+Google Scholar
+[42]
+D. Huo
+Micro-cutting: Fundamentals and Applications
+J. Wiley, Sons (2013)
+Google Scholar
+[43]
+M.F. Russo, R. Li, M. Mench, A.C.T. van Duin
+Molecular dynamic simulation of aluminum-water reactions using the ReaxFF reactive force field
+Int. J. Hydrogen Energy, 36 (2011), pp. 5828-5835, 10.1063/1.3407433
+View PDF
+View articleView in ScopusGoogle Scholar
+[44]
+M. Raju, S.-Y. Kim, A.C.T. van Duin, K.A. Fichthorn
+ReaxFF reactive force field study of the dissociation of water on titania surfaces
+J. Phys. Chem. C, 117 (2013), pp. 10558-10572, 10.1016/j.ijhydene.2011.02.035
+View in ScopusGoogle Scholar
+[45]
+O. Assowe, O. Politano, V. Vignal, P. Arnoux, B. Diawara, O. Verners, A.C. van Duin
+Reactive molecular dynamics of the initial oxidation stages of Ni (111) in pure water: effect of an applied electric field
+J. Phys. Chem. A, 116 (2012), pp. 11796-11805, 10.1021/jp402139h
+View in ScopusGoogle Scholar
+[46]
+H.J.C. Berendsen, J.P.M. Postma, W.F. van Gunsteren, A. DiNola, J.R. Haak
+Molecular dynamics with coupling to an external bath
+J. Chem. Phys., 81 (1984), pp. 3684-3690, 10.1021/jp306932a
+View in ScopusGoogle Scholar
+[47]
+Chenoweth, A.C.T. v Duin, W.A. Goddard
+ReaxFF reactive force field for molecular dynamics simulations of hydrocarbon oxidation
+J. Phys. Chem., 112 (2008), pp. 1010-1053, 10.1063/1.448118
+Google Scholar
+[48]
+A.C.T.v. Duin, W.A. Goddard, M.M. Islam, H.v. Schoot, T. Trnka, A.L. Yakovlev, ReaxFF 202*, SCM, Theoretical Chemistry, Vrije universiteit, Amsterdam, The Netherlands, http://www.scm.com.
+Google Scholar
+[49]
+Y. Zhou, G. Pan, C. Zou, L. Wang
+Chemical mechanical polishing (CMP) of SiC wafer using photo-catalyst incorporated pad
+ECS J. Solid State Sci. Technol., 6 (2017), pp. P603-P608, 10.1149/2.0061709jss
+View in ScopusGoogle Scholar
+[50]
+M.R. So/rensen, A.F. Voter
+Temperature-accelerated dynamics for simulation of infrequent events
+J. Chem. Phys., 112 (2000), pp. 9599-9606, 10.1063/1.481576
+View in ScopusGoogle Scholar
+[51]
+P.L. Silvestrelli
+Adsorption of ethanol on Si (100) from first principles calculations
+Surf. Sci., 552 (2004), pp. 17-26, 10.1016/j.susc.2004.01.034
+View PDF
+View articleView in ScopusGoogle Scholar
+[52]
+J. Shen, H. Chen, J. Chen, L. Lin, Y. Gu, Z. Jiang, J. Li, T. Sun
+Mechanistic difference between Si-face and C-face polishing of 4H-SiC substrates in aqueous and non-aqueous slurries
+Ceram. Int., 49 (2023), pp. 7274-7283, 10.1016/j.ceramint.2022.10.193
+View PDF
+View articleView in ScopusGoogle Scholar
+[53]
+Z. Yuan, Y. He, K. Cheng, Z. Duan, L. Wang
+Effect of self-developed graphene lubricant on tribological behaviour of silicon carbide/silicon nitride interface
+Ceram. Int., 45 (2019), pp. 10211-10222, 10.1016/j.ceramint.2019.02.073
+View PDF
+View articleView in ScopusGoogle Scholar
+引用元(24)
+半導体材料加工における分子動力学シミュレーション:包括的なレビュー
+2025年、国際計測連合計測ジャーナル
+引用抜粋:
+
+半導体材料のナノファブリケーション機構を理解することは極めて重要です。分子動力学(MD)シミュレーションは、原子または分子レベルでの分子系の運動や相互作用を調査するために用いられる強力な計算ツール[17]です。図2に示すように、LAMMPSはMDシミュレーションを行うための主要なシミュレーションツールです。
+
+ショーアブトラクション
+Atomistic understanding on the surface formation mechanism of nanoscale scratches along different crystal orientations of silicon carbide
+2025, Applied Surface Science
+Show abstract
+Investigation into atomistic reaction between abrasive and Co in H2O through ReaxFF MD and XPS
+2025, Tribology International
+Citation Excerpt :
+
+Currently, there is a paucity of research employing ReaxFF MD to analyze the CMP process. ReaxFF MD has predominantly been used in the CMP of non-metallic materials [18–24], such as diamond (C), SiO2, SiC, and molecular polymers. Studies on metals have been limited to Cu and Fe [25–27] and rarely applied to Co CMP.
+
+Show abstract
+Molecular dynamics investigation of nano-polishing on silicon carbide substrate with rough topography using a rotating diamond abrasive
+2024, Materials Today Communications
+Show abstract
+Scratching properties of 4H–SiC single crystal after oxidation under different conditions
+2024, Wear
+Citation Excerpt :
+
+Furthermore, Shen et al. [5] concluded that the reaction between H2O and SiC mainly forms SiOx. Chen et al. [38] revealed the dynamic reaction process of the solvent and SiC. However, although MD simulation can analyse the chemical reaction and mechanical removal of SiC surface by scratching at the atomic level, the results may still deviate from the actual scenario due to the size effect and simplified models.
+
+Show abstract
+Temperature-Dependent Oxidation Behavior of Silicon Carbide Surface: Reactive Molecular Dynamics Simulations
+2024, ACS Applied Materials and Interfaces
+View all citing articles on Scopus
+要旨を見る
+© 2023年 エルゼビア社とテクナグループ社無断転載を禁じます。
+ScienceDirectについて
+リモートアクセス
+連絡先とサポート
+利用規約
+プライバシーポリシー
+Cookie 設定
+
+このサイトのすべてのコンテンツ:2026 Elsevier B.V.、そのライセンサーおよび寄稿者に帰属©します。テキストおよびデータマイニング、AIトレーニング、その他類似技術に関する権利は一切を保持します。すべてのオープンアクセスコンテンツには、関連するライセンス条件が適用されます。

@@ -1,0 +1,71 @@
+
+View Online
+
+Export Citation
+LETTER | NOVEMBER 15 1991
+Atomic‐level stress in an inhomogeneous system
+Kin S. Cheung; Sidney Yip
+J. Appl. Phys. 70, 5688–5690 (1991) https://doi.org/10.1063/1.350186
+29 June 2026 03:09:31
+
+
+COMMUNICATIONS
+Atomic-level stress in an inhomogeneous system
+Kin S. Cheung and Sidney Yip
+Department of Nuclear Engineering, Massachusetts Institute of Technology. Cambridge,
+Massachusetts 02139
+(Received 5 February 1991; accepted for publication 20 August 1991)
+The distribution of local stress in an atomic system can be calculated from its mechanical definition. While this leads, for a homogeneous system, to an expression equivalent to that derived from the virial theorem (thermodynamic definition), when local inhomogeneities are present the equivalence can be demonstrated only in the sense of a volume average which effectively eliminates the inhomogeneities. Atomistic simulation results are presented to show that for a relaxed crystal with a planar free surface, the normal stress on each atomic plane parallel to the surface, when calculated according to the mechanical definition, vanishes uniformly as expected, whereas if the virial expression were applied the resulting stress distribution shows unphysical oscillations in the surface region.
+The macroscopic description of forces acting on a body generally begins with the consideration of stress. At the atomic level one can visualize the determination of local stress through the intermolecular forces arising from interactions among neighboring atoms. For the stress at a given atom, one can set up an element of volume surrounding the atom and calculate the force across each face of the element. This may be called the mechanical approach; conceptually it is a straightforward procedure, though computationally the calculations may be quite tedious. From the virial theorem of Clausius’ an expression for the tensor Q describing the state of stress of a system of particles can be derived which is widely used to calculate the system pressure.’ Because Q can be formally written as a sum over the atoms, each individual term in 0 has been
+taken to describe the local stress at an atom.3 Since 4 also can be obtained as the first-order change of the energy with respect to the application of a small, homogeneous strain,’ this may be considered a thermodynamic approach to the formulation of atomic-level stress. With the exception of a study by Tsai5 and a derivation by Lutsko” there appears to be little discussion of the distinction between the mechanical and the virial formulations. In this Communication we consider the determination of the local stress distribution in a system with atomic-level inhomogeneities. By examining highly idealized models we show that the two formulations give different results in the region of inhomogeneities; however, if the distributions are volume averaged over this region, then the formulations are equivalent. By considering molecular dynamics simulations on a relaxed crystal with a free surface we also show that in the surface region the normal stress distribution, on an atomic level, behaves properly when the mechanical delinition is used but not when the virial expression is used. For an N-particle system the virial stress, derived from the virial theorem, is of the formls2
+m-+; 2 ml&+;c 1%
+I L,Ii 1
+- y-g‘c&Li2/(1)
+where n is the system volume, llZi andzi are the mass and velocity of particle i, cp is the interatomic potential, Q = 2 - 3, and indices (r: and fi denote Cartesian components. Equation ( 1) can be decomposed by writing
+rIa& c w,n-$
+1
+with
+up $=i m&&j + i C ’ la4,
+(1
+- ; z rc,rpjr=r, (3)
+i
+and Xtii = a. Equation (3 ) has been used as the definition of the atomic-level stress d$ associated with atom i, with wi taken to be an appropriate volume.3 Also Eq. (2) can be obtained by considering the change in the energy density under the application of a small, homogeneous strain4 One can imagine determining the local (atomic scale) stress in terms of an explicit accounting of all the forces acting across an appropriate surface (the Gibbs dividing surface7> at the position in question, or equivalently, the time rate of change of momentum flux across the surface.’ For a surface A with its normal n^along a direction fl, this change generally consists of two parts, a kinetic contribution associated with the flow of particles across the surface and a configurational contribution associated with the interatomic forces acting between particles on opposite sides of the surface. The stress tensor based on this physical consideration can be written as
+5666 J. Appl. Phys. 70 (lo), 15 November 1991 OOZI-8979/91/105688-03$03.00 @ 1991 American Institute of Physics 5688
+29 June 2026 03:09:31
+
+
+--i b2 I
+W e-e-=+-e-i P-b1
+FIG. 1. Linear chain models of identical atoms for comparing virial and physical stress expressions.
++7 (-$) @-;pyJ
+(4)
+where index s denotes atom pairs which interact across the plane in question, and* indicates a unit vector. In the first term the summation extends over only those particles crossing the plane during time At. In then second term ( - dqddr) (r*@ is the component ofJforce in direction a on a surface with normal in direction p, while the symmetrizing factor (~$)/I~81 ensures the stress is independent of whether rij or rji is chosen. Comparing EQ. (4) with Eq. (3) it is clear that 1, and rep are in general not the same quantity. Notice, for example, the summation over j in Eq. (3) extends over all the neighbors of i within the range of the potential, whereas the summation over s extends over only pairs of particles interacting across a particular plane. It is, however, instructive to ask under what conditions do Eqs. (3) and (4) give the same results. Following Tsai5 we consider the simple models of one-dimensional chains of stationary atoms, illustrated in Fig. 1, for which the virial and the mechanical stresses can be written down by inspection. The simplest case is a linear chain with uniform interatomic spacing b and interactions extending out to second nearest neighbors. In this case the virial stress at atom site i is ?i = [f(i - 2,i) + f(i,i + 2) + { f(i - 1,i) + f(i,i + 1)1/21/A, where wi = bA, with A being the area of the plane separating i and its nearest neighbors, and f( i, j) = ( - &p/6+) with r = 1 ~~I. For the mechan
+- I.Ol. I I _l------l
+-20 -10 00 IO 20
+ZtAl
+FIG. 2. Normal stress distributions in a three-dimensional bee crystal with a free surface at both ends, virial and physical stress results are indicated by open and closed circles, respectively. B is the lattice constant of iron, B = 2.87 A.
+ical stress on the planes to the left and right of atom i, one has a’( - ) = [f(i - 1,i) + f(i - 2,i) + f(i - 1,i + 1)1/A, and A’( + ) = [f(i,i + 1) + f(i - 1,i f 1) + f(i,i + 2)1/A, respectively. Thus ?r’, A’( - ), and A’( + ) are all different unless the system were homogeneous so that f(i, j) depends only on i -j, then all three quantities are equal, and the stress is uniform along the chain. In the case of a chain of dimers with two interatomic spacings b, and b2, shown in Fig. 1(b), the virial stress is
+rz= hf2 + btfl + 2Cf-q+ bdfd/A(bl + &.I, where
+fi, f2, fi2 denote ( - &p/dr) evaluated at r = b,, bz, and bl + ba respectively, and we have set Wi = A (bl + b2). For the mechanical stress, the intradimer component on a plane between the atoms forming the dimer is &tra = ( fl + 2f12)/A, while the interdimer component on a plane between adjacent dimers is /2inter= ( f2 + 2f I2)/A. Thus in a system with local structure the virial stress is the same as the volume average of the mechanical stresses over the local region. We next consider an interface represented by the end point of a chain, and assume that as a result of surface relaxation the end atom (atom 1) and its nearest neighbor (atom 2) are separated by a distance b,, whereas all other interatomic separations are at distance b [see Fig. 1(c)l. In this case v‘: i>4, is uniform and equal to the mechanical stress on the plane between atoms i and i + 1, i>3. This is to be expected in view of our first model. The region of inhomogeneity is now composed of atoms 1,2, and 3. Here ?i depends on the value of i. However, the average of n’ is the same as the volume average of the mechanical stresses, orb,r’ + (b, + b)g/2 + bd = b&‘/2 + blill + b,t2 + bL3/2, where /2’is the stress on plane i between atoms i and i+ 1. The preceding models, although quite degenerate, demonstrate that the virial expression, Eq. (3), and the mechanical definition, IQ. (4), generally give different results for the local stress variation in the region of an atomic-level inhomogeneity. To see if either formulation
+5689 J. Appl. Phys., Vol. 70, No. 10, 15 November 1991 K. S. Cheung and S. Yip 5689
+29 June 2026 03:09:31
+
+
+“m1F0 0 0
+0.0 o” 000
+00
+0 ; 0 0 00 0
+al 0 0 0 0 O0 00
+0 0O
+N
+b t
+.-l.OL -20 -10 0. IO 20
+ZCAI
+FIG. 3. Normal stress distribution in a three-dimensional liquid calculated by molecular dynamics using the virial stress expression, Eq. (3 ).
+gives physically reasonable results on the atomic level, we consider a free surface region in a relaxed crystal. Since surface relaxation allows the system to be free of internal stressesin the normal direction, we can expect that the normal stress on each atomic plane parallel to the surface to vanish. Figure 2 shows the normal-stress profiles computed using Eqs. (3) and (4) and the atomic trajectories generated by molecular dynamics simulation for a model system of bee iron at a temperature T = 50 K. The tetragonal simulation cell is a 5 x 5 X 12 lattice with 600 atoms equally distributed on 24 (001) planes, periodic boundary conditions are imposed along the two directions parallel to the surface, and the potential function adopted is of the embedded-atom-method type’ (melting point of this potential is estimated to be about 1725 K). The mechanical stress distribution is seen to be uniform everywhere and essentially zero, whereas the virial stress shows pronounced oscillations in the surface region. We have repeated the stress-profile calculations at a high temperature such that the system is in the liquid state (T = 1800 K). The stress profile obtained using Eq. (3) after the system is well equilibrated is shown in Fig. 3. It is uniform and essentially zero. That the virial expression gives a physically reasonable result in a liquid but not in a crystal suggeststhat the inhomogeneities that characterize the surface region in a crystal have been effectively averagedout by the structural fluctuations and atomic mobility inherent in a liquid-state environment. We have also
+quenched the liquid to below the freezing point to obtain an amorphous state and found that Eq. (3) gives a stress profile similar to that of the liquid. Thus, structural disorder is apparently sufficient to smooth out the inhomogeneous nature of a free surface. We regard the present work as a supplement to the chain-model analysis of Tsai’ showing that in the presence of a wall the virial and mechanical stress formulations do not agree, and to the statistical-mechanical derivation of Lutsko6 showing that the local stress tensor can be expressed as Eq. (3) provided an averaging over a volume whose radius exceedsthe cutoff of the potential is understood. Taken together, these results imply that while the concept of local stress on a strictly atomic level may not be unique, the mechanical definition based on force acting across a Gibbs dividing surface has the advantage over the virial decomposition, with its thermodynamic origin, in that the former gives physically plausible results in the presence of atomic-level inhomogeneities. Recent applications of this method of calculation have been made in the analysis of dislocation nucleation barrier in crack-tip extension’ and stress relaxation of stepped surfaces on Si (loo)? We thank A. S. Argon and F. F. Abraham for very helpful discussions. This work has been supported by NSF Grants CES-88 15942 and CHE-8806767, with computations carried out at the San Diego Supercomputer Center. K.S.C. also acknowledges the support of an NSF Graduate Fellowship.
+‘R. Clausius, Philos. Mag. 40, 122 ( 1870); J. H. Jean, The Dynamical Theory of Gases(Dover, New York, 1960), p. 130.
+‘5. S. Rowlinson and B. Widom, Molecular Theory of Capillarity (Clarendon, Oxford, 1982), p. 85. 3T. Egami, K. Maeda, and V. Vitek, Philos. Mag. A 41, 883 (1980). See also, V. Vitek and T. Egami, Phys. Status Solidi (b) 144, 145 (1987), and references therein.
+4M. Born and K. Huang, Dynamical Theory of Crystal Lattices (Clarendon, Oxford, 1954), p. 131. 5D. H. Tsai, J. Chem. Phys. 70, 1375 (1979). ‘J. F. Lutsko, J. Appl. Phys. 64, 1152 (1988). ‘J. W . Gibbs, Collected Works (Longmans, New York, 1928), Vol. I, p. 219. ‘R. J. Harrison, A. F. Voter, and S.-P. Chen, Atomistic Simulation of Materials-Beyond Pair Potentials, edited by V. Vitek and D. J. Srolovitz (Plenum, New York, 1989), p. 219. 9K, S. Cheung, Ph.D. thesis, MIT, 1990; K. S. Cheung and S. Yip, Phys. Rev. Lett. 65, 2804 (1990); K. S. Cheung, A. S. Argon, and S. Yip, J. Appl. Phys. 69, 2088 (1991). “T. W . Poon, Ph.D. thesis, MIT, 1990; T. W . Poon, S. Yip, P. S. Ho, and F. F. Abraham, Phys. Rev. Lett. 65, 2161 (1990); Phys. Rev. B (in press).
+5690 J. Appl. Phys., Vol. 70. No. 10, 15 November 1991 K. S. Cheung and S. Yip 5690
+29 June 2026 03:09:31

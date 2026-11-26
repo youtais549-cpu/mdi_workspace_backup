@@ -1,0 +1,594 @@
+Engineering Fracture Mechanics 268 (2022) 108444
+Available online 12 April 2022 0013-7944/© 2022 Elsevier Ltd. All rights reserved.
+Three-dimensional phase-field modeling of temperature-dependent thermal shock-induced fracture in ceramic materials
+Dingyu Li a,b, Peidong Li b,c, Weidong Li b, Weiguo Li d,*, Kun Zhou b,*
+a School of Civil Engineering and Architecture, Chongqing University of Science and Technology, Chongqing 401331, China
+b School of Mechanical and Aerospace Engineering, Nanyang Technological University, 50 Nanyang Avenue, Singapore 639798, Singapore
+c Key Laboratory of Deep Earth Science and Engineering, Sichuan University, Chengdu 610065, China
+d College of Aerospace Engineering, Chongqing University, Chongqing 400030, China
+ARTICLE INFO
+Keywords:
+Phase-field method Thermal shock Ceramics Temperature-dependent Crack
+ABSTRACT
+Current theoretical and experimental methods cannot fully reveal the mechanisms of the rapid and complex thermal shock-induced crack initiation and propagation processes in ceramic materials. Herein, a three-dimensional (3D) coupled thermo-mechanical phase-field model (PFM) is developed for thermal shock-induced fracture with the consideration of the temperature dependence of material properties. Compared with other PFMs, the present model can eliminate the unexpected damage evolution at the initially intact area of materials by introducing a temperature-dependent fracture energy threshold. Both the two-dimensional (2D) and 3D phasefield modeling results of thermal shock-induced fracture show strong agreement with the experimental results. The net-like topologies of thermal shock-induced cracks on the specimen surfaces are captured. Specifically, the crack topologies on the bottom surface (i.e., the first part submerged in water) are significantly different from those on the top surface in 3D cases. These essential findings reveal the mechanism that the tensile part of the strain energy mainly dominates the thermal shock-induced cracking in ceramics.
+1. Introduction
+As one of the most promising candidates for high-temperature applications, ceramic materials, which have attracted increasing attention since the 1950s, can be potentially used as thermal protection materials in gas turbine engines, nuclear power generation plants, and hypersonic vehicles for their high melting points, excellent mechanical properties, and chemical and physical stability at high temperature and in oxidation environments [1-3]. In these applications, ceramic materials work in complicated operational environments with rapid heating and cooling over a wide range of temperature, leading to the tremendous temperature gradient, nonuniform deformation, and severe thermal stress happening in an instant, which is called thermal shock. The inherent brittleness of ceramic materials results in vulnerable thermal shock resistance (TSR) [4-6]. Complex interactions, including thermal deformation, thermal conduction, and crack initiation and propagation, occur during the thermal shock-induced cracking process. Therefore, it is a huge challenge to uncover the intrinsic mechanism of thermal shock-induced cracking [7,8].
+* Corresponding authors. E-mail addresses: wgli@cqu.edu.cn (W. Li), kzhou@ntu.edu.sg (K. Zhou).
+Contents lists available at ScienceDirect
+Engineering Fracture Mechanics
+journal homepage: www.elsevier.com/locate/engfracmech
+https://doi.org/10.1016/j.engfracmech.2022.108444 Received 2 January 2022; Received in revised form 15 March 2022; Accepted 4 April 2022
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+2
+Since the 1950s, numerous research studies, including experiments, theoretical analyses, and numerical simulations, have been conducted to investigate thermal shock-induced fracture behaviors and to determine the TSR performance of ceramic materials. In theoretical research, the critical thermal stress fracture theory based on thermo-elasticity and the thermal shock damage theory based on fracture mechanics proposed by Kingery [4] and Hasselman [5], respectively, have been widely used. Although new theories have been established in recent years, most of them focused on predicting the critical thermal shock temperature difference [9-13]. A few researchers focused on the thermal shock-induced fracture analysis. For example, Qi et al. [14] introduced a fractal geometric method to characterize the crack patterns of ceramic bars after thermal shock. Li et al. [15] theoretically analyzed the interfacial thermal shock-induced fracture behavior for the thermal barrier coating system with a segmented structure. Thus far, none of the published theories are capable of revealing thermal shock-induced crack initiation and propagation. Even though the theoretical analysis utilized fracture mechanics, it still failed to characterize the cracking process by using the simple assumption of periodically distributed straight cracks and one-dimensional (1D) thermal transfer. In experimental studies, multi-crack propagation with periodic and hierarchical characteristics in brittle thin strips under severe thermal shock caused by water quenching was observed by Bahr et al. [16]. These main characteristics of thermal shock-induced cracking were also found by Jiang et al. [17] and Liu et al. [18] by using thin rectangle and circular slab specimens of Al2O3 ceramic via both water quenching experiments and numerical methods. Li et al. [19] controlled the water entry posture of Al2O3 cuboid bar specimens during the quenching test and found that the thermal shock-induced fracture was strongly affected by the water entry posture of specimens. Shao et al. [20,21] observed the thermal shock-induced multiple cracking process and determined the crack propagation speed of ceramic thin strips by high-speed imaging. However, the method is limited to two-dimensional (2D) conditions and fails to uncover the main controlling mechanisms of the thermal shock-induced multiple cracking behavior and periodic parallel cracks phenomenon. Currently, most of the thermal shock studies for three-dimensional (3D) conditions only demonstrate the crack patterns and residual strength of specimens [14,19,22], but they fail to explain the thermal shock-induced crack evolution processes from the crack initiation to propagation until the final failure. Numerical methods are considered as a feasible solution to study the mechanisms and controlling factors of complex thermal shock-induced cracking behaviors compared to both theoretical and experimental methods. For example, the non-local failure model [23,24] and damage mechanics-based model [25] in the frame of the finite element method (FEM), and the peridynamic (PD) model [6] have been applied to investigate the thermal shock-induced fracture of ceramics, including the effects of the specimen size, heterogeneity of materials, and initial thermal shock temperature. However, these widely used numerical methods still exhibit limitations in simulating complicated thermal shock-induced multi-crack propagation, and most of them focus on modeling 2D cases. Specific criteria based on fracture mechanics for crack evolution are required for the numerical methods based on the FEM, which are valid for 3D conditions. It is not easy to link the fracture criterion of the PD method to the strength of materials, and the method does not consider the effect of temperature. Therefore, the mechanisms of thermal shock-induced fracture are hard to be investigated by the PD method. The phase-field method is capable of modeling crack propagation by introducing a global continuous auxiliary scalar named the phase-field variable to label the states of the material from intact to damaged. The method transforms the crack evolution from a surface problem with discontinuities to a volume problem by the smooth continuum governing equations that can be solved directly by the FEM or other numerical methods. Moreover, the prediction of the initiation location of cracks, the path of propagation, and the crack deflection and branching are conveniently realized by the phase-field method but fail to be done by using the traditional Griffith fracture theory [26,27]. With the convenience of the phase-field method, the quasi-static crack propagation [26-31] and dynamic cracking behaviors [32-37] of brittle materials have been studied. In [38-43], the phase-field method was applied to investigate the crack propagation for nonlinear fracture problems. In the framework of the FEM, the phase-field method is highly capable of modeling multi-physics coupling fractures, such as thermo-mechanical fracture, chemical–mechanical fracture, and hydraulic fracture by virtue of its continuum character. The initiation and selective propagation of thermal shock- and drying-induced cracks for brittle materials were studied by Bourdin et al. [44], and the simulation results agreed well with the experimental observations. Miehe et al. [45] developed a fully coupled thermo-mechanical PFM for brittle fracture, and the thermal shock-induced cracking process of a glass strip and solid brick was investigated. Chu et al. [7], Wang et al. [46], Mandal et al. [47], and others [48,49] have studied the thermal shock-induced fracture of ceramic materials by the PFM and the simulation results demonstrated some characteristics of experiment results. Although the above-mentioned PFM simulations of thermal shock-induced fracture were consistent with the experimental results of thin ceramic slabs under water quenching, the modeling results suggested damages at unexpected places where there was no crack in experimental results. In addition, the phase-field modeling neglected the effects of temperature on material properties. In this paper, a phase-field model for thermo-mechanical coupling fracture is developed to study the thermal shock-induced fracture of ceramics. Aiming at eliminating unexpected damage initiation, a temperature-dependent fracture energy threshold is introduced in the model. The effects of temperature-dependent material properties and the interaction between crack propagation and heat transfer were taken into consideration. The rest of the paper is organized as follows. The phase-field model for thermo-mechanical coupling fracture with a temperature-dependent fracture energy threshold is introduced in Section 2. Subsequently, numerical implementation of the model is performed by using an Abaqus/Standard UEL subroutine in Section 3. In Section 4, thermal shockinduced cracking behaviors of the thin slabs and circular specimens of Al2O3 ceramic under water quenching are investigated as 2D cases by the proposed model. Complex crack propagation behaviors of ceramic bars under water quenching-induced thermal shocks in 3D conditions are simulated, in which the water entry posture of ceramic bars during the quenching process is taken into consideration. The simulation results demonstrating the essential features are consistent with the experimental results. Several conclusions are drawn out in the last section.
+D. Li et al.
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+3
+2. Phase-field model for thermo-mechanical coupling fracture
+2.1. Phase-field approximation of cracks
+Consider an infinite one-dimensional (1D) bar with a cross section Γ and a fully opened crack at x = 0 caused by the displacement U at both sides, as shown in Fig. 1(a). By setting the auxiliary variable function d(x), the crack could be described by d(x) = 1 at x = 0 where the material is fully broken and d(x) = 0 at other points to indicate an intact material, as shown in Fig. 1(b). In Fig. 1(c), the sharp crack is approximated as a continued diffuse one by using an exponential function [26,50]
+d(x) = e |x|/lc , (1)
+where lc is the length scale parameter. The width of the diffuse crack region will increase with lc and the sharp crack will be recovered when lc approaches zero. It is obvious that Eq. (1) is the solution to the homogeneous differential equation [26]
+d(x) l2
+cΔd(x) = 0, (2)
+with the Dirichlet boundary condition: d(0) = 1 and d(±∞) = 0. This strong-form differential Eq. (2) is the Euler equation of the variational principle written as
+d = Arg
+{
+idn∈fW I(d)
+}
+, (3)
+in which
+I(d) = 1
+2
+∫
+Ω
+d2 + lcd2’ )dV, (4)
+and W = {d|d(0) = 1, d( ± ∞) = 0 }[26]. Obviously, in Eq. (4) dV = Γ dx and then I d = e |x|/lc
+) = lcΓ is obtained [26,50]. Thus, the crack length parameter connects to the crack surface. Then, the fracture surface density per unit volume is given by
+Γ(d) = 1
+lc
+I(d) = 1
+2lc
+∫
+Ω
+d2 + lcd2′ )dV =
+∫
+Ω
+γ(d, d′ )dV (5)
+where γ(d, d′ ) is the 1D crack surface density function. It can be extended to the multiple dimensions by [26]
+γ(d, ∇d) = 1
+2lc
+d2 + lc
+2|∇d|2 (6)
+2.2. Variational formulation of thermo-elastic brittle fracture coupled with a phase field
+Consider an isotropic thermo-elastic body Ω⊂Rn with the dimension n ∈ {1, 2, 3} and external boundary ∂Ω⊂Rn 1 as shown in Fig. 2. The crack is denoted as Γ in Fig. 2(a) which can be approximated by a diffuse one characterized by the phase-field variable d in Fig. 2(b); x represents the position vector and u⊂Rn is the displacement vector; Q is the heat flux; Q is denoted as the heat flux at the boundary∂ΩQ; T is the temperature. The boundaries for heat transfer and mechanical deformation problems are expressed by ∂Ω = ∂ΩQ ∪ ∂ΩT and∂Ω = ∂Ωt ∪ ∂Ωu, respectively; t represents the traction vector applied at∂Ωt. q is the internal heat resource in the red area. The inertia is ignored because of its imperceptible effect in thermal shock-induced fracture problems. According to [45], the brittle fracture of thermo-elastic solids is governed by minimizing the free energy L that contains the elastic energy, fracture energy, thermal energy, heat, and external work:
+Fig. 1. (a) A center-cracked 1D bar; (b) the sharp crack representation at x = 0; (c) the diffuse crack representation at x = 0 modeled by Eq. (1) with the length scale parameter lc.
+D. Li et al.
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+4
+L=
+∫
+Ω
+ψε(εe(u, T) )dV
+∫
+Γc
+GcdΓ +
+∫
+Ω
+(
+ρCpT ̇ + ∇ ⋅ Q q
+) dV
++
+∫
+∂Ωt
+t ⋅ udΓ +
+∫
+Ω
+b ⋅ udV +
+∫
+∂ΩQ
+Q ⋅ ndΓ
+, (7)
+where Gc, ρ, and Cp are the critical energy release rate, density, and specific heat of the material, respectively. The symbol b is the body
+force inΩ. The term ψε(εe(u, T) ) is the elastic energy density relied on the linear strain tensorεe(u, T) = ε εT, in which the total strain
+tensor is ε = ∇u + ∇uT)/2 and the thermal strain tensor isεT = αΔTI, where α is thermal expansion coefficient of materials, ΔT is the temperature difference and I is the identity tensor. By introducing Eq. (6) into Eq. (7), the sharp crack discontinuity can be approximated by the continued diffuse crack topology, and the free energy L is modified as
+L=
+∫
+Ω
+ψε(εe(u, T), d )dV
+∫
+Ω
+Gc 2lc
+d2 + l2
+c |∇d|2 )dV +
+∫
+Ω
+(
+ρCpT ̇ + ∇ ⋅ Q q
+) dV
++
+∫
+∂Ωt
+t ⋅ udΓ +
+∫
+Ω
+b ⋅ udV +
+∫
+∂ΩQ
+Q ⋅ ndΓ
+. (8)
+As a crack does not propagate under compression, the strain energy density that drives the crack propagation should be decomposed into tensile and compressive parts. A degradation function g(d) is introduced into the positive part of the strain energy density to characterize the effect of the phase-field crack on material properties. Therefore, the strain energy density has the form
+ψε(εe(u, T), d ) = g(d)ψ+
+ε (εe) + ψε (εe), (9)
+in which
+g(d) = (1 d)4 + δ, (10)
+where δ is a parameter with a value of 1.0 × 10 10 to avoid convergence issues. The monotonically decreasing function g(d) has an order of four to make stiffness degrade more quickly because of the evolution of damage to reveal the brittle cracking. To distinguish the fracture strain energy density under tension and compression, the elastic strain should be divided into tensile and compressive parts by spectral decomposition [27]
+εe
+±=
+3 ∑
+i
+〈εe
+i
+〉
+±ni ⊗ ni, (11)
+in which εe+ and εe are the tensile and compressive strain tensor, respectively. The operators〈 ⋅ 〉± = ( ⋅ ±| ⋅ | )/2. The term
+{εie
+}
+i=1,2,3 describes the elastic principal strains and {ni}i=1,2,3 indicates the directions of the principal strain. Thus, the tensile and compressive parts of the elastic strain energy are given by [27]
+ψ±
+ε (εe) = λ
+2〈tr(εe) 〉2
+±+μtr εe 2
+±
+), (12)
+where λ and μ are the Lame ́ constants. Consequently, the Cauchy stress tensor is defined as
+Fig. 2. Illustration of the phase-field problem for thermo-mechanical fracture in elastic solids.
+D. Li et al.
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+5
+σ = ∂ψε
+∂εe = g(d)[λ〈tr(εe) 〉+I + 2μεe
++
+] + λ〈tr(εe) 〉 I + 2μεe . (13)
+Then the stiffness matrix can be derived from Eq. (13) as [51]
+D = ∂σ
+∂εe = λ[g(d)H(tr(εe) ) + H( - tr(εe) ) ]J + +2μ[g(d)P+ + P ], (14)
+where Jijkl = δijδkl, and δij is the Kronecker. The tensor P is expressed as [29]
+P±
+ijkl =
+∑3
+a=1
+∑3
+b=1
+H εe
+a
+)δabnainajnbknbl +
+3 ∑
+a=1
+3 ∑
+b∕=a
+1 2
+〈εe
+a
+〉
+±
+〈εe
+b
+〉
+±
+εea εe
+b
+nainbj(naknbl + nbknal), (15)
+where nai is the i-th component of the vector na, and H(x) is the Heaviside function defined as
+H(x) =
+{ 1, x > 0
+0, x⩽0 . (16)
+Since P±
+ijkl cannot be computed when εea = εeb, a perturbation technique was applied for the principal strains [51] with an unchangedεe2 :
+{
+εe
+1 = εe
+1 1 + δp
+), if εe
+1 = εe
+2 εe
+3 = εe
+3 1 δp
+), if εe
+3 = εe
+2
+(17)
+In the present simulations, the perturbation is set as δp = 1 × 10 10. Therefore, the strong form of the multi-physics problem shown in Fig. 2(b) can be derived from Eq. (8) as
+divσ + ρb = 0 in Ω, (18a)
+ρCpT ̇ + ∇ ⋅ Q = q in Ω, (18b)
+Gc lc
+d l2
+c Δd) = g’(d) ψ+
+ε in Ω, (18c)
+σ ⋅ n = t on ∂ Ωt, (18d)
+Q ⋅ n = Q on ∂ ΩQ, (18e)
+∇d ⋅ n = 0 on ∂ Γc. (18f)
+The following are the initial conditions:
+T(x, t) = T0(x, 0) in Ω, (19a)
+u(x, t) = u0(x, 0) in Ω, (19b)
+d(x, t) = d0(x, 0) in Ω. (19c)
+Here, the heat flux is controlled by the gradient of the temperature with the thermal conductivity k, which is reduced by the phasefield variable d with the same decreasing function g(d) as the one applied to the stiffness to cut off the heat transition at the crack locations. The thermal conductivity of the intact material is k0 for
+Q = k∇T, k = g(d)k0. (20)
+2.3. Formulation with a fracture energy threshold for the phase-field model in thermo-elastic brittle fracture
+According to Eq. (18c), the phase-field variable d will evolve if ψ+
+e > 0, even ψ+
+e has a very small value while the stress is far smaller than the fracture strength. This would result in damage initiating at unexpected places, where the material should be intact in real condition. To solve this issue, a fracture energy threshold [52] is induced in Eq. (8) and this equation is recast into the form
+L=
+∫
+Ω
+ψε(εe(u, T), d )dV
+∫
+Ω
+[1 g(d) ]ψc + ψc d2 + l2
+c |∇d|2 )dV
++
+∫
+Ω
+(
+ρCpT ̇ + ∇ ⋅ Q q
+)
+dV +
+∫
+∂Ωt
+t ⋅ udΓ +
+∫
+Ω
+b ⋅ udV +
+∫
+∂ΩQ
+Q ⋅ ndΓ
+, (21)
+where ψc is the fracture energy threshold. Because of the influence ofψc, if the region of material hasψ+
+e < ψc, the phase-field variable
+D. Li et al.
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+6
+d is equal to zero, indicating no damage evolution in this area. Thus, the fake damage evolution is overcome. Furthermore, to ensure irreversible cracking for the decreasing ψ+
+e condition, the governing equation of phase field derived from Eq. (21) should be changed as
+2ψc d l2
+cΔd) = g’(d) He(u(x, s), T) in Ω, (22)
+in whichHe(u(x, s), T) = sm∈[a0x,t]
+〈ψ +
+e (u(x, s), T) ψc
+〉.
+2.4. Formulation of the temperature-dependent fracture energy threshold
+Working as the thermal protection material for hypersonic vehicles, nuclear power generation and gas turbine engines, ceramics always suffer from high temperature. The thermo-mechanical properties of ceramics are temperature-dependent. Therefore, the effect of temperature on the fracture energy threshold should be considered. Li et al. [53] assumed that either heat or mechanical work can break down all the atomic bonds of materials and result in the fracture of the entire structure. A kind of equivalence between heat energy and strain energy exists for the indifference of bond breaking. Based on this viewpoint, the maximum value of energy storage ψtotal per unit volume is a constant, and it is expressed as
+ψtotal = KψT (T) + ψc(T), (23)
+where ψT(T) and ψc(T) are the thermal energy density and fracture strain energy density at temperature T, respectively. The symbol K is the equivalent ratio between the fracture strain energy and thermal energy. The specific calculation for the thermal energy density ψT(T) is
+ψT (T) = ρ
+∫T
+0
+Cp(T)dT, (24)
+in which ρ and Cp(T) are the density and specific heat capacity of the material at temperature T under a constant pressure, respectively. At the melting temperature Tm, the following equations are obtained:
+ψT (Tm) = ρ
+∫ Tm
+0
+Cp(T)dT, (25)
+ψσc(Tm) = 0. (26)
+According to Eq. (23), by setting T0 as the reference temperature, the total energy is expressed as
+ψtotal = KψT (Tm) = KψT (T0) + ψc(T0). (27)
+Thus, the specific expression of K can be obtained by using Eqs. (25)–(27) as
+K = ψc(T0)
+∫ Tm
+0 Cp(T)dT
+. (28)
+Then the Eq. (23) can be recast as
+ψtotal = ψc(T0)
+∫T
+0 Cp(T)dT
+∫ Tm
+0 Cp(T)dT
++ ψc(T). (29)
+Keep in mind that ψtotal is a constant and independent of temperature. Thus, by taking the reference temperature T0 for convenience, ψtotal can be expressed as
+ψtotal = ψc(T0)
+∫ T0
+0 Cp(T)dT
+∫ Tm
+0 Cp(T)dT
++ ψc(T0). (30)
+By combining Eqs. (29) and (30), the temperature-dependent fracture energy threshold is obtained as
+ψc(T) = ψc(T0)
+[
+1
+∫T
+0 Cp(T)dT
+∫ Tm
+0 Cp(T)dT
+]
+, (31)
+where ψc(T0) can be determined by a uniaxial tensile test at the reference temperature and is expressed as
+ψc(T0) = [σ(T0) ]2
+2E(T0) . (32)
+D. Li et al.
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+7
+3. Numerical implementation of the phase-field model
+3.1. Finite element discretization
+The weak forms for Eqs. (18) and (19) are formulated as
+∫
+Ω
+ρCp T ̇ δT dV
+∫
+Ω
+Q ⋅ ∇(δT)dV
+∫
+Ω
+qδTdV +
+∫
+∂ΩQ
+QδTdΓ = 0 (33)
+∫
+Ω
+σ : δεdV +
+∫
+∂Ωt
+t ⋅ δudΓ +
+∫
+Ω
+b ⋅ δudV = 0, (34)
+∫
+Ω
+g’(d)HeδddV +
+∫
+Ω
+2ψc dδd l2
+c ∇d∇(δd) )dV = 0, (35)
+where δT,δu, and δd are the variational test functions. The variables u, T, and d can be approximated with the FEM shape functions as
+T=
+n ∑
+I=1
+NT
+I TI, u =
+∑n
+I=1
+Nu
+I uI , d =
+∑n
+I=1
+Nd
+I dI, (36)
+where TI, uI, and dI are the temperature, displacement, and phase-field values of the node I in an element, respectively. The symbol n is the number of nodes in the element. The termsNIT,NIu, and NId are the FEM shape functions. The corresponding gradients of the field variables in Eq. (36) can be calculated by the geometry matrix B as
+∇T =
+∑n
+I=1
+BT
+I TI ε =
+n ∑
+I=1
+Bu
+I uI ∇d =
+n ∑
+I=1
+Bd
+I dI . (37)
+By introducing Eqs. (36) and (37) into Eqs. (33)–(35), the residuals of the weak forms are obtained in the view of arbitrariness of test functions on the element level as
+RT
+I=
+∫
+Ω
+ρCp T ̇ N T
+I dV
+∫
+Ω
+QBT
+I dV
+∫
+Ω
+qN T
+I dV +
+∫
+∂ΩQ
+QNT
+I dA (38)
+Ru
+I=
+∫
+Ω
+σBu
+I dV 
+∫
+∂Ωt
+tNu
+I dΓ 
+∫
+Ω
+bNu
+I dV, (39)
+Rd
+I=
+∫
+Ω
+2ψ c l2
+c Bd
+I ∇ddV +
+∫
+Ω
+2Nd
+I
+[ψcd 2(1 d)3He
+]dV. (40)
+The corresponding tangent matrixes are shown in Eqs. (41)-(43). Because of the weak coupling effects and the expectation of high calculation efficiency, the coupling matrixes related to these field variables are omitted.
+KT
+IJ = ∂RT
+I
+∂TJ
+=
+∫
+Ω
+ρCp
+Δt NT
+I
+)T N T
+J dV +
+∫
+Ω
+(1 d)4k BT
+I
+)T BT
+J dV, (41)
+Ku
+IJ = ∂Ru
+I
+∂uJ
+=
+∫
+Ω
+[(1 d)4 + δ ] Bu
+I
+)T D0 Bu
+JdV, (42)
+Kd
+IJ = ∂Rd
+I
+∂dJ
+=
+∫
+Ω
+2ψ c l2
+c Bd
+I
+)T Bd
+J dV +
+∫
+Ω
+2 Nd
+I
+)T Nd
+J
+[ψc + 6(1 d)2He
+]dV. (43)
+3.2. Implementation in ABAQUS
+The solution is implemented in ABAQUS by using its user subroutines UEL and USDFLD. Two element types, which share the same nodes but contain different degrees of freedom (DOFs), are used in a layered manner [43,47]. The first type of element is coupled with the DOFs of displacement and temperature. The second type of element has only one DOF to calculate the phase field. The phase-field damage variable d is set as a field variable in the user subroutine USDFLD, which can change the material properties at the Gauss integration points during the calculation. As a result, the effects of the phase-field damage variable d on the mechanical and thermal properties can be easily implemented. In 3D simulations, the user subroutine UFILM is used to consider the effects of the water entry posture on thermal shock-induced cracking behaviors under prescribed thermal boundary conditions.
+D. Li et al.
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+8
+4. Results and discussions
+4.1. Water quenching thermal shock of thin Al2O3 slabs
+The water quenching test is the most widely used method to evaluate the TSR of ceramics. In the experimental study [17], the ceramic slabs were first heated to different initial thermal shock temperatures and then dropped freely into a water bath. The geometric dimensioning of the specimen is shown in Fig. 2. Because of the symmetry, only half of the ceramic slab was modeled with the symmetric displacement boundary condition. All the material properties are shown in Table 1[17-19]. The Young’s modulus, Poisson’s ratio, density, and fracture strength of Al2O3 are almost unchanged in the range of 0–600 ◦C. However, the thermal expansion, thermal conductivity, and specific heat of Al2O3 are strongly dependent on temperature. The initial temperatures T0 of the slabs were set to be
+300, 400, and 500 ◦C, and the temperature of the water bath was held constant at 20 ◦C. The heat transfer coefficient between the slab
+surface and water was set to be 55 kW⋅m 2⋅K 1 according to [17]. Because the inconel wires were positioned 3–4 mm from the ends of the specimens in the experiment [17], when the simulation results were compared with experimental results, only the measured region (see in Fig. 3) was taken into consideration. As shown in Fig. 4, the thermal shock-induced crack topographies of the PFM simulations are faithfully consistent with the experimental results under elevated initial thermal shock temperatures. A higher initial thermal shock temperature results in more cracks and smaller space among the long cracks. The cracks could be classified into two levels according to the crack length. The long cracks have lengths greater than 30% of the height of the specimen. Those with lengths smaller than this value are considered as short cracks. The regularity of the crack lengths along the horizontal direction is consistent with the experimental results. The process of crack initiation and propagation during thermal shock in the measured region under the initial temperature of 500 ◦C is shown in Fig. 5. All cracks including short ones initiate to the total number first, which is the so-called first thermal shock regime [7]. Then the selected cracks propagate to a certain length in the second thermal shock regime until the final patterns are generated. This cracking behavior was demonstrated by Shao et al. [20] and captured by our simulation here. Moreover, the PFM simulation uncovers the controlling mechanism that the tensile elastic energy dominates the crack initiation and propagation, which cannot be obtained in the experiment. Fig. 4(a)–(c) shows that the lengths of the long cracks simulated by the proposed PFM under different initial thermal shock temperatures match well with the experimental results, and most of the long crack tips reach the yellow datum lines. The present model performs better than the model proposed in [46] in Fig. 4 (d) because their model obtained long cracks with shorter lengths than those revealed by the experiments. To quantitatively evaluate the numerical results, the number of long cracks is further compared in Fig. 6. Cracks with lengths greater than 30% of the slab height are defined as long cracks. The number of the long cracks increases with the increase of the initial thermal shock temperature in both simulation and experimental results. Moreover, the simulation results of thermal shock by the phase-field method reported in [7,44] and Fig. 4(d) showed unexpected phase-field damage initiated at positions where there were no cracks observed in experiments. The phase-field damage even evolved on the whole slab surface. As shown in the governing equations and Eq. (15), the phase-field damage would reduce the material stiffness ruled by degradation function g(d). However, the material remained intact with initial stiffness in the places where there were no cracks in experiments. On the contrary, the simulation results shown in Fig. 4(a)–(c) and Fig. 5 with temperature-dependent fracture energy threshold completely avoid this issue. No unexpected phase-field damage is observed at the place without cracks and the material remains intact. These characteristics confirm the capability of the proposed phase-field model to reproduce the thermal shock-induced cracking behaviors of ceramics in the framework of the FEM and show the importance of the temperaturedependent fracture energy threshold in the phase-field modeling of thermal shock-induced cracking.
+4.2. Water quenching-induced thermal shock of thin circular Al2O3 ceramic specimens
+The thermal shock tests of thin circular Al2O3 ceramic specimens by water quenching were demonstrated by Liu et al. [18]. The specimens used in the experiments were axial symmetrical, which were different from those used by Jiang et al. [17]. According to the experiment, the diameter of the thin circular Al2O3 ceramic specimen is 13 mm as shown in Fig. 7. The same material properties as those of the thin-slab specimen are used in the simulation. The initial temperatures T0 of the circular specimens are set to be 300, 400
+and 500 ◦C, and the water bath temperature T∞ is held at 15 ◦C according to the experiment. These settings make the thermal conditions consistent with those in the experiments. The heat transfer coefficient between the surface of the circular specimen and water is
+set to be 40 kW⋅m 2⋅K 1 according to the experiment [18].
+Table 1
+Material properties of Al2O3.
+Temperature (K)
+Elastic modulus (GPa)
+Poisson’s ratio
+Thermal expansion
+(×10 6 K 1)
+Thermal conduction
+(W⋅m 1⋅K 1)
+Specific heat
+(J⋅kg 1⋅K 1)
+Strength (MPa)
+300 378 0.22 5.0 36 764 325 400 – – 6.3 26.5 937 600 – – 7.8 15.8 1108 800 – – 8.5 10.4 1179 1000 – – 8.9 7.9 1225 1200 – – – 6.45 1250 
+D. Li et al.
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+9
+x
+y
+30 mm
+10 mm
+T =20 °C
+10 mm 10 mm measured region
+(simulation part)
+Fig. 3. Geometric schematic of the Al2O3 thin slab and its measured region.
+Fig. 4. Comparison between the PFM simulation results and experimental results of quenching tests [17]: (a)–(c) the present model and (d) the PFM result in [46].
+Fig. 5. Thermal shock-induced multiple crack initiation and propagation in the measuring region under the initial temperature T0 = 500 ◦C.
+D. Li et al.
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+10
+As shown in Fig. 8, the simulation results of thermal shock-induced crack propagation by the present phase-field method agree well with the experimental results. The number of cracks increases as the initial thermal shock temperature increases. Short cracks nucleate among long cracks. The hierarchy of cracks along the circle edge of the simulation is in accordance with the experimental results. According to the multiple-crack initiation and propagation process of the specimen under a thermal shock initial temperature of 400 ◦C shown in Fig. 9, two thermal shock regimes, including cracks nucleating to the surface and selected cracks propagating into the inner space which result in different hierarchical cracks, are also found to be similar to the results of thin-slab specimens in subsection 4.1, while the specimens here are under the axial symmetric condition. Moreover, there is still no damage evolution in unexpected places where there are no cracks, which further confirms the importance of temperature-dependent fracture energy threshold. It preliminarily reveals that the multi-crack initiation and propagation induced by thermal shock was dominated by tensile strain energy instead of the maximum principal stress or tensile stress.
+4.3. PFM simulation of the thermal shock-induced fracture of Al2O3 cuboid specimens under water quenching
+Most current numerical studies focus on simulating the 2D cases because problems of thermal shock-induced 3D fracture are more complex. The crack propagation criteria of traditional fracture mechanics are invalid in most conditions. Here, the most widely studied structural ceramic Al2O3 is used in the 3D simulation with the consideration of water entry direction by using the subroutine UFILM. The geometric dimension of the specimen is depicted in Fig. 10. The experiment method is in [19]. The material properties used for calculation are also listed in Table 1. The thermal shock crack-induced topology in the PFM simulation with the temperature-dependent fracture energy threshold is consistent with the experimental result as shown in Fig. 11. Notably, the crack of the longitudinal direction of the specimen is obtained. In Fig. 11(b), the cracks branch in the same regions of the specimen in both the simulation and the experiment. The developed phasefield model with a temperature-dependent fracture energy threshold is confirmed to be capable of simulating the behaviors of thermal shock-induced 3D fracture for ceramics by these findings and characteristics. The comparison of the topological structures of the cracks in the experiments and PFM simulations for the thermal shock-induced fracture of an Al2O3 bar under an initial temperature of 340 ◦C for the specimen and 11 ◦C for water is shown in Fig. 12. High consistency in the results is obtained, and there is no damage initiation in the simulation at the places where there are no cracks observed
+300 400 500 600 700
+10
+15
+20
+25
+30
+Number of long cracks
+T0 (oC)
+PFM simulation Experiment
+Fig. 6. Comparison of the number of long cracks between the experimental results and the PFM simulation results of Al2O3 thin slabs.
+T =15°C
+Fig. 7. Geometric schematic of the thin circular Al2O3 ceramic specimen.
+D. Li et al.
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+11
+in the experiment. The net-liked topologies of thermal shock-induced cracks on the front and back surfaces paralleled to the y-z plane are found to be consistent with the experimental results as shown in Fig. 12(a) and (b). The water entry sequence of the specimen surface shows a strong influence on the thermal shock-induced cracking behaviors. Because the bottom surface in Fig. 12(c) is submerged in water first, it demonstrates a significantly different crack topology from the top surface in Fig. 12(d) which is the last part quenched by water. The crack topology on the top surface shows longitudinal cracks along the z-direction crossing over the transverse cracks along the x-direction. On the contrary, only the transverse cracks are formed on the bottom surface. Therefore, these thermal shock-induced fracture behaviors in 3D condition are significantly influenced by the water entry posture, and this phenomenon is captured by the present model for the first time, which is consistent with the experimental results. Moreover, according to the results of the present model, the tensile part of the strain energy is verified to be the dominating mechanism of the initiation and propagation of thermal shock-induced cracks in ceramics. Furthermore, the model breaks through the limitations of the most widely used criteria, i.e., the maximum principal stress and maximum tensile stress, in simulating thermal shock-induced 3D
+Fig. 8. Comparison between the PFM simulation results and experimental results of thin circular Al2O3 ceramic specimens in water quenching tests [18].
+Fig. 9. Thermal shock-induced multiple-crack initiation and propagation of the Al2O3 circular specimen at an initial temperature T0 = 400 ◦C.
+D. Li et al.
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+12
+fracture. Until now, the real-time observation of the crack initiation and propagation process in Al2O3 bar specimens during thermal shock is limited due to the lack of essential experimental techniques. This issue can be conveniently solved in the present simulation, as shown
+40 mm
+6mm
+4mm
+water entry direction
+top surface
+front surface
+bottom surface
+Fig. 10. Geometric dimension of the specimen.
+Fig. 11. Thermal shock-induced fracture of an Al2O3 bar under a thermal shock initial temperature of 300 ◦C: (a) the isotropic 3D-view of cracked specimen and (b) the cracked surface of y-z plane.
+Fig. 12. Comparison of thermal shock-induced fracture in the experiment and PFM simulation under a thermal shock initial temperature of 340 ◦C: (a) the isotropic 3D-view of the cracked specimen in the simulation, (b) the front surface of the specimen in the experiment, (c) the bottom surface (submerged in water first) of the specimen, and (d) the top surface (the last part submerged in water) of the specimen.
+D. Li et al.
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+13
+in Fig. 13. Known from Fig. 13(a), thermal shock-induced cracks first initiated at both the middle of the edges with a length of 6 mm and the end part of the long edges of the bottom surface. Then the cracks propagated, and more cracks initiated at different places, including the top surface which was the last part to be submerged in water as shown in Fig. 13(b). Crack branching and crossing occurred subsequently and resulted in net-liked crack topological structures (Fig. 13(c) and (d)). Afterwards, the longitudinal cracks along the z-direction on the top surface were captured (Fig. 13(e) and (f)). The inner crack topologies and cracks in different cross sections are also shown in Fig. 14. Details about the cracks in the bar specimen are depicted, which have not been reported by current results from most of the thermal shock experiments for 3D conditions that only demonstrated the surface cracks [19,22]. In addition, the thermal shock-induced cracking behaviors of ceramics in 3D conditions were significantly different from those in 2D conditions. No crack branching was shown in propagation of thermal shockinduced 2D cracks. On the contrary, the thermal shock process of ceramics could not be divided into two regimes based on the crack initiation and propagation at different periods as these two cracking processes happened simultaneously in 3D conditions.
+5. Conclusions
+A 3D thermo-mechanical phase-field modeling method for thermal shock-induced fracture in ceramics was proposed in this paper. By introducing a temperature-dependent fracture energy threshold in the model, the unexpected damage evolution was eliminated. With the use of the FEM, the phase-field method was first validated by investigating the thermal shock-induced behaviors of Al2O3 ceramic materials, including the thin-slab and thin-circle specimens which represented ortho-symmetric and axial symmetric conditions respectively. Results indicated that the simulated crack patterns were consistent with the experimental results. The initiation and propagation of thermal shock-induced cracks, multi-cracks propagation, and hierarchy of long and short cracks were well reproduced in PFM simulations. No damage was initiated at unexpected places where there were no cracks found in the experiment. Afterwards, the 3D simulation of the thermal shock-induced behaviors of cuboid bar Al2O3 specimens under water quenching was carried out. The net-like topologies of thermal shock-induced cracks at the front and back surfaces were captured and the effect of the water-entry direction of cuboid-bar specimens on the thermal shock-induced cracking behaviors was also faithfully consistent with the experimental results. The bottom surface only formed the transverse cracks, and the top surface which was the last part submerged in water showed the longitudinal cracks along the z-direction crossing over the transverse cracks along the x-direction. Moreover, both the 2D and 3D simulation results revealed the mechanism that the tensile part of the strain energy controlled the initiation and propagation of the thermal shock-induced cracks in ceramics. The proposed model was capable of overcoming the limitations of other models based on the widely used criteria, such as the maximum principal stress and maximum tensile stress.
+CRediT authorship contribution statement
+Dingyu Li: Methodology, Investigation, Formal analysis. Peidong Li: Methodology. Weidong Li: Methodology. Weiguo Li: Supervision, Resources, Funding acquisition. Kun Zhou: Writing – review & editing, Funding acquisition, Formal analysis.
+Fig. 13. Thermal shock-induced cracks initiation and propagation of the Al2O3 bar under an initial temperature of 340 ◦C.
+D. Li et al.
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+14
+Declaration of Competing Interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+Acknowledgement
+This work was supported by the National Natural Science Foundation of China [grant numbers 11972100, 11602043, and 11727802]; the National Science Foundation Project of Chongqing [grant number cstc2019jcyj-msxm1870].
+References
+[1] Fahrenholtz WG, Hilmas GE. Ultra-high temperature ceramics: materials for extreme environments. Scripta Mater 2017;129:94–9. [2] Savino R, Mungiguerra S, Di MGD. Testing ultra-high-temperature ceramics for thermal protection and rocket applications. Adv Appl Ceram 2018;117:9–18. [3] Li Z, Wang K, Li J-E, Wang B, Zhang C. Effects of microstructures of foam core on the thermal shock strength of ceramic foam sandwich structures. Mater 2020; 10:100660. [4] Kingery WD. Factors affecting thermal stress resistance of ceramic materials. J Am Ceram Soc 1955;38:3–15. [5] Hasselman DPH. Unified theory of thermal shock fracture initiation and crack propagation in brittle ceramics. J Am Ceram Soc 1969;52:600–4. [6] Wang Y, Zhou X, Zhang T. Size effect of thermal shock crack patterns in ceramics: Insights from a nonlocal numerical approach. Mech Mater 2019;137:103133. [7] Chu D, Li X, Liu Z. Study the dynamic crack path in brittle material under thermal shock loading by phase field modeling. Int J Fract 2017;208:115–30. [8] Li D, Wang R, Wang X, Li W. Simulation of the thermal shock cracking behaviors of ceramics under water quenching for 3-dimension conditions. Eur J Mech ASolids 2020;84:104080. [9] Lu TJ, Fleck NA. The thermal shock resistance of solids. Acta Mater 1998;46(13):4755–68. [10] Li W, Yang F, Fang D. Thermal shock modeling of ultra-high temperature ceramics under active cooling. Comput Math Appl 2009;58(11–12):2373–8. [11] Aksel C. The effect of mullite on the mechanical properties and thermal shock behaviour of alumina–mullite refractory materials. Ceram Int 2003;29(2):183–8. [12] Jin Z, Batra RC. Thermal shock cracking in a metal-particle-reinforced ceramic matrix composite. Eng Fract Mech 1999;62(4–5):339–50. [13] Collin M, Rowcliffe D. Analysis and prediction of thermal shock in brittle materials. Acta Mater 2000;48(8):1655–65. [14] Qi F, Meng S, Song F, Guo H, Xu X, Shao Y, et al. Fractal characterization of ceramic crack patterns after thermal shocks. J Am Ceram Soc 2019;102(6):3641–52. [15] Li B, Fan X, Wang T, Zhou K. Interfacial fracture behavior of double-ceramic-layer thermal barrier coating system with segmented structure. Eng Fract Mech 2018;201:13–28. [16] Bahr HA, Fischer G, Weiss HJ. Thermal-shock crack patterns explained by single and multiple crack propagation. J Mater Sci 1986;21:2716–20. [17] Jiang CP, Wu XF, Li J, Song F, Shao YF, Xu XH, et al. A study of the mechanism of formation and numerical simulations of crack patterns in ceramics subjected to thermal shock. Acta Mater 2012;60(11):4540–50. [18] Liu Y, Wu X, Guo Q, Jiang C, Song F, Li J. Experiments and numerical simulations of thermal shock crack patterns in thin circular ceramic specimens. Ceram Int 2015;41(1):1107–14. [19] Li D, Li W, Wang R, Fang D. The effects of water entry postures on the thermal shock behavior of alumina. Int J Appl Ceram Tech 2016;13(1):56–60. [20] Shao Y, Song F, Liu B, Li W, Li L, Jiang C. Observation of ceramic cracking during quenching. J Am Ceram Soc 2017;100(2):520–3. [21] Shao Y, Liu B, Wang X, Li L, Wei J, Song F. Crack propagation speed in ceramic during quenching. J Eur Ceram Soc 2018;38(7):2879–85. [22] Shao Y, Xu X, Meng S, Bai G, Jiang C, Song F. Crack patterns in ceramic plates after quenching. J Am Ceram Soc 2010;93(10):3006–8. [23] Li J, Song F, Jiang C. Direct numerical simulations on crack formation in ceramic materials under thermal shock by using a non-local fracture model. J Eur Ceram Soc 2013;33(13–14):2677–87. [24] Li J, Song F, Jiang C. A non-local approach to crack process modeling in ceramic materials subjected to thermal shock. Eng Fract Mech 2015;133:85–98. [25] Tang S, Zhang H, Tang C, Liu H. Numerical model for the cracking behavior of heterogeneous brittle solids subjected to thermal shock. Int J Solids Struct 2016; 80:520–31. [26] Miehe C, Hofacker M, Welschinger F. A phase field model for rate-independent crack propagation: Robust algorithmic implementation based on operator splits. Comput Method Appl M 2010;199(45–48):2765–78. [27] Miehe C, Welschinger F, Hofacker M. Thermodynamically consistent phase-field models of fracture: Variational principles and multi-field FE implementations. Int J Numer Meth Eng 2010;83:1273–311. [28] Bourdin B, Francfort GA, Marigo JJ. Numerical experiments in revisited brittle fractur. J Mech Phys Solids 2000;48(4):797–826.
+Fig. 14. Thermal shock-induced cracks of Al2O3 bar under the initial temperature of 340 ◦C: (a) the inner topological structure and (b) cracks in different cross sections.
+D. Li et al.
+
+
+Engineering Fracture Mechanics 268 (2022) 108444
+15
+[29] Zhou S, Zhuang X, Zhu H, Rabczuk T. Phase field modelling of crack propagation, branching and coalescence in rocks. Theor Appl Fract Mec 2018;96:174–92. [30] Kuhn C, Müller R. A discussion of fracture mechanisms in heterogeneous materials by means of configurational forces in a phase field fracture model. Comput Method Appl M 2016;312:95–116. [31] Msekh MA, Sargado JM, Jamshidian M, Areias PM, Rabczuk T. Abaqus implementation of phase-field model for brittle fracture. Comput Mater Sci 2015;96: 472–84. [32] Karma A, Kessler DA, Levine H. Phase-field model of mode III dynamic fracture. Phys Rev Lett 2001;87(4):45501. [33] Henry H, Levine H. Dynamic instabilities of fracture under biaxial strain using a phase field model. Phys Rev Lett 2004;93(10):105504. [34] Spatschek R, Brener E, Karma A. Phase field modeling of crack propagation. Philos Mag 2011;91(1):75–95. [35] Hofacker M, Miehe C. Continuum phase field modeling of dynamic fracture: variational principles and staggered FE implementation. Int J Fract 2012;178(1–2): 113–29. [36] Borden MJ, Verhoosel CV, Scott MA, Hughes TJR, Landis CM. A phase-field description of dynamic brittle fracture. Comput Method Appl M 2012;217–220: 77–95. [37] Schlüter A, Kuhn C, Müller R, Tomut M, Trautmann C, Weick H, et al. Phase field modelling of dynamic thermal fracture in the context of irradiation damage. Continuum Mech Therm 2017;29(4):977–88. [38] Yin S, Yang W, Kwon J, Wat A, Meyers MA, Ritchie RO. Hyperelastic phase-field fracture mechanics modeling of the toughening induced by Bouligand structures in natural materials. J Mech Phys Solids 2019;131:204–20. [39] Miehe C, Hofacker M, Scha ̈nzel LM, Aldakheel F. Phase field modeling of fracture in multi-physics problems. Part II. Coupled brittle-to-ductile failure criteria and crack propagation in thermo-elastic–plastic solids. Comput Method Appl M 2015;294:486–522. [40] Zhang X, Krischok A, Linder C. A variational framework to model diffusion induced large plastic deformation and phase field fracture during initial two-phase lithiation of silicon electrodes. Comput Method Appl M 2016;312:51–77. [41] Tang S, Zhang G, Guo TF, Guo X, Liu WK. Phase field modeling of fracture in nonlinearly elastic solids via energy decomposition. Comput Method Appl M 2019; 347:477–94. [42] Ambati M, Gerasimov T, Lorenzis LD. Phase-field modeling of ductile fracture. Comput Mech 2015;55(5):1017–40. [43] Fang J, Wu C, Rabczuk T, Wu C, Ma C, Sun G, et al. Phase field fracture in elasto-plastic solids: Abaqus implementation and case studies. Theor Appl Fract Mech 2019;103:102252. [44] Bourdin B, Marigo JJ, Maurini C, Sicsic P. Morphogenesis and propagation of complex cracks induced by thermal shocks. Phys Rev Lett 2014;112(1):1–5. [45] Miehe C, Sch ̈anzel LM, Ulmer H. Phase field modeling of fracture in multi-physics problems. Part I. Balance of crack surface and failure criteria for brittle crack propagation in thermo-elastic solids. Comput Method Appl M 2015;294:449–85. [46] Wang T, Ye X, Liu Z, Liu X, Chu D, Zhuang Z. A phase-field model of thermo-elastic coupled brittle fracture with explicit time integration. Comput Mech 2020;65 (5):1305–21. [47] Mandal TK, Nguyen VP, Wu JY, Nguyen-Thanh C, de Vaucorbeil A. Fracture of thermo-elastic solids: Phase-field modeling and new results with an efficient monolithic solver. Comput Method Appl M 2021;376:113648. [48] Tangella RG, Kumbhar P, Annabattula RK. Hybrid phase-field modeling of thermo-elastic crack propagation. Int J Comput Meth En 2022;23(1):29–44. [49] Storm J, Yin B, Kaliske M. The concept of Representative Crack Elements (RCE) for phase-field fracture: transient thermo-mechanics. Comput Mech 2022:1–12. [50] Moln ́ar G, Gravouil A. 2D and 3D Abaqus implementation of a robust staggered phase-field solution for modeling brittle fracture. Finite Elem Anal Des 2017; 130:27–38. [51] Miehe C. Computation of isotropic tensor functions. Commun Numer Meth En 1993;9(11):889–96. [52] Miehe C, Kienle D, Aldakheel F, Teichtmeister S. Phase field modeling of fracture in porous plasticity: A variational gradient-extended Eulerian framework for the macroscopic analysis of ductile failure. Comput Method Appl M 2016;312:3–50. [53] Li W, Yang F, Fang D. The temperature-dependent fracture strength model for ultra-high temperature ceramics. Acta Mech Sinica 2010;26(2):235–9.
+D. Li et al.

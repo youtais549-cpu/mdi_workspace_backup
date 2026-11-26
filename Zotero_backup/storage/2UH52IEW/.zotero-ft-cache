@@ -1,0 +1,422 @@
+メインコンテンツへスキップ
+記事へスキップ
+提供:横浜国立大学
+工学破壊力学
+日付:2022年6月1日
+研究論文
+全文アクセス
+権利とコンテンツの入手
+セラミックス材料における温度依存の熱衝撃誘発破壊の三次元位相場モデリング
+PDFを見る
+全号をダウンロード
+ハイライト
+•
+温度依存のエネルギー閾値を持つ熱機械的位相場モデルを提案しました。
+•
+このモデルは実験中の無傷部位での予期せぬ損傷進化を排除します。
+•
+3次元位相場モデリングの結果は、実験結果と強く一致しています。
+概要
+現在の理論的および実験的手法では、セラミックス材料における急速かつ複雑な熱衝撃による亀裂の開始および伝播過程のメカニズムを完全に明らかにすることはできません。ここでは、熱衝撃誘発破壊に対して、材料特性の温度依存を考慮した3次元(3D)結合熱力学的位相場モデル(PFM)を開発します。他のPFMと比較して、本モデルは温度依存の破壊エネルギー閾値を導入することで、最初に無傷だった材料領域での予期せぬ損傷の進化を排除できます。熱衝撃誘発破壊の二次元(2D)および3次元位相場モデリングの結果は、実験結果と強く一致しています。試料表面の熱衝撃による亀裂の網状トポロジーを捉えます。具体的には、底面(すなわち水に浸かっている最初の部分)の亀裂トポロジーは、3次元の場合の上面の亀裂トポロジーと大きく異なります。これらの重要な発見は、セラミックスにおける熱衝撃による亀裂において、ひずみエネルギーの引張部分が主に支配的であることのメカニズムを明らかにしています。
+キーワード
+位相場法;熱ショック; 陶器;温度依存; パキッ
+前回の記事
+次回の記事
+参考文献
+[1]
+W.G.ファーレンホルツ、G.E.ヒルマス
+超高温セラミックス:過酷環境向けの材料
+Scripta Mater, 129 (2017), pp. 94-99
+Scopusでの閲覧Google Scholar(グーグル・スカラー)
+[2]
+R. サヴィーノ、S。ムンギゲッラ、M.GD。ディ
+超高温セラミックスの熱保護およびロケット用途の試験
+Adv Appl Ceram, 117 (2018), pp. 9-18
+Google Scholar(グーグル・スカラー)
+[3]
+Z. リー、K。ワン、J.-E。リー、B。ワン、C。チャン
+フォームコアの微細構造がセラミックフォームサンドイッチ構造の熱衝撃強度に与える影響
+Mater, 10 (2020), Article 100660
+Scopusでの閲覧Google Scholar(グーグル・スカラー)
+[4]
+W.D.キングリー
+セラミック材料の耐熱応力に影響を与える要因
+J Am Ceram Soc, 38(1955年)、pp. 3-15
+ScopusGoogle Scholar(グーグル・スカラー)でのCrossrefビュー
+[5]
+D.P.H.ハッセルマン
+脆性セラミックスにおける熱衝撃破壊の開始と亀裂伝搬の統一理論
+J Am Ceram Soc, 52(1969年)、pp. 600-604
+ScopusGoogle Scholar(グーグル・スカラー)でのCrossrefビュー
+[6]
+Y. ワン、X。 ジョウ、T. 張
+セラミックスにおける熱衝撃ひび割れパターンのサイズ効果:非局所的数値的アプローチからの洞察
+Mech Mater, 137 (2019), 記事103133
+Scopusでの閲覧Google Scholar(グーグル・スカラー)
+[7]
+D. Chu, X. Li, Z. Liu
+Study the dynamic crack path in brittle material under thermal shock loading by phase field modeling
+Int J Fract, 208 (2017), pp. 115-130
+CrossrefView in ScopusGoogle Scholar
+[8]
+D. Li, R. Wang, X. Wang, W. Li
+Simulation of the thermal shock cracking behaviors of ceramics under water quenching for 3-dimension conditions
+Eur J Mech A-Solids, 84 (2020), Article 104080
+View PDF
+View articleView in ScopusGoogle Scholar
+[9]
+T.J. Lu, N.A. Fleck
+The thermal shock resistance of solids
+Acta Mater, 46 (13) (1998), pp. 4755-4768
+View PDF
+View articleView in ScopusGoogle Scholar
+[10]
+W. Li, F. Yang, D. Fang
+Thermal shock modeling of ultra-high temperature ceramics under active cooling
+Comput Math Appl, 58 (11–12) (2009), pp. 2373-2378
+View PDF
+View articleView in ScopusGoogle Scholar
+[11]
+C. Aksel
+The effect of mullite on the mechanical properties and thermal shock behaviour of alumina–mullite refractory materials
+Ceram Int, 29 (2) (2003), pp. 183-188
+View PDF
+View articleView in ScopusGoogle Scholar
+[12]
+Z. Jin, R.C. Batra
+Thermal shock cracking in a metal-particle-reinforced ceramic matrix composite
+Eng Fract Mech, 62 (4–5) (1999), pp. 339-350
+View PDF
+View articleView in ScopusGoogle Scholar
+[13]
+M. Collin, D. Rowcliffe
+Analysis and prediction of thermal shock in brittle materials
+Acta Mater, 48 (8) (2000), pp. 1655-1665
+View PDF
+View articleView in ScopusGoogle Scholar
+[14]
+F. Qi, S. Meng, F. Song, H. Guo, X. Xu, Y. Shao, et al.
+Fractal characterization of ceramic crack patterns after thermal shocks
+J Am Ceram Soc, 102 (6) (2019), pp. 3641-3652
+CrossrefView in ScopusGoogle Scholar
+[15]
+B. Li, X. Fan, T. Wang, K. Zhou
+Interfacial fracture behavior of double-ceramic-layer thermal barrier coating system with segmented structure
+Eng Fract Mech, 201 (2018), pp. 13-28
+View PDF
+View articleCrossrefGoogle Scholar
+[16]
+H.A. Bahr, G. Fischer, H.J. Weiss
+Thermal-shock crack patterns explained by single and multiple crack propagation
+J Mater Sci, 21 (1986), pp. 2716-2720
+View in ScopusGoogle Scholar
+[17]
+C.P. Jiang, X.F. Wu, J. Li, F. Song, Y.F. Shao, X.H. Xu, et al.
+A study of the mechanism of formation and numerical simulations of crack patterns in ceramics subjected to thermal shock
+Acta Mater, 60 (11) (2012), pp. 4540-4550
+View PDF
+View articleView in ScopusGoogle Scholar
+[18]
+Y. Liu, X. Wu, Q. Guo, C. Jiang, F. Song, J. Li
+Experiments and numerical simulations of thermal shock crack patterns in thin circular ceramic specimens
+Ceram Int, 41 (1) (2015), pp. 1107-1114
+View PDF
+View articleView in ScopusGoogle Scholar
+[19]
+D. Li, W. Li, R. Wang, D. Fang
+The effects of water entry postures on the thermal shock behavior of alumina
+Int J Appl Ceram Tech, 13 (1) (2016), pp. 56-60
+CrossrefView in ScopusGoogle Scholar
+[20]
+Y. Shao, F. Song, B. Liu, W. Li, L. Li, C. Jiang
+Observation of ceramic cracking during quenching
+J Am Ceram Soc, 100 (2) (2017), pp. 520-523
+CrossrefView in ScopusGoogle Scholar
+[21]
+Y. Shao, B. Liu, X. Wang, L. Li, J. Wei, F. Song
+Crack propagation speed in ceramic during quenching
+J Eur Ceram Soc, 38 (7) (2018), pp. 2879-2885
+View PDF
+View articleView in ScopusGoogle Scholar
+[22]
+Y. Shao, X. Xu, S. Meng, G. Bai, C. Jiang, F. Song
+Crack patterns in ceramic plates after quenching
+J Am Ceram Soc, 93 (10) (2010), pp. 3006-3008
+CrossrefView in ScopusGoogle Scholar
+[23]
+J. Li, F. Song, C. Jiang
+Direct numerical simulations on crack formation in ceramic materials under thermal shock by using a non-local fracture model
+J Eur Ceram Soc, 33 (13–14) (2013), pp. 2677-2687
+View PDF
+View articleView in ScopusGoogle Scholar
+[24]
+J. Li, F. Song, C. Jiang
+A non-local approach to crack process modeling in ceramic materials subjected to thermal shock
+Eng Fract Mech, 133 (2015), pp. 85-98
+View PDF
+View articleGoogle Scholar
+[25]
+S. Tang, H. Zhang, C. Tang, H. Liu
+Numerical model for the cracking behavior of heterogeneous brittle solids subjected to thermal shock
+Int J Solids Struct, 80 (2016), pp. 520-531
+View PDF
+View articleGoogle Scholar
+[26]
+C. Miehe, M. Hofacker, F. Welschinger
+A phase field model for rate-independent crack propagation: Robust algorithmic implementation based on operator splits
+Comput Method Appl M, 199 (45–48) (2010), pp. 2765-2778
+View PDF
+View articleView in ScopusGoogle Scholar
+[27]
+C. Miehe, F. Welschinger, M. Hofacker
+Thermodynamically consistent phase-field models of fracture: Variational principles and multi-field FE implementations
+Int J Numer Meth Eng, 83 (2010), pp. 1273-1311
+CrossrefView in ScopusGoogle Scholar
+[28]
+B. Bourdin, G.A. Francfort, J.J. Marigo
+Numerical experiments in revisited brittle fractur
+J Mech Phys Solids, 48 (4) (2000), pp. 797-826
+View PDF
+View articleView in ScopusGoogle Scholar
+[29]
+S. Zhou, X. Zhuang, H. Zhu, T. Rabczuk
+Phase field modelling of crack propagation, branching and coalescence in rocks
+Theor Appl Fract Mec, 96 (2018), pp. 174-192
+View PDF
+View articleView in ScopusGoogle Scholar
+[30]
+C. Kuhn, R. Müller
+A discussion of fracture mechanisms in heterogeneous materials by means of configurational forces in a phase field fracture model
+Comput Method Appl M, 312 (2016), pp. 95-116
+View PDF
+View articleView in ScopusGoogle Scholar
+[31]
+M.A. Msekh, J.M. Sargado, M. Jamshidian, P.M. Areias, T. Rabczuk
+Abaqus implementation of phase-field model for brittle fracture
+Comput Mater Sci, 96 (2015), pp. 472-484
+View PDF
+View articleView in ScopusGoogle Scholar
+[32]
+A. Karma, D.A. Kessler, H. Levine
+Phase-field model of mode III dynamic fracture
+Phys Rev Lett, 87 (4) (2001), p. 45501
+View in ScopusGoogle Scholar
+[33]
+H. Henry, H. Levine
+Dynamic instabilities of fracture under biaxial strain using a phase field model
+Phys Rev Lett, 93 (10) (2004), Article 105504
+Google Scholar
+[34]
+R. Spatschek, E. Brener, A. Karma
+Phase field modeling of crack propagation
+Philos Mag, 91 (1) (2011), pp. 75-95
+CrossrefView in ScopusGoogle Scholar
+[35]
+M. Hofacker, C. Miehe
+Continuum phase field modeling of dynamic fracture: variational principles and staggered FE implementation
+Int J Fract, 178 (1–2) (2012), pp. 113-129
+CrossrefView in ScopusGoogle Scholar
+[36]
+M.J. Borden, C.V. Verhoosel, M.A. Scott, T.J.R. Hughes, C.M. Landis
+A phase-field description of dynamic brittle fracture
+Comput Method Appl M, 217–220 (2012), pp. 77-95
+View PDF
+View articleView in ScopusGoogle Scholar
+[37]
+A. Schlüter, C. Kuhn, R. Müller, M. Tomut, C. Trautmann, H. Weick, et al.
+Phase field modelling of dynamic thermal fracture in the context of irradiation damage
+Continuum Mech Therm, 29 (4) (2017), pp. 977-988
+CrossrefView in ScopusGoogle Scholar
+[38]
+S. Yin, W. Yang, J. Kwon, A. Wat, M.A. Meyers, R.O. Ritchie
+Hyperelastic phase-field fracture mechanics modeling of the toughening induced by Bouligand structures in natural materials
+J Mech Phys Solids, 131 (2019), pp. 204-220
+View PDF
+View articleGoogle Scholar
+[39]
+C. Miehe, M. Hofacker, L.M. Schänzel, F. Aldakheel
+Phase field modeling of fracture in multi-physics problems. Part II. Coupled brittle-to-ductile failure criteria and crack propagation in thermo-elastic–plastic solids
+Comput Method Appl M, 294 (2015), pp. 486-522
+View PDF
+View articleView in ScopusGoogle Scholar
+[40]
+X. Zhang, A. Krischok, C. Linder
+A variational framework to model diffusion induced large plastic deformation and phase field fracture during initial two-phase lithiation of silicon electrodes
+Comput Method Appl M, 312 (2016), pp. 51-77
+View PDF
+View articleView in ScopusGoogle Scholar
+[41]
+S. Tang, G. Zhang, T.F. Guo, X. Guo, W.K. Liu
+Phase field modeling of fracture in nonlinearly elastic solids via energy decomposition
+Comput Method Appl M, 347 (2019), pp. 477-494
+View PDF
+View articleView in ScopusGoogle Scholar
+[42]
+M. Ambati, T. Gerasimov, L.D. Lorenzis
+Phase-field modeling of ductile fracture
+Comput Mech, 55 (5) (2015), pp. 1017-1040
+CrossrefView in ScopusGoogle Scholar
+[43]
+J. Fang, C. Wu, T. Rabczuk, C. Wu, C. Ma, G. Sun, et al.
+Phase field fracture in elasto-plastic solids: Abaqus implementation and case studies
+Theor Appl Fract Mech, 103 (2019), Article 102252
+View PDF
+View articleView in ScopusGoogle Scholar
+[44]
+B. Bourdin, J.J. Marigo, C. Maurini, P. Sicsic
+Morphogenesis and propagation of complex cracks induced by thermal shocks
+Phys Rev Lett, 112 (1) (2014), pp. 1-5
+View in ScopusGoogle Scholar
+[45]
+C. Miehe, L.M. Schänzel, H. Ulmer
+Phase field modeling of fracture in multi-physics problems. Part I. Balance of crack surface and failure criteria for brittle crack propagation in thermo-elastic solids
+Comput Method Appl M, 294 (2015), pp. 449-485
+View PDF
+View articleView in ScopusGoogle Scholar
+[46]
+T. Wang, X. Ye, Z. Liu, X. Liu, D. Chu, Z. Zhuang
+A phase-field model of thermo-elastic coupled brittle fracture with explicit time integration
+Comput Mech, 65 (5) (2020), pp. 1305-1321
+CrossrefView in ScopusGoogle Scholar
+[47]
+T.K. Mandal, V.P. Nguyen, J.Y. Wu, C. Nguyen-Thanh, A. de Vaucorbeil
+Fracture of thermo-elastic solids: Phase-field modeling and new results with an efficient monolithic solver
+Comput Method Appl M, 376 (2021), Article 113648
+View PDF
+View articleView in ScopusGoogle Scholar
+[48]
+R.G. Tangella, P. Kumbhar, R.K. Annabattula
+Hybrid phase-field modeling of thermo-elastic crack propagation
+Int J Comput Meth En, 23 (1) (2022), pp. 29-44
+CrossrefView in ScopusGoogle Scholar
+[49]
+J. Storm, B. Yin, M. Kaliske
+The concept of Representative Crack Elements (RCE) for phase-field fracture: transient thermo-mechanics
+Comput Mech (2022), pp. 1-12
+CrossrefGoogle Scholar
+[50]
+G. Molnár, A. Gravouil
+2D and 3D Abaqus implementation of a robust staggered phase-field solution for modeling brittle fracture
+Finite Elem Anal Des, 130 (2017), pp. 27-38
+View PDF
+View articleView in ScopusGoogle Scholar
+[51]
+C. Miehe
+Computation of isotropic tensor functions
+Commun Numer Meth En, 9 (11) (1993), pp. 889-896
+CrossrefView in ScopusGoogle Scholar
+[52]
+C. Miehe, D. Kienle, F. Aldakheel, S. Teichtmeister
+Phase field modeling of fracture in porous plasticity: A variational gradient-extended Eulerian framework for the macroscopic analysis of ductile failure
+Comput Method Appl M, 312 (2016), pp. 3-50
+View PDF
+View articleView in ScopusGoogle Scholar
+[53]
+W. Li, F. Yang, D. Fang
+The temperature-dependent fracture strength model for ultra-high temperature ceramics
+Acta Mech Sinica, 26 (2) (2010), pp. 235-239
+CrossrefView in ScopusGoogle Scholar
+View Abstract
+Recommended articles
+Based on reading popularity
+Research article
+Full text access
+Effect of heating rate on microstructure and mechanical properties of AlCoCrFeNi high entropy alloy produced by spark plasma sintering
+Siyao Xie, …, Chao Chen
+Materials Characterization • Volume 154 • 2019 • Pages 169-180
+View PDF
+Research article
+Full text access
+Single-step aging treatment for a precipitation-strengthened Ni-based alloy and its influence on high-temperature mechanical behavior
+Kinga A. Unocic, …, Peter F. Tortorelli
+Scripta Materialia • Volume 162 • 2019 • Pages 416-420
+View PDF
+Research article
+Open access
+Unique phase transformation in high entropy alloy films driven by size and stress
+Yufang Zhao, …, Yihan Gao
+Journal of Materials Research and Technology • Volume 39 • 2025 • Pages 2597-2605
+View PDF
+Research article
+Open access
+Metastable phase and nanotwin's formation in undercooled equiatomic solid solution medium entropy alloys
+Hailong Liang, …, Hongfu Wang
+Journal of Materials Research and Technology • Volume 36 • 2025 • Pages 5011-5017
+View PDF
+Research article
+Full text access
+Thermal stability of microstructure and their influences on mechanical properties of precipitation-hardened medium-entropy alloy Ni43.4Co25.3Cr25.3Al3Ti3
+Hanlin Peng, …, Ian Baker
+Materials Characterization • Volume 203 • 2023 • Article 113156
+View PDF
+Research article
+Open access
+Microstructure characterization and properties of CuFeCo heterostructure alloys
+Li Zhang, …, Xueshan Xiao
+Journal of Materials Research and Technology • Volume 33 • 2024 • Pages 806-820
+View PDF
+Cited by (52)
+Review article
+Advances in thermal barrier coatings modeling, simulation, and analysis: A review
+Ashofteh A., Rajabzadeh M.
+Journal of the European Ceramic Society • Volume 44 • 2024 • Article 116693
+Show abstract
+Research article
+A hybrid thermo-mechanical phase-field model for anisotropic brittle fracture
+Li W., …, Zhou K.
+Engineering Fracture Mechanics • Volume 306 • 2024 • Article 110219
+Show abstract
+Research article
+Cracking and thermal resistance in concrete: Coupled thermo-mechanics and phase-field modeling
+Zhou H., …, Wu J.
+Theoretical and Applied Fracture Mechanics • Volume 130 • 2024 • Article 104285
+Citation Excerpt:
+
+Researchers further expanded the phase field model's utility by developing a thermal cracking analysis method [22] and an explicit integration algorithm for the thermoelastic phase field model [23], both rooted in the brittle fracture phase field model. The versatility of the phase field method is evident in its successful application to predict dry shrinkage cracking in early age cement-based materials [24,25], thermal cracking behavior of energy storage concrete [26], shale matrix behavior during shale gas extraction [27], thermal cracking analysis in thin-walled structures [28], ductile fracture simulation of composite materials [29–31], and numerous other applications [32–37]. While the phase field method provides valuable insights into certain aspects of damage modeling, it is essential to recognize its limitations.
+
+Show abstract
+Research article
+A coupled 3D thermo-mechanical peridynamic model for cracking analysis of homogeneous and heterogeneous materials
+Sun W., …, Liew K.M.
+Computer Methods in Applied Mechanics and Engineering • Volume 418 • 2024 • Article 116577
+Citation Excerpt:
+
+The detailed geometric and mechanical parameters are presented in Table 9. The thermal properties of the specimens are temperature dependent [7,58,59] and their values used in this test case are given in Table 10. The damage evolution process of the thick plate specimen is presented in Fig. 25.
+
+Show abstract
+Review article
+A review on phase field models for fracture and fatigue
+Li P., …, Zhou K.
+Engineering Fracture Mechanics • Volume 289 • 2023 • Article 109419
+Citation Excerpt:
+
+PFMs have been demonstrated to be very flexible. Various material properties can be considered in the models, such as material anisotropy [36], heterogeneity [37], elastoplasticity [38], viscoelasticity [39], hyperelasticity [40], electro-mechanical coupling [41–43], chemo-mechanical coupling [44–46], thermo-mechanical coupling [38,47,48], and poro-mechanical coupling [49–51]. When a particular effect is considered, the expression of the Helmholtz free energy should be modified to incorporate the energy contribution from the effect.
+
+Show abstract
+Research article
+A phase field model for fatigue fracture in piezoelectric solids: A residual controlled staggered scheme
+Tan Y., …, Kang G.
+Computer Methods in Applied Mechanics and Engineering • Volume 399 • 2022 • Article 115459
+Citation Excerpt:
+
+Within the framework of the PFM, the crack nucleation and propagation may be modeled without some additional treatments. Nowadays, the PFM has been proved successful in modeling the fracture behaviors of solids in various fields, including pure elasticity [21–27], multi-physics [28–33], and cohesive and ductile fractures [34–41]. The phase field approach has been successfully employed to model the fracture behaviors of piezoelectric solids.
+
+Show abstract
+View all citing articles on Scopus
+Metrics
+Citations
+Citation Indexes
+52
+Captures
+Mendeley Readers
+17
+View details
+© 2022 Elsevier Ltd. All rights reserved.
+About ScienceDirect
+Remote access
+Contact and support
+Terms and conditions
+Privacy policy
+Cookie settings
+
+All content on this site: Copyright © 2026 Elsevier B.V., its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training, and similar technologies. For all open access content, the relevant licensing terms apply.

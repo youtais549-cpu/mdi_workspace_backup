@@ -1,0 +1,32 @@
+# 初期設定
+# ※途中から再開する場合は、下の5行をコメントアウトし、
+# その下の `read_restart` を有効にしてください。
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes   
+read_data 2H-SiC_supercell_3x3x10_vacuum.data
+
+# --- 追加: 前回の計算結果（TIMESTEP 23）を上書き読み込み ---
+read_dump dump_min.lammpstrj 23 x y z box yes
+# ----------------------------------------------------------
+
+mass 1 28.085
+mass 2 12.011
+
+# MDI通信とMD計算の設定
+fix 1 all mdi/qm elements Si C
+
+# --- 1. 表面エネルギー算出用のエネルギー最小化（構造最適化） ---
+thermo 1
+
+# 最適化されていく様子（座標）を保存
+dump 1 all custom 1 dump_min.lammpstrj id type x y z
+dump_modify 1 append yes
+
+# 最適化の実行 (力かエネルギーの変動が小さくなるか、最大100回まで)
+# エネルギー変化率(etol)を0.0にし、力(ftol)の条件のみで収束判定させます（早上がり防止）
+minimize 0.0 1.0e-3 100 1000
+undump 1
+
+# 計算終了（MDは行わない）

@@ -1,0 +1,32 @@
+LAMMPS (22 Jul 2025 - Update 4)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+# 初期設定
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+# モデルの読み込み
+read_data 2H-SiC_supercell_3x3x10_vacuum.data
+Reading data file ...
+  triclinic box = (0 0 0) to (9.228 7.9916824 70.48) with tilt (-4.614 0 0)
+WARNING: Triclinic box skew is large. LAMMPS will run inefficiently. (src/domain.cpp:221)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  360 atoms
+  read_data CPU = 0.001 seconds
+mass 1 28.085
+mass 2 12.011
+
+# MDI通信とMD計算の設定
+fix 1 all mdi/qm elements Si C
+
+# --- 1. エネルギー最小化（お試し 3ステップ） ---
+thermo 1
+dump 1 all custom 1 dump_min.lammpstrj id type x y z
+minimize 1.0e-4 1.0e-6 3 3
+WARNING: No pairwise cutoff or binsize set. Atom sorting therefore disabled. (src/atom.cpp:2499)
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/comm_brick.cpp:212)
+ERROR: MDI: <ENERGY data (src/MDI/fix_mdi_qm.cpp:1039)
+Last input line: minimize 1.0e-4 1.0e-6 3 3

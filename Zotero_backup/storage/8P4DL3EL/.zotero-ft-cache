@@ -1,0 +1,407 @@
+フェーズフィールド法によるぜい性固体中の
+高速モードIIき裂進展挙動の数値的検討†
+石井 陽介*・田中 佑樹**・琵琶 志朗*
+Numerical Analysis of Rapid Mode II Crack Propagation in Brittle Solids by Phase-field Method
+by
+Yosuke ISHII*, Yuki TANAKA** and Shiro BIWA*
+Dynamic crack propagation in brittle solids is numerically analyzed using a two-dimensional finite element method based on the phase-field model of fracture to investigate the limiting crack velocity. Straight crack propagation without branching or kinking is achieved by modeling an elastically homogeneous and isotropic medium that contains a narrow rectangular region with a relatively low critical energy release rate. Mode I and mode II crack propagation are studied for two types of strain energy degradation functions in the phase-field model: quadratic and cubic forms. For both degradation functions, the mode I crack accelerates toward the Rayleigh wave velocity, which is the theoretically predicted limiting velocity according to linear elastic fracture mechanics. In contrast, the two degradation functions are found to yield different propagation characteristics for the mode II crack. With the quadratic degradation function, the crack velocity increases smoothly beyond the shear wave velocity. In the case of the cubic degradation function, however, the crack accelerates discontinuously from below the Rayleigh wave velocity to above the shear wave velocity due to the nucleation of a secondary crack ahead of the main crack tip, followed by coalescence of the secondary and main cracks. This behavior is consistent with theoretical predictions based on linear elastic fracture mechanics as well as previous molecular dynamics and finite difference simulations. Key words:
+Phase-field model of fracture, Finite element method, Brittle fracture, Intersonic crack propagation, Crack nucleation
+1緒 言
+固体材料の衝撃破壊を理解するための基礎として,高
+速き裂進展挙動の解明は重要な課題である.ぜい性材料
+中の高速進展き裂では分岐,キンク,進展経路振動など未
+解明の問題が複数存在し,これらの現象を明らかにする
+ための数値計算手法の構築が求められている.近年,主に
+凝固や結晶成長のシミュレーション分野で発展してきた
+フェーズフィールド法のき裂進展解析への適用が注目を
+集めている 1), 2).
+フェーズフィールド法は,固体中のき裂部と健全部を
+識別するために計算領域全体で定義される連続なスカラ
+ー場(フェーズフィールド)を導入し,応力場とフェーズ
+フィールドを連成させてそれらの時間発展を求めること
+でき裂進展をシミュレートする数値計算手法である.本
+手法は,従来のき裂形状を有限要素メッシュで明示的に
+モデル化するような解析手法に比べて,分岐やキンクな
+どの複雑なき裂進展挙動が数値解として自然に現れるこ
+とやき裂先端位置の追跡が不要であることなどの利点が
+ある.一方で,これまでに多数のモデルが提案されており,
+解析対象に応じて適切なモデルを選択する必要があるが
+その選択基準が十分に確立されていない点が課題となっ
+ている.
+線形破壊力学に基づく理論解析 3)-5)によると,一定速度
+または滑らかに変動する速度 v で進展するモード I,II,
+IIIき裂について,き裂先端へのエネルギー流れの観点か
+ら許容可能な v の範囲が Table 1 のように予測される.こ
+こで,vR,vS および vL は固体のレイリー波速度,横波速
+度および縦波速度である.モード I およびモードIIIき裂で
+は,進展速度の上限がそれぞれ vR および vS で与えられる.
+モードIIき裂では,0 ≤ v ≤ vR の速度域はモード I と共
+通しているものの,vS ≤ v ≤ vL(インターソニック速度)
+も許容されており,このような横波速度よりも速いき裂
+進展は実験的にも観測されている 6).vR < v < vS の速度域
+はき裂先端へのエネルギー流れが負になることから禁止
+区間とされる.そのため,モードIIき裂が vR 以下の低速
+側から加速するときには,進展速度がこの禁止区間を飛
+び越えることでインターソニック速度に達すると予測さ
+れている.このような不連続な速度変化についての可能
+性のあるメカニズムの一つとして,進展速度が vR に近づ
+くときにき裂先端前方に二次的なき裂が核生成され,そ
+† Received May 7, 2025, Accepted Jul. 23, 2025, J-STAGE Advance Publication Mar. 2, 2026 ©2026 The Society of Materials Science, Japan
+* 正 会 員 京都大学大学院 工学研究科 航空宇宙工学専攻 〒615-8540 京都市西京区
+* Department of Aeronautics and Astronautics, Graduate School of Engineering, Kyoto University, Nishikyo-ku, Kyoto 615-8540.
+** 京都大学大学院 工学研究科 航空宇宙工学専攻 〒615-8540 京都市西京区(現:日本航空株式会社 〒140-8637 東京都品川区)
+* Department of Aeronautics and Astronautics, Graduate School of Engineering, Kyoto University, Nishikyo-ku, Kyoto 615-8540 (Present affiliation: Japan Airlines Co., Ltd., Shinagawa-ku, Tokyo 140-8637).
+「材料」 (Journal of the Society of Materials Science, Japan), Vol. 75, No. 5, pp. 431-437, May 2026 論文
+
+
+れが主き裂と合体しインターソニック速度へ加速するこ
+とが有限差分法 7)や分子動力学法 8)を用いた数値解析によ
+り示唆されている.
+Schlüter ら 9)はフェーズフィールド法を用いた数値解析
+によりインターソニックモードIIき裂進展を検討してい
+る.しかし,そこでは前述したような二次的き裂の核生成
+は再現されておらず,き裂がインターソニック速度へ滑
+らかに加速する結果が報告されている.そこで本研究で
+は,フェーズフィールド法においてひずみエネルギーの
+劣化を表すためのモデルに着目し,Schlüter ら 9)とは異な
+るモデルを採用することでインターソニックモードIIき
+裂進展に伴う二次的き裂核生成の再現可能性を検討した.
+Table 1 Admissible crack propagation velocities based on linear elastic fracture mechanics*1.
+Fracture mode Admissible region of crack propagation velocity v
+Mode I 0 ≤ v ≤ vR
+Mode II 0 ≤ v ≤ vR and vS ≤ v ≤ vL
+Mode III 0 ≤ v ≤ vS *1vR, vS, and vL denote the Rayleigh, shear, and longitudinal wave velocities of the solid.
+2 フェーズフィールド法による動的ぜい性き裂進展解析
+本研究では,フェーズフィールド法を用いて等方線形
+弾性体中の動的なぜい性き裂進展を数値的に検討する.
+本手法では,連続なスカラー場であるフェーズフィール
+ドφφ�xx, tt� ∈ �0, 1�の空間分布によってき裂を表現する.こ
+こでφφは,φφ = 0がき裂部,φφ = 1が健全部に対応し,き裂
+部周辺で0から1へ滑らかに変化する.
+2・1 支配方程式
+本研究では物体力を無視し,微小変形の下で次式の運
+動方程式を考える.
+ρρ ∂∂�uu
+∂∂tt� = ∇ ∙ σσ. (1)
+ここでρρは質量密度,uu�xx, tt�は変位ベクトルである.応力
+テンソルσσ�xx, tt�は
+σσ = gg�φφ� ∂∂∂∂�
+∂∂∂∂ + ∂∂∂∂�
+∂∂∂∂ (2)
+で与えられ,ここで∂∂�xx, tt�は次式で定義される微小ひずみ
+テンソルである.
+∂∂=1
+2 �∇uu + �∇uu���. (3)
+式(2)のgg�φφ�はφφの発展に伴うひずみエネルギーの劣化を
+表す関数(劣化関数)であり,次式の条件を満たす単調増
+加関数であれば任意に定めることができる.
+gg�0� = 0, gg�1� = 1, gg��0� = 0. (4)
+ここでgg� ≡ dgg/dφφである.本研究で使用するggの具体的な
+関数形は 2・2 節で示す.
+式(2)の∂∂±�xx, tt�は,引張りと圧縮負荷に対するき裂の
+応答の非対称性(例えばモード I き裂の場合はき裂面の片
+側接触条件)をモデル化するために,等方線形弾性体のひ
+ずみエネルギー密度∂∂をφφの発展により影響を受ける部
+分∂∂�と影響を受けない部分∂∂�に
+∂∂ = ∂∂� + ∂∂� (5)
+のように加算分解したものである.この分解方法は一意
+ではなく,これまでに複数の分解モデルが提案されている
+2).本研究では Schlüter ら 9)との比較を念頭に彼らと同じ
+次式の分解方法を使用する.
+∂∂� = KK
+2 ⟨tr�∂∂�⟩� + μμ tr�∂∂�����, (6a)
+∂∂� = KK
+2 ⟨−tr�∂∂�⟩�. (6b)
+ここで KKは体積弾性率,μμはせん断剛性,∂∂����xx, tt�は偏差
+ひずみテンソルを表し,⟨XX⟩ ≡ �XX + |XX|�/2はマコーレー
+の括弧である.式(6)は Amor ら 10)により提案された分解
+モデルであり,ひずみエネルギー密度を膨張・せん断・
+収縮変形の寄与に分解し,そのうち膨張とせん断変形の
+寄与を∂∂�,収縮変形の寄与を∂∂�とするものである.
+フェーズフィールドの支配方程式として次式の楕円
+型偏微分方程式 2)を使用する.
+gg��φφ�H − GG�
+2l �1 − φφ� − 2l∇ ∙ �GG�∇φφ� = 0. (7)
+ここでGG�は臨界エネルギー解放率を表す.0 < l ≪ 1は長
+さの次元を有する小さなパラメータであり,φφが0から1
+へ変化する遷移域の幅を主に支配する.式(7)は,線形破
+壊力学におけるグリフィスのぜい性破壊則の数値的正
+則化 11)に対応しており,シャープなき裂ΓΓを含む領域ΩΩ
+の弾性体の破壊エネルギーがl → 0�の極限で
+� GG�dΓΓ
+�
+= � GG� ��1 − φφ��
+4l + l∇�φφ� dΩΩ
+�
+(8)
+により表現できることに基づいて導出されたものであ
+る.そのため,十分小さいlを用いて式(7)を解くことで,
+グリフィスの考えに基づいたぜい性き裂進展の数値解
+析が可能となる.
+式(7)のH�xx, tt�はφφの不可逆的な発展(き裂の非治癒性)
+を課すための簡易モデルであり,次式で定義される 12).
+H�xx, tt� ≡ m��a�x ∂∂��xx, ss�. (9)
+これは各位置における∂∂�の履歴の最大値を表しており,
+式(7)左辺第一項(φφの発展のための駆動力に対応)にHが
+含まれることで,φφの単調減少性を課すことができる.
+432 石井 陽介,田中 佑樹,琵琶 志朗
+
+
+2・2 劣化関数の選択
+Schlüter ら 9)は,式(4)を満たす劣化関数として二次関数
+gg�φφ� = φφ� (10)
+を使用し,インターソニックモードIIき裂進展における
+二次的き裂の核生成が再現されない結果を得ている.式
+(10)は,フェーズフィールド法によるき裂進展解析にお
+いて最も一般的に用いられるモデルである.
+ここで,式(1)-(10)において準静的な空間 1 次元の引張
+問題を考える.材料特性が空間依存しないときにはφφが
+空間的に一様な解(均質解)を解析的に求めることがで
+き 2),無負荷時に領域全体でφφ = 1とすると,応力-ひず
+み曲線とフェーズフィールド変数-ひずみ曲線は Fig. 1
+の一点鎖線で与えられる.応力はひずみの非線形関数に
+なり,線形弾性領域(σσ = EEEEとなる領域)が存在しない.
+φφはひずみの減少関数になり,応力が最大値を取るとき
+にはφφ = 0.75まで低下する.
+線形破壊力学に基づく理論解析 8), 13)において,レイリ
+ー波速度で等速進展するモードIIき裂ではき裂先端か
+らある有限距離だけ前方でせん断応力が極大値を取る
+ことが示されており,その位置が二次的き裂の核生成箇
+所に対応すると予測されている.また,フェーズフィー
+ルド法によるき裂核生成を検討した数値解析 14)におい
+て,核生成の再現のためには応力-ひずみ関係における
+線形弾性領域の存在が重要であることが示されている.
+これらを踏まえて本研究では,式(10)の二次劣化関数
+に加えて,Borden ら 15)が延性破壊のフェーズフィールド
+モデルの枠組みで提案した次式の三次関数を検討する.
+gg�φφ� = −2φφ� + 3φφ� + mm�φφ� − φφ��. (11)
+劣化関数は理論的観点からは式(4)を満たせば十分である
+Fig. 1 Stress-strain curves and phase-field variable-strain curves for the spatially uniform solution to a one-dimensional quasi-static tensile problem, where the intact strain energy density is WW = EEEE�/2.
+ものの,数値計算の観点からはφφ = 1のときに非零の駆動
+力が生じるためにgg��1� � 0となることが望ましいとされ
+ている.式(11)のmm�= gg��1��はそのための小さな正の定数
+であり,本研究では Borden ら 15)にしたがいmm = 10��とす
+る.Fig. 1 の実線は,式(11)でmm = 0とした場合の均質解で
+ある.二次劣化関数とは対照的に,三次劣化関数では線形
+弾性領域が存在しこの領域ではφφ = 1が保持される.そし
+て応力が最大値に達するときにはφφ = 0.9までしか低下し
+ない.よって,式(11)は式(10)よりも理想的なぜい性破壊
+(最大応力に達するまでφφ = 1を保持)に近い挙動を示す.
+式 (10)と式(11)で均質解の挙動にこのような違いが生じ
+る主な理由として,φφ = 1における劣化関数の微分係数
+gg��1�が考えられる.2・1 節で述べたように,式(7)左辺第
+一項のgg��φφ�Hはφφの発展のための駆動力を表す.式(10)の
+二次劣化関数ではgg��1�H = 2Hとなることから,φφ = 1に
+おいて非零のひずみが生じてH � 0になれば直ちにφφの
+発展が駆動され,φφ = 1の状態を保持することができない.
+一方で,式(11)の三次劣化関数ではgg��1�H = mmHとなる.
+これよりmm = 0のときには駆動力が生じないため,φφ = 1
+の状態が保持され線形弾性領域が得られる.なお,数値計
+算時には前述の理由により0 < mm m 1を使用するため,厳
+密にはH � 0になると非零の駆動力が生じるものの,その
+大きさは式(10)の場合に比べると十分小さい.したがって,
+mm = 0のときとほぼ同様の挙動が得られると予想される.
+準静的な 1 次元引張問題では,Fig. 1 に示した均質解に
+加えてφφが空間的に局在化した解も解析的に求めること
+ができる 2).空間座標をyyとしてその局在化中心をyy = yy�
+と仮定すると,任意のgg�φφ�についてφφの空間分布は
+φφ�yy� = 1 − exp �− |yy − yy�|
+2l � (12)
+で与えられ,このときの応力はいたるところで 0 である.
+これは 1 次元棒がyy = yy�で破断した状態を表す.
+3 解析条件
+2 次元平面ひずみ状態を仮定し,モード I およびモー
+ドIIき裂の直線的進展を有限要素法により解析する.
+解析モデルと材料定数を Fig. 2 と Table 2 に示す.これ
+らの計算条件は Schlüter ら 9)に従って設定している.彼
+らは Gao ら 8)が分子動力学計算の連続体近似として与え
+た物理量を使用しており,各物理量の数値はレナード・
+ジョーンズ原子間ポテンシャルの最小点の深さ・ポテン
+シャルが 0 となる原子間距離・原子の質量をそれぞれエ
+ネルギー・長さ・質量の単位とする無次元還元単位系で
+与えられている.
+初期条件は次式で与える.
+uu��xx, 0� = uu� ��xx, 0� = 0, ii = xx, yy
+φφ�xx, 0� = �0, 0 � xx � 0.25, yy = 0.3,
+1, otherwise.
+(13)
+433
+フェーズフィールド法によるぜい性固体中の高速モードIIき裂進展挙動の数値的検討
+
+
+時間tt = 0で上下境界に,モードIの場合はyy方向の一
+定速度(yy = 0.6でuu� � = 0およびuu� � = 0.5,yy = 0でuu� � = 0
+およびuu� � = −0.5)を,モードIIの場合はxx方向の一定速
+度(yy = 0.6でuu� � = 2.5およびuu� � = 0,yy = 0でuu� � = −2.5お
+よびuu� � = 0)を与え計算終了まで保持する.また,初期
+き裂(0 � xx � 0.25, yy = 0.3)上では常にφφ = 0に固定す
+る.それ以外の境界条件は Fig. 2 に示す通りである.
+フェーズフィールド法ではき裂進展経路を規定しな
+い限り荷重状態に依存して分岐やキンクが自然に現れ
+る.そこで,準静的な 1 次元問題ではき裂周りのφφの理
+論的な分布が式(12)で与えられることに基づいて,yy =
+0.3を中心に幅4lの領域に周囲よりも低いGG�(ρρ, KK, μμは周
+囲と同じ値)を設定することでxx方向への直線的なき裂
+進展を誘導する.このような方法は直線経路に沿う高速
+進展き裂の観測実験 6)で実際に使用されており,そこで
+は二つの Homalite-100 平板を接着接合することで低GG�領
+域が導入されている.
+解析領域は,一辺の長さが Δx の 4 節点アイソパラメ
+トリック正方形要素で空間離散化する.そして,以下の
+工程を交互に繰り返すスタッガード法を使用する.
+1. uu, εε, σσを固定した状態で,有限要素離散化した式(7)を
+修正ニュートン・ラフソン法により解きφφを更新
+2. φφを固定した状態で,有限要素離散化した式(1)を陽
+的二次中心差分法(時間ステップ幅は Δt = Δx/(10vL))
+により解きuu, εε, σσを更新
+Fig. 2 Geometry and boundary conditions for the simulation of straight mode I/II crack propagation.
+Table 2 Non-dimensional material properties. Mass density ρ 0.92
+Bulk modulus K 66.0
+Shear modulus μ 24.8
+Corresponding wave velocities
+Longitudinal wave vL 10.4
+Shear wave vS 5.20
+Rayleigh wave vR 4.85
+Critical energy release rate Gc
+For |yy − 0.3| � 2l 19.1
+For |yy − 0.3| � 2l 0.96
+これらの数値解析は Fortran90 による自作プログラムに
+オープンソースの並列有限要素構造解析ソフトウェア
+FrontISTR の機能を組み込むことで実装した.
+4 解析結果
+4・1 モード I き裂進展
+上下境界にyy方向速度を規定し,l = 2 × 10-3,Δx = l/2 お
+よび三次劣化関数を使用した場合のφφと垂直応力σσ�� の空
+間分布をいくつかの代表的な時間について Fig. 3 に示す.
+tt = 0で上下境界から発生した引張応力波が約tt = 0.030
+で初期き裂に到達し,その後yy方向に複数回往復する間に
+初期き裂先端部で応力集中が起こる.それが約tt = 0.135
+で臨界値を超えるとき裂が進展を開始し,時間経過とと
+もにxx方向に直線的に進展する様子が確認できる.引張応
+力波がき裂部に入射する際には式(2)の応力-ひずみ関係
+に基づいて自由端反射が再現され,反射した圧縮応力波
+が引張応力を打ち消す方向に寄与する.その結果,き裂進
+展とともにき裂先端後方側の領域ではσσ�� が相対的に小
+さくなり,主にき裂先端前方側で大きなσσ��が生じる.こ
+のようなフェーズフィールドおよび応力分布の時間変化
+の結果より,妥当な動的モード I き裂進展挙動が得られて
+Fig. 3 Spatial distributions of the phase-field variable (left column) and the corresponding normal stress component σσ�� (right column) at several representative time steps for mode I crack propagation, obtained using the cubic degradation function.
+434 石井 陽介,田中 佑樹,琵琶 志朗
+
+
+いると考えられる.
+二次劣化関数および複数の l と Δx で行った計算結果
+から求めたき裂進展速度 v の時刻歴を Fig. 4 に示す.こ
+れらは,yy = 0.3においてφφ = 0.5となる最大のxxをき裂先
+端位置として定め,その時刻歴から進展開始時刻を同定
+し,進展開始後の先端位置の時刻歴を五次多項式で最小
+二乗近似した結果を解析的に微分して求めている.
+2・1 節で述べたように,フェーズフィールド法でぜい
+性き裂進展を模擬するためには l を十分小さく取る必要
+がある.Fig. 4(a)は要素サイズと l の相対関係を Δx = l/2
+に固定した状態で l を変化させた場合の進展速度履歴を
+示しており,l = 2 × 10-3 程度で l の影響が小さくなるこ とがわかる.Fig. 4(b)は l = 2 × 10-3 に固定したときに Δx
+を変化させた場合の結果を示しており,Δx = l/2 以下で
+要素サイズの影響が小さくなる.これらの結果に基づい
+て以降の計算では l = 2 × 10-3 および Δx = l/2 を使用する.
+Fig. 4 Time histories of mode I crack propagation velocity for the quadratic degradation function. (a) Results for different small lengthscale parameters l with a fixed relative mesh size Δx = l/2; (b) results for different mesh sizes Δx with a fixed small length-scale parameter l = 2 × 10-3.
+Fig. 5 Time histories of mode I crack propagation velocity for the quadratic (Eq. (10)) and cubic (Eq. (11)) degradation functions.
+式(10)の二次劣化関数および式(11)の三次劣化関数を使
+用した場合のモード I き裂進展速度履歴を Fig. 5 に示す.
+初期き裂が約tt = 0.13で進展を開始した後,滑らかに加速
+し,約tt = 0.3で最大進展速度 v = 0.84vS (= 0.90vR)に達する. Schlüter ら 9)の数値解析や Washabaugh and Knauss16)の実験
+で示されているように,低GG�領域におけるGG�値をさらに
+低下させることで最大進展速度が理論的限界値 vR にさら
+に漸近すると予想される.なお,tt = 0.3以降に進展速度が
+減少傾向を示しており,これはき裂先端が解析領域の右
+端に近づき境界の影響を顕著に受けるためであると考え
+られる.式(10)および式(11)のどちらの劣化関数を用いて
+も大きな違いは確認されず,Schlüter ら 9)とほぼ同様の進
+展速度履歴が得られている.
+4・2 モードIIき裂進展
+上下境界にxx方向速度を与えたときのφφの空間分布を,
+Fig. 6 Spatial distributions of the phase-field variable for mode II crack propagation at several representative time steps, obtained using the quadratic (left column) and cubic (right column) degradation functions.
+435
+フェーズフィールド法によるぜい性固体中の高速モードIIき裂進展挙動の数値的検討
+
+
+式(10)と式(11)の劣化関数を使用した場合について Fig. 6
+に示す.モードIIき裂がキンクを伴うことなく低GG�領域
+に沿って直線的に進展する様子が確認できる.
+二次劣化関数を使用した場合(Fig. 6 の左側)は,
+Schlüter ら 9)が報告したように二次的き裂の核生成が確認
+されない.上下境界からのせん断波が初期き裂に到達し
+た直後のtt = 0.060において Fig. 1 で述べた性質(ひずみ
+が非零になればφφは 1 から減少)が見られ,初期き裂先端
+の前方でφφが1より低下している.これが進展中のき裂先
+端前方の応力場を平滑化し,二次的き裂の核生成を妨げ
+ていると考えられる.一方で三次劣化関数を用いた場合
+(Fig. 6 の右側)では,このようなき裂前方におけるφφの
+減少はほとんど見られず,tt = 0.174~0.175でき裂先端前
+方に二次的き裂の核生成が確認できる.
+この点をさらに詳細に検討するために,yy = 0.3におけ
+るφφとせん断応力σσ��のxx x tt分布を Fig. 7 に示す.二次劣
+化関数(Fig. 7 (a), (b))では,き裂は約tt = 0.065に進展を
+開始した後,単一き裂として滑らかに加速する.
+それに対して三次劣化関数(Fig. 7(c), (d))では,初期き
+裂が滑らかに加速した後の約tt = 0.175で特徴的なき裂進
+展挙動が見られる.この領域の拡大図を Fig. 7(e), (f)に示
+す.Fig. 7(f)のtt = 0.160あたりでき裂先端(φφ = 0.5の位置)
+から有限距離だけ前方でせん断応力がピークを持つよう
+になり,それがほぼ横波速度 vS でxx方向へ伝搬することが
+わかる.この傾向は線形破壊力学に基づく理論解析 8), 13)
+と整合している.そして,このピーク応力の位置が
+Fig. 7(e)の二次的き裂の核生成位置と良好に対応しており,
+この挙動は既往の数値解析 7), 8)と整合している.
+モードIき裂の場合と同様の方法で求めたモードII
+き裂進展速度の時刻歴を Fig. 8 に示す.ただし,三次劣
+化関数の場合は進展開始後の時間を二次的き裂の核生
+成時刻前後に分け,各区間に対して最小二乗近似を行っ
+ている.二次劣化関数では,モードIIき裂がtt = 0.065で
+進展を開始し,tt = 0.091~0.093で理論的には禁止される
+速度区間 vR < v < vS を通過してインターソニック速度に
+達する.そしてtt = 0.130で最大進展速度 v = 1.7vS に達し
+た後は減速しながら進展し,tt = 0.185で右側境界に到達
+する.一方で三次劣化関数では,tt = 0.065で進展を開始
+したき裂が vR 近くまで加速した後のtt = 0.175において,
+Fig. 7(e)で示した二次的き裂の核生成および主き裂との
+合体が起こり,理論的な禁止区間を通過することなく不
+連続にインターソニック速度へ加速する.その後tt =
+0.190で最大進展速度 v = 1.65vS に達し,最終的にtt =
+0.209で右側境界に到達する.
+5結 言
+本研究では,破壊力学の分野で近年注目されているフ
+ェーズフィールド法を用いて,高速き裂の進展速度を数
+値的に検討した.先行研究で使用された二次劣化関数の
+代わりに三次劣化関数を用いることでモードIIき裂がイ
+ンターソニック速度へ加速する際の二次的き裂の核生成
+モデルが存在する中でそれぞれの基本特性を理解したう
+が再現できることがわかった.これは,多数の使用可能な
+えで適切なモデルを選択すれば,フェーズフィールド法
+が高速き裂進展解析に有用であることを示している.
+2・1 節で述べたように本研究の定式化はl → 0�でグリ
+Fig. 7 Spatiotemporal distributions of the phase-field variable and shear stress along y = 0.3. (a), (b) Results for the quadratic degradation function; (c), (d) results for the cubic degradation function; (e), (f) enlarged views of (c) and (d) near the location of secondary crack nucleation.
+Fig. 8 Time histories of mode II crack propagation velocity for the quadratic (Eq. (10)) and cubic (Eq. (11)) degradation functions.
+436 石井 陽介,田中 佑樹,琵琶 志朗
+
+
+フィスのぜい性破壊則に対応する.このことから,lを本
+研究で用いた値よりもさらに小さく取れば,二次劣化関
+数においても二次的き裂の核生成が再現される可能性が
+ある.しかしそのような場合には,Δx < l の制約から必要
+な要素数が増大し,Δt もさらに小さく取る必要があるた
+め,現実的な時間内での計算が困難になると予想される.
+最後に今後の課題について述べる.本研究で二次劣化
+関数を用いて実施した数値シミュレーションでは,線形
+破壊力学でき裂先端へのエネルギー流れの観点から禁止
+される速度域のモードIIき裂進展が確認された.このよ
+うな速度で進展するき裂に対して動的エネルギー解放率
+を数値的に評価することで,理論的予測との乖離が起こ
+る要因をさらに検討できると考えられる.また,3 次元の
+枠組みでのインターソニックき裂進展挙動の数値解析も
+重要な課題として挙げられる.
+参考文献
+1) Ambati M, Gerasimov T, De Lorenzis L. A review on phase-field models of brittle fracture and a new fast hybrid formulation. Comput Mech 2015;55:383-405. 2) Wu JY, Nguyen VP, Nguyen CT, Sutula D, Sinaie S, Bordas SPA. Phase-field modeling of fracture. Adv Appl Mech 2020;53:1-183. 3) Burridge R, Conn G, Freund LB. The stability of a rapid mode II shear crack with finite cohesive traction. J Geophys Res 1979;84:2210-2222. 4) Broberg KB. The near-tip field at high crack velocities. Int J Fract 1989;39:1-13. 5) Freund LB. Dynamic fracture mechanics 1990;1-563 Cambridge University Press. 6) Rosakis AJ, Samudrala, O Coker D. Cracks faster than the shear wave speed. Science 1999;284:1337-1340. 7) Andrews DJ. Rupture velocity of plane strain shear cracks. J Geophys Res 1976;81:5679-5687. 8) Gao H, Huang Y, Abraham FF. Continuum and atomistic studies of intersonic crack propagation. J Mech Phys Solids 2001;49:2113-2132. 9) Schlüter A, Kuhn C, Müller R, Gross D. An investigation of intersonic fracture using a phase field model. Arch Appl Mech 2016;86:321-333. 10) Amor H, Marigo JJ, Maurini C. Regularized formulation of the variational brittle fracture with unilateral contact: Numerical experiments. J Mech Phys Solids 2009;57:1209-1229. 11) Francfort GA, Bourdin B, Marigo JJ. The variational approach to fracture. J Elast 2008;91:5-148. 12) Miehe C, Hofacker M, Welschinger F. A phase field model for rate-independent crack propagation: Robust algorithmic implementation based on operator splits. Comput Methods Appl Mech Eng 2010;199:2765-2778. 13) Burridge R. Admissible speeds for plane-strain selfsimilar shear cracks with friction but lacking cohesion. Geophys J R Astron Soc 1973;35:439-455. 14) Tanné E, Li T, Bourdin B, Marigo JJ, Maurini C. Crack nucleation in variational phase-field models of brittle fracture. J Mech Phys Solids 2018;110:80-99.
+15) Borden MJ, Hughes TJR, Landis CM, Anvari A, Lee IJ. A phase-field formulation for fracture in ductile materials: Finite deformation balance law derivation, plastic degradation, and stress triaxiality effects. Comput Methods Appl Mech Eng 2016;312:130-166. 16) Washabaugh PD, Knauss WG. A reconciliation of dynamic crack velocity and Rayleigh wave speed in isotropic brittle solids. Int J Fract 1994;65:97-114.
+437
+フェーズフィールド法によるぜい性固体中の高速モードIIき裂進展挙動の数値的検討

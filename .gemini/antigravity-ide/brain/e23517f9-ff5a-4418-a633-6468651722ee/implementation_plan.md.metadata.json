@@ -1,0 +1,6 @@
+{
+  "summary": "Implementation plan for setting up LAMMPS with MDI and Quantum ESPRESSO locally in the user's WSL environment using Miniconda to avoid sudo.",
+  "updatedAt": "2026-09-04T12:30:33.694362235Z",
+  "requestFeedback": true,
+  "userFacing": true
+}

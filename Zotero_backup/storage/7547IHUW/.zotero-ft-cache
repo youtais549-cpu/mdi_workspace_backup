@@ -1,0 +1,295 @@
+Theoretical and Applied Fracture Mechanics 121 (2022) 103531
+Available online 8 August 2022 0167-8442/© 2022 Elsevier Ltd. All rights reserved.
+A novel atomic J-integral concept beyond conventional fracture mechanics
+Pengfei Jia a, Kai Huang a,b,c,*, Hongjun Yu a, Takahiro Shimada d, Licheng Guo a,
+Takayuki Kitamura e
+a Department of Astronautic Science and Mechanics, Harbin Institute of Technology, Harbin 150001, China
+b Institute for Advanced Ceramics, Harbin Institute of Technology, Harbin 150001, China
+c State Key Laboratory for Strength and Vibration of Mechanical Structures, Xi’an Jiaotong University, Xi’an 710049, China
+d Department of Mechanical Engineering and Science, Kyoto University, Nishikyo-ku, Kyoto 615-8540, Japan
+e Kyoto University, Sakyo-ku, Kyoto 606-8501, Japan
+ARTICLE INFO
+Keywords: J-integral Atomic fracture mechanics Brittle fracture Nonlinear elasticity Crack
+ABSTRACT
+The J-integral, which is crucial to the nonlinear fracture analysis within the framework of continuum fracture mechanics, fails at the atomic scale due to the atomic discreteness emerging with decreasing size. In this paper, a novel atomic J-integral calculation method is proposed for atomically sharp cracks by developing a new integral scheme to describe the local displacement gradient and stress field for discrete models. The applicability of the atomic J-integral is verified by comparing with traditional FEM and stress-based method, and its pathindependency is elucidated by evaluating the geometric nonlinearity at the atomic scale. Furthermore, it is corroborated that the atomic J-integral method is dimension-independent even at the ultra-small scale below the dimensional limit of continuum mechanics.
+1. Introduction
+How to determine the growth of preexisting cracks in materials is the paramount topic in fracture mechanics. Generally, the cracking in brittle materials is dominated by linear elasticity at the macroscale, since the nonlinear deformation is highly localized in the vicinity of the crack tip. As the material size shrinks down to the nanoscale, however, such atomic-level nonlinearity plays a crucial role in the fracture process and should be fully considered [31]. Eshelby’s seminal work [5] about the configuration force proposed a conservative integral as a mathematical tool, until Rice [26] originally introduced the J-integral concept and clarified its physical significance. For nonlinear fracture mechanics (NLFM), the J-integral evaluates the energetic force driving the propagation of an existing crack and the intensity of the crack tip fields in nonlinear elastic continuum [32,33]. The nonlinear elastic fracture refers to the pure brittle fracture of the material without any plastic behavior. The path independence also provides great convenience for solving the J-integral by numerical simulations, considering that the measurement of the energy released at the crack tip is difficult. As the critical value JC refers to the fracture toughness, the J-integral criterion possesses a rigorous theoretical basis and physical significance. Since the J-integral was constructed within the framework of
+continuum fracture mechanics (CFM), it remains an open question whether the J-integral works for cracking issues in nano-sized structures or not. When the crack dimension decreases to the nanoscale, the singular stress field, which intrinsically dominates the fracture in the theory of CFM, will shrink down to a few nanometers. In such cases, only an extremely smaller number of atoms exist near the crack tip, compared with that in the macroscale materials. Therefore, the postulate that a large number of atoms exist in the vicinity of the crack tip to regard the area as a continuum is no longer valid at the atomic scale. And this leads to the breakdown of CFM [46,30,9,6,7,35,43]. According to a series of studies about the failure of continuum theories at the nanoscale, various criteria within the framework of CFM, including the Griffith energy release rate (ERR) criterion [30], J-integral criterion [31] and strength criterion [9,15], will break down when describing the brittle elastic fracture at the nanoscale. To break through the lower dimensional limit of CFM, some attempts have been made by applying the atomic fracture mechanics (AFM). A representative example is the atomic ERR method, which characterizes the first bond breaking at the crack tip [30,9,10,31,15]. Nevertheless, it is still not easy for the atomic ERR method to deal with multiscale fracture problems, e.g., an extremely small (nano-sized) crack in a large (macro-sized) component. Because the atomic ERR is calculated by counting the change of strain energy of the whole structure. Considering
+* Corresponding author at: Department of Astronautic Science and Mechanics, Harbin Institute of Technology, Harbin 150001, China. E-mail address: huangkai@hit.edu.cn (K. Huang).
+Contents lists available at ScienceDirect
+Theoretical and Applied Fracture Mechanics
+journal homepage: www.elsevier.com/locate/tafmec
+https://doi.org/10.1016/j.tafmec.2022.103531 Received 12 June 2022; Received in revised form 4 August 2022; Accepted 4 August 2022
+
+
+Theoretical and Applied Fracture Mechanics 121 (2022) 103531
+2
+that the J-integral only focuses on the local area near the crack tip, it may provide a new approach to solving such kinds of issues. However, there remains a fundamental question that whether the criterion constructed at the macroscale still works at the nanoscale due to the extremely confined singular stress field at the nano-sized crack tip [45]. Some efforts have been put to develop insight into the application of the J-integral at the atomic scale using atomistic simulation methods [42,3,19,17,27,18,1,11,12] first studied this issue by calculating an approximation for the J-integral, i.e., the H-sum, by the atomic potential energy and an estimate of the displacement gradients of designated atoms around the crack tip. Nakatani et al. [20,21] avoided the difficulties of calculating a contour integral by applying an equivalent domain integral (EDI) approach. In theirwork, the contribution of each atom to the J-integral is weighted spatially according to each atom’s coordinates. Then, Jin et al. [16] also used the EDI approach to calculate the atomic J-integral, but applied a different way to compute the strain energy density. Jones et al. [17] applied a Lagrangian kernel-based estimator of continuum fields to atomic data in order to estimate the J-integral for the analysis of cracks and dislocations. Roy et al. [28] investigated the validity of linear elastic fracture mechanics (LEFM) to model fracture processes at the discrete atomic scale and implemented the atomic J-integral as a nanoscale fracture metric to investigate flawtolerance at the nanoscale. However, these existing studies for the atomic J-integral are mainly based on the domain integral form calculated by the contribution of designated atoms in the vicinity of the crack tip. The displacement gradient is hard to be described accurately for a discrete atomic structure. Moreover, it is still unclear whether the atomic J-integral method is path-independent or dimensionalindependent when the material size decreases below the dimensional limit of CFM. In this paper, an AFM-based J-integral (JAFM) concept is proposed to solve the nonlinear fracture of nanostructures. We avoid calculating the displacement gradients of atoms by meshing the atomic structure with quadrilateral isoparametric elements and adding Gaussian points inside the elements. The line integral along the crack face is considered in the Jintegral. The accuracy and path-independency are verified by a series of
+numerical examples based on the graphene nanoribbons (GNRs). Furthermore, we demonstrate the breakdown of the conventional J-integral based on NLFM and give the lower dimensional limit at the atomic scale. The dimensional-independency of JAFM introduced in this paper is discussed by comparing it with the CFM method.
+2. Atomic J-integral
+According to our previous work, both the Griffith ERR and the stress intensity factors with in the framework of LEFM are applicable when the specimen is lager than the lower dimensional limits of LEFM [30]. However, when the specimen dimension is further reduced, the influence brought by the material nonlinearity will become much stronger. Therefore, when describing the fracture of nanostructures below the critical scale of LEFM, the strong nonlinearity and existence of few atoms near the crack tip must be fully considered. According to NLFM established on continuum fracture theory, J-integral is the most commonly used parameter for characterizing nonlinear fracture behavior. As shown in Fig. 1a, the local coordinates at the crack tip are introduced in a 2D atomic system, where the atoms and bonds are presented by dots and solid lines. The crack surfaces are modeled by removing an array of atomic bonds and marked by red dots. The basic form of J-integral is defined as [26]
+J = Γlεi→m0
+∫
+Γε
+Wδ1i σijuj,1
+)nidΓ (1)
+where Γε is an infinitesimal integral path around the crack tip; ni is the outward normal vector of Γε, as shown in Fig. 1a; δij is Kronecker delta and subscripts i, j take the values of 1 and 2; the repetition of an index in a term denotes a summation with respect to that index over its range; a comma denotes a partial derivative; W is the strain energy density
+defined as W = ∫ εij
+0 σijdεij.
+In practical numerical calculations, J-integral in contour integral form is numerically inaccurate and inconvenient to compute for arbitrary finite element mesh configurations. Thus, Eq. (1) is usually
+Nomenclature
+a Length of crack
+a0 Lattice constant of sp2 C–C bond aie Displacement vectors of atoms dc Critical deformation at fracture E Young’s modulus Eij Green strain
+f αβ
+j Interatomic force H Length of monolayer specimen I Identity matrix J J-integral JAFM AFM-based J-integral Jcrk J-integral along the crack face JFEM J-integral calculated by FEM JMS J-integral calculated by stress-based method JC Critical value of J/fracture toughness JFAFM Critical value of JAFM JF
+FEM Critical value of JFEM ni Outward normal vector Nie Shape function q Weight function
+rαβ
+i Distance between atoms ui Displacement u Displacement vector of Gaussian points
+V0 Volume per atom W Strain energy density αy Yield offset εglobal Global strain δij Kronecker delta Γ0 Closed contour around the crack tip ΓB Integral path ΓC Crack face σglobal Global stress
+σα
+ij Atomic stress σ Stress vectors of Gaussian points σie Stress vectors of atoms AFM Atomic fracture mechanics AIREBO Adaptive intermolecular reactive empirical bond order CFM Continuum fracture mechanics EDI Equivalent domain integral ERR Energy release rate FEM Finite element method GNR Graphene nanoribbon LEFM Linear elastic fracture mechanics LAMMPS Large-scale atomic/molecular massively parallel simulator MS Molecular static NLFM Nonlinear elastic fracture mechanics
+P. Jia et al.
+
+
+Theoretical and Applied Fracture Mechanics 121 (2022) 103531
+3
+converted into an equivalent domain integral (EDI) to maintain high precision. In order to achieve the EDI form, the first step is to convert the integral contour Γε in Eq. (1) into a closed contour Γ0 surround the crack tip as illustrated in Fig. 1a. Γ0 is defined as Γ0 = ΓB + Γε + Γ+
+C + ΓC ; ΓC is the crack face; ΓB and ΓC are the opposite paths of ΓB and ΓC. It should be noted that at the macroscale the traction-free condition is always substituted on the crack surface, i.e., σ2j(x1, ±0) = 0. However, the atomic forces often have non-zero values on the crack surface due to the long-range interaction between atoms. Thus, it is not rigorous to directly apply the hypothesis of CFM into the atomic-scale problems. In this case, we define the atomic J-integral based on the concept of AFM as
+JAFM =
+∮
+Γ0
+Wδ1i σijuj,1
+)niqdΓ + Jcrk (2)
+where q is an arbitrary smooth weight function with the value of 1 on Γε and 0 on ΓB. The crack face integral Jcrk is expressed as
+Jcrk =
+∫
+Γ+
+C +ΓC
+Wδ1i σijuj,1
+)niqdΓ (3)
+Considering that the normal vector ni on ΓC is
+n1 =
+{
+0 on Γ+
+C
+)
+0 on ΓC
+) , n2 =
+{
+1 on Γ+
+C
+)
+1 on ΓC
+) (4)
+We can simplify Jcrk as
+Jcrk =
+∫
+ΓC
+σ2j uj,1 qdΓ
+∫
+Γ+
+C
+σ2juj,1qdΓ (5)
+Applying the divergence theorem to Eq. (2), we can obtain the EDI as
+JAFM =
+∫∫
+A
+Wδ1i σijuj,1
+)q,idA + Jcrk (6)
+According to the existing research, CFM cannot provide reliable displacement and stress fields for J-integral when the specimen size decreases below the critical dimensional limits [30,31]. Meanwhile, how to accurately describe the constitutive near the crack tip with consideration of the large nonlinearity at fracture is quite challenging at such an atomic scale [39]. Thus, some improvements should be made to implement the J-integral calculations for nanostructures, including the discretization of the integral equation, the definition of stress and strain fields, etc. In this work, AFM is used to provide real displacement and stress
+fields with consideration of atomic discreteness at the atomic scale. In the discrete system, the atomic displacements can be derived from the changing of coordinates for one certain atom before and after deformation. The atomic stress can be obtained from the Virial theorem, which gives the expression of the stress tensor as the function of atom coordinates and inter-atomic forces. The atomic stress tensor in the Cartesian coordinates at Atom α is expressed by
+σα
+ij = 1
+2V0
+∑
+β∕=α
+rαβ
+i f αβ
+j (7)
+where V0 is the volume per atom; rαβ
+i is the distance between Atom α and Atom β in i direction; f αβ
+j is the jth component of the interatomic force exerted on Atom α by Atom β [34]. Another problem appears in the definition of the displacement gradient and strain for discrete models at the atomic scale, since the strain was originally introduced for continuum media. For ideal crystals such as fcc and bcc, strain equals everywhere in the system, which is called the homogeneous strain system. Strain varies from location to location for materials that contain defects such as grain boundaries and cracks, which are called the nonhomogeneous strain systems. In such cases, the evaluation of local strain is often complicated due to the discontinuity of atoms. Especially for the cracked body, the displacement gradient in the vicinity of the crack tip changes significantly. In general cases, the local strain at Atom α is evaluated by taking an average of the displacements over its neighboring atoms by staindisplacement relationship [16]. However, the choice of which atoms should be included in the strain assessment is not rigorous. The cutoff radius can be changed to select the first or second neighboring atoms, while the calculations of displacement gradients are totally different when choosing different neighboring atoms. An alternative approach is investigated referring to the idea of meshing in finite element method (FEM) to avoid calculating the displacement gradients directly at the atom. The atomic structures are meshed by linear quadrilateral isoparametric elements, as shown in Fig. 1b. The atoms along the crack face are meshed by one-dimensional linear elements to calculate the crack face integral. Displacement gradients and stress fields inside elements can be accurately calculated by shape functions. Since the integrand of EDI is continuous everywhere inside elements, Eq. (3) can be solved by the Gaussian integral method. The second-order Gaussian integration points are arranged inside elements, as shown in Fig. 1b. Regarding carbon atoms as “nodes” in FEM, the displacements and local stress fields of Gaussian points are obtained by element shape functions:
+Fig. 1. (a) Local coordinates in the vicinity of the crack tip for JAFM. (b) Atomic structure is meshed by linear quadrilateral isoparametric elements, and crack face is meshed by one-dimensional linear elements. Second-order Gaussian integration points are arranged inside the elements.
+P. Jia et al.
+
+
+Theoretical and Applied Fracture Mechanics 121 (2022) 103531
+4
+u = [ Ne
+1 I2×2 Ne
+2 I2×2 Ne
+3 I2×2 Ne
+4 I2×2
+][ ae
+1 ae
+2 ae
+3 ae
+4
+]T
+σ = [ Ne
+1 I3×3 Ne
+2 I3×3 Ne
+3 I3×3 Ne
+4 I3×3
+][ σe
+1 σe
+2 σe
+3 σe
+4
+]T (8)
+where I2×2 and I3×3 are the second-order and third-order identity matrices; Nie(i = 1, 2, 3, 4) are the shape functions of linear quadrilateral
+isoparametric element; (u, σ) and (aie, σie) are displacement and stress vectors of Gaussian points and atoms of the same element, respectively. u, σ, aie and σie are expressed as
+⎧
+⎪⎪⎪⎪⎪⎪⎪⎪⎨
+⎪⎪⎪⎪⎪⎪⎪⎪⎩
+u=
+[u
+v
+]
+, ae
+i = [ ui vi ]
+σ=
+⎡
+⎢⎣
+σ11
+σ22
+σ12
+⎤
+⎥⎦, σe
+i = [ σi
+11 σi
+22 σi
+12
+] (9)
+where subscript i denotes the atom number in the element. The strain ε is then obtained from the geometric equation as
+ε=
+⎡
+⎢⎢⎢⎢⎢⎢⎢⎢⎣
+∂
+∂x 0
+0∂
+∂y
+∂ ∂y
+∂ ∂x
+⎤
+⎥⎥⎥⎥⎥⎥⎥⎥⎦
+u (10)
+3. Material and models
+In this work, we take the graphene nanoribbons (GNRs) as a representative of 2D brittle materials with periodic hexagonal honeycomb structure [38,25,14,44,22,37]. A large number of theoretical studies on the brittle fracture of graphene have been done and CFM has been verified to be applicable in characterizing the fracture behavior of oneatom-thick GNRs [41,40,46,13,29,36,4,47,2].
+3.1. Atomistic model
+The calculation of JAFM is based on the molecular statics (MS) simulation of quasi-static tensile tests for cracked GNRs, using the Largescale Atomic/Molecular Massively Parallel Simulator (LAMMPS) [24]. The AIREBO potential (Adaptive Intermolecular Reactive Empirical
+Bond Order Potential) [34]is used to characterize the sp2 bond between
+carbon atoms. The influence of kinetic energy is not considered during the whole process. A single-edge-cracked specimen is introduced and stretched along the armchair direction, as shown in Fig. 2a. The geometric relationship of length H, width W, and crack length a is H = 2W, W = 3a. The thickness of monolayer graphene is regarded as 0.335 nm [23], which is the average interlayer distance of graphite. The lattice constant is 0.14 nm. Dimension along the length (armchair) direction is fixed by the periodic boundary condition. Considering that the unit cells of GNRs possess a hexagonal honeycomb structure, it is difficult to directly build an isoparametric element with six atoms as nodes. Thus, the graphene hexagonal cell is divided into two quadrilateral isoparametric elements instead, as shown in Fig. 2b. Nine Gaussian points are set for each element.
+3.2. FEM model
+The finite element analysis is performed in the following analysis to calculate the traditional J-integral as a comparison with JAFM for the discrete atomic system. The FEM model is given in Fig. 2c. The dimensions of the FEM model are the same as those of MS simulation. The bottom boundary is fixed, and the critical displacement d obtained from atomic simulation is applied to the upper boundary. Ramberg-Osgood equation is assumed to describe the nonlinear elastic behavior in the uniaxial tension tests for GNRs, i.e.,
+Eε = σ + αy
+(σ
+σ0
+)n 1
+(11)
+The nonlinear elastic parameters for graphene are given in Table 1 and the detailed process to obtain these constants can refer to our previous work [15].
+Fig. 2. (a) Geometry and loading conditions of a pre-crack GNR specimen for tensile tests. The crack face is along the zigzag direction. (b) The graphene hexagonal cells are divided into quadrilateral isoparametric elements. (c) Continuum model of cracked nano-specimens for FEM.
+Table 1
+Material properties of graphene in armchair direction [15].
+Material property Value
+Young’s modulus E (GPa) 968 Poisson’s ratio ν 0.18 Yield stress σ0 (GPa) 51.5 Work hardening coefficient n 4.9 Yield offset αy 0.036
+P. Jia et al.
+
+
+Theoretical and Applied Fracture Mechanics 121 (2022) 103531
+5
+4. Results and discussion
+The global stress–strain (σglobal-εglobal) relation of the pristine GNR demonstrates that graphene possesses eminent nonlinear elasticity at the tensile strain larger than 0.06 during the uniaxial tensile test, as shown in Fig. 3a. For cracked nano-sized GNRs, the global mechanical responses (σglobal-εglobal relations) of specimens with different sizes (a = 0.7 ∼ 14.0 nm) are shown in Fig. 3b. It can be observed that the cracked GNRs can withstand the greater deformation at fracture when the specimen size decreases. Since the critical εglobal is always less than 0.06, the nonlinearity of the entire specimen is attributed to the local nonlinear deformation caused by the singular stress field in the vicinity of the crack tip [31]. With decrease of the specimen size, the shape of the σglobal-εglobal curves changes and represents stronger nonlinearity. In particular, the σglobal-εglobal curve is significantly bent when the crack length is reduced to a = 0.7 nm and 1.4 nm. Thus, the nonlinearity is of vital importance during the nano-fracture analysis and must be considered. Then, from the perspective of micro mechanics behavior, the fracture starts with the first bond breaking at the crack tip, and complete failure of the specimen proceeds subsequently and rapidly along the zigzag direction, resulting in two fractured pieces, as shown in Fig. 3c. Therefore, the failure of GNRs in this work is a purely brittle and mode-I fracture.
+4.1. Verification of JAFM method
+In this section, two kinds of methods for calculating the J-integral, i. e., traditional FEM and stress-based method, are used to verify the accuracy of JAFM in the following paragraph, and a GNR specimen with a crack (a = 14.0 nm) is modeled. In the first part, the traditional FEM is used to calculate the stress and displacement fields of the cracked GNRs, and the J-integral, characterized by JFEM, is obtained according to the EDI form of J-integral expressed by Eq. (3). During the uniaxial tension process in MS simulation, we extract the atomic configurations at four typical moments when εglobal along length direction reaches 0.5 %, 0.8 %, 1.0 % and the
+critical value εglobal
+C (3.3 %), respectively. And the same displacement loads are applied to FEM models to calculate JFEM at these four moments, respectively. Comparison between JAFM and JFEM is given in Table 2, which shows that the relative errors for all cases are within 3.5 %. At the fracture moment, the critical J-integral (JFAFM) represents the fracture toughness JC of graphene along the zigzag direction. And the value of JFAFM agrees well with the result given by atomic energy release rate method, i.e., JC = GCAFM = 12.0 J/m2 [15]. Excellent agreement demonstrates that the JAFM method is valid for the nonlinear elastic fracture problem of graphene at the nanoscale. The stress-based method is used to calculate the J-integral directly, characterized by JMS, through the analysis of the slope of the singular stress field (logσyy-logr, where r is the distance from the crack tip) in the vicinity of the crack tip. In practical research, a stress-based method is a direct and reliable way to estimate the value of the J-integral. Displacement of εglobal = 1.0% is applied to the specimen in this example. According to NLFM, the stress intensively concentrates near the crack tip and forms a singular field proportional to r 1/(n+1), i.e., the HRR (Hutchinson-Rice-Rosengren) singular stress field, which is expressed as [8]
+σij(r) =
+(J
+r
+)
+1
+n+1̃σij(θ, n) (i, j = x, y) (12)
+where n = 4.9 is work hardening coefficient listed in Table 1; ̃σij(θ, n) is
+Fig. 3. (a) σglobal-εglobal curve along the armchair direction of the pristine GNR. (b) σglobal-εglobal curves of cracked GNRs with different dimensions of a = 0.7 ∼ 14.0 nm. (c) Atomic configurations of the GNR specimen at the onset of crack propagation and after crack propagation.
+Table 2
+J-integral for a GNR specimen with a crack length of a = 14.0 nm. Global strain εglobal takes 0.5 %, 0.8 %, 1.0 % and the critical value of 3.3 %, respectively.
+εglobal JAFM J/m2) JFEM J/m2)
+error = |JFEM JAFM|
+JFEM
+0.5 % 0.608 0.589 3.2 % 0.8 % 1.842 1.781 3.4 % 1.0 % 3.023 2.946 2.6 % 3.3 % 12.087 11.898 1.6 %
+P. Jia et al.
+
+
+Theoretical and Applied Fracture Mechanics 121 (2022) 103531
+6
+the dimensionless function of n and θ. The J-integral for an atomic structure can be directly obtained by the stress-based method following Eq. (12), instead of calculating the domain integral expressed by Eq. (6). As shown in Fig. 4a, the normal stress σyy extracted from the MS simulation results well exhibits the HRR singularity. The values of JMS obtained by Eq. (12) for the atoms near the crack tip are 2.577 J/m2, 2.964 J/m2, 2.955 J/m2, 3.060 J/m2 and 3.064 J/m2, as shown in Fig. 4b. Results indicate that JMS = 2.964 ∼ 3.064 J/m2 agree well with JAFM = 3.023 J/m2 and this verifies the accuracy of JAFM again. However, it should be noticed that JMS = 2.577 J/m2 at the atom nearest the crack tip, which is quite different from JAFM = 3.023 J/m2. This demonstrates that the normal stress obtained from MS simulation satisfies the HRR singularity no longer within such an atomic-scale region near the crack tip. Moreover, it is inevitable that JMS slightly varies for different atoms, indicating that the stress-based method can only provide an approximate range of JMS, but fails to calculate the exact value. Therefore, we can claim that, comparing with the stress-based method, the JAFM method is more accurate and reliable when calculating the Jintegral at the nanoscale.
+4.2. Path-independency of JAFM
+In this case, we will discuss the path-independency of JAFM when the size of the integral region changes. Here, the path-independency of JAFM implies that JAFM is not influenced when the integral region varies. The specimen with crack length of a = 21.2 nm under critical deformation (JAFM = JFAFM) is taken as the example in this section. As shown in Fig. 5a, we apply the circle integral region with dimension characterized by RI. During the tests, RI varies from 0.5 nm to 12.0 nm to control the size of integral region. The weight function q used in the J-integral of EDI form at Point P is given as
+q(rP) = RI rP
+RI (13)
+where rP is the distance between Point P and the crack tip. The results given in Fig. 5b demonstrate that JFAFM remains independent of the integral region as long as RI is large enough, i.e., JFAFM = JC when RI ≥ 2.0 nm. However, when RI becomes smaller, JFAFM begins to deviate from JC, as shown in Fig. 6a, which indicates that the JAFM method loses its path-independency. Then, we will find out the reasons of the loss of path-independency. The specimens with the dimensions of a = 2.8 nm and a = 14.0 nm are calculated here to discuss the influence brought by the specimen size. In addition, the square shaped integral domain is used here to compare
+with the circle case, as shown in Fig. 6a. The weight function q at any point P (xP, yP) in the area A for the square shaped case is given as
+q= 1
+r4 r2 x2
+P
+) r2 y2
+P
+) (14)
+Fig. 4. (a) Atomic normal stress as a function of the distance from the crack tip given by MS simulation. It exhibits the HRR singularity of r 1/n+1. (b) Atomic normal stress within the region of 1 nm from the crack tip. JMS for the atoms near the crack tip are given in the figure.
+Fig. 5. (a) Circle shaped integral path of JAFM. (b) JAFM for different integral domain sizes RI = 0.5 ∼ 12.0 nm. The specimen with crack length of a = 21.2 nm under critical deformation is used in this example.
+P. Jia et al.
+
+
+Theoretical and Applied Fracture Mechanics 121 (2022) 103531
+7
+The results given in Fig. 6b demonstrate that JAFM is pathindependent when RI ≥ 1.5 nm for square case and RI ≥ 2.0 nm for circle case. Therefore, the path-dependency appears when selecting different kinds of the integral shapes and weight functions. On the other hand, the variation of JAFM with RI is almost independent of the specimen size a. Although a = 14.0 nm is 4 times larger than a = 2.8 nm, JAFM remains almost unchanged when selecting the same RI, which indicates the path-independency is governed by the localized area near the crack tip. In our opinion, the loss of path-independency is attributed to the atomic-scale geometric nonlinearity near the crack tip. In the prove process of the conservation of J-integral, the infinitesimal deformation is a basic assumption adopted. In NLFM, the strain defined by Eq. (10) is called the Cauchy strain, which is useful only for small displacement gradients. And we also apply the Cauchy strain during the calculation of JAFM. However, finite deformation might exist near the crack tip in AFM simulation, leading to the infinitesimal deformation assumption no longer applicable for nano-scale brittle fracture issues. In order to verify this view, Green strain is introduced here to describe the finite deformation around the crack tip. The components of Green strain tensor in Cartesian coordinates are
+Eij = 1
+2 ui,j + uj,i + uk,iuk,j
+) (i, j, k = 1, 2) (15)
+Applying the Green strain and Cauchy strain to analyze the displacements of atoms near the crack tip, respectively. The normal strain fields εyy are given in Fig. 7. Results demonstrates that within the range of 0.12 nm around the crack tip, εyy given by the Green strain is significantly greater than the Cauchy strain, which indicates that the infinitesimal deformation assumption has failed in this area. Here, ΛGN =
+0.12 nm is defined as the size of the geometric nonlinear area. When RI is large enough, i.e., RI≫ΛGN, the influence brought by the geometric nonlinearity is significantly small that can be ignored. As RI decreasing to 2.0 nm or less, RI and ΛGN almost reach the same order of magnitude, and the geometric nonlinearity will have an obvious impact. In such case, the infinitesimal deformation assumption breaks down at the atomic scale, and this will finally lead to the loss of path-independency for JAFM. On the other hand, the constitutive of the material should be linear/nonlinear elastic to make the J-integral path-independent, within the framework of CFM. However, MS provides the real stress field, which is smaller than the singular stress described by NLFM. Therefore, the atomic stress shows much stronger nonlinearity near the crack tip and does not satisfy the HRR singularity, as shown in Fig. 4b. This real nonlinearity also contributes to the loss of the path-independency. In above, the JAFM method constructed by AFM is reliable as long as the integral region around the crack tip is large enough to guarantee the integral path-independency.
+4.3. Dimension-independency of JAFM
+In this section, we will discuss the application of JAFM method when dimension decreases to extremely small size at the nanoscale. The critical J-integral at fracture for different specimen sizes with the same geometric and boundary conditions are calculated by both FEM (JF
+FEM )
+and the atomic method (JF
+AFM). Fig. 8a plots the J-integral at fracture as a function of the crack length a for all tested GNRs. It shows that JF
+AFM
+remains consistent with JC as the specimen size varies from a = 2.8 nm to a = 14.0 nm. This demonstrates that JAFM is dimension-independent at the atomic scale. On the other hand, JF
+FEM is consistent with the fracture toughness JC when a > 6.9 nm. This consistency evidently indicates that the NLFM criterion, i.e., the crack begins to propagate when JFEM reaches the fracture toughness JC, is applicable. However, when dimension further decreases below the critical length, i.e., aC
+NL = 6.9 nm, JF
+FEM begins to deviate from the fracture toughness JC, which implies that NLFM fails to describe the fracture in GNRs. In another word, the CFM-based J-integral criterion breaks down at the atomic scale when a < aC
+NL .
+Extracting the normal stress σyy in the vicinity of the crack tip, Fig. 8b indicates that the stress given by AFM remains lower than the ideal strength σIS (σIS = 99.8 GPa). Here, σIS represents the fracture strength of a perfect graphene sheet under uniform deformation, which is
+equivalent to the strength of sp2 C–C bond. As the specimen size approaches the macroscale (a = 10.4 nm), σyy calculated by FEM near the crack-tip is relatively well approximated by continuum assumption, as
+Fig. 6. (a) Square shaped integral path of JAFM. (b) JAFM for different integral domain sizes RI = 0.5 ∼ 4.0 nm. The cases of a = 2.8 nm and a = 14.0 nm are considered here.
+Fig. 7. Normal strain in Green strain and Cauchy strain form. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+P. Jia et al.
+
+
+Theoretical and Applied Fracture Mechanics 121 (2022) 103531
+8
+shown in Fig. 8b. It exhibits HRR singularity in its J-controlled area within the range of ΛJ = 1.47 nm. However, when specimen size decreases to the atomic scale (a = 2.8 nm), results show that σyy obtained by continuum assumption deviates from the actual atomic one. And the J-controlled area size shrinks down to ΛJ = 0.71 nm at this scale, which is almost the same order of magnitude as the distance between carbon atoms. In such atomic scale, the discreteness of the atoms near the crack tip become much stronger. But the NLFM-based singularity cannot take into account the crack-tip atomic features, such as structural rearrangement, and this ultimately leads to the breakdown of NLFM. In contrast, the stress fields and displacements used in the JAFM method are provided by atomic models without any continuum assumption, and this ensures the dimension-independency of JAFM at the nanoscale. Therefore, the JAFM method proposed in this study has a great advantage in solving the atomic-scale fracture problems compared with the traditional CFM methods.
+5. Conclusions
+In conclusion, this paper proposes an AFM-based J-integral (JAFM) for brittle nonlinear fracture at the nanoscale. The creative points can be summarized as follows:
+1) The line integral along the crack surface is considered in the J-integral for atomic structures. 2) A critical difficulty in calculating the J-integral for a discrete system, i.e., how to describe the local displacement gradient of atoms, is overcome through meshing the atomic structure by isoparametric elements. 3) The applicability and path-independency of the JAFM method are verified. The geometric nonlinearity near the crack tip is discussed
+by introducing the Green strain. It reveals the failure of the infinitesimal deformation assumption when the integral region shrinks down to the atomic scale. 4) The breakdown of NLFM at the nanoscale is investigated, and the lower dimensional limit of NLFM for brittle fracture in Zigzag direction of graphene nanoribbons (GNRs) is found, i.e., aC
+NL = 6.9 nm. 5) The dimension-independency of the JAFM method is confirmed. It demonstrates that JAFM is valid at all scales even below the critical dimensional limit of NLFM.
+CRediT authorship contribution statement
+Pengfei Jia: Formal analysis, Investigation, Software, Visualization, Writing – original draft. Kai Huang: Conceptualization, Funding acquisition, Resources, Supervision, Writing – review & editing. Hongjun Yu: Validation, Writing – review & editing. Takahiro Shimada: Writing – review & editing. Licheng Guo: Resources, Supervision, Writing – review & editing. Takayuki Kitamura: Supervision, Writing review & editing.
+Declaration of Competing Interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+Data availability
+Data will be made available on request.
+Fig. 8. (a) Fracture J-integral of graphene specimens with different dimensions (a = 2.8 ∼ 14.0 nm) based on NLFM and the JAFM method. (b) Normal stress at the critical fracture moment as a function of the distance from the crack tip.
+P. Jia et al.
+
+
+Theoretical and Applied Fracture Mechanics 121 (2022) 103531
+9
+Acknowledgements
+This work is supported by National Natural Science Foundation of China (Grant Numbers 12002106, 12172103 and 12020101001), China Postdoctoral Science Foundation (Grant Number 2019M661267), Open Projects of State Key Laboratory for Strength and Vibration of Mechanical Structures (Xi’an Jiaotong University) (Grant Number SV2021KF-07) and Heilongjiang Touyan Innovation Team Program.
+References
+[1] N. Admal, E. Tadmor, A unified interpretation of stress in molecular systems, J. Elasticity 100 (2010) 63–143. [2] B. Akg ̈oz, O. Civalek, Bending analysis of embedded carbon nanotubes resting on an elastic foundation using strain gradient theory, Acta Astronaut. 119 (2016) 1–12. [3] S.T. Choi†, K.-S. Kim, Nanoscale planar field projections of atomic decohesion and slip in crystalline solids. Part I, A crack-tip cohesive zone. Philos. Mag. 87 (12) (2007) 1889–1919. [4] D. Datta, S. Nadimpalli, Y. Li, V. Shenoy, Effect of crack length and orientation on the mixed-mode fracture behavior of graphene, Extreme Mech. Lett. 5 (2015) 10–17. [5] J. Eshelby, The force on an elastic singularity, Philosophical Transactions of the Royal Society of London A 244 (877) (1951) 87–112. [6] P. Gallo, On the crack-tip region stress field in molecular systems: The case of ideal brittle fracture, Adv. Theory Simul. 2 (10) (2019) 1900146. [7] P. Gallo, Y. Hagiwara, T. Shimada, T. Kitamura, Strain energy density approach for brittle fracture from nano to macroscale and breakdown of continuum theory, Theor. Appl. Fract. Mech. 103 (2019) 102300. [8] J.W. Hutchinson, Plastic stress and strain fields at a crack tip, J. Mech. Phys. Solids 16 (5) (1968) 337–342. [9] K. Huang, T. Shimada, N. Ozaki, Y. Hagiwara, T. Sumigawa, L. Guo, T. Kitamura, A unified and universal Griffith-based criterion for brittle fracture, Int. J. Solids Struct. 128 (2017) 67–72. [10] K. Huang, T. Sumigawa, T. Shimada, S. Tanaka, Y. Hagiwara, L. Guo, T. Kitamura, An experimental study on atomic-level unified criterion for brittle fracture, Int. J. Solids Struct. 206 (2020) 1–8. [11] H. Inoue, Y. Akahoshi, S. Harada, A fracture parameter for molecular dynamics method, Int. J. Fract. 66 (4) (1994) R77–R81. [12] H. Inoue, Y. Akahoshi, S. Harada, Molecular dynamics simulation on fracture mechanisms of nano-scale polycrystal under static and cyclic loading, Mater. Sci. Res. Int. 44 (501Appendix) (1995) 95–99. [13] B. Jang, A. Mag-isa, J. Kim, B. Kim, H. Lee, C. Oh, T. Sumigawa, T. Kitamura, Uniaxial fracture test of freestanding pristine graphene using in situ tensile tester under scanning electron microscope, Extreme Mech. Lett. 14 (2017) 10–15. [14] B.N. Jaya, V. Jayaram, Crack stability in edge-notched clamped beam specimens: modeling and experiments, Int. J. Fract. 188 (2) (2014) 213–228. [15] P. Jia, K. Huang, T. Sumigawa, T. Shimada, L. Guo, T. Kitamura, A unified atomic energy release rate criterion for nonlinear brittle fracture in graphene nanoribbons, Int. J. Solids Struct. (2022) 234–235. [16] Y. Jin, F.G. Yuan, Nanoscopic modeling of fracture of 2d graphene systems, J. Nanosci. Nanotechno. 5 (4) (2005) 601–608. [17] R.E. Jones, J.A. Zimmerman, J. Oswald, T. Belytschko, An atomistic J-integral at finite temperature based on Hardy estimates of continuum fields, J. Phys. Condens. Matter 23 (1) (2011) 015002. [18] R.E. Jones, J.M. Rimsza, L.J. Criscenti, An atomic-scale evaluation of the fracture toughness of silica glass, J. Phys. Condens. Matter 30 (24) (2018) 245901. [19] R. Khare, S. Mielke, J. Paci, S. Zhang, R. Ballarini, G. Schatz, T. Belytschko, Coupled quantum mechanical/molecular mechanical modeling of the fracture of defective carbon nanotubes and graphene sheets, Phys. Rev. B 75 (2007) 75412-1. [20] K. Nakatani, A. Nakatani, H. Kitagawa, Molecular dynamics study on fracture mechanisms of Fe-amorphous metal, Mesoscopic Dynamics of Fracture, Computational Materials Design (1998) 88–98.
+[21] K. Nakatani, A. Nakatani, Y. Sugiyama, H. Kitagawa, Molecular dynamics study on mechanical properties and fracture in amorphous metal, AIAA J. 38 (2000) 695–701. [22] K.H. Nam, I.H. Park, S.H. Ko, Patterning by controlled cracking, Nature 485 (7397) (2012) 221–224. [23] K.S. Novoselov, A.K. Geim, S.V. Morozov, D. Jiang, Y. Zhang, S.V. Dubonos, I. V. Grigorieva, A.A. Firsov, Electric field effect in atomically thin carbon films, Science 306 (5696) (2004) 666–669. [24] S. Plimpton, Fast Parallel Algorithms for Short-Range Molecular Dynamics, J. Comput. Phys. 117 (1) (1995) 1–19. [25] A.J. Pons, A. Karma, Helical crack-front instability in mixed-mode fracture, Nature 464 (7285) (2010) 85–89. [26] J.R. Rice, A path independent integral and approximate analysis of strain concentration by notches and cracks, J. Appl. Mech. 35 (1968) 379–386. [27] S. Roy, A.R. Akepati, Determination of atomistic J-integral of graphene sheet using the molecular dynamics method, Compose. Interface. 20 (6) (2013) 431–442. [28] S. Roy, A. Roy, A computational investigation of length-scale effects in the fracture behaviour of a graphene sheet using the atomistic J-integral, Eng. Fract. Mech. 207 (2019) 165–180. [29] A. Shekhawat, R. Ritchie, Toughness and strength of nanocrystalline graphene, Nat. Commun. 7 (2016) 10546. [30] T. Shimada, K. Ouchi, Y. Chihara, T. Kitamura, Breakdown of continuum fracture mechanics at the nanoscale, Sci. Rep. 5 (2015) 8596. [31] T. Shimada, K. Huang, L.e. Van Lich, N. Ozaki, B. Jang, T. Kitamura, Beyond conventional nonlinear fracture mechanics in graphene nanoribbons, Nanoscale 12 (35) (2020) 18363–18370. [32] N.K. Simha, F.D. Fischer, O. Kolednik, C.R. Chen, Inhomogeneity effects on the crack driving force in elastic and elastic–plastic materials, J. Mech. Phys. Solids 51 (1) (2003) 209–240. [33] N. Simha, F. Fischer, O. Kolednik, J. Predan, G. Shan, Crack tip shielding due to smooth and discontinuous material inhomogeneities, Int. J. Fract. 135 (2005) 73–93. [34] S.J. Stuart, A.B. Tutein, J.A. Harrison, A reactive potential for hydrocarbons with intermolecular interactions, J. Chem. Phys. 112 (14) (2000) 6472–6486. [35] T. Sumigawa, T. Shimada, K. Huang, Y. Mizuno, Y. Hagiwara, N. Ozaki, T. Kitamura, Ultrasmall-scale brittle fracture initiated from a dislocation in SrTiO3, Nano Lett. 22 (5) (2022) 2077–2084. [36] A. Tabarraei, X. Wang, D. Jia, Effects of hydrogen adsorption on the fracture properties of graphene, Comput. Mater. Sci. 121 (2016) 151–158. [37] N. Tuan Hung, D. Van Truong, V. Van Thanh, R. Saito, Intrinsic strength and failure behaviors of ultra-small single-walled carbon nanotubes, Comput. Mater. Sci. 114 (2016) 167–171. [38] J. Wang, Q. Xiong, J. Wang, Y. Xiong, J. Yang, F. Zhang, Microstructure and mechanical properties of YG8/IN718 alloy joints prepared by vacuum brazing, Vacuum 169 (2019) 108942. [39] X. Wei, B. Fragneaud, C.A. Marianetti, J.W. Kysar, Nonlinear elastic behavior of graphene: ab initio calculations to continuum description, Phys. Rev. B 80 (20) (2009), 205407. [40] X. Wei, J.W. Kysar, Experimental validation of multiscale modeling of indentation of suspended circular graphene membranes, Int. J. Solids Struct. 49 (22) (2012) 3201–3209. [41] Y. Wei, R. Yang, Nanomechanics of graphene, Natl. Sci. Rev. 6 (2) (2019) 324–348. [42] Y.G. Xu, K. Behdinan, Z. Fawaz, Molecular dynamics calculation of the J-integral fracture criterion for nano-sized crystals, Int. J. Fract. 130 (2) (2004) 571–583. [43] Z. Yan, L.Y. Jiang, Study of a propagating finite crack in functionally graded piezoelectric materials considering dielectric medium effect, Int. J. Solids Struct. 46 (6) (2009) 1362–1372. [44] Y. Yang, X. Li, M. Wen, E. Hacopian, W. Chen, Y. Gong, J. Zhang, B.o. Li, W. u. Zhou, P.M. Ajayan, Q. Chen, T. Zhu, J. Lou, Brittle Fracture of 2D MoSe2, Adv. Mater. 29 (2) (2017) 1604201. [45] H. Yin, H.J. Qi, F. Fan, T. Zhu, B. Wang, Y. Wei, Griffith criterion for brittle fracture in graphene, Nano Lett. 15 (3) (2015) 1918–1924. [46] P. Zhang, L. Ma, F. Fan, Z. Zeng, C. Peng, P.E. Loya, Z. Liu, Y. Gong, J. Zhang, X. Zhang, P.M. Ajayan, T. Zhu, J. Lou, Fracture toughness of graphene, Nat. Commun. 5 (1) (2014), 3782. [47] Z. Zhang, H. Jin, C. Wu, J. Ji, Efficient production of high-quality few-layer graphene using a simple hydrodynamic-assisted exfoliation method, Nanoscale Res. Lett. 13 (2018) 416.
+P. Jia et al.

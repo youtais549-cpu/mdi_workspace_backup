@@ -1,0 +1,4 @@
+- `[x]` Create Colab Setup Notebook (`colab_setup_mdi_gpu.ipynb`)
+- `[x]` Modify execution scripts for Colab compatibility
+- `[x]` Package `SiC_3x3x10_MD` directory into `colab_transfer.tar.gz`
+- `[x]` Verify and create Walkthrough

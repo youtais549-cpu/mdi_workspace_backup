@@ -1,0 +1,25 @@
+# 初期設定
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes   
+
+# モデルの構築
+region box block 0 10.0 0 10.0 0 10.0
+create_box 2 box
+mass 1 28.085
+mass 2 12.011
+create_atoms 1 single 4.0 5.0 5.0
+create_atoms 2 single 6.0 5.0 5.0
+
+# 原子に初期速度を与える
+velocity all create 300.0 12345
+
+# MDI通信とMD計算の設定
+fix 1 all mdi/qm elements Si C
+fix 2 all nve
+
+# 出力設定と実行
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+run 5

@@ -1,0 +1,69 @@
+LAMMPS (22 Jul 2025 - Update 6)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+# 初期設定
+units metal
+boundary p p p
+atom_style atomic
+atom_modify map yes
+
+# モデルの読み込み
+read_data 2H-SiC_supercell_3x3x2.data
+Reading data file ...
+  triclinic box = (0 0 0) to (9.228 7.9916824 10.096) with tilt (-4.614 0 0)
+WARNING: Triclinic box skew is large. LAMMPS will run inefficiently. (src/src/domain.cpp:221)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  72 atoms
+  read_data CPU = 0.002 seconds
+mass 1 28.085
+mass 2 12.011
+
+# 原子に初期速度を与える
+velocity all create 300.0 12345
+
+# MDI通信とMD計算の設定
+fix 1 all mdi/qm elements Si C
+fix 2 all nve
+
+# 出力設定と実行
+thermo 1
+dump 1 all custom 1 dump.lammpstrj id type x y z
+run 5
+WARNING: No pairwise cutoff or binsize set. Atom sorting therefore disabled. (src/src/atom.cpp:2499)
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Energies and forces may be wrong and atoms may get lost. (src/src/comm_brick.cpp:212)
+Per MPI rank memory allocation (min/avg/max) = 2.308 | 2.308 | 2.308 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   300            0              0             -31922.925      3949.7372    
+         1   296.5797       0              0             -31922.925      3904.7062    
+         2   285.70122      0              0             -31922.924      3761.4824    
+         3   268.17368      0              0             -31922.923      3530.7185    
+         4   245.30077      0              0             -31922.922      3229.5785    
+         5   218.78917      0              0             -31922.921      2880.5324    
+Loop time of 3748.18 on 1 procs for 5 steps with 72 atoms
+
+Performance: 0.000 ns/day, 208232.262 hours/ns, 0.001 timesteps/s, 0.096 atom-step/s
+0.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.00029374 | 0.00029374 | 0.00029374 |   0.0 |  0.00
+Output  | 0.0020754  | 0.0020754  | 0.0020754  |   0.0 |  0.00
+Modify  | 3748.2     | 3748.2     | 3748.2     |   0.0 |100.00
+Other   |            | 0.006172   |            |       |  0.00
+
+Nlocal:             72 ave          72 max          72 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:              9 ave           9 max           9 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 1:15:08

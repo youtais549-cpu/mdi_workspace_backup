@@ -1,0 +1,24 @@
+LAMMPS (22 Jul 2025 - Update 4)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+# --- SiO2 ReaxFF 計算レシピ ---
+
+# 1. 基本設定
+units           real
+atom_style      charge
+
+# 2. 構造データの読み込み（あなたが作ったファイル名を指定）
+read_data       sio2.lmp
+Reading data file ...
+  orthogonal box = (0 0 0) to (5 5 5)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3 atoms
+  read_data CPU = 0.002 seconds
+
+# 3. ReaxFFの物理法則を読み込む
+pair_style      reaxff NULL
+pair_coeff      * * ffield.reax Si O
+Reading potential file ffield.reax with DATE: 2010-02-19
+ERROR: Non-existent ReaxFF type (src/src/REAXFF/pair_reaxff.cpp:316)
+Last input line: pair_coeff * * ffield.reax Si O
